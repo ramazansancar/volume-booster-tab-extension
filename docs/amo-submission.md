@@ -177,55 +177,80 @@ Volume Booster Tab
 **Summary** (250 characters max)
 
 ```text
-Boost any tab's volume up to 600% with a limiter, 6-band equalizer, stereo balance and mono downmix. Every tab is controlled independently. No tracking, no network requests, fully open source.
+Boost any tab's volume up to 600% with a limiter, 6-band equalizer, stereo balance and mono downmix. Every tab is independent. No tracking, open source.
 ```
 
 **Description**
 
 ```text
-Volume Booster Tab raises the volume of any browser tab beyond what the page itself
-allows, and gives you real control over how that sound is shaped.
+Volume Booster Tab raises the volume of any browser tab beyond what the page
+itself allows, and gives you real control over how that sound is shaped.
 
 FEATURES
 
-• Boost from 0% to 600% (raisable to 1000% in settings)
+• Boost from 0% to 600%, raisable to 1000% in settings
 • Limiter that prevents clipping and painful peaks when boosting
 • 6-band equalizer, 60 Hz to 10 kHz, under Advanced settings
 • Stereo balance, from full left to full right
 • Mono downmix for listening with a single earbud
-• Independent control for every tab - run one site at 300% and another at 150%
-• Available in 55 languages
+• Bypass switch to compare the processed and untouched sound instantly
+• Available in 55 languages, fully translated
 
-PER-TAB AND TEMPORARY BY DEFAULT
+EVERY TAB IS INDEPENDENT
 
-Every tab keeps its own volume. Changing one tab never affects another.
+This is the part most volume boosters get wrong. Every tab keeps its own
+volume, its own equalizer curve, its own balance. Run a stream at 300% in one
+tab and music at 120% in another; changing one never touches the other.
 
-By default a boost is forgotten when you close the tab, so a loud setting can
-never surprise you later. If you want a site to always open at the same volume,
-tick "Remember this site" in the popup - or change the default in the options
-page, where you can also review and delete every site you have saved.
+The toolbar badge shows the level of the tab you are looking at, so you can
+tell at a glance which tabs are amplified.
+
+TEMPORARY BY DEFAULT
+
+A boost is forgotten when you close the tab. A setting you chose for one video
+can never surprise you weeks later on a different page.
+
+If you do want a site to always open at the same volume, tick "Remember this
+site" in the popup. The options page lists every site you have saved and lets
+you remove any of them, or change the default so that new tabs remember
+automatically.
+
+KEEPS UP WITH STREAMING SITES
+
+Sites like YouTube and Twitch replace their video player when you move to the
+next episode or stream, without reloading the page. Many boosters lose the
+audio at that moment and keep showing a level they are no longer applying.
+This one watches for the swap and reapplies your settings to the new player,
+so the volume you set stays the volume you get.
 
 PRIVACY
 
-No tracking. No analytics. No account. The extension makes no network requests
-at all, and your settings never leave your own machine.
+No tracking. No analytics. No account. No network requests of any kind, not
+even for fonts. Your settings never leave your own machine.
 
 WHAT IT CANNOT DO
 
 DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide
-their audio from extensions by design, so they cannot be boosted. The popup
-tells you plainly when a page cannot be processed instead of silently doing
+their audio from extensions by design, so they cannot be boosted. When a page
+cannot be processed the popup says so plainly instead of silently doing
 nothing.
 
-Please boost responsibly: high volume can damage both hearing and speakers,
-especially with headphones. Leave the limiter on.
+Browser pages such as about: and the add-ons site are off limits to every
+extension, including this one.
+
+PLEASE BOOST RESPONSIBLY
+
+High volume can damage both your hearing and your speakers, especially with
+headphones. The limiter is on by default above 100% and you should leave it
+on. Raising the ceiling past 600% in settings is at your own risk.
 
 OPEN SOURCE
 
 Source code, issue tracker and contribution guide:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
-Licensed under the GNU Affero General Public License v3.0.
+Licensed under the GNU Affero General Public License v3.0. Translation
+corrections from native speakers are especially welcome.
 ```
 
 **Categories:** Audio & Video (primary), Appearance or Other (secondary)
