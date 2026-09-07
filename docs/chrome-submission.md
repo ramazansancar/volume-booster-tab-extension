@@ -104,6 +104,113 @@ Licensed under the GNU Affero General Public License v3.0.
 
 ---
 
+## Turkish listing (`tr`)
+
+Both stores let a listing carry translated text per locale: Chrome under
+_Store listing_ → the language selector at the top, Edge under _Availability_ →
+_Add a language_. The English listing stays the default; this is the `tr`
+variant.
+
+Terminology follows [`public/_locales/tr/messages.json`](../public/_locales/tr/messages.json)
+so the listing and the interface use the same words — _limitör_, _ekolayzer_,
+_denge_, _sekme_. Do not "improve" them in isolation here; change the locale
+file and this text together.
+
+**Ad** (45 karakter)
+
+```text
+Sekme Ses Yükseltici
+```
+
+**Kısa açıklama / Özet** (132 karakter)
+
+```text
+Her sekmenin sesini %600’e kadar yükseltin. Limitör, ekolayzer ve denge. Sekmeler birbirinden bağımsız. İzleme yok, açık kaynak.
+```
+
+**Açıklama**
+
+```text
+Sekme Ses Yükseltici, herhangi bir sekmenin sesini sayfanın kendi izin
+verdiğinin ötesine taşır ve o sesin nasıl şekilleneceği üzerinde gerçek
+denetim verir.
+
+ÖZELLİKLER
+
+• %0 ile %600 arasında yükseltme, ayarlardan %1000’e çıkarılabilir
+• Yükseltirken bozulmayı ve ani yüksek tepe sesleri önleyen limitör
+• Gelişmiş ayarlar altında 60 Hz – 10 kHz arası 6 bantlı ekolayzer
+• Tamamen sola ve tamamen sağa kadar stereo denge
+• Tek kulaklıkla dinlemek için mono birleştirme
+• İşlenmiş ve ham sesi anında karşılaştırmak için devre dışı bırakma anahtarı
+• 55 dilde, eksiksiz çeviri
+
+HER SEKME BAĞIMSIZ
+
+Ses yükseltici eklentilerin çoğunun yanlış yaptığı yer burası. Her sekme kendi
+ses seviyesini, kendi ekolayzer eğrisini, kendi dengesini tutar. Bir sekmede
+yayını %300’de, başka bir sekmede müziği %120’de çalıştırın; birini değiştirmek
+diğerine asla dokunmaz.
+
+Araç çubuğu rozeti baktığınız sekmenin seviyesini gösterir; hangi sekmelerin
+yükseltildiğini bir bakışta anlarsınız.
+
+VARSAYILAN OLARAK GEÇİCİ
+
+Sekmeyi kapattığınızda yükseltme unutulur. Bir video için seçtiğiniz ayar,
+haftalar sonra bambaşka bir sayfada karşınıza çıkıp sizi şaşırtamaz.
+
+Bir sitenin her zaman aynı ses seviyesiyle açılmasını istiyorsanız açılır
+penceredeki “Bu siteyi hatırla” seçeneğini işaretleyin. Ayarlar sayfası
+kaydettiğiniz siteleri listeler, herhangi birini düzenlemenize veya
+kaldırmanıza izin verir ve yeni sekmelerin otomatik olarak hatırlamasını
+sağlayabilir.
+
+YAYIN SİTELERİNE AYAK UYDURUR
+
+YouTube, Twitch ve Kick gibi siteler, sonraki bölüme veya yayına geçtiğinizde
+sayfayı yeniden yüklemeden video oynatıcısını değiştirir. Birçok eklenti tam o
+anda sesi kaybeder ve artık uygulamadığı bir seviyeyi göstermeyi sürdürür. Bu
+eklenti değişimi izler ve ayarlarınızı yeni oynatıcıya yeniden uygular; böylece
+ayarladığınız ses, duyduğunuz ses olarak kalır.
+
+GİZLİLİK
+
+İzleme yok. Analiz yok. Hesap yok. Yazı tipleri dahil hiçbir türde ağ isteği
+yok. Ayarlarınız kendi cihazınızdan hiç çıkmaz.
+
+YAPAMADIKLARI
+
+Netflix, Disney+, Prime Video ve Spotify gibi DRM korumalı hizmetler seslerini
+tasarım gereği eklentilerden gizler, bu yüzden yükseltilemezler. Bir sayfa
+işlenemediğinde açılır pencere sessizce hiçbir şey yapmak yerine bunu açıkça
+söyler.
+
+chrome:// gibi tarayıcı sayfaları ve mağaza sayfaları, bu eklenti dahil her
+eklentiye kapalıdır.
+
+LÜTFEN SORUMLU YÜKSELTİN
+
+Yüksek ses, özellikle kulaklıkla, hem işitmenize hem de hoparlörlerinize zarar
+verebilir. Limitör %100 üzerinde varsayılan olarak açıktır ve açık
+bırakmalısınız. Ayarlardan tavanı %600’ün üzerine çıkarmak sizin
+sorumluluğunuzdadır.
+
+AÇIK KAYNAK
+
+Kaynak kodu, hata takibi ve katkı rehberi:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+GNU Affero Genel Kamu Lisansı v3.0 ile lisanslanmıştır.
+```
+
+> [!NOTE]
+> Turkish uses `%600`, with the sign _before_ the number — the opposite of
+> English. The typographic apostrophe in `%600’e` is the correct Turkish form
+> and matches the locale file; do not replace it with `'`.
+
+---
+
 ## Privacy practices
 
 This is the tab that blocks most submissions. Every field below is required.
@@ -114,7 +221,7 @@ This is the tab that blocks most submissions. Every field below is required.
 Amplify and shape the audio of the browser tab the user is currently viewing.
 ```
 
-Chrome requires a *narrow* single purpose. Everything the extension does —
+Chrome requires a _narrow_ single purpose. Everything the extension does —
 gain, limiter, equalizer, balance, mono — serves that one purpose, which is why
 they belong in one item rather than several.
 
@@ -196,7 +303,7 @@ https://github.com/ramazansancar/volume-booster-tab-extension#privacy
 ## Notes for the reviewer
 
 Chrome has no dedicated reviewer-notes field like AMO's. Put this in the
-**Justification** box under *Account* → *Item* → *Privacy* if one appears, or
+**Justification** box under _Account_ → _Item_ → _Privacy_ if one appears, or
 keep it to answer a rejection.
 
 ```text
@@ -232,26 +339,61 @@ dist/chrome-mv3-<version>.zip.
 
 ## Store assets
 
-| Asset | Requirement | Notes |
-| --- | --- | --- |
-| Icon | 128×128 PNG | `public/icons/icon-128.png`, generated by `pnpm run icons` |
-| Screenshots | 1280×800, at least one, up to five | Generated: `pnpm run screenshots` |
-| Small promo tile | 440×280 PNG | Optional, but the listing looks unfinished without it |
-| Marquee promo tile | 1400×560 PNG | Optional; only used if the item is featured |
+| Asset              | Requirement                        | Notes                                                      |
+| ------------------ | ---------------------------------- | ---------------------------------------------------------- |
+| Icon               | 128×128 PNG                        | `public/icons/icon-128.png`, generated by `pnpm run icons` |
+| Screenshots        | 1280×800, at least one, up to five | Generated: `pnpm run screenshots`                          |
+| Small promo tile   | 440×280 PNG                        | Optional, but the listing looks unfinished without it      |
+| Marquee promo tile | 1400×560 PNG                       | Optional; only used if the item is featured                |
 
 ### Generating the screenshots
 
 ```bash
-pnpm run screenshots
+pnpm run screenshots              # English, the default set
+pnpm run screenshots -- --locale=tr    # Turkish
+pnpm run screenshots -- --locale=all   # both
 ```
 
-Output lands in `store-assets/`. Three images are produced:
+Output lands in `store-assets/`. Three images per language:
 
-| File | Shows |
-| --- | --- |
-| `popup-boost-*.png` | The popup boosting a tab to 300%, with the preset row and limiter |
-| `popup-equalizer-*.png` | Advanced settings expanded, showing the six-band equalizer |
-| `options-*.png` | The settings page: defaults, language picker and saved sites |
+| File                    | Shows                                                             |
+| ----------------------- | ----------------------------------------------------------------- |
+| `popup-boost-*.png`     | The popup boosting a tab to 300%, with the preset row and limiter |
+| `popup-equalizer-*.png` | Advanced settings expanded, showing the six-band equalizer        |
+| `options-*.png`         | The settings page: defaults, language picker and saved sites      |
+
+English writes the unsuffixed names the listing already points at; every other
+language appends its code, so `options-1280x800.png` and
+`options-1280x800-tr.png` sit side by side rather than overwriting each other.
+
+Both stores take a separate screenshot set per listing language, next to the
+translated text: upload the `-tr` images under the Turkish listing and the
+unsuffixed ones under English.
+
+### Adding a language
+
+The strings live in the `STRINGS` table at the top of
+[`scripts/screenshots.mjs`](../scripts/screenshots.mjs) — one entry per locale,
+holding both the marketing copy (headings, blurbs, feature lists) and the
+interface labels the rendered panels show. Add an entry keyed by locale code and
+`--locale=<code>` starts working; an unknown code fails with the list of what is
+available rather than rendering English under a translated name.
+
+Two things do not come out of a plain string swap, so they have their own
+fields:
+
+- **Percentages.** English writes `600%`, Turkish writes `%600`. Every number
+  the images show goes through `pct()`, which places the sign per locale.
+- **The balance readout.** English shortens Left and Right to `L` and `R`.
+  Turkish cannot: _Sol_ and _Sağ_ share a first letter, so `leftShort` and
+  `rightShort` spell them out instead.
+
+> [!IMPORTANT]
+> The interface half of each entry must match
+> [`public/_locales/<code>/messages.json`](../public/_locales/tr/messages.json)
+> word for word. They are separate files because the locale file has no place
+> for marketing copy — but if they drift, the listing shows an interface the
+> user will never see. Change both together.
 
 The images render the extension's real stylesheets against a backdrop defined
 in [`scripts/screenshot-templates/background.html`](../scripts/screenshot-templates/background.html) —
@@ -273,12 +415,38 @@ edit that file to change the look without touching the generator.
 
 Edge accepts `dist/edge-mv3-<version>.zip` and asks the same questions under
 **Availability** and **Properties** rather than a Privacy tab. The answers above
-apply unchanged, with two differences:
+apply unchanged, with these differences:
 
 - Edge asks for a **short description** (limit 200 characters) — the Summary
   above fits.
 - Edge requires the **privacy policy URL** field to be filled even when no data
   is collected. Use the README link above.
+- Edge has its own **category** list, which does not include Chrome's _Tools_.
+
+### Category
+
+Pick **Productivity**.
+
+Edge offers a single required category from a fixed list, and it is not the same
+list Chrome uses:
+
+```text
+Accessibility · Blogging · Developer Tools · Entertainment · News And Weather
+Photos · Productivity · Search Tools · Shopping · Social · Communication · Sports
+```
+
+_Tools_, the Chrome category for this listing, does not exist here. Three
+entries are plausible substitutes; the reasoning for choosing between them:
+
+| Category         | Verdict                                                                                                                                                                                                                                                                                                                                 |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Productivity** | **Chosen.** A per-tab audio control is a utility the user operates on whatever page they are already on. It is the closest match to Chrome's _Tools_, which keeps the two listings consistent.                                                                                                                                          |
+| Accessibility    | Defensible — amplification genuinely helps hard-of-hearing users, and the category is less crowded. But the listing does not present itself as an assistive tool, and a reviewer comparing the description against the category could reasonably disagree. Only choose it if the description is rewritten to lead with hearing support. |
+| Entertainment    | Describes what users boost, not what the extension does. Crowded with media and streaming items, so discoverability is worse rather than better.                                                                                                                                                                                        |
+
+The category can be changed later from the dashboard without resubmitting the
+package, so this is not a decision worth agonising over — but changing it resets
+the listing to review.
 
 ---
 
@@ -287,11 +455,11 @@ apply unchanged, with two differences:
 Firefox's submission differs enough to keep in its own file
 ([`amo-submission.md`](amo-submission.md)), but the notable divergences are:
 
-| | Chrome Web Store | addons.mozilla.org |
-| --- | --- | --- |
-| Package | `chrome-mv3` | `firefox-mv2` (wider version support) |
-| Summary limit | 132 characters | 250 characters |
+|                 | Chrome Web Store          | addons.mozilla.org                                      |
+| --------------- | ------------------------- | ------------------------------------------------------- |
+| Package         | `chrome-mv3`              | `firefox-mv2` (wider version support)                   |
+| Summary limit   | 132 characters            | 250 characters                                          |
 | Data collection | Declared in the dashboard | Declared in the manifest, `data_collection_permissions` |
-| Reviewer notes | No dedicated field | Dedicated field, silently truncated |
-| Source code | Not requested | Required whenever the build is bundled or minified |
-| License | Not asked | Chosen from a preset list — pick AGPL v3.0 only |
+| Reviewer notes  | No dedicated field        | Dedicated field, silently truncated                     |
+| Source code     | Not requested             | Required whenever the build is bundled or minified      |
+| License         | Not asked                 | Chosen from a preset list — pick AGPL v3.0 only         |

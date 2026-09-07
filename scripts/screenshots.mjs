@@ -13,11 +13,18 @@
  *
  * Usage:
  *   node scripts/screenshots.mjs
+ *   node scripts/screenshots.mjs --locale=tr
+ *   node scripts/screenshots.mjs --locale=en,tr
  *   node scripts/screenshots.mjs --chrome="C:/path/to/chrome.exe"
  *
  * The default 1280x800 is the size to ship. --size accepts anything, but the
  * smaller 640x400 the stores also allow halves every dimension, which drops the
  * popup's 13px type to 6px and makes the interface unreadable.
+ *
+ * Both stores accept a separate screenshot set per listing language. --locale
+ * picks which. English writes the unsuffixed filenames the listing already
+ * uses; every other locale appends its code, so the sets never overwrite one
+ * another.
  */
 
 import { execFile } from 'node:child_process';
@@ -70,14 +77,6 @@ const CHROME_CANDIDATES = [
 const SCENES = [
   {
     name: 'popup-boost',
-    heading: 'Boost any tab to 600%',
-    blurb: 'Every tab keeps its own volume. Run a stream loud in one and music quiet in another - changing one never touches the other.',
-    features: [
-      ['Up to 600%', 'raisable to 1000% in settings'],
-      ['Limiter', 'stays on above 100% so loud never means distorted'],
-      ['Per-tab', 'independent volume, balance and equalizer'],
-      ['Temporary', 'forgotten when the tab closes, unless you say otherwise'],
-    ],
     origin: 'youtube.com',
     gain: 300,
     balance: 0,
@@ -87,18 +86,9 @@ const SCENES = [
     bypassed: false,
     equalizer: [0, 0, 0, 0, 0, 0],
     advanced: false,
-    status: '2 media sources connected',
   },
   {
     name: 'popup-equalizer',
-    heading: 'Shape the sound, not just its level',
-    blurb: 'A six-band equalizer, stereo balance and a mono downmix, tucked under Advanced settings so the everyday controls stay simple.',
-    features: [
-      ['6-band EQ', '60 Hz to 10 kHz, plus or minus 12 dB'],
-      ['Balance', 'full left to full right'],
-      ['Mono', 'both channels summed, for one earbud'],
-      ['Bypass', 'compare processed and untouched instantly'],
-    ],
     origin: 'twitch.tv',
     gain: 200,
     balance: -20,
@@ -108,32 +98,218 @@ const SCENES = [
     bypassed: false,
     equalizer: [5, 3, 0, -2, 4, 6],
     advanced: true,
-    status: '1 media source connected',
   },
   {
     name: 'options',
     kind: 'options',
-    heading: 'Settings that stay out of the way',
-    blurb: 'Defaults for new tabs, a safety ceiling you control, and every site you asked to be remembered - editable in place.',
-    features: [
-      ['Your language', 'pick any of the 55, or follow the browser'],
-      ['Saved sites', 'edit or forget each one; changes apply at once'],
-      ['Safety', 'keep the limiter on above 100%, cap the maximum'],
-      ['Defaults', 'decide what a brand new tab starts at'],
-    ],
-    language: 'Türkçe',
     defaultGain: 100,
     maxGain: 600,
     persistence: 'session',
     autoLimiter: true,
     tabCapture: true,
+    // Levels are plain numbers, not preformatted text: the percent sign sits
+    // on the other side of them in Turkish, so they have to go through pct().
     savedSites: [
-      ['youtube.com', '300%'],
-      ['twitch.tv', '200%'],
-      ['soundcloud.com', '150%'],
+      ['youtube.com', 300],
+      ['twitch.tv', 200],
+      ['soundcloud.com', 150],
     ],
   },
 ];
+
+/* -------------------------------------------------------------------------- */
+/* Text                                                                       */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Every string the images show, per listing language.
+ *
+ * The interface strings deliberately repeat what is in
+ * `public/_locales/<code>/messages.json` rather than reading it: that file is
+ * keyed for the running extension, while these images also need marketing copy
+ * - headings, blurbs, feature lists - which has no business in a locale file
+ * the extension ships to users. Keeping both here means one place to edit when
+ * a listing is translated, but the interface half MUST stay word for word with
+ * the locale file, or a screenshot shows an interface nobody will ever see.
+ *
+ * `title` is the product name as that store listing shows it, which for Turkish
+ * is the translated `extensionName` rather than the English original.
+ */
+const STRINGS = {
+  en: {
+    htmlLang: 'en',
+    title: 'Volume Booster Tab',
+    footnote: 'No tracking &middot; no network requests &middot; open source',
+    // The value shown in the language picker. It stays Turkish in both sets:
+    // the control lists each language in its own name, which is the point of
+    // showing it at all.
+    languageValue: 'Türkçe',
+    scenes: {
+      'popup-boost': {
+        heading: 'Boost any tab to 600%',
+        blurb:
+          'Every tab keeps its own volume. Run a stream loud in one and music quiet in another - changing one never touches the other.',
+        features: [
+          ['Up to 600%', 'raisable to 1000% in settings'],
+          ['Limiter', 'stays on above 100% so loud never means distorted'],
+          ['Per-tab', 'independent volume, balance and equalizer'],
+          ['Temporary', 'forgotten when the tab closes, unless you say otherwise'],
+        ],
+        status: '2 media sources connected',
+      },
+      'popup-equalizer': {
+        heading: 'Shape the sound, not just its level',
+        blurb:
+          'A six-band equalizer, stereo balance and a mono downmix, tucked under Advanced settings so the everyday controls stay simple.',
+        features: [
+          ['6-band EQ', '60 Hz to 10 kHz, plus or minus 12 dB'],
+          ['Balance', 'full left to full right'],
+          ['Mono', 'both channels summed, for one earbud'],
+          ['Bypass', 'compare processed and untouched instantly'],
+        ],
+        status: '1 media source connected',
+      },
+      options: {
+        heading: 'Settings that stay out of the way',
+        blurb:
+          'Defaults for new tabs, a safety ceiling you control, and every site you asked to be remembered - editable in place.',
+        features: [
+          ['Your language', 'pick any of the 55, or follow the browser'],
+          ['Saved sites', 'edit or forget each one; changes apply at once'],
+          ['Safety', 'keep the limiter on above 100%, cap the maximum'],
+          ['Defaults', 'decide what a brand new tab starts at'],
+        ],
+      },
+    },
+    popup: {
+      currentTab: 'Current tab',
+      active: 'Active',
+      bypassed: 'Bypassed',
+      volume: 'Volume',
+      limiterHint: 'Above 100% the limiter stays on to prevent distortion.',
+      balance: 'Balance',
+      left: 'Left',
+      right: 'Right',
+      // Shown in the balance readout, where there is only room for a mark.
+      // Not derivable from the words above: Turkish Sol and Sag share a first
+      // letter, so one-letter abbreviations there say nothing.
+      leftShort: 'L',
+      rightShort: 'R',
+      center: 'Center',
+      mono: 'Mono',
+      limiter: 'Limiter',
+      remember: 'Remember this site',
+      advanced: 'Advanced settings',
+      eqOn: 'EQ on',
+      equalizer: 'Equalizer',
+      reset: 'Reset',
+      resetTab: 'Reset tab',
+      openOptions: 'Open all settings',
+    },
+    options: {
+      defaultsTitle: 'Defaults for new tabs',
+      startingVolume: 'Starting volume',
+      maxVolume: 'Maximum volume',
+      resetMax: 'Reset to 600%',
+      maxHint: 'Raising this ceiling can damage speakers and hearing. Keep the limiter on.',
+      languageTitle: 'Language',
+      languageLabel: 'Interface language',
+      savedSitesTitle: 'Saved sites',
+      savedSitesCount: (n) => `${n} sites saved.`,
+      forget: 'Forget',
+    },
+  },
+
+  tr: {
+    htmlLang: 'tr',
+    title: 'Sekme Ses Yükseltici',
+    footnote: 'İzleme yok &middot; ağ isteği yok &middot; açık kaynak',
+    languageValue: 'Türkçe',
+    scenes: {
+      'popup-boost': {
+        heading: 'Her sekmeyi %600’e yükseltin',
+        blurb:
+          'Her sekme kendi ses seviyesini tutar. Birinde yayını yüksek, diğerinde müziği kısık çalıştırın; birini değiştirmek diğerine asla dokunmaz.',
+        features: [
+          ['%600’e kadar', 'ayarlardan %1000’e çıkarılabilir'],
+          ['Limitör', '%100 üzerinde açık kalır, yüksek ses bozuk ses demek olmaz'],
+          ['Sekme bazlı', 'bağımsız ses seviyesi, denge ve ekolayzer'],
+          ['Geçici', 'aksini söylemezseniz sekme kapanınca unutulur'],
+        ],
+        status: '2 ses kaynağı bağlandı',
+      },
+      'popup-equalizer': {
+        heading: 'Sesi yükseltmekle kalmayın, şekillendirin',
+        blurb:
+          'Altı bantlı ekolayzer, stereo denge ve mono birleştirme; günlük denetimler sade kalsın diye Gelişmiş ayarların altında.',
+        features: [
+          ['6 bantlı EQ', '60 Hz – 10 kHz, artı eksi 12 dB'],
+          ['Denge', 'tamamen soldan tamamen sağa'],
+          ['Mono', 'iki kanal birleştirilir, tek kulaklık için'],
+          ['Devre dışı', 'işlenmiş ve ham sesi anında karşılaştırın'],
+        ],
+        status: '1 ses kaynağı bağlandı',
+      },
+      options: {
+        heading: 'Yolunuza çıkmayan ayarlar',
+        blurb:
+          'Yeni sekmeler için varsayılanlar, denetimi sizde olan bir güvenlik tavanı ve hatırlanmasını istediğiniz her site - yerinde düzenlenebilir.',
+        features: [
+          ['Kendi diliniz', '55 dilden birini seçin veya tarayıcıyı izleyin'],
+          ['Kaydedilen siteler', 'her birini düzenleyin veya unutun; anında uygulanır'],
+          ['Güvenlik', '%100 üzerinde limitörü açık tutun, tavanı sınırlayın'],
+          ['Varsayılanlar', 'yepyeni bir sekmenin neyle başlayacağına karar verin'],
+        ],
+      },
+    },
+    popup: {
+      currentTab: 'Geçerli sekme',
+      active: 'Etkin',
+      bypassed: 'Devre dışı',
+      volume: 'Ses seviyesi',
+      limiterHint: '%100 üzerinde limitör bozulmayı önlemek için açık kalır.',
+      balance: 'Denge',
+      left: 'Sol',
+      right: 'Sağ',
+      leftShort: 'Sol',
+      rightShort: 'Sağ',
+      center: 'Orta',
+      mono: 'Mono',
+      limiter: 'Limitör',
+      remember: 'Bu siteyi hatırla',
+      advanced: 'Gelişmiş ayarlar',
+      eqOn: 'EQ açık',
+      equalizer: 'Ekolayzer',
+      reset: 'Sıfırla',
+      resetTab: 'Sekmeyi sıfırla',
+      openOptions: 'Tüm ayarları aç',
+    },
+    options: {
+      defaultsTitle: 'Yeni sekmeler için varsayılanlar',
+      startingVolume: 'Başlangıç ses seviyesi',
+      maxVolume: 'Maksimum ses seviyesi',
+      resetMax: '%600’e sıfırla',
+      maxHint:
+        'Bu tavanı yükseltmek hoparlörlere ve işitmeye zarar verebilir. Limitörü açık bırakın.',
+      languageTitle: 'Dil',
+      languageLabel: 'Arayüz dili',
+      savedSitesTitle: 'Kaydedilen siteler',
+      savedSitesCount: (n) => `${n} site kaydedildi.`,
+      forget: 'Unut',
+    },
+  },
+};
+
+const LOCALES = Object.keys(STRINGS);
+
+/**
+ * Percentages read differently per language: English writes `600%`, Turkish
+ * puts the sign first, `%600`. Every number the images show goes through here,
+ * so a translated set never has to be proofread for it by eye.
+ */
+function pct(locale, value) {
+  return locale === 'tr' ? `%${value}` : `${value}%`;
+}
 
 const EQ_LABELS = ['60', '170', '350', '1k', '3.5k', '10k'];
 const PRESETS = [100, 150, 200, 300, 500, 600];
@@ -168,7 +344,6 @@ function slider(percent) {
     </div>`;
 }
 
-
 /**
  * The settings page for the options scene.
  *
@@ -177,7 +352,8 @@ function slider(percent) {
  * capture without a live extension context. The markup mirrors it closely
  * enough that the listing image stays honest.
  */
-function optionsPanel(scene) {
+function optionsPanel(scene, locale) {
+  const t = STRINGS[locale];
   const sites = scene.savedSites
     .map(
       ([host, level]) => `
@@ -185,52 +361,52 @@ function optionsPanel(scene) {
           <div class="origins__summary">
             <span class="origins__toggle">
               <span class="origins__name">${host}</span>
-              <span class="origins__level">${level}</span>
+              <span class="origins__level">${pct(locale, level)}</span>
             </span>
-            <span class="link-button">Forget</span>
+            <span class="link-button">${t.options.forget}</span>
           </div>
         </li>`,
     )
     .join('');
 
   return `  <main class="page">
-    <h1 class="page__title">Volume Booster Tab</h1>
+    <h1 class="page__title">${t.title}</h1>
 
     <section class="card">
-      <h2 class="card__title">Defaults for new tabs</h2>
+      <h2 class="card__title">${t.options.defaultsTitle}</h2>
       <div class="field">
-        <span class="field__label">Starting volume</span>
+        <span class="field__label">${t.options.startingVolume}</span>
         <div class="field__control">
           ${slider((scene.defaultGain / 600) * 100)}
-          <output>${scene.defaultGain}%</output>
+          <output>${pct(locale, scene.defaultGain)}</output>
         </div>
       </div>
       <div class="field">
         <div class="field__header">
-          <span class="field__label">Maximum volume</span>
-          <span class="link-button">Reset to 600%</span>
+          <span class="field__label">${t.options.maxVolume}</span>
+          <span class="link-button">${t.options.resetMax}</span>
         </div>
         <div class="field__control">
           ${slider(((scene.maxGain - 100) / 900) * 100)}
-          <output>${scene.maxGain}%</output>
+          <output>${pct(locale, scene.maxGain)}</output>
         </div>
         <p class="field__hint field__hint--warn">
-          Raising this ceiling can damage speakers and hearing. Keep the limiter on.
+          ${t.options.maxHint}
         </p>
       </div>
     </section>
 
     <section class="card">
-      <h2 class="card__title">Language</h2>
+      <h2 class="card__title">${t.options.languageTitle}</h2>
       <div class="field">
-        <span class="field__label">Interface language</span>
-        <div class="select-shot">${scene.language}</div>
+        <span class="field__label">${t.options.languageLabel}</span>
+        <div class="select-shot">${t.languageValue}</div>
       </div>
     </section>
 
     <section class="card">
-      <h2 class="card__title">Saved sites</h2>
-      <p class="card__lead">${scene.savedSites.length} sites saved.</p>
+      <h2 class="card__title">${t.options.savedSitesTitle}</h2>
+      <p class="card__lead">${t.options.savedSitesCount(scene.savedSites.length)}</p>
       <ul class="origins">${sites}</ul>
     </section>
   </main>`;
@@ -250,9 +426,7 @@ async function groundHtml(width, height) {
     path.join(root, 'scripts', 'screenshot-templates', 'background.html'),
     'utf8',
   );
-  return template
-    .replaceAll('{{WIDTH}}', String(width))
-    .replaceAll('{{HEIGHT}}', String(height));
+  return template.replaceAll('{{WIDTH}}', String(width)).replaceAll('{{HEIGHT}}', String(height));
 }
 
 /** Extra rules that replace the native range inputs for a static capture. */
@@ -314,67 +488,69 @@ const SHOT_CSS = `
 `;
 
 /** The popup panel for one scene, as markup to inline into the frame page. */
-function popupPanel(scene) {
+function popupPanel(scene, locale) {
+  const t = STRINGS[locale];
+  const p = t.popup;
   const gainPercent = Math.round((scene.gain / 600) * 100);
   const balancePercent = ((scene.balance + 100) / 200) * 100;
   const balanceLabel =
     scene.balance === 0
-      ? 'Center'
-      : `${scene.balance < 0 ? 'L' : 'R'} ${Math.abs(scene.balance)}%`;
+      ? p.center
+      : `${scene.balance < 0 ? p.leftShort : p.rightShort} ${pct(locale, Math.abs(scene.balance))}`;
 
   return `  <main class="panel">
     <header class="panel__header">
       <div class="site">
-        <span class="site__label">Current tab</span>
+        <span class="site__label">${p.currentTab}</span>
         <span class="site__origin">${scene.origin}</span>
       </div>
       <button type="button" class="toggle-pill" aria-pressed="${scene.bypassed}">
-        <span>${scene.bypassed ? 'Bypassed' : 'Active'}</span>
+        <span>${scene.bypassed ? p.bypassed : p.active}</span>
       </button>
     </header>
 
     <section class="control control--primary">
       <div class="control__row">
-        <span class="control__label">Volume</span>
-        <output class="control__value" data-boosted="${scene.gain > 100}">${scene.gain}%</output>
+        <span class="control__label">${p.volume}</span>
+        <output class="control__value" data-boosted="${scene.gain > 100}">${pct(locale, scene.gain)}</output>
       </div>
       ${slider(gainPercent)}
       <div class="presets">
         ${PRESETS.map(
-          (p) =>
-            `<button type="button" aria-current="${p === scene.gain}">${p}%</button>`,
+          (preset) =>
+            `<button type="button" aria-current="${preset === scene.gain}">${pct(locale, preset)}</button>`,
         ).join('\n        ')}
       </div>
-      <p class="hint">Above 100% the limiter stays on to prevent distortion.</p>
+      <p class="hint">${p.limiterHint}</p>
     </section>
 
     <section class="control">
       <div class="control__row">
-        <span class="control__label">Balance</span>
+        <span class="control__label">${p.balance}</span>
         <output class="control__value">${balanceLabel}</output>
       </div>
       <div class="balance">
-        <span class="balance__end">Left</span>
+        <span class="balance__end">${p.left}</span>
         <div class="balance__slider">${slider(balancePercent)}</div>
-        <span class="balance__end">Right</span>
+        <span class="balance__end">${p.right}</span>
       </div>
     </section>
 
     <section class="switches">
-      <label class="switch"><input type="checkbox" ${scene.mono ? 'checked' : ''} /><span>Mono</span></label>
-      <label class="switch"><input type="checkbox" ${scene.limiter ? 'checked' : ''} /><span>Limiter</span></label>
-      <label class="switch"><input type="checkbox" ${scene.remember ? 'checked' : ''} /><span>Remember this site</span></label>
+      <label class="switch"><input type="checkbox" ${scene.mono ? 'checked' : ''} /><span>${p.mono}</span></label>
+      <label class="switch"><input type="checkbox" ${scene.limiter ? 'checked' : ''} /><span>${p.limiter}</span></label>
+      <label class="switch"><input type="checkbox" ${scene.remember ? 'checked' : ''} /><span>${p.remember}</span></label>
     </section>
 
     <details class="advanced" ${scene.advanced ? 'open' : ''}>
       <summary class="advanced__summary">
-        <span>Advanced settings</span>
-        ${scene.equalizer.some((b) => b !== 0) ? '<span class="advanced__badge">EQ on</span>' : ''}
+        <span>${p.advanced}</span>
+        ${scene.equalizer.some((b) => b !== 0) ? `<span class="advanced__badge">${p.eqOn}</span>` : ''}
       </summary>
       <div class="advanced__body">
         <div class="control__row">
-          <span class="control__label">Equalizer</span>
-          <button type="button" class="link-button">Reset</button>
+          <span class="control__label">${p.equalizer}</span>
+          <button type="button" class="link-button">${p.reset}</button>
         </div>
         <div class="equalizer">
           ${scene.equalizer.map((v, i) => eqBand(v, EQ_LABELS[i])).join('')}
@@ -384,15 +560,14 @@ function popupPanel(scene) {
 
     <footer class="panel__footer">
       <div class="status-block">
-        <p class="status">${scene.status}</p>
+        <p class="status">${t.scenes[scene.name].status}</p>
       </div>
-      <button type="button" class="link-button">Reset tab</button>
+      <button type="button" class="link-button">${p.resetTab}</button>
     </footer>
 
-    <button type="button" class="link-button link-button--block">Open all settings</button>
+    <button type="button" class="link-button link-button--block">${p.openOptions}</button>
   </main>`;
 }
-
 
 /**
  * Composes one listing image: the popup on the left, what it does on the right.
@@ -433,7 +608,9 @@ function scopePopupCss(css) {
   });
 }
 
-function framedHtml(scene, popupCss, width, height) {
+function framedHtml(scene, popupCss, width, height, locale) {
+  const t = STRINGS[locale];
+  const copy = t.scenes[scene.name];
   const unit = height / 800;
   const px = (n) => `${Math.round(n * unit)}px`;
 
@@ -450,7 +627,7 @@ function framedHtml(scene, popupCss, width, height) {
   // 480-660, so it is shrunk harder to sit inside the canvas with margin.
   const popupScale = scene.kind === 'options' ? unit * 0.62 : unit;
 
-  const features = scene.features
+  const features = copy.features
     .map(
       ([term, rest]) => `
       <li class="feature">
@@ -461,7 +638,7 @@ function framedHtml(scene, popupCss, width, height) {
     .join('');
 
   return `<!doctype html>
-<html lang="en">
+<html lang="${t.htmlLang}">
 <head>
 <meta charset="utf-8" />
 <style>${scopePopupCss(popupCss)}</style>
@@ -602,19 +779,19 @@ function framedHtml(scene, popupCss, width, height) {
 <body>
   <div class="frame-outer">
     <div class="popup-host" data-kind="${scene.kind ?? 'popup'}">${
-      scene.kind === 'options' ? optionsPanel(scene) : popupPanel(scene)
+      scene.kind === 'options' ? optionsPanel(scene, locale) : popupPanel(scene, locale)
     }</div>
   </div>
 
   <div class="copy">
     <div class="brand">
       <img class="brand__icon" src="${scene.iconUrl}" alt="" />
-      <span class="brand__name">Volume Booster Tab</span>
+      <span class="brand__name">${t.title}</span>
     </div>
-    <h1>${scene.heading}</h1>
-    <p class="blurb">${scene.blurb}</p>
+    <h1>${copy.heading}</h1>
+    <p class="blurb">${copy.blurb}</p>
     <ul class="features">${features}</ul>
-    <p class="footnote">No tracking &middot; no network requests &middot; open source</p>
+    <p class="footnote">${t.footnote}</p>
   </div>
 </body>
 </html>`;
@@ -623,18 +800,30 @@ function framedHtml(scene, popupCss, width, height) {
 /* -------------------------------------------------------------------------- */
 
 function parseArgs(argv) {
-  const options = { width: 1280, height: 800, chrome: null };
+  const options = { width: 1280, height: 800, chrome: null, locales: ['en'] };
   for (const arg of argv.slice(2)) {
     if (arg.startsWith('--size=')) {
       const [w, h] = arg.slice('--size='.length).split('x').map(Number);
       if (!w || !h) throw new Error(`Bad --size: ${arg}`);
       options.width = w;
       options.height = h;
+    } else if (arg.startsWith('--locale=')) {
+      const value = arg.slice('--locale='.length);
+      const wanted = value === 'all' ? LOCALES : value.split(',').map((c) => c.trim());
+      const unknown = wanted.filter((code) => !LOCALES.includes(code));
+      if (unknown.length) {
+        throw new Error(
+          `No screenshot text for locale ${unknown.join(', ')}. ` +
+            `Available: ${LOCALES.join(', ')}. Add it to STRINGS in this file.`,
+        );
+      }
+      options.locales = wanted;
     } else if (arg.startsWith('--chrome=')) {
       options.chrome = arg.slice('--chrome='.length);
     } else if (arg === '--help' || arg === '-h') {
       console.log(
-        '\nUsage: node scripts/screenshots.mjs [--size=1280x800] [--chrome=path]\n',
+        '\nUsage: node scripts/screenshots.mjs [--size=1280x800] ' +
+          `[--locale=${LOCALES.join('|')}|all] [--chrome=path]\n`,
       );
       process.exit(0);
     } else {
@@ -649,9 +838,7 @@ async function findChrome(explicit) {
   const { existsSync } = await import('node:fs');
   const found = CHROME_CANDIDATES.find((candidate) => existsSync(candidate));
   if (!found) {
-    throw new Error(
-      'Chrome not found. Pass --chrome=/path/to/chrome, or install Chrome.',
-    );
+    throw new Error('Chrome not found. Pass --chrome=/path/to/chrome, or install Chrome.');
   }
   return found;
 }
@@ -702,24 +889,20 @@ async function main() {
   const chrome = await findChrome(options.chrome);
 
   const popupCss = await readFile(path.join(srcDir, 'popup', 'popup.css'), 'utf8');
-  const optionsCss = await readFile(
-    path.join(srcDir, 'options', 'options.css'),
-    'utf8',
-  );
+  const optionsCss = await readFile(path.join(srcDir, 'options', 'options.css'), 'utf8');
 
   await rm(workDir, { recursive: true, force: true });
   await mkdir(workDir, { recursive: true });
   await mkdir(outDir, { recursive: true });
 
-  console.log(`\nChrome: ${chrome}`);
-  console.log(`Size:   ${options.width}x${options.height}\n`);
+  console.log(`\nChrome:  ${chrome}`);
+  console.log(`Size:    ${options.width}x${options.height}`);
+  console.log(`Locales: ${options.locales.join(', ')}\n`);
 
   // The icon is inlined rather than linked: a file:// page is an opaque origin,
   // so Chrome refuses to load even a sibling file:// image into it, and the
   // listing would ship with a broken-image placeholder.
-  const iconBytes = await readFile(
-    path.join(root, 'public', 'icons', 'icon-128.png'),
-  );
+  const iconBytes = await readFile(path.join(root, 'public', 'icons', 'icon-128.png'));
   const iconUrl = `data:image/png;base64,${iconBytes.toString('base64')}`;
 
   // Render the empty backdrop once, then reuse it behind every scene. Doing it
@@ -727,38 +910,44 @@ async function main() {
   // whole image: headless Chrome's viewport does not match the window it is
   // asked for, and every CSS approach left a band of bare colour at the bottom.
   const groundPath = path.join(workDir, 'ground.html');
-  await writeFile(
-    groundPath,
-    await groundHtml(options.width, options.height),
-    'utf8',
-  );
+  await writeFile(groundPath, await groundHtml(options.width, options.height), 'utf8');
   const groundPng = path.join(workDir, 'ground.png');
   await capture(chrome, groundPath, groundPng, options.width, options.height);
   const groundUrl = `data:image/png;base64,${(await readFile(groundPng)).toString('base64')}`;
 
-  for (const scene of SCENES) {
-    const framePath = path.join(workDir, `${scene.name}-frame.html`);
-    await writeFile(
-      framePath,
-      framedHtml(
-        { ...scene, iconUrl, groundUrl },
-        scene.kind === 'options' ? optionsCss : popupCss,
-        options.width,
-        options.height,
-      ),
-      'utf8',
-    );
+  let written = 0;
+  for (const locale of options.locales) {
+    // English keeps the unsuffixed names the existing listing already points
+    // at; every other language is suffixed so the sets sit side by side in
+    // store-assets/ instead of overwriting each other.
+    const suffix = locale === 'en' ? '' : `-${locale}`;
 
-    const pngPath = path.join(
-      outDir,
-      `${scene.name}-${options.width}x${options.height}.png`,
-    );
-    await capture(chrome, framePath, pngPath, options.width, options.height);
-    console.log(`  ${path.relative(root, pngPath)}`);
+    for (const scene of SCENES) {
+      const framePath = path.join(workDir, `${scene.name}${suffix}-frame.html`);
+      await writeFile(
+        framePath,
+        framedHtml(
+          { ...scene, iconUrl, groundUrl },
+          scene.kind === 'options' ? optionsCss : popupCss,
+          options.width,
+          options.height,
+          locale,
+        ),
+        'utf8',
+      );
+
+      const pngPath = path.join(
+        outDir,
+        `${scene.name}-${options.width}x${options.height}${suffix}.png`,
+      );
+      await capture(chrome, framePath, pngPath, options.width, options.height);
+      console.log(`  ${path.relative(root, pngPath)}`);
+      written += 1;
+    }
   }
 
   await rm(workDir, { recursive: true, force: true });
-  console.log(`\nDone. ${SCENES.length} screenshots in ${path.relative(root, outDir)}\n`);
+  console.log(`\nDone. ${written} screenshots in ${path.relative(root, outDir)}\n`);
 }
 
 main().catch((error) => {

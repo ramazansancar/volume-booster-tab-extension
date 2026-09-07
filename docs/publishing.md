@@ -17,13 +17,13 @@ Upload artifacts land in `dist/<target>-<version>.zip`.
 
 ## Which build goes where
 
-| Store | Upload | Why |
-| --- | --- | --- |
-| **addons.mozilla.org** | `firefox-mv2-<version>.zip` | Supports Firefox 91+, including ESR and Firefox for Android. Mozilla continues to support MV2, so there is no reason to narrow the audience. |
-| **Chrome Web Store** | `chrome-mv3-<version>.zip` | MV3 is mandatory for new Chrome submissions. |
-| **Edge Add-ons** | `edge-mv3-<version>.zip` | Same as Chrome, with Edge metadata. |
-| **Opera add-ons** | `opera-mv2-<version>.zip` | Opera's store still accepts MV2. |
-| **App Store (Safari)** | Not a zip — see [`safari.md`](safari.md) | Requires Xcode conversion and signing. |
+| Store                  | Upload                                   | Why                                                                                                                                          |
+| ---------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **addons.mozilla.org** | `firefox-mv2-<version>.zip`              | Supports Firefox 91+, including ESR and Firefox for Android. Mozilla continues to support MV2, so there is no reason to narrow the audience. |
+| **Chrome Web Store**   | `chrome-mv3-<version>.zip`               | MV3 is mandatory for new Chrome submissions.                                                                                                 |
+| **Edge Add-ons**       | `edge-mv3-<version>.zip`                 | Same as Chrome, with Edge metadata.                                                                                                          |
+| **Opera add-ons**      | `opera-mv2-<version>.zip`                | Opera's store still accepts MV2.                                                                                                             |
+| **App Store (Safari)** | Not a zip — see [`safari.md`](safari.md) | Requires Xcode conversion and signing.                                                                                                       |
 
 `chrome-mv2` and `firefox-mv3` are not for store submission. They exist for users on Chromium forks still running MV2, and as a ready migration path if Mozilla ever retires MV2.
 
@@ -87,17 +87,17 @@ Fill in the dashboard forms as follows.
 
 ### Chrome Web Store → Privacy practices
 
-| Field | Answer |
-| --- | --- |
-| Single purpose description | Amplify and shape the audio of the current browser tab. |
-| Permission: `storage` | Saves the user's own volume and equalizer preferences locally. |
-| Permission: `tabs` | Applies a separate volume to each tab and shows the level on the toolbar icon. |
-| Permission: `activeTab` | Applies the boost to the tab the user is viewing. |
+| Field                       | Answer                                                                                                                   |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Single purpose description  | Amplify and shape the audio of the current browser tab.                                                                  |
+| Permission: `storage`       | Saves the user's own volume and equalizer preferences locally.                                                           |
+| Permission: `tabs`          | Applies a separate volume to each tab and shows the level on the toolbar icon.                                           |
+| Permission: `activeTab`     | Applies the boost to the tab the user is viewing.                                                                        |
 | Permission: `webNavigation` | Enumerates a tab's frames so the boost reaches a player embedded in an iframe. No browsing history is read or collected. |
-| Permission: `tabCapture` | Fallback path for pages whose audio cannot be read directly. |
-| Permission: `offscreen` | Hosts the audio graph for that fallback path. |
-| Host permissions | Media elements can appear on any site, so the boost must be able to reach any page the user opens. |
-| Remote code | **No.** Everything ships in the package. |
+| Permission: `tabCapture`    | Fallback path for pages whose audio cannot be read directly.                                                             |
+| Permission: `offscreen`     | Hosts the audio graph for that fallback path.                                                                            |
+| Host permissions            | Media elements can appear on any site, so the boost must be able to reach any page the user opens.                       |
+| Remote code                 | **No.** Everything ships in the package.                                                                                 |
 
 **Data usage certifications** — tick all three:
 
@@ -110,6 +110,13 @@ Fill in the dashboard forms as follows.
 ### Edge Add-ons
 
 Edge asks the same questions in its **Availability and properties** step. The answers above apply unchanged.
+
+Two fields have no Chrome counterpart:
+
+| Field                         | Answer                                                                                                                                                       |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Category (required)           | **Productivity** — Edge's list has no _Tools_ entry. See [`chrome-submission.md`](chrome-submission.md#category) for why not Accessibility or Entertainment. |
+| Privacy policy URL (required) | `https://github.com/ramazansancar/volume-booster-tab-extension#privacy` — Edge demands the field even when nothing is collected.                             |
 
 ---
 
