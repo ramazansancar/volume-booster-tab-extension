@@ -31,9 +31,7 @@ beyond the user's own settings in local storage.
 ## Notes to reviewer
 
 > [!IMPORTANT]
-> AMO's **Notes to Reviewer** field has a length limit that the full text below exceeds. Paste the **short version** into the form; keep the long one here as the reference.
->
-> If even the short version is truncated, drop `HOW TO TEST` and `EXPECTED LIMITATION` first. The build instructions and permission justifications are required by AMO policy and must stay.
+> The **Notes to Reviewer** field truncates long input silently, without warning or an error. Paste the **compact version** below; the full one is kept here as the reference for what a complete note would say.
 
 ### Full version
 
