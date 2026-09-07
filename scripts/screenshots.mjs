@@ -12,9 +12,12 @@
  * is added to the dependency list for a task run a handful of times per release.
  *
  * Usage:
- *   node scripts/screenshots.mjs            # 1280x800, the Chrome Web Store size
- *   node scripts/screenshots.mjs --size=640x400
+ *   node scripts/screenshots.mjs
  *   node scripts/screenshots.mjs --chrome="C:/path/to/chrome.exe"
+ *
+ * The default 1280x800 is the size to ship. --size accepts anything, but the
+ * smaller 640x400 the stores also allow halves every dimension, which drops the
+ * popup's 13px type to 6px and makes the interface unreadable.
  */
 
 import { execFile } from 'node:child_process';
@@ -192,10 +195,6 @@ function optionsPanel(scene) {
 
   return `  <main class="page">
     <h1 class="page__title">Volume Booster Tab</h1>
-    <p class="page__lead">
-      These settings apply to every new tab. Per-tab volume is controlled from the
-      toolbar popup.
-    </p>
 
     <section class="card">
       <h2 class="card__title">Defaults for new tabs</h2>
@@ -232,9 +231,6 @@ function optionsPanel(scene) {
     <section class="card">
       <h2 class="card__title">Saved sites</h2>
       <p class="card__lead">${scene.savedSites.length} sites saved.</p>
-      <p class="card__lead">
-        Editing a site here applies immediately to any tab already open on it.
-      </p>
       <ul class="origins">${sites}</ul>
     </section>
   </main>`;
@@ -450,7 +446,9 @@ function framedHtml(scene, popupCss, width, height) {
   //
   // The settings page is far taller than the popup, so it is shrunk to fit
   // rather than being allowed to run off both edges of the canvas.
-  const popupScale = scene.kind === 'options' ? unit * 0.72 : unit;
+  // The settings page runs to roughly 1100px of content against the popup's
+  // 480-660, so it is shrunk harder to sit inside the canvas with margin.
+  const popupScale = scene.kind === 'options' ? unit * 0.62 : unit;
 
   const features = scene.features
     .map(
