@@ -253,6 +253,96 @@ Licensed under the GNU Affero General Public License v3.0. Translation
 corrections from native speakers are especially welcome.
 ```
 
+### Turkish listing
+
+> [!NOTE]
+> Store listing text is **not** taken from `_locales/`. The bundled locale
+> files translate the add-on name and the interface; the Summary and
+> Description on the store page live in AMO's own database and are entered per
+> language in the submission form, using the language selector beside each
+> field.
+
+**Summary (tr)**
+
+```text
+Herhangi bir sekmenin sesini %600'e kadar yükseltin. Limitör, 6 bantlı ekolayzer, kanal dengesi ve mono. Her sekme bağımsız. Takip yok, açık kaynak.
+```
+
+**Description (tr)**
+
+```text
+Volume Booster Tab, herhangi bir tarayıcı sekmesinin sesini sayfanın kendi
+izin verdiği seviyenin ötesine çıkarır ve o sesi nasıl şekillendireceğiniz
+üzerinde gerçek kontrol verir.
+
+ÖZELLİKLER
+
+• %0 ile %600 arası yükseltme, ayarlardan %1000'e çıkarılabilir
+• Yükseltirken bozulmayı ve rahatsız edici tepe seslerini önleyen limitör
+• 60 Hz - 10 kHz arası 6 bantlı ekolayzer, Gelişmiş ayarlar altında
+• Tam soldan tam sağa kanal dengesi
+• Tek kulaklıkla dinlemek için mono birleştirme
+• İşlenmiş ve ham sesi anında karşılaştırmak için devre dışı bırakma anahtarı
+• 55 dilde, tamamen çevrilmiş arayüz
+
+HER SEKME BAĞIMSIZ
+
+Çoğu ses yükselticinin atladığı nokta burası. Her sekme kendi ses seviyesini,
+kendi ekolayzer eğrisini, kendi dengesini tutar. Bir sekmede yayını %300'de,
+diğerinde müziği %120'de çalıştırın; birini değiştirmek diğerine dokunmaz.
+
+Araç çubuğu rozeti baktığınız sekmenin seviyesini gösterir, böylece hangi
+sekmelerin yükseltildiğini bir bakışta görürsünüz.
+
+VARSAYILAN OLARAK GEÇİCİ
+
+Yükseltme, sekmeyi kapattığınızda unutulur. Bir video için seçtiğiniz ayar,
+haftalar sonra başka bir sayfada sizi şaşırtamaz.
+
+Bir sitenin her zaman aynı seviyede açılmasını istiyorsanız açılır penceredeki
+"Bu siteyi hatırla" seçeneğini işaretleyin. Ayarlar sayfası kaydettiğiniz tüm
+siteleri listeler, istediğinizi kaldırmanıza izin verir ve yeni sekmelerin
+otomatik hatırlaması için varsayılanı değiştirebilirsiniz.
+
+YAYIN SİTELERİYLE UYUMLU
+
+YouTube ve Twitch gibi siteler, bir sonraki bölüme veya yayına geçtiğinizde
+sayfayı yeniden yüklemeden video oynatıcısını değiştirir. Birçok yükseltici o
+anda sesi kaybeder ve artık uygulamadığı bir seviyeyi göstermeye devam eder.
+Bu eklenti değişimi izler ve ayarlarınızı yeni oynatıcıya yeniden uygular;
+böylece ayarladığınız ses, duyduğunuz ses olarak kalır.
+
+GİZLİLİK
+
+Takip yok. Analitik yok. Hesap yok. Hiçbir türde ağ isteği yok, yazı tipleri
+için bile. Ayarlarınız kendi cihazınızdan hiç çıkmaz.
+
+YAPAMADIKLARI
+
+Netflix, Disney+, Prime Video ve Spotify gibi DRM korumalı servisler seslerini
+eklentilerden tasarım gereği gizler, bu yüzden yükseltilemezler. Bir sayfa
+işlenemediğinde açılır pencere sessizce hiçbir şey yapmak yerine bunu açıkça
+söyler.
+
+about: gibi tarayıcı sayfaları ve eklenti mağazası, bu eklenti dahil her
+eklentiye kapalıdır.
+
+LÜTFEN SORUMLU KULLANIN
+
+Yüksek ses hem işitmenize hem hoparlörlerinize zarar verebilir, özellikle
+kulaklıkla. Limitör %100 üzerinde varsayılan olarak açıktır ve açık
+bırakmalısınız. Ayarlardan tavanı %600'ün üzerine çıkarmak tamamen kendi
+sorumluluğunuzdadır.
+
+AÇIK KAYNAK
+
+Kaynak kodu, hata takibi ve katkı rehberi:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+GNU Affero General Public License v3.0 ile lisanslanmıştır. Anadili Türkçe
+olanlardan gelen çeviri düzeltmeleri özellikle memnuniyetle karşılanır.
+```
+
 **Categories:** Audio & Video (primary), Appearance or Other (secondary)
 
 **Tags:** volume, audio, sound, equalizer, booster, amplifier
