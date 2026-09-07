@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "مضخم الصوت"
+  },
+  "extensionDescription": {
+    "message": "ارفع مستوى الصوت حتى 600% مع محدد ومعادل وتوازن القنوات. لكل تبويب ومفتوح المصدر."
+  },
+  "popupCurrentSite": {
+    "message": "علامة التبويب الحالية"
+  },
+  "popupVolume": {
+    "message": "مستوى الصوت"
+  },
+  "popupBalance": {
+    "message": "التوازن"
+  },
+  "popupBalanceCenter": {
+    "message": "الوسط"
+  },
+  "popupMono": {
+    "message": "أحادي"
+  },
+  "popupLimiter": {
+    "message": "المحدد"
+  },
+  "popupRemember": {
+    "message": "تذكر هذا الموقع"
+  },
+  "popupBypass": {
+    "message": "تجاوز"
+  },
+  "popupBypassTitle": {
+    "message": "Pass audio through untouched"
+  },
+  "popupAdvanced": {
+    "message": "الإعدادات المتقدمة"
+  },
+  "popupEqualizer": {
+    "message": "المعادل"
+  },
+  "popupEqReset": {
+    "message": "إعادة تعيين"
+  },
+  "popupEqOn": {
+    "message": "EQ on"
+  },
+  "popupResetTab": {
+    "message": "إعادة تعيين التبويب"
+  },
+  "popupOpenOptions": {
+    "message": "فتح جميع الإعدادات"
+  },
+  "popupGainHint": {
+    "message": "Above 100% the limiter stays on to prevent distortion."
+  },
+  "popupActive": {
+    "message": "Boost is active on this tab."
+  },
+  "popupIdle": {
+    "message": "No audio playing yet."
+  },
+  "popupTabCapture": {
+    "message": "Using tab capture."
+  },
+  "popupUnavailable": {
+    "message": "This page blocks audio processing."
+  },
+  "popupNoOrigin": {
+    "message": "Browser pages cannot be boosted."
+  },
+  "popupNoTab": {
+    "message": "No active tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "This page"
+  }
+}

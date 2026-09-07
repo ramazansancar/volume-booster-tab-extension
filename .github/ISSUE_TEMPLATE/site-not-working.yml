@@ -1,0 +1,76 @@
+name: A site does not work
+description: Report a website where the volume boost has no effect
+title: 'Site not working: '
+labels: [bug, site-compatibility]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, please check the known limitations in the
+        [README](../blob/main/README.md#-what-works-and-what-does-not).
+
+        DRM sites (Netflix, Disney+, Prime Video, Spotify) deliberately hide
+        their audio from extensions. Those are documented limitations, not bugs.
+
+  - type: input
+    id: url
+    attributes:
+      label: Site URL
+      description: The page where the boost does not work
+      placeholder: https://example.com/watch/123
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: What did the popup status line say?
+      description: The text at the bottom of the extension popup
+      options:
+        - N media sources connected
+        - No audio playing yet
+        - Using tab capture
+        - This page blocks audio processing
+        - Browser pages cannot be boosted
+        - Nothing / the popup was empty
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Firefox
+        - Edge
+        - Opera
+        - Brave
+        - Vivaldi
+        - Safari
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Browser version
+      placeholder: '131.0.6778.86'
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened
+      description: What you expected, and what happened instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors
+      description: Any errors in the page console or the extension's background console
+      render: text

@@ -1,0 +1,29 @@
+name: Translation
+description: Add or correct a translation
+title: 'Translation: '
+labels: [i18n, good first issue]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        All translations live in one table in `scripts/locales.mjs`.
+        You never edit the files under `public/_locales/` — those are generated.
+
+        A pull request is welcome and usually faster than an issue.
+
+  - type: input
+    id: locale
+    attributes:
+      label: Language code
+      description: The locale code, e.g. fi, sv, cs, zh_TW
+      placeholder: fi
+    validations:
+      required: true
+
+  - type: textarea
+    id: strings
+    attributes:
+      label: Translations
+      description: Either the strings themselves, or a note that you plan to open a PR
+    validations:
+      required: true

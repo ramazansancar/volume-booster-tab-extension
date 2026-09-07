@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Lautstärkeverstärker"
+  },
+  "extensionDescription": {
+    "message": "Verstärke die Lautstärke auf bis zu 600 % mit Limiter, Equalizer und Kanalbalance. Pro Tab, quelloffen."
+  },
+  "popupCurrentSite": {
+    "message": "Aktueller Tab"
+  },
+  "popupVolume": {
+    "message": "Lautstärke"
+  },
+  "popupBalance": {
+    "message": "Balance"
+  },
+  "popupBalanceCenter": {
+    "message": "Mitte"
+  },
+  "popupMono": {
+    "message": "Mono"
+  },
+  "popupLimiter": {
+    "message": "Limiter"
+  },
+  "popupRemember": {
+    "message": "Diese Website merken"
+  },
+  "popupBypass": {
+    "message": "Umgehen"
+  },
+  "popupBypassTitle": {
+    "message": "Audio unverändert durchleiten"
+  },
+  "popupAdvanced": {
+    "message": "Erweiterte Einstellungen"
+  },
+  "popupEqualizer": {
+    "message": "Equalizer"
+  },
+  "popupEqReset": {
+    "message": "Zurücksetzen"
+  },
+  "popupEqOn": {
+    "message": "EQ an"
+  },
+  "popupResetTab": {
+    "message": "Tab zurücksetzen"
+  },
+  "popupOpenOptions": {
+    "message": "Alle Einstellungen öffnen"
+  },
+  "popupGainHint": {
+    "message": "Über 100 % bleibt der Limiter aktiv, um Verzerrungen zu vermeiden."
+  },
+  "popupActive": {
+    "message": "Verstärkung ist in diesem Tab aktiv."
+  },
+  "popupIdle": {
+    "message": "Es wird noch kein Ton abgespielt."
+  },
+  "popupTabCapture": {
+    "message": "Tab-Aufnahme wird verwendet."
+  },
+  "popupUnavailable": {
+    "message": "Diese Seite blockiert die Audioverarbeitung."
+  },
+  "popupNoOrigin": {
+    "message": "Browser-Seiten können nicht verstärkt werden."
+  },
+  "popupNoTab": {
+    "message": "Kein aktiver Tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "Diese Seite"
+  }
+}

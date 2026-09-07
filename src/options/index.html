@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Volume Booster — Settings</title>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <main class="page">
+      <h1 class="page__title">Volume Booster</h1>
+      <p class="page__lead">
+        These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup.
+      </p>
+
+      <section class="card">
+        <h2 class="card__title">Defaults for new tabs</h2>
+
+        <div class="field">
+          <label class="field__label" for="default-gain">Starting volume</label>
+          <div class="field__control">
+            <input type="range" id="default-gain" min="0" max="600" step="5" value="100" />
+            <output id="default-gain-value">100%</output>
+          </div>
+          <p class="field__hint">
+            Applied to tabs that have no saved settings of their own.
+          </p>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="max-gain">Maximum volume</label>
+          <div class="field__control">
+            <input type="range" id="max-gain" min="100" max="1000" step="50" value="600" />
+            <output id="max-gain-value">600%</output>
+          </div>
+          <p class="field__hint field__hint--warn">
+            Raising this ceiling can damage speakers and hearing. Keep the limiter on.
+          </p>
+        </div>
+
+        <div class="field">
+          <span class="field__label">When a tab closes</span>
+          <label class="radio">
+            <input type="radio" name="persistence" value="session" checked />
+            <span>
+              <strong>Forget the setting</strong>
+              <small>Recommended. Every tab starts from the default volume.</small>
+            </span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="persistence" value="origin" />
+            <span>
+              <strong>Remember it for that site</strong>
+              <small>Revisiting the site restores the volume you last used there.</small>
+            </span>
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="card__title">Safety</h2>
+
+        <label class="switch">
+          <input type="checkbox" id="auto-limiter" checked />
+          <span>
+            <strong>Keep the limiter on above 100%</strong>
+            <small>Prevents clipping and sudden loud peaks when boosting.</small>
+          </span>
+        </label>
+
+        <label class="switch">
+          <input type="checkbox" id="tab-capture" checked />
+          <span>
+            <strong>Allow tab capture fallback</strong>
+            <small>
+              Chromium only. Lets the extension boost pages whose audio cannot be read directly,
+              at the cost of a recording indicator on the tab.
+            </small>
+          </span>
+        </label>
+      </section>
+
+      <section class="card">
+        <h2 class="card__title">Saved sites</h2>
+        <p class="card__lead" id="origins-summary">No sites saved yet.</p>
+        <ul class="origins" id="origins"></ul>
+        <button type="button" class="button button--danger" id="clear-origins">
+          Clear all saved sites
+        </button>
+      </section>
+
+      <footer class="page__footer">
+        <p id="save-status" role="status" class="save-status"></p>
+        <button type="button" class="button" id="restore-defaults">Restore defaults</button>
+      </footer>
+    </main>
+
+    <script type="module" src="./options.js"></script>
+  </body>
+</html>

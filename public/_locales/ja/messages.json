@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "音量ブースター"
+  },
+  "extensionDescription": {
+    "message": "リミッター、イコライザー、チャンネルバランスで音量を最大600%まで増幅。タブ単位、オープンソース。"
+  },
+  "popupCurrentSite": {
+    "message": "現在のタブ"
+  },
+  "popupVolume": {
+    "message": "音量"
+  },
+  "popupBalance": {
+    "message": "バランス"
+  },
+  "popupBalanceCenter": {
+    "message": "中央"
+  },
+  "popupMono": {
+    "message": "モノラル"
+  },
+  "popupLimiter": {
+    "message": "リミッター"
+  },
+  "popupRemember": {
+    "message": "このサイトを記憶"
+  },
+  "popupBypass": {
+    "message": "バイパス"
+  },
+  "popupBypassTitle": {
+    "message": "音声を処理せずに通す"
+  },
+  "popupAdvanced": {
+    "message": "詳細設定"
+  },
+  "popupEqualizer": {
+    "message": "イコライザー"
+  },
+  "popupEqReset": {
+    "message": "リセット"
+  },
+  "popupEqOn": {
+    "message": "EQ オン"
+  },
+  "popupResetTab": {
+    "message": "タブをリセット"
+  },
+  "popupOpenOptions": {
+    "message": "すべての設定を開く"
+  },
+  "popupGainHint": {
+    "message": "100% を超えると歪みを防ぐためリミッターが有効のままになります。"
+  },
+  "popupActive": {
+    "message": "このタブでブーストが有効です。"
+  },
+  "popupIdle": {
+    "message": "まだ音声が再生されていません。"
+  },
+  "popupTabCapture": {
+    "message": "タブキャプチャを使用中。"
+  },
+  "popupUnavailable": {
+    "message": "このページは音声処理をブロックしています。"
+  },
+  "popupNoOrigin": {
+    "message": "ブラウザのページは増幅できません。"
+  },
+  "popupNoTab": {
+    "message": "アクティブなタブがありません。"
+  },
+  "popupUnsupportedPage": {
+    "message": "このページ"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "音量增强器"
+  },
+  "extensionDescription": {
+    "message": "通过限制器、均衡器和声道平衡将音量提升至 600%。按标签页独立设置，开源。"
+  },
+  "popupCurrentSite": {
+    "message": "当前标签页"
+  },
+  "popupVolume": {
+    "message": "音量"
+  },
+  "popupBalance": {
+    "message": "声道平衡"
+  },
+  "popupBalanceCenter": {
+    "message": "居中"
+  },
+  "popupMono": {
+    "message": "单声道"
+  },
+  "popupLimiter": {
+    "message": "限制器"
+  },
+  "popupRemember": {
+    "message": "记住此网站"
+  },
+  "popupBypass": {
+    "message": "旁路"
+  },
+  "popupBypassTitle": {
+    "message": "不处理直接输出音频"
+  },
+  "popupAdvanced": {
+    "message": "高级设置"
+  },
+  "popupEqualizer": {
+    "message": "均衡器"
+  },
+  "popupEqReset": {
+    "message": "重置"
+  },
+  "popupEqOn": {
+    "message": "EQ 已开启"
+  },
+  "popupResetTab": {
+    "message": "重置标签页"
+  },
+  "popupOpenOptions": {
+    "message": "打开全部设置"
+  },
+  "popupGainHint": {
+    "message": "超过 100% 时限制器保持开启以防止失真。"
+  },
+  "popupActive": {
+    "message": "此标签页已启用增强。"
+  },
+  "popupIdle": {
+    "message": "尚未播放音频。"
+  },
+  "popupTabCapture": {
+    "message": "正在使用标签页捕获。"
+  },
+  "popupUnavailable": {
+    "message": "此页面阻止音频处理。"
+  },
+  "popupNoOrigin": {
+    "message": "无法增强浏览器内部页面。"
+  },
+  "popupNoTab": {
+    "message": "没有活动标签页。"
+  },
+  "popupUnsupportedPage": {
+    "message": "此页面"
+  }
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Volume Booster</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="panel__header">
+        <div class="site">
+          <span class="site__label" data-i18n="popupCurrentSite">Current tab</span>
+          <span class="site__origin" id="origin">&mdash;</span>
+        </div>
+        <button
+          type="button"
+          id="bypass"
+          class="toggle-pill"
+          aria-pressed="false"
+          data-i18n-title="popupBypassTitle"
+          title="Bypass all processing"
+        >
+          <span data-i18n="popupBypass">Bypass</span>
+        </button>
+      </header>
+
+      <section class="control control--primary">
+        <div class="control__row">
+          <label class="control__label" for="gain" data-i18n="popupVolume">Volume</label>
+          <output class="control__value" id="gain-value" for="gain">100%</output>
+        </div>
+        <input
+          type="range"
+          id="gain"
+          min="0"
+          max="600"
+          step="5"
+          value="100"
+          list="gain-ticks"
+          aria-describedby="gain-hint"
+        />
+        <datalist id="gain-ticks">
+          <option value="100"></option>
+          <option value="200"></option>
+          <option value="400"></option>
+          <option value="600"></option>
+        </datalist>
+        <div class="presets" role="group" aria-label="Volume presets">
+          <button type="button" data-preset="100">100%</button>
+          <button type="button" data-preset="150">150%</button>
+          <button type="button" data-preset="200">200%</button>
+          <button type="button" data-preset="300">300%</button>
+          <button type="button" data-preset="500">500%</button>
+        </div>
+        <p class="hint" id="gain-hint" data-i18n="popupGainHint">
+          Above 100% the limiter stays on to prevent distortion.
+        </p>
+      </section>
+
+      <section class="control">
+        <div class="control__row">
+          <label class="control__label" for="balance" data-i18n="popupBalance">Balance</label>
+          <output class="control__value" id="balance-value" for="balance">Center</output>
+        </div>
+        <input type="range" id="balance" min="-100" max="100" step="5" value="0" />
+      </section>
+
+      <section class="switches">
+        <label class="switch">
+          <input type="checkbox" id="mono" />
+          <span data-i18n="popupMono">Mono</span>
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="limiter" checked />
+          <span data-i18n="popupLimiter">Limiter</span>
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="remember" />
+          <span data-i18n="popupRemember">Remember this site</span>
+        </label>
+      </section>
+
+      <details class="advanced" id="advanced">
+        <summary class="advanced__summary">
+          <span data-i18n="popupAdvanced">Advanced settings</span>
+          <span class="advanced__badge" id="eq-badge" hidden data-i18n="popupEqOn">EQ on</span>
+        </summary>
+
+        <div class="advanced__body">
+          <div class="control__row">
+            <span class="control__label" data-i18n="popupEqualizer">Equalizer</span>
+            <button type="button" class="link-button" id="eq-reset" data-i18n="popupEqReset">
+              Reset
+            </button>
+          </div>
+          <div class="equalizer" id="equalizer"></div>
+
+          <div class="advanced__footer">
+            <button type="button" class="link-button" id="options-link" data-i18n="popupOpenOptions">
+              Open all settings
+            </button>
+          </div>
+        </div>
+      </details>
+
+      <footer class="panel__footer">
+        <p class="status" id="status" role="status"></p>
+        <button type="button" class="link-button" id="reset" data-i18n="popupResetTab">
+          Reset tab
+        </button>
+      </footer>
+    </main>
+
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>

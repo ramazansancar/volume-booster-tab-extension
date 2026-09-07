@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Amplificador de volumen"
+  },
+  "extensionDescription": {
+    "message": "Aumenta el volumen hasta un 600 % con limitador, ecualizador y balance de canales. Por pestaña y de código abierto."
+  },
+  "popupCurrentSite": {
+    "message": "Pestaña actual"
+  },
+  "popupVolume": {
+    "message": "Volumen"
+  },
+  "popupBalance": {
+    "message": "Balance"
+  },
+  "popupBalanceCenter": {
+    "message": "Centro"
+  },
+  "popupMono": {
+    "message": "Mono"
+  },
+  "popupLimiter": {
+    "message": "Limitador"
+  },
+  "popupRemember": {
+    "message": "Recordar este sitio"
+  },
+  "popupBypass": {
+    "message": "Omitir"
+  },
+  "popupBypassTitle": {
+    "message": "Dejar el audio sin procesar"
+  },
+  "popupAdvanced": {
+    "message": "Configuración avanzada"
+  },
+  "popupEqualizer": {
+    "message": "Ecualizador"
+  },
+  "popupEqReset": {
+    "message": "Restablecer"
+  },
+  "popupEqOn": {
+    "message": "EQ activo"
+  },
+  "popupResetTab": {
+    "message": "Restablecer pestaña"
+  },
+  "popupOpenOptions": {
+    "message": "Abrir todos los ajustes"
+  },
+  "popupGainHint": {
+    "message": "Por encima del 100 % el limitador permanece activo para evitar distorsión."
+  },
+  "popupActive": {
+    "message": "El aumento está activo en esta pestaña."
+  },
+  "popupIdle": {
+    "message": "Aún no se reproduce audio."
+  },
+  "popupTabCapture": {
+    "message": "Usando captura de pestaña."
+  },
+  "popupUnavailable": {
+    "message": "Esta página bloquea el procesamiento de audio."
+  },
+  "popupNoOrigin": {
+    "message": "Las páginas del navegador no se pueden amplificar."
+  },
+  "popupNoTab": {
+    "message": "No hay pestaña activa."
+  },
+  "popupUnsupportedPage": {
+    "message": "Esta página"
+  }
+}

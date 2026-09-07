@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Підсилювач гучності"
+  },
+  "extensionDescription": {
+    "message": "Збільште гучність до 600% з лімітером, еквалайзером і балансом каналів. Для кожної вкладки, відкритий код."
+  },
+  "popupCurrentSite": {
+    "message": "Поточна вкладка"
+  },
+  "popupVolume": {
+    "message": "Гучність"
+  },
+  "popupBalance": {
+    "message": "Баланс"
+  },
+  "popupBalanceCenter": {
+    "message": "Центр"
+  },
+  "popupMono": {
+    "message": "Моно"
+  },
+  "popupLimiter": {
+    "message": "Лімітер"
+  },
+  "popupRemember": {
+    "message": "Запам’ятати цей сайт"
+  },
+  "popupBypass": {
+    "message": "Обхід"
+  },
+  "popupBypassTitle": {
+    "message": "Pass audio through untouched"
+  },
+  "popupAdvanced": {
+    "message": "Розширені налаштування"
+  },
+  "popupEqualizer": {
+    "message": "Еквалайзер"
+  },
+  "popupEqReset": {
+    "message": "Скинути"
+  },
+  "popupEqOn": {
+    "message": "EQ on"
+  },
+  "popupResetTab": {
+    "message": "Скинути вкладку"
+  },
+  "popupOpenOptions": {
+    "message": "Відкрити всі налаштування"
+  },
+  "popupGainHint": {
+    "message": "Понад 100% лімітер залишається увімкненим, щоб уникнути спотворень."
+  },
+  "popupActive": {
+    "message": "Boost is active on this tab."
+  },
+  "popupIdle": {
+    "message": "No audio playing yet."
+  },
+  "popupTabCapture": {
+    "message": "Using tab capture."
+  },
+  "popupUnavailable": {
+    "message": "This page blocks audio processing."
+  },
+  "popupNoOrigin": {
+    "message": "Browser pages cannot be boosted."
+  },
+  "popupNoTab": {
+    "message": "No active tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "This page"
+  }
+}

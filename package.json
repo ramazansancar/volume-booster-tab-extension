@@ -1,0 +1,63 @@
+{
+  "name": "volume-booster-extension",
+  "version": "0.1.0",
+  "description": "Cross-browser volume booster with gain, limiter, equalizer and channel balance. Supports Manifest V2 and V3.",
+  "license": "LicenseRef-PolyForm-Noncommercial-1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node scripts/build.mjs --target=chrome-mv3 --watch --dev",
+    "dev:firefox": "node scripts/build.mjs --target=firefox-mv2 --watch --dev",
+    "build": "node scripts/build.mjs --all",
+    "build:chrome": "node scripts/build.mjs --target=chrome-mv3,chrome-mv2",
+    "build:firefox": "node scripts/build.mjs --target=firefox-mv3,firefox-mv2",
+    "build:edge": "node scripts/build.mjs --target=edge-mv3",
+    "build:opera": "node scripts/build.mjs --target=opera-mv2",
+    "build:safari": "node scripts/build.mjs --target=safari-mv3",
+    "package": "node scripts/build.mjs --all --zip",
+    "icons": "node scripts/icons.mjs",
+    "locales": "node scripts/locales.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.mjs",
+    "lint:fix": "eslint . --ext .ts,.mjs --fix",
+    "format": "prettier --write \"**/*.{ts,mjs,json,css,html,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,mjs,json,css,html,md}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "node -e \"import('node:fs').then(fs=>fs.rmSync('dist',{recursive:true,force:true}))\""
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "@types/firefox-webext-browser": "^120.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "esbuild": "^0.24.0",
+    "eslint": "^8.57.1",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramazansancar/volume-booster-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ramazansancar/volume-booster-extension/issues"
+  },
+  "homepage": "https://github.com/ramazansancar/volume-booster-extension#readme",
+  "author": "Ramazan Sancar (https://github.com/ramazansancar)",
+  "keywords": [
+    "browser-extension",
+    "volume-booster",
+    "web-audio",
+    "chrome-extension",
+    "firefox-addon",
+    "manifest-v3",
+    "manifest-v2",
+    "equalizer"
+  ]
+}

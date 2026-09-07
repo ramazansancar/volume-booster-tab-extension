@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Amplificateur de volume"
+  },
+  "extensionDescription": {
+    "message": "Augmentez le volume jusqu’à 600 % avec limiteur, égaliseur et balance. Par onglet et open source."
+  },
+  "popupCurrentSite": {
+    "message": "Onglet actuel"
+  },
+  "popupVolume": {
+    "message": "Volume"
+  },
+  "popupBalance": {
+    "message": "Balance"
+  },
+  "popupBalanceCenter": {
+    "message": "Centre"
+  },
+  "popupMono": {
+    "message": "Mono"
+  },
+  "popupLimiter": {
+    "message": "Limiteur"
+  },
+  "popupRemember": {
+    "message": "Mémoriser ce site"
+  },
+  "popupBypass": {
+    "message": "Contourner"
+  },
+  "popupBypassTitle": {
+    "message": "Laisser le son inchangé"
+  },
+  "popupAdvanced": {
+    "message": "Paramètres avancés"
+  },
+  "popupEqualizer": {
+    "message": "Égaliseur"
+  },
+  "popupEqReset": {
+    "message": "Réinitialiser"
+  },
+  "popupEqOn": {
+    "message": "EQ activé"
+  },
+  "popupResetTab": {
+    "message": "Réinitialiser l’onglet"
+  },
+  "popupOpenOptions": {
+    "message": "Ouvrir tous les paramètres"
+  },
+  "popupGainHint": {
+    "message": "Au-delà de 100 %, le limiteur reste actif pour éviter la distorsion."
+  },
+  "popupActive": {
+    "message": "L’amplification est active sur cet onglet."
+  },
+  "popupIdle": {
+    "message": "Aucun son en cours de lecture."
+  },
+  "popupTabCapture": {
+    "message": "Capture d’onglet utilisée."
+  },
+  "popupUnavailable": {
+    "message": "Cette page bloque le traitement audio."
+  },
+  "popupNoOrigin": {
+    "message": "Les pages du navigateur ne peuvent pas être amplifiées."
+  },
+  "popupNoTab": {
+    "message": "Aucun onglet actif."
+  },
+  "popupUnsupportedPage": {
+    "message": "Cette page"
+  }
+}

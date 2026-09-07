@@ -1,0 +1,398 @@
+import { AudioEngine } from '@/lib/audio-engine';
+import { ext } from '@/lib/browser';
+import { neutralSettings } from '@/lib/defaults';
+import { sanitizeSettings } from '@/lib/validate';
+import type {
+  AudioPathway,
+  AudioSettings,
+  BackgroundToContentMessage,
+  ContentToBackgroundMessage,
+} from '@/types';
+
+/**
+ * Content script: finds media elements on the page, routes them through the
+ * shared AudioEngine, and keeps the background informed about what it can see.
+ *
+ * A single AudioContext and a single engine serve the whole page. Every media
+ * element gets its own MediaElementAudioSourceNode (the spec allows exactly one
+ * per element, for the lifetime of that element) feeding into that shared
+ * engine, so the user's settings apply to whatever is currently playing.
+ *
+ * The hard part is single-page apps. On Netflix, YouTube and Twitch, moving to
+ * the next episode or stream does not reload the document: the old <video> is
+ * torn out of the DOM and a new one is inserted, often before it has any media
+ * attached to it. A naive implementation attaches once, never notices the
+ * swap, and leaves the user with a UI that claims 400 % while the new element
+ * plays at 100 %. Everything below exists to close that gap:
+ *
+ *   - new elements are discovered through a MutationObserver *and* through
+ *     capture-phase media events, because some players create their element
+ *     inside a shadow root the observer cannot see;
+ *   - settings are re-applied on every attach, not just on the first one;
+ *   - a failed attach is retried with backoff instead of being written off,
+ *     since players routinely insert an empty <video> and set .src later;
+ *   - removed elements are dropped from the live set so the reported count and
+ *     the active pathway always describe what is really playing.
+ */
+
+let context: AudioContext | null = null;
+let engine: AudioEngine | null = null;
+let settings: AudioSettings = neutralSettings();
+let pathway: AudioPathway = 'idle';
+
+/** How many times a single element may fail to attach before we give up. */
+const MAX_ATTACH_ATTEMPTS = 6;
+/** Backoff schedule in milliseconds, indexed by attempt number. */
+const RETRY_DELAYS_MS = [150, 400, 900, 1800, 3000, 5000];
+
+interface Attachment {
+  /** The source node, kept so the element is never wrapped twice. */
+  source: MediaElementAudioSourceNode | null;
+  attempts: number;
+  timer: ReturnType<typeof setTimeout> | null;
+  /** True once the element is successfully routed into the engine. */
+  connected: boolean;
+}
+
+/**
+ * Bookkeeping per element. A Map (not a WeakSet) is required because we have to
+ * re-read an element's attempt count on retry, and prune entries when the
+ * element leaves the DOM. Entries are removed explicitly in `forget`, so the
+ * map does not grow without bound on long-lived SPA sessions.
+ */
+const attachments = new Map<HTMLMediaElement, Attachment>();
+
+function post(message: ContentToBackgroundMessage): void {
+  try {
+    void ext.runtime.sendMessage(message);
+  } catch {
+    // The background may be asleep or the extension reloading; the next probe
+    // resynchronises us.
+  }
+}
+
+function connectedCount(): number {
+  let count = 0;
+  for (const attachment of attachments.values()) {
+    if (attachment.connected) count += 1;
+  }
+  return count;
+}
+
+function reportCount(): void {
+  post({ type: 'content:media-count', count: connectedCount() });
+}
+
+function setPathway(next: AudioPathway, reason?: string): void {
+  if (pathway === next) return;
+  pathway = next;
+  post(
+    reason
+      ? { type: 'content:pathway', pathway: next, reason }
+      : { type: 'content:pathway', pathway: next },
+  );
+}
+
+/** True when the settings would leave the audio untouched. */
+function isNeutral(value: AudioSettings): boolean {
+  return (
+    value.bypassed ||
+    (value.gain === 1 &&
+      !value.mono &&
+      value.balance === 0 &&
+      value.equalizer.every((band) => band === 0))
+  );
+}
+
+function ensureEngine(): AudioEngine | null {
+  if (engine) return engine;
+  try {
+    const Ctor =
+      window.AudioContext ??
+      (window as unknown as { webkitAudioContext?: typeof AudioContext })
+        .webkitAudioContext;
+    if (!Ctor) {
+      setPathway('unavailable', 'Web Audio API is not available on this page');
+      return null;
+    }
+    context = new Ctor();
+    engine = new AudioEngine(context);
+    engine.apply(settings);
+    return engine;
+  } catch (error) {
+    setPathway(
+      'unavailable',
+      error instanceof Error ? error.message : 'AudioContext creation failed',
+    );
+    return null;
+  }
+}
+
+/**
+ * Attempts to route one media element into the engine.
+ *
+ * `createMediaElementSource` throws for cross-origin media served without CORS
+ * headers, and it can throw on an element that has no media attached yet. The
+ * second case is temporary and extremely common in SPA players, so a failure
+ * schedules a retry rather than blacklisting the element. Only after
+ * MAX_ATTACH_ATTEMPTS do we conclude the page genuinely cannot be boosted.
+ */
+function attach(element: HTMLMediaElement, immediate = false): void {
+  let attachment = attachments.get(element);
+  if (attachment?.connected) {
+    // Already routed. Re-apply so a settings change made while this element was
+    // being swapped in is not lost.
+    engine?.apply(settings);
+    return;
+  }
+  if (!attachment) {
+    attachment = { source: null, attempts: 0, timer: null, connected: false };
+    attachments.set(element, attachment);
+  }
+  if (attachment.timer !== null && !immediate) return;
+  if (attachment.timer !== null) {
+    clearTimeout(attachment.timer);
+    attachment.timer = null;
+  }
+
+  const activeEngine = ensureEngine();
+  if (!activeEngine || !context) return;
+
+  try {
+    // An element that already has a source node from an earlier attempt must be
+    // reused; creating a second one for the same element throws InvalidStateError.
+    const source =
+      attachment.source ?? context.createMediaElementSource(element);
+    attachment.source = source;
+    source.connect(activeEngine.inputNode);
+    attachment.connected = true;
+    attachment.attempts = 0;
+
+    // Re-apply on every successful attach. This is the line that keeps the next
+    // episode at the volume the user chose for the previous one.
+    activeEngine.apply(settings);
+    void activeEngine.resume();
+
+    setPathway('media-element');
+    reportCount();
+  } catch (error) {
+    attachment.attempts += 1;
+    if (attachment.attempts >= MAX_ATTACH_ATTEMPTS) {
+      setPathway(
+        'unavailable',
+        error instanceof Error
+          ? error.message
+          : 'Media element could not be routed',
+      );
+      return;
+    }
+    const delay =
+      RETRY_DELAYS_MS[attachment.attempts - 1] ??
+      RETRY_DELAYS_MS[RETRY_DELAYS_MS.length - 1] ??
+      1000;
+    attachment.timer = setTimeout(() => {
+      attachment.timer = null;
+      attach(element, true);
+    }, delay);
+  }
+}
+
+/** Drops an element that has left the DOM, releasing its bookkeeping entry. */
+function forget(element: HTMLMediaElement): void {
+  const attachment = attachments.get(element);
+  if (!attachment) return;
+  if (attachment.timer !== null) clearTimeout(attachment.timer);
+  try {
+    attachment.source?.disconnect();
+  } catch {
+    // Already disconnected.
+  }
+  attachments.delete(element);
+  reportCount();
+
+  // With nothing connected left, stop claiming the media-element pathway so the
+  // popup can tell the user the page is not currently being boosted.
+  if (connectedCount() === 0 && pathway === 'media-element') {
+    setPathway('idle');
+  }
+}
+
+/**
+ * Collects media elements from a subtree, descending into open shadow roots.
+ * Several large video sites render their player inside a shadow DOM, where a
+ * plain querySelectorAll finds nothing.
+ */
+function collectMedia(root: ParentNode, found: HTMLMediaElement[] = []): HTMLMediaElement[] {
+  for (const element of root.querySelectorAll<HTMLElement>('video, audio, *')) {
+    if (element instanceof HTMLMediaElement) {
+      found.push(element);
+    } else if (element.shadowRoot) {
+      collectMedia(element.shadowRoot, found);
+    }
+  }
+  return found;
+}
+
+function scan(root: ParentNode = document): void {
+  for (const element of collectMedia(root)) attach(element);
+}
+
+/**
+ * Watches for DOM changes. Additions are attached; removals are forgotten so a
+ * player that swaps its <video> between episodes does not leave stale state
+ * behind.
+ */
+function observe(): void {
+  const observer = new MutationObserver((records) => {
+    for (const record of records) {
+      for (const node of record.addedNodes) {
+        if (node instanceof HTMLMediaElement) attach(node);
+        else if (node instanceof Element) scan(node);
+      }
+      for (const node of record.removedNodes) {
+        if (node instanceof HTMLMediaElement) forget(node);
+        else if (node instanceof Element) {
+          for (const media of collectMedia(node)) forget(media);
+        }
+      }
+    }
+  });
+  observer.observe(document.documentElement, { childList: true, subtree: true });
+}
+
+/**
+ * Media events are the safety net for everything the observer misses: elements
+ * created inside closed shadow roots, elements that exist from the start but
+ * only receive a source later, and players that reuse one element while
+ * swapping its `src` between episodes.
+ *
+ * These listeners are registered in the capture phase on the document so they
+ * fire for events that do not bubble (`play`, `loadedmetadata` and friends).
+ */
+function bindMediaEvents(): void {
+  const handler = (event: Event): void => {
+    const target = event.target;
+    if (target instanceof HTMLMediaElement) attach(target, true);
+  };
+  for (const type of [
+    'loadstart',
+    'loadedmetadata',
+    'canplay',
+    'play',
+    'playing',
+    'volumechange',
+  ] as const) {
+    document.addEventListener(type, handler, { capture: true, passive: true });
+  }
+}
+
+/**
+ * Browsers start an AudioContext suspended until the user interacts with the
+ * page, so retry the resume on the first gestures and re-scan at the same time:
+ * a click on "next episode" is exactly when a new element tends to appear.
+ */
+function bindGestureResume(): void {
+  const resume = (): void => {
+    void engine?.resume();
+    if (!isNeutral(settings)) scan();
+  };
+  for (const event of ['pointerdown', 'keydown'] as const) {
+    document.addEventListener(event, resume, { capture: true, passive: true });
+  }
+}
+
+/**
+ * SPA route changes are the other reliable signal that the player is about to
+ * be rebuilt. Patching the history API lets us re-scan on navigations that
+ * never touch the network.
+ */
+function bindHistoryEvents(): void {
+  const rescan = (): void => {
+    // The new element is usually inserted a tick or two after the URL changes.
+    setTimeout(() => scan(), 0);
+    setTimeout(() => scan(), 500);
+  };
+
+  window.addEventListener('popstate', rescan);
+  window.addEventListener('hashchange', rescan);
+
+  for (const method of ['pushState', 'replaceState'] as const) {
+    const original = history[method];
+    history[method] = function patched(
+      this: History,
+      ...args: Parameters<History['pushState']>
+    ): void {
+      original.apply(this, args);
+      rescan();
+    };
+  }
+}
+
+/**
+ * Last-resort periodic sweep. Some players build their element in ways none of
+ * the signals above can see; a slow poll costs almost nothing and guarantees we
+ * eventually notice. It only runs while the user actually has a boost applied.
+ */
+function startSweep(): void {
+  setInterval(() => {
+    if (isNeutral(settings)) return;
+    if (document.hidden) return;
+    scan();
+  }, 3000);
+}
+
+ext.runtime.onMessage.addListener(
+  (message: BackgroundToContentMessage, _sender, sendResponse) => {
+    switch (message.type) {
+      case 'bg:apply-settings': {
+        settings = sanitizeSettings(message.settings);
+        // Only spin up an AudioContext once the user actually asks for a
+        // change, so untouched pages pay no audio-processing cost at all.
+        if (engine || !isNeutral(settings)) {
+          ensureEngine();
+          scan();
+          engine?.apply(settings);
+          void engine?.resume();
+        }
+        sendResponse({ ok: true, pathway, count: connectedCount() });
+        return true;
+      }
+      case 'bg:probe': {
+        // The popup opening is a good moment to re-check reality, since the
+        // user is about to be shown a number that has to be true.
+        scan();
+        engine?.apply(settings);
+        sendResponse({ ok: true, pathway, count: connectedCount() });
+        return true;
+      }
+      case 'bg:teardown': {
+        for (const element of [...attachments.keys()]) forget(element);
+        engine?.dispose();
+        engine = null;
+        void context?.close().catch(() => undefined);
+        context = null;
+        setPathway('idle');
+        sendResponse({ ok: true });
+        return true;
+      }
+      default:
+        return false;
+    }
+  },
+);
+
+function boot(): void {
+  post({ type: 'content:ready', origin: window.location.origin });
+  scan();
+  observe();
+  bindMediaEvents();
+  bindGestureResume();
+  bindHistoryEvents();
+  startSweep();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', boot, { once: true });
+} else {
+  boot();
+}

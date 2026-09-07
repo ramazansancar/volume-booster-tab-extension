@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Amplificatore volume"
+  },
+  "extensionDescription": {
+    "message": "Aumenta il volume fino al 600% con limitatore, equalizzatore e bilanciamento. Per scheda e open source."
+  },
+  "popupCurrentSite": {
+    "message": "Scheda corrente"
+  },
+  "popupVolume": {
+    "message": "Volume"
+  },
+  "popupBalance": {
+    "message": "Bilanciamento"
+  },
+  "popupBalanceCenter": {
+    "message": "Centro"
+  },
+  "popupMono": {
+    "message": "Mono"
+  },
+  "popupLimiter": {
+    "message": "Limitatore"
+  },
+  "popupRemember": {
+    "message": "Ricorda questo sito"
+  },
+  "popupBypass": {
+    "message": "Bypass"
+  },
+  "popupBypassTitle": {
+    "message": "Pass audio through untouched"
+  },
+  "popupAdvanced": {
+    "message": "Impostazioni avanzate"
+  },
+  "popupEqualizer": {
+    "message": "Equalizzatore"
+  },
+  "popupEqReset": {
+    "message": "Reimposta"
+  },
+  "popupEqOn": {
+    "message": "EQ on"
+  },
+  "popupResetTab": {
+    "message": "Reimposta scheda"
+  },
+  "popupOpenOptions": {
+    "message": "Apri tutte le impostazioni"
+  },
+  "popupGainHint": {
+    "message": "Oltre il 100% il limitatore resta attivo per evitare distorsioni."
+  },
+  "popupActive": {
+    "message": "Boost is active on this tab."
+  },
+  "popupIdle": {
+    "message": "No audio playing yet."
+  },
+  "popupTabCapture": {
+    "message": "Using tab capture."
+  },
+  "popupUnavailable": {
+    "message": "This page blocks audio processing."
+  },
+  "popupNoOrigin": {
+    "message": "Browser pages cannot be boosted."
+  },
+  "popupNoTab": {
+    "message": "No active tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "This page"
+  }
+}

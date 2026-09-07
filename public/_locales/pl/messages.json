@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Wzmacniacz głośności"
+  },
+  "extensionDescription": {
+    "message": "Zwiększ głośność do 600% z limiterem, korektorem i balansem kanałów. Osobno dla każdej karty, open source."
+  },
+  "popupCurrentSite": {
+    "message": "Bieżąca karta"
+  },
+  "popupVolume": {
+    "message": "Głośność"
+  },
+  "popupBalance": {
+    "message": "Balans"
+  },
+  "popupBalanceCenter": {
+    "message": "Środek"
+  },
+  "popupMono": {
+    "message": "Mono"
+  },
+  "popupLimiter": {
+    "message": "Limiter"
+  },
+  "popupRemember": {
+    "message": "Zapamiętaj tę stronę"
+  },
+  "popupBypass": {
+    "message": "Pomiń"
+  },
+  "popupBypassTitle": {
+    "message": "Pass audio through untouched"
+  },
+  "popupAdvanced": {
+    "message": "Ustawienia zaawansowane"
+  },
+  "popupEqualizer": {
+    "message": "Korektor"
+  },
+  "popupEqReset": {
+    "message": "Resetuj"
+  },
+  "popupEqOn": {
+    "message": "EQ on"
+  },
+  "popupResetTab": {
+    "message": "Resetuj kartę"
+  },
+  "popupOpenOptions": {
+    "message": "Otwórz wszystkie ustawienia"
+  },
+  "popupGainHint": {
+    "message": "Powyżej 100% limiter pozostaje włączony, aby zapobiec zniekształceniom."
+  },
+  "popupActive": {
+    "message": "Boost is active on this tab."
+  },
+  "popupIdle": {
+    "message": "No audio playing yet."
+  },
+  "popupTabCapture": {
+    "message": "Using tab capture."
+  },
+  "popupUnavailable": {
+    "message": "This page blocks audio processing."
+  },
+  "popupNoOrigin": {
+    "message": "Browser pages cannot be boosted."
+  },
+  "popupNoTab": {
+    "message": "No active tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "This page"
+  }
+}

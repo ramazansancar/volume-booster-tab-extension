@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  verify:
+    name: Typecheck, test and build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm run typecheck
+
+      - name: Test
+        run: pnpm test
+
+      - name: Lint
+        run: pnpm run lint
+
+      # Generated assets are committed, so a mismatch means someone edited a
+      # generated file by hand instead of the source table.
+      - name: Verify generated locales and icons are current
+        run: |
+          pnpm run locales
+          pnpm run icons
+          git diff --exit-code public/ || {
+            echo "::error::public/ is out of date. Run 'pnpm run locales' and 'pnpm run icons' and commit the result."
+            exit 1
+          }
+
+      - name: Build every target
+        run: pnpm run build
+
+      - name: Check each target produced a manifest
+        run: |
+          for target in chrome-mv3 chrome-mv2 edge-mv3 opera-mv2 firefox-mv2 firefox-mv3 safari-mv3; do
+            test -f "dist/$target/manifest.json" || { echo "::error::missing dist/$target/manifest.json"; exit 1; }
+            node -e "JSON.parse(require('fs').readFileSync('dist/$target/manifest.json','utf8'))"
+            echo "ok: $target"
+          done
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: extension-builds
+          path: dist/
+          retention-days: 14

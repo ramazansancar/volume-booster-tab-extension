@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Ses Yükseltici"
+  },
+  "extensionDescription": {
+    "message": "Sesi %600’e kadar yükseltin. Limitör, ekolayzer ve kanal dengesi. Sekme bazlı ve açık kaynak."
+  },
+  "popupCurrentSite": {
+    "message": "Geçerli sekme"
+  },
+  "popupVolume": {
+    "message": "Ses seviyesi"
+  },
+  "popupBalance": {
+    "message": "Denge"
+  },
+  "popupBalanceCenter": {
+    "message": "Orta"
+  },
+  "popupMono": {
+    "message": "Mono"
+  },
+  "popupLimiter": {
+    "message": "Limitör"
+  },
+  "popupRemember": {
+    "message": "Bu siteyi hatırla"
+  },
+  "popupBypass": {
+    "message": "Devre dışı"
+  },
+  "popupBypassTitle": {
+    "message": "Sesi işlemeden geçir"
+  },
+  "popupAdvanced": {
+    "message": "Gelişmiş ayarlar"
+  },
+  "popupEqualizer": {
+    "message": "Ekolayzer"
+  },
+  "popupEqReset": {
+    "message": "Sıfırla"
+  },
+  "popupEqOn": {
+    "message": "EQ açık"
+  },
+  "popupResetTab": {
+    "message": "Sekmeyi sıfırla"
+  },
+  "popupOpenOptions": {
+    "message": "Tüm ayarları aç"
+  },
+  "popupGainHint": {
+    "message": "%100 üzerinde limitör bozulmayı önlemek için açık kalır."
+  },
+  "popupActive": {
+    "message": "Bu sekmede yükseltme etkin."
+  },
+  "popupIdle": {
+    "message": "Henüz ses çalmıyor."
+  },
+  "popupTabCapture": {
+    "message": "Sekme yakalama kullanılıyor."
+  },
+  "popupUnavailable": {
+    "message": "Bu sayfa ses işlemeyi engelliyor."
+  },
+  "popupNoOrigin": {
+    "message": "Tarayıcı sayfaları yükseltilemez."
+  },
+  "popupNoTab": {
+    "message": "Etkin sekme yok."
+  },
+  "popupUnsupportedPage": {
+    "message": "Bu sayfa"
+  }
+}

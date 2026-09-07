@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Penguat Volume"
+  },
+  "extensionDescription": {
+    "message": "Tingkatkan volume hingga 600% dengan limiter, ekualiser, dan keseimbangan kanal. Per tab dan sumber terbuka."
+  },
+  "popupCurrentSite": {
+    "message": "Tab saat ini"
+  },
+  "popupVolume": {
+    "message": "Volume"
+  },
+  "popupBalance": {
+    "message": "Keseimbangan"
+  },
+  "popupBalanceCenter": {
+    "message": "Tengah"
+  },
+  "popupMono": {
+    "message": "Mono"
+  },
+  "popupLimiter": {
+    "message": "Pembatas"
+  },
+  "popupRemember": {
+    "message": "Ingat situs ini"
+  },
+  "popupBypass": {
+    "message": "Lewati"
+  },
+  "popupBypassTitle": {
+    "message": "Pass audio through untouched"
+  },
+  "popupAdvanced": {
+    "message": "Pengaturan lanjutan"
+  },
+  "popupEqualizer": {
+    "message": "Ekualiser"
+  },
+  "popupEqReset": {
+    "message": "Atur ulang"
+  },
+  "popupEqOn": {
+    "message": "EQ on"
+  },
+  "popupResetTab": {
+    "message": "Atur ulang tab"
+  },
+  "popupOpenOptions": {
+    "message": "Buka semua pengaturan"
+  },
+  "popupGainHint": {
+    "message": "Above 100% the limiter stays on to prevent distortion."
+  },
+  "popupActive": {
+    "message": "Boost is active on this tab."
+  },
+  "popupIdle": {
+    "message": "No audio playing yet."
+  },
+  "popupTabCapture": {
+    "message": "Using tab capture."
+  },
+  "popupUnavailable": {
+    "message": "This page blocks audio processing."
+  },
+  "popupNoOrigin": {
+    "message": "Browser pages cannot be boosted."
+  },
+  "popupNoTab": {
+    "message": "No active tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "This page"
+  }
+}

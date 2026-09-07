@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "ตัวเพิ่มระดับเสียง"
+  },
+  "extensionDescription": {
+    "message": "เพิ่มระดับเสียงได้ถึง 600% พร้อมลิมิตเตอร์ อีควอไลเซอร์ และสมดุลช่องสัญญาณ แยกตามแท็บ โอเพนซอร์ส"
+  },
+  "popupCurrentSite": {
+    "message": "แท็บปัจจุบัน"
+  },
+  "popupVolume": {
+    "message": "ระดับเสียง"
+  },
+  "popupBalance": {
+    "message": "สมดุลเสียง"
+  },
+  "popupBalanceCenter": {
+    "message": "ตรงกลาง"
+  },
+  "popupMono": {
+    "message": "โมโน"
+  },
+  "popupLimiter": {
+    "message": "ลิมิตเตอร์"
+  },
+  "popupRemember": {
+    "message": "จดจำเว็บไซต์นี้"
+  },
+  "popupBypass": {
+    "message": "ข้าม"
+  },
+  "popupBypassTitle": {
+    "message": "Pass audio through untouched"
+  },
+  "popupAdvanced": {
+    "message": "การตั้งค่าขั้นสูง"
+  },
+  "popupEqualizer": {
+    "message": "อีควอไลเซอร์"
+  },
+  "popupEqReset": {
+    "message": "รีเซ็ต"
+  },
+  "popupEqOn": {
+    "message": "EQ on"
+  },
+  "popupResetTab": {
+    "message": "รีเซ็ตแท็บ"
+  },
+  "popupOpenOptions": {
+    "message": "เปิดการตั้งค่าทั้งหมด"
+  },
+  "popupGainHint": {
+    "message": "Above 100% the limiter stays on to prevent distortion."
+  },
+  "popupActive": {
+    "message": "Boost is active on this tab."
+  },
+  "popupIdle": {
+    "message": "No audio playing yet."
+  },
+  "popupTabCapture": {
+    "message": "Using tab capture."
+  },
+  "popupUnavailable": {
+    "message": "This page blocks audio processing."
+  },
+  "popupNoOrigin": {
+    "message": "Browser pages cannot be boosted."
+  },
+  "popupNoTab": {
+    "message": "No active tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "This page"
+  }
+}

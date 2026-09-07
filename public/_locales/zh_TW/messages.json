@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "音量增強器"
+  },
+  "extensionDescription": {
+    "message": "透過限制器、等化器和聲道平衡將音量提升至 600%。依分頁獨立設定，開放原始碼。"
+  },
+  "popupCurrentSite": {
+    "message": "目前分頁"
+  },
+  "popupVolume": {
+    "message": "音量"
+  },
+  "popupBalance": {
+    "message": "聲道平衡"
+  },
+  "popupBalanceCenter": {
+    "message": "置中"
+  },
+  "popupMono": {
+    "message": "單聲道"
+  },
+  "popupLimiter": {
+    "message": "限制器"
+  },
+  "popupRemember": {
+    "message": "記住此網站"
+  },
+  "popupBypass": {
+    "message": "旁路"
+  },
+  "popupBypassTitle": {
+    "message": "Pass audio through untouched"
+  },
+  "popupAdvanced": {
+    "message": "進階設定"
+  },
+  "popupEqualizer": {
+    "message": "等化器"
+  },
+  "popupEqReset": {
+    "message": "重設"
+  },
+  "popupEqOn": {
+    "message": "EQ on"
+  },
+  "popupResetTab": {
+    "message": "重設分頁"
+  },
+  "popupOpenOptions": {
+    "message": "開啟所有設定"
+  },
+  "popupGainHint": {
+    "message": "超過 100% 時限制器會保持開啟以避免失真。"
+  },
+  "popupActive": {
+    "message": "Boost is active on this tab."
+  },
+  "popupIdle": {
+    "message": "No audio playing yet."
+  },
+  "popupTabCapture": {
+    "message": "Using tab capture."
+  },
+  "popupUnavailable": {
+    "message": "This page blocks audio processing."
+  },
+  "popupNoOrigin": {
+    "message": "Browser pages cannot be boosted."
+  },
+  "popupNoTab": {
+    "message": "No active tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "This page"
+  }
+}

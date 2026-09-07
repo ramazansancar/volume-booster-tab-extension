@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Bộ khuếch đại âm lượng"
+  },
+  "extensionDescription": {
+    "message": "Tăng âm lượng lên đến 600% với bộ giới hạn, cân bằng và cân bằng kênh. Theo từng tab, mã nguồn mở."
+  },
+  "popupCurrentSite": {
+    "message": "Tab hiện tại"
+  },
+  "popupVolume": {
+    "message": "Âm lượng"
+  },
+  "popupBalance": {
+    "message": "Cân bằng"
+  },
+  "popupBalanceCenter": {
+    "message": "Giữa"
+  },
+  "popupMono": {
+    "message": "Mono"
+  },
+  "popupLimiter": {
+    "message": "Bộ giới hạn"
+  },
+  "popupRemember": {
+    "message": "Ghi nhớ trang này"
+  },
+  "popupBypass": {
+    "message": "Bỏ qua"
+  },
+  "popupBypassTitle": {
+    "message": "Pass audio through untouched"
+  },
+  "popupAdvanced": {
+    "message": "Cài đặt nâng cao"
+  },
+  "popupEqualizer": {
+    "message": "Bộ chỉnh âm"
+  },
+  "popupEqReset": {
+    "message": "Đặt lại"
+  },
+  "popupEqOn": {
+    "message": "EQ on"
+  },
+  "popupResetTab": {
+    "message": "Đặt lại tab"
+  },
+  "popupOpenOptions": {
+    "message": "Mở tất cả cài đặt"
+  },
+  "popupGainHint": {
+    "message": "Above 100% the limiter stays on to prevent distortion."
+  },
+  "popupActive": {
+    "message": "Boost is active on this tab."
+  },
+  "popupIdle": {
+    "message": "No audio playing yet."
+  },
+  "popupTabCapture": {
+    "message": "Using tab capture."
+  },
+  "popupUnavailable": {
+    "message": "This page blocks audio processing."
+  },
+  "popupNoOrigin": {
+    "message": "Browser pages cannot be boosted."
+  },
+  "popupNoTab": {
+    "message": "No active tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "This page"
+  }
+}

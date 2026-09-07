@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.png binary
+*.zip binary
+*.crx binary
+*.xpi binary
+
+pnpm-lock.yaml linguist-generated=true
+public/_locales/** linguist-generated=true

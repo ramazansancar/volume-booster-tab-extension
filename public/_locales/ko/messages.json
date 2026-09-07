@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "볼륨 부스터"
+  },
+  "extensionDescription": {
+    "message": "리미터, 이퀄라이저, 채널 밸런스로 볼륨을 최대 600%까지 높입니다. 탭별 설정, 오픈 소스."
+  },
+  "popupCurrentSite": {
+    "message": "현재 탭"
+  },
+  "popupVolume": {
+    "message": "볼륨"
+  },
+  "popupBalance": {
+    "message": "밸런스"
+  },
+  "popupBalanceCenter": {
+    "message": "가운데"
+  },
+  "popupMono": {
+    "message": "모노"
+  },
+  "popupLimiter": {
+    "message": "리미터"
+  },
+  "popupRemember": {
+    "message": "이 사이트 기억"
+  },
+  "popupBypass": {
+    "message": "우회"
+  },
+  "popupBypassTitle": {
+    "message": "오디오를 처리하지 않고 통과"
+  },
+  "popupAdvanced": {
+    "message": "고급 설정"
+  },
+  "popupEqualizer": {
+    "message": "이퀄라이저"
+  },
+  "popupEqReset": {
+    "message": "초기화"
+  },
+  "popupEqOn": {
+    "message": "EQ 켜짐"
+  },
+  "popupResetTab": {
+    "message": "탭 초기화"
+  },
+  "popupOpenOptions": {
+    "message": "모든 설정 열기"
+  },
+  "popupGainHint": {
+    "message": "100%를 넘으면 왜곡을 막기 위해 리미터가 켜진 상태로 유지됩니다."
+  },
+  "popupActive": {
+    "message": "이 탭에서 부스트가 활성화되었습니다."
+  },
+  "popupIdle": {
+    "message": "아직 재생 중인 오디오가 없습니다."
+  },
+  "popupTabCapture": {
+    "message": "탭 캡처를 사용 중입니다."
+  },
+  "popupUnavailable": {
+    "message": "이 페이지는 오디오 처리를 차단합니다."
+  },
+  "popupNoOrigin": {
+    "message": "브라우저 페이지는 증폭할 수 없습니다."
+  },
+  "popupNoTab": {
+    "message": "활성 탭이 없습니다."
+  },
+  "popupUnsupportedPage": {
+    "message": "이 페이지"
+  }
+}

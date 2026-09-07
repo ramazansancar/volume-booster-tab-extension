@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "वॉल्यूम बूस्टर"
+  },
+  "extensionDescription": {
+    "message": "लिमिटर, इक्वलाइज़र और चैनल बैलेंस के साथ वॉल्यूम 600% तक बढ़ाएँ। प्रति-टैब और ओपन सोर्स।"
+  },
+  "popupCurrentSite": {
+    "message": "वर्तमान टैब"
+  },
+  "popupVolume": {
+    "message": "वॉल्यूम"
+  },
+  "popupBalance": {
+    "message": "संतुलन"
+  },
+  "popupBalanceCenter": {
+    "message": "केंद्र"
+  },
+  "popupMono": {
+    "message": "मोनो"
+  },
+  "popupLimiter": {
+    "message": "लिमिटर"
+  },
+  "popupRemember": {
+    "message": "इस साइट को याद रखें"
+  },
+  "popupBypass": {
+    "message": "बायपास"
+  },
+  "popupBypassTitle": {
+    "message": "Pass audio through untouched"
+  },
+  "popupAdvanced": {
+    "message": "उन्नत सेटिंग्स"
+  },
+  "popupEqualizer": {
+    "message": "इक्वलाइज़र"
+  },
+  "popupEqReset": {
+    "message": "रीसेट"
+  },
+  "popupEqOn": {
+    "message": "EQ on"
+  },
+  "popupResetTab": {
+    "message": "टैब रीसेट करें"
+  },
+  "popupOpenOptions": {
+    "message": "सभी सेटिंग्स खोलें"
+  },
+  "popupGainHint": {
+    "message": "Above 100% the limiter stays on to prevent distortion."
+  },
+  "popupActive": {
+    "message": "Boost is active on this tab."
+  },
+  "popupIdle": {
+    "message": "No audio playing yet."
+  },
+  "popupTabCapture": {
+    "message": "Using tab capture."
+  },
+  "popupUnavailable": {
+    "message": "This page blocks audio processing."
+  },
+  "popupNoOrigin": {
+    "message": "Browser pages cannot be boosted."
+  },
+  "popupNoTab": {
+    "message": "No active tab."
+  },
+  "popupUnsupportedPage": {
+    "message": "This page"
+  }
+}

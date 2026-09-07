@@ -1,0 +1,77 @@
+{
+  "extensionName": {
+    "message": "Усилитель громкости"
+  },
+  "extensionDescription": {
+    "message": "Увеличьте громкость до 600% с лимитером, эквалайзером и балансом каналов. Для каждой вкладки, открытый код."
+  },
+  "popupCurrentSite": {
+    "message": "Текущая вкладка"
+  },
+  "popupVolume": {
+    "message": "Громкость"
+  },
+  "popupBalance": {
+    "message": "Баланс"
+  },
+  "popupBalanceCenter": {
+    "message": "Центр"
+  },
+  "popupMono": {
+    "message": "Моно"
+  },
+  "popupLimiter": {
+    "message": "Лимитер"
+  },
+  "popupRemember": {
+    "message": "Запомнить этот сайт"
+  },
+  "popupBypass": {
+    "message": "Обход"
+  },
+  "popupBypassTitle": {
+    "message": "Пропустить звук без обработки"
+  },
+  "popupAdvanced": {
+    "message": "Расширенные настройки"
+  },
+  "popupEqualizer": {
+    "message": "Эквалайзер"
+  },
+  "popupEqReset": {
+    "message": "Сброс"
+  },
+  "popupEqOn": {
+    "message": "EQ вкл"
+  },
+  "popupResetTab": {
+    "message": "Сбросить вкладку"
+  },
+  "popupOpenOptions": {
+    "message": "Открыть все настройки"
+  },
+  "popupGainHint": {
+    "message": "Выше 100% лимитер остаётся включённым, чтобы избежать искажений."
+  },
+  "popupActive": {
+    "message": "Усиление активно на этой вкладке."
+  },
+  "popupIdle": {
+    "message": "Звук пока не воспроизводится."
+  },
+  "popupTabCapture": {
+    "message": "Используется захват вкладки."
+  },
+  "popupUnavailable": {
+    "message": "Эта страница блокирует обработку звука."
+  },
+  "popupNoOrigin": {
+    "message": "Страницы браузера нельзя усилить."
+  },
+  "popupNoTab": {
+    "message": "Нет активной вкладки."
+  },
+  "popupUnsupportedPage": {
+    "message": "Эта страница"
+  }
+}
