@@ -206,3 +206,18 @@ body {
 .link-button:hover { text-decoration: underline; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.colophon {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.colophon a {
+  color: var(--text-muted);
+}
+
+.colophon a:hover {
+  color: var(--accent);
+}

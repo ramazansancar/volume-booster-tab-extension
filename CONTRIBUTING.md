@@ -3,7 +3,7 @@
 Thanks for considering a contribution. Pull requests are genuinely welcome — this project accepts them and reviews them.
 
 > [!NOTE]
-> This project is licensed under [PolyForm Noncommercial 1.0.0](LICENSE.md). By contributing you agree that your contribution is licensed under the same terms.
+> This project is licensed under the [GNU Affero General Public License v3.0](LICENSE). By contributing you agree that your contribution is licensed under the same terms.
 
 ---
 

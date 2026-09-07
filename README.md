@@ -7,7 +7,7 @@
 Works in Chrome, Firefox, Edge, Opera, Brave, Vivaldi and Safari.
 Manifest V2 and V3 from one codebase.
 
-[![License: PolyForm Noncommercial](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue.svg)](LICENSE.md)
+[![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![Manifest V2 + V3](https://img.shields.io/badge/manifest-V2%20%7C%20V3-success.svg)](#browser-support)
 [![Browsers](https://img.shields.io/badge/browsers-7%20targets-orange.svg)](#browser-support)
 [![Languages](https://img.shields.io/badge/languages-56-brightgreen.svg)](#language-support)
@@ -409,16 +409,16 @@ Pull requests are very welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the f
 
 ## License
 
-[PolyForm Noncommercial License 1.0.0](LICENSE.md)
+[GNU Affero General Public License v3.0](LICENSE)
 
 > [!IMPORTANT]
-> **You may** use, modify, redistribute and fork this software freely for any **noncommercial** purpose — personal use, study, hobby projects, research, and use by charities, schools, and government bodies.
+> **You may** use, study, modify, redistribute and fork this software — including commercially.
 >
-> **You may not** use it for commercial purposes: selling it, bundling it into a paid product, or running it as part of a commercial service.
+> **You must**, if you distribute it or run a modified version as a network service, release your version's complete source under the AGPL too. That obligation extends to server-side use, which is what separates the AGPL from the ordinary GPL.
 >
 > The software is provided **as is, without warranty of any kind**, and the author accepts **no liability** for any damage arising from its use — including damage to hearing or audio equipment from excessive amplification.
 
-For a commercial license, open an issue to start the conversation.
+Contributions are accepted under the same license.
 
 ---
 

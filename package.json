@@ -2,7 +2,7 @@
   "name": "volume-booster-extension",
   "version": "0.1.0",
   "description": "Cross-browser volume booster with gain, limiter, equalizer and channel balance. Supports Manifest V2 and V3.",
-  "license": "LicenseRef-PolyForm-Noncommercial-1.0.0",
+  "license": "AGPL-3.0-only",
   "private": true,
   "type": "module",
   "engines": {

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Volume Booster audio processing</title>
+  </head>
+  <body>
+    <!--
+      Offscreen document.
+
+      Chromium MV3 service workers have no DOM and no AudioContext, so the tab
+      capture fallback needs a real document to host its audio graph. This page
+      is never visible; it exists only to own the AudioContext and the
+      MediaStream captured from a tab.
+    -->
+    <script type="module" src="./offscreen.js"></script>
+  </body>
+</html>

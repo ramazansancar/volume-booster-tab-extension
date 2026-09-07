@@ -85,8 +85,8 @@ Shipping to the Mac App Store requires:
 - App Store Connect metadata, screenshots, and a privacy policy
 - App review
 
-> [!WARNING]
-> This project is licensed under [PolyForm Noncommercial 1.0.0](../LICENSE.md). Distributing it commercially — including as a paid App Store listing — is not permitted under that license. A free listing published by the copyright holder is fine; if you want to distribute it yourself, open an issue first.
+> [!IMPORTANT]
+> This project is licensed under the [GNU Affero General Public License v3.0](../LICENSE). You may publish your own build, including commercially, but you must make your complete corresponding source available under the AGPL as well. Apple's App Store terms have historically conflicted with GPL-family licenses, so check both carefully before submitting, and consider opening an issue to coordinate rather than shipping a parallel listing.
 
 ---
 

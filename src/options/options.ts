@@ -26,6 +26,7 @@ const dom = {
   clearOrigins: document.getElementById('clear-origins') as HTMLButtonElement,
   restoreDefaults: document.getElementById('restore-defaults') as HTMLButtonElement,
   saveStatus: document.getElementById('save-status') as HTMLElement,
+  aboutVersion: document.getElementById('about-version') as HTMLElement,
 };
 
 let preferences: GlobalPreferences | null = null;
@@ -167,6 +168,9 @@ function bind(): void {
 
 async function init(): Promise<void> {
   bind();
+  // Naming the running version makes bug reports precise, and pairs with the
+  // source link the AGPL asks us to surface.
+  dom.aboutVersion.textContent = `Volume Booster ${ext.runtime.getManifest().version}`;
   render(await send<GlobalPreferences>({ type: 'ui:get-preferences' }));
   await renderOrigins();
 }
