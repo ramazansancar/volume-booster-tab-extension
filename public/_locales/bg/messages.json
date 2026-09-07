@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Усилвател на звука"
+    "message": "Усилвател на звука за раздели"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Увеличете звука до 600% с лимитер, еквалайзер и баланс на каналите. За всеки раздел, отворен код."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Текущ раздел"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Сила на звука"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Баланс"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Център"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "Моно"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Лимитер"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Запомни този сайт"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Заобикаляне"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Пропускане на звука без обработка"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Разширени настройки"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Еквалайзер"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Нулиране"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ вкл."
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Нулиране на раздела"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Отвори всички настройки"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Над 100% лимитерът остава включен, за да предотврати изкривяване."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Усилването е активно в този раздел."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Все още не се възпроизвежда звук."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Използва се заснемане на раздела."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Тази страница блокира обработката на звука."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Страниците на браузъра не могат да бъдат усилени."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Няма активен раздел."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Тази страница"
   }
 }

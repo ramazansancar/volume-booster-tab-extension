@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Volume Booster"
+    "message": "ટૅબ વૉલ્યુમ બૂસ્ટર"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "લિમિટર, ઇક્વલાઇઝર અને ચેનલ બેલેન્સ સાથે વૉલ્યુમ 600% સુધી વધારો. ટૅબ મુજબ અને ઓપન સોર્સ."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "વર્તમાન ટૅબ"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "વૉલ્યુમ"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "બેલેન્સ"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "કેન્દ્ર"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "મોનો"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "લિમિટર"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "આ સાઇટ યાદ રાખો"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "બાયપાસ"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "ઑડિયો પ્રક્રિયા વિના પસાર કરો"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "અદ્યતન સેટિંગ્સ"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "ઇક્વલાઇઝર"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "રીસેટ"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ ચાલુ"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "ટૅબ રીસેટ કરો"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "બધી સેટિંગ્સ ખોલો"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "100% થી ઉપર વિકૃતિ રોકવા લિમિટર ચાલુ રહે છે."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "આ ટૅબ પર બૂસ્ટ સક્રિય છે."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "હજી કોઈ ઑડિયો ચાલી રહ્યો નથી."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "ટૅબ કૅપ્ચરનો ઉપયોગ કરી રહ્યાં છીએ."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "આ પૃષ્ઠ ઑડિયો પ્રક્રિયાને અવરોધે છે."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "બ્રાઉઝર પૃષ્ઠોને બૂસ્ટ કરી શકાતા નથી."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "કોઈ સક્રિય ટૅબ નથી."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "આ પૃષ્ઠ"
   }
 }

@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Skaļuma pastiprinātājs"
+    "message": "Cilnes skaļuma pastiprinātājs"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Pastipriniet skaņu līdz 600% ar limitatoru, ekvalaizeru un kanālu balansu. Katrai cilnei, atvērtā koda."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Pašreizējā cilne"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Skaļums"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Balanss"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Centrā"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Limitators"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Atcerēties šo vietni"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Apiet"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Laist skaņu cauri neapstrādātu"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Papildu iestatījumi"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Ekvalaizers"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Atiestatīt"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ ieslēgts"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Atiestatīt cilni"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Atvērt visus iestatījumus"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Virs 100% limitators paliek ieslēgts, lai novērstu kropļojumus."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Pastiprinājums šajā cilnē ir aktīvs."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Skaņa vēl netiek atskaņota."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Tiek izmantota cilnes tveršana."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Šī lapa bloķē skaņas apstrādi."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Pārlūka lapas nevar pastiprināt."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Nav aktīvas cilnes."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Šī lapa"
   }
 }

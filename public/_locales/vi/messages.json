@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "Bộ khuếch đại âm lượng"
+    "message": "Bộ khuếch đại âm lượng theo tab"
   },
   "extensionDescription": {
-    "message": "Tăng âm lượng lên đến 600% với bộ giới hạn, cân bằng và cân bằng kênh. Theo từng tab, mã nguồn mở."
+    "message": "Tăng âm lượng lên đến 600% với bộ giới hạn, bộ chỉnh âm và cân bằng kênh. Theo từng tab, mã nguồn mở."
   },
   "popupCurrentSite": {
     "message": "Tab hiện tại"
@@ -30,7 +30,7 @@
     "message": "Bỏ qua"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Truyền âm thanh không xử lý"
   },
   "popupAdvanced": {
     "message": "Cài đặt nâng cao"
@@ -42,7 +42,7 @@
     "message": "Đặt lại"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ bật"
   },
   "popupResetTab": {
     "message": "Đặt lại tab"
@@ -51,27 +51,27 @@
     "message": "Mở tất cả cài đặt"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Trên 100% bộ giới hạn vẫn bật để tránh méo tiếng."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Khuếch đại đang hoạt động trên tab này."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Chưa có âm thanh nào phát."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Đang dùng chụp tab."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Trang này chặn xử lý âm thanh."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Không thể khuếch đại trang trình duyệt."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Không có tab đang hoạt động."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Trang này"
   }
 }

@@ -43,7 +43,7 @@ export const DEFAULT_TARGETS = /** @type {const} */ ([
 ]);
 
 /** Stable add-on id, required by Firefox for storage and update consistency. */
-const FIREFOX_ADDON_ID = 'volume-booster@ramazansancar.dev';
+const FIREFOX_ADDON_ID = 'volume-booster-tab@ramazansancar.github.io';
 
 /**
  * First Firefox releases that understand
@@ -119,7 +119,7 @@ export function buildManifest(target, pkg) {
   const manifest = {
     manifest_version: version,
     name: '__MSG_extensionName__',
-    short_name: 'Volume Booster',
+    short_name: 'Volume Booster Tab',
     description: '__MSG_extensionDescription__',
     version: pkg.version,
     default_locale: 'en',

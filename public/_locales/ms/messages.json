@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Penguat Volum"
+    "message": "Penguat Volum Tab"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Tingkatkan volum sehingga 600% dengan limiter, penyama dan imbangan saluran. Setiap tab dan sumber terbuka."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Tab semasa"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Volum"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Imbangan"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Tengah"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Pembatas"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Ingat tapak ini"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Pintas"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Lalukan audio tanpa diproses"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Tetapan lanjutan"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Penyama"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Set semula"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ hidup"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Set semula tab"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Buka semua tetapan"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Melebihi 100% pembatas kekal hidup untuk mengelakkan herotan."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Penguatan aktif pada tab ini."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Tiada audio dimainkan lagi."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Menggunakan tangkapan tab."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Halaman ini menyekat pemprosesan audio."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Halaman pelayar tidak boleh dikuatkan."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Tiada tab aktif."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Halaman ini"
   }
 }

@@ -170,7 +170,7 @@ async function init(): Promise<void> {
   bind();
   // Naming the running version makes bug reports precise, and pairs with the
   // source link the AGPL asks us to surface.
-  dom.aboutVersion.textContent = `Volume Booster ${ext.runtime.getManifest().version}`;
+  dom.aboutVersion.textContent = `Volume Booster Tab ${ext.runtime.getManifest().version}`;
   render(await send<GlobalPreferences>({ type: 'ui:get-preferences' }));
   await renderOrigins();
 }

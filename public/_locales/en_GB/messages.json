@@ -1,9 +1,9 @@
 {
   "extensionName": {
-    "message": "Volume Booster"
+    "message": "Volume Booster Tab"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Boost volume up to 600% with a limiter, equaliser and channel balance. Per-tab and open source."
   },
   "popupCurrentSite": {
     "message": "Current tab"
@@ -15,7 +15,7 @@
     "message": "Balance"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Centre"
   },
   "popupMono": {
     "message": "Mono"
@@ -36,7 +36,7 @@
     "message": "Advanced settings"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Equaliser"
   },
   "popupEqReset": {
     "message": "Reset"

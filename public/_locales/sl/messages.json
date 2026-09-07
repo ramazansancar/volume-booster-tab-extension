@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Ojačevalnik glasnosti"
+    "message": "Ojačevalnik glasnosti zavihka"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Ojačajte glasnost do 600 % z omejevalnikom, izenačevalnikom in ravnovesjem kanalov. Za vsak zavihek, odprta koda."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Trenutni zavihek"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Glasnost"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Ravnovesje"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Sredina"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Omejevalnik"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Zapomni si to spletno mesto"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Obidi"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Prepusti zvok neobdelan"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Napredne nastavitve"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Izenačevalnik"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Ponastavi"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ vklopljen"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Ponastavi zavihek"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Odpri vse nastavitve"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Nad 100 % omejevalnik ostane vklopljen, da prepreči popačenje."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Ojačitev je na tem zavihku aktivna."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Zvok se še ne predvaja."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Uporablja se zajem zavihka."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Ta stran blokira obdelavo zvoka."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Strani brskalnika ni mogoče ojačati."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Ni aktivnega zavihka."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Ta stran"
   }
 }

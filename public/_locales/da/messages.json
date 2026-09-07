@@ -1,21 +1,21 @@
 {
   "extensionName": {
-    "message": "Lydforstærker"
+    "message": "Lydforstærker pr. faneblad"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Forstærk lyden op til 600 % med limiter, equalizer og kanalbalance. Pr. faneblad og open source."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Aktuelt faneblad"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Lydstyrke"
   },
   "popupBalance": {
     "message": "Balance"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Midt"
   },
   "popupMono": {
     "message": "Mono"
@@ -24,54 +24,54 @@
     "message": "Limiter"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Husk dette websted"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Omgå"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Send lyden igennem uændret"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Avancerede indstillinger"
   },
   "popupEqualizer": {
     "message": "Equalizer"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Nulstil"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ til"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Nulstil faneblad"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Åbn alle indstillinger"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Over 100 % forbliver limiteren tændt for at undgå forvrængning."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Forstærkning er aktiv på dette faneblad."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Der afspilles ingen lyd endnu."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Bruger fanebladsoptagelse."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Denne side blokerer lydbehandling."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Browsersider kan ikke forstærkes."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Intet aktivt faneblad."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Denne side"
   }
 }

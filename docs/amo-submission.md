@@ -7,10 +7,10 @@ Copy-paste material for the addons.mozilla.org submission form. Keep this file u
 
 ---
 
-## Version notes (v0.1.0)
+## Version notes (v0.1.1)
 
 ```text
-First release.
+First public release.
 
 Amplifies the audio of any browser tab up to 600%, with a limiter, a 6-band
 equalizer, stereo balance and a mono downmix. Each tab is controlled
@@ -19,6 +19,8 @@ independently, so two tabs can play at different volumes at the same time.
 Boosts are temporary by default and are forgotten when the tab closes. A user
 can opt a specific site into being remembered from the popup, or change the
 default in the options page.
+
+The interface is fully translated into 55 languages.
 
 The add-on makes no network requests, contains no analytics, and stores nothing
 beyond the user's own settings in local storage.
@@ -72,14 +74,14 @@ None. Declared as data_collection_permissions.required = ["none"]. No network
 requests of any kind, no telemetry, no analytics, no remote code.
 
 SOURCE AND BUILD (Node.js 20+)
-  git clone https://github.com/ramazansancar/volume-booster-extension.git
-  cd volume-booster-extension
+  git clone https://github.com/ramazansancar/volume-booster-tab-extension.git
+  cd volume-booster-tab-extension
   npm install
   npm run package
-Uploaded file: dist/firefox-mv2-0.1.0.zip
+Uploaded file: dist/firefox-mv2-0.1.1.zip
 
 esbuild with standard minification, no obfuscation. manifest.json is generated
-by scripts/manifest.mjs, the 56 _locales files by scripts/locales.mjs, and the
+by scripts/manifest.mjs, the 55 _locales files by scripts/locales.mjs, and the
 icons by scripts/icons.mjs - all from single source tables.
 License: AGPL-3.0-only
 
@@ -136,7 +138,7 @@ The add-on performs no network requests of any kind. There is no telemetry,
 no analytics, no remote configuration and no external script loading.
 
 SOURCE CODE AND BUILD
-Source: https://github.com/ramazansancar/volume-booster-extension
+Source: https://github.com/ramazansancar/volume-booster-tab-extension
 License: AGPL-3.0-only
 
 The submitted package is produced from source with:
@@ -165,7 +167,7 @@ exclude ESR users.
 **Name**
 
 ```text
-Volume Booster
+Volume Booster Tab
 ```
 
 **Summary** (250 characters max)
@@ -177,7 +179,7 @@ Boost any tab's volume up to 600% with a limiter, 6-band equalizer, stereo balan
 **Description**
 
 ```text
-Volume Booster raises the volume of any browser tab beyond what the page itself
+Volume Booster Tab raises the volume of any browser tab beyond what the page itself
 allows, and gives you real control over how that sound is shaped.
 
 FEATURES
@@ -188,7 +190,7 @@ FEATURES
 • Stereo balance, from full left to full right
 • Mono downmix for listening with a single earbud
 • Independent control for every tab - run one site at 300% and another at 150%
-• Available in 56 languages
+• Available in 55 languages
 
 PER-TAB AND TEMPORARY BY DEFAULT
 
@@ -217,7 +219,7 @@ especially with headphones. Leave the limiter on.
 OPEN SOURCE
 
 Source code, issue tracker and contribution guide:
-https://github.com/ramazansancar/volume-booster-extension
+https://github.com/ramazansancar/volume-booster-tab-extension
 
 Licensed under the GNU Affero General Public License v3.0.
 ```

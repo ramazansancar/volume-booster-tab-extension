@@ -1,6 +1,6 @@
 {
-  "name": "volume-booster-extension",
-  "version": "0.1.0",
+  "name": "volume-booster-tab-extension",
+  "version": "0.1.1",
   "description": "Cross-browser volume booster with gain, limiter, equalizer and channel balance. Supports Manifest V2 and V3.",
   "license": "AGPL-3.0-only",
   "private": true,
@@ -18,6 +18,7 @@
     "build:opera": "node scripts/build.mjs --target=opera-mv2",
     "build:safari": "node scripts/build.mjs --target=safari-mv3",
     "package": "node scripts/build.mjs --all --zip",
+    "source": "node scripts/source-package.mjs",
     "icons": "node scripts/icons.mjs",
     "locales": "node scripts/locales.mjs",
     "typecheck": "tsc --noEmit",
@@ -45,12 +46,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ramazansancar/volume-booster-extension.git"
+    "url": "https://github.com/ramazansancar/volume-booster-tab-extension.git"
   },
   "bugs": {
-    "url": "https://github.com/ramazansancar/volume-booster-extension/issues"
+    "url": "https://github.com/ramazansancar/volume-booster-tab-extension/issues"
   },
-  "homepage": "https://github.com/ramazansancar/volume-booster-extension#readme",
+  "homepage": "https://github.com/ramazansancar/volume-booster-tab-extension#readme",
   "author": "Ramazan Sancar (https://github.com/ramazansancar)",
   "keywords": [
     "browser-extension",

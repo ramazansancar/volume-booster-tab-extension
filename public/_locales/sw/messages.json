@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Kikuza Sauti"
+    "message": "Kikuza Sauti cha Kichupo"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Ongeza sauti hadi 600% kwa kikomo, kisawazishi na uwiano wa vituo. Kwa kila kichupo na chanzo huria."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Kichupo cha sasa"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Sauti"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Uwiano"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Katikati"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Kikomo"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Kumbuka tovuti hii"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Ruka"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Pitisha sauti bila kuchakatwa"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Mipangilio ya kina"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Kisawazishi"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Weka upya"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ imewashwa"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Weka upya kichupo"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Fungua mipangilio yote"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Zaidi ya 100% kikomo hubaki kimewashwa kuzuia upotoshaji."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Ukuzaji unatumika kwenye kichupo hiki."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Hakuna sauti inayochezwa bado."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Inatumia unasaji wa kichupo."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Ukurasa huu unazuia uchakataji wa sauti."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Kurasa za kivinjari haziwezi kukuzwa."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Hakuna kichupo kinachotumika."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Ukurasa huu"
   }
 }

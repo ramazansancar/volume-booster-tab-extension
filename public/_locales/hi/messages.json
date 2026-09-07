@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "वॉल्यूम बूस्टर"
+    "message": "टैब वॉल्यूम बूस्टर"
   },
   "extensionDescription": {
     "message": "लिमिटर, इक्वलाइज़र और चैनल बैलेंस के साथ वॉल्यूम 600% तक बढ़ाएँ। प्रति-टैब और ओपन सोर्स।"
@@ -30,7 +30,7 @@
     "message": "बायपास"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "ऑडियो को बिना प्रोसेस किए पास करें"
   },
   "popupAdvanced": {
     "message": "उन्नत सेटिंग्स"
@@ -42,7 +42,7 @@
     "message": "रीसेट"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ चालू"
   },
   "popupResetTab": {
     "message": "टैब रीसेट करें"
@@ -51,27 +51,27 @@
     "message": "सभी सेटिंग्स खोलें"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "100% से ऊपर विरूपण रोकने के लिए लिमिटर चालू रहता है।"
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "इस टैब पर बूस्ट सक्रिय है।"
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "अभी कोई ऑडियो नहीं चल रहा।"
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "टैब कैप्चर का उपयोग कर रहे हैं।"
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "यह पेज ऑडियो प्रोसेसिंग को ब्लॉक करता है।"
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "ब्राउज़र पेजों को बूस्ट नहीं किया जा सकता।"
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "कोई सक्रिय टैब नहीं।"
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "यह पेज"
   }
 }

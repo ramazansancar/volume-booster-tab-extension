@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Volume Booster"
+    "message": "தாவல் ஒலி பெருக்கி"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "லிமிட்டர், ஈக்வலைசர் மற்றும் சேனல் சமநிலையுடன் ஒலியை 600% வரை அதிகரிக்கவும். தாவல் வாரியாக, திறந்த மூலம்."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "தற்போதைய தாவல்"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "ஒலியளவு"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "சமநிலை"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "மையம்"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "மோனோ"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "லிமிட்டர்"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "இந்த தளத்தை நினைவில் கொள்"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "தவிர்"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "ஒலியை செயலாக்காமல் அனுப்பு"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "மேம்பட்ட அமைப்புகள்"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "ஈக்வலைசர்"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "மீட்டமை"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ இயக்கத்தில்"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "தாவலை மீட்டமை"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "அனைத்து அமைப்புகளையும் திற"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "100% க்கு மேல் சிதைவைத் தடுக்க லிமிட்டர் இயக்கத்தில் இருக்கும்."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "இந்த தாவலில் பெருக்கம் செயலில் உள்ளது."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "இன்னும் ஒலி இயங்கவில்லை."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "தாவல் பிடிப்பு பயன்படுத்தப்படுகிறது."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "இந்தப் பக்கம் ஒலி செயலாக்கத்தைத் தடுக்கிறது."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "உலாவி பக்கங்களை பெருக்க முடியாது."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "செயலில் தாவல் இல்லை."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "இந்தப் பக்கம்"
   }
 }

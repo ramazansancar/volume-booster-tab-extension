@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Garsumo stiprintuvas"
+    "message": "Kortelės garsumo stiprintuvas"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Sustiprinkite garsą iki 600% su ribotuvu, glodintuvu ir kanalų balansu. Kiekvienai kortelei, atviro kodo."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Dabartinė kortelė"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Garsumas"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Balansas"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Centras"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Ribotuvas"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Įsiminti šią svetainę"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Apeiti"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Praleisti garsą neapdorotą"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Išplėstiniai nustatymai"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Glodintuvas"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Atstatyti"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ įjungtas"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Atstatyti kortelę"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Atverti visus nustatymus"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Virš 100% ribotuvas lieka įjungtas, kad išvengtų iškraipymų."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Sustiprinimas šioje kortelėje įjungtas."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Garsas dar negroja."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Naudojamas kortelės fiksavimas."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Šis puslapis blokuoja garso apdorojimą."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Naršyklės puslapių sustiprinti negalima."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Nėra aktyvios kortelės."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Šis puslapis"
   }
 }

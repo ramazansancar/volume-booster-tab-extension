@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "Volumeversterker"
+    "message": "Volumeversterker per tabblad"
   },
   "extensionDescription": {
     "message": "Versterk het volume tot 600% met limiter, equalizer en kanaalbalans. Per tabblad en open source."
@@ -30,7 +30,7 @@
     "message": "Overslaan"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Audio onbewerkt doorlaten"
   },
   "popupAdvanced": {
     "message": "Geavanceerde instellingen"
@@ -42,7 +42,7 @@
     "message": "Herstellen"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ aan"
   },
   "popupResetTab": {
     "message": "Tabblad herstellen"
@@ -54,24 +54,24 @@
     "message": "Boven 100% blijft de limiter aan om vervorming te voorkomen."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Versterking is actief op dit tabblad."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Er wordt nog geen audio afgespeeld."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Tabblad-opname wordt gebruikt."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Deze pagina blokkeert audioverwerking."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Browserpagina’s kunnen niet worden versterkt."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Geen actief tabblad."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Deze pagina"
   }
 }

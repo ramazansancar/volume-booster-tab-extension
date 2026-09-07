@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Äänenvoimakkuuden vahvistin"
+    "message": "Välilehden äänenvoimakkuuden vahvistin"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Vahvista ääntä jopa 600 % rajoittimella, taajuuskorjaimella ja kanavatasapainolla. Välilehtikohtainen ja avoin lähdekoodi."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Nykyinen välilehti"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Äänenvoimakkuus"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Tasapaino"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Keskellä"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Rajoitin"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Muista tämä sivusto"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Ohita"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Päästä ääni läpi käsittelemättä"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Lisäasetukset"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Taajuuskorjain"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Nollaa"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ päällä"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Nollaa välilehti"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Avaa kaikki asetukset"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Yli 100 % rajoitin pysyy päällä säröytymisen estämiseksi."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Vahvistus on käytössä tällä välilehdellä."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Ääntä ei toisteta vielä."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Käytetään välilehden kaappausta."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Tämä sivu estää äänenkäsittelyn."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Selaimen sivuja ei voi vahvistaa."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Ei aktiivista välilehteä."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Tämä sivu"
   }
 }

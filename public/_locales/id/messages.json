@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "Penguat Volume"
+    "message": "Penguat Volume Tab"
   },
   "extensionDescription": {
     "message": "Tingkatkan volume hingga 600% dengan limiter, ekualiser, dan keseimbangan kanal. Per tab dan sumber terbuka."
@@ -30,7 +30,7 @@
     "message": "Lewati"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Teruskan audio tanpa diproses"
   },
   "popupAdvanced": {
     "message": "Pengaturan lanjutan"
@@ -42,7 +42,7 @@
     "message": "Atur ulang"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ aktif"
   },
   "popupResetTab": {
     "message": "Atur ulang tab"
@@ -51,27 +51,27 @@
     "message": "Buka semua pengaturan"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Di atas 100% limiter tetap aktif untuk mencegah distorsi."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Penguatan aktif di tab ini."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Belum ada audio yang diputar."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Menggunakan tangkapan tab."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Halaman ini memblokir pemrosesan audio."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Halaman peramban tidak dapat dikuatkan."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Tidak ada tab aktif."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Halaman ini"
   }
 }

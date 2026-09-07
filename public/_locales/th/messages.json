@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "ตัวเพิ่มระดับเสียง"
+    "message": "ตัวเพิ่มระดับเสียงต่อแท็บ"
   },
   "extensionDescription": {
     "message": "เพิ่มระดับเสียงได้ถึง 600% พร้อมลิมิตเตอร์ อีควอไลเซอร์ และสมดุลช่องสัญญาณ แยกตามแท็บ โอเพนซอร์ส"
@@ -30,7 +30,7 @@
     "message": "ข้าม"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "ส่งผ่านเสียงโดยไม่ประมวลผล"
   },
   "popupAdvanced": {
     "message": "การตั้งค่าขั้นสูง"
@@ -42,7 +42,7 @@
     "message": "รีเซ็ต"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "เปิด EQ"
   },
   "popupResetTab": {
     "message": "รีเซ็ตแท็บ"
@@ -51,27 +51,27 @@
     "message": "เปิดการตั้งค่าทั้งหมด"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "เกิน 100% ลิมิตเตอร์จะเปิดอยู่เพื่อป้องกันเสียงแตก"
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "การเพิ่มเสียงทำงานอยู่ในแท็บนี้"
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "ยังไม่มีเสียงเล่นอยู่"
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "กำลังใช้การจับภาพแท็บ"
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "หน้านี้บล็อกการประมวลผลเสียง"
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "ไม่สามารถเพิ่มเสียงหน้าเบราว์เซอร์ได้"
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "ไม่มีแท็บที่ใช้งานอยู่"
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "หน้านี้"
   }
 }

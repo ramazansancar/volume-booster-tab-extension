@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Question about building or contributing
-    url: https://github.com/ramazansancar/volume-booster-extension/blob/main/CONTRIBUTING.md
+    url: https://github.com/ramazansancar/volume-booster-tab-extension/blob/main/CONTRIBUTING.md
     about: The contributing guide covers setup, project layout and the PR checklist.

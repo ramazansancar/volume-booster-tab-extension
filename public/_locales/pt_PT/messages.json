@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "Amplificador de volume"
+    "message": "Amplificador de volume por separador"
   },
   "extensionDescription": {
     "message": "Aumente o volume até 600% com limitador, equalizador e balanço de canais. Por separador e código aberto."
@@ -30,7 +30,7 @@
     "message": "Ignorar"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Passar o áudio sem processamento"
   },
   "popupAdvanced": {
     "message": "Definições avançadas"
@@ -42,7 +42,7 @@
     "message": "Repor"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ ativo"
   },
   "popupResetTab": {
     "message": "Repor separador"
@@ -51,27 +51,27 @@
     "message": "Abrir todas as definições"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Acima de 100% o limitador permanece ativo para evitar distorção."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "O aumento está ativo neste separador."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Nenhum áudio em reprodução."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "A usar captura de separador."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Esta página bloqueia o processamento de áudio."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "As páginas do navegador não podem ser amplificadas."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Nenhum separador ativo."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Esta página"
   }
 }

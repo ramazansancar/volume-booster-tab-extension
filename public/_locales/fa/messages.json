@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "تقویت‌کننده صدا"
+    "message": "تقویت‌کننده صدای زبانه"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "صدا را تا ۶۰۰٪ تقویت کنید با محدودکننده، اکولایزر و تعادل کانال. برای هر زبانه و متن‌باز."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "زبانه فعلی"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "بلندی صدا"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "تعادل"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "وسط"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "مونو"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "محدودکننده"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "این سایت را به خاطر بسپار"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "دور زدن"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "عبور صدا بدون پردازش"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "تنظیمات پیشرفته"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "اکولایزر"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "بازنشانی"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ فعال"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "بازنشانی زبانه"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "باز کردن همه تنظیمات"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "بالای ۱۰۰٪ محدودکننده روشن می‌ماند تا از اعوجاج جلوگیری کند."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "تقویت در این زبانه فعال است."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "هنوز صدایی پخش نمی‌شود."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "استفاده از ضبط زبانه."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "این صفحه پردازش صدا را مسدود می‌کند."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "صفحات مرورگر قابل تقویت نیستند."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "زبانه فعالی وجود ندارد."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "این صفحه"
   }
 }

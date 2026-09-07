@@ -24,8 +24,8 @@ Apple ships a converter with Xcode:
 ```bash
 xcrun safari-web-extension-converter dist/safari-mv3 \
   --project-location build/safari \
-  --app-name "Volume Booster" \
-  --bundle-identifier dev.ramazansancar.volumebooster \
+  --app-name "Volume Booster Tab" \
+  --bundle-identifier dev.ramazansancar.volumeboostertab \
   --macos-only \
   --no-open
 ```
@@ -44,8 +44,8 @@ The converter reports any manifest keys Safari does not understand. For this ext
 
 ## 3. Build and run
 
-1. Open `build/safari/Volume Booster/Volume Booster.xcodeproj`
-2. Select the **Volume Booster** scheme
+1. Open `build/safari/Volume Booster Tab/Volume Booster Tab.xcodeproj`
+2. Select the **Volume Booster Tab** scheme
 3. Set your development team under **Signing & Capabilities** (a free Apple ID works for local testing)
 4. Press **Run**
 
@@ -57,7 +57,7 @@ The containing app launches and tells you to enable the extension.
 
 1. Safari → **Settings** → **Advanced** → tick **Show features for web developers**
 2. **Settings** → **Developer** → tick **Allow unsigned extensions**
-3. **Settings** → **Extensions** → enable **Volume Booster**
+3. **Settings** → **Extensions** → enable **Volume Booster Tab**
 4. Grant it access to the sites you want to boost
 
 > [!IMPORTANT]
@@ -122,6 +122,6 @@ node -e "console.log(require('./dist/safari-mv3/manifest.json').permissions)"
 
 <br>
 
-Safari grants site access per-site. Open the extension's settings in Safari → **Settings** → **Extensions** → **Volume Booster** and set the site permission to **Allow**.
+Safari grants site access per-site. Open the extension's settings in Safari → **Settings** → **Extensions** → **Volume Booster Tab** and set the site permission to **Allow**.
 
 </details>

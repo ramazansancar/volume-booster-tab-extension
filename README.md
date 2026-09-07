@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔊 Volume Booster
+# 🔊 Volume Booster Tab
 
 **Boost any tab's volume up to 600% — with a limiter, equalizer and channel balance.**
 
@@ -10,7 +10,7 @@ Manifest V2 and V3 from one codebase.
 [![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![Manifest V2 + V3](https://img.shields.io/badge/manifest-V2%20%7C%20V3-success.svg)](#browser-support)
 [![Browsers](https://img.shields.io/badge/browsers-7%20targets-orange.svg)](#browser-support)
-[![Languages](https://img.shields.io/badge/languages-56-brightgreen.svg)](#language-support)
+[![Languages](https://img.shields.io/badge/languages-55-brightgreen.svg)](#language-support)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 </div>
@@ -42,7 +42,7 @@ Manifest V2 and V3 from one codebase.
 | ↔️ **Channel balance** | Full left to full right |
 | 🎧 **Mono downmix** | Both channels summed — for single-earbud listening |
 | 📑 **Per-tab control** | Every tab has its own volume, independently |
-| 🌍 **56 languages** | Interface follows your browser language |
+| 🌍 **55 languages** | Interface follows your browser language |
 | 🔒 **No tracking** | No network requests, no analytics, no account |
 
 > [!TIP]
@@ -143,49 +143,37 @@ The popup tells you at the bottom:
 
 ## Language support
 
-The interface follows your browser's language. 56 locales ship with the extension; the ones not yet fully translated fall back to English string by string, so nothing is ever blank.
+The interface follows your browser's language. All 55 locales are fully translated — every string, in every language, with no English fallbacks.
 
-<details open>
-<summary><b>Fully translated (20)</b></summary>
+<details>
+<summary><b>All 55 languages</b></summary>
 
 <br>
 
 | | | | |
 | --- | --- | --- | --- |
-| 🇸🇦 العربية (`ar`) | 🇩🇪 Deutsch (`de`) | 🇬🇧 English (`en`) | 🇪🇸 Español (`es`) |
-| 🇫🇷 Français (`fr`) | 🇮🇳 हिन्दी (`hi`) | 🇮🇩 Indonesia (`id`) | 🇮🇹 Italiano (`it`) |
-| 🇯🇵 日本語 (`ja`) | 🇰🇷 한국어 (`ko`) | 🇳🇱 Nederlands (`nl`) | 🇵🇱 Polski (`pl`) |
-| 🇧🇷 Português BR (`pt_BR`) | 🇵🇹 Português PT (`pt_PT`) | 🇷🇺 Русский (`ru`) | 🇹🇭 ไทย (`th`) |
-| 🇹🇷 Türkçe (`tr`) | 🇺🇦 Українська (`uk`) | 🇻🇳 Tiếng Việt (`vi`) | 🇨🇳 简体中文 (`zh_CN`) |
+| 🇪🇹 አማርኛ (`am`) | 🇸🇦 العربية (`ar`) | 🇧🇬 Български (`bg`) | 🇧🇩 বাংলা (`bn`) |
+| 🇪🇸 Català (`ca`) | 🇨🇿 Čeština (`cs`) | 🇩🇰 Dansk (`da`) | 🇩🇪 Deutsch (`de`) |
+| 🇬🇷 Ελληνικά (`el`) | 🇬🇧 English (`en`) | 🇦🇺 English AU (`en_AU`) | 🇬🇧 English UK (`en_GB`) |
+| 🇺🇸 English US (`en_US`) | 🇪🇸 Español (`es`) | 🇲🇽 Español LatAm (`es_419`) | 🇪🇪 Eesti (`et`) |
+| 🇮🇷 فارسی (`fa`) | 🇫🇮 Suomi (`fi`) | 🇵🇭 Filipino (`fil`) | 🇫🇷 Français (`fr`) |
+| 🇮🇳 ગુજરાતી (`gu`) | 🇮🇱 עברית (`he`) | 🇮🇳 हिन्दी (`hi`) | 🇭🇷 Hrvatski (`hr`) |
+| 🇭🇺 Magyar (`hu`) | 🇮🇩 Indonesia (`id`) | 🇮🇹 Italiano (`it`) | 🇯🇵 日本語 (`ja`) |
+| 🇮🇳 ಕನ್ನಡ (`kn`) | 🇰🇷 한국어 (`ko`) | 🇱🇹 Lietuvių (`lt`) | 🇱🇻 Latviešu (`lv`) |
+| 🇮🇳 മലയാളം (`ml`) | 🇮🇳 मराठी (`mr`) | 🇲🇾 Melayu (`ms`) | 🇳🇱 Nederlands (`nl`) |
+| 🇳🇴 Norsk (`no`) | 🇵🇱 Polski (`pl`) | 🇧🇷 Português BR (`pt_BR`) | 🇵🇹 Português PT (`pt_PT`) |
+| 🇷🇴 Română (`ro`) | 🇷🇺 Русский (`ru`) | 🇸🇰 Slovenčina (`sk`) | 🇸🇮 Slovenščina (`sl`) |
+| 🇷🇸 Српски (`sr`) | 🇸🇪 Svenska (`sv`) | 🇰🇪 Kiswahili (`sw`) | 🇮🇳 தமிழ் (`ta`) |
+| 🇮🇳 తెలుగు (`te`) | 🇹🇭 ไทย (`th`) | 🇹🇷 Türkçe (`tr`) | 🇺🇦 Українська (`uk`) |
+| 🇻🇳 Tiếng Việt (`vi`) | 🇨🇳 简体中文 (`zh_CN`) | 🇹🇼 繁體中文 (`zh_TW`) | |
 
 </details>
 
-<details>
-<summary><b>Partially translated — help wanted (36)</b></summary>
-
-<br>
-
-These locales have the extension name and description translated; the rest of the interface falls back to English. **Translating one is the easiest possible first contribution** — see [Contributing](#contributing).
-
-| Code | Language | Code | Language | Code | Language |
-| --- | --- | --- | --- | --- | --- |
-| `am` | አማርኛ | `bg` | Български | `bn` | বাংলা |
-| `ca` | Català | `cs` | Čeština | `da` | Dansk |
-| `el` | Ελληνικά | `en_AU` | English (AU) | `en_GB` | English (UK) |
-| `en_US` | English (US) | `es_419` | Español (LatAm) | `et` | Eesti |
-| `fa` | فارسی | `fi` | Suomi | `fil` | Filipino |
-| `gu` | ગુજરાતી | `he` | עברית | `hr` | Hrvatski |
-| `hu` | Magyar | `kn` | ಕನ್ನಡ | `lt` | Lietuvių |
-| `lv` | Latviešu | `ml` | മലയാളം | `mr` | मराठी |
-| `ms` | Melayu | `no` | Norsk | `ro` | Română |
-| `sk` | Slovenčina | `sl` | Slovenščina | `sr` | Српски |
-| `sv` | Svenska | `sw` | Kiswahili | `ta` | தமிழ் |
-| `te` | తెలుగు | `zh_TW` | 繁體中文 | | |
-
-</details>
+> [!TIP]
+> Spotted a translation that reads awkwardly in your language? Corrections are very welcome and are a great first contribution — see [Contributing](#contributing).
 
 > [!NOTE]
-> All translations live in one table in [`scripts/locales.mjs`](scripts/locales.mjs). Add your language there and run `pnpm run locales` — you never edit 56 JSON files by hand.
+> All translations live in one table in [`scripts/locales.mjs`](scripts/locales.mjs). Add your language there and run `pnpm run locales` — you never edit 55 JSON files by hand.
 
 ---
 
@@ -198,8 +186,8 @@ Store listings are not published yet. Until then, install from source below.
 ### From source (unpacked)
 
 ```bash
-git clone https://github.com/ramazansancar/volume-booster-extension.git
-cd volume-booster-extension
+git clone https://github.com/ramazansancar/volume-booster-tab-extension.git
+cd volume-booster-tab-extension
 pnpm install
 pnpm run build
 ```
@@ -276,7 +264,7 @@ pnpm run package          # build all targets AND zip each for store upload
 | `pnpm run build:safari` | Safari MV3 only |
 | `pnpm run package` | Build everything and produce store-ready zips |
 | `pnpm run icons` | Regenerate the PNG icons from code |
-| `pnpm run locales` | Regenerate all 56 locale files from the translation table |
+| `pnpm run locales` | Regenerate all 55 locale files from the translation table |
 | `pnpm run typecheck` | TypeScript, no emit |
 | `pnpm test` | Run the test suite |
 | `pnpm run lint` | ESLint |
@@ -362,7 +350,7 @@ Nothing is ever sent anywhere. The extension makes no network requests at all.
 ## Project layout
 
 ```
-volume-booster-extension/
+volume-booster-tab-extension/
 ├── src/
 │   ├── lib/                  Shared logic, no browser API assumptions
 │   │   ├── audio-engine.ts     The Web Audio graph
@@ -381,7 +369,7 @@ volume-booster-extension/
 │   ├── build.mjs             esbuild bundling, 7 targets, zip packaging
 │   ├── manifest.mjs          Generates each target's manifest.json
 │   ├── icons.mjs             Renders PNG icons from code, no dependencies
-│   └── locales.mjs           Generates all 56 _locales files
+│   └── locales.mjs           Generates all 55 _locales files
 ├── public/                   Icons and generated locale files
 ├── tests/                    Vitest unit tests
 └── dist/                     Build output, one folder per target

@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Ενισχυτής έντασης"
+    "message": "Ενισχυτής έντασης καρτέλας"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Ενισχύστε την ένταση έως 600% με limiter, ισοσταθμιστή και ισορροπία καναλιών. Ανά καρτέλα, ανοιχτού κώδικα."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Τρέχουσα καρτέλα"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Ένταση"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Ισορροπία"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Κέντρο"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "Μονοφωνικό"
   },
   "popupLimiter": {
     "message": "Limiter"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Απομνημόνευση αυτού του ιστότοπου"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Παράκαμψη"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Διέλευση ήχου χωρίς επεξεργασία"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Σύνθετες ρυθμίσεις"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Ισοσταθμιστής"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Επαναφορά"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ ενεργό"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Επαναφορά καρτέλας"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Άνοιγμα όλων των ρυθμίσεων"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Πάνω από 100% το limiter παραμένει ενεργό για αποφυγή παραμόρφωσης."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Η ενίσχυση είναι ενεργή σε αυτήν την καρτέλα."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Δεν αναπαράγεται ήχος ακόμη."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Χρήση λήψης καρτέλας."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Αυτή η σελίδα αποκλείει την επεξεργασία ήχου."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Οι σελίδες του προγράμματος περιήγησης δεν μπορούν να ενισχυθούν."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Καμία ενεργή καρτέλα."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Αυτή η σελίδα"
   }
 }

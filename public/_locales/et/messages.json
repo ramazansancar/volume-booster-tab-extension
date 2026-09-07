@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Helitugevuse võimendi"
+    "message": "Kaardi helitugevuse võimendi"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Võimenda heli kuni 600% limiteri, ekvalaiseri ja kanalite tasakaaluga. Kaardipõhine ja avatud lähtekoodiga."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Praegune kaart"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Helitugevus"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Tasakaal"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Keskel"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Limiiter"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Jäta see sait meelde"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Möödaviik"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Lase heli töötlemata läbi"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Täpsemad seaded"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Ekvalaiser"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Lähtesta"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ sees"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Lähtesta kaart"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Ava kõik seaded"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Üle 100% jääb limiiter sisse, et vältida moonutusi."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Võimendus on sellel kaardil aktiivne."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Heli ei mängi veel."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Kasutatakse kaardi hõivet."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "See leht blokeerib heli töötlemise."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Brauseri lehti ei saa võimendada."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Aktiivne kaart puudub."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "See leht"
   }
 }

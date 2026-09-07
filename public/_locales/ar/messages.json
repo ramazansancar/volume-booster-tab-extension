@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "مضخم الصوت"
+    "message": "مضخم صوت التبويب"
   },
   "extensionDescription": {
     "message": "ارفع مستوى الصوت حتى 600% مع محدد ومعادل وتوازن القنوات. لكل تبويب ومفتوح المصدر."
@@ -30,7 +30,7 @@
     "message": "تجاوز"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "تمرير الصوت دون معالجة"
   },
   "popupAdvanced": {
     "message": "الإعدادات المتقدمة"
@@ -42,7 +42,7 @@
     "message": "إعادة تعيين"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "المعادل مفعل"
   },
   "popupResetTab": {
     "message": "إعادة تعيين التبويب"
@@ -51,27 +51,27 @@
     "message": "فتح جميع الإعدادات"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "فوق 100% يظل المحدد مفعلاً لمنع التشويه."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "التضخيم مفعل في هذا التبويب."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "لا يوجد صوت قيد التشغيل بعد."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "استخدام التقاط التبويب."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "هذه الصفحة تمنع معالجة الصوت."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "لا يمكن تضخيم صفحات المتصفح."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "لا يوجد تبويب نشط."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "هذه الصفحة"
   }
 }

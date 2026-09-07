@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Појачавач звука"
+    "message": "Појачавач звука картице"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Појачајте звук до 600% уз лимитер, еквилајзер и баланс канала. По картици и отвореног кода."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Тренутна картица"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Јачина звука"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Баланс"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Средина"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "Моно"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Лимитер"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Запамти овај сајт"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Заобиђи"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Пропусти звук необрађен"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Напредна подешавања"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Еквилајзер"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Ресетуј"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ укључен"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Ресетуј картицу"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Отвори сва подешавања"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Изнад 100% лимитер остаје укључен да спречи изобличење."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Појачање је активно на овој картици."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Звук се још не репродукује."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Користи се снимање картице."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Ова страница блокира обраду звука."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Странице прегледача се не могу појачати."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Нема активне картице."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Ова страница"
   }
 }

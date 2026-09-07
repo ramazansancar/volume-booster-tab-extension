@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Volume Booster"
+    "message": "ടാബ് വോളിയം ബൂസ്റ്റർ"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "ലിമിറ്റർ, ഇക്വലൈസർ, ചാനൽ ബാലൻസ് എന്നിവയോടെ വോളിയം 600% വരെ വർധിപ്പിക്കുക. ടാബ് അടിസ്ഥാനത്തിൽ, ഓപ്പൺ സോഴ്‌സ്."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "നിലവിലെ ടാബ്"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "വോളിയം"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "ബാലൻസ്"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "മധ്യം"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "മോണോ"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "ലിമിറ്റർ"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "ഈ സൈറ്റ് ഓർക്കുക"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "ബൈപാസ്"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "ഓഡിയോ പ്രോസസ് ചെയ്യാതെ കടത്തിവിടുക"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "വിപുലമായ ക്രമീകരണങ്ങൾ"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "ഇക്വലൈസർ"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "പുനഃസജ്ജമാക്കുക"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ ഓൺ"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "ടാബ് പുനഃസജ്ജമാക്കുക"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "എല്ലാ ക്രമീകരണങ്ങളും തുറക്കുക"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "100% ന് മുകളിൽ വക്രീകരണം തടയാൻ ലിമിറ്റർ ഓണായി തുടരും."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "ഈ ടാബിൽ ബൂസ്റ്റ് സജീവമാണ്."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "ഇതുവരെ ഓഡിയോ പ്ലേ ചെയ്യുന്നില്ല."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "ടാബ് ക്യാപ്ചർ ഉപയോഗിക്കുന്നു."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "ഈ പേജ് ഓഡിയോ പ്രോസസിംഗ് തടയുന്നു."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "ബ്രൗസർ പേജുകൾ ബൂസ്റ്റ് ചെയ്യാൻ കഴിയില്ല."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "സജീവ ടാബ് ഇല്ല."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "ഈ പേജ്"
   }
 }

@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Volume Booster"
+    "message": "ಟ್ಯಾಬ್ ವಾಲ್ಯೂಮ್ ಬೂಸ್ಟರ್"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "ಲಿಮಿಟರ್, ಈಕ್ವಲೈಸರ್ ಮತ್ತು ಚಾನೆಲ್ ಬ್ಯಾಲೆನ್ಸ್‌ನೊಂದಿಗೆ ವಾಲ್ಯೂಮ್ ಅನ್ನು 600% ವರೆಗೆ ಹೆಚ್ಚಿಸಿ. ಟ್ಯಾಬ್ ವಾರು ಮತ್ತು ಮುಕ್ತ ಮೂಲ."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "ಪ್ರಸ್ತುತ ಟ್ಯಾಬ್"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "ವಾಲ್ಯೂಮ್"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "ಸಮತೋಲನ"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "ಮಧ್ಯ"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "ಮೊನೊ"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "ಲಿಮಿಟರ್"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "ಈ ಸೈಟ್ ನೆನಪಿಡಿ"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "ಬೈಪಾಸ್"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "ಆಡಿಯೊವನ್ನು ಸಂಸ್ಕರಿಸದೆ ರವಾನಿಸಿ"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "ಸುಧಾರಿತ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "ಈಕ್ವಲೈಸರ್"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "ಮರುಹೊಂದಿಸಿ"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ ಆನ್"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "ಟ್ಯಾಬ್ ಮರುಹೊಂದಿಸಿ"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "ಎಲ್ಲಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "100% ಮೀರಿದಾಗ ವಿರೂಪ ತಡೆಯಲು ಲಿಮಿಟರ್ ಆನ್ ಆಗಿರುತ್ತದೆ."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "ಈ ಟ್ಯಾಬ್‌ನಲ್ಲಿ ಬೂಸ್ಟ್ ಸಕ್ರಿಯವಾಗಿದೆ."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "ಇನ್ನೂ ಯಾವುದೇ ಆಡಿಯೊ ಪ್ಲೇ ಆಗುತ್ತಿಲ್ಲ."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "ಟ್ಯಾಬ್ ಕ್ಯಾಪ್ಚರ್ ಬಳಸಲಾಗುತ್ತಿದೆ."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "ಈ ಪುಟ ಆಡಿಯೊ ಸಂಸ್ಕರಣೆಯನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತದೆ."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "ಬ್ರೌಸರ್ ಪುಟಗಳನ್ನು ಹೆಚ್ಚಿಸಲಾಗುವುದಿಲ್ಲ."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "ಸಕ್ರಿಯ ಟ್ಯಾಬ್ ಇಲ್ಲ."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "ಈ ಪುಟ"
   }
 }

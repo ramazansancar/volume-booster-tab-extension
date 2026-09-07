@@ -1,21 +1,21 @@
 {
   "extensionName": {
-    "message": "Zesilovač hlasitosti"
+    "message": "Zesilovač hlasitosti panelu"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Zesilte zvuk až na 600 % s limiterem, ekvalizérem a vyvážením kanálů. Pro každý panel, otevřený kód."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Aktuální panel"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Hlasitost"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Vyvážení"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Střed"
   },
   "popupMono": {
     "message": "Mono"
@@ -24,54 +24,54 @@
     "message": "Limiter"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Zapamatovat tento web"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Obejít"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Propustit zvuk beze změny"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Pokročilá nastavení"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Ekvalizér"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Obnovit"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ zapnut"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Obnovit panel"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Otevřít všechna nastavení"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Nad 100 % zůstává limiter zapnutý, aby zabránil zkreslení."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Zesílení je v tomto panelu aktivní."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Zatím se nepřehrává žádný zvuk."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Používá se záznam panelu."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Tato stránka blokuje zpracování zvuku."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Stránky prohlížeče nelze zesílit."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Žádný aktivní panel."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Tato stránka"
   }
 }

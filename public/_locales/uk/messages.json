@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "Підсилювач гучності"
+    "message": "Підсилювач гучності вкладки"
   },
   "extensionDescription": {
     "message": "Збільште гучність до 600% з лімітером, еквалайзером і балансом каналів. Для кожної вкладки, відкритий код."
@@ -30,7 +30,7 @@
     "message": "Обхід"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Пропустити звук без обробки"
   },
   "popupAdvanced": {
     "message": "Розширені налаштування"
@@ -42,7 +42,7 @@
     "message": "Скинути"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ увімк."
   },
   "popupResetTab": {
     "message": "Скинути вкладку"
@@ -54,24 +54,24 @@
     "message": "Понад 100% лімітер залишається увімкненим, щоб уникнути спотворень."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Підсилення активне на цій вкладці."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Звук ще не відтворюється."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Використовується захоплення вкладки."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Ця сторінка блокує обробку звуку."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Сторінки браузера не можна підсилити."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Немає активної вкладки."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Ця сторінка"
   }
 }

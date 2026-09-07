@@ -84,7 +84,7 @@ function parseArgs(argv) {
 function printHelp() {
   const rows = TARGETS.map((t) => `  ${t.padEnd(14)}${TARGET_NOTES[t] ?? ''}`).join('\n');
   console.log(`
-Volume Booster build script
+Volume Booster Tab build script
 
   --all                 Build every target (default)
   --target=<name>       Build one target, or a comma-separated list

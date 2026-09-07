@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Volume Booster"
+    "message": "ట్యాబ్ వాల్యూమ్ బూస్టర్"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "లిమిటర్, ఈక్వలైజర్ మరియు ఛానెల్ బ్యాలెన్స్‌తో వాల్యూమ్‌ను 600% వరకు పెంచండి. ట్యాబ్ వారీగా, ఓపెన్ సోర్స్."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "ప్రస్తుత ట్యాబ్"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "వాల్యూమ్"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "బ్యాలెన్స్"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "మధ్య"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "మోనో"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "లిమిటర్"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "ఈ సైట్‌ను గుర్తుంచుకో"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "బైపాస్"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "ఆడియోను ప్రాసెస్ చేయకుండా పంపు"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "అధునాతన సెట్టింగ్‌లు"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "ఈక్వలైజర్"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "రీసెట్"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ ఆన్"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "ట్యాబ్ రీసెట్"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "అన్ని సెట్టింగ్‌లను తెరవండి"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "100% పైన వక్రీకరణను నివారించడానికి లిమిటర్ ఆన్‌లో ఉంటుంది."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "ఈ ట్యాబ్‌లో బూస్ట్ సక్రియంగా ఉంది."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "ఇంకా ఆడియో ప్లే కావడం లేదు."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "ట్యాబ్ క్యాప్చర్ ఉపయోగిస్తోంది."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "ఈ పేజీ ఆడియో ప్రాసెసింగ్‌ను నిరోధిస్తుంది."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "బ్రౌజర్ పేజీలను బూస్ట్ చేయలేరు."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "సక్రియ ట్యాబ్ లేదు."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "ఈ పేజీ"
   }
 }

@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "Wzmacniacz głośności"
+    "message": "Wzmacniacz głośności karty"
   },
   "extensionDescription": {
     "message": "Zwiększ głośność do 600% z limiterem, korektorem i balansem kanałów. Osobno dla każdej karty, open source."
@@ -30,7 +30,7 @@
     "message": "Pomiń"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Przepuść dźwięk bez zmian"
   },
   "popupAdvanced": {
     "message": "Ustawienia zaawansowane"
@@ -42,7 +42,7 @@
     "message": "Resetuj"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ wł."
   },
   "popupResetTab": {
     "message": "Resetuj kartę"
@@ -54,24 +54,24 @@
     "message": "Powyżej 100% limiter pozostaje włączony, aby zapobiec zniekształceniom."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Wzmocnienie jest aktywne na tej karcie."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Nie odtwarzany jest jeszcze żaden dźwięk."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Używane jest przechwytywanie karty."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Ta strona blokuje przetwarzanie dźwięku."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Stron przeglądarki nie można wzmocnić."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Brak aktywnej karty."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Ta strona"
   }
 }

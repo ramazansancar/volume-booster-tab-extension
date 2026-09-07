@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "ভলিউম বুস্টার"
+    "message": "ট্যাব ভলিউম বুস্টার"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "লিমিটার, ইকুয়ালাইজার ও চ্যানেল ব্যালেন্স সহ ভলিউম ৬০০% পর্যন্ত বাড়ান। ট্যাব-ভিত্তিক ও ওপেন সোর্স।"
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "বর্তমান ট্যাব"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "ভলিউম"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "ব্যালেন্স"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "কেন্দ্র"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "মনো"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "লিমিটার"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "এই সাইট মনে রাখুন"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "বাইপাস"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "অডিও প্রক্রিয়া ছাড়াই পাস করুন"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "উন্নত সেটিংস"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "ইকুয়ালাইজার"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "রিসেট"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ চালু"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "ট্যাব রিসেট করুন"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "সব সেটিংস খুলুন"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "১০০% এর উপরে বিকৃতি রোধে লিমিটার চালু থাকে।"
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "এই ট্যাবে বুস্ট সক্রিয়।"
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "এখনও কোনো অডিও চলছে না।"
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "ট্যাব ক্যাপচার ব্যবহার করা হচ্ছে।"
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "এই পৃষ্ঠা অডিও প্রক্রিয়াকরণ ব্লক করে।"
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "ব্রাউজার পৃষ্ঠা বুস্ট করা যায় না।"
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "কোনো সক্রিয় ট্যাব নেই।"
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "এই পৃষ্ঠা"
   }
 }

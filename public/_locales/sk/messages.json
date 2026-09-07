@@ -1,21 +1,21 @@
 {
   "extensionName": {
-    "message": "Zosilňovač hlasitosti"
+    "message": "Zosilňovač hlasitosti karty"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Zosilnite zvuk až na 600 % s limiterom, ekvalizérom a vyvážením kanálov. Pre každú kartu, otvorený kód."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Aktuálna karta"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Hlasitosť"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Vyváženie"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Stred"
   },
   "popupMono": {
     "message": "Mono"
@@ -24,54 +24,54 @@
     "message": "Limiter"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Zapamätať túto stránku"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Obísť"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Prepustiť zvuk bez zmeny"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Rozšírené nastavenia"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Ekvalizér"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Obnoviť"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ zapnutý"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Obnoviť kartu"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Otvoriť všetky nastavenia"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Nad 100 % zostáva limiter zapnutý, aby zabránil skresleniu."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Zosilnenie je na tejto karte aktívne."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Zatiaľ sa neprehráva žiadny zvuk."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Používa sa záznam karty."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Táto stránka blokuje spracovanie zvuku."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Stránky prehliadača nemožno zosilniť."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Žiadna aktívna karta."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Táto stránka"
   }
 }

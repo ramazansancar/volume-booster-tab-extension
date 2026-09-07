@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "Amplificatore volume"
+    "message": "Amplificatore volume per scheda"
   },
   "extensionDescription": {
     "message": "Aumenta il volume fino al 600% con limitatore, equalizzatore e bilanciamento. Per scheda e open source."
@@ -30,7 +30,7 @@
     "message": "Bypass"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Lascia passare l’audio non elaborato"
   },
   "popupAdvanced": {
     "message": "Impostazioni avanzate"
@@ -42,7 +42,7 @@
     "message": "Reimposta"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ attivo"
   },
   "popupResetTab": {
     "message": "Reimposta scheda"
@@ -54,24 +54,24 @@
     "message": "Oltre il 100% il limitatore resta attivo per evitare distorsioni."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "L’amplificazione è attiva su questa scheda."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Nessun audio in riproduzione."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Utilizzo della cattura scheda."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Questa pagina blocca l’elaborazione audio."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Le pagine del browser non possono essere amplificate."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Nessuna scheda attiva."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Questa pagina"
   }
 }

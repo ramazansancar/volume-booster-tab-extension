@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Amplificador de volumen"
+    "message": "Amplificador de volumen por pestaña"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Aumenta el volumen hasta un 600 % con limitador, ecualizador y balance de canales. Por pestaña y de código abierto."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Pestaña actual"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Volumen"
   },
   "popupBalance": {
     "message": "Balance"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Centro"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Limitador"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Recordar este sitio"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Omitir"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Dejar el audio sin procesar"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Configuración avanzada"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Ecualizador"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Restablecer"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ activo"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Restablecer pestaña"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Abrir todos los ajustes"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Por encima del 100 % el limitador permanece activo para evitar distorsión."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "El aumento está activo en esta pestaña."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Aún no se reproduce audio."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Usando captura de pestaña."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Esta página bloquea el procesamiento de audio."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Las páginas del navegador no se pueden amplificar."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "No hay pestaña activa."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Esta página"
   }
 }

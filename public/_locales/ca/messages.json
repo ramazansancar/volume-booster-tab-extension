@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Amplificador de volum"
+    "message": "Amplificador de volum per pestanya"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Augmenta el volum fins al 600% amb limitador, equalitzador i balanç. Per pestanya i codi obert."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Pestanya actual"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Volum"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Balanç"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Centre"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Limitador"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Recorda aquest lloc"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Omet"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Deixa passar l’àudio sense processar"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Configuració avançada"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Equalitzador"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Restableix"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ actiu"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Restableix la pestanya"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Obre tota la configuració"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Per sobre del 100% el limitador es manté actiu per evitar distorsió."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "L’amplificació és activa en aquesta pestanya."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Encara no es reprodueix cap àudio."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "S’utilitza la captura de pestanya."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Aquesta pàgina bloqueja el processament d’àudio."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Les pàgines del navegador no es poden amplificar."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Cap pestanya activa."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Aquesta pàgina"
   }
 }

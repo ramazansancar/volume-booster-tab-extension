@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Amplificator de volum"
+    "message": "Amplificator de volum pe filă"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Amplifică volumul până la 600% cu limitator, egalizator și balans. Per filă și open source."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Fila curentă"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Volum"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Balans"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Centru"
   },
   "popupMono": {
     "message": "Mono"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "Limitator"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Reține acest site"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Ocolire"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Lasă sunetul neprocesat"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Setări avansate"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Egalizator"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Resetează"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ activ"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Resetează fila"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Deschide toate setările"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Peste 100% limitatorul rămâne activ pentru a preveni distorsiunea."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Amplificarea este activă pe această filă."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Niciun sunet redat încă."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Se folosește capturarea filei."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Această pagină blochează procesarea audio."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Paginile browserului nu pot fi amplificate."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Nicio filă activă."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Această pagină"
   }
 }

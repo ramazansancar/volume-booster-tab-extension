@@ -10,8 +10,8 @@ Thanks for considering a contribution. Pull requests are genuinely welcome — t
 ## Quick start
 
 ```bash
-git clone https://github.com/ramazansancar/volume-booster-extension.git
-cd volume-booster-extension
+git clone https://github.com/ramazansancar/volume-booster-tab-extension.git
+cd volume-booster-tab-extension
 pnpm install
 pnpm run dev
 ```
@@ -39,12 +39,14 @@ If all three pass locally, CI will pass too.
 
 ## Good first contributions
 
-### 🌍 Translate a language
+### 🌍 Improve a translation
 
-The single easiest way to help. **All translations live in one table** in [`scripts/locales.mjs`](scripts/locales.mjs) — you never edit the 56 JSON files under `public/_locales/`, those are generated.
+All 55 locales are already translated, but a machine-assisted translation is no substitute for a native speaker. If something reads awkwardly in your language, fixing it is a genuinely useful contribution.
 
-1. Find your language code in the `LOCALES` array
-2. Add your translations to the `MESSAGES` table:
+**All translations live in one table** in [`scripts/locales.mjs`](scripts/locales.mjs) — you never edit the 55 JSON files under `public/_locales/`, those are generated.
+
+1. Find your language code in the `MESSAGES` table
+2. Correct or refine the strings:
 
 ```js
 popupVolume: {
@@ -57,7 +59,7 @@ popupVolume: {
 
 3. Run `pnpm run locales` and commit both the script and the generated files
 
-Any key you leave out falls back to English automatically, so a partial translation is still a useful contribution.
+Any key a locale omits falls back to English automatically, so even a partial pass is useful.
 
 ### 🐛 Report a site that does not work
 

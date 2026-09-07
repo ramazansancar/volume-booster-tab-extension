@@ -1,21 +1,21 @@
 {
   "extensionName": {
-    "message": "Volume Booster"
+    "message": "Volume Booster Tab"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Palakasin ang volume hanggang 600% gamit ang limiter, equalizer at channel balance. Per-tab at open source."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Kasalukuyang tab"
   },
   "popupVolume": {
     "message": "Volume"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Balanse"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Gitna"
   },
   "popupMono": {
     "message": "Mono"
@@ -24,54 +24,54 @@
     "message": "Limiter"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Tandaan ang site na ito"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Laktawan"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Ipasa ang audio nang walang proseso"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Mga advanced na setting"
   },
   "popupEqualizer": {
     "message": "Equalizer"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "I-reset"
   },
   "popupEqOn": {
     "message": "EQ on"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "I-reset ang tab"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Buksan ang lahat ng setting"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "Higit sa 100% nananatiling naka-on ang limiter upang maiwasan ang distortion."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Aktibo ang boost sa tab na ito."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Wala pang audio na tumutugtog."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Gumagamit ng tab capture."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Hinaharangan ng pahinang ito ang pagproseso ng audio."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "Hindi maaaring i-boost ang mga pahina ng browser."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Walang aktibong tab."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Ang pahinang ito"
   }
 }

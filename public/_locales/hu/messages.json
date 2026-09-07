@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Hangerő-erősítő"
+    "message": "Laponkénti hangerő-erősítő"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "Növelje a hangerőt akár 600%-ig limiterrel, hangszínszabályzóval és csatornabalansszal. Laponként, nyílt forráskódú."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "Jelenlegi lap"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "Hangerő"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "Balansz"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "Közép"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "Monó"
   },
   "popupLimiter": {
     "message": "Limiter"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "Oldal megjegyzése"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "Kihagyás"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "Hang átengedése feldolgozás nélkül"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "Speciális beállítások"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "Hangszínszabályzó"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "Alaphelyzet"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ be"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "Lap alaphelyzetbe"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "Összes beállítás megnyitása"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "100% felett a limiter bekapcsolva marad a torzítás elkerülésére."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "Az erősítés aktív ezen a lapon."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "Még nincs lejátszott hang."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "Lapfelvétel használatban."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "Ez az oldal blokkolja a hangfeldolgozást."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "A böngészőoldalak nem erősíthetők."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "Nincs aktív lap."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "Ez az oldal"
   }
 }

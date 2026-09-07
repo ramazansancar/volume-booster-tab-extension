@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "音量增強器"
+    "message": "分頁音量增強器"
   },
   "extensionDescription": {
     "message": "透過限制器、等化器和聲道平衡將音量提升至 600%。依分頁獨立設定，開放原始碼。"
@@ -30,7 +30,7 @@
     "message": "旁路"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "不處理直接輸出音訊"
   },
   "popupAdvanced": {
     "message": "進階設定"
@@ -42,7 +42,7 @@
     "message": "重設"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ 已開啟"
   },
   "popupResetTab": {
     "message": "重設分頁"
@@ -54,24 +54,24 @@
     "message": "超過 100% 時限制器會保持開啟以避免失真。"
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "此分頁已啟用增強。"
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "尚未播放音訊。"
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "正在使用分頁擷取。"
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "此頁面阻止音訊處理。"
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "無法增強瀏覽器內部頁面。"
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "沒有作用中的分頁。"
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "此頁面"
   }
 }

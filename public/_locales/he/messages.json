@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "מגביר עוצמת קול"
+    "message": "מגביר עוצמת קול ללשונית"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "הגבירו את עוצמת הקול עד 600% עם מגביל, אקולייזר ואיזון ערוצים. לכל לשונית וקוד פתוח."
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "הלשונית הנוכחית"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "עוצמת קול"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "איזון"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "מרכז"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "מונו"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "מגביל"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "זכור אתר זה"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "עקיפה"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "העבר את השמע ללא עיבוד"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "הגדרות מתקדמות"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "אקולייזר"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "איפוס"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ פעיל"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "אפס לשונית"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "פתח את כל ההגדרות"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "מעל 100% המגביל נשאר פעיל כדי למנוע עיוות."
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "ההגברה פעילה בלשונית זו."
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "לא מתנגן שמע עדיין."
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "משתמש בלכידת לשונית."
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "דף זה חוסם עיבוד שמע."
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "לא ניתן להגביר דפי דפדפן."
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "אין לשונית פעילה."
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "דף זה"
   }
 }

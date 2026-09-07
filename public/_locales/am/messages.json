@@ -1,77 +1,77 @@
 {
   "extensionName": {
-    "message": "Volume Booster"
+    "message": "የድምጽ ማጉያ ትር"
   },
   "extensionDescription": {
-    "message": "Boost volume up to 600% with a limiter, equalizer and channel balance. Per-tab and open source."
+    "message": "በገዳቢ፣ አጣጣሚ እና የሰርጥ ሚዛን ድምጽን እስከ 600% ያሳድጉ። በየትሩ እና ክፍት ምንጭ።"
   },
   "popupCurrentSite": {
-    "message": "Current tab"
+    "message": "የአሁኑ ትር"
   },
   "popupVolume": {
-    "message": "Volume"
+    "message": "ድምጽ"
   },
   "popupBalance": {
-    "message": "Balance"
+    "message": "ሚዛን"
   },
   "popupBalanceCenter": {
-    "message": "Center"
+    "message": "መሃል"
   },
   "popupMono": {
-    "message": "Mono"
+    "message": "ሞኖ"
   },
   "popupLimiter": {
-    "message": "Limiter"
+    "message": "ገዳቢ"
   },
   "popupRemember": {
-    "message": "Remember this site"
+    "message": "ይህን ጣቢያ አስታውስ"
   },
   "popupBypass": {
-    "message": "Bypass"
+    "message": "አልፍ"
   },
   "popupBypassTitle": {
-    "message": "Pass audio through untouched"
+    "message": "ድምጽን ሳይነካ አሳልፍ"
   },
   "popupAdvanced": {
-    "message": "Advanced settings"
+    "message": "የላቀ ቅንብሮች"
   },
   "popupEqualizer": {
-    "message": "Equalizer"
+    "message": "አጣጣሚ"
   },
   "popupEqReset": {
-    "message": "Reset"
+    "message": "ዳግም አስጀምር"
   },
   "popupEqOn": {
-    "message": "EQ on"
+    "message": "EQ በርቷል"
   },
   "popupResetTab": {
-    "message": "Reset tab"
+    "message": "ትርን ዳግም አስጀምር"
   },
   "popupOpenOptions": {
-    "message": "Open all settings"
+    "message": "ሁሉንም ቅንብሮች ክፈት"
   },
   "popupGainHint": {
-    "message": "Above 100% the limiter stays on to prevent distortion."
+    "message": "ከ100% በላይ ማዛባትን ለመከላከል ገዳቢው በርቶ ይቆያል።"
   },
   "popupActive": {
-    "message": "Boost is active on this tab."
+    "message": "በዚህ ትር ላይ ማጉላት ንቁ ነው።"
   },
   "popupIdle": {
-    "message": "No audio playing yet."
+    "message": "እስካሁን ድምጽ አልተጫወተም።"
   },
   "popupTabCapture": {
-    "message": "Using tab capture."
+    "message": "የትር ቀረጻ በመጠቀም ላይ።"
   },
   "popupUnavailable": {
-    "message": "This page blocks audio processing."
+    "message": "ይህ ገጽ የድምጽ ሂደትን ያግዳል።"
   },
   "popupNoOrigin": {
-    "message": "Browser pages cannot be boosted."
+    "message": "የአሳሽ ገጾች ሊጎሉ አይችሉም።"
   },
   "popupNoTab": {
-    "message": "No active tab."
+    "message": "ንቁ ትር የለም።"
   },
   "popupUnsupportedPage": {
-    "message": "This page"
+    "message": "ይህ ገጽ"
   }
 }
