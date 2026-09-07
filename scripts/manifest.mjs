@@ -42,8 +42,20 @@ export const DEFAULT_TARGETS = /** @type {const} */ ([
   'safari-mv3',
 ]);
 
-/** Stable add-on id, required by Firefox for storage and update consistency. */
-const FIREFOX_ADDON_ID = 'volume-booster-tab@ramazansancar.github.io';
+/**
+ * Stable add-on id, required by Firefox for storage and update consistency.
+ *
+ * This value is frozen. addons.mozilla.org binds a listing to the id of its
+ * first accepted upload, and rejects any later version whose manifest declares
+ * a different one - so changing it would not rename this add-on, it would
+ * orphan it and require registering a separate listing under a new slug.
+ *
+ * It therefore still reads "volume-booster" rather than "volume-booster-tab",
+ * from before the add-on was renamed. That mismatch is invisible to users: the
+ * id is an internal identity the browser uses for storage and updates, never
+ * something shown in the interface or the store.
+ */
+const FIREFOX_ADDON_ID = 'volume-booster@ramazansancar.dev';
 
 /**
  * First Firefox releases that understand
