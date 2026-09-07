@@ -2,6 +2,7 @@ import { AudioEngine } from '@/lib/audio-engine';
 import { ext, sendRuntimeMessage } from '@/lib/browser';
 import { neutralSettings } from '@/lib/defaults';
 import { sanitizeSettings } from '@/lib/validate';
+import { AttachmentRegistry } from '@/content/attachments';
 import type {
   AudioPathway,
   AudioSettings,
@@ -58,22 +59,13 @@ const MAX_ATTACH_ATTEMPTS = 6;
 /** Backoff schedule in milliseconds, indexed by attempt number. */
 const RETRY_DELAYS_MS = [150, 400, 900, 1800, 3000, 5000];
 
-interface Attachment {
-  /** The source node, kept so the element is never wrapped twice. */
-  source: MediaElementAudioSourceNode | null;
-  attempts: number;
-  timer: ReturnType<typeof setTimeout> | null;
-  /** True once the element is successfully routed into the engine. */
-  connected: boolean;
-}
-
 /**
- * Bookkeeping per element. A Map (not a WeakSet) is required because we have to
- * re-read an element's attempt count on retry, and prune entries when the
- * element leaves the DOM. Entries are removed explicitly in `forget`, so the
- * map does not grow without bound on long-lived SPA sessions.
+ * Which elements are routed into the engine. The rules this enforces are in
+ * `attachments.ts`, where they are covered by tests: entries are never deleted
+ * and source nodes never disconnected, because both would silence an element
+ * that the page later reuses.
  */
-const attachments = new Map<HTMLMediaElement, Attachment>();
+const attachments = new AttachmentRegistry<HTMLMediaElement, MediaElementAudioSourceNode>();
 
 function post(message: ContentToBackgroundMessage): void {
   try {
@@ -85,11 +77,7 @@ function post(message: ContentToBackgroundMessage): void {
 }
 
 function connectedCount(): number {
-  let count = 0;
-  for (const attachment of attachments.values()) {
-    if (attachment.connected) count += 1;
-  }
-  return count;
+  return attachments.connectedCount();
 }
 
 function reportCount(): void {
@@ -161,35 +149,30 @@ function ensureEngine(): AudioEngine | null {
  * MAX_ATTACH_ATTEMPTS do we conclude the page genuinely cannot be boosted.
  */
 function attach(element: HTMLMediaElement, immediate = false): void {
-  let attachment = attachments.get(element);
-  if (attachment?.connected) {
+  const attachment = attachments.ensure(element);
+
+  if (attachment.connected) {
     // Already routed. Re-apply so a settings change made while this element was
     // being swapped in is not lost.
     engine?.apply(settings);
     return;
   }
-  if (!attachment) {
-    attachment = { source: null, attempts: 0, timer: null, connected: false };
-    attachments.set(element, attachment);
-  }
   if (attachment.timer !== null && !immediate) return;
-  if (attachment.timer !== null) {
-    clearTimeout(attachment.timer);
-    attachment.timer = null;
-  }
+  attachments.clearRetry(element);
 
   const activeEngine = ensureEngine();
   if (!activeEngine || !context) return;
 
   try {
     // An element that already has a source node from an earlier attempt must be
-    // reused; creating a second one for the same element throws InvalidStateError.
-    const source =
-      attachment.source ?? context.createMediaElementSource(element);
-    attachment.source = source;
+    // reused; a second createMediaElementSource for the same element throws
+    // InvalidStateError, and there is no way to undo the first one.
+    const source = attachment.source ?? context.createMediaElementSource(element);
+
+    // Connecting a node that is already connected to the same destination is a
+    // no-op, so this safely rewires an element the page detached and restored.
     source.connect(activeEngine.inputNode);
-    attachment.connected = true;
-    attachment.attempts = 0;
+    attachments.markConnected(element, source);
 
     // Re-apply on every successful attach. This is the line that keeps the next
     // episode at the volume the user chose for the previous one.
@@ -199,8 +182,8 @@ function attach(element: HTMLMediaElement, immediate = false): void {
     setPathway('media-element');
     reportCount();
   } catch (error) {
-    attachment.attempts += 1;
-    if (attachment.attempts >= MAX_ATTACH_ATTEMPTS) {
+    const attempts = attachments.recordFailure(element);
+    if (attempts >= MAX_ATTACH_ATTEMPTS) {
       setPathway(
         'unavailable',
         error instanceof Error
@@ -210,27 +193,25 @@ function attach(element: HTMLMediaElement, immediate = false): void {
       return;
     }
     const delay =
-      RETRY_DELAYS_MS[attachment.attempts - 1] ??
+      RETRY_DELAYS_MS[attempts - 1] ??
       RETRY_DELAYS_MS[RETRY_DELAYS_MS.length - 1] ??
       1000;
-    attachment.timer = setTimeout(() => {
-      attachment.timer = null;
-      attach(element, true);
-    }, delay);
+    attachments.scheduleRetry(
+      element,
+      setTimeout(() => attach(element, true), delay),
+    );
   }
 }
 
-/** Drops an element that has left the DOM, releasing its bookkeeping entry. */
+/**
+ * Marks an element that has left the DOM as no longer counted.
+ *
+ * The source node stays wired and the entry stays in the registry - see
+ * `attachments.ts` for why undoing either would mute the element for good.
+ */
 function forget(element: HTMLMediaElement): void {
-  const attachment = attachments.get(element);
-  if (!attachment) return;
-  if (attachment.timer !== null) clearTimeout(attachment.timer);
-  try {
-    attachment.source?.disconnect();
-  } catch {
-    // Already disconnected.
-  }
-  attachments.delete(element);
+  if (!attachments.has(element)) return;
+  attachments.markDisconnected(element);
   reportCount();
 
   // With nothing connected left, stop claiming the media-element pathway so the
@@ -239,6 +220,7 @@ function forget(element: HTMLMediaElement): void {
     setPathway('idle');
   }
 }
+
 
 /**
  * Collects media elements from a subtree, descending into open shadow roots.
@@ -409,7 +391,7 @@ ext.runtime.onMessage.addListener(
         return true;
       }
       case 'bg:teardown': {
-        for (const element of [...attachments.keys()]) forget(element);
+        attachments.reset();
         engine?.dispose();
         engine = null;
         void context?.close().catch(() => undefined);

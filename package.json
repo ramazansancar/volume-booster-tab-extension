@@ -9,7 +9,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "dev": "node scripts/build.mjs --target=chrome-mv3 --watch --dev",
+    "dev": "node scripts/build.mjs --target=chrome-mv2,chrome-mv3 --watch --dev",
     "dev:firefox": "node scripts/build.mjs --target=firefox-mv2 --watch --dev",
     "build": "node scripts/build.mjs --all",
     "build:chrome": "node scripts/build.mjs --target=chrome-mv3,chrome-mv2",

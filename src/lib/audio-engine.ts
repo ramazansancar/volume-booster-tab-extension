@@ -159,14 +159,33 @@ export class AudioEngine {
     }
   }
 
-  /** Resumes the context, which browsers suspend until a user gesture. */
+  /**
+   * Resumes the context, which browsers suspend until the page is allowed to
+   * make sound.
+   *
+   * Chrome writes "The AudioContext was not allowed to start" straight to the
+   * console when a resume is refused. That message is not an exception, so a
+   * catch block cannot suppress it - the only way to avoid the noise is not to
+   * call resume() unless it can succeed.
+   *
+   * `navigator.userActivation.hasBeenActive` answers that: it reports whether
+   * the document has ever had a user gesture, which is the condition the
+   * autoplay policy actually checks. Its sibling `isActive` is deliberately not
+   * used here - that one expires a few seconds after each gesture, and would
+   * refuse legitimate resumes triggered by a later settings change.
+   */
   async resume(): Promise<void> {
-    if (this.context.state === 'suspended') {
-      try {
-        await this.context.resume();
-      } catch {
-        // Autoplay policy can refuse; the next user gesture will retry.
-      }
+    if (this.context.state !== 'suspended') return;
+
+    const activation = (
+      navigator as Navigator & { userActivation?: { hasBeenActive: boolean } }
+    ).userActivation;
+    if (activation && !activation.hasBeenActive) return;
+
+    try {
+      await this.context.resume();
+    } catch {
+      // Autoplay policy can still refuse; the next user gesture will retry.
     }
   }
 
