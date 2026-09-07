@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ укључен"
   },
+  "popupStateActive": {
+    "message": "Активно"
+  },
+  "popupStateBypassed": {
+    "message": "Заобиўено"
+  },
   "popupResetTab": {
     "message": "Ресетуј картицу"
   },

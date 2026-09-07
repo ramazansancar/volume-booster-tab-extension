@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ በርቷል"
   },
+  "popupStateActive": {
+    "message": "ንቁ"
+  },
+  "popupStateBypassed": {
+    "message": "ታልፈዋል"
+  },
   "popupResetTab": {
     "message": "ትርን ዳግም አስጀምር"
   },

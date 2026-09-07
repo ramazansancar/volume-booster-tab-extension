@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ på"
   },
+  "popupStateActive": {
+    "message": "Aktiv"
+  },
+  "popupStateBypassed": {
+    "message": "Omgått"
+  },
   "popupResetTab": {
     "message": "Tilbakestill fane"
   },

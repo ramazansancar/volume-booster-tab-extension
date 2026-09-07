@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ 켜짐"
   },
+  "popupStateActive": {
+    "message": "활성"
+  },
+  "popupStateBypassed": {
+    "message": "우회 중"
+  },
   "popupResetTab": {
     "message": "탭 초기화"
   },

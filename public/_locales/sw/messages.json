@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ imewashwa"
   },
+  "popupStateActive": {
+    "message": "Inatumika"
+  },
+  "popupStateBypassed": {
+    "message": "Imerukwa"
+  },
   "popupResetTab": {
     "message": "Weka upya kichupo"
   },

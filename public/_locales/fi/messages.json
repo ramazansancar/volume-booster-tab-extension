@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ päällä"
   },
+  "popupStateActive": {
+    "message": "Käytössä"
+  },
+  "popupStateBypassed": {
+    "message": "Ohitettu"
+  },
   "popupResetTab": {
     "message": "Nollaa välilehti"
   },

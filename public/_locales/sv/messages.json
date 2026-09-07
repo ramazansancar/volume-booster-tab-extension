@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ på"
   },
+  "popupStateActive": {
+    "message": "Aktiv"
+  },
+  "popupStateBypassed": {
+    "message": "Förbikopplad"
+  },
   "popupResetTab": {
     "message": "Återställ flik"
   },

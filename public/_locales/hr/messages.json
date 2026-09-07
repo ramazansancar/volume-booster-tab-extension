@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ uključen"
   },
+  "popupStateActive": {
+    "message": "Aktivno"
+  },
+  "popupStateBypassed": {
+    "message": "Zaobiđeno"
+  },
   "popupResetTab": {
     "message": "Poništi karticu"
   },

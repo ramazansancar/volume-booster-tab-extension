@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ オン"
   },
+  "popupStateActive": {
+    "message": "有効"
+  },
+  "popupStateBypassed": {
+    "message": "バイパス中"
+  },
   "popupResetTab": {
     "message": "タブをリセット"
   },

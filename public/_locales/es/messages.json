@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ activo"
   },
+  "popupStateActive": {
+    "message": "Activo"
+  },
+  "popupStateBypassed": {
+    "message": "Omitido"
+  },
   "popupResetTab": {
     "message": "Restablecer pestaña"
   },

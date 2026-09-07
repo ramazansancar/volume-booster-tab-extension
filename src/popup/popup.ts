@@ -1,4 +1,4 @@
-import { ext } from '@/lib/browser';
+import { ext, queryTabs, sendMessageToTab, sendRuntimeMessage } from '@/lib/browser';
 import { EQ_BAND_FREQUENCIES } from '@/types';
 import { MAX_EQ_DB } from '@/lib/validate';
 import type {
@@ -27,6 +27,7 @@ const dom = {
   limiter: document.getElementById('limiter') as HTMLInputElement,
   remember: document.getElementById('remember') as HTMLInputElement,
   bypass: document.getElementById('bypass') as HTMLButtonElement,
+  bypassLabel: document.getElementById('bypass-label') as HTMLElement,
   equalizer: document.getElementById('equalizer') as HTMLElement,
   eqBadge: document.getElementById('eq-badge') as HTMLElement,
   eqReset: document.getElementById('eq-reset') as HTMLButtonElement,
@@ -34,6 +35,7 @@ const dom = {
   reset: document.getElementById('reset') as HTMLButtonElement,
   optionsLink: document.getElementById('options-link') as HTMLButtonElement,
   status: document.getElementById('status') as HTMLElement,
+  statusDetail: document.getElementById('status-detail') as HTMLElement,
   presets: [...document.querySelectorAll<HTMLButtonElement>('[data-preset]')],
 };
 
@@ -50,7 +52,7 @@ const eqSliders: HTMLInputElement[] = [];
 const eqReadouts: HTMLElement[] = [];
 
 function send<T>(message: UiToBackgroundMessage): Promise<T> {
-  return ext.runtime.sendMessage(message) as Promise<T>;
+  return sendRuntimeMessage<T>(message);
 }
 
 function localize(): void {
@@ -132,7 +134,13 @@ function render(response: TabStateResponse): void {
   dom.mono.checked = settings.mono;
   dom.limiter.checked = settings.limiterEnabled;
   dom.remember.checked = response.state.persistence === 'origin';
+  // The pill names the current state rather than the action, so it has to be
+  // relabelled on every render: "Active" while processing runs, "Bypassed"
+  // once the audio is passing through untouched.
   dom.bypass.setAttribute('aria-pressed', String(settings.bypassed));
+  dom.bypassLabel.textContent = settings.bypassed
+    ? ext.i18n?.getMessage('popupStateBypassed') || 'Bypassed'
+    : ext.i18n?.getMessage('popupStateActive') || 'Active';
 
   for (const button of dom.presets) {
     const preset = Number(button.dataset.preset);
@@ -162,7 +170,7 @@ function render(response: TabStateResponse): void {
 }
 
 function renderStatus(response: TabStateResponse): void {
-  const { pathway, mediaElementCount, origin } = response.state;
+  const { pathway, mediaElementCount, origin, pathwayReason } = response.state;
 
   if (!origin) {
     setStatus('popupNoOrigin', 'Browser pages cannot be boosted.', 'warn');
@@ -194,6 +202,12 @@ function renderStatus(response: TabStateResponse): void {
     default:
       setStatus('popupIdle', 'No audio playing yet.', 'ok');
   }
+
+  // The status line is the only place the user can find out why a boost is not
+  // taking effect, so it must never be blank. When the content script explained
+  // itself, show that explanation as a second line rather than discarding it.
+  dom.statusDetail.textContent = pathwayReason ?? '';
+  dom.statusDetail.hidden = !pathwayReason;
 }
 
 function setStatus(key: string, fallback: string, tone: 'ok' | 'warn'): void {
@@ -293,7 +307,7 @@ async function init(): Promise<void> {
   restoreAdvancedState();
   bindControls();
 
-  const [tab] = await ext.tabs.query({ active: true, currentWindow: true });
+  const [tab] = await queryTabs({ active: true, currentWindow: true });
   if (tab?.id === undefined) {
     setStatus('popupNoTab', 'No active tab.', 'warn');
     document.body.dataset.disabled = 'true';
@@ -304,7 +318,7 @@ async function init(): Promise<void> {
   // Ask the content script to re-check the page before we render, so the number
   // shown here always matches what is actually connected right now.
   try {
-    await ext.tabs.sendMessage(tabId, { type: 'bg:probe' });
+    await sendMessageToTab(tabId, { type: 'bg:probe' });
   } catch {
     // No content script on this page; the background reports that below.
   }

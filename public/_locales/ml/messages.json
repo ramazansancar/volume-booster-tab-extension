@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ ഓൺ"
   },
+  "popupStateActive": {
+    "message": "സക്രിയം"
+  },
+  "popupStateBypassed": {
+    "message": "ബൈപാസ്"
+  },
   "popupResetTab": {
     "message": "ടാബ് പുനഃസജ്ജമാക്കുക"
   },

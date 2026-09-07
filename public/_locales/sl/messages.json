@@ -27,7 +27,7 @@
     "message": "Zapomni si to spletno mesto"
   },
   "popupBypass": {
-    "message": "Obidi"
+    "message": "Obideno"
   },
   "popupBypassTitle": {
     "message": "Prepusti zvok neobdelan"
@@ -43,6 +43,12 @@
   },
   "popupEqOn": {
     "message": "EQ vklopljen"
+  },
+  "popupStateActive": {
+    "message": "Aktivno"
+  },
+  "popupStateBypassed": {
+    "message": "Obideno"
   },
   "popupResetTab": {
     "message": "Ponastavi zavihek"

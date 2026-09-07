@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ aan"
   },
+  "popupStateActive": {
+    "message": "Actief"
+  },
+  "popupStateBypassed": {
+    "message": "Overgeslagen"
+  },
   "popupResetTab": {
     "message": "Tabblad herstellen"
   },

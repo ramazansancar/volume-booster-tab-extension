@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ ieslēgts"
   },
+  "popupStateActive": {
+    "message": "Aktīvs"
+  },
+  "popupStateBypassed": {
+    "message": "Apiets"
+  },
   "popupResetTab": {
     "message": "Atiestatīt cilni"
   },

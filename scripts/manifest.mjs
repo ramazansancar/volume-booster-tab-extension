@@ -181,7 +181,10 @@ export function buildManifest(target, pkg) {
  * @param {2 | 3} version
  */
 function buildPermissions(browser, version) {
-  const shared = ['storage', 'tabs', 'activeTab'];
+  // webNavigation is used only to enumerate a tab's sub-frames, so settings can
+  // be delivered to a player running inside an iframe. Without it the boost has
+  // no effect on sites that embed their player that way, which is most of them.
+  const shared = ['storage', 'tabs', 'activeTab', 'webNavigation'];
 
   // The tab-capture fallback handles pages whose audio cannot be read directly
   // (DRM streams, cross-origin media without CORS headers). Firefox has no

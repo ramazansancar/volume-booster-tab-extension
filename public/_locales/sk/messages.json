@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ zapnutý"
   },
+  "popupStateActive": {
+    "message": "Aktívne"
+  },
+  "popupStateBypassed": {
+    "message": "Obchádza sa"
+  },
   "popupResetTab": {
     "message": "Obnoviť kartu"
   },

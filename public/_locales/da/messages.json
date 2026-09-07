@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ til"
   },
+  "popupStateActive": {
+    "message": "Aktiv"
+  },
+  "popupStateBypassed": {
+    "message": "Omgået"
+  },
   "popupResetTab": {
     "message": "Nulstil faneblad"
   },

@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ activé"
   },
+  "popupStateActive": {
+    "message": "Actif"
+  },
+  "popupStateBypassed": {
+    "message": "Contourné"
+  },
   "popupResetTab": {
     "message": "Réinitialiser l’onglet"
   },

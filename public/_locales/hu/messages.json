@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ be"
   },
+  "popupStateActive": {
+    "message": "Aktív"
+  },
+  "popupStateBypassed": {
+    "message": "Kihagyva"
+  },
   "popupResetTab": {
     "message": "Lap alaphelyzetbe"
   },

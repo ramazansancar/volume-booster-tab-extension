@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ פעיל"
   },
+  "popupStateActive": {
+    "message": "פעיל"
+  },
+  "popupStateBypassed": {
+    "message": "עוקף"
+  },
   "popupResetTab": {
     "message": "אפס לשונית"
   },

@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ فعال"
   },
+  "popupStateActive": {
+    "message": "فعال"
+  },
+  "popupStateBypassed": {
+    "message": "دور زده شده"
+  },
   "popupResetTab": {
     "message": "بازنشانی زبانه"
   },

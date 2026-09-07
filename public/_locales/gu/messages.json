@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ ચાલુ"
   },
+  "popupStateActive": {
+    "message": "સક્રિય"
+  },
+  "popupStateBypassed": {
+    "message": "બાયપાસ"
+  },
   "popupResetTab": {
     "message": "ટૅબ રીસેટ કરો"
   },

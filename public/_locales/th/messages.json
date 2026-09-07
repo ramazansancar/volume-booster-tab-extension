@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "เปิด EQ"
   },
+  "popupStateActive": {
+    "message": "ทำงานอยู่"
+  },
+  "popupStateBypassed": {
+    "message": "ข้ามอยู่"
+  },
   "popupResetTab": {
     "message": "รีเซ็ตแท็บ"
   },

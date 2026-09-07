@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "المعادل مفعل"
   },
+  "popupStateActive": {
+    "message": "مفعل"
+  },
+  "popupStateBypassed": {
+    "message": "معطل"
+  },
   "popupResetTab": {
     "message": "إعادة تعيين التبويب"
   },

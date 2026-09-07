@@ -20,8 +20,21 @@ import type {
  * restarted worker rehydrates a tab from its origin settings if it has any, and
  * otherwise starts neutral.
  */
+/** What a single frame within a tab last reported about itself. */
+interface FrameState {
+  pathway: AudioPathway;
+  count: number;
+  reason?: string;
+}
+
 export class TabRegistry {
   private readonly tabs = new Map<number, TabState>();
+  /**
+   * Per-frame reports, keyed by tab and then frame id. Kept separate from
+   * TabState because the popup only ever needs the collapsed answer, while
+   * collapsing it correctly requires remembering what each frame said.
+   */
+  private readonly frames = new Map<number, Map<number, FrameState>>();
 
   get(tabId: number): TabState | undefined {
     return this.tabs.get(tabId);
@@ -65,14 +78,84 @@ export class TabRegistry {
     if (state) state.persistence = persistence;
   }
 
-  updatePathway(tabId: number, pathway: AudioPathway): void {
+  /**
+   * Records what one frame reports, then recomputes the tab's overall pathway.
+   *
+   * A tab's frames disagree routinely: the top document has no media while an
+   * embedded player does, or a player frame works while an unrelated tracking
+   * iframe reports that it cannot build an AudioContext. Taking the last
+   * message to arrive would make the popup flicker between those answers, so
+   * the tab-level pathway is derived from all of them instead.
+   */
+  updateFramePathway(
+    tabId: number,
+    frameId: number,
+    pathway: AudioPathway,
+    reason?: string,
+  ): void {
     const state = this.tabs.get(tabId);
-    if (state) state.pathway = pathway;
+    if (!state) return;
+
+    const frames = this.framesFor(tabId);
+    frames.set(frameId, { ...(frames.get(frameId) ?? { count: 0 }), pathway, reason });
+    this.recompute(state, frames);
   }
 
-  updateMediaCount(tabId: number, count: number): void {
+  updateFrameMediaCount(tabId: number, frameId: number, count: number): void {
     const state = this.tabs.get(tabId);
-    if (state) state.mediaElementCount = count;
+    if (!state) return;
+
+    const frames = this.framesFor(tabId);
+    frames.set(frameId, { ...(frames.get(frameId) ?? { pathway: 'idle' }), count });
+    this.recompute(state, frames);
+  }
+
+  /**
+   * Collapses the per-frame reports into the single answer the popup shows.
+   *
+   * Any frame that is actually driving media wins: that is the frame the user
+   * cares about, and it means the boost is working whatever the other frames
+   * say. Only when nothing is connected anywhere does a failure surface, and
+   * then the reason comes from a frame that actually failed.
+   */
+  private recompute(state: TabState, frames: Map<number, FrameState>): void {
+    let total = 0;
+    let working = false;
+    let failure: FrameState | undefined;
+
+    for (const frame of frames.values()) {
+      total += frame.count;
+      if (frame.pathway === 'media-element' || frame.pathway === 'tab-capture') {
+        working = true;
+        if (state.pathway !== frame.pathway) state.pathway = frame.pathway;
+      } else if (frame.pathway === 'unavailable' && !failure) {
+        failure = frame;
+      }
+    }
+
+    state.mediaElementCount = total;
+
+    if (working) {
+      delete state.pathwayReason;
+      return;
+    }
+    if (failure) {
+      state.pathway = 'unavailable';
+      if (failure.reason) state.pathwayReason = failure.reason;
+      else delete state.pathwayReason;
+      return;
+    }
+    state.pathway = 'idle';
+    delete state.pathwayReason;
+  }
+
+  private framesFor(tabId: number): Map<number, FrameState> {
+    let frames = this.frames.get(tabId);
+    if (!frames) {
+      frames = new Map();
+      this.frames.set(tabId, frames);
+    }
+    return frames;
   }
 
   reset(tabId: number, preferences: GlobalPreferences): TabState | undefined {
@@ -87,6 +170,7 @@ export class TabRegistry {
    *  session-scoped boosts temporary. */
   remove(tabId: number): void {
     this.tabs.delete(tabId);
+    this.frames.delete(tabId);
   }
 
   /** True when a tab is doing anything other than passing audio through. */

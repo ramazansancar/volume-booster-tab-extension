@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ ಆನ್"
   },
+  "popupStateActive": {
+    "message": "ಸಕ್ರಿಯ"
+  },
+  "popupStateBypassed": {
+    "message": "ಬೈಪಾಸ್"
+  },
   "popupResetTab": {
     "message": "ಟ್ಯಾಬ್ ಮರುಹೊಂದಿಸಿ"
   },

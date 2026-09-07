@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ on"
   },
+  "popupStateActive": {
+    "message": "Aktibo"
+  },
+  "popupStateBypassed": {
+    "message": "Nilaktawan"
+  },
   "popupResetTab": {
     "message": "I-reset ang tab"
   },

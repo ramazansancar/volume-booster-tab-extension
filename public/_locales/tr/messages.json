@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ açık"
   },
+  "popupStateActive": {
+    "message": "Etkin"
+  },
+  "popupStateBypassed": {
+    "message": "Devre dışı"
+  },
   "popupResetTab": {
     "message": "Sekmeyi sıfırla"
   },

@@ -1,4 +1,4 @@
-import { ext } from '@/lib/browser';
+import { storageGet, storageSet } from '@/lib/browser';
 import { DEFAULT_PREFERENCES, cloneSettings } from '@/lib/defaults';
 import { sanitizeSettings, clamp } from '@/lib/validate';
 import { ABSOLUTE_MAX_GAIN } from '@/lib/defaults';
@@ -14,7 +14,7 @@ const ORIGINS_KEY = 'origins';
 
 async function readArea<T>(key: string): Promise<T | undefined> {
   try {
-    const result = await ext.storage.local.get(key);
+    const result = await storageGet(key);
     return result[key] as T | undefined;
   } catch {
     return undefined;
@@ -23,7 +23,7 @@ async function readArea<T>(key: string): Promise<T | undefined> {
 
 async function writeArea(key: string, value: unknown): Promise<void> {
   try {
-    await ext.storage.local.set({ [key]: value });
+    await storageSet({ [key]: value });
   } catch {
     // Storage can fail when the quota is exhausted or the profile is read-only.
     // Losing a persisted preference is recoverable, so we do not surface it.

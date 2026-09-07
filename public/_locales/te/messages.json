@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ ఆన్"
   },
+  "popupStateActive": {
+    "message": "సక్రియం"
+  },
+  "popupStateBypassed": {
+    "message": "బైపాస్"
+  },
   "popupResetTab": {
     "message": "ట్యాబ్ రీసెట్"
   },

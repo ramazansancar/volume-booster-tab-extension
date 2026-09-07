@@ -1,4 +1,4 @@
-import { ext, sendMessageSafe } from '@/lib/browser';
+import { ext, getAllFrames, getTab, sendMessageSafe, sendMessageToTab } from '@/lib/browser';
 import { cloneSettings } from '@/lib/defaults';
 import {
   loadOriginSettings,
@@ -37,7 +37,7 @@ async function preferences(): Promise<GlobalPreferences> {
 
 async function tabOrigin(tabId: number): Promise<string | null> {
   try {
-    const tab = await ext.tabs.get(tabId);
+    const tab = await getTab(tabId);
     return originOf(tab.url);
   } catch {
     return null;
@@ -68,14 +68,49 @@ async function stateFor(tabId: number): Promise<TabState> {
   return state;
 }
 
-/** Pushes a tab's settings down to its content script. */
+/**
+ * Pushes a tab's settings down to every content script in the tab.
+ *
+ * `tabs.sendMessage` without a frameId reaches only the top-level document, but
+ * players are routinely embedded in an iframe - Kick, Twitch embeds and most
+ * "watch" pages that wrap a third-party player. The content script is injected
+ * into those frames (`all_frames: true`), so the settings have to be delivered
+ * to each of them individually or the boost silently does nothing.
+ *
+ * The top frame is messaged directly and the rest are enumerated through
+ * webNavigation, so a player nested several frames deep is still reached.
+ */
 async function pushToTab(state: TabState): Promise<void> {
-  await sendMessageSafe(() =>
-    ext.tabs.sendMessage(state.tabId, {
-      type: 'bg:apply-settings',
-      settings: state.settings,
-    }),
+  const message = {
+    type: 'bg:apply-settings',
+    settings: state.settings,
+  };
+
+  // The top frame first, so the common case applies without waiting on the
+  // frame enumeration below.
+  await sendMessageSafe(() => sendMessageToTab(state.tabId, message));
+
+  const frameIds = await frameIdsFor(state.tabId);
+  await Promise.all(
+    frameIds.map((frameId) =>
+      sendMessageSafe(() => sendMessageToTab(state.tabId, message, { frameId })),
+    ),
   );
+}
+
+/**
+ * Lists the sub-frames of a tab. Returns an empty list when the browser cannot
+ * report them, in which case only the top frame is driven - the same behaviour
+ * as before, rather than a hard failure.
+ */
+async function frameIdsFor(tabId: number): Promise<number[]> {
+  try {
+    const frames = await getAllFrames(tabId);
+    // Frame 0 is the top document, already handled by the caller.
+    return frames.filter((frame) => frame.frameId !== 0).map((frame) => frame.frameId);
+  } catch {
+    return [];
+  }
 }
 
 /**
@@ -174,7 +209,7 @@ async function handleUiMessage(message: UiToBackgroundMessage): Promise<unknown>
       // The Chromium tab-capture path lands here in a follow-up release; until
       // then the UI is told plainly that this page cannot be boosted.
       const state = await stateFor(message.tabId);
-      registry.updatePathway(message.tabId, 'unavailable');
+      registry.updateFramePathway(message.tabId, 0, 'unavailable');
       return { state, preferences: prefs } satisfies TabStateResponse;
     }
 
@@ -186,21 +221,35 @@ async function handleUiMessage(message: UiToBackgroundMessage): Promise<unknown>
 async function handleContentMessage(
   message: ContentToBackgroundMessage,
   tabId: number,
+  frameId: number,
 ): Promise<unknown> {
+  // Frame 0 is the page the user is actually looking at. Every other frame is
+  // an embed - a player, but just as often an analytics pixel or a payment
+  // widget on some unrelated origin - so a sub-frame must never be allowed to
+  // speak for the tab as a whole.
+  const isTopFrame = frameId === 0;
+
   switch (message.type) {
     case 'content:ready': {
       // A fresh document means the previous graph is gone; re-send the tab's
       // settings so a reload or SPA navigation keeps the user's boost.
       const state = await stateFor(tabId);
-      if (message.origin) state.origin = message.origin;
+
+      // Only the top document defines the tab's identity. Taking it from any
+      // frame let an embedded widget relabel the tab as its own origin, which
+      // both mislabelled the popup and would have filed a "remember this site"
+      // entry under the wrong domain entirely.
+      if (isTopFrame && message.origin) state.origin = message.origin;
+
       await applyAndPersist(state);
       return { ok: true };
     }
     case 'content:media-count':
-      registry.updateMediaCount(tabId, message.count);
+      // Each frame reports only what it drives, so the tab total is their sum.
+      registry.updateFrameMediaCount(tabId, frameId, message.count);
       return { ok: true };
     case 'content:pathway':
-      registry.updatePathway(tabId, message.pathway);
+      registry.updateFramePathway(tabId, frameId, message.pathway, message.reason);
       return { ok: true };
     default:
       return { ok: false };
@@ -221,6 +270,7 @@ ext.runtime.onMessage.addListener((message: unknown, sender, sendResponse) => {
     void handleContentMessage(
       message as ContentToBackgroundMessage,
       sender.tab.id,
+      sender.frameId ?? 0,
     ).then(sendResponse);
     return true;
   }

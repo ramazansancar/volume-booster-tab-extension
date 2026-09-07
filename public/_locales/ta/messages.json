@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ இயக்கத்தில்"
   },
+  "popupStateActive": {
+    "message": "செயலில்"
+  },
+  "popupStateBypassed": {
+    "message": "தவிர்க்கப்பட்டது"
+  },
   "popupResetTab": {
     "message": "தாவலை மீட்டமை"
   },

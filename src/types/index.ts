@@ -48,6 +48,12 @@ export interface TabState {
   pathway: AudioPathway;
   /** Number of media elements the content script is currently driving. */
   mediaElementCount: number;
+  /**
+   * Why the current pathway is what it is, when the content script could say.
+   * Surfaced in the popup so a page that cannot be boosted explains itself
+   * instead of leaving the user with a slider that does nothing.
+   */
+  pathwayReason?: string;
 }
 
 /**

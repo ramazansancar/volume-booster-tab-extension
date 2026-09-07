@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ bật"
   },
+  "popupStateActive": {
+    "message": "Đang bật"
+  },
+  "popupStateBypassed": {
+    "message": "Đang bỏ qua"
+  },
   "popupResetTab": {
     "message": "Đặt lại tab"
   },

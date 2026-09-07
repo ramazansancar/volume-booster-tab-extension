@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ actiu"
   },
+  "popupStateActive": {
+    "message": "Actiu"
+  },
+  "popupStateBypassed": {
+    "message": "Omès"
+  },
   "popupResetTab": {
     "message": "Restableix la pestanya"
   },

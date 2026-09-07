@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ 已开启"
   },
+  "popupStateActive": {
+    "message": "已启用"
+  },
+  "popupStateBypassed": {
+    "message": "已旁路"
+  },
   "popupResetTab": {
     "message": "重置标签页"
   },

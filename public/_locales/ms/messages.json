@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ hidup"
   },
+  "popupStateActive": {
+    "message": "Aktif"
+  },
+  "popupStateBypassed": {
+    "message": "Dipintas"
+  },
   "popupResetTab": {
     "message": "Set semula tab"
   },

@@ -1,4 +1,4 @@
-import { ext } from '@/lib/browser';
+import { ext, sendRuntimeMessage } from '@/lib/browser';
 import { ABSOLUTE_MAX_GAIN } from '@/lib/defaults';
 import { clearAllOrigins, forgetOrigin, listOrigins } from '@/lib/storage';
 import type { GlobalPreferences, PersistenceMode, UiToBackgroundMessage } from '@/types';
@@ -34,7 +34,7 @@ let rendering = false;
 let statusTimer: ReturnType<typeof setTimeout> | null = null;
 
 function send<T>(message: UiToBackgroundMessage): Promise<T> {
-  return ext.runtime.sendMessage(message) as Promise<T>;
+  return sendRuntimeMessage<T>(message);
 }
 
 function flashSaved(): void {

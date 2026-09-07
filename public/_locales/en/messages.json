@@ -46,6 +46,12 @@
   "popupEqOn": {
     "message": "EQ on"
   },
+  "popupStateActive": {
+    "message": "Active"
+  },
+  "popupStateBypassed": {
+    "message": "Bypassed"
+  },
   "popupResetTab": {
     "message": "Reset tab"
   },

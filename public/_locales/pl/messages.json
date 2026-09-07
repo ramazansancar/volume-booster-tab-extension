@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ wł."
   },
+  "popupStateActive": {
+    "message": "Aktywny"
+  },
+  "popupStateBypassed": {
+    "message": "Pominięty"
+  },
   "popupResetTab": {
     "message": "Resetuj kartę"
   },

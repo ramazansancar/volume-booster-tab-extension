@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ activ"
   },
+  "popupStateActive": {
+    "message": "Activ"
+  },
+  "popupStateBypassed": {
+    "message": "Ocolit"
+  },
   "popupResetTab": {
     "message": "Resetează fila"
   },

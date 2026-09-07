@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ attivo"
   },
+  "popupStateActive": {
+    "message": "Attivo"
+  },
+  "popupStateBypassed": {
+    "message": "Bypassato"
+  },
   "popupResetTab": {
     "message": "Reimposta scheda"
   },

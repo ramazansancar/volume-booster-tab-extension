@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ zapnut"
   },
+  "popupStateActive": {
+    "message": "Aktivní"
+  },
+  "popupStateBypassed": {
+    "message": "Obcházeno"
+  },
   "popupResetTab": {
     "message": "Obnovit panel"
   },

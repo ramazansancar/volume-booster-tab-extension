@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ चालू"
   },
+  "popupStateActive": {
+    "message": "सक्रिय"
+  },
+  "popupStateBypassed": {
+    "message": "बायपास"
+  },
   "popupResetTab": {
     "message": "टॅब रीसेट करा"
   },

@@ -13,15 +13,21 @@
           <span class="site__label" data-i18n="popupCurrentSite">Current tab</span>
           <span class="site__origin" id="origin">&mdash;</span>
         </div>
+        <!--
+          The pill reads as a state, not an action: it says whether processing
+          is currently on, and clicking it flips that. A label that named the
+          action instead ("Bypass") left the user unable to tell, at a glance,
+          which of the two states they were actually in.
+        -->
         <button
           type="button"
           id="bypass"
           class="toggle-pill"
           aria-pressed="false"
           data-i18n-title="popupBypassTitle"
-          title="Bypass all processing"
+          title="Turn processing off and pass the audio through untouched"
         >
-          <span data-i18n="popupBypass">Bypass</span>
+          <span id="bypass-label" data-i18n="popupStateActive">Active</span>
         </button>
       </header>
 
@@ -105,7 +111,10 @@
       </details>
 
       <footer class="panel__footer">
-        <p class="status" id="status" role="status"></p>
+        <div class="status-block">
+          <p class="status" id="status" role="status"></p>
+          <p class="status-detail" id="status-detail" hidden></p>
+        </div>
         <button type="button" class="link-button" id="reset" data-i18n="popupResetTab">
           Reset tab
         </button>

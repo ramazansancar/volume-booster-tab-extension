@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ ativo"
   },
+  "popupStateActive": {
+    "message": "Ativo"
+  },
+  "popupStateBypassed": {
+    "message": "Ignorado"
+  },
   "popupResetTab": {
     "message": "Redefinir aba"
   },

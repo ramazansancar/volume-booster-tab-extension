@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ ενεργό"
   },
+  "popupStateActive": {
+    "message": "Ενεργό"
+  },
+  "popupStateBypassed": {
+    "message": "Παρακαμφθέν"
+  },
   "popupResetTab": {
     "message": "Επαναφορά καρτέλας"
   },

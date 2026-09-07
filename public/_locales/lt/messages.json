@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ įjungtas"
   },
+  "popupStateActive": {
+    "message": "Aktyvus"
+  },
+  "popupStateBypassed": {
+    "message": "Apeita"
+  },
   "popupResetTab": {
     "message": "Atstatyti kortelę"
   },

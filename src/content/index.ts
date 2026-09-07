@@ -1,5 +1,5 @@
 import { AudioEngine } from '@/lib/audio-engine';
-import { ext } from '@/lib/browser';
+import { ext, sendRuntimeMessage } from '@/lib/browser';
 import { neutralSettings } from '@/lib/defaults';
 import { sanitizeSettings } from '@/lib/validate';
 import type {
@@ -40,6 +40,19 @@ let engine: AudioEngine | null = null;
 let settings: AudioSettings = neutralSettings();
 let pathway: AudioPathway = 'idle';
 
+/**
+ * Whether this document has seen something the autoplay policy accepts as a
+ * reason to start audio: a real user gesture, or media that is already playing
+ * (which can only have started from a gesture or an allowed autoplay).
+ *
+ * Calling resume() without one is not an error - the promise simply rejects -
+ * but Chrome logs a console warning every time, and a boost applied from the
+ * popup produces no gesture in the page at all. Gating the call keeps the
+ * page's console clean while losing nothing: the graph is already built, and
+ * the moment a gesture arrives the resume runs.
+ */
+let audioUnlocked = false;
+
 /** How many times a single element may fail to attach before we give up. */
 const MAX_ATTACH_ATTEMPTS = 6;
 /** Backoff schedule in milliseconds, indexed by attempt number. */
@@ -64,7 +77,7 @@ const attachments = new Map<HTMLMediaElement, Attachment>();
 
 function post(message: ContentToBackgroundMessage): void {
   try {
-    void ext.runtime.sendMessage(message);
+    void sendRuntimeMessage(message).catch(() => undefined);
   } catch {
     // The background may be asleep or the extension reloading; the next probe
     // resynchronises us.
@@ -104,6 +117,16 @@ function isNeutral(value: AudioSettings): boolean {
   );
 }
 
+/**
+ * Builds the audio graph, creating the AudioContext on first use.
+ *
+ * Chrome logs "The AudioContext was not allowed to start" when a context is
+ * constructed before the page has had a user gesture. That warning is
+ * informational: the context is created suspended and starts working at the
+ * first gesture, which `resumeIfUnlocked` waits for. Deferring construction
+ * until after a gesture would be worse - the graph has to exist before a media
+ * element can be routed into it, and the element usually appears first.
+ */
 function ensureEngine(): AudioEngine | null {
   if (engine) return engine;
   try {
@@ -171,7 +194,7 @@ function attach(element: HTMLMediaElement, immediate = false): void {
     // Re-apply on every successful attach. This is the line that keeps the next
     // episode at the volume the user chose for the previous one.
     activeEngine.apply(settings);
-    void activeEngine.resume();
+    resumeIfUnlocked();
 
     setPathway('media-element');
     reportCount();
@@ -272,7 +295,15 @@ function observe(): void {
 function bindMediaEvents(): void {
   const handler = (event: Event): void => {
     const target = event.target;
-    if (target instanceof HTMLMediaElement) attach(target, true);
+    if (!(target instanceof HTMLMediaElement)) return;
+
+    // Media that has reached playback proves the page is allowed to make sound,
+    // which is exactly the condition resume() needs.
+    if (event.type === 'playing' || event.type === 'play') {
+      audioUnlocked = true;
+      resumeIfUnlocked();
+    }
+    attach(target, true);
   };
   for (const type of [
     'loadstart',
@@ -292,13 +323,25 @@ function bindMediaEvents(): void {
  * a click on "next episode" is exactly when a new element tends to appear.
  */
 function bindGestureResume(): void {
-  const resume = (): void => {
-    void engine?.resume();
+  const onGesture = (): void => {
+    audioUnlocked = true;
+    resumeIfUnlocked();
     if (!isNeutral(settings)) scan();
   };
   for (const event of ['pointerdown', 'keydown'] as const) {
-    document.addEventListener(event, resume, { capture: true, passive: true });
+    document.addEventListener(event, onGesture, { capture: true, passive: true });
   }
+}
+
+/**
+ * Resumes the context, but only once the page is allowed to start audio.
+ * Before that the call would be refused and logged, so it is skipped; the
+ * gesture listeners and the `playing` handler retry it at the first legal
+ * opportunity.
+ */
+function resumeIfUnlocked(): void {
+  if (!audioUnlocked) return;
+  void engine?.resume();
 }
 
 /**
@@ -352,7 +395,7 @@ ext.runtime.onMessage.addListener(
           ensureEngine();
           scan();
           engine?.apply(settings);
-          void engine?.resume();
+          resumeIfUnlocked();
         }
         sendResponse({ ok: true, pathway, count: connectedCount() });
         return true;

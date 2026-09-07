@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ sees"
   },
+  "popupStateActive": {
+    "message": "Aktiivne"
+  },
+  "popupStateBypassed": {
+    "message": "Mööda juhitud"
+  },
   "popupResetTab": {
     "message": "Lähtesta kaart"
   },

@@ -44,6 +44,12 @@
   "popupEqOn": {
     "message": "EQ увімк."
   },
+  "popupStateActive": {
+    "message": "Активно"
+  },
+  "popupStateBypassed": {
+    "message": "Обхід"
+  },
   "popupResetTab": {
     "message": "Скинути вкладку"
   },
