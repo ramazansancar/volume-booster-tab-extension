@@ -57,112 +57,112 @@
     "message": "دور زده شده"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "این تنظیمات برای هر زبانه جدید اعمال می‌شود. صدای هر زبانه از نوار ابزار کنترل می‌شود."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "پیش‌فرض برای زبانه‌های جدید"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "صدای اولیه"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "برای زبانه‌هایی که تنظیمات ذخیره‌شده ندارند اعمال می‌شود."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "حداکثر صدا"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "بازنشانی به ۶۰۰٪"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "افزایش این سقف می‌تواند به بلندگو و شنوایی آسیب بزند. محدودکننده را روشن نگه دارید."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "وقتی زبانه بسته می‌شود"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "تنظیم را فراموش کن"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "توصیه‌شده. هر زبانه با صدای پیش‌فرض شروع می‌شود."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "برای آن سایت به خاطر بسپار"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "با بازدید دوباره از سایت، آخرین صدای استفاده‌شده بازیابی می‌شود."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "ایمنی"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "محدودکننده را بالای ۱۰۰٪ روشن نگه دار"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "از اعوجاج و اوج‌های ناگهانی بلند هنگام تقویت جلوگیری می‌کند."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "اجازه ضبط زبانه به عنوان جایگزین"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "فقط Chromium. امکان تقویت صفحاتی را می‌دهد که صدایشان مستقیم خوانده نمی‌شود، در ازای نمایش نشانگر ضبط روی زبانه."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "زبان"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "زبان رابط کاربری"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "خودکار"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "نامی که در فهرست افزونه‌های مرورگر نمایش داده می‌شود همیشه از زبان مرورگر پیروی می‌کند، نه این تنظیم."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "سایت‌های ذخیره‌شده"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "ویرایش در اینجا بلافاصله روی زبانه‌های باز آن سایت اعمال می‌شود."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "هنوز سایتی ذخیره نشده است."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "۱ سایت ذخیره شد."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d سایت ذخیره شد."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "فراموش کن"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "پاک کردن همه سایت‌های ذخیره‌شده"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "صدای ذخیره‌شده همه سایت‌ها فراموش شود؟"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "بازگردانی پیش‌فرض‌ها"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "همه تنظیمات به پیش‌فرض بازگردانده شود؟"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "ذخیره شد"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "برای این سایت تنظیمات اکولایزر ذخیره شده است."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "برای این سایت تنظیمات اکولایزری ذخیره نشده است."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "پاک کردن اکولایزر"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "کد منبع"
   },
   "popupResetTab": {
     "message": "بازنشانی زبانه"

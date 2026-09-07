@@ -57,112 +57,112 @@
     "message": "બાયપાસ"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "આ સેટિંગ્સ દરેક નવા ટૅબ પર લાગુ પડે છે. ટૅબ મુજબ વૉલ્યુમ ટૂલબારથી નિયંત્રિત થાય છે."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "નવા ટૅબ માટે ડિફૉલ્ટ"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "પ્રારંભિક વૉલ્યુમ"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "પોતાની સાચવેલી સેટિંગ ન હોય તેવા ટૅબ પર લાગુ પડે છે."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "મહત્તમ વૉલ્યુમ"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "600% પર રીસેટ કરો"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "આ મર્યાદા વધારવાથી સ્પીકર અને સાંભળવાની ક્ષમતાને નુકસાન થઈ શકે છે. લિમિટર ચાલુ રાખો."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "જ્યારે ટૅબ બંધ થાય"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "સેટિંગ ભૂલી જાઓ"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "ભલામણ કરેલ. દરેક ટૅબ ડિફૉલ્ટ વૉલ્યુમથી શરૂ થાય છે."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "તે સાઇટ માટે યાદ રાખો"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "સાઇટ પર ફરી જતાં છેલ્લે વાપરેલું વૉલ્યુમ પુનઃસ્થાપિત થાય છે."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "સલામતી"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "100% થી ઉપર લિમિટર ચાલુ રાખો"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "બૂસ્ટ કરતી વખતે વિકૃતિ અને અચાનક મોટા અવાજ અટકાવે છે."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "ટૅબ કૅપ્ચર ફૉલબૅકની મંજૂરી આપો"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "ફક્ત Chromium. જે પૃષ્ઠોનો ઑડિયો સીધો વાંચી શકાતો નથી તેને પણ બૂસ્ટ કરે છે, બદલામાં ટૅબ પર રેકોર્ડિંગ સૂચક દેખાય છે."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "ભાષા"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "ઇન્ટરફેસ ભાષા"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "સ્વચાલિત"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "બ્રાઉઝરની ઍડ-ઑન સૂચિમાં દેખાતું નામ હંમેશા બ્રાઉઝરની ભાષાને અનુસરે છે, આ સેટિંગને નહીં."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "સાચવેલી સાઇટ્સ"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "અહીં સાઇટ સંપાદિત કરવાથી તે સાઇટ પર પહેલેથી ખુલ્લા ટૅબ પર તરત લાગુ થાય છે."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "હજી કોઈ સાઇટ સાચવેલી નથી."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 સાઇટ સાચવેલી."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d સાઇટ્સ સાચવેલી."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "ભૂલી જાઓ"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "બધી સાચવેલી સાઇટ્સ સાફ કરો"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "બધી સાઇટ્સનું સાચવેલું વૉલ્યુમ ભૂલી જવું?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "ડિફૉલ્ટ પુનઃસ્થાપિત કરો"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "બધી સેટિંગ્સ ડિફૉલ્ટ પર પુનઃસ્થાપિત કરવી?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "સાચવ્યું"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "આ સાઇટ માટે ઇક્વલાઇઝર સેટિંગ્સ સાચવેલી છે."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "આ સાઇટ માટે કોઈ ઇક્વલાઇઝર સેટિંગ સાચવેલી નથી."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "ઇક્વલાઇઝર સાફ કરો"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "સ્રોત કોડ"
   },
   "popupResetTab": {
     "message": "ટૅબ રીસેટ કરો"

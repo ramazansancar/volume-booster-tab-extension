@@ -57,112 +57,112 @@
     "message": "Ocolit"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Aceste setări se aplică fiecărei file noi. Volumul pe filă se controlează din bara de instrumente."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Valori implicite pentru file noi"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Volum inițial"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Se aplică filelor fără setări salvate proprii."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Volum maxim"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Resetează la 600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Creșterea acestei limite poate deteriora difuzoarele și auzul. Lăsați limitatorul pornit."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Când se închide o filă"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Uită setarea"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Recomandat. Fiecare filă începe cu volumul implicit."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Reține pentru acel site"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "La revizitarea site-ului se restabilește ultimul volum folosit."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Siguranță"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Menține limitatorul pornit peste 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Previne distorsiunea și vârfurile puternice bruște la amplificare."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Permite capturarea filei ca rezervă"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Doar Chromium. Permite amplificarea paginilor al căror sunet nu poate fi citit direct, cu prețul unui indicator de înregistrare."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Limbă"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Limba interfeței"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automat"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Numele din lista de extensii a browserului urmează întotdeauna limba browserului, nu această setare."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Site-uri salvate"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Editarea aici se aplică imediat oricărei file deja deschise pe site."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Încă nu există site-uri salvate."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 site salvat."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d site-uri salvate."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Uită"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Șterge toate site-urile salvate"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Uitați volumul salvat pentru toate site-urile?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Restabilește valorile implicite"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Restabiliți toate setările la valorile implicite?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Salvat"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Există setări de egalizator salvate pentru acest site."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Nu există setări de egalizator salvate pentru acest site."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Șterge egalizatorul"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Cod sursă"
   },
   "popupResetTab": {
     "message": "Resetează fila"

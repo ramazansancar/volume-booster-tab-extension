@@ -57,112 +57,112 @@
     "message": "Dipintas"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Tetapan ini berlaku untuk setiap tab baharu. Volum setiap tab dikawal dari bar alat."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Lalai untuk tab baharu"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Volum permulaan"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Berlaku untuk tab tanpa tetapan tersimpan sendiri."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Volum maksimum"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Set semula ke 600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Menaikkan had ini boleh merosakkan pembesar suara dan pendengaran. Biarkan pembatas hidup."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Apabila tab ditutup"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Lupakan tetapan"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Disyorkan. Setiap tab bermula pada volum lalai."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Ingat untuk tapak itu"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Melawat semula tapak akan memulihkan volum terakhir yang digunakan."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Keselamatan"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Kekalkan pembatas hidup melebihi 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Menghalang herotan dan puncak kuat mendadak semasa menguatkan."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Benarkan tangkapan tab sebagai sandaran"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Chromium sahaja. Membolehkan penguatan halaman yang audionya tidak boleh dibaca terus, dengan penunjuk rakaman pada tab."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Bahasa"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Bahasa antara muka"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automatik"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Nama dalam senarai tambahan pelayar sentiasa mengikut bahasa pelayar, bukan tetapan ini."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Tapak tersimpan"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Menyunting di sini terus berlaku pada mana-mana tab yang sudah dibuka."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Belum ada tapak disimpan."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 tapak disimpan."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d tapak disimpan."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Lupakan"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Kosongkan semua tapak tersimpan"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Lupakan volum tersimpan untuk semua tapak?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Pulihkan lalai"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Pulihkan semua tetapan kepada lalai?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Disimpan"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Tetapan penyama disimpan untuk tapak ini."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Tiada tetapan penyama disimpan untuk tapak ini."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Kosongkan penyama"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Kod sumber"
   },
   "popupResetTab": {
     "message": "Set semula tab"

@@ -57,112 +57,112 @@
     "message": "Omitido"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Estos ajustes se aplican a cada pestaña nueva. El volumen por pestaña se controla desde la barra."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Valores predeterminados para pestañas nuevas"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Volumen inicial"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Se aplica a las pestañas sin ajustes guardados propios."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Volumen máximo"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Restablecer a 600 %"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Subir este límite puede dañar los altavoces y el oído. Mantén el limitador activo."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Al cerrar una pestaña"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Olvidar el ajuste"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Recomendado. Cada pestaña empieza con el volumen predeterminado."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Recordarlo para ese sitio"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Al volver al sitio se restaura el último volumen usado."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Seguridad"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Mantener el limitador activo por encima del 100 %"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Evita la distorsión y los picos fuertes repentinos al amplificar."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Permitir captura de pestaña como alternativa"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Solo Chromium. Permite amplificar páginas cuyo audio no se puede leer directamente, a cambio de un indicador de grabación."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Idioma"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Idioma de la interfaz"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automático"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "El nombre en la lista de extensiones del navegador sigue siempre el idioma del navegador, no este ajuste."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Sitios guardados"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Editar un sitio aquí se aplica de inmediato a las pestañas ya abiertas."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Aún no hay sitios guardados."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 sitio guardado."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d sitios guardados."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Olvidar"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Borrar todos los sitios guardados"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "¿Olvidar el volumen guardado de todos los sitios?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Restaurar valores predeterminados"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "¿Restaurar todos los ajustes a sus valores predeterminados?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Guardado"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Hay ajustes de ecualizador guardados para este sitio."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "No hay ajustes de ecualizador guardados para este sitio."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Borrar ecualizador"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Código fuente"
   },
   "popupResetTab": {
     "message": "Restablecer pestaña"

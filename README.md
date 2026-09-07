@@ -145,7 +145,7 @@ The popup tells you at the bottom:
 
 The interface follows your browser's language by default, and you can pick a specific one in the settings page.
 
-23 locales are fully translated. The other 32 cover the popup — the part you use daily — and fall back to English for the settings page, string by string, so nothing is ever blank. **Filling one in is the easiest possible contribution**; see [Contributing](#contributing).
+All 55 locales are fully translated — every string, in every language, with no English fallbacks. The translations are machine-assisted, so **corrections from native speakers are especially welcome**; see [Contributing](#contributing).
 
 <details>
 <summary><b>All 55 languages</b></summary>

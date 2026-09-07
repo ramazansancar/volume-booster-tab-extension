@@ -57,112 +57,112 @@
     "message": "Förbikopplad"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Dessa inställningar gäller varje ny flik. Volymen per flik styrs från verktygsfältet."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Standard för nya flikar"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Startvolym"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Gäller flikar utan egna sparade inställningar."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Maxvolym"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Återställ till 600 %"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Att höja detta tak kan skada högtalare och hörsel. Låt limitern vara på."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "När en flik stängs"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Glöm inställningen"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Rekommenderas. Varje flik börjar med standardvolymen."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Kom ihåg för den webbplatsen"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Vid återbesök återställs den senast använda volymen."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Säkerhet"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Håll limitern på över 100 %"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Förhindrar distorsion och plötsliga höga toppar vid förstärkning."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Tillåt flikinspelning som reserv"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Endast Chromium. Låter tillägget förstärka sidor vars ljud inte kan läsas direkt, mot en inspelningsindikator på fliken."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Språk"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Gränssnittsspråk"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automatiskt"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Namnet i webbläsarens egen tilläggslista följer alltid webbläsarens språk, inte den här inställningen."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Sparade webbplatser"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Redigering här gäller omedelbart för flikar som redan är öppna på webbplatsen."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Inga webbplatser sparade ännu."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 webbplats sparad."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d webbplatser sparade."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Glöm"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Rensa alla sparade webbplatser"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Glömma sparad volym för alla webbplatser?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Återställ standard"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Återställa alla inställningar till standard?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Sparat"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Equalizer-inställningar är sparade för den här webbplatsen."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Inga equalizer-inställningar är sparade för den här webbplatsen."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Rensa equalizer"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Källkod"
   },
   "popupResetTab": {
     "message": "Återställ flik"

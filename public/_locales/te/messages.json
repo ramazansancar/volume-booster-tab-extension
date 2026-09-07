@@ -57,112 +57,112 @@
     "message": "బైపాస్"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "ఈ సెట్టింగ్‌లు ప్రతి కొత్త ట్యాబ్‌కు వర్తిస్తాయి. ట్యాబ్ వారీ వాల్యూమ్ టూల్‌బార్ నుండి నియంత్రించబడుతుంది."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "కొత్త ట్యాబ్‌ల డిఫాల్ట్‌లు"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "ప్రారంభ వాల్యూమ్"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "సొంత సేవ్ చేసిన సెట్టింగ్‌లు లేని ట్యాబ్‌లకు వర్తిస్తుంది."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "గరిష్ట వాల్యూమ్"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "600%కి రీసెట్ చేయండి"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "ఈ పరిమితిని పెంచడం స్పీకర్‌లకు మరియు వినికిడికి హాని కలిగించవచ్చు. లిమిటర్‌ను ఆన్‌లో ఉంచండి."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "ట్యాబ్ మూసివేసినప్పుడు"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "సెట్టింగ్‌ను మరచిపో"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "సిఫార్సు చేయబడింది. ప్రతి ట్యాబ్ డిఫాల్ట్ వాల్యూమ్‌తో ప్రారంభమవుతుంది."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "ఆ సైట్ కోసం గుర్తుంచుకో"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "సైట్‌ను మళ్లీ సందర్శించినప్పుడు చివరిగా ఉపయోగించిన వాల్యూమ్ పునరుద్ధరించబడుతుంది."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "భద్రత"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "100% పైన లిమిటర్‌ను ఆన్‌లో ఉంచండి"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "బూస్ట్ చేసేటప్పుడు వక్రీకరణ మరియు అకస్మాత్తు పెద్ద శిఖరాలను నివారిస్తుంది."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "ట్యాబ్ క్యాప్చర్ ఫాల్‌బ్యాక్‌ను అనుమతించు"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Chromium మాత్రమే. ఆడియోను నేరుగా చదవలేని పేజీలను కూడా బూస్ట్ చేయనిస్తుంది, బదులుగా ట్యాబ్‌పై రికార్డింగ్ సూచిక కనిపిస్తుంది."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "భాష"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "ఇంటర్‌ఫేస్ భాష"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "స్వయంచాలకం"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "బ్రౌజర్ యాడ్-ఆన్ జాబితాలో కనిపించే పేరు ఎల్లప్పుడూ బ్రౌజర్ భాషను అనుసరిస్తుంది, ఈ సెట్టింగ్‌ను కాదు."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "సేవ్ చేసిన సైట్‌లు"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "ఇక్కడ సవరించడం ఆ సైట్‌లో ఇప్పటికే తెరిచిన ట్యాబ్‌లకు వెంటనే వర్తిస్తుంది."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "ఇంకా సైట్‌లు సేవ్ చేయలేదు."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 సైట్ సేవ్ చేయబడింది."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d సైట్‌లు సేవ్ చేయబడ్డాయి."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "మరచిపో"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "సేవ్ చేసిన అన్ని సైట్‌లను తొలగించు"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "అన్ని సైట్‌ల సేవ్ చేసిన వాల్యూమ్‌ను మరచిపోవాలా?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "డిఫాల్ట్‌లను పునరుద్ధరించు"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "అన్ని సెట్టింగ్‌లను డిఫాల్ట్‌కు పునరుద్ధరించాలా?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "సేవ్ చేయబడింది"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "ఈ సైట్ కోసం ఈక్వలైజర్ సెట్టింగ్‌లు సేవ్ చేయబడ్డాయి."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "ఈ సైట్ కోసం ఈక్వలైజర్ సెట్టింగ్‌లు సేవ్ చేయలేదు."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "ఈక్వలైజర్‌ను తొలగించు"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "సోర్స్ కోడ్"
   },
   "popupResetTab": {
     "message": "ట్యాబ్ రీసెట్"

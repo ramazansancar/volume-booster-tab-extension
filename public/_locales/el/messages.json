@@ -57,112 +57,112 @@
     "message": "Παρακαμφθέν"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Αυτές οι ρυθμίσεις ισχύουν για κάθε νέα καρτέλα. Η ένταση ανά καρτέλα ελέγχεται από τη γραμμή εργαλείων."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Προεπιλογές για νέες καρτέλες"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Αρχική ένταση"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Ισχύει για καρτέλες χωρίς δικές τους αποθηκευμένες ρυθμίσεις."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Μέγιστη ένταση"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Επαναφορά στο 600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Η αύξηση αυτού του ορίου μπορεί να βλάψει τα ηχεία και την ακοή. Αφήστε το limiter ενεργό."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Όταν κλείνει μια καρτέλα"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Να ξεχαστεί η ρύθμιση"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Συνιστάται. Κάθε καρτέλα ξεκινά με την προεπιλεγμένη ένταση."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Απομνημόνευση για αυτόν τον ιστότοπο"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Στην επόμενη επίσκεψη επαναφέρεται η τελευταία ένταση που χρησιμοποιήσατε."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Ασφάλεια"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Διατήρηση του limiter ενεργού πάνω από 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Αποτρέπει την παραμόρφωση και τις ξαφνικές δυνατές κορυφές."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Να επιτρέπεται η λήψη καρτέλας ως εφεδρεία"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Μόνο Chromium. Επιτρέπει την ενίσχυση σελίδων των οποίων ο ήχος δεν διαβάζεται άμεσα, με ένδειξη εγγραφής στην καρτέλα."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Γλώσσα"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Γλώσσα διεπαφής"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Αυτόματα"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Το όνομα στη λίστα προσθέτων του προγράμματος περιήγησης ακολουθεί πάντα τη γλώσσα του, όχι αυτή τη ρύθμιση."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Αποθηκευμένοι ιστότοποι"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Η επεξεργασία εδώ εφαρμόζεται αμέσως σε κάθε ήδη ανοιχτή καρτέλα του ιστότοπου."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Δεν υπάρχουν αποθηκευμένοι ιστότοποι ακόμη."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 ιστότοπος αποθηκεύτηκε."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d ιστότοποι αποθηκεύτηκαν."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Διαγραφή"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Εκκαθάριση όλων των αποθηκευμένων ιστότοπων"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Να ξεχαστεί η αποθηκευμένη ένταση για όλους τους ιστότοπους;"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Επαναφορά προεπιλογών"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Επαναφορά όλων των ρυθμίσεων στις προεπιλογές;"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Αποθηκεύτηκε"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Υπάρχουν αποθηκευμένες ρυθμίσεις ισοσταθμιστή για αυτόν τον ιστότοπο."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Δεν υπάρχουν αποθηκευμένες ρυθμίσεις ισοσταθμιστή για αυτόν τον ιστότοπο."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Εκκαθάριση ισοσταθμιστή"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Πηγαίος κώδικας"
   },
   "popupResetTab": {
     "message": "Επαναφορά καρτέλας"

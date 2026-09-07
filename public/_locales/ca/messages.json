@@ -57,112 +57,112 @@
     "message": "Omès"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Aquesta configuració s’aplica a cada pestanya nova. El volum per pestanya es controla des de la barra d’eines."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Valors per defecte per a pestanyes noves"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Volum inicial"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "S’aplica a les pestanyes sense configuració desada pròpia."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Volum màxim"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Restableix a 600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Apujar aquest límit pot danyar els altaveus i l’oïda. Mantén el limitador actiu."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "En tancar una pestanya"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Oblida la configuració"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Recomanat. Cada pestanya comença amb el volum per defecte."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Recorda-ho per a aquest lloc"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "En tornar al lloc es restaura el darrer volum utilitzat."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Seguretat"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Mantén el limitador actiu per sobre del 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Evita la distorsió i els pics forts sobtats en amplificar."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Permet la captura de pestanya com a alternativa"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Només Chromium. Permet amplificar pàgines l’àudio de les quals no es pot llegir directament, a canvi d’un indicador de gravació."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Idioma"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Idioma de la interfície"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automàtic"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "El nom que apareix a la llista de complements del navegador segueix sempre l’idioma del navegador, no aquesta configuració."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Llocs desats"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Editar un lloc aquí s’aplica immediatament a qualsevol pestanya ja oberta."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Encara no hi ha llocs desats."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 lloc desat."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d llocs desats."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Oblida"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Esborra tots els llocs desats"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Vols oblidar el volum desat de tots els llocs?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Restaura els valors per defecte"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Vols restaurar tota la configuració als valors per defecte?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Desat"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Hi ha ajustos d’equalitzador desats per a aquest lloc."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "No hi ha ajustos d’equalitzador desats per a aquest lloc."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Esborra l’equalitzador"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Codi font"
   },
   "popupResetTab": {
     "message": "Restableix la pestanya"

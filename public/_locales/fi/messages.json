@@ -57,112 +57,112 @@
     "message": "Ohitettu"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Nämä asetukset koskevat jokaista uutta välilehteä. Välilehden äänenvoimakkuutta säädetään työkalurivistä."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Uusien välilehtien oletukset"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Aloitusäänenvoimakkuus"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Koskee välilehtiä, joilla ei ole omia tallennettuja asetuksia."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Enimmäisäänenvoimakkuus"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Palauta arvoon 600 %"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Tämän rajan nostaminen voi vahingoittaa kaiuttimia ja kuuloa. Pidä rajoitin päällä."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Kun välilehti suljetaan"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Unohda asetus"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Suositeltu. Jokainen välilehti alkaa oletusäänenvoimakkuudella."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Muista tälle sivustolle"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Sivustolle palatessa palautetaan viimeksi käytetty äänenvoimakkuus."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Turvallisuus"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Pidä rajoitin päällä yli 100 %"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Estää säröytymisen ja äkilliset kovat piikit vahvistettaessa."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Salli välilehden kaappaus varajärjestelynä"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Vain Chromium. Mahdollistaa sivujen vahvistamisen, joiden ääntä ei voi lukea suoraan, välilehdelle tulee tallennusilmaisin."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Kieli"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Käyttöliittymän kieli"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automaattinen"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Selaimen omassa lisäosaluettelossa näkyvä nimi seuraa aina selaimen kieltä, ei tätä asetusta."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Tallennetut sivustot"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Muokkaus vaikuttaa heti kaikkiin jo avoinna oleviin sivuston välilehtiin."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Ei vielä tallennettuja sivustoja."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 sivusto tallennettu."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d sivustoa tallennettu."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Unohda"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Tyhjennä kaikki tallennetut sivustot"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Unohdetaanko kaikkien sivustojen tallennettu äänenvoimakkuus?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Palauta oletukset"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Palautetaanko kaikki asetukset oletuksiin?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Tallennettu"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Tälle sivustolle on tallennettu taajuuskorjaimen asetukset."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Tälle sivustolle ei ole tallennettu taajuuskorjaimen asetuksia."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Tyhjennä taajuuskorjain"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Lähdekoodi"
   },
   "popupResetTab": {
     "message": "Nollaa välilehti"

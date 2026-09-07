@@ -57,112 +57,112 @@
     "message": "বাইপাস করা"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "এই সেটিংস প্রতিটি নতুন ট্যাবে প্রযোজ্য। ট্যাব-ভিত্তিক ভলিউম টুলবার থেকে নিয়ন্ত্রিত হয়।"
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "নতুন ট্যাবের ডিফল্ট"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "প্রারম্ভিক ভলিউম"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "নিজস্ব সংরক্ষিত সেটিংস নেই এমন ট্যাবে প্রযোজ্য।"
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "সর্বোচ্চ ভলিউম"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "৬০০%-এ রিসেট করুন"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "এই সীমা বাড়ালে স্পিকার ও শ্রবণশক্তির ক্ষতি হতে পারে। লিমিটার চালু রাখুন।"
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "ট্যাব বন্ধ হলে"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "সেটিং ভুলে যান"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "প্রস্তাবিত। প্রতিটি ট্যাব ডিফল্ট ভলিউম থেকে শুরু হয়।"
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "সেই সাইটের জন্য মনে রাখুন"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "সাইটে ফিরে গেলে সর্বশেষ ব্যবহৃত ভলিউম ফিরে আসে।"
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "নিরাপত্তা"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "১০০%-এর উপরে লিমিটার চালু রাখুন"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "বুস্ট করার সময় বিকৃতি ও হঠাৎ উচ্চ শব্দ রোধ করে।"
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "ট্যাব ক্যাপচার ফলব্যাক অনুমোদন করুন"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "শুধু Chromium। যেসব পৃষ্ঠার অডিও সরাসরি পড়া যায় না সেগুলোও বুস্ট করে, বিনিময়ে ট্যাবে রেকর্ডিং সূচক দেখায়।"
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "ভাষা"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "ইন্টারফেসের ভাষা"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "স্বয়ংক্রিয়"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "ব্রাউজারের অ্যাড-অন তালিকায় দেখানো নাম সর্বদা ব্রাউজারের ভাষা অনুসরণ করে, এই সেটিং নয়।"
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "সংরক্ষিত সাইট"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "এখানে সম্পাদনা করলে সেই সাইটে খোলা যেকোনো ট্যাবে সঙ্গে সঙ্গে প্রযোজ্য হয়।"
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "এখনও কোনো সাইট সংরক্ষিত নেই।"
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "১টি সাইট সংরক্ষিত।"
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%dটি সাইট সংরক্ষিত।"
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "ভুলে যান"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "সব সংরক্ষিত সাইট মুছুন"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "সব সাইটের সংরক্ষিত ভলিউম ভুলে যাবেন?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "ডিফল্ট পুনরুদ্ধার করুন"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "সব সেটিংস ডিফল্টে ফিরিয়ে আনবেন?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "সংরক্ষিত"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "এই সাইটের জন্য ইকুয়ালাইজার সেটিংস সংরক্ষিত আছে।"
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "এই সাইটের জন্য কোনো ইকুয়ালাইজার সেটিংস সংরক্ষিত নেই।"
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "ইকুয়ালাইজার মুছুন"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "সোর্স কোড"
   },
   "popupResetTab": {
     "message": "ট্যাব রিসেট করুন"

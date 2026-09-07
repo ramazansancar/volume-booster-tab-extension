@@ -57,112 +57,112 @@
     "message": "Imerukwa"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Mipangilio hii inatumika kwa kila kichupo kipya. Sauti ya kila kichupo hudhibitiwa kutoka upau wa vidhibiti."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Chaguomsingi kwa vichupo vipya"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Sauti ya kuanzia"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Inatumika kwa vichupo visivyo na mipangilio yao iliyohifadhiwa."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Sauti ya juu zaidi"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Weka upya hadi 600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Kuongeza kikomo hiki kunaweza kuharibu spika na usikivu. Acha kikomo kikiwa kimewashwa."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Wakati kichupo kinafungwa"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Sahau mpangilio"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Inapendekezwa. Kila kichupo huanza kwa sauti chaguomsingi."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Kumbuka kwa tovuti hiyo"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Kutembelea tovuti tena hurejesha sauti uliyotumia mwisho."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Usalama"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Weka kikomo kikiwa kimewashwa zaidi ya 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Huzuia upotoshaji na vilele vya sauti kubwa ghafla wakati wa kukuza."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Ruhusu unasaji wa kichupo kama mbadala"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Chromium pekee. Huruhusu kukuza kurasa ambazo sauti yake haiwezi kusomwa moja kwa moja, kwa gharama ya kiashiria cha kurekodi kwenye kichupo."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Lugha"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Lugha ya kiolesura"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Kiotomatiki"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Jina katika orodha ya viongezi vya kivinjari hufuata lugha ya kivinjari kila wakati, si mpangilio huu."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Tovuti zilizohifadhiwa"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Kuhariri hapa hutumika mara moja kwa kichupo chochote kilichofunguliwa tayari."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Bado hakuna tovuti zilizohifadhiwa."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "Tovuti 1 imehifadhiwa."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "Tovuti %d zimehifadhiwa."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Sahau"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Futa tovuti zote zilizohifadhiwa"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Kusahau sauti iliyohifadhiwa kwa tovuti zote?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Rejesha chaguomsingi"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Kurejesha mipangilio yote kwa chaguomsingi?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Imehifadhiwa"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Mipangilio ya kisawazishi imehifadhiwa kwa tovuti hii."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Hakuna mipangilio ya kisawazishi iliyohifadhiwa kwa tovuti hii."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Futa kisawazishi"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Msimbo wa chanzo"
   },
   "popupResetTab": {
     "message": "Weka upya kichupo"

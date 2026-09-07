@@ -57,112 +57,112 @@
     "message": "Mööda juhitud"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Need seaded kehtivad igale uuele kaardile. Kaardi helitugevust juhitakse tööriistaribalt."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Uute kaartide vaikeväärtused"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Algne helitugevus"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Kehtib kaartidele, millel pole omi salvestatud sätteid."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Maksimaalne helitugevus"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Lähtesta 600%-le"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Selle piiri tõstmine võib kahjustada kõlareid ja kuulmist. Jätke limiiter sisse."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Kaardi sulgemisel"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Unusta säte"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Soovitatav. Iga kaart algab vaikehelitugevusega."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Jäta selle saidi jaoks meelde"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Saidi uuesti külastades taastatakse viimati kasutatud helitugevus."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Ohutus"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Hoia limiiter üle 100% sees"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Väldib võimendamisel moonutusi ja järske valje tippe."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Luba varuvariandina kaardi hõive"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Ainult Chromium. Võimaldab võimendada lehti, mille heli pole otse loetav, kaardil kuvatakse salvestusindikaator."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Keel"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Liidese keel"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automaatne"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Brauseri lisandite loendis kuvatav nimi järgib alati brauseri keelt, mitte seda sätet."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Salvestatud saidid"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Siin tehtud muudatus rakendub kohe kõigile juba avatud kaartidele."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Salvestatud saite veel pole."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 sait salvestatud."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d saiti salvestatud."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Unusta"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Kustuta kõik salvestatud saidid"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Kas unustada kõigi saitide salvestatud helitugevus?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Taasta vaikeväärtused"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Kas taastada kõik sätted vaikeväärtustele?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Salvestatud"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Selle saidi jaoks on salvestatud ekvalaiseri sätted."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Selle saidi jaoks pole salvestatud ekvalaiseri sätteid."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Tühjenda ekvalaiser"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Lähtekood"
   },
   "popupResetTab": {
     "message": "Lähtesta kaart"

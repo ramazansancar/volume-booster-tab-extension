@@ -57,112 +57,112 @@
     "message": "Omgået"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Disse indstillinger gælder for hvert nyt faneblad. Lydstyrken pr. faneblad styres fra værktøjslinjen."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Standard for nye faneblade"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Startlydstyrke"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Gælder for faneblade uden egne gemte indstillinger."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Maksimal lydstyrke"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Nulstil til 600 %"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "At hæve dette loft kan skade højttalere og hørelse. Lad limiteren være tændt."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Når et faneblad lukkes"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Glem indstillingen"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Anbefales. Hvert faneblad starter med standardlydstyrken."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Husk det for det websted"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Ved genbesøg gendannes den senest brugte lydstyrke."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Sikkerhed"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Hold limiteren tændt over 100 %"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Forhindrer forvrængning og pludselige høje spidser ved forstærkning."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Tillad fanebladsoptagelse som reserve"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Kun Chromium. Gør det muligt at forstærke sider, hvis lyd ikke kan læses direkte, mod en optageindikator på fanebladet."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Sprog"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Grænsefladesprog"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automatisk"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Navnet i browserens egen liste over tilføjelser følger altid browserens sprog, ikke denne indstilling."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Gemte websteder"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Redigering her gælder straks for faneblade, der allerede er åbne på webstedet."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Ingen websteder gemt endnu."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 websted gemt."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d websteder gemt."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Glem"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Ryd alle gemte websteder"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Glem den gemte lydstyrke for alle websteder?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Gendan standard"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Gendan alle indstillinger til standard?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Gemt"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Der er gemt equalizer-indstillinger for dette websted."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Der er ingen gemte equalizer-indstillinger for dette websted."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Ryd equalizer"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Kildekode"
   },
   "popupResetTab": {
     "message": "Nulstil faneblad"

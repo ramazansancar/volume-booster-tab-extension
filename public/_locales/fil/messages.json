@@ -57,109 +57,109 @@
     "message": "Nilaktawan"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Nalalapat ang mga setting na ito sa bawat bagong tab. Ang volume kada tab ay kontrolado mula sa toolbar."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Mga default para sa bagong tab"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Panimulang volume"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Nalalapat sa mga tab na walang sariling naka-save na setting."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Pinakamataas na volume"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "I-reset sa 600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Ang pagtaas ng limitasyong ito ay maaaring makasira sa speaker at pandinig. Panatilihing naka-on ang limiter."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Kapag sinara ang tab"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Kalimutan ang setting"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Inirerekomenda. Bawat tab ay nagsisimula sa default na volume."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Tandaan para sa site na iyon"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Sa muling pagbisita, ibinabalik ang huling ginamit na volume."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Kaligtasan"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Panatilihing naka-on ang limiter sa itaas ng 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Pinipigilan ang distortion at biglaang malalakas na peak kapag nagbo-boost."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Payagan ang tab capture bilang fallback"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Chromium lamang. Pinapayagan ang pag-boost ng mga pahinang hindi direktang mababasa ang audio, kapalit ng recording indicator sa tab."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Wika"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Wika ng interface"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Awtomatiko"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Ang pangalan sa listahan ng add-on ng browser ay laging sumusunod sa wika ng browser, hindi sa setting na ito."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Mga naka-save na site"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Ang pag-edit dito ay agad na nalalapat sa anumang tab na bukas na sa site."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Wala pang naka-save na site."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 site ang naka-save."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d site ang naka-save."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Kalimutan"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "I-clear ang lahat ng naka-save na site"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Kalimutan ang naka-save na volume para sa lahat ng site?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Ibalik ang mga default"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Ibalik ang lahat ng setting sa default?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Na-save"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "May naka-save na equalizer settings para sa site na ito."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Walang naka-save na equalizer settings para sa site na ito."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "I-clear ang equalizer"
   },
   "optionsSourceCode": {
     "message": "Source code"

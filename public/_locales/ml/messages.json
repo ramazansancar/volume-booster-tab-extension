@@ -57,112 +57,112 @@
     "message": "ബൈപാസ്"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "ഈ ക്രമീകരണങ്ങൾ എല്ലാ പുതിയ ടാബിനും ബാധകമാണ്. ടാബ് അടിസ്ഥാനത്തിലുള്ള വോളിയം ടൂൾബാറിൽ നിന്ന് നിയന്ത്രിക്കുന്നു."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "പുതിയ ടാബുകൾക്കുള്ള ഡിഫോൾട്ട്"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "പ്രാരംഭ വോളിയം"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "സ്വന്തം സംരക്ഷിത ക്രമീകരണങ്ങളില്ലാത്ത ടാബുകൾക്ക് ബാധകം."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "പരമാവധി വോളിയം"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "600% ആയി പുനഃസജ്ജമാക്കുക"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "ഈ പരിധി ഉയർത്തുന്നത് സ്പീക്കറുകൾക്കും കേൾവിക്കും ദോഷം ചെയ്യാം. ലിമിറ്റർ ഓണായി വയ്ക്കുക."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "ടാബ് അടയ്ക്കുമ്പോൾ"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "ക്രമീകരണം മറക്കുക"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "ശുപാർശ ചെയ്യുന്നു. ഓരോ ടാബും ഡിഫോൾട്ട് വോളിയത്തിൽ ആരംഭിക്കുന്നു."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "ആ സൈറ്റിനായി ഓർക്കുക"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "സൈറ്റ് വീണ്ടും സന്ദർശിക്കുമ്പോൾ അവസാനം ഉപയോഗിച്ച വോളിയം പുനഃസ്ഥാപിക്കുന്നു."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "സുരക്ഷ"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "100% ന് മുകളിൽ ലിമിറ്റർ ഓണായി വയ്ക്കുക"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "ബൂസ്റ്റ് ചെയ്യുമ്പോൾ വക്രീകരണവും പെട്ടെന്നുള്ള ഉച്ചസ്ഥായിയും തടയുന്നു."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "ടാബ് ക്യാപ്ചർ ഫോൾബാക്ക് അനുവദിക്കുക"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Chromium മാത്രം. ഓഡിയോ നേരിട്ട് വായിക്കാനാകാത്ത പേജുകളും ബൂസ്റ്റ് ചെയ്യാം, പകരം ടാബിൽ റെക്കോർഡിംഗ് സൂചകം കാണിക്കും."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "ഭാഷ"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "ഇന്റർഫേസ് ഭാഷ"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "സ്വയമേവ"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "ബ്രൗസറിന്റെ ആഡ്-ഓൺ പട്ടികയിൽ കാണുന്ന പേര് എപ്പോഴും ബ്രൗസറിന്റെ ഭാഷ പിന്തുടരുന്നു, ഈ ക്രമീകരണമല്ല."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "സംരക്ഷിച്ച സൈറ്റുകൾ"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "ഇവിടെ എഡിറ്റ് ചെയ്യുന്നത് ആ സൈറ്റിൽ ഇതിനകം തുറന്ന ടാബുകൾക്ക് ഉടനടി ബാധകമാകും."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "ഇതുവരെ സൈറ്റുകളൊന്നും സംരക്ഷിച്ചിട്ടില്ല."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 സൈറ്റ് സംരക്ഷിച്ചു."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d സൈറ്റുകൾ സംരക്ഷിച്ചു."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "മറക്കുക"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "സംരക്ഷിച്ച എല്ലാ സൈറ്റുകളും മായ്ക്കുക"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "എല്ലാ സൈറ്റുകളുടെയും സംരക്ഷിച്ച വോളിയം മറക്കണോ?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "ഡിഫോൾട്ട് പുനഃസ്ഥാപിക്കുക"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "എല്ലാ ക്രമീകരണങ്ങളും ഡിഫോൾട്ടിലേക്ക് പുനഃസ്ഥാപിക്കണോ?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "സംരക്ഷിച്ചു"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "ഈ സൈറ്റിനായി ഇക്വലൈസർ ക്രമീകരണങ്ങൾ സംരക്ഷിച്ചിട്ടുണ്ട്."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "ഈ സൈറ്റിനായി ഇക്വലൈസർ ക്രമീകരണങ്ങളൊന്നും സംരക്ഷിച്ചിട്ടില്ല."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "ഇക്വലൈസർ മായ്ക്കുക"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "സോഴ്‌സ് കോഡ്"
   },
   "popupResetTab": {
     "message": "ടാബ് പുനഃസജ്ജമാക്കുക"

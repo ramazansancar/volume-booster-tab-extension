@@ -57,112 +57,112 @@
     "message": "Kihagyva"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Ezek a beállítások minden új lapra érvényesek. A laponkénti hangerő az eszköztárról szabályozható."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Új lapok alapértelmezései"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Kezdő hangerő"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Azokra a lapokra vonatkozik, amelyeknek nincs saját mentett beállítása."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Maximális hangerő"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Visszaállítás 600%-ra"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "A határ növelése károsíthatja a hangszórókat és a hallást. Hagyja bekapcsolva a limitert."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Amikor egy lap bezárul"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Beállítás elfelejtése"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Ajánlott. Minden lap az alapértelmezett hangerővel indul."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Megjegyzés ehhez az oldalhoz"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Az oldal újbóli meglátogatásakor visszaáll a legutóbb használt hangerő."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Biztonság"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Limiter bekapcsolva tartása 100% felett"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Megakadályozza a torzítást és a hirtelen hangos csúcsokat erősítéskor."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Lapfelvétel engedélyezése tartalékként"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Csak Chromium. Lehetővé teszi olyan oldalak erősítését, amelyek hangja közvetlenül nem olvasható, cserébe felvételjelző jelenik meg a lapon."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Nyelv"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Felület nyelve"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automatikus"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "A böngésző kiegészítőlistájában megjelenő név mindig a böngésző nyelvét követi, nem ezt a beállítást."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Mentett oldalak"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Az itteni szerkesztés azonnal érvényes az adott oldalon már megnyitott lapokra."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Még nincsenek mentett oldalak."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 oldal mentve."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d oldal mentve."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Elfelejt"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Összes mentett oldal törlése"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Elfelejti a mentett hangerőt minden oldalnál?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Alapértékek visszaállítása"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Visszaállítja az összes beállítást alapértékre?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Mentve"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Ehhez az oldalhoz mentve vannak hangszínszabályzó-beállítások."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Ehhez az oldalhoz nincsenek mentett hangszínszabályzó-beállítások."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Hangszínszabályzó törlése"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Forráskód"
   },
   "popupResetTab": {
     "message": "Lap alaphelyzetbe"

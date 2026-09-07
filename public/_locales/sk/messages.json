@@ -57,112 +57,112 @@
     "message": "Obchádza sa"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Tieto nastavenia platia pre každú novú kartu. Hlasitosť karty sa ovláda z panela nástrojov."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Predvolené pre nové karty"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Počiatočná hlasitosť"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Platí pre karty bez vlastného uloženého nastavenia."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Maximálna hlasitosť"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Obnoviť na 600 %"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Zvýšenie tohto limitu môže poškodiť reproduktory aj sluch. Nechajte limiter zapnutý."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Keď sa karta zavrie"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Zabudnúť nastavenie"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Odporúča sa. Každá karta začína s predvolenou hlasitosťou."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Zapamätať pre túto stránku"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Pri opätovnej návšteve sa obnoví naposledy použitá hlasitosť."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Bezpečnosť"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Nechať limiter zapnutý nad 100 %"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Zabraňuje skresleniu a náhlym hlasným špičkám pri zosilňovaní."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Povoliť záznam karty ako záložné riešenie"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Iba Chromium. Umožňuje zosilniť stránky, ktorých zvuk sa nedá čítať priamo, za cenu indikátora nahrávania na karte."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Jazyk"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Jazyk rozhrania"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automaticky"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Názov v zozname doplnkov prehliadača vždy sleduje jazyk prehliadača, nie toto nastavenie."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Uložené stránky"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Úprava tu sa okamžite prejaví na už otvorených kartách danej stránky."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Zatiaľ nie sú uložené žiadne stránky."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "Uložená 1 stránka."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "Uložených %d stránok."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Zabudnúť"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Vymazať všetky uložené stránky"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Zabudnúť uloženú hlasitosť pre všetky stránky?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Obnoviť predvolené"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Obnoviť všetky nastavenia na predvolené?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Uložené"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Pre túto stránku sú uložené nastavenia ekvalizéra."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Pre túto stránku nie sú uložené nastavenia ekvalizéra."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Vymazať ekvalizér"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Zdrojový kód"
   },
   "popupResetTab": {
     "message": "Obnoviť kartu"

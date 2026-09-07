@@ -57,112 +57,112 @@
     "message": "தவிர்க்கப்பட்டது"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "இந்த அமைப்புகள் ஒவ்வொரு புதிய தாவலுக்கும் பொருந்தும். தாவல் வாரியான ஒலியளவு கருவிப்பட்டியில் இருந்து கட்டுப்படுத்தப்படுகிறது."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "புதிய தாவல்களுக்கான இயல்புநிலை"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "தொடக்க ஒலியளவு"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "சொந்த சேமித்த அமைப்புகள் இல்லாத தாவல்களுக்குப் பொருந்தும்."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "அதிகபட்ச ஒலியளவு"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "600% ஆக மீட்டமை"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "இந்த வரம்பை உயர்த்துவது ஒலிபெருக்கிகளையும் கேட்கும் திறனையும் சேதப்படுத்தலாம். லிமிட்டரை இயக்கத்தில் வைக்கவும்."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "தாவல் மூடும்போது"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "அமைப்பை மற"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "பரிந்துரைக்கப்படுகிறது. ஒவ்வொரு தாவலும் இயல்புநிலை ஒலியளவில் தொடங்குகிறது."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "அந்த தளத்திற்கு நினைவில் கொள்"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "தளத்தை மீண்டும் பார்வையிடும்போது கடைசியாகப் பயன்படுத்திய ஒலியளவு மீட்டமைக்கப்படும்."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "பாதுகாப்பு"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "100% க்கு மேல் லிமிட்டரை இயக்கத்தில் வைக்கவும்"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "பெருக்கும்போது சிதைவையும் திடீர் உரத்த உச்சங்களையும் தடுக்கிறது."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "தாவல் பிடிப்பை மாற்று வழியாக அனுமதி"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Chromium மட்டும். ஒலியை நேரடியாகப் படிக்க முடியாத பக்கங்களையும் பெருக்க அனுமதிக்கிறது, பதிலுக்கு தாவலில் பதிவு குறியீடு தோன்றும்."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "மொழி"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "இடைமுக மொழி"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "தானியங்கு"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "உலாவியின் நீட்டிப்புப் பட்டியலில் தோன்றும் பெயர் எப்போதும் உலாவியின் மொழியைப் பின்பற்றும், இந்த அமைப்பை அல்ல."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "சேமித்த தளங்கள்"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "இங்கு திருத்துவது அந்தத் தளத்தில் ஏற்கனவே திறந்துள்ள தாவல்களுக்கு உடனே பொருந்தும்."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "இதுவரை தளங்கள் எதுவும் சேமிக்கப்படவில்லை."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 தளம் சேமிக்கப்பட்டது."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d தளங்கள் சேமிக்கப்பட்டன."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "மற"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "சேமித்த அனைத்து தளங்களையும் அழி"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "அனைத்து தளங்களின் சேமித்த ஒலியளவை மறக்கவா?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "இயல்புநிலையை மீட்டமை"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "அனைத்து அமைப்புகளையும் இயல்புநிலைக்கு மீட்டமைக்கவா?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "சேமிக்கப்பட்டது"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "இந்தத் தளத்திற்கு ஈக்வலைசர் அமைப்புகள் சேமிக்கப்பட்டுள்ளன."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "இந்தத் தளத்திற்கு ஈக்வலைசர் அமைப்புகள் எதுவும் சேமிக்கப்படவில்லை."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "ஈக்வலைசரை அழி"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "மூலக் குறியீடு"
   },
   "popupResetTab": {
     "message": "தாவலை மீட்டமை"

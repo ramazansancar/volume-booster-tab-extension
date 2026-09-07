@@ -57,112 +57,112 @@
     "message": "Obcházeno"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Tato nastavení platí pro každý nový panel. Hlasitost panelu se ovládá z panelu nástrojů."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Výchozí pro nové panely"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Počáteční hlasitost"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Platí pro panely bez vlastního uloženého nastavení."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Maximální hlasitost"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Obnovit na 600 %"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Zvýšení tohoto limitu může poškodit reproduktory i sluch. Nechte limiter zapnutý."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Když se panel zavře"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Zapomenout nastavení"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Doporučeno. Každý panel začíná s výchozí hlasitostí."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Zapamatovat pro tento web"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Při opětovné návštěvě se obnoví naposledy použitá hlasitost."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Bezpečnost"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Nechat limiter zapnutý nad 100 %"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Zabraňuje zkreslení a náhlým hlasitým špičkám při zesilování."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Povolit záznam panelu jako záložní řešení"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Pouze Chromium. Umožňuje zesílit stránky, jejichž zvuk nelze číst přímo, za cenu indikátoru nahrávání na panelu."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Jazyk"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Jazyk rozhraní"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automaticky"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Název v seznamu doplňků prohlížeče vždy odpovídá jazyku prohlížeče, ne tomuto nastavení."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Uložené weby"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Úprava webu zde se okamžitě projeví na již otevřených panelech."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Zatím nejsou uloženy žádné weby."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "Uložen 1 web."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "Uloženo %d webů."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Zapomenout"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Vymazat všechny uložené weby"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Zapomenout uloženou hlasitost pro všechny weby?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Obnovit výchozí"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Obnovit všechna nastavení na výchozí?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Uloženo"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Pro tento web jsou uložena nastavení ekvalizéru."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Pro tento web nejsou uložena nastavení ekvalizéru."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Vymazat ekvalizér"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Zdrojový kód"
   },
   "popupResetTab": {
     "message": "Obnovit panel"

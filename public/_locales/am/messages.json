@@ -57,112 +57,112 @@
     "message": "ታልፈዋል"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "እነዚህ ቅንብሮች ለእያንዳንዱ አዲስ ትር ይሠራሉ። የእያንዳንዱ ትር ድምጽ ከመሣሪያ አሞሌ ይቆጣጠራል።"
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "ለአዲስ ትሮች ነባሪዎች"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "የመነሻ ድምጽ"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "የራሳቸው የተቀመጠ ቅንብር ለሌላቸው ትሮች ይተገበራል።"
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "ከፍተኛ ድምጽ"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "ወደ 600% ዳግም አስጀምር"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "ይህን ጣሪያ ማሳደግ ድምጽ ማጉያዎችንና መስማትን ሊጎዳ ይችላል። ገዳቢውን አብርተው ይተውት።"
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "ትር ሲዘጋ"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "ቅንብሩን እርሳ"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "የሚመከር። እያንዳንዱ ትር ከነባሪ ድምጽ ይጀምራል።"
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "ለዚያ ጣቢያ አስታውሰው"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "ጣቢያውን እንደገና ሲጎበኙ መጨረሻ የተጠቀሙት ድምጽ ይመለሳል።"
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "ደህንነት"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "ከ100% በላይ ገዳቢውን አብርተው ይተውት"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "በማጉላት ጊዜ መዛባትንና ድንገተኛ ከፍተኛ ድምጾችን ይከላከላል።"
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "የትር ቀረጻ አማራጭን ፍቀድ"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Chromium ብቻ። ድምጻቸው በቀጥታ ሊነበብ የማይችሉ ገጾችን ማጉላት ያስችላል፤ በምላሹ በትሩ ላይ የቀረጻ ምልክት ይታያል።"
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "ቋንቋ"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "የበይነገጽ ቋንቋ"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "ራስ-ሰር"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "በአሳሽዎ የተጨማሪዎች ዝርዝር ውስጥ የሚታየው ስም ሁልጊዜ የአሳሹን ቋንቋ ይከተላል፣ ይህን ቅንብር አይደለም።"
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "የተቀመጡ ጣቢያዎች"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "እዚህ ጣቢያን ማርትዕ በዚያ ጣቢያ ላይ ቀድሞ ለተከፈቱ ትሮች ወዲያውኑ ይተገበራል።"
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "እስካሁን የተቀመጠ ጣቢያ የለም።"
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "1 ጣቢያ ተቀምጧል።"
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d ጣቢያዎች ተቀምጠዋል።"
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "እርሳ"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "ሁሉንም የተቀመጡ ጣቢያዎች አጽዳ"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "ለሁሉም ጣቢያዎች የተቀመጠውን ድምጽ ይረሳ?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "ነባሪዎችን መልስ"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "ሁሉንም ቅንብሮች ወደ ነባሪ ይመለሱ?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "ተቀምጧል"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "ለዚህ ጣቢያ የአጣጣሚ ቅንብሮች ተቀምጠዋል።"
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "ለዚህ ጣቢያ የተቀመጠ የአጣጣሚ ቅንብር የለም።"
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "አጣጣሚውን አጽዳ"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "ምንጭ ኮድ"
   },
   "popupResetTab": {
     "message": "ትርን ዳግም አስጀምር"

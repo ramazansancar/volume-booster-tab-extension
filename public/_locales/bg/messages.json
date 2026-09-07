@@ -57,112 +57,112 @@
     "message": "Заобиколен"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Тези настройки важат за всеки нов раздел. Звукът на всеки раздел се управлява от лентата с инструменти."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "По подразбиране за нови раздели"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Начална сила на звука"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Прилага се за раздели без собствени запазени настройки."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Максимална сила на звука"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Нулиране до 600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Повишаването на този таван може да повреди високоговорителите и слуха. Оставете лимитера включен."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Когато разделът се затвори"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Забрави настройката"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Препоръчително. Всеки раздел започва с силата на звука по подразбиране."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Запомни за този сайт"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "При повторно посещение се възстановява последната използвана сила на звука."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Безопасност"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Дръж лимитера включен над 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Предотвратява изкривяване и внезапни силни пикове при усилване."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Разреши заснемане на раздела като резервен вариант"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Само Chromium. Позволява усилване на страници, чийто звук не може да се прочете директно, с индикатор за запис на раздела."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Език"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Език на интерфейса"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Автоматично"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Името в списъка с добавки на браузъра винаги следва езика на браузъра, а не тази настройка."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Запазени сайтове"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Редакцията тук се прилага веднага за всеки вече отворен раздел на този сайт."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Все още няма запазени сайтове."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "Запазен е 1 сайт."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "Запазени са %d сайта."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Забрави"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Изчисти всички запазени сайтове"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Да се забрави запазената сила на звука за всички сайтове?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Възстанови по подразбиране"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Да се възстановят всички настройки по подразбиране?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Запазено"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "За този сайт са запазени настройки на еквалайзера."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "За този сайт няма запазени настройки на еквалайзера."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Изчисти еквалайзера"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Изходен код"
   },
   "popupResetTab": {
     "message": "Нулиране на раздела"

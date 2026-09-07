@@ -57,112 +57,112 @@
     "message": "Заобиўено"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Ова подешавања важе за сваку нову картицу. Јачина звука по картици се контролише са траке алата."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Подразумевано за нове картице"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Почетна јачина звука"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Важи за картице без сопствених сачуваних подешавања."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Максимална јачина звука"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Ресетуј на 600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Подизање ове границе може оштетити звучнике и слух. Оставите лимитер укључен."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Када се картица затвори"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Заборави подешавање"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Препоручено. Свака картица почиње са подразумеваном јачином звука."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Запамти за тај сајт"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Поновном посетом сајта враћа се последња коришћена јачина звука."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Безбедност"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Држи лимитер укључен изнад 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Спречава изобличење и изненадне гласне врхове при појачавању."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Дозволи снимање картице као резерву"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Само Chromium. Омогућава појачавање страница чији се звук не може директно читати, уз индикатор снимања на картици."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Језик"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Језик интерфејса"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Аутоматски"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Име на листи додатака прегледача увек прати језик прегледача, а не ово подешавање."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Сачувани сајтови"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Уређивање овде се одмах примењује на већ отворене картице тог сајта."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Још нема сачуваних сајтова."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "Сачуван 1 сајт."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "Сачувано %d сајтова."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Заборави"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Обриши све сачуване сајтове"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Заборавити сачувану јачину звука за све сајтове?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Врати подразумевано"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Вратити сва подешавања на подразумевано?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Сачувано"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "За овај сајт су сачувана подешавања еквилајзера."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "За овај сајт нема сачуваних подешавања еквилајзера."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Обриши еквилајзер"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Изворни код"
   },
   "popupResetTab": {
     "message": "Ресетуј картицу"

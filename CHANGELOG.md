@@ -12,6 +12,9 @@ which is most of them.
 
 ### Added
 
+- **The settings page is now translated.** It had always been hard-coded
+  English; its 36 strings go through the same table as the popup's, and all 55
+  locales are complete again.
 - **A language picker** in the settings page. The interface follows the browser
   by default, but any of the 55 shipped languages can be chosen instead — useful
   when your browser is in one language and you would rather read another. The

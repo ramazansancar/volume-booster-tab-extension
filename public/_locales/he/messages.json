@@ -57,112 +57,112 @@
     "message": "עוקף"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "הגדרות אלה חלות על כל לשונית חדשה. עוצמת הקול לכל לשונית נשלטת מסרגל הכלים."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "ברירת מחדל ללשוניות חדשות"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "עוצמת קול התחלתית"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "חל על לשוניות ללא הגדרות שמורות משלהן."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "עוצמת קול מרבית"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "אפס ל-600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "העלאת מגבלה זו עלולה לפגוע ברמקולים ובשמיעה. השאירו את המגביל פעיל."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "כשלשונית נסגרת"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "שכח את ההגדרה"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "מומלץ. כל לשונית מתחילה בעוצמת ברירת המחדל."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "זכור עבור אתר זה"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "בביקור חוזר באתר משוחזרת עוצמת הקול האחרונה שהשתמשת בה."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "בטיחות"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "השאר את המגביל פעיל מעל 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "מונע עיוות ופסגות קול פתאומיות בעת הגברה."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "אפשר לכידת לשונית כגיבוי"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Chromium בלבד. מאפשר הגברת דפים שהשמע שלהם אינו קריא ישירות, במחיר מחוון הקלטה בלשונית."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "שפה"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "שפת הממשק"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "אוטומטי"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "השם ברשימת התוספות של הדפדפן תמיד עוקב אחר שפת הדפדפן, לא אחר הגדרה זו."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "אתרים שמורים"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "עריכה כאן חלה מיד על כל לשונית פתוחה באתר."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "עדיין אין אתרים שמורים."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "אתר אחד נשמר."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "%d אתרים נשמרו."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "שכח"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "נקה את כל האתרים השמורים"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "לשכוח את עוצמת הקול השמורה עבור כל האתרים?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "שחזר ברירות מחדל"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "לשחזר את כל ההגדרות לברירת המחדל?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "נשמר"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "קיימות הגדרות אקולייזר שמורות לאתר זה."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "אין הגדרות אקולייזר שמורות לאתר זה."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "נקה אקולייזר"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "קוד מקור"
   },
   "popupResetTab": {
     "message": "אפס לשונית"

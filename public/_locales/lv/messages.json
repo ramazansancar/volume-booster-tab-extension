@@ -57,112 +57,112 @@
     "message": "Apiets"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Šie iestatījumi attiecas uz katru jaunu cilni. Cilnes skaļumu vada no rīkjoslas."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Noklusējumi jaunām cilnēm"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Sākuma skaļums"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Attiecas uz cilnēm bez pašu saglabātiem iestatījumiem."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Maksimālais skaļums"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Atiestatīt uz 600%"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Šī ierobežojuma palielināšana var bojāt skaļruņus un dzirdi. Atstājiet limitatoru ieslēgtu."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Kad cilne tiek aizvērta"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Aizmirst iestatījumu"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Ieteicams. Katra cilne sākas ar noklusējuma skaļumu."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Atcerēties šai vietnei"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Atkārtoti apmeklējot vietni, tiek atjaunots pēdējais izmantotais skaļums."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Drošība"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Turēt limitatoru ieslēgtu virs 100%"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Novērš kropļojumus un pēkšņus skaļus maksimumus pastiprinot."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Atļaut cilnes tveršanu kā rezerves variantu"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Tikai Chromium. Ļauj pastiprināt lapas, kuru skaņu nevar nolasīt tieši, cilnē tiek rādīts ierakstīšanas indikators."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Valoda"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Saskarnes valoda"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Automātiski"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Pārlūka papildinājumu sarakstā redzamais nosaukums vienmēr atbilst pārlūka valodai, nevis šim iestatījumam."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Saglabātās vietnes"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Šeit veiktās izmaiņas nekavējoties attiecas uz jau atvērtajām šīs vietnes cilnēm."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Vēl nav saglabātu vietņu."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "Saglabāta 1 vietne."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "Saglabātas %d vietnes."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Aizmirst"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Notīrīt visas saglabātās vietnes"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Aizmirst visu vietņu saglabāto skaļumu?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Atjaunot noklusējumus"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Atjaunot visus iestatījumus uz noklusējumiem?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Saglabāts"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Šai vietnei ir saglabāti ekvalaizera iestatījumi."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Šai vietnei nav saglabātu ekvalaizera iestatījumu."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Notīrīt ekvalaizeru"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Pirmkods"
   },
   "popupResetTab": {
     "message": "Atiestatīt cilni"

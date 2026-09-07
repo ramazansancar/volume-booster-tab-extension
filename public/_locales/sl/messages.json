@@ -57,112 +57,112 @@
     "message": "Obideno"
   },
   "optionsLead": {
-    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+    "message": "Te nastavitve veljajo za vsak nov zavihek. Glasnost zavihka se upravlja iz orodne vrstice."
   },
   "optionsDefaultsTitle": {
-    "message": "Defaults for new tabs"
+    "message": "Privzeto za nove zavihke"
   },
   "optionsStartingVolume": {
-    "message": "Starting volume"
+    "message": "Začetna glasnost"
   },
   "optionsStartingVolumeHint": {
-    "message": "Applied to tabs that have no saved settings of their own."
+    "message": "Velja za zavihke brez lastnih shranjenih nastavitev."
   },
   "optionsMaxVolume": {
-    "message": "Maximum volume"
+    "message": "Največja glasnost"
   },
   "optionsResetMax": {
-    "message": "Reset to 600%"
+    "message": "Ponastavi na 600 %"
   },
   "optionsMaxVolumeHint": {
-    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+    "message": "Zvišanje te meje lahko poškoduje zvočnike in sluh. Pustite omejevalnik vklopljen."
   },
   "optionsOnTabClose": {
-    "message": "When a tab closes"
+    "message": "Ko se zavihek zapre"
   },
   "optionsForgetSetting": {
-    "message": "Forget the setting"
+    "message": "Pozabi nastavitev"
   },
   "optionsForgetSettingHint": {
-    "message": "Recommended. Every tab starts from the default volume."
+    "message": "Priporočeno. Vsak zavihek se začne s privzeto glasnostjo."
   },
   "optionsRememberSetting": {
-    "message": "Remember it for that site"
+    "message": "Zapomni si za to spletno mesto"
   },
   "optionsRememberSettingHint": {
-    "message": "Revisiting the site restores the volume you last used there."
+    "message": "Ob ponovnem obisku se obnovi nazadnje uporabljena glasnost."
   },
   "optionsSafetyTitle": {
-    "message": "Safety"
+    "message": "Varnost"
   },
   "optionsAutoLimiter": {
-    "message": "Keep the limiter on above 100%"
+    "message": "Ohrani omejevalnik vklopljen nad 100 %"
   },
   "optionsAutoLimiterHint": {
-    "message": "Prevents clipping and sudden loud peaks when boosting."
+    "message": "Preprečuje popačenje in nenadne glasne vrhove pri ojačanju."
   },
   "optionsTabCapture": {
-    "message": "Allow tab capture fallback"
+    "message": "Dovoli zajem zavihka kot rezervo"
   },
   "optionsTabCaptureHint": {
-    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+    "message": "Samo Chromium. Omogoča ojačanje strani, katerih zvoka ni mogoče brati neposredno, na zavihku se pokaže indikator snemanja."
   },
   "optionsLanguageTitle": {
-    "message": "Language"
+    "message": "Jezik"
   },
   "optionsLanguageLabel": {
-    "message": "Interface language"
+    "message": "Jezik vmesnika"
   },
   "optionsLanguageAuto": {
-    "message": "Automatic"
+    "message": "Samodejno"
   },
   "optionsLanguageHint": {
-    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+    "message": "Ime na seznamu dodatkov brskalnika vedno sledi jeziku brskalnika, ne tej nastavitvi."
   },
   "optionsSavedSitesTitle": {
-    "message": "Saved sites"
+    "message": "Shranjena spletna mesta"
   },
   "optionsSavedSitesHint": {
-    "message": "Editing a site here applies immediately to any tab already open on it."
+    "message": "Urejanje tukaj se takoj uporabi za vse že odprte zavihke tega mesta."
   },
   "optionsNoSavedSites": {
-    "message": "No sites saved yet."
+    "message": "Ni še shranjenih spletnih mest."
   },
   "optionsOneSiteSaved": {
-    "message": "1 site saved."
+    "message": "Shranjeno 1 spletno mesto."
   },
   "optionsManySitesSaved": {
-    "message": "%d sites saved."
+    "message": "Shranjenih %d spletnih mest."
   },
   "optionsForget": {
-    "message": "Forget"
+    "message": "Pozabi"
   },
   "optionsClearAll": {
-    "message": "Clear all saved sites"
+    "message": "Počisti vsa shranjena spletna mesta"
   },
   "optionsConfirmClearAll": {
-    "message": "Forget the saved volume for every site?"
+    "message": "Pozabiti shranjeno glasnost za vsa spletna mesta?"
   },
   "optionsRestoreDefaults": {
-    "message": "Restore defaults"
+    "message": "Obnovi privzeto"
   },
   "optionsConfirmRestore": {
-    "message": "Restore all settings to their defaults?"
+    "message": "Obnoviti vse nastavitve na privzeto?"
   },
   "optionsSaved": {
-    "message": "Saved"
+    "message": "Shranjeno"
   },
   "optionsEqSaved": {
-    "message": "Equalizer settings are saved for this site."
+    "message": "Za to spletno mesto so shranjene nastavitve izenačevalnika."
   },
   "optionsEqNone": {
-    "message": "No equalizer settings saved for this site."
+    "message": "Za to spletno mesto ni shranjenih nastavitev izenačevalnika."
   },
   "optionsClearEq": {
-    "message": "Clear equalizer"
+    "message": "Počisti izenačevalnik"
   },
   "optionsSourceCode": {
-    "message": "Source code"
+    "message": "Izvorna koda"
   },
   "popupResetTab": {
     "message": "Ponastavi zavihek"
