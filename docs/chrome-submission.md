@@ -126,60 +126,43 @@ the permission name without explaining the need.
 **`storage`**
 
 ```text
-Stores the user's own preferences — default volume, maximum volume, safety
-options, chosen interface language, and the per-site volumes they explicitly
-asked to be remembered. Nothing else is stored, and nothing is transmitted.
+Stores the user's own preferences — default volume, maximum volume, safety options, chosen interface language, and the per-site volumes they explicitly asked to be remembered. Nothing else is stored, and nothing is transmitted.
 ```
 
 **`tabs`**
 
 ```text
-Each tab is boosted independently, so the extension needs to tell tabs apart to
-keep their settings separate, and needs the tab's URL to apply a volume the
-user saved for that site. It also sets the per-tab toolbar badge that shows the
-current level.
+Each tab is boosted independently, so the extension needs to tell tabs apart to keep their settings separate, and needs the tab's URL to apply a volume the user saved for that site. It also sets the per-tab toolbar badge that shows the current level.
 ```
 
 **`activeTab`**
 
 ```text
-Applies the boost to the tab the user is looking at when they open the popup
-and move a slider.
+Applies the boost to the tab the user is looking at when they open the popup and move a slider.
 ```
 
 **`webNavigation`**
 
 ```text
-Enumerates the frames within a tab so audio settings can reach a media player
-running inside an iframe, which is how most video sites embed one. Without it
-the extension has no effect on those sites. Only frame IDs are read; no
-browsing history is collected, stored or transmitted.
+Enumerates the frames within a tab so audio settings can reach a media player running inside an iframe, which is how most video sites embed one. Without it the extension has no effect on those sites. Only frame IDs are read; no browsing history is collected, stored or transmitted.
 ```
 
 **`tabCapture`**
 
 ```text
-Fallback path for pages whose audio cannot be read directly through the Web
-Audio API, such as cross-origin media served without CORS headers. The captured
-stream is processed locally and played back immediately; it is never recorded,
-stored or sent anywhere.
+Fallback path for pages whose audio cannot be read directly through the Web Audio API, such as cross-origin media served without CORS headers. The captured stream is processed locally and played back immediately; it is never recorded, stored or sent anywhere.
 ```
 
 **`offscreen`**
 
 ```text
-A Manifest V3 service worker has no DOM and therefore no AudioContext, so the
-tab-capture fallback needs an offscreen document to host its audio processing
-graph. The document is never visible and does nothing else.
+A Manifest V3 service worker has no DOM and therefore no AudioContext, so the tab-capture fallback needs an offscreen document to host its audio processing graph. The document is never visible and does nothing else.
 ```
 
 **Host permissions (`http://*/*`, `https://*/*`)**
 
 ```text
-Media elements can appear on any website, so the content script must be able to
-run on any page the user opens. It only looks for <video> and <audio> elements
-and routes their audio through a Web Audio graph. It does not read page text,
-cookies, form fields, credentials or any other page content.
+Media elements can appear on any website, so the content script must be able to run on any page the user opens. It only looks for <video> and <audio> elements and routes their audio through a Web Audio graph. It does not read page text, cookies, form fields, credentials or any other page content.
 ```
 
 **Remote code**
@@ -187,9 +170,7 @@ cookies, form fields, credentials or any other page content.
 Select **No, I am not using remote code.**
 
 ```text
-Everything the extension executes ships inside the package. There is no
-eval(), no remotely hosted script, no external stylesheet or font, and no
-runtime code fetching of any kind.
+Everything the extension executes ships inside the package. There is no eval(), no remotely hosted script, no external stylesheet or font, and no runtime code fetching of any kind.
 ```
 
 ### Data usage
