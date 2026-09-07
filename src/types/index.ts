@@ -95,7 +95,11 @@ export type UiToBackgroundMessage =
   | { type: 'ui:reset-tab'; tabId: number }
   | { type: 'ui:get-preferences' }
   | { type: 'ui:set-preferences'; preferences: Partial<GlobalPreferences> }
-  | { type: 'ui:request-fallback'; tabId: number };
+  | { type: 'ui:request-fallback'; tabId: number }
+  /** Edits the settings stored for one origin, from the options page. */
+  | { type: 'ui:update-origin'; origin: string; settings: Partial<AudioSettings> }
+  /** Deletes the settings stored for one origin. */
+  | { type: 'ui:forget-origin'; origin: string };
 
 /** Messages sent from the background to a tab's content script. */
 export type BackgroundToContentMessage =

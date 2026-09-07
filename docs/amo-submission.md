@@ -7,23 +7,33 @@ Copy-paste material for the addons.mozilla.org submission form. Keep this file u
 
 ---
 
-## Version notes (v0.1.1)
+## Version notes (v0.2.0)
 
 ```text
-First public release.
+Fixes audio on sites that run their player in an iframe, which is most of
+them. Previously the boost silently did nothing there.
 
-Amplifies the audio of any browser tab up to 600%, with a limiter, a 6-band
-equalizer, stereo balance and a mono downmix. Each tab is controlled
-independently, so two tabs can play at different volumes at the same time.
+Fixes a video going permanently mute after setting a volume and switching to
+another stream. Players that reuse one <video> element across streams left it
+routed nowhere until the page was reloaded.
 
-Boosts are temporary by default and are forgotten when the tab closes. A user
-can opt a specific site into being remembered from the popup, or change the
-default in the options page.
+Fixes the extension on Chromium builds running Manifest V2, where several
+browser APIs are callback-only and the popup failed to open.
 
-The interface is fully translated into 55 languages.
+An embedded widget could previously relabel the tab as its own origin - an
+embedded payment frame could make a stream page read as m.stripe.network, and
+"Remember this site" would have saved the setting under that domain. Only the
+top-level document defines the tab's identity now.
 
-The add-on makes no network requests, contains no analytics, and stores nothing
-beyond the user's own settings in local storage.
+The popup now explains why a page cannot be boosted instead of leaving the
+status line blank, and the bypass control names the current state (Active or
+Bypassed) rather than the action.
+
+NEW PERMISSION: webNavigation
+Required to enumerate a tab's frames so the volume reaches a player inside an
+iframe. It is used for nothing else: no page content is read, and no browsing
+history is collected, stored or transmitted. The add-on still makes no network
+requests of any kind.
 ```
 
 ---
@@ -60,12 +70,16 @@ processing" rather than failing silently. Browser security boundary, not a
 defect.
 
 PERMISSIONS
-- storage    Saves the user's own preferences locally. Nothing else stored.
-- tabs       Separate volume per tab; toolbar badge for the active tab.
-- activeTab  Applies the boost to the tab being viewed.
-- <all_urls> Media can appear on any site, so the content script must run on
-             any page. It only looks for <video> and <audio> elements; it
-             does not read page content, cookies, form fields or credentials.
+- storage       Saves the user's own preferences locally. Nothing else stored.
+- tabs          Separate volume per tab; toolbar badge for the active tab.
+- activeTab     Applies the boost to the tab being viewed.
+- webNavigation Enumerates a tab's frames so the volume reaches a player
+                inside an iframe. Used for nothing else - no history is read,
+                collected or transmitted.
+- <all_urls>    Media can appear on any site, so the content script must run
+                on any page. It only looks for <video> and <audio> elements;
+                it does not read page content, cookies, form fields or
+                credentials.
 
 DATA COLLECTION
 None. Declared as data_collection_permissions.required = ["none"]. The add-on
@@ -79,7 +93,7 @@ SOURCE AND BUILD (Node.js 20 or newer, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.1.1.zip
+Uploaded file: dist/firefox-mv2-0.2.0.zip
 The attached source archive contains BUILD.md at its root with the same steps.
 
 Bundler is esbuild with its standard minification. No obfuscation, no name
@@ -124,12 +138,16 @@ Routes a page's <video> and <audio> elements through a Web Audio graph
 page allows. Each tab is boosted independently.
 
 PERMISSIONS
-- storage    Saves the user's own preferences locally. Nothing else stored.
-- tabs       Separate volume per tab; toolbar badge for the active tab.
-- activeTab  Applies the boost to the tab being viewed.
-- <all_urls> Media can appear on any site, so the content script must run on
-             any page. It only looks for <video> and <audio> elements; it
-             does not read page content, cookies, form fields or credentials.
+- storage       Saves the user's own preferences locally. Nothing else stored.
+- tabs          Separate volume per tab; toolbar badge for the active tab.
+- activeTab     Applies the boost to the tab being viewed.
+- webNavigation Enumerates a tab's frames so the volume reaches a player
+                inside an iframe. Used for nothing else - no history is read,
+                collected or transmitted.
+- <all_urls>    Media can appear on any site, so the content script must run
+                on any page. It only looks for <video> and <audio> elements;
+                it does not read page content, cookies, form fields or
+                credentials.
 
 DATA COLLECTION
 None. Declared as data_collection_permissions.required = ["none"]. No network
@@ -141,7 +159,7 @@ SOURCE AND BUILD (Node.js 20+, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.1.1.zip
+Uploaded file: dist/firefox-mv2-0.2.0.zip
 BUILD.md at the root of the source archive repeats these steps.
 
 esbuild with standard minification; no obfuscation. Unminified output:

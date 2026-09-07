@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Keseimbangan"
   },
+  "popupBalanceLeft": {
+    "message": "Kiri"
+  },
+  "popupBalanceRight": {
+    "message": "Kanan"
+  },
   "popupBalanceCenter": {
     "message": "Tengah"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Dilewati"
+  },
+  "optionsLead": {
+    "message": "Pengaturan ini berlaku untuk setiap tab baru. Volume per tab diatur dari bilah alat."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Default untuk tab baru"
+  },
+  "optionsStartingVolume": {
+    "message": "Volume awal"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Berlaku untuk tab tanpa pengaturan tersimpan sendiri."
+  },
+  "optionsMaxVolume": {
+    "message": "Volume maksimum"
+  },
+  "optionsResetMax": {
+    "message": "Atur ulang ke 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Menaikkan batas ini dapat merusak speaker dan pendengaran. Biarkan pembatas aktif."
+  },
+  "optionsOnTabClose": {
+    "message": "Saat tab ditutup"
+  },
+  "optionsForgetSetting": {
+    "message": "Lupakan pengaturan"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Disarankan. Setiap tab dimulai dari volume default."
+  },
+  "optionsRememberSetting": {
+    "message": "Ingat untuk situs itu"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Mengunjungi situs lagi memulihkan volume terakhir yang dipakai."
+  },
+  "optionsSafetyTitle": {
+    "message": "Keamanan"
+  },
+  "optionsAutoLimiter": {
+    "message": "Tetap aktifkan pembatas di atas 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Mencegah distorsi dan lonjakan suara mendadak."
+  },
+  "optionsTabCapture": {
+    "message": "Izinkan tangkapan tab sebagai cadangan"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Hanya Chromium. Memungkinkan penguatan halaman yang audionya tidak bisa dibaca langsung, dengan indikator perekaman pada tab."
+  },
+  "optionsLanguageTitle": {
+    "message": "Bahasa"
+  },
+  "optionsLanguageLabel": {
+    "message": "Bahasa antarmuka"
+  },
+  "optionsLanguageAuto": {
+    "message": "Otomatis"
+  },
+  "optionsLanguageHint": {
+    "message": "Nama pada daftar ekstensi peramban selalu mengikuti bahasa peramban, bukan pengaturan ini."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Situs tersimpan"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Mengedit situs di sini langsung berlaku pada tab yang sudah terbuka."
+  },
+  "optionsNoSavedSites": {
+    "message": "Belum ada situs tersimpan."
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 situs tersimpan."
+  },
+  "optionsManySitesSaved": {
+    "message": "%d situs tersimpan."
+  },
+  "optionsForget": {
+    "message": "Lupakan"
+  },
+  "optionsClearAll": {
+    "message": "Hapus semua situs tersimpan"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Lupakan volume tersimpan untuk semua situs?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Pulihkan default"
+  },
+  "optionsConfirmRestore": {
+    "message": "Pulihkan semua pengaturan ke default?"
+  },
+  "optionsSaved": {
+    "message": "Tersimpan"
+  },
+  "optionsEqSaved": {
+    "message": "Pengaturan ekualiser tersimpan untuk situs ini."
+  },
+  "optionsEqNone": {
+    "message": "Tidak ada pengaturan ekualiser tersimpan untuk situs ini."
+  },
+  "optionsClearEq": {
+    "message": "Bersihkan ekualiser"
+  },
+  "optionsSourceCode": {
+    "message": "Kode sumber"
   },
   "popupResetTab": {
     "message": "Atur ulang tab"

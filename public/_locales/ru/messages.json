@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Баланс"
   },
+  "popupBalanceLeft": {
+    "message": "Влево"
+  },
+  "popupBalanceRight": {
+    "message": "Вправо"
+  },
   "popupBalanceCenter": {
     "message": "Центр"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Обход"
+  },
+  "optionsLead": {
+    "message": "Эти настройки применяются к каждой новой вкладке. Громкость вкладки настраивается на панели инструментов."
+  },
+  "optionsDefaultsTitle": {
+    "message": "По умолчанию для новых вкладок"
+  },
+  "optionsStartingVolume": {
+    "message": "Начальная громкость"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Применяется к вкладкам без собственных сохранённых настроек."
+  },
+  "optionsMaxVolume": {
+    "message": "Максимальная громкость"
+  },
+  "optionsResetMax": {
+    "message": "Сбросить до 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Повышение предела может повредить динамики и слух. Оставьте лимитер включённым."
+  },
+  "optionsOnTabClose": {
+    "message": "При закрытии вкладки"
+  },
+  "optionsForgetSetting": {
+    "message": "Забыть настройку"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Рекомендуется. Каждая вкладка начинает с громкости по умолчанию."
+  },
+  "optionsRememberSetting": {
+    "message": "Запомнить для этого сайта"
+  },
+  "optionsRememberSettingHint": {
+    "message": "При повторном заходе восстанавливается последняя громкость."
+  },
+  "optionsSafetyTitle": {
+    "message": "Безопасность"
+  },
+  "optionsAutoLimiter": {
+    "message": "Держать лимитер включённым выше 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Предотвращает искажения и внезапные громкие пики."
+  },
+  "optionsTabCapture": {
+    "message": "Разрешить захват вкладки как запасной путь"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Только Chromium. Позволяет усиливать страницы, звук которых нельзя прочитать напрямую, ценой индикатора записи на вкладке."
+  },
+  "optionsLanguageTitle": {
+    "message": "Язык"
+  },
+  "optionsLanguageLabel": {
+    "message": "Язык интерфейса"
+  },
+  "optionsLanguageAuto": {
+    "message": "Автоматически"
+  },
+  "optionsLanguageHint": {
+    "message": "Имя в списке дополнений браузера всегда следует языку браузера, а не этой настройке."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Сохранённые сайты"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Изменения сразу применяются к уже открытым вкладкам этого сайта."
+  },
+  "optionsNoSavedSites": {
+    "message": "Сохранённых сайтов пока нет."
+  },
+  "optionsOneSiteSaved": {
+    "message": "Сохранён 1 сайт."
+  },
+  "optionsManySitesSaved": {
+    "message": "Сохранено сайтов: %d."
+  },
+  "optionsForget": {
+    "message": "Забыть"
+  },
+  "optionsClearAll": {
+    "message": "Очистить все сохранённые сайты"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Забыть сохранённую громкость для всех сайтов?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Восстановить настройки по умолчанию"
+  },
+  "optionsConfirmRestore": {
+    "message": "Восстановить все настройки по умолчанию?"
+  },
+  "optionsSaved": {
+    "message": "Сохранено"
+  },
+  "optionsEqSaved": {
+    "message": "Для этого сайта сохранены настройки эквалайзера."
+  },
+  "optionsEqNone": {
+    "message": "Для этого сайта нет сохранённых настроек эквалайзера."
+  },
+  "optionsClearEq": {
+    "message": "Очистить эквалайзер"
+  },
+  "optionsSourceCode": {
+    "message": "Исходный код"
   },
   "popupResetTab": {
     "message": "Сбросить вкладку"

@@ -102,7 +102,7 @@ Knowing this up front saves a lot of confusion.
 | --- | --- | --- |
 | ✅ Standard HTML5 video | YouTube, Vimeo, Twitch, Odysee | Full support |
 | ✅ HTML5 audio | SoundCloud, Bandcamp, web radio | Full support |
-| ✅ Embedded players | Videos inside articles and iframes | The content script runs in frames too |
+| ✅ Embedded players | Videos inside articles and iframes | Settings are delivered to every frame |
 | ✅ Single-page apps | Netflix episode changes, YouTube playlists | The next video is caught automatically |
 
 ### Limited or unavailable
@@ -143,7 +143,9 @@ The popup tells you at the bottom:
 
 ## Language support
 
-The interface follows your browser's language. All 55 locales are fully translated — every string, in every language, with no English fallbacks.
+The interface follows your browser's language by default, and you can pick a specific one in the settings page.
+
+23 locales are fully translated. The other 32 cover the popup — the part you use daily — and fall back to English for the settings page, string by string, so nothing is ever blank. **Filling one in is the easiest possible contribution**; see [Contributing](#contributing).
 
 <details>
 <summary><b>All 55 languages</b></summary>

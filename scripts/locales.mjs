@@ -232,6 +232,36 @@ const MESSAGES = {
     uk: 'Баланс', vi: 'Cân bằng', zh_CN: '声道平衡', zh_TW: '聲道平衡',
   },
 
+  popupBalanceLeft: {
+    en: 'Left',
+    am: 'ግራ', ar: 'يسار', bg: 'Ляво', bn: 'বাম', ca: 'Esquerra', cs: 'Vlevo',
+    da: 'Venstre', de: 'Links', el: 'Αριστερά', en_AU: 'Left', en_GB: 'Left',
+    en_US: 'Left', es: 'Izquierda', es_419: 'Izquierda', et: 'Vasak',
+    fa: 'چپ', fi: 'Vasen', fil: 'Kaliwa', fr: 'Gauche', gu: 'ડાબે',
+    he: 'שמאל', hi: 'बायाँ', hr: 'Lijevo', hu: 'Bal', id: 'Kiri',
+    it: 'Sinistra', ja: '左', kn: 'ಎಡ', ko: '왼쪽', lt: 'Kairė', lv: 'Kreisā',
+    ml: 'ഇടത്', mr: 'डावा', ms: 'Kiri', nl: 'Links', no: 'Venstre',
+    pl: 'Lewo', pt_BR: 'Esquerda', pt_PT: 'Esquerda', ro: 'Stânga',
+    ru: 'Влево', sk: 'Vľavo', sl: 'Levo', sr: 'Лево', sv: 'Vänster',
+    sw: 'Kushoto', ta: 'இடது', te: 'ఎడమ', th: 'ซ้าย', tr: 'Sol',
+    uk: 'Ліворуч', vi: 'Trái', zh_CN: '左', zh_TW: '左',
+  },
+
+  popupBalanceRight: {
+    en: 'Right',
+    am: 'ቀኝ', ar: 'يمين', bg: 'Дясно', bn: 'ডান', ca: 'Dreta', cs: 'Vpravo',
+    da: 'Højre', de: 'Rechts', el: 'Δεξιά', en_AU: 'Right', en_GB: 'Right',
+    en_US: 'Right', es: 'Derecha', es_419: 'Derecha', et: 'Parem',
+    fa: 'راست', fi: 'Oikea', fil: 'Kanan', fr: 'Droite', gu: 'જમણે',
+    he: 'ימין', hi: 'दायाँ', hr: 'Desno', hu: 'Jobb', id: 'Kanan',
+    it: 'Destra', ja: '右', kn: 'ಬಲ', ko: '오른쪽', lt: 'Dešinė', lv: 'Labā',
+    ml: 'വലത്', mr: 'उजवा', ms: 'Kanan', nl: 'Rechts', no: 'Høyre',
+    pl: 'Prawo', pt_BR: 'Direita', pt_PT: 'Direita', ro: 'Dreapta',
+    ru: 'Вправо', sk: 'Vpravo', sl: 'Desno', sr: 'Десно', sv: 'Höger',
+    sw: 'Kulia', ta: 'வலது', te: 'కుడి', th: 'ขวา', tr: 'Sağ',
+    uk: 'Праворуч', vi: 'Phải', zh_CN: '右', zh_TW: '右',
+  },
+
   popupBalanceCenter: {
     en: 'Center',
     am: 'መሃል', ar: 'الوسط', bg: 'Център', bn: 'কেন্দ্র', ca: 'Centre',
@@ -489,6 +519,556 @@ const MESSAGES = {
     sv: 'Förbikopplad', sw: 'Imerukwa', ta: 'தவிர்க்கப்பட்டது',
     te: 'బైపాస్', th: 'ข้ามอยู่', tr: 'Devre dışı',
     uk: 'Обхід', vi: 'Đang bỏ qua', zh_CN: '已旁路', zh_TW: '已旁路',
+  },
+
+  /* Options page ---------------------------------------------------------- */
+
+  optionsLead: {
+    en: 'These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup.',
+    de: 'Diese Einstellungen gelten für jeden neuen Tab. Die Lautstärke pro Tab wird über das Symbol in der Symbolleiste gesteuert.',
+    es: 'Estos ajustes se aplican a cada pestaña nueva. El volumen por pestaña se controla desde el icono de la barra.',
+    fr: 'Ces paramètres s’appliquent à chaque nouvel onglet. Le volume par onglet se règle depuis la barre d’outils.',
+    it: 'Queste impostazioni valgono per ogni nuova scheda. Il volume per scheda si regola dalla barra degli strumenti.',
+    ja: 'これらの設定は新しいタブすべてに適用されます。タブごとの音量はツールバーから調整します。',
+    ko: '이 설정은 모든 새 탭에 적용됩니다. 탭별 볼륨은 도구 모음에서 조절합니다.',
+    nl: 'Deze instellingen gelden voor elk nieuw tabblad. Het volume per tabblad regel je via de werkbalk.',
+    pl: 'Te ustawienia dotyczą każdej nowej karty. Głośność karty ustawiasz z paska narzędzi.',
+    pt_BR: 'Estas configurações valem para cada nova aba. O volume por aba é ajustado na barra de ferramentas.',
+    ru: 'Эти настройки применяются к каждой новой вкладке. Громкость вкладки настраивается на панели инструментов.',
+    tr: 'Bu ayarlar her yeni sekme için geçerlidir. Sekme başına ses seviyesi araç çubuğundan ayarlanır.',
+    uk: 'Ці налаштування застосовуються до кожної нової вкладки. Гучність вкладки регулюється на панелі інструментів.',
+    zh_CN: '这些设置适用于每个新标签页。每个标签页的音量在工具栏中调节。',
+    zh_TW: '這些設定適用於每個新分頁。各分頁的音量在工具列中調整。',
+    ar: 'تنطبق هذه الإعدادات على كل تبويب جديد. يتم التحكم في مستوى صوت كل تبويب من شريط الأدوات.',
+    hi: 'ये सेटिंग्स हर नए टैब पर लागू होती हैं। प्रति-टैब वॉल्यूम टूलबार से नियंत्रित होता है।',
+    id: 'Pengaturan ini berlaku untuk setiap tab baru. Volume per tab diatur dari bilah alat.',
+    th: 'การตั้งค่าเหล่านี้ใช้กับทุกแท็บใหม่ ระดับเสียงต่อแท็บปรับได้จากแถบเครื่องมือ',
+    vi: 'Các cài đặt này áp dụng cho mọi tab mới. Âm lượng từng tab được điều chỉnh từ thanh công cụ.',
+  },
+
+  optionsDefaultsTitle: {
+    en: 'Defaults for new tabs',
+    de: 'Standard für neue Tabs', es: 'Valores por defecto para pestañas nuevas',
+    fr: 'Valeurs par défaut des nouveaux onglets', it: 'Predefiniti per nuove schede',
+    ja: '新しいタブの既定値', ko: '새 탭 기본값', nl: 'Standaard voor nieuwe tabbladen',
+    pl: 'Domyślne dla nowych kart', pt_BR: 'Padrões para novas abas',
+    ru: 'По умолчанию для новых вкладок', tr: 'Yeni sekmeler için varsayılanlar',
+    uk: 'Типові для нових вкладок', zh_CN: '新标签页默认值', zh_TW: '新分頁預設值',
+    ar: 'الإعدادات الافتراضية للتبويبات الجديدة', hi: 'नए टैब के लिए डिफ़ॉल्ट',
+    id: 'Default untuk tab baru', th: 'ค่าเริ่มต้นสำหรับแท็บใหม่', vi: 'Mặc định cho tab mới',
+  },
+
+  optionsStartingVolume: {
+    en: 'Starting volume',
+    de: 'Startlautstärke', es: 'Volumen inicial', fr: 'Volume de départ',
+    it: 'Volume iniziale', ja: '開始時の音量', ko: '시작 볼륨',
+    nl: 'Beginvolume', pl: 'Głośność początkowa', pt_BR: 'Volume inicial',
+    ru: 'Начальная громкость', tr: 'Başlangıç ses seviyesi', uk: 'Початкова гучність',
+    zh_CN: '初始音量', zh_TW: '初始音量', ar: 'مستوى الصوت الابتدائي',
+    hi: 'प्रारंभिक वॉल्यूम', id: 'Volume awal', th: 'ระดับเสียงเริ่มต้น', vi: 'Âm lượng ban đầu',
+  },
+
+  optionsStartingVolumeHint: {
+    en: 'Applied to tabs that have no saved settings of their own.',
+    de: 'Gilt für Tabs ohne eigene gespeicherte Einstellungen.',
+    es: 'Se aplica a las pestañas sin ajustes guardados propios.',
+    fr: 'S’applique aux onglets sans réglages enregistrés.',
+    it: 'Vale per le schede senza impostazioni salvate.',
+    ja: '独自の保存設定がないタブに適用されます。',
+    ko: '저장된 설정이 없는 탭에 적용됩니다.',
+    nl: 'Geldt voor tabbladen zonder eigen opgeslagen instellingen.',
+    pl: 'Dotyczy kart bez własnych zapisanych ustawień.',
+    pt_BR: 'Aplicado a abas sem configurações salvas próprias.',
+    ru: 'Применяется к вкладкам без собственных сохранённых настроек.',
+    tr: 'Kendi kaydedilmiş ayarı olmayan sekmelere uygulanır.',
+    uk: 'Застосовується до вкладок без власних збережених налаштувань.',
+    zh_CN: '适用于没有自有保存设置的标签页。', zh_TW: '適用於沒有自訂儲存設定的分頁。',
+    ar: 'يُطبق على التبويبات التي ليس لها إعدادات محفوظة.',
+    hi: 'उन टैब पर लागू जिनकी अपनी सहेजी गई सेटिंग नहीं है।',
+    id: 'Berlaku untuk tab tanpa pengaturan tersimpan sendiri.',
+    th: 'ใช้กับแท็บที่ไม่มีการตั้งค่าที่บันทึกไว้เอง', vi: 'Áp dụng cho tab chưa có cài đặt riêng.',
+  },
+
+  optionsMaxVolume: {
+    en: 'Maximum volume',
+    de: 'Maximale Lautstärke', es: 'Volumen máximo', fr: 'Volume maximum',
+    it: 'Volume massimo', ja: '最大音量', ko: '최대 볼륨', nl: 'Maximumvolume',
+    pl: 'Maksymalna głośność', pt_BR: 'Volume máximo', ru: 'Максимальная громкость',
+    tr: 'Maksimum ses seviyesi', uk: 'Максимальна гучність', zh_CN: '最大音量',
+    zh_TW: '最大音量', ar: 'أقصى مستوى للصوت', hi: 'अधिकतम वॉल्यूम',
+    id: 'Volume maksimum', th: 'ระดับเสียงสูงสุด', vi: 'Âm lượng tối đa',
+  },
+
+  optionsResetMax: {
+    en: 'Reset to 600%',
+    de: 'Auf 600 % zurücksetzen', es: 'Restablecer a 600 %',
+    fr: 'Réinitialiser à 600 %', it: 'Reimposta a 600%', ja: '600% にリセット',
+    ko: '600%로 초기화', nl: 'Terug naar 600%', pl: 'Przywróć 600%',
+    pt_BR: 'Redefinir para 600%', ru: 'Сбросить до 600%', tr: '%600’e sıfırla',
+    uk: 'Скинути до 600%', zh_CN: '重置为 600%', zh_TW: '重設為 600%',
+    ar: 'إعادة التعيين إلى 600%', hi: '600% पर रीसेट करें',
+    id: 'Atur ulang ke 600%', th: 'รีเซ็ตเป็น 600%', vi: 'Đặt lại về 600%',
+  },
+
+  optionsMaxVolumeHint: {
+    en: 'Raising this ceiling can damage speakers and hearing. Keep the limiter on.',
+    de: 'Ein höheres Limit kann Lautsprecher und Gehör schädigen. Limiter aktiviert lassen.',
+    es: 'Subir este límite puede dañar los altavoces y el oído. Mantén el limitador activo.',
+    fr: 'Augmenter ce plafond peut endommager les haut-parleurs et l’ouïe. Gardez le limiteur actif.',
+    it: 'Alzare questo limite può danneggiare altoparlanti e udito. Tieni attivo il limitatore.',
+    ja: 'この上限を上げるとスピーカーや聴覚を損なう恐れがあります。リミッターは有効のままにしてください。',
+    ko: '이 상한을 높이면 스피커와 청력이 손상될 수 있습니다. 리미터를 켜 두세요.',
+    nl: 'Een hoger maximum kan luidsprekers en gehoor beschadigen. Laat de limiter aan.',
+    pl: 'Podniesienie limitu może uszkodzić głośniki i słuch. Zostaw limiter włączony.',
+    pt_BR: 'Aumentar esse limite pode danificar alto-falantes e audição. Mantenha o limitador ativo.',
+    ru: 'Повышение предела может повредить динамики и слух. Оставьте лимитер включённым.',
+    tr: 'Bu tavanı yükseltmek hoparlörlere ve işitmeye zarar verebilir. Limitörü açık bırakın.',
+    uk: 'Підвищення межі може пошкодити динаміки та слух. Залиште лімітер увімкненим.',
+    zh_CN: '提高上限可能损坏扬声器和听力。请保持限制器开启。',
+    zh_TW: '提高上限可能損害喇叭與聽力。請保持限制器開啟。',
+    ar: 'رفع هذا الحد قد يضر بمكبرات الصوت والسمع. أبقِ المحدد مفعلاً.',
+    hi: 'यह सीमा बढ़ाने से स्पीकर और सुनने की क्षमता को नुकसान हो सकता है। लिमिटर चालू रखें।',
+    id: 'Menaikkan batas ini dapat merusak speaker dan pendengaran. Biarkan pembatas aktif.',
+    th: 'การเพิ่มขีดจำกัดนี้อาจทำให้ลำโพงและการได้ยินเสียหาย ควรเปิดลิมิตเตอร์ไว้',
+    vi: 'Tăng giới hạn này có thể hỏng loa và thính giác. Hãy bật bộ giới hạn.',
+  },
+
+  optionsOnTabClose: {
+    en: 'When a tab closes',
+    de: 'Wenn ein Tab geschlossen wird', es: 'Al cerrar una pestaña',
+    fr: 'À la fermeture d’un onglet', it: 'Alla chiusura di una scheda',
+    ja: 'タブを閉じたとき', ko: '탭을 닫을 때', nl: 'Bij het sluiten van een tabblad',
+    pl: 'Po zamknięciu karty', pt_BR: 'Ao fechar uma aba', ru: 'При закрытии вкладки',
+    tr: 'Sekme kapandığında', uk: 'Коли вкладка закривається', zh_CN: '关闭标签页时',
+    zh_TW: '關閉分頁時', ar: 'عند إغلاق التبويب', hi: 'जब टैब बंद हो',
+    id: 'Saat tab ditutup', th: 'เมื่อปิดแท็บ', vi: 'Khi đóng tab',
+  },
+
+  optionsForgetSetting: {
+    en: 'Forget the setting',
+    de: 'Einstellung verwerfen', es: 'Olvidar el ajuste', fr: 'Oublier le réglage',
+    it: 'Dimentica l’impostazione', ja: '設定を破棄', ko: '설정 잊기',
+    nl: 'Instelling vergeten', pl: 'Zapomnij ustawienie', pt_BR: 'Esquecer a configuração',
+    ru: 'Забыть настройку', tr: 'Ayarı unut', uk: 'Забути налаштування',
+    zh_CN: '忘记设置', zh_TW: '忘記設定', ar: 'نسيان الإعداد', hi: 'सेटिंग भूल जाएं',
+    id: 'Lupakan pengaturan', th: 'ลืมการตั้งค่า', vi: 'Quên cài đặt',
+  },
+
+  optionsForgetSettingHint: {
+    en: 'Recommended. Every tab starts from the default volume.',
+    de: 'Empfohlen. Jeder Tab startet mit der Standardlautstärke.',
+    es: 'Recomendado. Cada pestaña empieza con el volumen predeterminado.',
+    fr: 'Recommandé. Chaque onglet démarre au volume par défaut.',
+    it: 'Consigliato. Ogni scheda parte dal volume predefinito.',
+    ja: '推奨。各タブは既定の音量で始まります。',
+    ko: '권장. 모든 탭이 기본 볼륨으로 시작합니다.',
+    nl: 'Aanbevolen. Elk tabblad begint op het standaardvolume.',
+    pl: 'Zalecane. Każda karta zaczyna od domyślnej głośności.',
+    pt_BR: 'Recomendado. Cada aba começa no volume padrão.',
+    ru: 'Рекомендуется. Каждая вкладка начинает с громкости по умолчанию.',
+    tr: 'Önerilir. Her sekme varsayılan ses seviyesiyle başlar.',
+    uk: 'Рекомендовано. Кожна вкладка починає з типової гучності.',
+    zh_CN: '推荐。每个标签页从默认音量开始。', zh_TW: '建議。每個分頁從預設音量開始。',
+    ar: 'موصى به. يبدأ كل تبويب بمستوى الصوت الافتراضي.',
+    hi: 'अनुशंसित। हर टैब डिफ़ॉल्ट वॉल्यूम से शुरू होता है।',
+    id: 'Disarankan. Setiap tab dimulai dari volume default.',
+    th: 'แนะนำ ทุกแท็บเริ่มจากระดับเสียงเริ่มต้น', vi: 'Khuyến nghị. Mọi tab bắt đầu ở âm lượng mặc định.',
+  },
+
+  optionsRememberSetting: {
+    en: 'Remember it for that site',
+    de: 'Für diese Website merken', es: 'Recordarlo para ese sitio',
+    fr: 'Le mémoriser pour ce site', it: 'Ricordalo per quel sito',
+    ja: 'そのサイト用に記憶', ko: '해당 사이트에 대해 기억',
+    nl: 'Onthouden voor die site', pl: 'Zapamiętaj dla tej strony',
+    pt_BR: 'Lembrar para esse site', ru: 'Запомнить для этого сайта',
+    tr: 'O site için hatırla', uk: 'Запам’ятати для цього сайту',
+    zh_CN: '为该网站记住', zh_TW: '為該網站記住', ar: 'تذكره لهذا الموقع',
+    hi: 'उस साइट के लिए याद रखें', id: 'Ingat untuk situs itu',
+    th: 'จดจำสำหรับเว็บไซต์นั้น', vi: 'Ghi nhớ cho trang đó',
+  },
+
+  optionsRememberSettingHint: {
+    en: 'Revisiting the site restores the volume you last used there.',
+    de: 'Beim erneuten Besuch wird die zuletzt genutzte Lautstärke wiederhergestellt.',
+    es: 'Al volver al sitio se restaura el último volumen usado.',
+    fr: 'En revenant sur le site, le dernier volume utilisé est restauré.',
+    it: 'Tornando sul sito viene ripristinato l’ultimo volume usato.',
+    ja: 'サイトを再訪すると最後に使った音量が復元されます。',
+    ko: '사이트를 다시 방문하면 마지막 볼륨이 복원됩니다.',
+    nl: 'Bij een nieuw bezoek wordt het laatst gebruikte volume hersteld.',
+    pl: 'Po powrocie na stronę przywracana jest ostatnia głośność.',
+    pt_BR: 'Ao revisitar o site, o último volume usado é restaurado.',
+    ru: 'При повторном заходе восстанавливается последняя громкость.',
+    tr: 'Siteye tekrar girdiğinizde en son kullandığınız ses seviyesi geri gelir.',
+    uk: 'Під час повторного відвідування відновлюється остання гучність.',
+    zh_CN: '再次访问该网站时恢复上次使用的音量。', zh_TW: '再次造訪該網站時恢復上次使用的音量。',
+    ar: 'عند زيارة الموقع مجددًا يُستعاد آخر مستوى صوت استخدمته.',
+    hi: 'साइट पर दोबारा जाने पर पिछली बार का वॉल्यूम बहाल होता है।',
+    id: 'Mengunjungi situs lagi memulihkan volume terakhir yang dipakai.',
+    th: 'เมื่อกลับมาที่เว็บไซต์ ระดับเสียงล่าสุดจะถูกเรียกคืน',
+    vi: 'Truy cập lại trang sẽ khôi phục âm lượng bạn dùng lần cuối.',
+  },
+
+  optionsSafetyTitle: {
+    en: 'Safety',
+    de: 'Sicherheit', es: 'Seguridad', fr: 'Sécurité', it: 'Sicurezza',
+    ja: '安全性', ko: '안전', nl: 'Veiligheid', pl: 'Bezpieczeństwo',
+    pt_BR: 'Segurança', ru: 'Безопасность', tr: 'Güvenlik', uk: 'Безпека',
+    zh_CN: '安全', zh_TW: '安全', ar: 'الأمان', hi: 'सुरक्षा',
+    id: 'Keamanan', th: 'ความปลอดภัย', vi: 'An toàn',
+  },
+
+  optionsAutoLimiter: {
+    en: 'Keep the limiter on above 100%',
+    de: 'Limiter über 100 % aktiviert lassen',
+    es: 'Mantener el limitador activo por encima del 100 %',
+    fr: 'Garder le limiteur actif au-delà de 100 %',
+    it: 'Tieni il limitatore attivo oltre il 100%',
+    ja: '100% を超えたらリミッターを維持', ko: '100% 초과 시 리미터 유지',
+    nl: 'Limiter aan houden boven 100%', pl: 'Trzymaj limiter włączony powyżej 100%',
+    pt_BR: 'Manter o limitador ativo acima de 100%',
+    ru: 'Держать лимитер включённым выше 100%',
+    tr: '%100 üzerinde limitörü açık tut', uk: 'Тримати лімітер увімкненим понад 100%',
+    zh_CN: '超过 100% 时保持限制器开启', zh_TW: '超過 100% 時保持限制器開啟',
+    ar: 'إبقاء المحدد مفعلاً فوق 100%', hi: '100% से ऊपर लिमिटर चालू रखें',
+    id: 'Tetap aktifkan pembatas di atas 100%', th: 'เปิดลิมิตเตอร์ไว้เมื่อเกิน 100%',
+    vi: 'Giữ bộ giới hạn bật khi trên 100%',
+  },
+
+  optionsAutoLimiterHint: {
+    en: 'Prevents clipping and sudden loud peaks when boosting.',
+    de: 'Verhindert Verzerrungen und plötzliche Lautstärkespitzen.',
+    es: 'Evita la distorsión y los picos fuertes repentinos.',
+    fr: 'Évite la distorsion et les pics sonores soudains.',
+    it: 'Evita distorsioni e picchi improvvisi.',
+    ja: '増幅時の歪みと突然の大音量を防ぎます。',
+    ko: '증폭 시 왜곡과 갑작스러운 큰 소리를 방지합니다.',
+    nl: 'Voorkomt vervorming en plotselinge harde pieken.',
+    pl: 'Zapobiega zniekształceniom i nagłym głośnym szczytom.',
+    pt_BR: 'Evita distorção e picos altos repentinos.',
+    ru: 'Предотвращает искажения и внезапные громкие пики.',
+    tr: 'Yükseltirken bozulmayı ve ani yüksek tepe seslerini önler.',
+    uk: 'Запобігає спотворенням і раптовим гучним пікам.',
+    zh_CN: '防止增强时失真和突然的高音量。', zh_TW: '防止增強時失真與突然的高音量。',
+    ar: 'يمنع التشويه والقمم الصوتية المفاجئة عند التضخيم.',
+    hi: 'बूस्ट करते समय विरूपण और अचानक तेज़ आवाज़ रोकता है।',
+    id: 'Mencegah distorsi dan lonjakan suara mendadak.',
+    th: 'ป้องกันเสียงแตกและเสียงดังกะทันหันขณะเพิ่มเสียง',
+    vi: 'Ngăn méo tiếng và các đỉnh âm đột ngột khi khuếch đại.',
+  },
+
+  optionsTabCapture: {
+    en: 'Allow tab capture fallback',
+    de: 'Tab-Aufnahme als Ausweichlösung erlauben',
+    es: 'Permitir captura de pestaña como alternativa',
+    fr: 'Autoriser la capture d’onglet en secours',
+    it: 'Consenti la cattura scheda come ripiego',
+    ja: 'タブキャプチャの代替手段を許可', ko: '탭 캡처 대체 경로 허용',
+    nl: 'Tabblad-opname als terugvaloptie toestaan',
+    pl: 'Zezwól na przechwytywanie karty jako zapas',
+    pt_BR: 'Permitir captura de aba como alternativa',
+    ru: 'Разрешить захват вкладки как запасной путь',
+    tr: 'Sekme yakalama yedeğine izin ver', uk: 'Дозволити захоплення вкладки як запасний варіант',
+    zh_CN: '允许使用标签页捕获作为备用', zh_TW: '允許使用分頁擷取作為備援',
+    ar: 'السماح بالتقاط التبويب كبديل', hi: 'टैब कैप्चर फ़ॉलबैक की अनुमति दें',
+    id: 'Izinkan tangkapan tab sebagai cadangan', th: 'อนุญาตให้ใช้การจับภาพแท็บเป็นทางสำรอง',
+    vi: 'Cho phép dùng chụp tab làm phương án dự phòng',
+  },
+
+  optionsTabCaptureHint: {
+    en: 'Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab.',
+    de: 'Nur Chromium. Ermöglicht die Verstärkung von Seiten, deren Audio nicht direkt lesbar ist - der Tab zeigt dann eine Aufnahmeanzeige.',
+    es: 'Solo Chromium. Permite amplificar páginas cuyo audio no se puede leer directamente, a cambio de un indicador de grabación en la pestaña.',
+    fr: 'Chromium uniquement. Permet d’amplifier les pages dont le son n’est pas lisible directement, au prix d’un indicateur d’enregistrement.',
+    it: 'Solo Chromium. Permette di amplificare pagine il cui audio non è leggibile direttamente, al costo di un indicatore di registrazione.',
+    ja: 'Chromium のみ。音声を直接読めないページも増幅できますが、タブに録音インジケーターが表示されます。',
+    ko: 'Chromium 전용. 오디오를 직접 읽을 수 없는 페이지도 증폭하지만 탭에 녹음 표시가 나타납니다.',
+    nl: 'Alleen Chromium. Versterkt ook pagina’s waarvan de audio niet direct leesbaar is, met een opname-indicator op het tabblad.',
+    pl: 'Tylko Chromium. Pozwala wzmacniać strony, których dźwięku nie da się odczytać wprost, kosztem wskaźnika nagrywania na karcie.',
+    pt_BR: 'Somente Chromium. Permite amplificar páginas cujo áudio não pode ser lido diretamente, ao custo de um indicador de gravação na aba.',
+    ru: 'Только Chromium. Позволяет усиливать страницы, звук которых нельзя прочитать напрямую, ценой индикатора записи на вкладке.',
+    tr: 'Yalnızca Chromium. Sesi doğrudan okunamayan sayfaların da yükseltilmesini sağlar; karşılığında sekmede kayıt göstergesi çıkar.',
+    uk: 'Лише Chromium. Дозволяє підсилювати сторінки, звук яких не читається напряму, ціною індикатора запису на вкладці.',
+    zh_CN: '仅 Chromium。可增强无法直接读取音频的页面，代价是标签页会显示录制指示。',
+    zh_TW: '僅 Chromium。可增強無法直接讀取音訊的頁面，代價是分頁會顯示錄製指示。',
+    ar: 'Chromium فقط. يتيح تضخيم الصفحات التي لا يمكن قراءة صوتها مباشرة، مقابل ظهور مؤشر تسجيل على التبويب.',
+    hi: 'केवल Chromium। उन पेजों को भी बूस्ट करता है जिनका ऑडियो सीधे नहीं पढ़ा जा सकता, बदले में टैब पर रिकॉर्डिंग संकेतक दिखता है।',
+    id: 'Hanya Chromium. Memungkinkan penguatan halaman yang audionya tidak bisa dibaca langsung, dengan indikator perekaman pada tab.',
+    th: 'เฉพาะ Chromium เท่านั้น ช่วยเพิ่มเสียงหน้าที่อ่านเสียงโดยตรงไม่ได้ แลกกับตัวบ่งชี้การบันทึกบนแท็บ',
+    vi: 'Chỉ Chromium. Cho phép khuếch đại trang không đọc được âm thanh trực tiếp, đổi lại tab hiện chỉ báo ghi.',
+  },
+
+  optionsLanguageTitle: {
+    en: 'Language',
+    de: 'Sprache', es: 'Idioma', fr: 'Langue', it: 'Lingua', ja: '言語',
+    ko: '언어', nl: 'Taal', pl: 'Język', pt_BR: 'Idioma', ru: 'Язык',
+    tr: 'Dil', uk: 'Мова', zh_CN: '语言', zh_TW: '語言', ar: 'اللغة',
+    hi: 'भाषा', id: 'Bahasa', th: 'ภาษา', vi: 'Ngôn ngữ',
+  },
+
+  optionsLanguageLabel: {
+    en: 'Interface language',
+    de: 'Sprache der Oberfläche', es: 'Idioma de la interfaz',
+    fr: 'Langue de l’interface', it: 'Lingua dell’interfaccia',
+    ja: 'インターフェースの言語', ko: '인터페이스 언어', nl: 'Taal van de interface',
+    pl: 'Język interfejsu', pt_BR: 'Idioma da interface', ru: 'Язык интерфейса',
+    tr: 'Arayüz dili', uk: 'Мова інтерфейсу', zh_CN: '界面语言', zh_TW: '介面語言',
+    ar: 'لغة الواجهة', hi: 'इंटरफ़ेस भाषा', id: 'Bahasa antarmuka',
+    th: 'ภาษาของอินเทอร์เฟซ', vi: 'Ngôn ngữ giao diện',
+  },
+
+  optionsLanguageAuto: {
+    en: 'Automatic',
+    de: 'Automatisch', es: 'Automático', fr: 'Automatique', it: 'Automatico',
+    ja: '自動', ko: '자동', nl: 'Automatisch', pl: 'Automatycznie',
+    pt_BR: 'Automático', ru: 'Автоматически', tr: 'Otomatik', uk: 'Автоматично',
+    zh_CN: '自动', zh_TW: '自動', ar: 'تلقائي', hi: 'स्वचालित',
+    id: 'Otomatis', th: 'อัตโนมัติ', vi: 'Tự động',
+  },
+
+  optionsLanguageHint: {
+    en: 'The name shown in your browser\'s own add-on list always follows the browser\'s language, not this setting.',
+    de: 'Der Name in der Add-on-Liste des Browsers folgt immer der Browsersprache, nicht dieser Einstellung.',
+    es: 'El nombre en la lista de extensiones del navegador sigue siempre el idioma del navegador, no este ajuste.',
+    fr: 'Le nom affiché dans la liste des modules du navigateur suit toujours la langue du navigateur.',
+    it: 'Il nome nell’elenco estensioni del browser segue sempre la lingua del browser, non questa impostazione.',
+    ja: 'ブラウザーのアドオン一覧に表示される名前は、この設定ではなく常にブラウザーの言語に従います。',
+    ko: '브라우저의 확장 목록에 표시되는 이름은 이 설정이 아니라 항상 브라우저 언어를 따릅니다.',
+    nl: 'De naam in de add-onlijst van de browser volgt altijd de browsertaal, niet deze instelling.',
+    pl: 'Nazwa na liście dodatków przeglądarki zawsze podąża za językiem przeglądarki, nie tym ustawieniem.',
+    pt_BR: 'O nome na lista de extensões do navegador segue sempre o idioma do navegador, não esta configuração.',
+    ru: 'Имя в списке дополнений браузера всегда следует языку браузера, а не этой настройке.',
+    tr: 'Tarayıcının kendi eklenti listesinde görünen ad, bu ayarı değil her zaman tarayıcı dilini izler.',
+    uk: 'Назва у списку додатків браузера завжди відповідає мові браузера, а не цьому налаштуванню.',
+    zh_CN: '浏览器扩展列表中显示的名称始终跟随浏览器语言，而非此设置。',
+    zh_TW: '瀏覽器附加元件清單中顯示的名稱一律跟隨瀏覽器語言，而非此設定。',
+    ar: 'الاسم الظاهر في قائمة إضافات المتصفح يتبع دائمًا لغة المتصفح وليس هذا الإعداد.',
+    hi: 'ब्राउज़र की ऐड-ऑन सूची में दिखने वाला नाम हमेशा ब्राउज़र की भाषा का अनुसरण करता है।',
+    id: 'Nama pada daftar ekstensi peramban selalu mengikuti bahasa peramban, bukan pengaturan ini.',
+    th: 'ชื่อที่แสดงในรายการส่วนขยายของเบราว์เซอร์จะตามภาษาของเบราว์เซอร์เสมอ',
+    vi: 'Tên trong danh sách tiện ích của trình duyệt luôn theo ngôn ngữ trình duyệt, không theo cài đặt này.',
+  },
+
+  optionsSavedSitesTitle: {
+    en: 'Saved sites',
+    de: 'Gespeicherte Websites', es: 'Sitios guardados', fr: 'Sites enregistrés',
+    it: 'Siti salvati', ja: '保存したサイト', ko: '저장된 사이트',
+    nl: 'Opgeslagen sites', pl: 'Zapisane strony', pt_BR: 'Sites salvos',
+    ru: 'Сохранённые сайты', tr: 'Kaydedilen siteler', uk: 'Збережені сайти',
+    zh_CN: '已保存的网站', zh_TW: '已儲存的網站', ar: 'المواقع المحفوظة',
+    hi: 'सहेजी गई साइटें', id: 'Situs tersimpan', th: 'เว็บไซต์ที่บันทึกไว้',
+    vi: 'Trang đã lưu',
+  },
+
+  optionsSavedSitesHint: {
+    en: 'Editing a site here applies immediately to any tab already open on it.',
+    de: 'Änderungen wirken sofort auf bereits geöffnete Tabs dieser Website.',
+    es: 'Editar un sitio aquí se aplica de inmediato a las pestañas ya abiertas en él.',
+    fr: 'Modifier un site ici s’applique immédiatement aux onglets déjà ouverts dessus.',
+    it: 'Le modifiche si applicano subito alle schede già aperte su quel sito.',
+    ja: 'ここでの変更は、そのサイトを開いているタブに即座に適用されます。',
+    ko: '여기서 수정하면 해당 사이트가 열려 있는 탭에 즉시 적용됩니다.',
+    nl: 'Wijzigingen gelden direct voor tabbladen die al op die site open staan.',
+    pl: 'Zmiany działają natychmiast na kartach już otwartych na tej stronie.',
+    pt_BR: 'Editar um site aqui se aplica na hora às abas já abertas nele.',
+    ru: 'Изменения сразу применяются к уже открытым вкладкам этого сайта.',
+    tr: 'Buradaki düzenleme, o sitede açık olan sekmelere anında uygulanır.',
+    uk: 'Зміни одразу застосовуються до вже відкритих вкладок цього сайту.',
+    zh_CN: '在此编辑会立即应用到已打开该网站的标签页。',
+    zh_TW: '在此編輯會立即套用到已開啟該網站的分頁。',
+    ar: 'التعديل هنا يُطبق فورًا على أي تبويب مفتوح على هذا الموقع.',
+    hi: 'यहाँ संपादन उस साइट पर पहले से खुले टैब पर तुरंत लागू होता है।',
+    id: 'Mengedit situs di sini langsung berlaku pada tab yang sudah terbuka.',
+    th: 'การแก้ไขที่นี่จะมีผลทันทีกับแท็บที่เปิดเว็บไซต์นั้นอยู่',
+    vi: 'Chỉnh sửa ở đây áp dụng ngay cho tab đang mở trang đó.',
+  },
+
+  optionsNoSavedSites: {
+    en: 'No sites saved yet.',
+    de: 'Noch keine Websites gespeichert.', es: 'Aún no hay sitios guardados.',
+    fr: 'Aucun site enregistré pour l’instant.', it: 'Nessun sito salvato.',
+    ja: '保存されたサイトはありません。', ko: '저장된 사이트가 없습니다.',
+    nl: 'Nog geen sites opgeslagen.', pl: 'Brak zapisanych stron.',
+    pt_BR: 'Nenhum site salvo ainda.', ru: 'Сохранённых сайтов пока нет.',
+    tr: 'Henüz kaydedilmiş site yok.', uk: 'Збережених сайтів ще немає.',
+    zh_CN: '尚未保存任何网站。', zh_TW: '尚未儲存任何網站。',
+    ar: 'لا توجد مواقع محفوظة بعد.', hi: 'अभी कोई साइट सहेजी नहीं गई।',
+    id: 'Belum ada situs tersimpan.', th: 'ยังไม่มีเว็บไซต์ที่บันทึกไว้',
+    vi: 'Chưa có trang nào được lưu.',
+  },
+
+  optionsOneSiteSaved: {
+    en: '1 site saved.',
+    de: '1 Website gespeichert.', es: '1 sitio guardado.', fr: '1 site enregistré.',
+    it: '1 sito salvato.', ja: '1 件のサイトを保存済み。', ko: '사이트 1개 저장됨.',
+    nl: '1 site opgeslagen.', pl: 'Zapisano 1 stronę.', pt_BR: '1 site salvo.',
+    ru: 'Сохранён 1 сайт.', tr: '1 site kaydedildi.', uk: 'Збережено 1 сайт.',
+    zh_CN: '已保存 1 个网站。', zh_TW: '已儲存 1 個網站。', ar: 'تم حفظ موقع واحد.',
+    hi: '1 साइट सहेजी गई।', id: '1 situs tersimpan.', th: 'บันทึกไว้ 1 เว็บไซต์',
+    vi: 'Đã lưu 1 trang.',
+  },
+
+  optionsManySitesSaved: {
+    en: '%d sites saved.',
+    de: '%d Websites gespeichert.', es: '%d sitios guardados.',
+    fr: '%d sites enregistrés.', it: '%d siti salvati.', ja: '%d 件のサイトを保存済み。',
+    ko: '사이트 %d개 저장됨.', nl: '%d sites opgeslagen.', pl: 'Zapisano %d stron.',
+    pt_BR: '%d sites salvos.', ru: 'Сохранено сайтов: %d.', tr: '%d site kaydedildi.',
+    uk: 'Збережено сайтів: %d.', zh_CN: '已保存 %d 个网站。', zh_TW: '已儲存 %d 個網站。',
+    ar: 'تم حفظ %d مواقع.', hi: '%d साइटें सहेजी गईं।', id: '%d situs tersimpan.',
+    th: 'บันทึกไว้ %d เว็บไซต์', vi: 'Đã lưu %d trang.',
+  },
+
+  optionsForget: {
+    en: 'Forget',
+    de: 'Vergessen', es: 'Olvidar', fr: 'Oublier', it: 'Dimentica',
+    ja: '削除', ko: '잊기', nl: 'Vergeten', pl: 'Zapomnij', pt_BR: 'Esquecer',
+    ru: 'Забыть', tr: 'Unut', uk: 'Забути', zh_CN: '忘记', zh_TW: '忘記',
+    ar: 'نسيان', hi: 'भूल जाएं', id: 'Lupakan', th: 'ลืม', vi: 'Quên',
+  },
+
+  optionsClearAll: {
+    en: 'Clear all saved sites',
+    de: 'Alle gespeicherten Websites löschen', es: 'Borrar todos los sitios guardados',
+    fr: 'Effacer tous les sites enregistrés', it: 'Cancella tutti i siti salvati',
+    ja: '保存したサイトをすべて消去', ko: '저장된 사이트 모두 지우기',
+    nl: 'Alle opgeslagen sites wissen', pl: 'Wyczyść wszystkie zapisane strony',
+    pt_BR: 'Limpar todos os sites salvos', ru: 'Очистить все сохранённые сайты',
+    tr: 'Kaydedilen tüm siteleri temizle', uk: 'Очистити всі збережені сайти',
+    zh_CN: '清除所有已保存的网站', zh_TW: '清除所有已儲存的網站',
+    ar: 'مسح كل المواقع المحفوظة', hi: 'सभी सहेजी गई साइटें हटाएं',
+    id: 'Hapus semua situs tersimpan', th: 'ล้างเว็บไซต์ที่บันทึกทั้งหมด',
+    vi: 'Xóa tất cả trang đã lưu',
+  },
+
+  optionsConfirmClearAll: {
+    en: 'Forget the saved volume for every site?',
+    de: 'Gespeicherte Lautstärke für alle Websites verwerfen?',
+    es: '¿Olvidar el volumen guardado de todos los sitios?',
+    fr: 'Oublier le volume enregistré pour tous les sites ?',
+    it: 'Dimenticare il volume salvato per tutti i siti?',
+    ja: 'すべてのサイトの保存音量を破棄しますか？',
+    ko: '모든 사이트의 저장된 볼륨을 잊을까요?',
+    nl: 'Opgeslagen volume voor alle sites vergeten?',
+    pl: 'Zapomnieć zapisaną głośność dla wszystkich stron?',
+    pt_BR: 'Esquecer o volume salvo de todos os sites?',
+    ru: 'Забыть сохранённую громкость для всех сайтов?',
+    tr: 'Tüm sitelerin kaydedilmiş ses seviyesi unutulsun mu?',
+    uk: 'Забути збережену гучність для всіх сайтів?',
+    zh_CN: '要忘记所有网站的已保存音量吗？', zh_TW: '要忘記所有網站的已儲存音量嗎？',
+    ar: 'هل تريد نسيان مستوى الصوت المحفوظ لكل المواقع؟',
+    hi: 'सभी साइटों का सहेजा गया वॉल्यूम भूल जाएं?',
+    id: 'Lupakan volume tersimpan untuk semua situs?',
+    th: 'ลืมระดับเสียงที่บันทึกไว้ของทุกเว็บไซต์หรือไม่',
+    vi: 'Quên âm lượng đã lưu cho mọi trang?',
+  },
+
+  optionsRestoreDefaults: {
+    en: 'Restore defaults',
+    de: 'Standard wiederherstellen', es: 'Restaurar valores por defecto',
+    fr: 'Rétablir les valeurs par défaut', it: 'Ripristina predefiniti',
+    ja: '既定値に戻す', ko: '기본값 복원', nl: 'Standaard herstellen',
+    pl: 'Przywróć domyślne', pt_BR: 'Restaurar padrões',
+    ru: 'Восстановить настройки по умолчанию', tr: 'Varsayılanları geri yükle',
+    uk: 'Відновити типові', zh_CN: '恢复默认设置', zh_TW: '恢復預設設定',
+    ar: 'استعادة الإعدادات الافتراضية', hi: 'डिफ़ॉल्ट पुनर्स्थापित करें',
+    id: 'Pulihkan default', th: 'คืนค่าเริ่มต้น', vi: 'Khôi phục mặc định',
+  },
+
+  optionsConfirmRestore: {
+    en: 'Restore all settings to their defaults?',
+    de: 'Alle Einstellungen auf Standard zurücksetzen?',
+    es: '¿Restaurar todos los ajustes a sus valores por defecto?',
+    fr: 'Rétablir tous les réglages par défaut ?',
+    it: 'Ripristinare tutte le impostazioni predefinite?',
+    ja: 'すべての設定を既定値に戻しますか？',
+    ko: '모든 설정을 기본값으로 되돌릴까요?',
+    nl: 'Alle instellingen terugzetten naar standaard?',
+    pl: 'Przywrócić wszystkie ustawienia domyślne?',
+    pt_BR: 'Restaurar todas as configurações para o padrão?',
+    ru: 'Восстановить все настройки по умолчанию?',
+    tr: 'Tüm ayarlar varsayılana döndürülsün mü?',
+    uk: 'Відновити всі налаштування до типових?',
+    zh_CN: '要将所有设置恢复为默认值吗？', zh_TW: '要將所有設定恢復為預設值嗎？',
+    ar: 'هل تريد استعادة كل الإعدادات إلى الوضع الافتراضي؟',
+    hi: 'सभी सेटिंग्स को डिफ़ॉल्ट पर पुनर्स्थापित करें?',
+    id: 'Pulihkan semua pengaturan ke default?',
+    th: 'คืนค่าการตั้งค่าทั้งหมดเป็นค่าเริ่มต้นหรือไม่',
+    vi: 'Khôi phục mọi cài đặt về mặc định?',
+  },
+
+  optionsSaved: {
+    en: 'Saved',
+    de: 'Gespeichert', es: 'Guardado', fr: 'Enregistré', it: 'Salvato',
+    ja: '保存しました', ko: '저장됨', nl: 'Opgeslagen', pl: 'Zapisano',
+    pt_BR: 'Salvo', ru: 'Сохранено', tr: 'Kaydedildi', uk: 'Збережено',
+    zh_CN: '已保存', zh_TW: '已儲存', ar: 'تم الحفظ', hi: 'सहेजा गया',
+    id: 'Tersimpan', th: 'บันทึกแล้ว', vi: 'Đã lưu',
+  },
+
+  optionsEqSaved: {
+    en: 'Equalizer settings are saved for this site.',
+    de: 'Für diese Website sind Equalizer-Einstellungen gespeichert.',
+    es: 'Hay ajustes de ecualizador guardados para este sitio.',
+    fr: 'Des réglages d’égaliseur sont enregistrés pour ce site.',
+    it: 'Per questo sito sono salvate impostazioni dell’equalizzatore.',
+    ja: 'このサイトにはイコライザー設定が保存されています。',
+    ko: '이 사이트에 이퀄라이저 설정이 저장되어 있습니다.',
+    nl: 'Er zijn equalizerinstellingen opgeslagen voor deze site.',
+    pl: 'Dla tej strony zapisano ustawienia korektora.',
+    pt_BR: 'Há configurações de equalizador salvas para este site.',
+    ru: 'Для этого сайта сохранены настройки эквалайзера.',
+    tr: 'Bu site için ekolayzer ayarları kaydedilmiş.',
+    uk: 'Для цього сайту збережено налаштування еквалайзера.',
+    zh_CN: '此网站已保存均衡器设置。', zh_TW: '此網站已儲存等化器設定。',
+    ar: 'توجد إعدادات معادل محفوظة لهذا الموقع.',
+    hi: 'इस साइट के लिए इक्वलाइज़र सेटिंग सहेजी गई है।',
+    id: 'Pengaturan ekualiser tersimpan untuk situs ini.',
+    th: 'มีการตั้งค่าอีควอไลเซอร์ที่บันทึกไว้สำหรับเว็บไซต์นี้',
+    vi: 'Đã lưu cài đặt bộ chỉnh âm cho trang này.',
+  },
+
+  optionsEqNone: {
+    en: 'No equalizer settings saved for this site.',
+    de: 'Keine Equalizer-Einstellungen für diese Website gespeichert.',
+    es: 'No hay ajustes de ecualizador guardados para este sitio.',
+    fr: 'Aucun réglage d’égaliseur enregistré pour ce site.',
+    it: 'Nessuna impostazione dell’equalizzatore salvata per questo sito.',
+    ja: 'このサイトにイコライザー設定は保存されていません。',
+    ko: '이 사이트에 저장된 이퀄라이저 설정이 없습니다.',
+    nl: 'Geen equalizerinstellingen opgeslagen voor deze site.',
+    pl: 'Brak zapisanych ustawień korektora dla tej strony.',
+    pt_BR: 'Nenhuma configuração de equalizador salva para este site.',
+    ru: 'Для этого сайта нет сохранённых настроек эквалайзера.',
+    tr: 'Bu site için kaydedilmiş ekolayzer ayarı yok.',
+    uk: 'Для цього сайту немає збережених налаштувань еквалайзера.',
+    zh_CN: '此网站没有保存均衡器设置。', zh_TW: '此網站沒有儲存等化器設定。',
+    ar: 'لا توجد إعدادات معادل محفوظة لهذا الموقع.',
+    hi: 'इस साइट के लिए कोई इक्वलाइज़र सेटिंग सहेजी नहीं गई।',
+    id: 'Tidak ada pengaturan ekualiser tersimpan untuk situs ini.',
+    th: 'ไม่มีการตั้งค่าอีควอไลเซอร์ที่บันทึกไว้สำหรับเว็บไซต์นี้',
+    vi: 'Chưa lưu cài đặt bộ chỉnh âm cho trang này.',
+  },
+
+  optionsClearEq: {
+    en: 'Clear equalizer',
+    de: 'Equalizer zurücksetzen', es: 'Borrar ecualizador',
+    fr: 'Effacer l’égaliseur', it: 'Azzera equalizzatore', ja: 'イコライザーを消去',
+    ko: '이퀄라이저 지우기', nl: 'Equalizer wissen', pl: 'Wyczyść korektor',
+    pt_BR: 'Limpar equalizador', ru: 'Очистить эквалайзер', tr: 'Ekolayzeri temizle',
+    uk: 'Очистити еквалайзер', zh_CN: '清除均衡器', zh_TW: '清除等化器',
+    ar: 'مسح المعادل', hi: 'इक्वलाइज़र साफ़ करें', id: 'Bersihkan ekualiser',
+    th: 'ล้างอีควอไลเซอร์', vi: 'Xóa bộ chỉnh âm',
+  },
+
+  optionsSourceCode: {
+    en: 'Source code',
+    de: 'Quellcode', es: 'Código fuente', fr: 'Code source', it: 'Codice sorgente',
+    ja: 'ソースコード', ko: '소스 코드', nl: 'Broncode', pl: 'Kod źródłowy',
+    pt_BR: 'Código-fonte', ru: 'Исходный код', tr: 'Kaynak kodu',
+    uk: 'Вихідний код', zh_CN: '源代码', zh_TW: '原始碼', ar: 'الكود المصدري',
+    hi: 'स्रोत कोड', id: 'Kode sumber', th: 'ซอร์สโค้ด', vi: 'Mã nguồn',
   },
 
   popupResetTab: {
@@ -878,6 +1458,47 @@ const MESSAGES = {
   },
 };
 
+
+/**
+ * Each language's name written in that language, for the picker in the options
+ * page. A list that named languages in English would be useless to exactly the
+ * people who need it - someone looking for their own language recognises it in
+ * its own script, not as "Ukrainian".
+ */
+export const LOCALE_NAMES = {
+  am: 'አማርኛ', ar: 'العربية', bg: 'Български', bn: 'বাংলা', ca: 'Català',
+  cs: 'Čeština', da: 'Dansk', de: 'Deutsch', el: 'Ελληνικά', en: 'English',
+  en_AU: 'English (Australia)', en_GB: 'English (UK)', en_US: 'English (US)',
+  es: 'Español', es_419: 'Español (Latinoamérica)', et: 'Eesti', fa: 'فارسی',
+  fi: 'Suomi', fil: 'Filipino', fr: 'Français', gu: 'ગુજરાતી', he: 'עברית',
+  hi: 'हिन्दी', hr: 'Hrvatski', hu: 'Magyar', id: 'Indonesia', it: 'Italiano',
+  ja: '日本語', kn: 'ಕನ್ನಡ', ko: '한국어', lt: 'Lietuvių', lv: 'Latviešu',
+  ml: 'മലയാളം', mr: 'मराठी', ms: 'Melayu', nl: 'Nederlands', no: 'Norsk',
+  pl: 'Polski', pt_BR: 'Português (Brasil)', pt_PT: 'Português (Portugal)',
+  ro: 'Română', ru: 'Русский', sk: 'Slovenčina', sl: 'Slovenščina',
+  sr: 'Српски', sv: 'Svenska', sw: 'Kiswahili', ta: 'தமிழ்', te: 'తెలుగు',
+  th: 'ไทย', tr: 'Türkçe', uk: 'Українська', vi: 'Tiếng Việt',
+  zh_CN: '简体中文', zh_TW: '繁體中文',
+};
+
+/** Builds the flat key -> string map the runtime translator uses. */
+export function catalogueFor(locale) {
+  const output = {};
+  for (const [key, translations] of Object.entries(MESSAGES)) {
+    output[key] = translations[locale] ?? translations.en;
+  }
+  return output;
+}
+
+/** Every catalogue, keyed by locale code, for inlining into the bundle. */
+export function allCatalogues() {
+  const output = {};
+  for (const locale of LOCALES) output[locale] = catalogueFor(locale);
+  return output;
+}
+
+export { LOCALES };
+
 /** Builds the messages.json body for one locale. */
 function messagesFor(locale) {
   const output = {};
@@ -891,9 +1512,18 @@ function messagesFor(locale) {
   return output;
 }
 
-/** Reports how much of the UI each locale actually covers. */
+/**
+ * Reports how much of the UI each locale actually covers.
+ *
+ * The English variants are excluded: en_AU, en_GB and en_US inherit the base
+ * English text by design, so counting that as "untranslated" would report a
+ * gap that does not exist and bury the locales that genuinely need help.
+ */
+const ENGLISH_VARIANTS = new Set(['en', 'en_AU', 'en_GB', 'en_US']);
+
 function coverage(locale) {
   const keys = Object.keys(MESSAGES);
+  if (ENGLISH_VARIANTS.has(locale)) return { translated: keys.length, total: keys.length };
   const translated = keys.filter((key) => MESSAGES[key][locale] !== undefined);
   return { translated: translated.length, total: keys.length };
 }

@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Balans"
   },
+  "popupBalanceLeft": {
+    "message": "Lewo"
+  },
+  "popupBalanceRight": {
+    "message": "Prawo"
+  },
   "popupBalanceCenter": {
     "message": "Środek"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Pominięty"
+  },
+  "optionsLead": {
+    "message": "Te ustawienia dotyczą każdej nowej karty. Głośność karty ustawiasz z paska narzędzi."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Domyślne dla nowych kart"
+  },
+  "optionsStartingVolume": {
+    "message": "Głośność początkowa"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Dotyczy kart bez własnych zapisanych ustawień."
+  },
+  "optionsMaxVolume": {
+    "message": "Maksymalna głośność"
+  },
+  "optionsResetMax": {
+    "message": "Przywróć 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Podniesienie limitu może uszkodzić głośniki i słuch. Zostaw limiter włączony."
+  },
+  "optionsOnTabClose": {
+    "message": "Po zamknięciu karty"
+  },
+  "optionsForgetSetting": {
+    "message": "Zapomnij ustawienie"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Zalecane. Każda karta zaczyna od domyślnej głośności."
+  },
+  "optionsRememberSetting": {
+    "message": "Zapamiętaj dla tej strony"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Po powrocie na stronę przywracana jest ostatnia głośność."
+  },
+  "optionsSafetyTitle": {
+    "message": "Bezpieczeństwo"
+  },
+  "optionsAutoLimiter": {
+    "message": "Trzymaj limiter włączony powyżej 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Zapobiega zniekształceniom i nagłym głośnym szczytom."
+  },
+  "optionsTabCapture": {
+    "message": "Zezwól na przechwytywanie karty jako zapas"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Tylko Chromium. Pozwala wzmacniać strony, których dźwięku nie da się odczytać wprost, kosztem wskaźnika nagrywania na karcie."
+  },
+  "optionsLanguageTitle": {
+    "message": "Język"
+  },
+  "optionsLanguageLabel": {
+    "message": "Język interfejsu"
+  },
+  "optionsLanguageAuto": {
+    "message": "Automatycznie"
+  },
+  "optionsLanguageHint": {
+    "message": "Nazwa na liście dodatków przeglądarki zawsze podąża za językiem przeglądarki, nie tym ustawieniem."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Zapisane strony"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Zmiany działają natychmiast na kartach już otwartych na tej stronie."
+  },
+  "optionsNoSavedSites": {
+    "message": "Brak zapisanych stron."
+  },
+  "optionsOneSiteSaved": {
+    "message": "Zapisano 1 stronę."
+  },
+  "optionsManySitesSaved": {
+    "message": "Zapisano %d stron."
+  },
+  "optionsForget": {
+    "message": "Zapomnij"
+  },
+  "optionsClearAll": {
+    "message": "Wyczyść wszystkie zapisane strony"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Zapomnieć zapisaną głośność dla wszystkich stron?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Przywróć domyślne"
+  },
+  "optionsConfirmRestore": {
+    "message": "Przywrócić wszystkie ustawienia domyślne?"
+  },
+  "optionsSaved": {
+    "message": "Zapisano"
+  },
+  "optionsEqSaved": {
+    "message": "Dla tej strony zapisano ustawienia korektora."
+  },
+  "optionsEqNone": {
+    "message": "Brak zapisanych ustawień korektora dla tej strony."
+  },
+  "optionsClearEq": {
+    "message": "Wyczyść korektor"
+  },
+  "optionsSourceCode": {
+    "message": "Kod źródłowy"
   },
   "popupResetTab": {
     "message": "Resetuj kartę"

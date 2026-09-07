@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Bilanciamento"
   },
+  "popupBalanceLeft": {
+    "message": "Sinistra"
+  },
+  "popupBalanceRight": {
+    "message": "Destra"
+  },
   "popupBalanceCenter": {
     "message": "Centro"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Bypassato"
+  },
+  "optionsLead": {
+    "message": "Queste impostazioni valgono per ogni nuova scheda. Il volume per scheda si regola dalla barra degli strumenti."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Predefiniti per nuove schede"
+  },
+  "optionsStartingVolume": {
+    "message": "Volume iniziale"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Vale per le schede senza impostazioni salvate."
+  },
+  "optionsMaxVolume": {
+    "message": "Volume massimo"
+  },
+  "optionsResetMax": {
+    "message": "Reimposta a 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Alzare questo limite può danneggiare altoparlanti e udito. Tieni attivo il limitatore."
+  },
+  "optionsOnTabClose": {
+    "message": "Alla chiusura di una scheda"
+  },
+  "optionsForgetSetting": {
+    "message": "Dimentica l’impostazione"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Consigliato. Ogni scheda parte dal volume predefinito."
+  },
+  "optionsRememberSetting": {
+    "message": "Ricordalo per quel sito"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Tornando sul sito viene ripristinato l’ultimo volume usato."
+  },
+  "optionsSafetyTitle": {
+    "message": "Sicurezza"
+  },
+  "optionsAutoLimiter": {
+    "message": "Tieni il limitatore attivo oltre il 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Evita distorsioni e picchi improvvisi."
+  },
+  "optionsTabCapture": {
+    "message": "Consenti la cattura scheda come ripiego"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Solo Chromium. Permette di amplificare pagine il cui audio non è leggibile direttamente, al costo di un indicatore di registrazione."
+  },
+  "optionsLanguageTitle": {
+    "message": "Lingua"
+  },
+  "optionsLanguageLabel": {
+    "message": "Lingua dell’interfaccia"
+  },
+  "optionsLanguageAuto": {
+    "message": "Automatico"
+  },
+  "optionsLanguageHint": {
+    "message": "Il nome nell’elenco estensioni del browser segue sempre la lingua del browser, non questa impostazione."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Siti salvati"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Le modifiche si applicano subito alle schede già aperte su quel sito."
+  },
+  "optionsNoSavedSites": {
+    "message": "Nessun sito salvato."
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 sito salvato."
+  },
+  "optionsManySitesSaved": {
+    "message": "%d siti salvati."
+  },
+  "optionsForget": {
+    "message": "Dimentica"
+  },
+  "optionsClearAll": {
+    "message": "Cancella tutti i siti salvati"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Dimenticare il volume salvato per tutti i siti?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Ripristina predefiniti"
+  },
+  "optionsConfirmRestore": {
+    "message": "Ripristinare tutte le impostazioni predefinite?"
+  },
+  "optionsSaved": {
+    "message": "Salvato"
+  },
+  "optionsEqSaved": {
+    "message": "Per questo sito sono salvate impostazioni dell’equalizzatore."
+  },
+  "optionsEqNone": {
+    "message": "Nessuna impostazione dell’equalizzatore salvata per questo sito."
+  },
+  "optionsClearEq": {
+    "message": "Azzera equalizzatore"
+  },
+  "optionsSourceCode": {
+    "message": "Codice sorgente"
   },
   "popupResetTab": {
     "message": "Reimposta scheda"

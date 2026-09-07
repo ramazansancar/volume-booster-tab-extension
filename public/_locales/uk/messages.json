@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Баланс"
   },
+  "popupBalanceLeft": {
+    "message": "Ліворуч"
+  },
+  "popupBalanceRight": {
+    "message": "Праворуч"
+  },
   "popupBalanceCenter": {
     "message": "Центр"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Обхід"
+  },
+  "optionsLead": {
+    "message": "Ці налаштування застосовуються до кожної нової вкладки. Гучність вкладки регулюється на панелі інструментів."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Типові для нових вкладок"
+  },
+  "optionsStartingVolume": {
+    "message": "Початкова гучність"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Застосовується до вкладок без власних збережених налаштувань."
+  },
+  "optionsMaxVolume": {
+    "message": "Максимальна гучність"
+  },
+  "optionsResetMax": {
+    "message": "Скинути до 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Підвищення межі може пошкодити динаміки та слух. Залиште лімітер увімкненим."
+  },
+  "optionsOnTabClose": {
+    "message": "Коли вкладка закривається"
+  },
+  "optionsForgetSetting": {
+    "message": "Забути налаштування"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Рекомендовано. Кожна вкладка починає з типової гучності."
+  },
+  "optionsRememberSetting": {
+    "message": "Запам’ятати для цього сайту"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Під час повторного відвідування відновлюється остання гучність."
+  },
+  "optionsSafetyTitle": {
+    "message": "Безпека"
+  },
+  "optionsAutoLimiter": {
+    "message": "Тримати лімітер увімкненим понад 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Запобігає спотворенням і раптовим гучним пікам."
+  },
+  "optionsTabCapture": {
+    "message": "Дозволити захоплення вкладки як запасний варіант"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Лише Chromium. Дозволяє підсилювати сторінки, звук яких не читається напряму, ціною індикатора запису на вкладці."
+  },
+  "optionsLanguageTitle": {
+    "message": "Мова"
+  },
+  "optionsLanguageLabel": {
+    "message": "Мова інтерфейсу"
+  },
+  "optionsLanguageAuto": {
+    "message": "Автоматично"
+  },
+  "optionsLanguageHint": {
+    "message": "Назва у списку додатків браузера завжди відповідає мові браузера, а не цьому налаштуванню."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Збережені сайти"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Зміни одразу застосовуються до вже відкритих вкладок цього сайту."
+  },
+  "optionsNoSavedSites": {
+    "message": "Збережених сайтів ще немає."
+  },
+  "optionsOneSiteSaved": {
+    "message": "Збережено 1 сайт."
+  },
+  "optionsManySitesSaved": {
+    "message": "Збережено сайтів: %d."
+  },
+  "optionsForget": {
+    "message": "Забути"
+  },
+  "optionsClearAll": {
+    "message": "Очистити всі збережені сайти"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Забути збережену гучність для всіх сайтів?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Відновити типові"
+  },
+  "optionsConfirmRestore": {
+    "message": "Відновити всі налаштування до типових?"
+  },
+  "optionsSaved": {
+    "message": "Збережено"
+  },
+  "optionsEqSaved": {
+    "message": "Для цього сайту збережено налаштування еквалайзера."
+  },
+  "optionsEqNone": {
+    "message": "Для цього сайту немає збережених налаштувань еквалайзера."
+  },
+  "optionsClearEq": {
+    "message": "Очистити еквалайзер"
+  },
+  "optionsSourceCode": {
+    "message": "Вихідний код"
   },
   "popupResetTab": {
     "message": "Скинути вкладку"

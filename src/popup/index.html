@@ -52,13 +52,9 @@
           <option value="400"></option>
           <option value="600"></option>
         </datalist>
-        <div class="presets" role="group" aria-label="Volume presets">
-          <button type="button" data-preset="100">100%</button>
-          <button type="button" data-preset="150">150%</button>
-          <button type="button" data-preset="200">200%</button>
-          <button type="button" data-preset="300">300%</button>
-          <button type="button" data-preset="500">500%</button>
-        </div>
+        <!-- Filled in from the configured ceiling, so raising the maximum in
+             settings offers the higher steps here too. -->
+        <div class="presets" id="presets" role="group" aria-label="Volume presets"></div>
         <p class="hint" id="gain-hint" data-i18n="popupGainHint">
           Above 100% the limiter stays on to prevent distortion.
         </p>
@@ -69,7 +65,11 @@
           <label class="control__label" for="balance" data-i18n="popupBalance">Balance</label>
           <output class="control__value" id="balance-value" for="balance">Center</output>
         </div>
-        <input type="range" id="balance" min="-100" max="100" step="5" value="0" />
+        <div class="balance">
+          <span class="balance__end" data-i18n="popupBalanceLeft">Left</span>
+          <input type="range" id="balance" min="-100" max="100" step="5" value="0" />
+          <span class="balance__end" data-i18n="popupBalanceRight">Right</span>
+        </div>
       </section>
 
       <section class="switches">
@@ -102,11 +102,6 @@
           </div>
           <div class="equalizer" id="equalizer"></div>
 
-          <div class="advanced__footer">
-            <button type="button" class="link-button" id="options-link" data-i18n="popupOpenOptions">
-              Open all settings
-            </button>
-          </div>
         </div>
       </details>
 
@@ -119,6 +114,18 @@
           Reset tab
         </button>
       </footer>
+
+      <!-- Outside the collapsed Advanced section: the settings page holds the
+           language picker and the saved-site list, which people look for
+           without first thinking of them as "advanced". -->
+      <button
+        type="button"
+        class="link-button link-button--block"
+        id="options-link"
+        data-i18n="popupOpenOptions"
+      >
+        Open all settings
+      </button>
     </main>
 
     <script type="module" src="./popup.js"></script>

@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Balans"
   },
+  "popupBalanceLeft": {
+    "message": "Links"
+  },
+  "popupBalanceRight": {
+    "message": "Rechts"
+  },
   "popupBalanceCenter": {
     "message": "Midden"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Overgeslagen"
+  },
+  "optionsLead": {
+    "message": "Deze instellingen gelden voor elk nieuw tabblad. Het volume per tabblad regel je via de werkbalk."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Standaard voor nieuwe tabbladen"
+  },
+  "optionsStartingVolume": {
+    "message": "Beginvolume"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Geldt voor tabbladen zonder eigen opgeslagen instellingen."
+  },
+  "optionsMaxVolume": {
+    "message": "Maximumvolume"
+  },
+  "optionsResetMax": {
+    "message": "Terug naar 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Een hoger maximum kan luidsprekers en gehoor beschadigen. Laat de limiter aan."
+  },
+  "optionsOnTabClose": {
+    "message": "Bij het sluiten van een tabblad"
+  },
+  "optionsForgetSetting": {
+    "message": "Instelling vergeten"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Aanbevolen. Elk tabblad begint op het standaardvolume."
+  },
+  "optionsRememberSetting": {
+    "message": "Onthouden voor die site"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Bij een nieuw bezoek wordt het laatst gebruikte volume hersteld."
+  },
+  "optionsSafetyTitle": {
+    "message": "Veiligheid"
+  },
+  "optionsAutoLimiter": {
+    "message": "Limiter aan houden boven 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Voorkomt vervorming en plotselinge harde pieken."
+  },
+  "optionsTabCapture": {
+    "message": "Tabblad-opname als terugvaloptie toestaan"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Alleen Chromium. Versterkt ook pagina’s waarvan de audio niet direct leesbaar is, met een opname-indicator op het tabblad."
+  },
+  "optionsLanguageTitle": {
+    "message": "Taal"
+  },
+  "optionsLanguageLabel": {
+    "message": "Taal van de interface"
+  },
+  "optionsLanguageAuto": {
+    "message": "Automatisch"
+  },
+  "optionsLanguageHint": {
+    "message": "De naam in de add-onlijst van de browser volgt altijd de browsertaal, niet deze instelling."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Opgeslagen sites"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Wijzigingen gelden direct voor tabbladen die al op die site open staan."
+  },
+  "optionsNoSavedSites": {
+    "message": "Nog geen sites opgeslagen."
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 site opgeslagen."
+  },
+  "optionsManySitesSaved": {
+    "message": "%d sites opgeslagen."
+  },
+  "optionsForget": {
+    "message": "Vergeten"
+  },
+  "optionsClearAll": {
+    "message": "Alle opgeslagen sites wissen"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Opgeslagen volume voor alle sites vergeten?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Standaard herstellen"
+  },
+  "optionsConfirmRestore": {
+    "message": "Alle instellingen terugzetten naar standaard?"
+  },
+  "optionsSaved": {
+    "message": "Opgeslagen"
+  },
+  "optionsEqSaved": {
+    "message": "Er zijn equalizerinstellingen opgeslagen voor deze site."
+  },
+  "optionsEqNone": {
+    "message": "Geen equalizerinstellingen opgeslagen voor deze site."
+  },
+  "optionsClearEq": {
+    "message": "Equalizer wissen"
+  },
+  "optionsSourceCode": {
+    "message": "Broncode"
   },
   "popupResetTab": {
     "message": "Tabblad herstellen"

@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "संतुलन"
   },
+  "popupBalanceLeft": {
+    "message": "बायाँ"
+  },
+  "popupBalanceRight": {
+    "message": "दायाँ"
+  },
   "popupBalanceCenter": {
     "message": "केंद्र"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "बायपास"
+  },
+  "optionsLead": {
+    "message": "ये सेटिंग्स हर नए टैब पर लागू होती हैं। प्रति-टैब वॉल्यूम टूलबार से नियंत्रित होता है।"
+  },
+  "optionsDefaultsTitle": {
+    "message": "नए टैब के लिए डिफ़ॉल्ट"
+  },
+  "optionsStartingVolume": {
+    "message": "प्रारंभिक वॉल्यूम"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "उन टैब पर लागू जिनकी अपनी सहेजी गई सेटिंग नहीं है।"
+  },
+  "optionsMaxVolume": {
+    "message": "अधिकतम वॉल्यूम"
+  },
+  "optionsResetMax": {
+    "message": "600% पर रीसेट करें"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "यह सीमा बढ़ाने से स्पीकर और सुनने की क्षमता को नुकसान हो सकता है। लिमिटर चालू रखें।"
+  },
+  "optionsOnTabClose": {
+    "message": "जब टैब बंद हो"
+  },
+  "optionsForgetSetting": {
+    "message": "सेटिंग भूल जाएं"
+  },
+  "optionsForgetSettingHint": {
+    "message": "अनुशंसित। हर टैब डिफ़ॉल्ट वॉल्यूम से शुरू होता है।"
+  },
+  "optionsRememberSetting": {
+    "message": "उस साइट के लिए याद रखें"
+  },
+  "optionsRememberSettingHint": {
+    "message": "साइट पर दोबारा जाने पर पिछली बार का वॉल्यूम बहाल होता है।"
+  },
+  "optionsSafetyTitle": {
+    "message": "सुरक्षा"
+  },
+  "optionsAutoLimiter": {
+    "message": "100% से ऊपर लिमिटर चालू रखें"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "बूस्ट करते समय विरूपण और अचानक तेज़ आवाज़ रोकता है।"
+  },
+  "optionsTabCapture": {
+    "message": "टैब कैप्चर फ़ॉलबैक की अनुमति दें"
+  },
+  "optionsTabCaptureHint": {
+    "message": "केवल Chromium। उन पेजों को भी बूस्ट करता है जिनका ऑडियो सीधे नहीं पढ़ा जा सकता, बदले में टैब पर रिकॉर्डिंग संकेतक दिखता है।"
+  },
+  "optionsLanguageTitle": {
+    "message": "भाषा"
+  },
+  "optionsLanguageLabel": {
+    "message": "इंटरफ़ेस भाषा"
+  },
+  "optionsLanguageAuto": {
+    "message": "स्वचालित"
+  },
+  "optionsLanguageHint": {
+    "message": "ब्राउज़र की ऐड-ऑन सूची में दिखने वाला नाम हमेशा ब्राउज़र की भाषा का अनुसरण करता है।"
+  },
+  "optionsSavedSitesTitle": {
+    "message": "सहेजी गई साइटें"
+  },
+  "optionsSavedSitesHint": {
+    "message": "यहाँ संपादन उस साइट पर पहले से खुले टैब पर तुरंत लागू होता है।"
+  },
+  "optionsNoSavedSites": {
+    "message": "अभी कोई साइट सहेजी नहीं गई।"
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 साइट सहेजी गई।"
+  },
+  "optionsManySitesSaved": {
+    "message": "%d साइटें सहेजी गईं।"
+  },
+  "optionsForget": {
+    "message": "भूल जाएं"
+  },
+  "optionsClearAll": {
+    "message": "सभी सहेजी गई साइटें हटाएं"
+  },
+  "optionsConfirmClearAll": {
+    "message": "सभी साइटों का सहेजा गया वॉल्यूम भूल जाएं?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "डिफ़ॉल्ट पुनर्स्थापित करें"
+  },
+  "optionsConfirmRestore": {
+    "message": "सभी सेटिंग्स को डिफ़ॉल्ट पर पुनर्स्थापित करें?"
+  },
+  "optionsSaved": {
+    "message": "सहेजा गया"
+  },
+  "optionsEqSaved": {
+    "message": "इस साइट के लिए इक्वलाइज़र सेटिंग सहेजी गई है।"
+  },
+  "optionsEqNone": {
+    "message": "इस साइट के लिए कोई इक्वलाइज़र सेटिंग सहेजी नहीं गई।"
+  },
+  "optionsClearEq": {
+    "message": "इक्वलाइज़र साफ़ करें"
+  },
+  "optionsSourceCode": {
+    "message": "स्रोत कोड"
   },
   "popupResetTab": {
     "message": "टैब रीसेट करें"

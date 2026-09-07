@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "밸런스"
   },
+  "popupBalanceLeft": {
+    "message": "왼쪽"
+  },
+  "popupBalanceRight": {
+    "message": "오른쪽"
+  },
   "popupBalanceCenter": {
     "message": "가운데"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "우회 중"
+  },
+  "optionsLead": {
+    "message": "이 설정은 모든 새 탭에 적용됩니다. 탭별 볼륨은 도구 모음에서 조절합니다."
+  },
+  "optionsDefaultsTitle": {
+    "message": "새 탭 기본값"
+  },
+  "optionsStartingVolume": {
+    "message": "시작 볼륨"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "저장된 설정이 없는 탭에 적용됩니다."
+  },
+  "optionsMaxVolume": {
+    "message": "최대 볼륨"
+  },
+  "optionsResetMax": {
+    "message": "600%로 초기화"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "이 상한을 높이면 스피커와 청력이 손상될 수 있습니다. 리미터를 켜 두세요."
+  },
+  "optionsOnTabClose": {
+    "message": "탭을 닫을 때"
+  },
+  "optionsForgetSetting": {
+    "message": "설정 잊기"
+  },
+  "optionsForgetSettingHint": {
+    "message": "권장. 모든 탭이 기본 볼륨으로 시작합니다."
+  },
+  "optionsRememberSetting": {
+    "message": "해당 사이트에 대해 기억"
+  },
+  "optionsRememberSettingHint": {
+    "message": "사이트를 다시 방문하면 마지막 볼륨이 복원됩니다."
+  },
+  "optionsSafetyTitle": {
+    "message": "안전"
+  },
+  "optionsAutoLimiter": {
+    "message": "100% 초과 시 리미터 유지"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "증폭 시 왜곡과 갑작스러운 큰 소리를 방지합니다."
+  },
+  "optionsTabCapture": {
+    "message": "탭 캡처 대체 경로 허용"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Chromium 전용. 오디오를 직접 읽을 수 없는 페이지도 증폭하지만 탭에 녹음 표시가 나타납니다."
+  },
+  "optionsLanguageTitle": {
+    "message": "언어"
+  },
+  "optionsLanguageLabel": {
+    "message": "인터페이스 언어"
+  },
+  "optionsLanguageAuto": {
+    "message": "자동"
+  },
+  "optionsLanguageHint": {
+    "message": "브라우저의 확장 목록에 표시되는 이름은 이 설정이 아니라 항상 브라우저 언어를 따릅니다."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "저장된 사이트"
+  },
+  "optionsSavedSitesHint": {
+    "message": "여기서 수정하면 해당 사이트가 열려 있는 탭에 즉시 적용됩니다."
+  },
+  "optionsNoSavedSites": {
+    "message": "저장된 사이트가 없습니다."
+  },
+  "optionsOneSiteSaved": {
+    "message": "사이트 1개 저장됨."
+  },
+  "optionsManySitesSaved": {
+    "message": "사이트 %d개 저장됨."
+  },
+  "optionsForget": {
+    "message": "잊기"
+  },
+  "optionsClearAll": {
+    "message": "저장된 사이트 모두 지우기"
+  },
+  "optionsConfirmClearAll": {
+    "message": "모든 사이트의 저장된 볼륨을 잊을까요?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "기본값 복원"
+  },
+  "optionsConfirmRestore": {
+    "message": "모든 설정을 기본값으로 되돌릴까요?"
+  },
+  "optionsSaved": {
+    "message": "저장됨"
+  },
+  "optionsEqSaved": {
+    "message": "이 사이트에 이퀄라이저 설정이 저장되어 있습니다."
+  },
+  "optionsEqNone": {
+    "message": "이 사이트에 저장된 이퀄라이저 설정이 없습니다."
+  },
+  "optionsClearEq": {
+    "message": "이퀄라이저 지우기"
+  },
+  "optionsSourceCode": {
+    "message": "소스 코드"
   },
   "popupResetTab": {
     "message": "탭 초기화"

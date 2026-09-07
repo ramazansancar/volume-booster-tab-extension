@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Balance"
   },
+  "popupBalanceLeft": {
+    "message": "Gauche"
+  },
+  "popupBalanceRight": {
+    "message": "Droite"
+  },
   "popupBalanceCenter": {
     "message": "Centre"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Contourné"
+  },
+  "optionsLead": {
+    "message": "Ces paramètres s’appliquent à chaque nouvel onglet. Le volume par onglet se règle depuis la barre d’outils."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Valeurs par défaut des nouveaux onglets"
+  },
+  "optionsStartingVolume": {
+    "message": "Volume de départ"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "S’applique aux onglets sans réglages enregistrés."
+  },
+  "optionsMaxVolume": {
+    "message": "Volume maximum"
+  },
+  "optionsResetMax": {
+    "message": "Réinitialiser à 600 %"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Augmenter ce plafond peut endommager les haut-parleurs et l’ouïe. Gardez le limiteur actif."
+  },
+  "optionsOnTabClose": {
+    "message": "À la fermeture d’un onglet"
+  },
+  "optionsForgetSetting": {
+    "message": "Oublier le réglage"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Recommandé. Chaque onglet démarre au volume par défaut."
+  },
+  "optionsRememberSetting": {
+    "message": "Le mémoriser pour ce site"
+  },
+  "optionsRememberSettingHint": {
+    "message": "En revenant sur le site, le dernier volume utilisé est restauré."
+  },
+  "optionsSafetyTitle": {
+    "message": "Sécurité"
+  },
+  "optionsAutoLimiter": {
+    "message": "Garder le limiteur actif au-delà de 100 %"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Évite la distorsion et les pics sonores soudains."
+  },
+  "optionsTabCapture": {
+    "message": "Autoriser la capture d’onglet en secours"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Chromium uniquement. Permet d’amplifier les pages dont le son n’est pas lisible directement, au prix d’un indicateur d’enregistrement."
+  },
+  "optionsLanguageTitle": {
+    "message": "Langue"
+  },
+  "optionsLanguageLabel": {
+    "message": "Langue de l’interface"
+  },
+  "optionsLanguageAuto": {
+    "message": "Automatique"
+  },
+  "optionsLanguageHint": {
+    "message": "Le nom affiché dans la liste des modules du navigateur suit toujours la langue du navigateur."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Sites enregistrés"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Modifier un site ici s’applique immédiatement aux onglets déjà ouverts dessus."
+  },
+  "optionsNoSavedSites": {
+    "message": "Aucun site enregistré pour l’instant."
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 site enregistré."
+  },
+  "optionsManySitesSaved": {
+    "message": "%d sites enregistrés."
+  },
+  "optionsForget": {
+    "message": "Oublier"
+  },
+  "optionsClearAll": {
+    "message": "Effacer tous les sites enregistrés"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Oublier le volume enregistré pour tous les sites ?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Rétablir les valeurs par défaut"
+  },
+  "optionsConfirmRestore": {
+    "message": "Rétablir tous les réglages par défaut ?"
+  },
+  "optionsSaved": {
+    "message": "Enregistré"
+  },
+  "optionsEqSaved": {
+    "message": "Des réglages d’égaliseur sont enregistrés pour ce site."
+  },
+  "optionsEqNone": {
+    "message": "Aucun réglage d’égaliseur enregistré pour ce site."
+  },
+  "optionsClearEq": {
+    "message": "Effacer l’égaliseur"
+  },
+  "optionsSourceCode": {
+    "message": "Code source"
   },
   "popupResetTab": {
     "message": "Réinitialiser l’onglet"

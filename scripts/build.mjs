@@ -26,6 +26,7 @@ import { promisify } from 'node:util';
 import * as esbuild from 'esbuild';
 
 import { DEFAULT_TARGETS, TARGETS, TARGET_NOTES, buildManifest, parseTarget } from './manifest.mjs';
+import { LOCALES, LOCALE_NAMES, catalogueFor } from './locales.mjs';
 
 const require = createRequire(import.meta.url);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -133,6 +134,12 @@ function bundleOptions(target, outDir, dev) {
       __BROWSER__: JSON.stringify(browser),
       __MANIFEST_VERSION__: JSON.stringify(version),
       __DEV__: JSON.stringify(dev),
+      __LOCALE_CODES__: JSON.stringify(LOCALES),
+      __LOCALE_NAMES__: JSON.stringify(LOCALE_NAMES),
+      // Only English is inlined; the rest are fetched from the packaged
+      // _locales files when a language is actually selected. Inlining all 55
+      // made every bundle 250 KB, most of it languages the user never sees.
+      __LOCALE_MESSAGES_EN__: JSON.stringify(catalogueFor('en')),
     },
     alias: { '@': srcDir },
   };

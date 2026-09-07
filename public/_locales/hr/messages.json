@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Balans"
   },
+  "popupBalanceLeft": {
+    "message": "Lijevo"
+  },
+  "popupBalanceRight": {
+    "message": "Desno"
+  },
   "popupBalanceCenter": {
     "message": "Sredina"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Zaobiđeno"
+  },
+  "optionsLead": {
+    "message": "These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Defaults for new tabs"
+  },
+  "optionsStartingVolume": {
+    "message": "Starting volume"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Applied to tabs that have no saved settings of their own."
+  },
+  "optionsMaxVolume": {
+    "message": "Maximum volume"
+  },
+  "optionsResetMax": {
+    "message": "Reset to 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Raising this ceiling can damage speakers and hearing. Keep the limiter on."
+  },
+  "optionsOnTabClose": {
+    "message": "When a tab closes"
+  },
+  "optionsForgetSetting": {
+    "message": "Forget the setting"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Recommended. Every tab starts from the default volume."
+  },
+  "optionsRememberSetting": {
+    "message": "Remember it for that site"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Revisiting the site restores the volume you last used there."
+  },
+  "optionsSafetyTitle": {
+    "message": "Safety"
+  },
+  "optionsAutoLimiter": {
+    "message": "Keep the limiter on above 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Prevents clipping and sudden loud peaks when boosting."
+  },
+  "optionsTabCapture": {
+    "message": "Allow tab capture fallback"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Chromium only. Lets the extension boost pages whose audio cannot be read directly, at the cost of a recording indicator on the tab."
+  },
+  "optionsLanguageTitle": {
+    "message": "Language"
+  },
+  "optionsLanguageLabel": {
+    "message": "Interface language"
+  },
+  "optionsLanguageAuto": {
+    "message": "Automatic"
+  },
+  "optionsLanguageHint": {
+    "message": "The name shown in your browser's own add-on list always follows the browser's language, not this setting."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Saved sites"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Editing a site here applies immediately to any tab already open on it."
+  },
+  "optionsNoSavedSites": {
+    "message": "No sites saved yet."
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 site saved."
+  },
+  "optionsManySitesSaved": {
+    "message": "%d sites saved."
+  },
+  "optionsForget": {
+    "message": "Forget"
+  },
+  "optionsClearAll": {
+    "message": "Clear all saved sites"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Forget the saved volume for every site?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Restore defaults"
+  },
+  "optionsConfirmRestore": {
+    "message": "Restore all settings to their defaults?"
+  },
+  "optionsSaved": {
+    "message": "Saved"
+  },
+  "optionsEqSaved": {
+    "message": "Equalizer settings are saved for this site."
+  },
+  "optionsEqNone": {
+    "message": "No equalizer settings saved for this site."
+  },
+  "optionsClearEq": {
+    "message": "Clear equalizer"
+  },
+  "optionsSourceCode": {
+    "message": "Source code"
   },
   "popupResetTab": {
     "message": "Poništi karticu"

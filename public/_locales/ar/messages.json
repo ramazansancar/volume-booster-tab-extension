@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "التوازن"
   },
+  "popupBalanceLeft": {
+    "message": "يسار"
+  },
+  "popupBalanceRight": {
+    "message": "يمين"
+  },
   "popupBalanceCenter": {
     "message": "الوسط"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "معطل"
+  },
+  "optionsLead": {
+    "message": "تنطبق هذه الإعدادات على كل تبويب جديد. يتم التحكم في مستوى صوت كل تبويب من شريط الأدوات."
+  },
+  "optionsDefaultsTitle": {
+    "message": "الإعدادات الافتراضية للتبويبات الجديدة"
+  },
+  "optionsStartingVolume": {
+    "message": "مستوى الصوت الابتدائي"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "يُطبق على التبويبات التي ليس لها إعدادات محفوظة."
+  },
+  "optionsMaxVolume": {
+    "message": "أقصى مستوى للصوت"
+  },
+  "optionsResetMax": {
+    "message": "إعادة التعيين إلى 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "رفع هذا الحد قد يضر بمكبرات الصوت والسمع. أبقِ المحدد مفعلاً."
+  },
+  "optionsOnTabClose": {
+    "message": "عند إغلاق التبويب"
+  },
+  "optionsForgetSetting": {
+    "message": "نسيان الإعداد"
+  },
+  "optionsForgetSettingHint": {
+    "message": "موصى به. يبدأ كل تبويب بمستوى الصوت الافتراضي."
+  },
+  "optionsRememberSetting": {
+    "message": "تذكره لهذا الموقع"
+  },
+  "optionsRememberSettingHint": {
+    "message": "عند زيارة الموقع مجددًا يُستعاد آخر مستوى صوت استخدمته."
+  },
+  "optionsSafetyTitle": {
+    "message": "الأمان"
+  },
+  "optionsAutoLimiter": {
+    "message": "إبقاء المحدد مفعلاً فوق 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "يمنع التشويه والقمم الصوتية المفاجئة عند التضخيم."
+  },
+  "optionsTabCapture": {
+    "message": "السماح بالتقاط التبويب كبديل"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Chromium فقط. يتيح تضخيم الصفحات التي لا يمكن قراءة صوتها مباشرة، مقابل ظهور مؤشر تسجيل على التبويب."
+  },
+  "optionsLanguageTitle": {
+    "message": "اللغة"
+  },
+  "optionsLanguageLabel": {
+    "message": "لغة الواجهة"
+  },
+  "optionsLanguageAuto": {
+    "message": "تلقائي"
+  },
+  "optionsLanguageHint": {
+    "message": "الاسم الظاهر في قائمة إضافات المتصفح يتبع دائمًا لغة المتصفح وليس هذا الإعداد."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "المواقع المحفوظة"
+  },
+  "optionsSavedSitesHint": {
+    "message": "التعديل هنا يُطبق فورًا على أي تبويب مفتوح على هذا الموقع."
+  },
+  "optionsNoSavedSites": {
+    "message": "لا توجد مواقع محفوظة بعد."
+  },
+  "optionsOneSiteSaved": {
+    "message": "تم حفظ موقع واحد."
+  },
+  "optionsManySitesSaved": {
+    "message": "تم حفظ %d مواقع."
+  },
+  "optionsForget": {
+    "message": "نسيان"
+  },
+  "optionsClearAll": {
+    "message": "مسح كل المواقع المحفوظة"
+  },
+  "optionsConfirmClearAll": {
+    "message": "هل تريد نسيان مستوى الصوت المحفوظ لكل المواقع؟"
+  },
+  "optionsRestoreDefaults": {
+    "message": "استعادة الإعدادات الافتراضية"
+  },
+  "optionsConfirmRestore": {
+    "message": "هل تريد استعادة كل الإعدادات إلى الوضع الافتراضي؟"
+  },
+  "optionsSaved": {
+    "message": "تم الحفظ"
+  },
+  "optionsEqSaved": {
+    "message": "توجد إعدادات معادل محفوظة لهذا الموقع."
+  },
+  "optionsEqNone": {
+    "message": "لا توجد إعدادات معادل محفوظة لهذا الموقع."
+  },
+  "optionsClearEq": {
+    "message": "مسح المعادل"
+  },
+  "optionsSourceCode": {
+    "message": "الكود المصدري"
   },
   "popupResetTab": {
     "message": "إعادة تعيين التبويب"

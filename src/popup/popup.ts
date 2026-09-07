@@ -1,4 +1,5 @@
 import { ext, queryTabs, sendMessageToTab, sendRuntimeMessage } from '@/lib/browser';
+import { applyTranslations, initLocale, t } from '@/lib/i18n';
 import { EQ_BAND_FREQUENCIES } from '@/types';
 import { MAX_EQ_DB } from '@/lib/validate';
 import type {
@@ -36,7 +37,7 @@ const dom = {
   optionsLink: document.getElementById('options-link') as HTMLButtonElement,
   status: document.getElementById('status') as HTMLElement,
   statusDetail: document.getElementById('status-detail') as HTMLElement,
-  presets: [...document.querySelectorAll<HTMLButtonElement>('[data-preset]')],
+  presets: document.getElementById('presets') as HTMLElement,
 };
 
 /** Remembers whether the user had the advanced section open. */
@@ -51,23 +52,41 @@ let rendering = false;
 const eqSliders: HTMLInputElement[] = [];
 const eqReadouts: HTMLElement[] = [];
 
-function send<T>(message: UiToBackgroundMessage): Promise<T> {
-  return sendRuntimeMessage<T>(message);
+/** Preset buttons currently rendered, kept so the active one can be marked. */
+let presetButtons: HTMLButtonElement[] = [];
+/** The ceiling the buttons were built for, so they are only rebuilt on change. */
+let presetsBuiltFor = -1;
+
+/**
+ * Volume steps offered as buttons, in percent. The list is trimmed to the
+ * configured ceiling and always ends at it, so raising the maximum in settings
+ * makes the higher steps reachable in one click rather than only by dragging.
+ */
+const PRESET_STEPS = [100, 150, 200, 300, 500, 700, 1000];
+
+function buildPresets(maxPercent: number): void {
+  if (presetsBuiltFor === maxPercent) return;
+  presetsBuiltFor = maxPercent;
+
+  const steps = PRESET_STEPS.filter((step) => step <= maxPercent);
+  // The ceiling itself is always worth one click, even when it is not one of
+  // the canonical steps.
+  if (steps[steps.length - 1] !== maxPercent) steps.push(maxPercent);
+
+  dom.presets.replaceChildren();
+  presetButtons = steps.map((step) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.dataset.preset = String(step);
+    button.textContent = `${step}%`;
+    button.addEventListener('click', () => void patch({ gain: step / 100 }));
+    dom.presets.append(button);
+    return button;
+  });
 }
 
-function localize(): void {
-  for (const node of document.querySelectorAll<HTMLElement>('[data-i18n]')) {
-    const key = node.dataset.i18n;
-    if (!key) continue;
-    const value = ext.i18n?.getMessage(key);
-    if (value) node.textContent = value;
-  }
-  for (const node of document.querySelectorAll<HTMLElement>('[data-i18n-title]')) {
-    const key = node.dataset.i18nTitle;
-    if (!key) continue;
-    const value = ext.i18n?.getMessage(key);
-    if (value) node.title = value;
-  }
+function send<T>(message: UiToBackgroundMessage): Promise<T> {
+  return sendRuntimeMessage<T>(message);
 }
 
 function buildEqualizer(): void {
@@ -112,7 +131,7 @@ function buildEqualizer(): void {
 }
 
 function formatBalance(value: number): string {
-  if (value === 0) return ext.i18n?.getMessage('popupBalanceCenter') || 'Center';
+  if (value === 0) return t('popupBalanceCenter', 'Center');
   const side = value < 0 ? 'L' : 'R';
   return `${side} ${Math.abs(Math.round(value * 100))}%`;
 }
@@ -139,10 +158,11 @@ function render(response: TabStateResponse): void {
   // once the audio is passing through untouched.
   dom.bypass.setAttribute('aria-pressed', String(settings.bypassed));
   dom.bypassLabel.textContent = settings.bypassed
-    ? ext.i18n?.getMessage('popupStateBypassed') || 'Bypassed'
-    : ext.i18n?.getMessage('popupStateActive') || 'Active';
+    ? t('popupStateBypassed', 'Bypassed')
+    : t('popupStateActive', 'Active');
 
-  for (const button of dom.presets) {
+  buildPresets(Math.round(preferences.maxGain * 100));
+  for (const button of presetButtons) {
     const preset = Number(button.dataset.preset);
     button.setAttribute('aria-current', String(preset === percent));
   }
@@ -162,8 +182,7 @@ function render(response: TabStateResponse): void {
 
   dom.origin.textContent =
     response.state.origin?.replace(/^https?:\/\//, '') ??
-    ext.i18n?.getMessage('popupUnsupportedPage') ??
-    'This page';
+    t('popupUnsupportedPage', 'This page');
 
   renderStatus(response);
   rendering = false;
@@ -211,7 +230,7 @@ function renderStatus(response: TabStateResponse): void {
 }
 
 function setStatus(key: string, fallback: string, tone: 'ok' | 'warn'): void {
-  dom.status.textContent = ext.i18n?.getMessage(key) || fallback;
+  dom.status.textContent = t(key, fallback);
   dom.status.dataset.tone = tone;
 }
 
@@ -264,12 +283,6 @@ function bindControls(): void {
     }).then(render);
   });
 
-  for (const button of dom.presets) {
-    button.addEventListener('click', () => {
-      void patch({ gain: Number(button.dataset.preset) / 100 });
-    });
-  }
-
   dom.eqReset.addEventListener('click', () => {
     void patch({ equalizer: EQ_BAND_FREQUENCIES.map(() => 0) });
   });
@@ -302,7 +315,10 @@ function restoreAdvancedState(): void {
 }
 
 async function init(): Promise<void> {
-  localize();
+  // The language is a stored preference, so it has to be resolved before any
+  // text is written; otherwise the popup would flash English first.
+  await initLocale();
+  applyTranslations();
   buildEqualizer();
   restoreAdvancedState();
   bindControls();

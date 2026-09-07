@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Balance"
   },
+  "popupBalanceLeft": {
+    "message": "Links"
+  },
+  "popupBalanceRight": {
+    "message": "Rechts"
+  },
   "popupBalanceCenter": {
     "message": "Mitte"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Umgangen"
+  },
+  "optionsLead": {
+    "message": "Diese Einstellungen gelten für jeden neuen Tab. Die Lautstärke pro Tab wird über das Symbol in der Symbolleiste gesteuert."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Standard für neue Tabs"
+  },
+  "optionsStartingVolume": {
+    "message": "Startlautstärke"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Gilt für Tabs ohne eigene gespeicherte Einstellungen."
+  },
+  "optionsMaxVolume": {
+    "message": "Maximale Lautstärke"
+  },
+  "optionsResetMax": {
+    "message": "Auf 600 % zurücksetzen"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Ein höheres Limit kann Lautsprecher und Gehör schädigen. Limiter aktiviert lassen."
+  },
+  "optionsOnTabClose": {
+    "message": "Wenn ein Tab geschlossen wird"
+  },
+  "optionsForgetSetting": {
+    "message": "Einstellung verwerfen"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Empfohlen. Jeder Tab startet mit der Standardlautstärke."
+  },
+  "optionsRememberSetting": {
+    "message": "Für diese Website merken"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Beim erneuten Besuch wird die zuletzt genutzte Lautstärke wiederhergestellt."
+  },
+  "optionsSafetyTitle": {
+    "message": "Sicherheit"
+  },
+  "optionsAutoLimiter": {
+    "message": "Limiter über 100 % aktiviert lassen"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Verhindert Verzerrungen und plötzliche Lautstärkespitzen."
+  },
+  "optionsTabCapture": {
+    "message": "Tab-Aufnahme als Ausweichlösung erlauben"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Nur Chromium. Ermöglicht die Verstärkung von Seiten, deren Audio nicht direkt lesbar ist - der Tab zeigt dann eine Aufnahmeanzeige."
+  },
+  "optionsLanguageTitle": {
+    "message": "Sprache"
+  },
+  "optionsLanguageLabel": {
+    "message": "Sprache der Oberfläche"
+  },
+  "optionsLanguageAuto": {
+    "message": "Automatisch"
+  },
+  "optionsLanguageHint": {
+    "message": "Der Name in der Add-on-Liste des Browsers folgt immer der Browsersprache, nicht dieser Einstellung."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Gespeicherte Websites"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Änderungen wirken sofort auf bereits geöffnete Tabs dieser Website."
+  },
+  "optionsNoSavedSites": {
+    "message": "Noch keine Websites gespeichert."
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 Website gespeichert."
+  },
+  "optionsManySitesSaved": {
+    "message": "%d Websites gespeichert."
+  },
+  "optionsForget": {
+    "message": "Vergessen"
+  },
+  "optionsClearAll": {
+    "message": "Alle gespeicherten Websites löschen"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Gespeicherte Lautstärke für alle Websites verwerfen?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Standard wiederherstellen"
+  },
+  "optionsConfirmRestore": {
+    "message": "Alle Einstellungen auf Standard zurücksetzen?"
+  },
+  "optionsSaved": {
+    "message": "Gespeichert"
+  },
+  "optionsEqSaved": {
+    "message": "Für diese Website sind Equalizer-Einstellungen gespeichert."
+  },
+  "optionsEqNone": {
+    "message": "Keine Equalizer-Einstellungen für diese Website gespeichert."
+  },
+  "optionsClearEq": {
+    "message": "Equalizer zurücksetzen"
+  },
+  "optionsSourceCode": {
+    "message": "Quellcode"
   },
   "popupResetTab": {
     "message": "Tab zurücksetzen"

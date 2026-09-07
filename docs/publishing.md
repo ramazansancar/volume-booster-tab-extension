@@ -70,7 +70,7 @@ This runs the exact checks AMO runs on upload. Zero errors means the submission 
 You can also lint the archive itself, which is what actually gets uploaded:
 
 ```bash
-pnpm exec addons-linter dist/firefox-mv2-0.1.0.zip
+pnpm exec addons-linter dist/firefox-mv2-0.2.0.zip
 ```
 
 ---
@@ -89,6 +89,7 @@ Fill in the dashboard forms as follows.
 | Permission: `storage` | Saves the user's own volume and equalizer preferences locally. |
 | Permission: `tabs` | Applies a separate volume to each tab and shows the level on the toolbar icon. |
 | Permission: `activeTab` | Applies the boost to the tab the user is viewing. |
+| Permission: `webNavigation` | Enumerates a tab's frames so the boost reaches a player embedded in an iframe. No browsing history is read or collected. |
 | Permission: `tabCapture` | Fallback path for pages whose audio cannot be read directly. |
 | Permission: `offscreen` | Hosts the audio graph for that fallback path. |
 | Host permissions | Media elements can appear on any site, so the boost must be able to reach any page the user opens. |
@@ -122,5 +123,5 @@ Edge asks the same questions in its **Availability and properties** step. The an
 > To confirm a zip really contains what you expect before uploading:
 >
 > ```bash
-> unzip -p dist/firefox-mv2-0.1.0.zip manifest.json | grep -A3 data_collection
+> unzip -p dist/firefox-mv2-0.2.0.zip manifest.json | grep -A3 data_collection
 > ```

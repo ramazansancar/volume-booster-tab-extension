@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Denge"
   },
+  "popupBalanceLeft": {
+    "message": "Sol"
+  },
+  "popupBalanceRight": {
+    "message": "Sağ"
+  },
   "popupBalanceCenter": {
     "message": "Orta"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Devre dışı"
+  },
+  "optionsLead": {
+    "message": "Bu ayarlar her yeni sekme için geçerlidir. Sekme başına ses seviyesi araç çubuğundan ayarlanır."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Yeni sekmeler için varsayılanlar"
+  },
+  "optionsStartingVolume": {
+    "message": "Başlangıç ses seviyesi"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Kendi kaydedilmiş ayarı olmayan sekmelere uygulanır."
+  },
+  "optionsMaxVolume": {
+    "message": "Maksimum ses seviyesi"
+  },
+  "optionsResetMax": {
+    "message": "%600’e sıfırla"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Bu tavanı yükseltmek hoparlörlere ve işitmeye zarar verebilir. Limitörü açık bırakın."
+  },
+  "optionsOnTabClose": {
+    "message": "Sekme kapandığında"
+  },
+  "optionsForgetSetting": {
+    "message": "Ayarı unut"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Önerilir. Her sekme varsayılan ses seviyesiyle başlar."
+  },
+  "optionsRememberSetting": {
+    "message": "O site için hatırla"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Siteye tekrar girdiğinizde en son kullandığınız ses seviyesi geri gelir."
+  },
+  "optionsSafetyTitle": {
+    "message": "Güvenlik"
+  },
+  "optionsAutoLimiter": {
+    "message": "%100 üzerinde limitörü açık tut"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Yükseltirken bozulmayı ve ani yüksek tepe seslerini önler."
+  },
+  "optionsTabCapture": {
+    "message": "Sekme yakalama yedeğine izin ver"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Yalnızca Chromium. Sesi doğrudan okunamayan sayfaların da yükseltilmesini sağlar; karşılığında sekmede kayıt göstergesi çıkar."
+  },
+  "optionsLanguageTitle": {
+    "message": "Dil"
+  },
+  "optionsLanguageLabel": {
+    "message": "Arayüz dili"
+  },
+  "optionsLanguageAuto": {
+    "message": "Otomatik"
+  },
+  "optionsLanguageHint": {
+    "message": "Tarayıcının kendi eklenti listesinde görünen ad, bu ayarı değil her zaman tarayıcı dilini izler."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Kaydedilen siteler"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Buradaki düzenleme, o sitede açık olan sekmelere anında uygulanır."
+  },
+  "optionsNoSavedSites": {
+    "message": "Henüz kaydedilmiş site yok."
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 site kaydedildi."
+  },
+  "optionsManySitesSaved": {
+    "message": "%d site kaydedildi."
+  },
+  "optionsForget": {
+    "message": "Unut"
+  },
+  "optionsClearAll": {
+    "message": "Kaydedilen tüm siteleri temizle"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Tüm sitelerin kaydedilmiş ses seviyesi unutulsun mu?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Varsayılanları geri yükle"
+  },
+  "optionsConfirmRestore": {
+    "message": "Tüm ayarlar varsayılana döndürülsün mü?"
+  },
+  "optionsSaved": {
+    "message": "Kaydedildi"
+  },
+  "optionsEqSaved": {
+    "message": "Bu site için ekolayzer ayarları kaydedilmiş."
+  },
+  "optionsEqNone": {
+    "message": "Bu site için kaydedilmiş ekolayzer ayarı yok."
+  },
+  "optionsClearEq": {
+    "message": "Ekolayzeri temizle"
+  },
+  "optionsSourceCode": {
+    "message": "Kaynak kodu"
   },
   "popupResetTab": {
     "message": "Sekmeyi sıfırla"

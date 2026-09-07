@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Balanço"
   },
+  "popupBalanceLeft": {
+    "message": "Esquerda"
+  },
+  "popupBalanceRight": {
+    "message": "Direita"
+  },
   "popupBalanceCenter": {
     "message": "Centro"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Ignorado"
+  },
+  "optionsLead": {
+    "message": "Estas configurações valem para cada nova aba. O volume por aba é ajustado na barra de ferramentas."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Padrões para novas abas"
+  },
+  "optionsStartingVolume": {
+    "message": "Volume inicial"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Aplicado a abas sem configurações salvas próprias."
+  },
+  "optionsMaxVolume": {
+    "message": "Volume máximo"
+  },
+  "optionsResetMax": {
+    "message": "Redefinir para 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Aumentar esse limite pode danificar alto-falantes e audição. Mantenha o limitador ativo."
+  },
+  "optionsOnTabClose": {
+    "message": "Ao fechar uma aba"
+  },
+  "optionsForgetSetting": {
+    "message": "Esquecer a configuração"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Recomendado. Cada aba começa no volume padrão."
+  },
+  "optionsRememberSetting": {
+    "message": "Lembrar para esse site"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Ao revisitar o site, o último volume usado é restaurado."
+  },
+  "optionsSafetyTitle": {
+    "message": "Segurança"
+  },
+  "optionsAutoLimiter": {
+    "message": "Manter o limitador ativo acima de 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Evita distorção e picos altos repentinos."
+  },
+  "optionsTabCapture": {
+    "message": "Permitir captura de aba como alternativa"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Somente Chromium. Permite amplificar páginas cujo áudio não pode ser lido diretamente, ao custo de um indicador de gravação na aba."
+  },
+  "optionsLanguageTitle": {
+    "message": "Idioma"
+  },
+  "optionsLanguageLabel": {
+    "message": "Idioma da interface"
+  },
+  "optionsLanguageAuto": {
+    "message": "Automático"
+  },
+  "optionsLanguageHint": {
+    "message": "O nome na lista de extensões do navegador segue sempre o idioma do navegador, não esta configuração."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Sites salvos"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Editar um site aqui se aplica na hora às abas já abertas nele."
+  },
+  "optionsNoSavedSites": {
+    "message": "Nenhum site salvo ainda."
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 site salvo."
+  },
+  "optionsManySitesSaved": {
+    "message": "%d sites salvos."
+  },
+  "optionsForget": {
+    "message": "Esquecer"
+  },
+  "optionsClearAll": {
+    "message": "Limpar todos os sites salvos"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Esquecer o volume salvo de todos os sites?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Restaurar padrões"
+  },
+  "optionsConfirmRestore": {
+    "message": "Restaurar todas as configurações para o padrão?"
+  },
+  "optionsSaved": {
+    "message": "Salvo"
+  },
+  "optionsEqSaved": {
+    "message": "Há configurações de equalizador salvas para este site."
+  },
+  "optionsEqNone": {
+    "message": "Nenhuma configuração de equalizador salva para este site."
+  },
+  "optionsClearEq": {
+    "message": "Limpar equalizador"
+  },
+  "optionsSourceCode": {
+    "message": "Código-fonte"
   },
   "popupResetTab": {
     "message": "Redefinir aba"

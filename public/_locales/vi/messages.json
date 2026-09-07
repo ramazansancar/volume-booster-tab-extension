@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Cân bằng"
   },
+  "popupBalanceLeft": {
+    "message": "Trái"
+  },
+  "popupBalanceRight": {
+    "message": "Phải"
+  },
   "popupBalanceCenter": {
     "message": "Giữa"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Đang bỏ qua"
+  },
+  "optionsLead": {
+    "message": "Các cài đặt này áp dụng cho mọi tab mới. Âm lượng từng tab được điều chỉnh từ thanh công cụ."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Mặc định cho tab mới"
+  },
+  "optionsStartingVolume": {
+    "message": "Âm lượng ban đầu"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Áp dụng cho tab chưa có cài đặt riêng."
+  },
+  "optionsMaxVolume": {
+    "message": "Âm lượng tối đa"
+  },
+  "optionsResetMax": {
+    "message": "Đặt lại về 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Tăng giới hạn này có thể hỏng loa và thính giác. Hãy bật bộ giới hạn."
+  },
+  "optionsOnTabClose": {
+    "message": "Khi đóng tab"
+  },
+  "optionsForgetSetting": {
+    "message": "Quên cài đặt"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Khuyến nghị. Mọi tab bắt đầu ở âm lượng mặc định."
+  },
+  "optionsRememberSetting": {
+    "message": "Ghi nhớ cho trang đó"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Truy cập lại trang sẽ khôi phục âm lượng bạn dùng lần cuối."
+  },
+  "optionsSafetyTitle": {
+    "message": "An toàn"
+  },
+  "optionsAutoLimiter": {
+    "message": "Giữ bộ giới hạn bật khi trên 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Ngăn méo tiếng và các đỉnh âm đột ngột khi khuếch đại."
+  },
+  "optionsTabCapture": {
+    "message": "Cho phép dùng chụp tab làm phương án dự phòng"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Chỉ Chromium. Cho phép khuếch đại trang không đọc được âm thanh trực tiếp, đổi lại tab hiện chỉ báo ghi."
+  },
+  "optionsLanguageTitle": {
+    "message": "Ngôn ngữ"
+  },
+  "optionsLanguageLabel": {
+    "message": "Ngôn ngữ giao diện"
+  },
+  "optionsLanguageAuto": {
+    "message": "Tự động"
+  },
+  "optionsLanguageHint": {
+    "message": "Tên trong danh sách tiện ích của trình duyệt luôn theo ngôn ngữ trình duyệt, không theo cài đặt này."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Trang đã lưu"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Chỉnh sửa ở đây áp dụng ngay cho tab đang mở trang đó."
+  },
+  "optionsNoSavedSites": {
+    "message": "Chưa có trang nào được lưu."
+  },
+  "optionsOneSiteSaved": {
+    "message": "Đã lưu 1 trang."
+  },
+  "optionsManySitesSaved": {
+    "message": "Đã lưu %d trang."
+  },
+  "optionsForget": {
+    "message": "Quên"
+  },
+  "optionsClearAll": {
+    "message": "Xóa tất cả trang đã lưu"
+  },
+  "optionsConfirmClearAll": {
+    "message": "Quên âm lượng đã lưu cho mọi trang?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Khôi phục mặc định"
+  },
+  "optionsConfirmRestore": {
+    "message": "Khôi phục mọi cài đặt về mặc định?"
+  },
+  "optionsSaved": {
+    "message": "Đã lưu"
+  },
+  "optionsEqSaved": {
+    "message": "Đã lưu cài đặt bộ chỉnh âm cho trang này."
+  },
+  "optionsEqNone": {
+    "message": "Chưa lưu cài đặt bộ chỉnh âm cho trang này."
+  },
+  "optionsClearEq": {
+    "message": "Xóa bộ chỉnh âm"
+  },
+  "optionsSourceCode": {
+    "message": "Mã nguồn"
   },
   "popupResetTab": {
     "message": "Đặt lại tab"

@@ -221,3 +221,134 @@ body {
 .colophon a:hover {
   color: var(--accent);
 }
+
+/* Language picker ---------------------------------------------------------- */
+
+.select {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.select:hover {
+  border-color: var(--accent);
+}
+
+/* Saved-site editor -------------------------------------------------------- */
+
+.field__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.origins__item {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.origins__summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 12px;
+}
+
+/* The whole row is the toggle, so the editor opens wherever the user clicks
+   rather than only on a small chevron. */
+.origins__toggle {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.origins__toggle::before {
+  content: '';
+  flex-shrink: 0;
+  width: 0;
+  height: 0;
+  border-left: 5px solid currentColor;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+
+.origins__toggle[aria-expanded='true']::before {
+  transform: rotate(90deg);
+}
+
+.origins__editor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.origins__field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.origins__field-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.origins__field-value {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.origins__field input[type='range'] {
+  width: 100%;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.origins__switches {
+  display: flex;
+  gap: 18px;
+}
+
+.switch--compact {
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+}
+
+.switch--compact input {
+  margin-top: 0;
+}
+
+.origins__note {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}

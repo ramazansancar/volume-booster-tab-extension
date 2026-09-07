@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "声道平衡"
   },
+  "popupBalanceLeft": {
+    "message": "左"
+  },
+  "popupBalanceRight": {
+    "message": "右"
+  },
   "popupBalanceCenter": {
     "message": "居中"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "已旁路"
+  },
+  "optionsLead": {
+    "message": "这些设置适用于每个新标签页。每个标签页的音量在工具栏中调节。"
+  },
+  "optionsDefaultsTitle": {
+    "message": "新标签页默认值"
+  },
+  "optionsStartingVolume": {
+    "message": "初始音量"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "适用于没有自有保存设置的标签页。"
+  },
+  "optionsMaxVolume": {
+    "message": "最大音量"
+  },
+  "optionsResetMax": {
+    "message": "重置为 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "提高上限可能损坏扬声器和听力。请保持限制器开启。"
+  },
+  "optionsOnTabClose": {
+    "message": "关闭标签页时"
+  },
+  "optionsForgetSetting": {
+    "message": "忘记设置"
+  },
+  "optionsForgetSettingHint": {
+    "message": "推荐。每个标签页从默认音量开始。"
+  },
+  "optionsRememberSetting": {
+    "message": "为该网站记住"
+  },
+  "optionsRememberSettingHint": {
+    "message": "再次访问该网站时恢复上次使用的音量。"
+  },
+  "optionsSafetyTitle": {
+    "message": "安全"
+  },
+  "optionsAutoLimiter": {
+    "message": "超过 100% 时保持限制器开启"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "防止增强时失真和突然的高音量。"
+  },
+  "optionsTabCapture": {
+    "message": "允许使用标签页捕获作为备用"
+  },
+  "optionsTabCaptureHint": {
+    "message": "仅 Chromium。可增强无法直接读取音频的页面，代价是标签页会显示录制指示。"
+  },
+  "optionsLanguageTitle": {
+    "message": "语言"
+  },
+  "optionsLanguageLabel": {
+    "message": "界面语言"
+  },
+  "optionsLanguageAuto": {
+    "message": "自动"
+  },
+  "optionsLanguageHint": {
+    "message": "浏览器扩展列表中显示的名称始终跟随浏览器语言，而非此设置。"
+  },
+  "optionsSavedSitesTitle": {
+    "message": "已保存的网站"
+  },
+  "optionsSavedSitesHint": {
+    "message": "在此编辑会立即应用到已打开该网站的标签页。"
+  },
+  "optionsNoSavedSites": {
+    "message": "尚未保存任何网站。"
+  },
+  "optionsOneSiteSaved": {
+    "message": "已保存 1 个网站。"
+  },
+  "optionsManySitesSaved": {
+    "message": "已保存 %d 个网站。"
+  },
+  "optionsForget": {
+    "message": "忘记"
+  },
+  "optionsClearAll": {
+    "message": "清除所有已保存的网站"
+  },
+  "optionsConfirmClearAll": {
+    "message": "要忘记所有网站的已保存音量吗？"
+  },
+  "optionsRestoreDefaults": {
+    "message": "恢复默认设置"
+  },
+  "optionsConfirmRestore": {
+    "message": "要将所有设置恢复为默认值吗？"
+  },
+  "optionsSaved": {
+    "message": "已保存"
+  },
+  "optionsEqSaved": {
+    "message": "此网站已保存均衡器设置。"
+  },
+  "optionsEqNone": {
+    "message": "此网站没有保存均衡器设置。"
+  },
+  "optionsClearEq": {
+    "message": "清除均衡器"
+  },
+  "optionsSourceCode": {
+    "message": "源代码"
   },
   "popupResetTab": {
     "message": "重置标签页"

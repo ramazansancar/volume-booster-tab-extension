@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "聲道平衡"
   },
+  "popupBalanceLeft": {
+    "message": "左"
+  },
+  "popupBalanceRight": {
+    "message": "右"
+  },
   "popupBalanceCenter": {
     "message": "置中"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "已旁路"
+  },
+  "optionsLead": {
+    "message": "這些設定適用於每個新分頁。各分頁的音量在工具列中調整。"
+  },
+  "optionsDefaultsTitle": {
+    "message": "新分頁預設值"
+  },
+  "optionsStartingVolume": {
+    "message": "初始音量"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "適用於沒有自訂儲存設定的分頁。"
+  },
+  "optionsMaxVolume": {
+    "message": "最大音量"
+  },
+  "optionsResetMax": {
+    "message": "重設為 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "提高上限可能損害喇叭與聽力。請保持限制器開啟。"
+  },
+  "optionsOnTabClose": {
+    "message": "關閉分頁時"
+  },
+  "optionsForgetSetting": {
+    "message": "忘記設定"
+  },
+  "optionsForgetSettingHint": {
+    "message": "建議。每個分頁從預設音量開始。"
+  },
+  "optionsRememberSetting": {
+    "message": "為該網站記住"
+  },
+  "optionsRememberSettingHint": {
+    "message": "再次造訪該網站時恢復上次使用的音量。"
+  },
+  "optionsSafetyTitle": {
+    "message": "安全"
+  },
+  "optionsAutoLimiter": {
+    "message": "超過 100% 時保持限制器開啟"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "防止增強時失真與突然的高音量。"
+  },
+  "optionsTabCapture": {
+    "message": "允許使用分頁擷取作為備援"
+  },
+  "optionsTabCaptureHint": {
+    "message": "僅 Chromium。可增強無法直接讀取音訊的頁面，代價是分頁會顯示錄製指示。"
+  },
+  "optionsLanguageTitle": {
+    "message": "語言"
+  },
+  "optionsLanguageLabel": {
+    "message": "介面語言"
+  },
+  "optionsLanguageAuto": {
+    "message": "自動"
+  },
+  "optionsLanguageHint": {
+    "message": "瀏覽器附加元件清單中顯示的名稱一律跟隨瀏覽器語言，而非此設定。"
+  },
+  "optionsSavedSitesTitle": {
+    "message": "已儲存的網站"
+  },
+  "optionsSavedSitesHint": {
+    "message": "在此編輯會立即套用到已開啟該網站的分頁。"
+  },
+  "optionsNoSavedSites": {
+    "message": "尚未儲存任何網站。"
+  },
+  "optionsOneSiteSaved": {
+    "message": "已儲存 1 個網站。"
+  },
+  "optionsManySitesSaved": {
+    "message": "已儲存 %d 個網站。"
+  },
+  "optionsForget": {
+    "message": "忘記"
+  },
+  "optionsClearAll": {
+    "message": "清除所有已儲存的網站"
+  },
+  "optionsConfirmClearAll": {
+    "message": "要忘記所有網站的已儲存音量嗎？"
+  },
+  "optionsRestoreDefaults": {
+    "message": "恢復預設設定"
+  },
+  "optionsConfirmRestore": {
+    "message": "要將所有設定恢復為預設值嗎？"
+  },
+  "optionsSaved": {
+    "message": "已儲存"
+  },
+  "optionsEqSaved": {
+    "message": "此網站已儲存等化器設定。"
+  },
+  "optionsEqNone": {
+    "message": "此網站沒有儲存等化器設定。"
+  },
+  "optionsClearEq": {
+    "message": "清除等化器"
+  },
+  "optionsSourceCode": {
+    "message": "原始碼"
   },
   "popupResetTab": {
     "message": "重設分頁"

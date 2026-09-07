@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "Balance"
   },
+  "popupBalanceLeft": {
+    "message": "Izquierda"
+  },
+  "popupBalanceRight": {
+    "message": "Derecha"
+  },
   "popupBalanceCenter": {
     "message": "Centro"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "Omitido"
+  },
+  "optionsLead": {
+    "message": "Estos ajustes se aplican a cada pestaña nueva. El volumen por pestaña se controla desde el icono de la barra."
+  },
+  "optionsDefaultsTitle": {
+    "message": "Valores por defecto para pestañas nuevas"
+  },
+  "optionsStartingVolume": {
+    "message": "Volumen inicial"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "Se aplica a las pestañas sin ajustes guardados propios."
+  },
+  "optionsMaxVolume": {
+    "message": "Volumen máximo"
+  },
+  "optionsResetMax": {
+    "message": "Restablecer a 600 %"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "Subir este límite puede dañar los altavoces y el oído. Mantén el limitador activo."
+  },
+  "optionsOnTabClose": {
+    "message": "Al cerrar una pestaña"
+  },
+  "optionsForgetSetting": {
+    "message": "Olvidar el ajuste"
+  },
+  "optionsForgetSettingHint": {
+    "message": "Recomendado. Cada pestaña empieza con el volumen predeterminado."
+  },
+  "optionsRememberSetting": {
+    "message": "Recordarlo para ese sitio"
+  },
+  "optionsRememberSettingHint": {
+    "message": "Al volver al sitio se restaura el último volumen usado."
+  },
+  "optionsSafetyTitle": {
+    "message": "Seguridad"
+  },
+  "optionsAutoLimiter": {
+    "message": "Mantener el limitador activo por encima del 100 %"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "Evita la distorsión y los picos fuertes repentinos."
+  },
+  "optionsTabCapture": {
+    "message": "Permitir captura de pestaña como alternativa"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Solo Chromium. Permite amplificar páginas cuyo audio no se puede leer directamente, a cambio de un indicador de grabación en la pestaña."
+  },
+  "optionsLanguageTitle": {
+    "message": "Idioma"
+  },
+  "optionsLanguageLabel": {
+    "message": "Idioma de la interfaz"
+  },
+  "optionsLanguageAuto": {
+    "message": "Automático"
+  },
+  "optionsLanguageHint": {
+    "message": "El nombre en la lista de extensiones del navegador sigue siempre el idioma del navegador, no este ajuste."
+  },
+  "optionsSavedSitesTitle": {
+    "message": "Sitios guardados"
+  },
+  "optionsSavedSitesHint": {
+    "message": "Editar un sitio aquí se aplica de inmediato a las pestañas ya abiertas en él."
+  },
+  "optionsNoSavedSites": {
+    "message": "Aún no hay sitios guardados."
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 sitio guardado."
+  },
+  "optionsManySitesSaved": {
+    "message": "%d sitios guardados."
+  },
+  "optionsForget": {
+    "message": "Olvidar"
+  },
+  "optionsClearAll": {
+    "message": "Borrar todos los sitios guardados"
+  },
+  "optionsConfirmClearAll": {
+    "message": "¿Olvidar el volumen guardado de todos los sitios?"
+  },
+  "optionsRestoreDefaults": {
+    "message": "Restaurar valores por defecto"
+  },
+  "optionsConfirmRestore": {
+    "message": "¿Restaurar todos los ajustes a sus valores por defecto?"
+  },
+  "optionsSaved": {
+    "message": "Guardado"
+  },
+  "optionsEqSaved": {
+    "message": "Hay ajustes de ecualizador guardados para este sitio."
+  },
+  "optionsEqNone": {
+    "message": "No hay ajustes de ecualizador guardados para este sitio."
+  },
+  "optionsClearEq": {
+    "message": "Borrar ecualizador"
+  },
+  "optionsSourceCode": {
+    "message": "Código fuente"
   },
   "popupResetTab": {
     "message": "Restablecer pestaña"

@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "バランス"
   },
+  "popupBalanceLeft": {
+    "message": "左"
+  },
+  "popupBalanceRight": {
+    "message": "右"
+  },
   "popupBalanceCenter": {
     "message": "中央"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "バイパス中"
+  },
+  "optionsLead": {
+    "message": "これらの設定は新しいタブすべてに適用されます。タブごとの音量はツールバーから調整します。"
+  },
+  "optionsDefaultsTitle": {
+    "message": "新しいタブの既定値"
+  },
+  "optionsStartingVolume": {
+    "message": "開始時の音量"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "独自の保存設定がないタブに適用されます。"
+  },
+  "optionsMaxVolume": {
+    "message": "最大音量"
+  },
+  "optionsResetMax": {
+    "message": "600% にリセット"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "この上限を上げるとスピーカーや聴覚を損なう恐れがあります。リミッターは有効のままにしてください。"
+  },
+  "optionsOnTabClose": {
+    "message": "タブを閉じたとき"
+  },
+  "optionsForgetSetting": {
+    "message": "設定を破棄"
+  },
+  "optionsForgetSettingHint": {
+    "message": "推奨。各タブは既定の音量で始まります。"
+  },
+  "optionsRememberSetting": {
+    "message": "そのサイト用に記憶"
+  },
+  "optionsRememberSettingHint": {
+    "message": "サイトを再訪すると最後に使った音量が復元されます。"
+  },
+  "optionsSafetyTitle": {
+    "message": "安全性"
+  },
+  "optionsAutoLimiter": {
+    "message": "100% を超えたらリミッターを維持"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "増幅時の歪みと突然の大音量を防ぎます。"
+  },
+  "optionsTabCapture": {
+    "message": "タブキャプチャの代替手段を許可"
+  },
+  "optionsTabCaptureHint": {
+    "message": "Chromium のみ。音声を直接読めないページも増幅できますが、タブに録音インジケーターが表示されます。"
+  },
+  "optionsLanguageTitle": {
+    "message": "言語"
+  },
+  "optionsLanguageLabel": {
+    "message": "インターフェースの言語"
+  },
+  "optionsLanguageAuto": {
+    "message": "自動"
+  },
+  "optionsLanguageHint": {
+    "message": "ブラウザーのアドオン一覧に表示される名前は、この設定ではなく常にブラウザーの言語に従います。"
+  },
+  "optionsSavedSitesTitle": {
+    "message": "保存したサイト"
+  },
+  "optionsSavedSitesHint": {
+    "message": "ここでの変更は、そのサイトを開いているタブに即座に適用されます。"
+  },
+  "optionsNoSavedSites": {
+    "message": "保存されたサイトはありません。"
+  },
+  "optionsOneSiteSaved": {
+    "message": "1 件のサイトを保存済み。"
+  },
+  "optionsManySitesSaved": {
+    "message": "%d 件のサイトを保存済み。"
+  },
+  "optionsForget": {
+    "message": "削除"
+  },
+  "optionsClearAll": {
+    "message": "保存したサイトをすべて消去"
+  },
+  "optionsConfirmClearAll": {
+    "message": "すべてのサイトの保存音量を破棄しますか？"
+  },
+  "optionsRestoreDefaults": {
+    "message": "既定値に戻す"
+  },
+  "optionsConfirmRestore": {
+    "message": "すべての設定を既定値に戻しますか？"
+  },
+  "optionsSaved": {
+    "message": "保存しました"
+  },
+  "optionsEqSaved": {
+    "message": "このサイトにはイコライザー設定が保存されています。"
+  },
+  "optionsEqNone": {
+    "message": "このサイトにイコライザー設定は保存されていません。"
+  },
+  "optionsClearEq": {
+    "message": "イコライザーを消去"
+  },
+  "optionsSourceCode": {
+    "message": "ソースコード"
   },
   "popupResetTab": {
     "message": "タブをリセット"

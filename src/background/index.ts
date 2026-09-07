@@ -1,14 +1,17 @@
 import { ext, getAllFrames, getTab, sendMessageSafe, sendMessageToTab } from '@/lib/browser';
 import { cloneSettings } from '@/lib/defaults';
 import {
+  forgetOrigin,
   loadOriginSettings,
   loadPreferences,
+  saveOriginSettings,
   savePreferences,
   syncPersistence,
 } from '@/lib/storage';
 import { mergeSettings, originOf } from '@/lib/validate';
 import { TabRegistry } from '@/background/tab-registry';
 import type {
+  AudioSettings,
   ContentToBackgroundMessage,
   GlobalPreferences,
   TabState,
@@ -137,6 +140,20 @@ async function updateBadge(state: TabState): Promise<void> {
   }
 }
 
+/**
+ * Pushes an edited origin setting to every open tab currently on that origin
+ * and following it, so a change made in the options page takes effect at once.
+ */
+async function applyToOpenTabs(origin: string, settings: AudioSettings): Promise<void> {
+  for (const [tabId, state] of registry.entries()) {
+    if (state.origin !== origin || state.persistence !== 'origin') continue;
+    state.settings = settings;
+    registry.updateSettings(tabId, settings);
+    await pushToTab(state);
+    await updateBadge(state);
+  }
+}
+
 async function applyAndPersist(state: TabState): Promise<void> {
   await pushToTab(state);
   await updateBadge(state);
@@ -203,6 +220,31 @@ async function handleUiMessage(message: UiToBackgroundMessage): Promise<unknown>
         }
       }
       return cachedPreferences;
+    }
+
+    case 'ui:update-origin': {
+      const stored =
+        (await loadOriginSettings(message.origin, prefs.maxGain)) ?? prefs.defaults;
+      const next = mergeSettings(stored, message.settings, prefs.maxGain);
+      await saveOriginSettings(message.origin, next);
+
+      // Tabs already open on that origin are following the stored value, so an
+      // edit here has to reach them too - otherwise the options page and the
+      // tab would disagree until the next reload.
+      await applyToOpenTabs(message.origin, next);
+      return next;
+    }
+
+    case 'ui:forget-origin': {
+      await forgetOrigin(message.origin);
+      // The tab keeps whatever it is playing at, but stops being persistent, so
+      // closing it now forgets the setting like any session-scoped tab.
+      for (const [, state] of registry.entries()) {
+        if (state.origin === message.origin && state.persistence === 'origin') {
+          state.persistence = 'session';
+        }
+      }
+      return { ok: true };
     }
 
     case 'ui:request-fallback': {

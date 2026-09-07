@@ -14,6 +14,12 @@
   "popupBalance": {
     "message": "สมดุลเสียง"
   },
+  "popupBalanceLeft": {
+    "message": "ซ้าย"
+  },
+  "popupBalanceRight": {
+    "message": "ขวา"
+  },
   "popupBalanceCenter": {
     "message": "ตรงกลาง"
   },
@@ -49,6 +55,114 @@
   },
   "popupStateBypassed": {
     "message": "ข้ามอยู่"
+  },
+  "optionsLead": {
+    "message": "การตั้งค่าเหล่านี้ใช้กับทุกแท็บใหม่ ระดับเสียงต่อแท็บปรับได้จากแถบเครื่องมือ"
+  },
+  "optionsDefaultsTitle": {
+    "message": "ค่าเริ่มต้นสำหรับแท็บใหม่"
+  },
+  "optionsStartingVolume": {
+    "message": "ระดับเสียงเริ่มต้น"
+  },
+  "optionsStartingVolumeHint": {
+    "message": "ใช้กับแท็บที่ไม่มีการตั้งค่าที่บันทึกไว้เอง"
+  },
+  "optionsMaxVolume": {
+    "message": "ระดับเสียงสูงสุด"
+  },
+  "optionsResetMax": {
+    "message": "รีเซ็ตเป็น 600%"
+  },
+  "optionsMaxVolumeHint": {
+    "message": "การเพิ่มขีดจำกัดนี้อาจทำให้ลำโพงและการได้ยินเสียหาย ควรเปิดลิมิตเตอร์ไว้"
+  },
+  "optionsOnTabClose": {
+    "message": "เมื่อปิดแท็บ"
+  },
+  "optionsForgetSetting": {
+    "message": "ลืมการตั้งค่า"
+  },
+  "optionsForgetSettingHint": {
+    "message": "แนะนำ ทุกแท็บเริ่มจากระดับเสียงเริ่มต้น"
+  },
+  "optionsRememberSetting": {
+    "message": "จดจำสำหรับเว็บไซต์นั้น"
+  },
+  "optionsRememberSettingHint": {
+    "message": "เมื่อกลับมาที่เว็บไซต์ ระดับเสียงล่าสุดจะถูกเรียกคืน"
+  },
+  "optionsSafetyTitle": {
+    "message": "ความปลอดภัย"
+  },
+  "optionsAutoLimiter": {
+    "message": "เปิดลิมิตเตอร์ไว้เมื่อเกิน 100%"
+  },
+  "optionsAutoLimiterHint": {
+    "message": "ป้องกันเสียงแตกและเสียงดังกะทันหันขณะเพิ่มเสียง"
+  },
+  "optionsTabCapture": {
+    "message": "อนุญาตให้ใช้การจับภาพแท็บเป็นทางสำรอง"
+  },
+  "optionsTabCaptureHint": {
+    "message": "เฉพาะ Chromium เท่านั้น ช่วยเพิ่มเสียงหน้าที่อ่านเสียงโดยตรงไม่ได้ แลกกับตัวบ่งชี้การบันทึกบนแท็บ"
+  },
+  "optionsLanguageTitle": {
+    "message": "ภาษา"
+  },
+  "optionsLanguageLabel": {
+    "message": "ภาษาของอินเทอร์เฟซ"
+  },
+  "optionsLanguageAuto": {
+    "message": "อัตโนมัติ"
+  },
+  "optionsLanguageHint": {
+    "message": "ชื่อที่แสดงในรายการส่วนขยายของเบราว์เซอร์จะตามภาษาของเบราว์เซอร์เสมอ"
+  },
+  "optionsSavedSitesTitle": {
+    "message": "เว็บไซต์ที่บันทึกไว้"
+  },
+  "optionsSavedSitesHint": {
+    "message": "การแก้ไขที่นี่จะมีผลทันทีกับแท็บที่เปิดเว็บไซต์นั้นอยู่"
+  },
+  "optionsNoSavedSites": {
+    "message": "ยังไม่มีเว็บไซต์ที่บันทึกไว้"
+  },
+  "optionsOneSiteSaved": {
+    "message": "บันทึกไว้ 1 เว็บไซต์"
+  },
+  "optionsManySitesSaved": {
+    "message": "บันทึกไว้ %d เว็บไซต์"
+  },
+  "optionsForget": {
+    "message": "ลืม"
+  },
+  "optionsClearAll": {
+    "message": "ล้างเว็บไซต์ที่บันทึกทั้งหมด"
+  },
+  "optionsConfirmClearAll": {
+    "message": "ลืมระดับเสียงที่บันทึกไว้ของทุกเว็บไซต์หรือไม่"
+  },
+  "optionsRestoreDefaults": {
+    "message": "คืนค่าเริ่มต้น"
+  },
+  "optionsConfirmRestore": {
+    "message": "คืนค่าการตั้งค่าทั้งหมดเป็นค่าเริ่มต้นหรือไม่"
+  },
+  "optionsSaved": {
+    "message": "บันทึกแล้ว"
+  },
+  "optionsEqSaved": {
+    "message": "มีการตั้งค่าอีควอไลเซอร์ที่บันทึกไว้สำหรับเว็บไซต์นี้"
+  },
+  "optionsEqNone": {
+    "message": "ไม่มีการตั้งค่าอีควอไลเซอร์ที่บันทึกไว้สำหรับเว็บไซต์นี้"
+  },
+  "optionsClearEq": {
+    "message": "ล้างอีควอไลเซอร์"
+  },
+  "optionsSourceCode": {
+    "message": "ซอร์สโค้ด"
   },
   "popupResetTab": {
     "message": "รีเซ็ตแท็บ"

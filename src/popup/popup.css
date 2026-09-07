@@ -256,11 +256,6 @@ input[type='range'] {
   padding-top: 10px;
 }
 
-.advanced__footer {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .equalizer {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -360,4 +355,33 @@ body[data-disabled='true'] .switches,
 body[data-disabled='true'] .advanced {
   opacity: 0.5;
   pointer-events: none;
+}
+
+/* Balance ------------------------------------------------------------------ */
+
+.balance {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.balance input[type='range'] {
+  flex: 1;
+}
+
+/* Ends are labelled so the direction of the slider is readable at a glance,
+   rather than inferred from the readout after moving it. */
+.balance__end {
+  flex-shrink: 0;
+  font-size: 10px;
+  color: var(--text-muted);
+  user-select: none;
+}
+
+/* A full-width link under the footer, so the settings page is one click away
+   without expanding the Advanced section first. */
+.link-button--block {
+  width: 100%;
+  padding: 7px 0;
+  text-align: center;
 }

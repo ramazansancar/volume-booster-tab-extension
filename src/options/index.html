@@ -9,70 +9,75 @@
   <body>
     <main class="page">
       <h1 class="page__title">Volume Booster Tab</h1>
-      <p class="page__lead">
+      <p class="page__lead" data-i18n="optionsLead">
         These settings apply to every new tab. Per-tab volume is controlled from the toolbar popup.
       </p>
 
       <section class="card">
-        <h2 class="card__title">Defaults for new tabs</h2>
+        <h2 class="card__title" data-i18n="optionsDefaultsTitle">Defaults for new tabs</h2>
 
         <div class="field">
-          <label class="field__label" for="default-gain">Starting volume</label>
+          <label class="field__label" for="default-gain" data-i18n="optionsStartingVolume">Starting volume</label>
           <div class="field__control">
             <input type="range" id="default-gain" min="0" max="600" step="5" value="100" />
             <output id="default-gain-value">100%</output>
           </div>
-          <p class="field__hint">
+          <p class="field__hint" data-i18n="optionsStartingVolumeHint">
             Applied to tabs that have no saved settings of their own.
           </p>
         </div>
 
         <div class="field">
-          <label class="field__label" for="max-gain">Maximum volume</label>
+          <div class="field__header">
+            <label class="field__label" for="max-gain" data-i18n="optionsMaxVolume">Maximum volume</label>
+            <button type="button" class="link-button" id="reset-max-gain" data-i18n="optionsResetMax">
+              Reset to 600%
+            </button>
+          </div>
           <div class="field__control">
             <input type="range" id="max-gain" min="100" max="1000" step="50" value="600" />
             <output id="max-gain-value">600%</output>
           </div>
-          <p class="field__hint field__hint--warn">
+          <p class="field__hint field__hint--warn" data-i18n="optionsMaxVolumeHint">
             Raising this ceiling can damage speakers and hearing. Keep the limiter on.
           </p>
         </div>
 
         <div class="field">
-          <span class="field__label">When a tab closes</span>
+          <span class="field__label" data-i18n="optionsOnTabClose">When a tab closes</span>
           <label class="radio">
             <input type="radio" name="persistence" value="session" checked />
             <span>
-              <strong>Forget the setting</strong>
-              <small>Recommended. Every tab starts from the default volume.</small>
+              <strong data-i18n="optionsForgetSetting">Forget the setting</strong>
+              <small data-i18n="optionsForgetSettingHint">Recommended. Every tab starts from the default volume.</small>
             </span>
           </label>
           <label class="radio">
             <input type="radio" name="persistence" value="origin" />
             <span>
-              <strong>Remember it for that site</strong>
-              <small>Revisiting the site restores the volume you last used there.</small>
+              <strong data-i18n="optionsRememberSetting">Remember it for that site</strong>
+              <small data-i18n="optionsRememberSettingHint">Revisiting the site restores the volume you last used there.</small>
             </span>
           </label>
         </div>
       </section>
 
       <section class="card">
-        <h2 class="card__title">Safety</h2>
+        <h2 class="card__title" data-i18n="optionsSafetyTitle">Safety</h2>
 
         <label class="switch">
           <input type="checkbox" id="auto-limiter" checked />
           <span>
-            <strong>Keep the limiter on above 100%</strong>
-            <small>Prevents clipping and sudden loud peaks when boosting.</small>
+            <strong data-i18n="optionsAutoLimiter">Keep the limiter on above 100%</strong>
+            <small data-i18n="optionsAutoLimiterHint">Prevents clipping and sudden loud peaks when boosting.</small>
           </span>
         </label>
 
         <label class="switch">
           <input type="checkbox" id="tab-capture" checked />
           <span>
-            <strong>Allow tab capture fallback</strong>
-            <small>
+            <strong data-i18n="optionsTabCapture">Allow tab capture fallback</strong>
+            <small data-i18n="optionsTabCaptureHint">
               Chromium only. Lets the extension boost pages whose audio cannot be read directly,
               at the cost of a recording indicator on the tab.
             </small>
@@ -81,17 +86,35 @@
       </section>
 
       <section class="card">
-        <h2 class="card__title">Saved sites</h2>
-        <p class="card__lead" id="origins-summary">No sites saved yet.</p>
+        <h2 class="card__title" data-i18n="optionsLanguageTitle">Language</h2>
+
+        <div class="field">
+          <label class="field__label" for="language" data-i18n="optionsLanguageLabel">
+            Interface language
+          </label>
+          <select id="language" class="select"></select>
+          <p class="field__hint" data-i18n="optionsLanguageHint">
+            The name shown in your browser's own add-on list always follows the browser's
+            language, not this setting.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="card__title" data-i18n="optionsSavedSitesTitle">Saved sites</h2>
+        <p class="card__lead" id="origins-summary" data-i18n="optionsNoSavedSites">No sites saved yet.</p>
+        <p class="card__lead" data-i18n="optionsSavedSitesHint">
+          Editing a site here applies immediately to any tab already open on it.
+        </p>
         <ul class="origins" id="origins"></ul>
-        <button type="button" class="button button--danger" id="clear-origins">
+        <button type="button" class="button button--danger" id="clear-origins" data-i18n="optionsClearAll">
           Clear all saved sites
         </button>
       </section>
 
       <footer class="page__footer">
         <p id="save-status" role="status" class="save-status"></p>
-        <button type="button" class="button" id="restore-defaults">Restore defaults</button>
+        <button type="button" class="button" id="restore-defaults" data-i18n="optionsRestoreDefaults">Restore defaults</button>
       </footer>
 
       <!--
@@ -108,6 +131,7 @@
           href="https://github.com/ramazansancar/volume-booster-tab-extension"
           target="_blank"
           rel="noreferrer noopener"
+          data-i18n="optionsSourceCode"
           >Source code</a
         >
       </p>
