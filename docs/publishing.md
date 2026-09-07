@@ -1,5 +1,9 @@
 # Publishing to the stores
 
+Per-store copy lives alongside this file: [`amo-submission.md`](amo-submission.md)
+for Firefox, [`chrome-submission.md`](chrome-submission.md) for Chrome and Edge,
+[`safari.md`](safari.md) for Safari.
+
 > [!IMPORTANT]
 > Always upload a **zip produced by `pnpm run package`**, never one left over from an earlier build. A plain `pnpm run build` refreshes `dist/<target>/` but deletes any existing archive rather than updating it, precisely so a stale zip can never be uploaded by mistake.
 

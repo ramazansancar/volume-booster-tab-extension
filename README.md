@@ -247,7 +247,9 @@ pnpm run package          # build all targets AND zip each for store upload
 ```
 
 > [!IMPORTANT]
-> Uploading to a store? Use **`pnpm run package`**, not `pnpm run build`. `build` refreshes the unpacked folders only — it deletes any existing zip rather than updating it, so that a stale archive can never be uploaded by mistake. See [`docs/publishing.md`](docs/publishing.md).
+> Uploading to a store? Use **`pnpm run package`**, not `pnpm run build`. `build` refreshes the unpacked folders only — it deletes any existing zip rather than updating it, so that a stale archive can never be uploaded by mistake.
+>
+> Store paperwork lives in [`docs/`](docs/): [publishing](docs/publishing.md) for which build goes where, [AMO](docs/amo-submission.md) for Firefox, [Chrome Web Store](docs/chrome-submission.md) for Chrome and Edge, [Safari](docs/safari.md) for the Xcode conversion.
 
 <details>
 <summary><b>All available scripts</b></summary>

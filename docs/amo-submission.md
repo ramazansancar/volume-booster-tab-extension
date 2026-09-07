@@ -1,6 +1,8 @@
 # AMO submission text
 
-Copy-paste material for the addons.mozilla.org submission form. Keep this file updated when behaviour changes, so a release never needs the text rewritten from scratch.
+Copy-paste material for the addons.mozilla.org submission form. For the Chrome
+Web Store and Edge, see [`chrome-submission.md`](chrome-submission.md); for
+which build goes where, see [`publishing.md`](publishing.md). Keep this file updated when behaviour changes, so a release never needs the text rewritten from scratch.
 
 > [!NOTE]
 > AMO's post-upload checklist asks for two things: **version notes** and, if the add-on needs an account to test, **notes to reviewer**. This add-on needs no account, but the reviewer note below explains how to exercise it, which speeds up review.
@@ -212,7 +214,7 @@ FEATURES
 • Stereo balance, from full left to full right
 • Mono downmix for listening with a single earbud
 • Bypass switch to compare the processed and untouched sound instantly
-• Available in 55 languages, fully translated
+• Available in 55 languages, fully translated, switchable in settings
 
 EVERY TAB IS INDEPENDENT
 
@@ -301,7 +303,7 @@ izin verdiği seviyenin ötesine çıkarır ve o sesi nasıl şekillendireceğin
 • Tam soldan tam sağa kanal dengesi
 • Tek kulaklıkla dinlemek için mono birleştirme
 • İşlenmiş ve ham sesi anında karşılaştırmak için devre dışı bırakma anahtarı
-• 55 dilde, tamamen çevrilmiş arayüz
+• 55 dilde, tamamen çevrilmiş arayüz; ayarlardan değiştirilebilir
 
 HER SEKME BAĞIMSIZ
 
