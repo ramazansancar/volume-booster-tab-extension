@@ -65,3 +65,45 @@ jobs:
           name: extension-builds
           path: dist/
           retention-days: 14
+
+  amo-validate:
+    name: Validate Firefox builds against AMO rules
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Firefox targets
+        run: node scripts/build.mjs --target=firefox-mv2,firefox-mv3
+
+      # addons-linter runs the same checks addons.mozilla.org runs on upload,
+      # so a submission-blocking error is caught here rather than after a failed
+      # upload. Warnings are expected: the default strict_min_version predates
+      # data_collection_permissions on purpose, to keep Firefox ESR supported.
+      - name: Lint firefox-mv2
+        run: pnpm exec addons-linter dist/firefox-mv2
+
+      - name: Lint firefox-mv3
+        run: pnpm exec addons-linter dist/firefox-mv3
+
+      # The warning-free variant must also stay valid, since that is what a
+      # store submission targeting modern Firefox only would upload.
+      - name: Lint with STRICT_DATA_CONSENT_MIN
+        run: |
+          STRICT_DATA_CONSENT_MIN=1 node scripts/build.mjs --target=firefox-mv2,firefox-mv3
+          pnpm exec addons-linter dist/firefox-mv2
+          pnpm exec addons-linter dist/firefox-mv3

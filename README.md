@@ -8,31 +8,31 @@ Works in Chrome, Firefox, Edge, Opera, Brave, Vivaldi and Safari.
 Manifest V2 and V3 from one codebase.
 
 [![License: PolyForm Noncommercial](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue.svg)](LICENSE.md)
-[![Manifest V2 + V3](https://img.shields.io/badge/manifest-V2%20%7C%20V3-success.svg)](#-browser-support)
-[![Browsers](https://img.shields.io/badge/browsers-7%20targets-orange.svg)](#-browser-support)
-[![Languages](https://img.shields.io/badge/languages-56-brightgreen.svg)](#-language-support)
+[![Manifest V2 + V3](https://img.shields.io/badge/manifest-V2%20%7C%20V3-success.svg)](#browser-support)
+[![Browsers](https://img.shields.io/badge/browsers-7%20targets-orange.svg)](#browser-support)
+[![Languages](https://img.shields.io/badge/languages-56-brightgreen.svg)](#language-support)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 </div>
 
 ---
 
-## 📑 Table of contents
+## Table of contents
 
-- [What it does](#-what-it-does)
-- [Browser support](#-browser-support)
-- [What works and what does not](#-what-works-and-what-does-not)
-- [Language support](#-language-support)
-- [Install](#-install)
-- [Build from source](#-build-from-source)
-- [How it works](#-how-it-works)
-- [Project layout](#-project-layout)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [What it does](#what-it-does)
+- [Browser support](#browser-support)
+- [What works and what does not](#what-works-and-what-does-not)
+- [Language support](#language-support)
+- [Install](#install)
+- [Build from source](#build-from-source)
+- [How it works](#how-it-works)
+- [Project layout](#project-layout)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## ✨ What it does
+## What it does
 
 | Feature | Description |
 | --- | --- |
@@ -53,7 +53,7 @@ Manifest V2 and V3 from one codebase.
 
 ---
 
-## 🌐 Browser support
+## Browser support
 
 There are only three browser engines. Everything else is a fork that runs one of these builds unchanged.
 
@@ -92,7 +92,7 @@ All of this is generated from a single description in [`scripts/manifest.mjs`](s
 
 ---
 
-## ✅ What works and what does not
+## What works and what does not
 
 Knowing this up front saves a lot of confusion.
 
@@ -141,7 +141,7 @@ The popup tells you at the bottom:
 
 ---
 
-## 🌍 Language support
+## Language support
 
 The interface follows your browser's language. 56 locales ship with the extension; the ones not yet fully translated fall back to English string by string, so nothing is ever blank.
 
@@ -165,7 +165,7 @@ The interface follows your browser's language. 56 locales ship with the extensio
 
 <br>
 
-These locales have the extension name and description translated; the rest of the interface falls back to English. **Translating one is the easiest possible first contribution** — see [Contributing](#-contributing).
+These locales have the extension name and description translated; the rest of the interface falls back to English. **Translating one is the easiest possible first contribution** — see [Contributing](#contributing).
 
 | Code | Language | Code | Language | Code | Language |
 | --- | --- | --- | --- | --- | --- |
@@ -189,7 +189,7 @@ These locales have the extension name and description translated; the rest of th
 
 ---
 
-## 📦 Install
+## Install
 
 ### From a store
 
@@ -243,7 +243,7 @@ Safari requires converting the extension into an Xcode project first. See [`docs
 
 ---
 
-## 🔨 Build from source
+## Build from source
 
 > [!NOTE]
 > **pnpm is recommended but not required.** npm and yarn work exactly the same — substitute `npm run` or `yarn` for `pnpm run` everywhere below. Node.js 20 or newer is needed.
@@ -253,8 +253,11 @@ pnpm install              # install dev dependencies
 pnpm run dev              # watch build for Chrome MV3
 pnpm run dev:firefox      # watch build for Firefox MV2
 pnpm run build            # build all 7 targets into dist/
-pnpm run package          # build all targets and zip each for store upload
+pnpm run package          # build all targets AND zip each for store upload
 ```
+
+> [!IMPORTANT]
+> Uploading to a store? Use **`pnpm run package`**, not `pnpm run build`. `build` refreshes the unpacked folders only — it deletes any existing zip rather than updating it, so that a stale archive can never be uploaded by mistake. See [`docs/publishing.md`](docs/publishing.md).
 
 <details>
 <summary><b>All available scripts</b></summary>
@@ -292,7 +295,7 @@ node scripts/build.mjs --help
 
 ---
 
-## ⚙️ How it works
+## How it works
 
 The extension boosts audio by routing the page's media through a Web Audio graph.
 
@@ -356,7 +359,7 @@ Nothing is ever sent anywhere. The extension makes no network requests at all.
 
 ---
 
-## 📁 Project layout
+## Project layout
 
 ```
 volume-booster-extension/
@@ -386,7 +389,7 @@ volume-booster-extension/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are very welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
@@ -404,7 +407,7 @@ Pull requests are very welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the f
 
 ---
 
-## 📄 License
+## License
 
 [PolyForm Noncommercial License 1.0.0](LICENSE.md)
 

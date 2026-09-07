@@ -328,10 +328,26 @@ async function buildTarget(target, pkg, options) {
   const note = TARGET_NOTES[target] ? `  (${TARGET_NOTES[target]})` : '';
   console.log(`  built ${target}${note}`);
 
+  const zipPath = path.join(distDir, `${target}-${pkg.version}.zip`);
+
   if (options.zip) {
-    const zipPath = path.join(distDir, `${target}-${pkg.version}.zip`);
     await zipDirectory(outDir, zipPath);
     console.log(`  zipped ${path.relative(root, zipPath)}`);
+    return;
+  }
+
+  // Without --zip the folder was just rebuilt but any existing archive was
+  // not, so a stale zip would silently disagree with the fresh directory. That
+  // is exactly the kind of mismatch that gets an outdated build uploaded to a
+  // store, so the archive is deleted rather than left to rot.
+  try {
+    await stat(zipPath);
+    await rm(zipPath, { force: true });
+    console.log(
+      `  removed stale ${path.basename(zipPath)} - re-run with --zip to repackage`,
+    );
+  } catch {
+    // No archive to invalidate.
   }
 }
 

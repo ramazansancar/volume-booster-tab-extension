@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Before filing, please check the known limitations in the
-        [README](../blob/main/README.md#-what-works-and-what-does-not).
+        [README](../blob/main/README.md#what-works-and-what-does-not).
 
         DRM sites (Netflix, Disney+, Prime Video, Spotify) deliberately hide
         their audio from extensions. Those are documented limitations, not bugs.

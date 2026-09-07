@@ -19,6 +19,8 @@
  *                                        conversion with xcrun (see docs)
  */
 
+import process from 'node:process';
+
 export const TARGETS = /** @type {const} */ ([
   'chrome-mv3',
   'chrome-mv2',
@@ -42,6 +44,25 @@ export const DEFAULT_TARGETS = /** @type {const} */ ([
 
 /** Stable add-on id, required by Firefox for storage and update consistency. */
 const FIREFOX_ADDON_ID = 'volume-booster@ramazansancar.dev';
+
+/**
+ * First Firefox releases that understand
+ * `browser_specific_settings.gecko.data_collection_permissions`.
+ *
+ * addons-linter emits KEY_FIREFOX_UNSUPPORTED_BY_MIN_VERSION when
+ * `strict_min_version` predates these. That warning is informational: older
+ * releases ignore the unknown key and install normally, and AMO accepts the
+ * submission either way.
+ *
+ * We deliberately keep the lower minimum by default, because raising it to
+ * silence a warning would drop every Firefox user below 140 — including the
+ * current ESR. Set STRICT_DATA_CONSENT_MIN=1 to raise it instead, for a
+ * warning-free submission when those older users no longer matter.
+ */
+const DATA_CONSENT_MIN_DESKTOP = '140.0';
+const DATA_CONSENT_MIN_ANDROID = '142.0';
+
+const raiseMinForDataConsent = process.env.STRICT_DATA_CONSENT_MIN === '1';
 
 /** Human-readable notes shown by the build script, one per target. */
 export const TARGET_NOTES = {
@@ -254,16 +275,35 @@ function buildCsp(version) {
  */
 function buildBrowserSpecific(browser, version) {
   if (isGecko(browser)) {
+    // MV3 landed in Firefox 109; MV2 works much further back.
+    const baseMinDesktop = version === 3 ? '109.0' : '91.0';
+    const baseMinAndroid = version === 3 ? '120.0' : '113.0';
+
     return {
       browser_specific_settings: {
         gecko: {
           id: FIREFOX_ADDON_ID,
-          // MV3 landed in Firefox 109; MV2 works much further back.
-          strict_min_version: version === 3 ? '109.0' : '91.0',
+          strict_min_version: raiseMinForDataConsent
+            ? DATA_CONSENT_MIN_DESKTOP
+            : baseMinDesktop,
+          // Required by addons.mozilla.org for all new submissions. This
+          // extension makes no network requests and stores nothing beyond the
+          // user's own settings in local storage, so it collects no data at
+          // all, which `none` is the declaration for. `none` stands alone; it
+          // cannot be combined with any specific data category.
+          //
+          // Firefox ignores an unknown key, so declaring it does not raise the
+          // effective minimum version (desktop 140 / Android 142) needed to
+          // show the consent UI.
+          data_collection_permissions: {
+            required: ['none'],
+          },
         },
         // Firefox for Android reads its own key and needs an explicit minimum.
         gecko_android: {
-          strict_min_version: version === 3 ? '120.0' : '113.0',
+          strict_min_version: raiseMinForDataConsent
+            ? DATA_CONSENT_MIN_ANDROID
+            : baseMinAndroid,
         },
       },
     };

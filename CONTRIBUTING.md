@@ -68,7 +68,7 @@ Open an issue with:
 - Your browser and version
 
 > [!IMPORTANT]
-> Netflix, Disney+, Prime Video and Spotify use DRM that deliberately hides audio from page scripts. These are documented limitations, not bugs — see [What works and what does not](README.md#-what-works-and-what-does-not) before filing.
+> Netflix, Disney+, Prime Video and Spotify use DRM that deliberately hides audio from page scripts. These are documented limitations, not bugs — see [What works and what does not](README.md#what-works-and-what-does-not) before filing.
 
 ### 🎚️ Equalizer presets
 
