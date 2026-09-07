@@ -1,0 +1,75 @@
+<!doctype html>
+<!--
+  Store screenshot background.
+
+  Rendered on its own and captured to a PNG, which is then used as the backdrop
+  behind every scene. Edit this file to change the look of the listing images;
+  scripts/screenshots.mjs substitutes {{WIDTH}} and {{HEIGHT}} before rendering.
+
+  Keep it to a single full-bleed element. Anything that depends on the viewport
+  height in CSS units will not survive the capture: headless Chrome lays a page
+  out in a viewport smaller than the window it is given, so use the substituted
+  pixel values rather than vh.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: {{WIDTH}}px;
+        height: {{HEIGHT}}px;
+        overflow: hidden;
+        position: relative;
+        background: #0f172a;
+      }
+
+      /* Base wash: deep blue falling to near-black towards the bottom right. */
+      .base {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 55%, #16181d 100%);
+      }
+
+      /* A soft highlight behind where the popup sits, so the panel reads as
+         lit rather than pasted on. */
+      .glow {
+        position: absolute;
+        top: -20%;
+        left: -10%;
+        width: 70%;
+        height: 110%;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(59, 130, 246, 0.22) 0%,
+          rgba(59, 130, 246, 0) 65%
+        );
+      }
+
+      /* A second, cooler highlight on the text side keeps the right half from
+         going flat. */
+      .glow--right {
+        top: 10%;
+        left: auto;
+        right: -15%;
+        width: 55%;
+        height: 80%;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(96, 165, 250, 0.1) 0%,
+          rgba(96, 165, 250, 0) 70%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="base"></div>
+    <div class="glow"></div>
+    <div class="glow glow--right"></div>
+  </body>
+</html>

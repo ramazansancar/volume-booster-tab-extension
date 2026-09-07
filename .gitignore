@@ -19,3 +19,6 @@ yarn-error.log*
 .idea/
 coverage/
 .eslintcache
+
+# Working directory for the screenshot generator
+.screenshots/
