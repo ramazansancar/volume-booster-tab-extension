@@ -27,6 +27,7 @@ Manifest V2 and V3 from one codebase.
 - [Build from source](#build-from-source)
 - [How it works](#how-it-works)
 - [Project layout](#project-layout)
+- [Privacy](#privacy)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -378,6 +379,17 @@ volume-booster-tab-extension/
 ├── tests/                    Vitest unit tests
 └── dist/                     Build output, one folder per target
 ```
+
+---
+
+## Privacy
+
+The extension collects nothing, sends nothing, and makes no network requests at
+all. Per-tab boost state lives in memory only; a site preference is written to
+`storage.local` solely when you tick **Remember this site**, and you can delete
+it from the options page at any time.
+
+Full text: **[PRIVACY.md](PRIVACY.md)**.
 
 ---
 

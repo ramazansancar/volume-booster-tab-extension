@@ -291,12 +291,17 @@ in any of Chrome's categories.
 - [x] I do not use or transfer user data for purposes that are unrelated to my item's single purpose
 - [x] I do not use or transfer user data to determine creditworthiness or for lending purposes
 
-**Privacy policy URL:** not required, since no data is collected. If the
-dashboard insists on one, link the privacy section of the README:
+**Privacy policy URL:** always fill this in. A README anchor is **not** a valid
+privacy policy — a submission linking one was rejected under _User Data Privacy_
+("the privacy policy link does not lead to a valid privacy policy"). Link the
+dedicated page instead:
 
 ```text
-https://github.com/ramazansancar/volume-booster-tab-extension#privacy
+https://github.com/ramazansancar/volume-booster-tab-extension/blob/master/PRIVACY.md
 ```
+
+The page must be publicly reachable without a login, and must load as a privacy
+policy on its own — not as a section of another document.
 
 ---
 

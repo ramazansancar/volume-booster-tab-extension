@@ -116,7 +116,7 @@ Two fields have no Chrome counterpart:
 | Field                         | Answer                                                                                                                                                       |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Category (required)           | **Productivity** — Edge's list has no _Tools_ entry. See [`chrome-submission.md`](chrome-submission.md#category) for why not Accessibility or Entertainment. |
-| Privacy policy URL (required) | `https://github.com/ramazansancar/volume-booster-tab-extension#privacy` — Edge demands the field even when nothing is collected.                             |
+| Privacy policy URL (required) | `https://github.com/ramazansancar/volume-booster-tab-extension/blob/master/PRIVACY.md` — a README anchor is rejected as invalid; use the standalone [`PRIVACY.md`](../PRIVACY.md) page. Chrome requires it too.                             |
 
 ---
 
