@@ -7,11 +7,14 @@
 Works in Chrome, Firefox, Edge, Opera, Brave, Vivaldi and Safari.
 Manifest V2 and V3 from one codebase.
 
+**[⬇️ Install for Firefox](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/)** — Chrome and Edge listings are in review.
+
 [![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![Manifest V2 + V3](https://img.shields.io/badge/manifest-V2%20%7C%20V3-success.svg)](#browser-support)
 [![Browsers](https://img.shields.io/badge/browsers-7%20targets-orange.svg)](#browser-support)
 [![Languages](https://img.shields.io/badge/languages-55-brightgreen.svg)](#language-support)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Firefox Add-ons](https://img.shields.io/amo/v/volume-booster-tab?label=firefox%20add-ons&color=orange)](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/)
 
 </div>
 
@@ -184,7 +187,15 @@ All 55 locales are fully translated — every string, in every language, with no
 
 ### From a store
 
-Store listings are not published yet. Until then, install from source below.
+| Store | Status | Link |
+| --- | --- | --- |
+| 🦊 **Firefox Add-ons** | ✅ Published | **[Volume Booster Tab](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/)** |
+| 🌐 **Chrome Web Store** | ⏳ In review | Submitted, awaiting approval |
+| 🔵 **Microsoft Edge Add-ons** | ⏳ In review | Submitted, awaiting approval |
+| 🧭 **Safari** | ❌ Not planned | Build from source — see [`docs/safari.md`](docs/safari.md) |
+
+> [!NOTE]
+> The Firefox listing also covers LibreWolf, Waterfox, Zen, Floorp and Firefox for Android. Chromium forks (Brave, Vivaldi, Opera, Arc) can install the Chrome Web Store build once it is live.
 
 ### From source (unpacked)
 
@@ -219,7 +230,7 @@ Then load the folder for your browser:
 3. Select `dist/firefox-mv2/manifest.json`
 
 > [!NOTE]
-> Temporary add-ons are removed when Firefox closes. For a permanent install the extension must be signed by Mozilla.
+> Temporary add-ons are removed when Firefox closes. For a permanent install use the signed [AMO listing](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/).
 
 </details>
 
