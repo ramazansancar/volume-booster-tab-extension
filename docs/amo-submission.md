@@ -10,36 +10,20 @@ Copy-paste material for the addons.mozilla.org submission form. For the Chrome W
 ## Version notes (v0.2.1)
 
 ```text
-Removes two permissions the add-on no longer needs. "tabs" and "activeTab"
-are gone: the host permissions already covered everything they were used
-for, including reading a tab's URL to apply a per-site volume. Nothing about
-what the add-on does has changed, and it asks for less than before.
+Removes two permissions the add-on no longer needs. "tabs" and "activeTab" are gone: the host permissions already covered everything they were used for, including reading a tab's URL to apply a per-site volume. Nothing about what the add-on does has changed, and it asks for less than before.
 
-Fixes audio on sites that run their player in an iframe, which is most of
-them. Previously the boost silently did nothing there.
+Fixes audio on sites that run their player in an iframe, which is most of them. Previously the boost silently did nothing there.
 
-Fixes a video going permanently mute after setting a volume and switching to
-another stream. Players that reuse one <video> element across streams left it
-routed nowhere until the page was reloaded.
+Fixes a video going permanently mute after setting a volume and switching to another stream. Players that reuse one <video> element across streams left it routed nowhere until the page was reloaded.
 
-Fixes the extension on Chromium builds running Manifest V2, where several
-browser APIs are callback-only and the popup failed to open.
+Fixes the extension on Chromium builds running Manifest V2, where several browser APIs are callback-only and the popup failed to open.
 
-An embedded widget could previously relabel the tab as its own origin - an
-embedded payment frame could make a stream page read as m.stripe.network, and
-"Remember this site" would have saved the setting under that domain. Only the
-top-level document defines the tab's identity now.
+An embedded widget could previously relabel the tab as its own origin - an embedded payment frame could make a stream page read as m.stripe.network, and "Remember this site" would have saved the setting under that domain. Only the top-level document defines the tab's identity now.
 
-The popup now explains why a page cannot be boosted instead of leaving the
-status line blank, and the bypass control names the current state (Active or
-Bypassed) rather than the action.
+The popup now explains why a page cannot be boosted instead of leaving the status line blank, and the bypass control names the current state (Active or Bypassed) rather than the action.
 
 PERMISSIONS
-The add-on now requests only "storage" and "webNavigation" alongside its host
-access. webNavigation enumerates a tab's frames so the volume reaches a player
-inside an iframe; it is used for nothing else, and no page content is read and
-no browsing history is collected, stored or transmitted. The add-on still makes
-no network requests of any kind.
+The add-on now requests only "storage" and "webNavigation" alongside its host access. webNavigation enumerates a tab's frames so the volume reaches a player inside an iframe; it is used for nothing else, and no page content is read and no browsing history is collected, stored or transmitted. The add-on still makes no network requests of any kind.
 ```
 
 ---
@@ -55,9 +39,7 @@ no network requests of any kind.
 No account or login is required to test this add-on.
 
 WHAT IT DOES
-Routes a page's <video> and <audio> elements through a Web Audio graph
-(equalizer -> limiter -> gain -> panner) to raise volume beyond what the
-page itself allows.
+Routes a page's <video> and <audio> elements through a Web Audio graph (equalizer -> limiter -> gain -> panner) to raise volume beyond what the page itself allows.
 
 HOW TO TEST
 1. Open https://www.youtube.com/watch?v=aqz-KE-bpKQ and start playback.
@@ -70,10 +52,7 @@ HOW TO TEST
    and temporary unless the user ticks "Remember this site".
 
 EXPECTED LIMITATION
-DRM sites (Netflix, Spotify) cannot be boosted; Encrypted Media Extensions
-hide the audio from page scripts. The popup reports "This page blocks audio
-processing" rather than failing silently. Browser security boundary, not a
-defect.
+DRM sites (Netflix, Spotify) cannot be boosted; Encrypted Media Extensions hide the audio from page scripts. The popup reports "This page blocks audio processing" rather than failing silently. Browser security boundary, not a defect.
 
 PERMISSIONS
 - storage       Saves the user's own preferences locally. Nothing else stored.
@@ -86,10 +65,7 @@ PERMISSIONS
                 credentials.
 
 DATA COLLECTION
-None. Declared as data_collection_permissions.required = ["none"]. The add-on
-makes no network requests of any kind: no telemetry, no analytics, no remote
-configuration, no external script or font loading. Settings never leave
-storage.local on the user's own machine.
+None. Declared as data_collection_permissions.required = ["none"]. The add-on makes no network requests of any kind: no telemetry, no analytics, no remote configuration, no external script or font loading. Settings never leave storage.local on the user's own machine.
 
 SOURCE AND BUILD (Node.js 20 or newer, any OS)
   git clone https://github.com/ramazansancar/volume-booster-tab-extension.git
@@ -97,35 +73,24 @@ SOURCE AND BUILD (Node.js 20 or newer, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.2.1.zip
-The attached source archive contains BUILD.md at its root with the same steps.
+Uploaded file: dist/firefox-mv2-0.2.1.zip The attached source archive contains BUILD.md at its root with the same steps.
 
-Bundler is esbuild with its standard minification. No obfuscation, no name
-mangling beyond esbuild defaults, no code generated from templates. To read
-the output unminified with inline sourcemaps:
+Bundler is esbuild with its standard minification. No obfuscation, no name mangling beyond esbuild defaults, no code generated from templates. To read the output unminified with inline sourcemaps:
 
   node scripts/build.mjs --target=firefox-mv2 --dev
 
-Three files in the package are generated rather than hand-written, each from
-a single source table, and all are committed so the build does not depend on
-regenerating them:
+Three files in the package are generated rather than hand-written, each from a single source table, and all are committed so the build does not depend on regenerating them:
   manifest.json        <- scripts/manifest.mjs  (one description, 7 targets)
   _locales/*/          <- scripts/locales.mjs   (55 locales, one table)
   icons/*.png          <- scripts/icons.mjs     (drawn in code, no image lib)
-Running `npm run locales` and `npm run icons` reproduces them byte for byte;
-CI verifies this on every push.
+Running `npm run locales` and `npm run icons` reproduces them byte for byte; CI verifies this on every push.
 
-The extension ships zero runtime dependencies. Every npm package is a
-devDependency used only at build time.
+The extension ships zero runtime dependencies. Every npm package is a devDependency used only at build time.
 
 License: AGPL-3.0-only (GNU Affero General Public License v3.0)
 
 NOTE ON THE TWO LINTER WARNINGS
-addons-linter reports KEY_FIREFOX_UNSUPPORTED_BY_MIN_VERSION and its Android
-counterpart because strict_min_version is 91.0, which predates Firefox 140
-where data_collection_permissions was introduced. This is deliberate: older
-releases ignore the unknown key and install normally, and raising the minimum
-purely to silence the warning would drop every user below 140, ESR included.
+addons-linter reports KEY_FIREFOX_UNSUPPORTED_BY_MIN_VERSION and its Android counterpart because strict_min_version is 91.0, which predates Firefox 140 where data_collection_permissions was introduced. This is deliberate: older releases ignore the unknown key and install normally, and raising the minimum purely to silence the warning would drop every user below 140, ESR included.
 ```
 
 ### Compact version — use this when the form truncates
@@ -136,9 +101,7 @@ The field silently cuts long input. This version fits and still carries everythi
 No account or login is required to test this add-on.
 
 WHAT IT DOES
-Routes a page's <video> and <audio> elements through a Web Audio graph
-(equalizer -> limiter -> gain -> panner) to raise volume beyond what the
-page allows. Each tab is boosted independently.
+Routes a page's <video> and <audio> elements through a Web Audio graph (equalizer -> limiter -> gain -> panner) to raise volume beyond what the page allows. Each tab is boosted independently.
 
 PERMISSIONS
 - storage       Saves the user's own preferences locally. Nothing else stored.
@@ -151,8 +114,7 @@ PERMISSIONS
                 credentials.
 
 DATA COLLECTION
-None. Declared as data_collection_permissions.required = ["none"]. No network
-requests of any kind: no telemetry, no analytics, no remote code or fonts.
+None. Declared as data_collection_permissions.required = ["none"]. No network requests of any kind: no telemetry, no analytics, no remote code or fonts.
 
 SOURCE AND BUILD (Node.js 20+, any OS)
   git clone https://github.com/ramazansancar/volume-booster-tab-extension.git
@@ -160,22 +122,16 @@ SOURCE AND BUILD (Node.js 20+, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.2.1.zip
-BUILD.md at the root of the source archive repeats these steps.
+Uploaded file: dist/firefox-mv2-0.2.1.zip BUILD.md at the root of the source archive repeats these steps.
 
 esbuild with standard minification; no obfuscation. Unminified output:
   node scripts/build.mjs --target=firefox-mv2 --dev
 
-manifest.json, _locales/ and icons/ are generated from single source tables
-by scripts/manifest.mjs, scripts/locales.mjs and scripts/icons.mjs, and are
-reproducible byte for byte. Zero runtime dependencies.
+manifest.json, _locales/ and icons/ are generated from single source tables by scripts/manifest.mjs, scripts/locales.mjs and scripts/icons.mjs, and are reproducible byte for byte. Zero runtime dependencies.
 
 License: AGPL-3.0-only
 
-The two KEY_FIREFOX_UNSUPPORTED_BY_MIN_VERSION warnings are deliberate:
-strict_min_version 91 predates Firefox 140 where data_collection_permissions
-was introduced. Older releases ignore the key and install normally; raising
-the minimum would drop ESR users.
+The two KEY_FIREFOX_UNSUPPORTED_BY_MIN_VERSION warnings are deliberate: strict_min_version 91 predates Firefox 140 where data_collection_permissions was introduced. Older releases ignore the key and install normally; raising the minimum would drop ESR users.
 ```
 
 > [!IMPORTANT]
@@ -202,8 +158,7 @@ Boost any tab's volume up to 600% with a limiter, 6-band equalizer, stereo balan
 **Description**
 
 ```text
-Volume Booster Tab raises the volume of any browser tab beyond what the page
-itself allows, and gives you real control over how that sound is shaped.
+Volume Booster Tab raises the volume of any browser tab beyond what the page itself allows, and gives you real control over how that sound is shaped.
 
 FEATURES
 
@@ -217,59 +172,40 @@ FEATURES
 
 EVERY TAB IS INDEPENDENT
 
-This is the part most volume boosters get wrong. Every tab keeps its own
-volume, its own equalizer curve, its own balance. Run a stream at 300% in one
-tab and music at 120% in another; changing one never touches the other.
+This is the part most volume boosters get wrong. Every tab keeps its own volume, its own equalizer curve, its own balance. Run a stream at 300% in one tab and music at 120% in another; changing one never touches the other.
 
-The toolbar badge shows the level of the tab you are looking at, so you can
-tell at a glance which tabs are amplified.
+The toolbar badge shows the level of the tab you are looking at, so you can tell at a glance which tabs are amplified.
 
 TEMPORARY BY DEFAULT
 
-A boost is forgotten when you close the tab. A setting you chose for one video
-can never surprise you weeks later on a different page.
+A boost is forgotten when you close the tab. A setting you chose for one video can never surprise you weeks later on a different page.
 
-If you do want a site to always open at the same volume, tick "Remember this
-site" in the popup. The options page lists every site you have saved and lets
-you remove any of them, or change the default so that new tabs remember
-automatically.
+If you do want a site to always open at the same volume, tick "Remember this site" in the popup. The options page lists every site you have saved and lets you remove any of them, or change the default so that new tabs remember automatically.
 
 KEEPS UP WITH STREAMING SITES
 
-Sites like YouTube and Twitch replace their video player when you move to the
-next episode or stream, without reloading the page. Many boosters lose the
-audio at that moment and keep showing a level they are no longer applying.
-This one watches for the swap and reapplies your settings to the new player,
-so the volume you set stays the volume you get.
+Sites like YouTube and Twitch replace their video player when you move to the next episode or stream, without reloading the page. Many boosters lose the audio at that moment and keep showing a level they are no longer applying. This one watches for the swap and reapplies your settings to the new player, so the volume you set stays the volume you get.
 
 PRIVACY
 
-No tracking. No analytics. No account. No network requests of any kind, not
-even for fonts. Your settings never leave your own machine.
+No tracking. No analytics. No account. No network requests of any kind, not even for fonts. Your settings never leave your own machine.
 
 WHAT IT CANNOT DO
 
-DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide
-their audio from extensions by design, so they cannot be boosted. When a page
-cannot be processed the popup says so plainly instead of silently doing
-nothing.
+DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
 
-Browser pages such as about: and the add-ons site are off limits to every
-extension, including this one.
+Browser pages such as about: and the add-ons site are off limits to every extension, including this one.
 
 PLEASE BOOST RESPONSIBLY
 
-High volume can damage both your hearing and your speakers, especially with
-headphones. The limiter is on by default above 100% and you should leave it
-on. Raising the ceiling past 600% in settings is at your own risk.
+High volume can damage both your hearing and your speakers, especially with headphones. The limiter is on by default above 100% and you should leave it on. Raising the ceiling past 600% in settings is at your own risk.
 
 OPEN SOURCE
 
 Source code, issue tracker and contribution guide:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
-Licensed under the GNU Affero General Public License v3.0. Translation
-corrections from native speakers are especially welcome.
+Licensed under the GNU Affero General Public License v3.0. Translation corrections from native speakers are especially welcome.
 ```
 
 ### Turkish listing
@@ -290,9 +226,7 @@ Herhangi bir sekmenin sesini %600'e kadar yükseltin. Limitör, 6 bantlı ekolay
 **Description (tr)**
 
 ```text
-Volume Booster Tab, herhangi bir tarayıcı sekmesinin sesini sayfanın kendi
-izin verdiği seviyenin ötesine çıkarır ve o sesi nasıl şekillendireceğiniz
-üzerinde gerçek kontrol verir.
+Volume Booster Tab, herhangi bir tarayıcı sekmesinin sesini sayfanın kendi izin verdiği seviyenin ötesine çıkarır ve o sesi nasıl şekillendireceğiniz üzerinde gerçek kontrol verir.
 
 ÖZELLİKLER
 
@@ -306,60 +240,40 @@ izin verdiği seviyenin ötesine çıkarır ve o sesi nasıl şekillendireceğin
 
 HER SEKME BAĞIMSIZ
 
-Çoğu ses yükselticinin atladığı nokta burası. Her sekme kendi ses seviyesini,
-kendi ekolayzer eğrisini, kendi dengesini tutar. Bir sekmede yayını %300'de,
-diğerinde müziği %120'de çalıştırın; birini değiştirmek diğerine dokunmaz.
+Çoğu ses yükselticinin atladığı nokta burası. Her sekme kendi ses seviyesini, kendi ekolayzer eğrisini, kendi dengesini tutar. Bir sekmede yayını %300'de, diğerinde müziği %120'de çalıştırın; birini değiştirmek diğerine dokunmaz.
 
-Araç çubuğu rozeti baktığınız sekmenin seviyesini gösterir, böylece hangi
-sekmelerin yükseltildiğini bir bakışta görürsünüz.
+Araç çubuğu rozeti baktığınız sekmenin seviyesini gösterir, böylece hangi sekmelerin yükseltildiğini bir bakışta görürsünüz.
 
 VARSAYILAN OLARAK GEÇİCİ
 
-Yükseltme, sekmeyi kapattığınızda unutulur. Bir video için seçtiğiniz ayar,
-haftalar sonra başka bir sayfada sizi şaşırtamaz.
+Yükseltme, sekmeyi kapattığınızda unutulur. Bir video için seçtiğiniz ayar, haftalar sonra başka bir sayfada sizi şaşırtamaz.
 
-Bir sitenin her zaman aynı seviyede açılmasını istiyorsanız açılır penceredeki
-"Bu siteyi hatırla" seçeneğini işaretleyin. Ayarlar sayfası kaydettiğiniz tüm
-siteleri listeler, istediğinizi kaldırmanıza izin verir ve yeni sekmelerin
-otomatik hatırlaması için varsayılanı değiştirebilirsiniz.
+Bir sitenin her zaman aynı seviyede açılmasını istiyorsanız açılır penceredeki "Bu siteyi hatırla" seçeneğini işaretleyin. Ayarlar sayfası kaydettiğiniz tüm siteleri listeler, istediğinizi kaldırmanıza izin verir ve yeni sekmelerin otomatik hatırlaması için varsayılanı değiştirebilirsiniz.
 
 YAYIN SİTELERİYLE UYUMLU
 
-YouTube ve Twitch gibi siteler, bir sonraki bölüme veya yayına geçtiğinizde
-sayfayı yeniden yüklemeden video oynatıcısını değiştirir. Birçok yükseltici o
-anda sesi kaybeder ve artık uygulamadığı bir seviyeyi göstermeye devam eder.
-Bu eklenti değişimi izler ve ayarlarınızı yeni oynatıcıya yeniden uygular;
-böylece ayarladığınız ses, duyduğunuz ses olarak kalır.
+YouTube ve Twitch gibi siteler, bir sonraki bölüme veya yayına geçtiğinizde sayfayı yeniden yüklemeden video oynatıcısını değiştirir. Birçok yükseltici o anda sesi kaybeder ve artık uygulamadığı bir seviyeyi göstermeye devam eder. Bu eklenti değişimi izler ve ayarlarınızı yeni oynatıcıya yeniden uygular; böylece ayarladığınız ses, duyduğunuz ses olarak kalır.
 
 GİZLİLİK
 
-Takip yok. Analitik yok. Hesap yok. Hiçbir türde ağ isteği yok, yazı tipleri
-için bile. Ayarlarınız kendi cihazınızdan hiç çıkmaz.
+Takip yok. Analitik yok. Hesap yok. Hiçbir türde ağ isteği yok, yazı tipleri için bile. Ayarlarınız kendi cihazınızdan hiç çıkmaz.
 
 YAPAMADIKLARI
 
-Netflix, Disney+, Prime Video ve Spotify gibi DRM korumalı servisler seslerini
-eklentilerden tasarım gereği gizler, bu yüzden yükseltilemezler. Bir sayfa
-işlenemediğinde açılır pencere sessizce hiçbir şey yapmak yerine bunu açıkça
-söyler.
+Netflix, Disney+, Prime Video ve Spotify gibi DRM korumalı servisler seslerini eklentilerden tasarım gereği gizler, bu yüzden yükseltilemezler. Bir sayfa işlenemediğinde açılır pencere sessizce hiçbir şey yapmak yerine bunu açıkça söyler.
 
-about: gibi tarayıcı sayfaları ve eklenti mağazası, bu eklenti dahil her
-eklentiye kapalıdır.
+about: gibi tarayıcı sayfaları ve eklenti mağazası, bu eklenti dahil her eklentiye kapalıdır.
 
 LÜTFEN SORUMLU KULLANIN
 
-Yüksek ses hem işitmenize hem hoparlörlerinize zarar verebilir, özellikle
-kulaklıkla. Limitör %100 üzerinde varsayılan olarak açıktır ve açık
-bırakmalısınız. Ayarlardan tavanı %600'ün üzerine çıkarmak tamamen kendi
-sorumluluğunuzdadır.
+Yüksek ses hem işitmenize hem hoparlörlerinize zarar verebilir, özellikle kulaklıkla. Limitör %100 üzerinde varsayılan olarak açıktır ve açık bırakmalısınız. Ayarlardan tavanı %600'ün üzerine çıkarmak tamamen kendi sorumluluğunuzdadır.
 
 AÇIK KAYNAK
 
 Kaynak kodu, hata takibi ve katkı rehberi:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
-GNU Affero General Public License v3.0 ile lisanslanmıştır. Anadili Türkçe
-olanlardan gelen çeviri düzeltmeleri özellikle memnuniyetle karşılanır.
+GNU Affero General Public License v3.0 ile lisanslanmıştır. Anadili Türkçe olanlardan gelen çeviri düzeltmeleri özellikle memnuniyetle karşılanır.
 ```
 
 **Categories:** Audio & Video (primary), Appearance or Other (secondary)

@@ -30,8 +30,7 @@ Boost any tab's volume to 600% with a limiter, equalizer and balance. Every tab 
 **Description** (16,000 characters max)
 
 ```text
-Volume Booster Tab raises the volume of any browser tab beyond what the page
-itself allows, and gives you real control over how that sound is shaped.
+Volume Booster Tab raises the volume of any browser tab beyond what the page itself allows, and gives you real control over how that sound is shaped.
 
 FEATURES
 
@@ -45,50 +44,33 @@ FEATURES
 
 EVERY TAB IS INDEPENDENT
 
-This is the part most volume boosters get wrong. Every tab keeps its own
-volume, its own equalizer curve, its own balance. Run a stream at 300% in one
-tab and music at 120% in another; changing one never touches the other.
+This is the part most volume boosters get wrong. Every tab keeps its own volume, its own equalizer curve, its own balance. Run a stream at 300% in one tab and music at 120% in another; changing one never touches the other.
 
-The toolbar badge shows the level of the tab you are looking at, so you can
-tell at a glance which tabs are amplified.
+The toolbar badge shows the level of the tab you are looking at, so you can tell at a glance which tabs are amplified.
 
 TEMPORARY BY DEFAULT
 
-A boost is forgotten when you close the tab. A setting you chose for one video
-can never surprise you weeks later on a different page.
+A boost is forgotten when you close the tab. A setting you chose for one video can never surprise you weeks later on a different page.
 
-If you do want a site to always open at the same volume, tick "Remember this
-site" in the popup. The settings page lists every site you have saved, lets you
-edit or remove any of them, and can make new tabs remember automatically.
+If you do want a site to always open at the same volume, tick "Remember this site" in the popup. The settings page lists every site you have saved, lets you edit or remove any of them, and can make new tabs remember automatically.
 
 KEEPS UP WITH STREAMING SITES
 
-Sites like YouTube, Twitch and Kick replace their video player when you move to
-the next episode or stream, without reloading the page. Many boosters lose the
-audio at that moment and keep showing a level they are no longer applying.
-This one watches for the swap and reapplies your settings to the new player,
-so the volume you set stays the volume you get.
+Sites like YouTube, Twitch and Kick replace their video player when you move to the next episode or stream, without reloading the page. Many boosters lose the audio at that moment and keep showing a level they are no longer applying. This one watches for the swap and reapplies your settings to the new player, so the volume you set stays the volume you get.
 
 PRIVACY
 
-No tracking. No analytics. No account. No network requests of any kind, not
-even for fonts. Your settings never leave your own machine.
+No tracking. No analytics. No account. No network requests of any kind, not even for fonts. Your settings never leave your own machine.
 
 WHAT IT CANNOT DO
 
-DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide
-their audio from extensions by design, so they cannot be boosted. When a page
-cannot be processed the popup says so plainly instead of silently doing
-nothing.
+DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
 
-Browser pages such as chrome:// and the Web Store are off limits to every
-extension, including this one.
+Browser pages such as chrome:// and the Web Store are off limits to every extension, including this one.
 
 PLEASE BOOST RESPONSIBLY
 
-High volume can damage both your hearing and your speakers, especially with
-headphones. The limiter is on by default above 100% and you should leave it
-on. Raising the ceiling past 600% in settings is at your own risk.
+High volume can damage both your hearing and your speakers, especially with headphones. The limiter is on by default above 100% and you should leave it on. Raising the ceiling past 600% in settings is at your own risk.
 
 OPEN SOURCE
 
@@ -121,9 +103,7 @@ Her sekmenin sesini %600’e kadar yükseltin. Limitör, ekolayzer ve denge. Sek
 **Açıklama**
 
 ```text
-Sekme Ses Yükseltici, herhangi bir sekmenin sesini sayfanın kendi izin
-verdiğinin ötesine taşır ve o sesin nasıl şekilleneceği üzerinde gerçek
-denetim verir.
+Sekme Ses Yükseltici, herhangi bir sekmenin sesini sayfanın kendi izin verdiğinin ötesine taşır ve o sesin nasıl şekilleneceği üzerinde gerçek denetim verir.
 
 ÖZELLİKLER
 
@@ -137,54 +117,33 @@ denetim verir.
 
 HER SEKME BAĞIMSIZ
 
-Ses yükseltici eklentilerin çoğunun yanlış yaptığı yer burası. Her sekme kendi
-ses seviyesini, kendi ekolayzer eğrisini, kendi dengesini tutar. Bir sekmede
-yayını %300’de, başka bir sekmede müziği %120’de çalıştırın; birini değiştirmek
-diğerine asla dokunmaz.
+Ses yükseltici eklentilerin çoğunun yanlış yaptığı yer burası. Her sekme kendi ses seviyesini, kendi ekolayzer eğrisini, kendi dengesini tutar. Bir sekmede yayını %300’de, başka bir sekmede müziği %120’de çalıştırın; birini değiştirmek diğerine asla dokunmaz.
 
-Araç çubuğu rozeti baktığınız sekmenin seviyesini gösterir; hangi sekmelerin
-yükseltildiğini bir bakışta anlarsınız.
+Araç çubuğu rozeti baktığınız sekmenin seviyesini gösterir; hangi sekmelerin yükseltildiğini bir bakışta anlarsınız.
 
 VARSAYILAN OLARAK GEÇİCİ
 
-Sekmeyi kapattığınızda yükseltme unutulur. Bir video için seçtiğiniz ayar,
-haftalar sonra bambaşka bir sayfada karşınıza çıkıp sizi şaşırtamaz.
+Sekmeyi kapattığınızda yükseltme unutulur. Bir video için seçtiğiniz ayar, haftalar sonra bambaşka bir sayfada karşınıza çıkıp sizi şaşırtamaz.
 
-Bir sitenin her zaman aynı ses seviyesiyle açılmasını istiyorsanız açılır
-penceredeki “Bu siteyi hatırla” seçeneğini işaretleyin. Ayarlar sayfası
-kaydettiğiniz siteleri listeler, herhangi birini düzenlemenize veya
-kaldırmanıza izin verir ve yeni sekmelerin otomatik olarak hatırlamasını
-sağlayabilir.
+Bir sitenin her zaman aynı ses seviyesiyle açılmasını istiyorsanız açılır penceredeki “Bu siteyi hatırla” seçeneğini işaretleyin. Ayarlar sayfası kaydettiğiniz siteleri listeler, herhangi birini düzenlemenize veya kaldırmanıza izin verir ve yeni sekmelerin otomatik olarak hatırlamasını sağlayabilir.
 
 YAYIN SİTELERİNE AYAK UYDURUR
 
-YouTube, Twitch ve Kick gibi siteler, sonraki bölüme veya yayına geçtiğinizde
-sayfayı yeniden yüklemeden video oynatıcısını değiştirir. Birçok eklenti tam o
-anda sesi kaybeder ve artık uygulamadığı bir seviyeyi göstermeyi sürdürür. Bu
-eklenti değişimi izler ve ayarlarınızı yeni oynatıcıya yeniden uygular; böylece
-ayarladığınız ses, duyduğunuz ses olarak kalır.
+YouTube, Twitch ve Kick gibi siteler, sonraki bölüme veya yayına geçtiğinizde sayfayı yeniden yüklemeden video oynatıcısını değiştirir. Birçok eklenti tam o anda sesi kaybeder ve artık uygulamadığı bir seviyeyi göstermeyi sürdürür. Bu eklenti değişimi izler ve ayarlarınızı yeni oynatıcıya yeniden uygular; böylece ayarladığınız ses, duyduğunuz ses olarak kalır.
 
 GİZLİLİK
 
-İzleme yok. Analiz yok. Hesap yok. Yazı tipleri dahil hiçbir türde ağ isteği
-yok. Ayarlarınız kendi cihazınızdan hiç çıkmaz.
+İzleme yok. Analiz yok. Hesap yok. Yazı tipleri dahil hiçbir türde ağ isteği yok. Ayarlarınız kendi cihazınızdan hiç çıkmaz.
 
 YAPAMADIKLARI
 
-Netflix, Disney+, Prime Video ve Spotify gibi DRM korumalı hizmetler seslerini
-tasarım gereği eklentilerden gizler, bu yüzden yükseltilemezler. Bir sayfa
-işlenemediğinde açılır pencere sessizce hiçbir şey yapmak yerine bunu açıkça
-söyler.
+Netflix, Disney+, Prime Video ve Spotify gibi DRM korumalı hizmetler seslerini tasarım gereği eklentilerden gizler, bu yüzden yükseltilemezler. Bir sayfa işlenemediğinde açılır pencere sessizce hiçbir şey yapmak yerine bunu açıkça söyler.
 
-chrome:// gibi tarayıcı sayfaları ve mağaza sayfaları, bu eklenti dahil her
-eklentiye kapalıdır.
+chrome:// gibi tarayıcı sayfaları ve mağaza sayfaları, bu eklenti dahil her eklentiye kapalıdır.
 
 LÜTFEN SORUMLU YÜKSELTİN
 
-Yüksek ses, özellikle kulaklıkla, hem işitmenize hem de hoparlörlerinize zarar
-verebilir. Limitör %100 üzerinde varsayılan olarak açıktır ve açık
-bırakmalısınız. Ayarlardan tavanı %600’ün üzerine çıkarmak sizin
-sorumluluğunuzdadır.
+Yüksek ses, özellikle kulaklıkla, hem işitmenize hem de hoparlörlerinize zarar verebilir. Limitör %100 üzerinde varsayılan olarak açıktır ve açık bırakmalısınız. Ayarlardan tavanı %600’ün üzerine çıkarmak sizin sorumluluğunuzdadır.
 
 AÇIK KAYNAK
 
@@ -308,20 +267,13 @@ HOW TO TEST
    and temporary unless the user ticks "Remember this site".
 
 EXPECTED LIMITATION
-DRM sites such as Netflix and Spotify cannot be boosted; Encrypted Media
-Extensions hide their audio from page scripts. On those pages the popup
-reports "This page blocks audio processing" rather than failing silently.
+DRM sites such as Netflix and Spotify cannot be boosted; Encrypted Media Extensions hide their audio from page scripts. On those pages the popup reports "This page blocks audio processing" rather than failing silently.
 
-NO REMOTE CODE, NO DATA COLLECTION
-The extension makes no network requests of any kind - no telemetry, no
-analytics, no remote configuration, no external scripts or fonts. Settings
-never leave storage.local on the user's own machine.
+NO REMOTE CODE, NO DATA COLLECTION The extension makes no network requests of any kind - no telemetry, no analytics, no remote configuration, no external scripts or fonts. Settings never leave storage.local on the user's own machine.
 
 SOURCE
 https://github.com/ramazansancar/volume-booster-tab-extension
-Licensed AGPL-3.0-only. Built with esbuild (standard minification, no
-obfuscation) via `npm ci && npm run package`; the uploaded file is
-dist/chrome-mv3-<version>.zip.
+Licensed AGPL-3.0-only. Built with esbuild (standard minification, no obfuscation) via `npm ci && npm run package`; the uploaded file is dist/chrome-mv3-<version>.zip.
 ```
 
 ---
@@ -404,8 +356,7 @@ Pick **Productivity**.
 Edge offers a single required category from a fixed list, and it is not the same list Chrome uses:
 
 ```text
-Accessibility · Blogging · Developer Tools · Entertainment · News And Weather
-Photos · Productivity · Search Tools · Shopping · Social · Communication · Sports
+Accessibility · Blogging · Developer Tools · Entertainment · News And Weather Photos · Productivity · Search Tools · Shopping · Social · Communication · Sports
 ```
 
 _Tools_, the Chrome category for this listing, does not exist here. Three entries are plausible substitutes; the reasoning for choosing between them:

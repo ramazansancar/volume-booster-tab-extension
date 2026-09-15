@@ -7,11 +7,19 @@
  * reading, and every Markdown renderer treats a wrapped and an unwrapped
  * paragraph identically.
  *
+ * ```text fences are joined too, and for the same reason: they hold the copy
+ * pasted into store submission forms, and those forms wrap text themselves. A
+ * hard wrap carried into the form shows up as a ragged line break mid-sentence.
+ * Inside a text fence the joiner is deliberately conservative, preserving the
+ * lines whose breaks carry meaning - ALL-CAPS section headings, numbered steps
+ * and their indented continuations, aligned `- key   value` rows, bare URLs and
+ * blank lines.
+ *
  * What it deliberately does NOT touch, because the line breaks there are the
  * content rather than formatting:
  *
- *   - fenced code blocks (``` and ~~~), which hold the store listing copy,
- *     build instructions and changelogs that get pasted into forms verbatim
+ *   - every fence that is not ```text - code, JSON and shell commands, where a
+ *     joined line would be wrong or unrunnable
  *   - indented code blocks
  *   - tables
  *   - list items and blockquotes, including > [!NOTE] callouts
@@ -69,6 +77,62 @@ function isStructural(line) {
 }
 
 /**
+ * True for a line inside a ```text block whose break has to survive.
+ *
+ * Store copy is not free prose: it carries section headings the reviewer scans
+ * for, numbered test steps, and permission rows whose columns are aligned with
+ * runs of spaces. Joining any of those produces a paragraph the submitter has
+ * to repair by hand, which defeats the point of keeping the copy here.
+ *
+ * @param {string} line
+ */
+function isFixedInTextBlock(line) {
+  if (line.trim() === '') return true;
+  // An ALL-CAPS heading such as FEATURES or HOW TO TEST. Digits, spaces and
+  // punctuation are allowed so "WHAT IT CANNOT DO" and "PERMISSIONS" match but
+  // an ordinary sentence does not.
+  if (/^[A-Z][A-Z0-9 '&/()-]*$/.test(line.trimEnd()) && line.trim().length > 2) return true;
+  if (/^\s*\d+[.)]\s/.test(line)) return true; // numbered step
+  if (/^\s*[-*•]\s/.test(line)) return true; // bullet or aligned key/value row
+  if (/^\s+\S/.test(line)) return true; // indented continuation of either
+  if (/^\s*(?:https?:\/\/|www\.)\S+$/.test(line.trim())) return true; // bare URL
+  return false;
+}
+
+/**
+ * Joins the prose paragraphs inside one ```text block, leaving the structural
+ * lines above untouched.
+ *
+ * @param {string[]} body
+ * @returns {string[]}
+ */
+function unwrapTextBlock(body) {
+  /** @type {string[]} */
+  const out = [];
+  /** @type {string[]} */
+  let paragraph = [];
+
+  const flush = () => {
+    if (paragraph.length > 0) {
+      out.push(paragraph.join(' '));
+      paragraph = [];
+    }
+  };
+
+  for (const line of body) {
+    if (isFixedInTextBlock(line)) {
+      flush();
+      out.push(line);
+      continue;
+    }
+    paragraph.push(paragraph.length === 0 ? line.trimEnd() : line.trim());
+  }
+
+  flush();
+  return out;
+}
+
+/**
  * Rejoins wrapped prose paragraphs.
  *
  * @param {string} source
@@ -84,6 +148,8 @@ export function unwrap(source) {
   // Tracks the delimiter of the fence currently open, so a ``` inside a ~~~
   // block does not close it early.
   let fence = null;
+  /** Lines of the ```text block currently open, or null for any other fence. */
+  let textBlock = null;
 
   const flush = () => {
     if (paragraph.length > 0) {
@@ -96,17 +162,29 @@ export function unwrap(source) {
     const fenceMatch = /^\s{0,3}(`{3,}|~{3,})/.exec(line);
 
     if (fence) {
-      // Inside a fence: copy verbatim, and close only on the same delimiter.
-      out.push(line);
-      if (fenceMatch && fenceMatch[1][0] === fence[0] && fenceMatch[1].length >= fence.length) {
-        fence = null;
+      const closes =
+        fenceMatch && fenceMatch[1][0] === fence[0] && fenceMatch[1].length >= fence.length;
+      if (!closes) {
+        // Still inside: buffer a text block, copy anything else verbatim.
+        if (textBlock) textBlock.push(line);
+        else out.push(line);
+        continue;
       }
+      if (textBlock) {
+        out.push(...unwrapTextBlock(textBlock));
+        textBlock = null;
+      }
+      out.push(line);
+      fence = null;
       continue;
     }
 
     if (fenceMatch) {
       flush();
       fence = fenceMatch[1];
+      // Only ```text holds prose meant for a form. Every other language is
+      // code, and joining its lines would break it.
+      textBlock = /^\s{0,3}(?:`{3,}|~{3,})text\s*$/.test(line) ? [] : null;
       out.push(line);
       continue;
     }

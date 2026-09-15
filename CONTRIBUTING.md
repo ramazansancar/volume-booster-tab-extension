@@ -167,7 +167,7 @@ Prettier and ESLint are configured; `pnpm run format` fixes formatting.
 
 Beyond that:
 
-- **Markdown paragraphs are one line each.** Do not hard-wrap prose at a column. A hard wrap makes a one-word edit rewrap the whole paragraph, so a diff that changed a sentence looks like it changed six lines. Editors soft-wrap for reading and every renderer treats the two identically. Run `pnpm run format:md` to fix a file, or `pnpm run format:md:check` to see which files need it. Code blocks, tables, lists and callouts are left alone — the line breaks there are content, not formatting.
+- **Markdown paragraphs are one line each.** Do not hard-wrap prose at a column. A hard wrap makes a one-word edit rewrap the whole paragraph, so a diff that changed a sentence looks like it changed six lines. Editors soft-wrap for reading and every renderer treats the two identically. Run `pnpm run format:md` to fix a file, or `pnpm run format:md:check` to see which files need it. Tables, lists, callouts and every code fence except ```` ```text ```` are left alone — the line breaks there are content, not formatting. ```` ```text ```` blocks hold store listing copy that gets pasted into submission forms, and those forms wrap text themselves, so their prose is joined too; the lines whose breaks carry meaning are kept — ALL-CAPS headings, numbered steps with their indented continuations, aligned `- key   value` rows and bare URLs.
 - Comments explain **why**, not what. If a line needs a comment to say what it does, rename something instead.
 - Prefer explicit over clever. This code runs in seven browser configurations; obvious beats short.
 - No new runtime dependencies without discussion. The extension currently ships zero.

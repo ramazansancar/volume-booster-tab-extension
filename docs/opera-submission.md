@@ -47,8 +47,7 @@ Boost any tab's volume to 600% with a limiter, equalizer and balance. Every tab 
 **Description**
 
 ```text
-Volume Booster Tab raises the volume of any browser tab beyond what the page
-itself allows, and gives you real control over how that sound is shaped.
+Volume Booster Tab raises the volume of any browser tab beyond what the page itself allows, and gives you real control over how that sound is shaped.
 
 FEATURES
 
@@ -62,50 +61,33 @@ FEATURES
 
 EVERY TAB IS INDEPENDENT
 
-This is the part most volume boosters get wrong. Every tab keeps its own
-volume, its own equalizer curve, its own balance. Run a stream at 300% in one
-tab and music at 120% in another; changing one never touches the other.
+This is the part most volume boosters get wrong. Every tab keeps its own volume, its own equalizer curve, its own balance. Run a stream at 300% in one tab and music at 120% in another; changing one never touches the other.
 
-The toolbar badge shows the level of the tab you are looking at, so you can
-tell at a glance which tabs are amplified.
+The toolbar badge shows the level of the tab you are looking at, so you can tell at a glance which tabs are amplified.
 
 TEMPORARY BY DEFAULT
 
-A boost is forgotten when you close the tab. A setting you chose for one video
-can never surprise you weeks later on a different page.
+A boost is forgotten when you close the tab. A setting you chose for one video can never surprise you weeks later on a different page.
 
-If you do want a site to always open at the same volume, tick "Remember this
-site" in the popup. The settings page lists every site you have saved, lets you
-edit or remove any of them, and can make new tabs remember automatically.
+If you do want a site to always open at the same volume, tick "Remember this site" in the popup. The settings page lists every site you have saved, lets you edit or remove any of them, and can make new tabs remember automatically.
 
 KEEPS UP WITH STREAMING SITES
 
-Sites like YouTube, Twitch and Kick replace their video player when you move to
-the next episode or stream, without reloading the page. Many boosters lose the
-audio at that moment and keep showing a level they are no longer applying.
-This one watches for the swap and reapplies your settings to the new player,
-so the volume you set stays the volume you get.
+Sites like YouTube, Twitch and Kick replace their video player when you move to the next episode or stream, without reloading the page. Many boosters lose the audio at that moment and keep showing a level they are no longer applying. This one watches for the swap and reapplies your settings to the new player, so the volume you set stays the volume you get.
 
 PRIVACY
 
-No tracking. No analytics. No account. No network requests of any kind, not
-even for fonts. Your settings never leave your own machine.
+No tracking. No analytics. No account. No network requests of any kind, not even for fonts. Your settings never leave your own machine.
 
 WHAT IT CANNOT DO
 
-DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide
-their audio from extensions by design, so they cannot be boosted. When a page
-cannot be processed the popup says so plainly instead of silently doing
-nothing.
+DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
 
-Browser pages such as opera:// and the add-ons catalog are off limits to every
-extension, including this one.
+Browser pages such as opera:// and the add-ons catalog are off limits to every extension, including this one.
 
 PLEASE BOOST RESPONSIBLY
 
-High volume can damage both your hearing and your speakers, especially with
-headphones. The limiter is on by default above 100% and you should leave it
-on. Raising the ceiling past 600% in settings is at your own risk.
+High volume can damage both your hearing and your speakers, especially with headphones. The limiter is on by default above 100% and you should leave it on. Raising the ceiling past 600% in settings is at your own risk.
 
 OPEN SOURCE
 
@@ -129,8 +111,7 @@ Opera carries one listing per language, added from the language selector on the 
 Use the Turkish description from [`chrome-submission.md`](chrome-submission.md#turkish-listing-tr) unchanged, with one substitution — `chrome://` becomes `opera://`:
 
 ```text
-opera:// gibi tarayıcı sayfaları ve mağaza sayfaları, bu eklenti dahil her
-eklentiye kapalıdır.
+opera:// gibi tarayıcı sayfaları ve mağaza sayfaları, bu eklenti dahil her eklentiye kapalıdır.
 ```
 
 The same rule applies as everywhere else: the interface words in the listing (_limitör_, _ekolayzer_, _denge_, _sekme_) must match [`public/_locales/tr/messages.json`](../public/_locales/tr/messages.json). Change both together or not at all.
@@ -144,34 +125,22 @@ Opera lists the same 55 languages the extension ships. **Description** is the on
 Opera rejects the submission with `Detailed description missing for <language>` until every language it offers has one, so leaving them empty is not an option. [`store-descriptions.md`](store-descriptions.md) carries all 55, with English standing in for the languages nobody has translated yet.
 
 > [!WARNING]
-> The form says HTML and BBCode are not supported. Replace the `•` bullets in
-> the description with `-` before pasting; the other stores render them, this
-> one has no stated behaviour for them.
+> The form says HTML and BBCode are not supported. The copy in [`store-descriptions.md`](store-descriptions.md) already uses `-` bullets for that reason, and carries all 55 languages. Paste from there rather than from the Chrome file, whose listing still uses `•`.
 
 ### Changelog (`en-US`)
 
 ```text
-The tab-capture fallback now works. On pages whose audio cannot be read
-directly, such as cross-origin media served without CORS headers, a "Try tab
-capture" button appears in the popup and routes the tab's audio through the
-extension instead. DRM-protected sites still cannot be boosted by any path.
+The tab-capture fallback now works. On pages whose audio cannot be read directly, such as cross-origin media served without CORS headers, a "Try tab capture" button appears in the popup and routes the tab's audio through the extension instead. DRM-protected sites still cannot be boosted by any path.
 
-Two permissions removed. "tabs" and "activeTab" are no longer requested; the
-host permissions already covered everything they were used for. The extension
-now asks for less than it did before.
+Two permissions removed. "tabs" and "activeTab" are no longer requested; the host permissions already covered everything they were used for. The extension now asks for less than it did before.
 ```
 
 ### Changelog (`tr`)
 
 ```text
-Sekme yakalama yedeği artık çalışıyor. Sesi doğrudan okunamayan sayfalarda -
-CORS başlığı olmadan sunulan farklı kaynaklı medya gibi - açılır pencerede
-"Sekme yakalamayı dene" düğmesi çıkıyor ve sekmenin sesi eklenti üzerinden
-geçiriliyor. DRM korumalı siteler hiçbir yolla yükseltilemiyor.
+Sekme yakalama yedeği artık çalışıyor. Sesi doğrudan okunamayan sayfalarda - CORS başlığı olmadan sunulan farklı kaynaklı medya gibi - açılır pencerede "Sekme yakalamayı dene" düğmesi çıkıyor ve sekmenin sesi eklenti üzerinden geçiriliyor. DRM korumalı siteler hiçbir yolla yükseltilemiyor.
 
-İki izin kaldırıldı. "tabs" ve "activeTab" artık istenmiyor; ana makine
-izinleri bunların kullanıldığı her şeyi zaten kapsıyordu. Eklenti eskisinden
-daha az izin istiyor.
+İki izin kaldırıldı. "tabs" ve "activeTab" artık istenmiyor; ana makine izinleri bunların kullanıldığı her şeyi zaten kapsıyordu. Eklenti eskisinden daha az izin istiyor.
 ```
 
 Keep both in step with [`CHANGELOG.md`](../CHANGELOG.md) on each release: this is user-facing copy, so it says what changed for a user rather than which functions moved.
@@ -185,9 +154,7 @@ Pick **Productivity**.
 Opera requires one category, and its list is a third variation — it shares neither Chrome's _Tools_ nor Edge's spelling of the overlapping entries:
 
 ```text
-Accessibility · Appearance · Blockchain & Cryptocurrency · Developer Tools
-Downloads · Fun · Music · News & Weather · Privacy & Security · Productivity
-Search · Shopping · Social · Translation
+Accessibility · Appearance · Blockchain & Cryptocurrency · Developer Tools Downloads · Fun · Music · News & Weather · Privacy & Security · Productivity Search · Shopping · Social · Translation
 ```
 
 Three entries are plausible; the reasoning:
@@ -210,12 +177,9 @@ Three entries are plausible; the reasoning:
 > explicitly permits. Choose **custom EULA** and paste the text below.
 
 ```text
-This extension is free software, licensed under the GNU Affero General Public
-License, version 3 or later (AGPL-3.0-or-later).
+This extension is free software, licensed under the GNU Affero General Public License, version 3 or later (AGPL-3.0-or-later).
 
-You may use, study, modify, redistribute and fork it, including commercially.
-If you distribute it, or run a modified version as a network service, you must
-release your version's complete corresponding source under the same licence.
+You may use, study, modify, redistribute and fork it, including commercially. If you distribute it, or run a modified version as a network service, you must release your version's complete corresponding source under the same licence.
 
 Full licence text:
 https://www.gnu.org/licenses/agpl-3.0.html
@@ -223,8 +187,7 @@ https://www.gnu.org/licenses/agpl-3.0.html
 Source code:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
-The extension is provided WITHOUT ANY WARRANTY, to the extent permitted by
-applicable law.
+The extension is provided WITHOUT ANY WARRANTY, to the extent permitted by applicable law.
 ```
 
 ---
