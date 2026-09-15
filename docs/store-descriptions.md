@@ -1565,7 +1565,7 @@ GNU Affero General Public License v3.0 હેઠળ લાઇસન્સ પ્
 _Translated from the English description._
 
 ```text
-‏Volume Booster Tab מגביר את עוצמת הקול של כל לשונית בדפדפן מעבר למה שהדף עצמו מתיר, ונותן לך שליטה אמיתית באופן שבו הצליל מעוצב.
+Volume Booster Tab מגביר את עוצמת הקול של כל לשונית בדפדפן מעבר למה שהדף עצמו מתיר, ונותן לך שליטה אמיתית באופן שבו הצליל מעוצב.
 
 תכונות
 
@@ -1599,7 +1599,7 @@ _Translated from the English description._
 
 מה הוא אינו יכול לעשות
 
-שירותים המוגנים ב‑DRM כמו Netflix, Disney+‎, Prime Video ו‑Spotify מסתירים את השמע שלהם מתוספים מעצם התכנון, ולכן לא ניתן להגביר אותם. כשלא ניתן לעבד דף, החלון הקופץ אומר זאת במפורש במקום פשוט לא לעשות דבר.
+שירותים המוגנים ב‑DRM כמו Netflix, Disney+, Prime Video ו‑Spotify מסתירים את השמע שלהם מתוספים מעצם התכנון, ולכן לא ניתן להגביר אותם. כשלא ניתן לעבד דף, החלון הקופץ אומר זאת במפורש במקום פשוט לא לעשות דבר.
 
 דפי דפדפן כמו chrome:// וחנות האינטרנט חסומים לכל תוסף, כולל זה.
 
@@ -3757,4 +3757,3 @@ https://github.com/ramazansancar/volume-booster-tab-extension
 
 依據 GNU Affero General Public License v3.0 授權。
 ```
-
