@@ -253,6 +253,72 @@ short enough to stay on one line.
 
 ---
 
+## Version detail page
+
+These fields are on the **version** page, not the listing form, and none has a
+Chrome or AMO counterpart.
+
+| Field                                      | Value                                                                               |
+| ------------------------------------------ | ----------------------------------------------------------------------------------- |
+| Service website URL                        | **Leave empty.** This is for a service the extension connects to; there is none, and the field explicitly excludes GitHub profiles. |
+| Extension support page URL                 | `https://github.com/ramazansancar/volume-booster-tab-extension/issues`              |
+| Extension source code URL (public)         | `https://github.com/ramazansancar/volume-booster-tab-extension`                     |
+| Extension source code URL (moderators)     | `https://github.com/ramazansancar/volume-booster-tab-extension/tree/v<version>`     |
+| License URL                                | `https://www.gnu.org/licenses/agpl-3.0.html`                                        |
+| Privacy policy URL                         | `https://github.com/ramazansancar/volume-booster-tab-extension/blob/master/PRIVACY.md` |
+
+> [!IMPORTANT]
+> The moderator source link must point at a **tag matching the uploaded
+> package**, not at `master` — the form asks for source corresponding to this
+> version, and `master` will have moved on by the next release. Push the tag
+> before submitting, or the link 404s:
+>
+> ```bash
+> git tag v0.2.1
+> git push origin v0.2.1
+> ```
+
+The moderator field is required here rather than optional: the package is
+minified by esbuild, which is exactly the case the form calls out.
+
+`License URL` and `Privacy policy URL` are enough on their own — the form takes
+"this text **or** the URL", so the two full-text boxes can stay empty. The EULA
+text in [License](#license) is kept for stores that have no URL field.
+
+### Build instructions
+
+```text
+1. OS: any (built and verified on Windows 10)
+
+2. Tools:
+   - Node.js 20.x or newer
+   - pnpm 9.x  (npm and yarn also work; pnpm is what the lockfile targets)
+
+3. Steps:
+   git clone https://github.com/ramazansancar/volume-booster-tab-extension
+   cd volume-booster-tab-extension
+   git checkout v0.2.1
+   pnpm install --frozen-lockfile
+   pnpm run build:opera
+
+   The unpacked extension is written to dist/opera-mv2/, which is the
+   content of the uploaded package.
+
+   To reproduce the uploaded zip exactly:
+   pnpm run package
+
+   Minification is esbuild, configured in scripts/build.mjs. No other
+   transformation is applied, and no code is fetched at build time or at
+   runtime.
+```
+
+> [!NOTE]
+> Bump the `git checkout` tag in that block on every release. It is the one line
+> in this file that goes stale silently — a reviewer following it would build a
+> different version than the one they are reviewing.
+
+---
+
 ## Permissions
 
 Opera has no permission-justification form: the MV2 manifest is read directly.
