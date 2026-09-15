@@ -19,7 +19,15 @@ import { deflateSync } from 'node:zlib';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = path.join(root, 'public', 'icons');
 
-const SIZES = [16, 32, 48, 96, 128, 256, 512];
+/**
+ * Rendered sizes.
+ *
+ * The manifest only declares 16/32/48/128. The rest exist for store listings,
+ * which each ask for their own: Opera requires exactly 64x64, and AMO and the
+ * Chrome Web Store take the larger ones. Every size is rasterised from the same
+ * vector description below, so none is a resample of another.
+ */
+const SIZES = [16, 32, 48, 64, 96, 128, 256, 512];
 
 /** Brand colours: a speaker mark in white on a blue rounded square. */
 const BACKGROUND = [37, 99, 235, 255];

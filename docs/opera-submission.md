@@ -23,6 +23,7 @@ is easy to give by accident:
 | **Category**          | **Productivity** — Opera's list has no _Tools_. See [Category](#category).                         |
 | **License**           | **Custom EULA** — paste the AGPL notice below. Do **not** accept the default CC BY-NC-ND 4.0.      |
 | **Screenshots**       | 800×600 maximum, so the 1280×800 set used elsewhere is rejected. Generate the 800×600 set below.   |
+| **Icon**              | Exactly 64×64 — `public/icons/icon-64.png`. No other store asks for this size.                     |
 | **Promotional image** | Optional, exactly 300×188. Used only if Opera decides to feature the extension.                    |
 | **Auto-publishing**   | Opt in. Nothing in this extension needs a human reviewer's judgement.                              |
 
@@ -232,6 +233,25 @@ the extension is for.
 
 The generator scales its type with the canvas, so 800×600 stays readable — the
 unusable size is 640×400, which puts the popup's 13px type at 6px.
+
+---
+
+## Icon
+
+Opera requires exactly **64×64**. Upload:
+
+```text
+public/icons/icon-64.png
+```
+
+No other store asks for that size, so it exists only for this listing. It is
+rasterised from the same vector description as every other icon in
+[`scripts/icons.mjs`](../scripts/icons.mjs) rather than resampled from a larger
+PNG, so the speaker mark stays crisp at 64px. Regenerate the whole set with:
+
+```bash
+pnpm run icons
+```
 
 ---
 
