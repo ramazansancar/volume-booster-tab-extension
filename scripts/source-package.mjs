@@ -41,6 +41,16 @@ const EXCLUDED_DIRS = new Set([
   '.vscode',
   '.idea',
   'build',
+  // Store listing images. A reviewer needs the source that builds the
+  // extension, not the screenshots of it - and these are 3.5 MB of PNG, which
+  // was almost 90% of the archive.
+  'store-assets',
+  // Working directories for the generators, and the staging area for store
+  // description translations. All are gitignored, but this script walks the
+  // filesystem rather than git, so it has to exclude them itself.
+  '.tr',
+  '.promo',
+  '.screenshots',
 ]);
 
 const EXCLUDED_FILES = new Set([
