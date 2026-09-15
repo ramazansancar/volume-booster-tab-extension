@@ -148,6 +148,52 @@ both together or not at all.
 
 ---
 
+## Translations tab
+
+Opera lists the same 55 languages the extension ships. **Description** is the
+only required field per language; Summary and Changelog are optional.
+
+Filling all 55 is not worth it — the store shows the listing in the browser's
+language and falls back to the default otherwise. Do `en-US` and `tr`, which
+match the two listings maintained elsewhere, and leave the rest empty.
+
+> [!WARNING]
+> The form says HTML and BBCode are not supported. Replace the `•` bullets in
+> the description with `-` before pasting; the other stores render them, this
+> one has no stated behaviour for them.
+
+### Changelog (`en-US`)
+
+```text
+The tab-capture fallback now works. On pages whose audio cannot be read
+directly, such as cross-origin media served without CORS headers, a "Try tab
+capture" button appears in the popup and routes the tab's audio through the
+extension instead. DRM-protected sites still cannot be boosted by any path.
+
+Two permissions removed. "tabs" and "activeTab" are no longer requested; the
+host permissions already covered everything they were used for. The extension
+now asks for less than it did before.
+```
+
+### Changelog (`tr`)
+
+```text
+Sekme yakalama yedeği artık çalışıyor. Sesi doğrudan okunamayan sayfalarda -
+CORS başlığı olmadan sunulan farklı kaynaklı medya gibi - açılır pencerede
+"Sekme yakalamayı dene" düğmesi çıkıyor ve sekmenin sesi eklenti üzerinden
+geçiriliyor. DRM korumalı siteler hiçbir yolla yükseltilemiyor.
+
+İki izin kaldırıldı. "tabs" ve "activeTab" artık istenmiyor; ana makine
+izinleri bunların kullanıldığı her şeyi zaten kapsıyordu. Eklenti eskisinden
+daha az izin istiyor.
+```
+
+Keep both in step with [`CHANGELOG.md`](../CHANGELOG.md) on each release: this
+is user-facing copy, so it says what changed for a user rather than which
+functions moved.
+
+---
+
 ## Category
 
 Pick **Productivity**.
