@@ -4,17 +4,11 @@
 
 **Boost any tab's volume up to 600% — with a limiter, equalizer and channel balance.**
 
-Works in Chrome, Firefox, Edge, Opera, Brave, Vivaldi and Safari.
-Manifest V2 and V3 from one codebase.
+Works in Chrome, Firefox, Edge, Opera, Brave, Vivaldi and Safari. Manifest V2 and V3 from one codebase.
 
 **[⬇️ Install for Firefox](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/)** — Chrome and Edge listings are in review.
 
-[![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
-[![Manifest V2 + V3](https://img.shields.io/badge/manifest-V2%20%7C%20V3-success.svg)](#browser-support)
-[![Browsers](https://img.shields.io/badge/browsers-7%20targets-orange.svg)](#browser-support)
-[![Languages](https://img.shields.io/badge/languages-55-brightgreen.svg)](#language-support)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Firefox Add-ons](https://img.shields.io/amo/v/volume-booster-tab?label=firefox%20add-ons&color=orange)](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/)
+[![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE) [![Manifest V2 + V3](https://img.shields.io/badge/manifest-V2%20%7C%20V3-success.svg)](#browser-support) [![Browsers](https://img.shields.io/badge/browsers-7%20targets-orange.svg)](#browser-support) [![Languages](https://img.shields.io/badge/languages-55-brightgreen.svg)](#language-support) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Firefox Add-ons](https://img.shields.io/amo/v/volume-booster-tab?label=firefox%20add-ons&color=orange)](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/)
 
 </div>
 
@@ -395,10 +389,7 @@ volume-booster-tab-extension/
 
 ## Privacy
 
-The extension collects nothing, sends nothing, and makes no network requests at
-all. Per-tab boost state lives in memory only; a site preference is written to
-`storage.local` solely when you tick **Remember this site**, and you can delete
-it from the options page at any time.
+The extension collects nothing, sends nothing, and makes no network requests at all. Per-tab boost state lives in memory only; a site preference is written to `storage.local` solely when you tick **Remember this site**, and you can delete it from the options page at any time.
 
 Full text: **[PRIVACY.md](PRIVACY.md)**.
 

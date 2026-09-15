@@ -1,22 +1,19 @@
 # Opera add-ons submission text
 
-Copy-paste material for the Opera add-ons dashboard
-(<https://addons.opera.com/developer/>).
+Copy-paste material for the Opera add-ons dashboard (<https://addons.opera.com/developer/>).
 
 > [!IMPORTANT]
 > Upload `dist/opera-mv2-<version>.zip`, produced by `pnpm run package`. Opera is
 > the one store that still takes the **Manifest V2** build — see
 > [`publishing.md`](publishing.md) for which build goes where.
 
-Related: [`chrome-submission.md`](chrome-submission.md) for Chrome and Edge,
-[`amo-submission.md`](amo-submission.md) for Firefox.
+Related: [`chrome-submission.md`](chrome-submission.md) for Chrome and Edge, [`amo-submission.md`](amo-submission.md) for Firefox.
 
 ---
 
 ## What Opera asks that the other stores do not
 
-Five fields have no Chrome or AMO counterpart, and most have a wrong answer that
-is easy to give by accident:
+Five fields have no Chrome or AMO counterpart, and most have a wrong answer that is easy to give by accident:
 
 | Field                 | Answer                                                                                            |
 | --------------------- | ------------------------------------------------------------------------------------------------- |
@@ -27,8 +24,7 @@ is easy to give by accident:
 | **Promotional image** | Optional, exactly 300×188. Used only if Opera decides to feature the extension.                    |
 | **Auto-publishing**   | Opt in. Nothing in this extension needs a human reviewer's judgement.                              |
 
-Everything else — name, summary, description, translations — is the same text as
-the Chrome listing.
+Everything else — name, summary, description, translations — is the same text as the Chrome listing.
 
 ---
 
@@ -46,8 +42,7 @@ Volume Booster Tab
 Boost any tab's volume to 600% with a limiter, equalizer and balance. Every tab is independent. No tracking, open source.
 ```
 
-**Category:** Productivity
-**Support site:** `https://github.com/ramazansancar/volume-booster-tab-extension/issues`
+**Category:** Productivity **Support site:** `https://github.com/ramazansancar/volume-booster-tab-extension/issues`
 
 **Description**
 
@@ -129,33 +124,24 @@ Licensed under the GNU Affero General Public License v3.0.
 
 ## Turkish listing (`tr`)
 
-Opera carries one listing per language, added from the language selector on the
-listing form. The English text stays the default.
+Opera carries one listing per language, added from the language selector on the listing form. The English text stays the default.
 
-Use the Turkish description from
-[`chrome-submission.md`](chrome-submission.md#turkish-listing-tr) unchanged, with
-one substitution — `chrome://` becomes `opera://`:
+Use the Turkish description from [`chrome-submission.md`](chrome-submission.md#turkish-listing-tr) unchanged, with one substitution — `chrome://` becomes `opera://`:
 
 ```text
 opera:// gibi tarayıcı sayfaları ve mağaza sayfaları, bu eklenti dahil her
 eklentiye kapalıdır.
 ```
 
-The same rule applies as everywhere else: the interface words in the listing
-(_limitör_, _ekolayzer_, _denge_, _sekme_) must match
-[`public/_locales/tr/messages.json`](../public/_locales/tr/messages.json). Change
-both together or not at all.
+The same rule applies as everywhere else: the interface words in the listing (_limitör_, _ekolayzer_, _denge_, _sekme_) must match [`public/_locales/tr/messages.json`](../public/_locales/tr/messages.json). Change both together or not at all.
 
 ---
 
 ## Translations tab
 
-Opera lists the same 55 languages the extension ships. **Description** is the
-only required field per language; Summary and Changelog are optional.
+Opera lists the same 55 languages the extension ships. **Description** is the only required field per language; Summary and Changelog are optional.
 
-Filling all 55 is not worth it — the store shows the listing in the browser's
-language and falls back to the default otherwise. Do `en-US` and `tr`, which
-match the two listings maintained elsewhere, and leave the rest empty.
+Opera rejects the submission with `Detailed description missing for <language>` until every language it offers has one, so leaving them empty is not an option. [`store-descriptions.md`](store-descriptions.md) carries all 55, with English standing in for the languages nobody has translated yet.
 
 > [!WARNING]
 > The form says HTML and BBCode are not supported. Replace the `•` bullets in
@@ -188,9 +174,7 @@ izinleri bunların kullanıldığı her şeyi zaten kapsıyordu. Eklenti eskisin
 daha az izin istiyor.
 ```
 
-Keep both in step with [`CHANGELOG.md`](../CHANGELOG.md) on each release: this
-is user-facing copy, so it says what changed for a user rather than which
-functions moved.
+Keep both in step with [`CHANGELOG.md`](../CHANGELOG.md) on each release: this is user-facing copy, so it says what changed for a user rather than which functions moved.
 
 ---
 
@@ -198,8 +182,7 @@ functions moved.
 
 Pick **Productivity**.
 
-Opera requires one category, and its list is a third variation — it shares
-neither Chrome's _Tools_ nor Edge's spelling of the overlapping entries:
+Opera requires one category, and its list is a third variation — it shares neither Chrome's _Tools_ nor Edge's spelling of the overlapping entries:
 
 ```text
 Accessibility · Appearance · Blockchain & Cryptocurrency · Developer Tools
@@ -248,8 +231,7 @@ applicable law.
 
 ## Screenshots
 
-Opera caps screenshots at **800×600**, so the 1280×800 images the Chrome and AMO
-listings use are rejected here. Generate the Opera set:
+Opera caps screenshots at **800×600**, so the 1280×800 images the Chrome and AMO listings use are rejected here. Generate the Opera set:
 
 ```bash
 node scripts/screenshots.mjs --size=800x600 --locale=en,tr
@@ -266,8 +248,7 @@ That writes six files into `store-assets/`:
 | `popup-equalizer-800x600-tr.png` | Turkish          |
 | `options-800x600-tr.png`         | Turkish          |
 
-Upload at least two; the boost and equalizer panels are the two that show what
-the extension is for.
+Upload at least two; the boost and equalizer panels are the two that show what the extension is for.
 
 > [!NOTE]
 > The guidelines say white backgrounds are preferred. These images use the dark
@@ -277,8 +258,7 @@ the extension is for.
 > "Preferred" is not "required", and consistency across stores is worth more than
 > matching a stylistic suggestion.
 
-The generator scales its type with the canvas, so 800×600 stays readable — the
-unusable size is 640×400, which puts the popup's 13px type at 6px.
+The generator scales its type with the canvas, so 800×600 stays readable — the unusable size is 640×400, which puts the popup's 13px type at 6px.
 
 ---
 
@@ -290,10 +270,7 @@ Opera requires exactly **64×64**. Upload:
 public/icons/icon-64.png
 ```
 
-No other store asks for that size, so it exists only for this listing. It is
-rasterised from the same vector description as every other icon in
-[`scripts/icons.mjs`](../scripts/icons.mjs) rather than resampled from a larger
-PNG, so the speaker mark stays crisp at 64px. Regenerate the whole set with:
+No other store asks for that size, so it exists only for this listing. It is rasterised from the same vector description as every other icon in [`scripts/icons.mjs`](../scripts/icons.mjs) rather than resampled from a larger PNG, so the speaker mark stays crisp at 64px. Regenerate the whole set with:
 
 ```bash
 pnpm run icons
@@ -303,26 +280,19 @@ pnpm run icons
 
 ## Promotional image
 
-Optional, and used only if Opera's editors decide to feature the extension. The
-required size is exactly **300×188**.
+Optional, and used only if Opera's editors decide to feature the extension. The required size is exactly **300×188**.
 
 ```bash
 pnpm run promo -- --locale=en,tr
 ```
 
-That writes `store-assets/promo-300x188.png` and `promo-300x188-tr.png`: the
-extension icon, the name, and one line saying what it does. At 300×188 nothing
-else fits — the popup shrunk to this size is illegible, which is why this is a
-purpose-built card rather than a resized screenshot. The wording lives in `COPY`
-at the top of [`scripts/promo.mjs`](../scripts/promo.mjs); keep each tagline
-short enough to stay on one line.
+That writes `store-assets/promo-300x188.png` and `promo-300x188-tr.png`: the extension icon, the name, and one line saying what it does. At 300×188 nothing else fits — the popup shrunk to this size is illegible, which is why this is a purpose-built card rather than a resized screenshot. The wording lives in `COPY` at the top of [`scripts/promo.mjs`](../scripts/promo.mjs); keep each tagline short enough to stay on one line.
 
 ---
 
 ## Version detail page
 
-These fields are on the **version** page, not the listing form, and none has a
-Chrome or AMO counterpart.
+These fields are on the **version** page, not the listing form, and none has a Chrome or AMO counterpart.
 
 | Field                                      | Value                                                                               |
 | ------------------------------------------ | ----------------------------------------------------------------------------------- |
@@ -344,12 +314,9 @@ Chrome or AMO counterpart.
 > git push origin v0.2.1
 > ```
 
-The moderator field is required here rather than optional: the package is
-minified by esbuild, which is exactly the case the form calls out.
+The moderator field is required here rather than optional: the package is minified by esbuild, which is exactly the case the form calls out.
 
-`License URL` and `Privacy policy URL` are enough on their own — the form takes
-"this text **or** the URL", so the two full-text boxes can stay empty. The EULA
-text in [License](#license) is kept for stores that have no URL field.
+`License URL` and `Privacy policy URL` are enough on their own — the form takes "this text **or** the URL", so the two full-text boxes can stay empty. The EULA text in [License](#license) is kept for stores that have no URL field.
 
 ### Build instructions
 
@@ -387,30 +354,21 @@ text in [License](#license) is kept for stores that have no URL field.
 
 ## Permissions
 
-Opera has no permission-justification form: the MV2 manifest is read directly.
-The build requests:
+Opera has no permission-justification form: the MV2 manifest is read directly. The build requests:
 
 ```json
 ["storage", "webNavigation", "http://*/*", "https://*/*"]
 ```
 
-`tabs` and `activeTab` are deliberately absent — the host permissions already
-cover everything they were used for. `tabCapture` and `offscreen` are absent too:
-the tab-capture fallback is implemented only for Chromium MV3, and this is the
-MV2 build. See `buildPermissions` in
-[`scripts/manifest.mjs`](../scripts/manifest.mjs).
+`tabs` and `activeTab` are deliberately absent — the host permissions already cover everything they were used for. `tabCapture` and `offscreen` are absent too: the tab-capture fallback is implemented only for Chromium MV3, and this is the MV2 build. See `buildPermissions` in [`scripts/manifest.mjs`](../scripts/manifest.mjs).
 
 ---
 
 ## Moderation
 
-**Tick "I want my extension to be available for auto-publishing."** The extension
-makes no network requests, loads no remote code, and collects no data, so there
-is nothing an automated check needs a human to adjudicate. Leaving it unticked
-only adds review latency.
+**Tick "I want my extension to be available for auto-publishing."** The extension makes no network requests, loads no remote code, and collects no data, so there is nothing an automated check needs a human to adjudicate. Leaving it unticked only adds review latency.
 
-**Leave "Hide the add-on from search results" unticked.** That option is for
-private distribution by link.
+**Leave "Hide the add-on from search results" unticked.** That option is for private distribution by link.
 
 > [!NOTE]
 > The **Name** field is editable only until the first publication. After that it

@@ -1,34 +1,27 @@
 # Privacy Policy
 
-**Extension:** Tab Volume Booster (_Sekme Ses Yükseltici_)
-**Publisher:** Ramazan Sancar — <https://github.com/ramazansancar>
-**Last updated:** 11 September 2026
+**Extension:** Tab Volume Booster (_Sekme Ses Yükseltici_) **Publisher:** Ramazan Sancar — <https://github.com/ramazansancar> **Last updated:** 11 September 2026
 
 ---
 
 ## Summary
 
-Tab Volume Booster does not collect, transmit, sell, or share any personal or
-sensitive user data. It makes no network requests of any kind. Everything the
-extension stores stays on your own device.
+Tab Volume Booster does not collect, transmit, sell, or share any personal or sensitive user data. It makes no network requests of any kind. Everything the extension stores stays on your own device.
 
 ---
 
 ## What the extension stores
 
-The extension writes to the browser's local extension storage
-(`storage.local`) only, and only in these two cases:
+The extension writes to the browser's local extension storage (`storage.local`) only, and only in these two cases:
 
 | Stored item | When it is written | What it contains |
 | --- | --- | --- |
 | Per-site volume preference | Only when you tick **Remember this site** | The origin of the site (for example `https://example.com`) and the gain level you chose |
 | Global preferences | When you change a setting in the options page | Default boost level, boost cap, and other interface preferences |
 
-Per-tab boost state is held **in memory only** and is discarded when the tab is
-closed or the browser is restarted. It is never written to disk.
+Per-tab boost state is held **in memory only** and is discarded when the tab is closed or the browser is restarted. It is never written to disk.
 
-You can inspect and delete every saved site from the extension's options page
-at any time. Uninstalling the extension removes all stored data.
+You can inspect and delete every saved site from the extension's options page at any time. Uninstalling the extension removes all stored data.
 
 ## What the extension does not do
 
@@ -60,9 +53,7 @@ at any time. Uninstalling the extension removes all stored data.
 
 ## Audio processing
 
-Audio is amplified locally in your browser using the Web Audio API. On the
-Chromium fallback path, tab audio is routed through the same local audio graph.
-No audio is recorded, buffered to disk, uploaded, or shared in any form.
+Audio is amplified locally in your browser using the Web Audio API. On the Chromium fallback path, tab audio is routed through the same local audio graph. No audio is recorded, buffered to disk, uploaded, or shared in any form.
 
 ## Children's privacy
 
@@ -70,9 +61,7 @@ The extension collects no data from anyone, including children.
 
 ## Changes to this policy
 
-Any change to this policy will be published in this file in the project
-repository, with an updated date at the top. The revision history is publicly
-visible in the repository's commit log.
+Any change to this policy will be published in this file in the project repository, with an updated date at the top. The revision history is publicly visible in the repository's commit log.
 
 ## Contact
 

@@ -1,8 +1,6 @@
 # AMO submission text
 
-Copy-paste material for the addons.mozilla.org submission form. For the Chrome
-Web Store and Edge, see [`chrome-submission.md`](chrome-submission.md); for
-which build goes where, see [`publishing.md`](publishing.md). Keep this file updated when behaviour changes, so a release never needs the text rewritten from scratch.
+Copy-paste material for the addons.mozilla.org submission form. For the Chrome Web Store and Edge, see [`chrome-submission.md`](chrome-submission.md); for which build goes where, see [`publishing.md`](publishing.md). Keep this file updated when behaviour changes, so a release never needs the text rewritten from scratch.
 
 > [!NOTE]
 > AMO's post-upload checklist asks for two things: **version notes** and, if the add-on needs an account to test, **notes to reviewer**. This add-on needs no account, but the reviewer note below explains how to exercise it, which speeds up review.
@@ -132,8 +130,7 @@ purely to silence the warning would drop every user below 140, ESR included.
 
 ### Compact version — use this when the form truncates
 
-The field silently cuts long input. This version fits and still carries
-everything AMO policy requires.
+The field silently cuts long input. This version fits and still carries everything AMO policy requires.
 
 ```text
 No account or login is required to test this add-on.

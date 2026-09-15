@@ -1,16 +1,13 @@
 # Chrome Web Store submission text
 
-Copy-paste material for the Chrome Web Store dashboard. Edge Add-ons asks the
-same questions in a different order and accepts the same answers, so this file
-covers both; the differences are noted at the end.
+Copy-paste material for the Chrome Web Store dashboard. Edge Add-ons asks the same questions in a different order and accepts the same answers, so this file covers both; the differences are noted at the end.
 
 > [!IMPORTANT]
 > Upload `dist/chrome-mv3-<version>.zip`, produced by `pnpm run package`. A plain
 > `pnpm run build` refreshes the unpacked folder but deletes any existing zip
 > rather than updating it, so a stale archive can never be uploaded by mistake.
 
-Related: [`amo-submission.md`](amo-submission.md) for Firefox,
-[`publishing.md`](publishing.md) for which build goes where.
+Related: [`amo-submission.md`](amo-submission.md) for Firefox, [`publishing.md`](publishing.md) for which build goes where.
 
 ---
 
@@ -28,8 +25,7 @@ Volume Booster Tab
 Boost any tab's volume to 600% with a limiter, equalizer and balance. Every tab is independent. No tracking, open source.
 ```
 
-**Category:** Tools
-**Language:** English
+**Category:** Tools **Language:** English
 
 **Description** (16,000 characters max)
 
@@ -106,15 +102,9 @@ Licensed under the GNU Affero General Public License v3.0.
 
 ## Turkish listing (`tr`)
 
-Both stores let a listing carry translated text per locale: Chrome under
-_Store listing_ → the language selector at the top, Edge under _Availability_ →
-_Add a language_. The English listing stays the default; this is the `tr`
-variant.
+Both stores let a listing carry translated text per locale: Chrome under _Store listing_ → the language selector at the top, Edge under _Availability_ → _Add a language_. The English listing stays the default; this is the `tr` variant.
 
-Terminology follows [`public/_locales/tr/messages.json`](../public/_locales/tr/messages.json)
-so the listing and the interface use the same words — _limitör_, _ekolayzer_,
-_denge_, _sekme_. Do not "improve" them in isolation here; change the locale
-file and this text together.
+Terminology follows [`public/_locales/tr/messages.json`](../public/_locales/tr/messages.json) so the listing and the interface use the same words — _limitör_, _ekolayzer_, _denge_, _sekme_. Do not "improve" them in isolation here; change the locale file and this text together.
 
 **Ad** (45 karakter)
 
@@ -221,14 +211,11 @@ This is the tab that blocks most submissions. Every field below is required.
 Amplify and shape the audio of the browser tab the user is currently viewing.
 ```
 
-Chrome requires a _narrow_ single purpose. Everything the extension does —
-gain, limiter, equalizer, balance, mono — serves that one purpose, which is why
-they belong in one item rather than several.
+Chrome requires a _narrow_ single purpose. Everything the extension does — gain, limiter, equalizer, balance, mono — serves that one purpose, which is why they belong in one item rather than several.
 
 ### Permission justifications
 
-Each field takes a short paragraph. Chrome rejects justifications that restate
-the permission name without explaining the need.
+Each field takes a short paragraph. Chrome rejects justifications that restate the permission name without explaining the need.
 
 **`storage`**
 
@@ -286,8 +273,7 @@ Everything the extension executes ships inside the package. There is no eval(), 
 
 ### Data usage
 
-**Collected data types:** tick **nothing**. The extension collects no user data
-in any of Chrome's categories.
+**Collected data types:** tick **nothing**. The extension collects no user data in any of Chrome's categories.
 
 **Certifications** — tick all three:
 
@@ -295,25 +281,19 @@ in any of Chrome's categories.
 - [x] I do not use or transfer user data for purposes that are unrelated to my item's single purpose
 - [x] I do not use or transfer user data to determine creditworthiness or for lending purposes
 
-**Privacy policy URL:** always fill this in. A README anchor is **not** a valid
-privacy policy — a submission linking one was rejected under _User Data Privacy_
-("the privacy policy link does not lead to a valid privacy policy"). Link the
-dedicated page instead:
+**Privacy policy URL:** always fill this in. A README anchor is **not** a valid privacy policy — a submission linking one was rejected under _User Data Privacy_ ("the privacy policy link does not lead to a valid privacy policy"). Link the dedicated page instead:
 
 ```text
 https://github.com/ramazansancar/volume-booster-tab-extension/blob/master/PRIVACY.md
 ```
 
-The page must be publicly reachable without a login, and must load as a privacy
-policy on its own — not as a section of another document.
+The page must be publicly reachable without a login, and must load as a privacy policy on its own — not as a section of another document.
 
 ---
 
 ## Notes for the reviewer
 
-Chrome has no dedicated reviewer-notes field like AMO's. Put this in the
-**Justification** box under _Account_ → _Item_ → _Privacy_ if one appears, or
-keep it to answer a rejection.
+Chrome has no dedicated reviewer-notes field like AMO's. Put this in the **Justification** box under _Account_ → _Item_ → _Privacy_ if one appears, or keep it to answer a rejection.
 
 ```text
 HOW TO TEST
@@ -371,31 +351,20 @@ Output lands in `store-assets/`. Three images per language:
 | `popup-equalizer-*.png` | Advanced settings expanded, showing the six-band equalizer        |
 | `options-*.png`         | The settings page: defaults, language picker and saved sites      |
 
-English writes the unsuffixed names the listing already points at; every other
-language appends its code, so `options-1280x800.png` and
-`options-1280x800-tr.png` sit side by side rather than overwriting each other.
+English writes the unsuffixed names the listing already points at; every other language appends its code, so `options-1280x800.png` and `options-1280x800-tr.png` sit side by side rather than overwriting each other.
 
-Both stores take a separate screenshot set per listing language, next to the
-translated text: upload the `-tr` images under the Turkish listing and the
-unsuffixed ones under English.
+Both stores take a separate screenshot set per listing language, next to the translated text: upload the `-tr` images under the Turkish listing and the unsuffixed ones under English.
 
 ### Adding a language
 
-The strings live in the `STRINGS` table at the top of
-[`scripts/screenshots.mjs`](../scripts/screenshots.mjs) — one entry per locale,
-holding both the marketing copy (headings, blurbs, feature lists) and the
-interface labels the rendered panels show. Add an entry keyed by locale code and
-`--locale=<code>` starts working; an unknown code fails with the list of what is
-available rather than rendering English under a translated name.
+The strings live in the `STRINGS` table at the top of [`scripts/screenshots.mjs`](../scripts/screenshots.mjs) — one entry per locale, holding both the marketing copy (headings, blurbs, feature lists) and the interface labels the rendered panels show. Add an entry keyed by locale code and `--locale=<code>` starts working; an unknown code fails with the list of what is available rather than rendering English under a translated name.
 
-Two things do not come out of a plain string swap, so they have their own
-fields:
+Two things do not come out of a plain string swap, so they have their own fields:
 
 - **Percentages.** English writes `600%`, Turkish writes `%600`. Every number
   the images show goes through `pct()`, which places the sign per locale.
 - **The balance readout.** English shortens Left and Right to `L` and `R`.
-  Turkish cannot: _Sol_ and _Sağ_ share a first letter, so `leftShort` and
-  `rightShort` spell them out instead.
+  Turkish cannot: _Sol_ and _Sağ_ share a first letter, so `leftShort` and `rightShort` spell them out instead.
 
 > [!IMPORTANT]
 > The interface half of each entry must match
@@ -404,9 +373,7 @@ fields:
 > for marketing copy — but if they drift, the listing shows an interface the
 > user will never see. Change both together.
 
-The images render the extension's real stylesheets against a backdrop defined
-in [`scripts/screenshot-templates/background.html`](../scripts/screenshot-templates/background.html) —
-edit that file to change the look without touching the generator.
+The images render the extension's real stylesheets against a backdrop defined in [`scripts/screenshot-templates/background.html`](../scripts/screenshot-templates/background.html) — edit that file to change the look without touching the generator.
 
 > [!NOTE]
 > The panels are driven by fixed sample state rather than a live tab, so the
@@ -422,9 +389,7 @@ edit that file to change the look without touching the generator.
 
 ## Differences from Edge Add-ons
 
-Edge accepts `dist/edge-mv3-<version>.zip` and asks the same questions under
-**Availability** and **Properties** rather than a Privacy tab. The answers above
-apply unchanged, with these differences:
+Edge accepts `dist/edge-mv3-<version>.zip` and asks the same questions under **Availability** and **Properties** rather than a Privacy tab. The answers above apply unchanged, with these differences:
 
 - Edge asks for a **short description** (limit 200 characters) — the Summary
   above fits.
@@ -436,16 +401,14 @@ apply unchanged, with these differences:
 
 Pick **Productivity**.
 
-Edge offers a single required category from a fixed list, and it is not the same
-list Chrome uses:
+Edge offers a single required category from a fixed list, and it is not the same list Chrome uses:
 
 ```text
 Accessibility · Blogging · Developer Tools · Entertainment · News And Weather
 Photos · Productivity · Search Tools · Shopping · Social · Communication · Sports
 ```
 
-_Tools_, the Chrome category for this listing, does not exist here. Three
-entries are plausible substitutes; the reasoning for choosing between them:
+_Tools_, the Chrome category for this listing, does not exist here. Three entries are plausible substitutes; the reasoning for choosing between them:
 
 | Category         | Verdict                                                                                                                                                                                                                                                                                                                                 |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -453,16 +416,13 @@ entries are plausible substitutes; the reasoning for choosing between them:
 | Accessibility    | Defensible — amplification genuinely helps hard-of-hearing users, and the category is less crowded. But the listing does not present itself as an assistive tool, and a reviewer comparing the description against the category could reasonably disagree. Only choose it if the description is rewritten to lead with hearing support. |
 | Entertainment    | Describes what users boost, not what the extension does. Crowded with media and streaming items, so discoverability is worse rather than better.                                                                                                                                                                                        |
 
-The category can be changed later from the dashboard without resubmitting the
-package, so this is not a decision worth agonising over — but changing it resets
-the listing to review.
+The category can be changed later from the dashboard without resubmitting the package, so this is not a decision worth agonising over — but changing it resets the listing to review.
 
 ---
 
 ## Differences from AMO
 
-Firefox's submission differs enough to keep in its own file
-([`amo-submission.md`](amo-submission.md)), but the notable divergences are:
+Firefox's submission differs enough to keep in its own file ([`amo-submission.md`](amo-submission.md)), but the notable divergences are:
 
 |                 | Chrome Web Store          | addons.mozilla.org                                      |
 | --------------- | ------------------------- | ------------------------------------------------------- |
