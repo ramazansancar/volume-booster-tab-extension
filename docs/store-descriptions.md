@@ -2160,279 +2160,279 @@ https://github.com/ramazansancar/volume-booster-tab-extension
 Licenciado sob a GNU Affero General Public License v3.0.
 ```
 
-## `pt-PT` — Português (Portugal) — TRANSLATION NEEDED
+## `pt-PT` — Português (Portugal)
 
-_English text, shown because this language has no description yet._
+_Translated from the English description._
 
 ```text
-Volume Booster Tab raises the volume of any browser tab beyond what the page itself allows, and gives you real control over how that sound is shaped.
+O Volume Booster Tab aumenta o volume de qualquer separador do navegador para além do que a própria página permite, e dá-lhe controlo real sobre a forma como esse som é moldado.
 
-FEATURES
+FUNCIONALIDADES
 
-- Boost from 0% to 600%, raisable to 1000% in settings
-- Limiter that prevents clipping and painful peaks when boosting
-- 6-band equalizer, 60 Hz to 10 kHz, under Advanced settings
-- Stereo balance, from full left to full right
-- Mono downmix for listening with a single earbud
-- Bypass switch to compare the processed and untouched sound instantly
-- Available in 55 languages, fully translated
+- Amplificação de 0% a 600%, elevável a 1000% nas definições
+- Limitador que evita distorção e picos incómodos ao amplificar
+- Equalizador de 6 bandas, de 60 Hz a 10 kHz, nas Definições avançadas
+- Balanço estéreo, de todo à esquerda a todo à direita
+- Mistura em mono para ouvir com apenas um auricular
+- Interruptor de derivação para comparar de imediato o som processado e o original
+- Disponível em 55 idiomas, totalmente traduzido
 
-EVERY TAB IS INDEPENDENT
+CADA SEPARADOR É INDEPENDENTE
 
-This is the part most volume boosters get wrong. Every tab keeps its own volume, its own equalizer curve, its own balance. Run a stream at 300% in one tab and music at 120% in another; changing one never touches the other.
+É aqui que a maioria dos amplificadores de volume falha. Cada separador mantém o seu próprio volume, a sua própria curva de equalização, o seu próprio balanço. Deixe uma transmissão a 300% num separador e música a 120% noutro; alterar um nunca toca no outro.
 
-The toolbar badge shows the level of the tab you are looking at, so you can tell at a glance which tabs are amplified.
+O emblema na barra de ferramentas mostra o nível do separador que está a ver, pelo que sabe num relance quais os separadores amplificados.
 
-TEMPORARY BY DEFAULT
+TEMPORÁRIO POR PREDEFINIÇÃO
 
-A boost is forgotten when you close the tab. A setting you chose for one video can never surprise you weeks later on a different page.
+A amplificação é esquecida quando fecha o separador. Uma definição escolhida para um vídeo nunca o poderá surpreender semanas depois noutra página.
 
-If you do want a site to always open at the same volume, tick "Remember this site" in the popup. The settings page lists every site you have saved, lets you edit or remove any of them, and can make new tabs remember automatically.
+Se quiser que um site abra sempre com o mesmo volume, assinale «Memorizar este site» na janela instantânea. A página de definições lista todos os sites guardados, permite editar ou remover qualquer um deles e pode fazer com que os novos separadores memorizem automaticamente.
 
-KEEPS UP WITH STREAMING SITES
+ACOMPANHA OS SITES DE STREAMING
 
-Sites like YouTube, Twitch and Kick replace their video player when you move to the next episode or stream, without reloading the page. Many boosters lose the audio at that moment and keep showing a level they are no longer applying. This one watches for the swap and reapplies your settings to the new player, so the volume you set stays the volume you get.
+Sites como o YouTube, o Twitch e o Kick substituem o leitor de vídeo quando passa para o episódio ou transmissão seguinte, sem recarregar a página. Muitos amplificadores perdem o áudio exatamente nesse momento e continuam a mostrar um nível que já não aplicam. Esta extensão vigia a substituição e volta a aplicar as suas definições ao novo leitor, pelo que o volume que definiu continua a ser o volume que ouve.
 
-PRIVACY
+PRIVACIDADE
 
-No tracking. No analytics. No account. No network requests of any kind, not even for fonts. Your settings never leave your own machine.
+Sem rastreio. Sem análises. Sem conta. Sem pedidos de rede de qualquer tipo, nem sequer para tipos de letra. As suas definições nunca saem da sua própria máquina.
 
-WHAT IT CANNOT DO
+O QUE NÃO CONSEGUE FAZER
 
-DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
+Serviços protegidos por DRM como o Netflix, o Disney+, o Prime Video e o Spotify escondem o áudio das extensões por concepção, pelo que não podem ser amplificados. Quando uma página não pode ser processada, a janela instantânea di-lo com clareza em vez de silenciosamente não fazer nada.
 
-Browser pages such as chrome:// and the Web Store are off limits to every extension, including this one.
+Páginas do navegador como chrome:// e a Web Store estão vedadas a qualquer extensão, incluindo esta.
 
-PLEASE BOOST RESPONSIBLY
+AMPLIFIQUE COM RESPONSABILIDADE
 
-High volume can damage both your hearing and your speakers, especially with headphones. The limiter is on by default above 100% and you should leave it on. Raising the ceiling past 600% in settings is at your own risk.
+O volume elevado pode danificar tanto a sua audição como as suas colunas, sobretudo com auscultadores. O limitador está ligado por predefinição acima dos 100% e deve deixá-lo ligado. Elevar o limite para além dos 600% nas definições é por sua conta e risco.
 
-OPEN SOURCE
+CÓDIGO ABERTO
 
-Source code, issue tracker and contribution guide:
+Código-fonte, registo de problemas e guia de contribuição:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
-Licensed under the GNU Affero General Public License v3.0.
+Licenciado sob a GNU Affero General Public License v3.0.
 ```
 
-## `ro` — Română — TRANSLATION NEEDED
+## `ro` — Română
 
-_English text, shown because this language has no description yet._
+_Translated from the English description._
 
 ```text
-Volume Booster Tab raises the volume of any browser tab beyond what the page itself allows, and gives you real control over how that sound is shaped.
+Volume Booster Tab ridică volumul oricărei file din browser dincolo de ceea ce permite pagina însăși și vă oferă control real asupra modului în care este modelat acel sunet.
 
-FEATURES
+FUNCȚII
 
-- Boost from 0% to 600%, raisable to 1000% in settings
-- Limiter that prevents clipping and painful peaks when boosting
-- 6-band equalizer, 60 Hz to 10 kHz, under Advanced settings
-- Stereo balance, from full left to full right
-- Mono downmix for listening with a single earbud
-- Bypass switch to compare the processed and untouched sound instantly
-- Available in 55 languages, fully translated
+- Amplificare de la 0% la 600%, care poate fi ridicată la 1000% din setări
+- Limitator care previne distorsiunea și vârfurile dureroase la amplificare
+- Egalizator cu 6 benzi, de la 60 Hz la 10 kHz, în Setări avansate
+- Balans stereo, de la extrema stângă la extrema dreaptă
+- Mixare în mono pentru ascultare cu o singură cască
+- Comutator de ocolire pentru a compara instantaneu sunetul procesat cu cel original
+- Disponibil în 55 de limbi, tradus integral
 
-EVERY TAB IS INDEPENDENT
+FIECARE FILĂ ESTE INDEPENDENTĂ
 
-This is the part most volume boosters get wrong. Every tab keeps its own volume, its own equalizer curve, its own balance. Run a stream at 300% in one tab and music at 120% in another; changing one never touches the other.
+Aici greșesc majoritatea amplificatoarelor de volum. Fiecare filă își păstrează propriul volum, propria curbă de egalizare, propriul balans. Rulați o transmisiune la 300% într-o filă și muzică la 120% în alta; modificarea uneia nu o atinge niciodată pe cealaltă.
 
-The toolbar badge shows the level of the tab you are looking at, so you can tell at a glance which tabs are amplified.
+Insigna din bara de instrumente afișează nivelul filei pe care o priviți, așa că vedeți dintr-o privire care file sunt amplificate.
 
-TEMPORARY BY DEFAULT
+TEMPORAR ÎN MOD IMPLICIT
 
-A boost is forgotten when you close the tab. A setting you chose for one video can never surprise you weeks later on a different page.
+Amplificarea este uitată când închideți fila. O setare aleasă pentru un videoclip nu vă poate surprinde niciodată săptămâni mai târziu pe o altă pagină.
 
-If you do want a site to always open at the same volume, tick "Remember this site" in the popup. The settings page lists every site you have saved, lets you edit or remove any of them, and can make new tabs remember automatically.
+Dacă doriți ca un site să se deschidă mereu la același volum, bifați „Reține acest site” în fereastra pop-up. Pagina de setări listează fiecare site salvat, vă permite să editați sau să eliminați oricare dintre ele și poate face ca filele noi să rețină automat.
 
-KEEPS UP WITH STREAMING SITES
+ȚINE PASUL CU SITE-URILE DE STREAMING
 
-Sites like YouTube, Twitch and Kick replace their video player when you move to the next episode or stream, without reloading the page. Many boosters lose the audio at that moment and keep showing a level they are no longer applying. This one watches for the swap and reapplies your settings to the new player, so the volume you set stays the volume you get.
+Site-uri precum YouTube, Twitch și Kick își înlocuiesc playerul video când treceți la episodul sau transmisiunea următoare, fără a reîncărca pagina. Multe amplificatoare pierd sunetul exact în acel moment și continuă să afișeze un nivel pe care nu îl mai aplică. Această extensie urmărește schimbarea și reaplică setările dumneavoastră noului player, astfel încât volumul pe care l-ați stabilit rămâne volumul pe care îl auziți.
 
-PRIVACY
+CONFIDENȚIALITATE
 
-No tracking. No analytics. No account. No network requests of any kind, not even for fonts. Your settings never leave your own machine.
+Fără urmărire. Fără analize. Fără cont. Fără cereri de rețea de niciun fel, nici măcar pentru fonturi. Setările dumneavoastră nu părăsesc niciodată propriul dispozitiv.
 
-WHAT IT CANNOT DO
+CE NU POATE FACE
 
-DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
+Serviciile protejate prin DRM precum Netflix, Disney+, Prime Video și Spotify își ascund sunetul de extensii prin concepție, așa că nu pot fi amplificate. Când o pagină nu poate fi procesată, fereastra pop-up o spune direct, în loc să nu facă nimic în tăcere.
 
-Browser pages such as chrome:// and the Web Store are off limits to every extension, including this one.
+Paginile browserului precum chrome:// și magazinul web sunt interzise oricărei extensii, inclusiv acesteia.
 
-PLEASE BOOST RESPONSIBLY
+VĂ RUGĂM SĂ AMPLIFICAȚI RESPONSABIL
 
-High volume can damage both your hearing and your speakers, especially with headphones. The limiter is on by default above 100% and you should leave it on. Raising the ceiling past 600% in settings is at your own risk.
+Volumul ridicat vă poate afecta atât auzul, cât și difuzoarele, mai ales cu căștile. Limitatorul este pornit implicit peste 100% și ar trebui lăsat pornit. Ridicarea plafonului peste 600% din setări se face pe propria răspundere.
 
-OPEN SOURCE
+SURSĂ DESCHISĂ
 
-Source code, issue tracker and contribution guide:
+Cod sursă, urmărirea problemelor și ghid de contribuție:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
-Licensed under the GNU Affero General Public License v3.0.
+Licențiat sub GNU Affero General Public License v3.0.
 ```
 
-## `ru` — Русский — TRANSLATION NEEDED
+## `ru` — Русский
 
-_English text, shown because this language has no description yet._
+_Translated from the English description._
 
 ```text
-Volume Booster Tab raises the volume of any browser tab beyond what the page itself allows, and gives you real control over how that sound is shaped.
+Volume Booster Tab повышает громкость любой вкладки браузера сверх того, что допускает сама страница, и даёт вам реальный контроль над тем, как этот звук формируется.
 
-FEATURES
+ВОЗМОЖНОСТИ
 
-- Boost from 0% to 600%, raisable to 1000% in settings
-- Limiter that prevents clipping and painful peaks when boosting
-- 6-band equalizer, 60 Hz to 10 kHz, under Advanced settings
-- Stereo balance, from full left to full right
-- Mono downmix for listening with a single earbud
-- Bypass switch to compare the processed and untouched sound instantly
-- Available in 55 languages, fully translated
+- Усиление от 0% до 600%, в настройках поднимается до 1000%
+- Лимитер, предотвращающий искажения и болезненные пики при усилении
+- 6-полосный эквалайзер от 60 Гц до 10 кГц в разделе «Дополнительные настройки»
+- Стереобаланс, от крайнего левого до крайнего правого
+- Сведение в моно для прослушивания одним наушником
+- Переключатель обхода для мгновенного сравнения обработанного и исходного звука
+- Доступно на 55 языках, переведено полностью
 
-EVERY TAB IS INDEPENDENT
+КАЖДАЯ ВКЛАДКА НЕЗАВИСИМА
 
-This is the part most volume boosters get wrong. Every tab keeps its own volume, its own equalizer curve, its own balance. Run a stream at 300% in one tab and music at 120% in another; changing one never touches the other.
+Именно здесь ошибается большинство усилителей громкости. Каждая вкладка хранит собственную громкость, собственную кривую эквалайзера, собственный баланс. Запустите трансляцию на 300% в одной вкладке и музыку на 120% в другой; изменение одной никогда не затрагивает другую.
 
-The toolbar badge shows the level of the tab you are looking at, so you can tell at a glance which tabs are amplified.
+Значок на панели инструментов показывает уровень вкладки, которую вы смотрите, поэтому с первого взгляда видно, какие вкладки усилены.
 
-TEMPORARY BY DEFAULT
+ПО УМОЛЧАНИЮ ВРЕМЕННО
 
-A boost is forgotten when you close the tab. A setting you chose for one video can never surprise you weeks later on a different page.
+Усиление забывается при закрытии вкладки. Настройка, выбранная для одного видео, никогда не застанет вас врасплох через несколько недель на другой странице.
 
-If you do want a site to always open at the same volume, tick "Remember this site" in the popup. The settings page lists every site you have saved, lets you edit or remove any of them, and can make new tabs remember automatically.
+Если вы хотите, чтобы сайт всегда открывался с одной и той же громкостью, отметьте «Запомнить этот сайт» во всплывающем окне. Страница настроек перечисляет каждый сохранённый сайт, позволяет изменить или удалить любой из них и может заставить новые вкладки запоминать автоматически.
 
-KEEPS UP WITH STREAMING SITES
+ПОСПЕВАЕТ ЗА СТРИМИНГОВЫМИ САЙТАМИ
 
-Sites like YouTube, Twitch and Kick replace their video player when you move to the next episode or stream, without reloading the page. Many boosters lose the audio at that moment and keep showing a level they are no longer applying. This one watches for the swap and reapplies your settings to the new player, so the volume you set stays the volume you get.
+Сайты вроде YouTube, Twitch и Kick подменяют свой видеоплеер при переходе к следующей серии или трансляции, не перезагружая страницу. Многие усилители именно в этот момент теряют звук и продолжают показывать уровень, который уже не применяют. Это расширение следит за подменой и заново применяет ваши настройки к новому плееру, так что заданная громкость остаётся той громкостью, которую вы слышите.
 
-PRIVACY
+КОНФИДЕНЦИАЛЬНОСТЬ
 
-No tracking. No analytics. No account. No network requests of any kind, not even for fonts. Your settings never leave your own machine.
+Никакого отслеживания. Никакой аналитики. Никакой учётной записи. Никаких сетевых запросов любого рода, даже за шрифтами. Ваши настройки никогда не покидают ваше собственное устройство.
 
-WHAT IT CANNOT DO
+ЧЕГО ОНО НЕ МОЖЕТ
 
-DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
+Защищённые DRM сервисы вроде Netflix, Disney+, Prime Video и Spotify скрывают свой звук от расширений по самой своей конструкции, поэтому усилить их нельзя. Когда страницу невозможно обработать, всплывающее окно прямо об этом сообщает, вместо того чтобы молча ничего не делать.
 
-Browser pages such as chrome:// and the Web Store are off limits to every extension, including this one.
+Страницы браузера вроде chrome:// и интернет-магазина закрыты для любого расширения, включая это.
 
-PLEASE BOOST RESPONSIBLY
+ПОЖАЛУЙСТА, УСИЛИВАЙТЕ ОТВЕТСТВЕННО
 
-High volume can damage both your hearing and your speakers, especially with headphones. The limiter is on by default above 100% and you should leave it on. Raising the ceiling past 600% in settings is at your own risk.
+Высокая громкость может повредить и слух, и динамики, особенно в наушниках. Лимитер по умолчанию включён выше 100%, и его стоит оставить включённым. Поднятие потолка выше 600% в настройках — на ваш собственный риск.
 
-OPEN SOURCE
+ОТКРЫТЫЙ ИСХОДНЫЙ КОД
 
-Source code, issue tracker and contribution guide:
+Исходный код, трекер задач и руководство для участников:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
-Licensed under the GNU Affero General Public License v3.0.
+Распространяется по лицензии GNU Affero General Public License v3.0.
 ```
 
-## `sk` — Slovenčina — TRANSLATION NEEDED
+## `sk` — Slovenčina
 
-_English text, shown because this language has no description yet._
+_Translated from the English description._
 
 ```text
-Volume Booster Tab raises the volume of any browser tab beyond what the page itself allows, and gives you real control over how that sound is shaped.
+Volume Booster Tab zvyšuje hlasitosť ľubovoľnej karty prehliadača nad rámec toho, čo dovoľuje samotná stránka, a dáva vám skutočnú kontrolu nad tým, ako je zvuk tvarovaný.
 
-FEATURES
+FUNKCIE
 
-- Boost from 0% to 600%, raisable to 1000% in settings
-- Limiter that prevents clipping and painful peaks when boosting
-- 6-band equalizer, 60 Hz to 10 kHz, under Advanced settings
-- Stereo balance, from full left to full right
-- Mono downmix for listening with a single earbud
-- Bypass switch to compare the processed and untouched sound instantly
-- Available in 55 languages, fully translated
+- Zosilnenie od 0 % do 600 %, v nastaveniach zvýšiteľné až na 1000 %
+- Limiter, ktorý pri zosilňovaní bráni skresleniu a bolestivým špičkám
+- Šesťpásmový ekvalizér od 60 Hz do 10 kHz v Rozšírených nastaveniach
+- Stereo vyváženie, od úplne vľavo po úplne vpravo
+- Zmiešanie do mono na počúvanie jedným slúchadlom
+- Prepínač obídenia na okamžité porovnanie spracovaného a pôvodného zvuku
+- Dostupné v 55 jazykoch, kompletne preložené
 
-EVERY TAB IS INDEPENDENT
+KAŽDÁ KARTA JE NEZÁVISLÁ
 
-This is the part most volume boosters get wrong. Every tab keeps its own volume, its own equalizer curve, its own balance. Run a stream at 300% in one tab and music at 120% in another; changing one never touches the other.
+Práve v tomto väčšina zosilňovačov hlasitosti chybuje. Každá karta si drží vlastnú hlasitosť, vlastnú krivku ekvalizéra, vlastné vyváženie. Pustite si prenos na 300 % v jednej karte a hudbu na 120 % v druhej; zmena jednej sa tej druhej nikdy nedotkne.
 
-The toolbar badge shows the level of the tab you are looking at, so you can tell at a glance which tabs are amplified.
+Odznak na paneli nástrojov ukazuje úroveň karty, na ktorú sa práve pozeráte, takže na prvý pohľad viete, ktoré karty sú zosilnené.
 
-TEMPORARY BY DEFAULT
+V PREDVOLENOM STAVE DOČASNÉ
 
-A boost is forgotten when you close the tab. A setting you chose for one video can never surprise you weeks later on a different page.
+Zosilnenie sa zabudne, len čo kartu zavriete. Nastavenie zvolené pre jedno video vás nikdy nemôže o týždne neskôr prekvapiť na inej stránke.
 
-If you do want a site to always open at the same volume, tick "Remember this site" in the popup. The settings page lists every site you have saved, lets you edit or remove any of them, and can make new tabs remember automatically.
+Ak chcete, aby sa stránka vždy otvárala s rovnakou hlasitosťou, začiarknite v okne „Zapamätať si túto stránku“. Stránka nastavení vypisuje každú uloženú stránku, umožňuje ktorúkoľvek upraviť či odstrániť a dokáže zariadiť, aby si nové karty pamätali automaticky.
 
-KEEPS UP WITH STREAMING SITES
+DRŽÍ KROK SO STREAMOVACÍMI STRÁNKAMI
 
-Sites like YouTube, Twitch and Kick replace their video player when you move to the next episode or stream, without reloading the page. Many boosters lose the audio at that moment and keep showing a level they are no longer applying. This one watches for the swap and reapplies your settings to the new player, so the volume you set stays the volume you get.
+Stránky ako YouTube, Twitch a Kick vymieňajú svoj videoprehrávač, keď prejdete na ďalšiu časť alebo prenos, bez opätovného načítania stránky. Mnohé zosilňovače v tej chvíli stratia zvuk a ďalej zobrazujú úroveň, ktorú už neuplatňujú. Toto rozšírenie výmenu sleduje a znova použije vaše nastavenia na nový prehrávač, takže hlasitosť, ktorú ste nastavili, zostáva hlasitosťou, ktorú počujete.
 
-PRIVACY
+SÚKROMIE
 
-No tracking. No analytics. No account. No network requests of any kind, not even for fonts. Your settings never leave your own machine.
+Žiadne sledovanie. Žiadna analytika. Žiadny účet. Žiadne sieťové požiadavky akéhokoľvek druhu, ani kvôli písmam. Vaše nastavenia nikdy neopustia vaše vlastné zariadenie.
 
-WHAT IT CANNOT DO
+ČO NEDOKÁŽE
 
-DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
+Služby chránené DRM ako Netflix, Disney+, Prime Video a Spotify skrývajú svoj zvuk pred rozšíreniami už zo svojej podstaty, takže ich zosilniť nemožno. Keď stránku nemožno spracovať, okno to povie priamo, namiesto toho, aby ticho nerobilo nič.
 
-Browser pages such as chrome:// and the Web Store are off limits to every extension, including this one.
+Stránky prehliadača ako chrome:// a internetový obchod sú zakázané každému rozšíreniu vrátane tohto.
 
-PLEASE BOOST RESPONSIBLY
+ZOSILŇUJTE PROSÍM ZODPOVEDNE
 
-High volume can damage both your hearing and your speakers, especially with headphones. The limiter is on by default above 100% and you should leave it on. Raising the ceiling past 600% in settings is at your own risk.
+Vysoká hlasitosť môže poškodiť sluch aj reproduktory, najmä pri slúchadlách. Limiter je nad 100 % predvolene zapnutý a mali by ste ho nechať zapnutý. Zvýšenie stropu nad 600 % v nastaveniach je na vaše vlastné riziko.
 
-OPEN SOURCE
+OTVORENÝ ZDROJ
 
-Source code, issue tracker and contribution guide:
+Zdrojový kód, sledovanie chýb a sprievodca prispievaním:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
-Licensed under the GNU Affero General Public License v3.0.
+Licencované pod GNU Affero General Public License v3.0.
 ```
 
-## `sl` — Slovenščina — TRANSLATION NEEDED
+## `sl` — Slovenščina
 
-_English text, shown because this language has no description yet._
+_Translated from the English description._
 
 ```text
-Volume Booster Tab raises the volume of any browser tab beyond what the page itself allows, and gives you real control over how that sound is shaped.
+Volume Booster Tab dvigne glasnost katerega koli zavihka brskalnika prek tega, kar dovoljuje sama stran, in vam da resničen nadzor nad tem, kako se ta zvok oblikuje.
 
-FEATURES
+ZMOŽNOSTI
 
-- Boost from 0% to 600%, raisable to 1000% in settings
-- Limiter that prevents clipping and painful peaks when boosting
-- 6-band equalizer, 60 Hz to 10 kHz, under Advanced settings
-- Stereo balance, from full left to full right
-- Mono downmix for listening with a single earbud
-- Bypass switch to compare the processed and untouched sound instantly
-- Available in 55 languages, fully translated
+- Ojačitev od 0 % do 600 %, v nastavitvah dvignljiva do 1000 %
+- Omejevalnik, ki pri ojačevanju prepreči popačenje in boleče vrhove
+- Šestpasovni izenačevalnik od 60 Hz do 10 kHz v Naprednih nastavitvah
+- Stereo ravnotežje, od skrajno levo do skrajno desno
+- Zmiks v mono za poslušanje z eno samo slušalko
+- Stikalo za obhod za takojšnjo primerjavo obdelanega in izvirnega zvoka
+- Na voljo v 55 jezikih, v celoti prevedeno
 
-EVERY TAB IS INDEPENDENT
+VSAK ZAVIHEK JE NEODVISEN
 
-This is the part most volume boosters get wrong. Every tab keeps its own volume, its own equalizer curve, its own balance. Run a stream at 300% in one tab and music at 120% in another; changing one never touches the other.
+Prav tu se večina ojačevalnikov glasnosti zmoti. Vsak zavihek ohrani svojo glasnost, svojo krivuljo izenačevalnika, svoje ravnotežje. Predvajajte prenos pri 300 % v enem zavihku in glasbo pri 120 % v drugem; sprememba enega se drugega nikoli ne dotakne.
 
-The toolbar badge shows the level of the tab you are looking at, so you can tell at a glance which tabs are amplified.
+Značka v orodni vrstici prikazuje raven zavihka, ki ga gledate, zato na prvi pogled veste, kateri zavihki so ojačeni.
 
-TEMPORARY BY DEFAULT
+PRIVZETO ZAČASNO
 
-A boost is forgotten when you close the tab. A setting you chose for one video can never surprise you weeks later on a different page.
+Ojačitev se pozabi, ko zavihek zaprete. Nastavitev, izbrana za en videoposnetek, vas čez tedne nikoli ne more presenetiti na drugi strani.
 
-If you do want a site to always open at the same volume, tick "Remember this site" in the popup. The settings page lists every site you have saved, lets you edit or remove any of them, and can make new tabs remember automatically.
+Če želite, da se spletno mesto vedno odpre z enako glasnostjo, v pojavnem oknu označite »Zapomni si to spletno mesto«. Stran z nastavitvami našteje vsako shranjeno spletno mesto, omogoča urejanje ali odstranitev katerega koli od njih in lahko poskrbi, da si novi zavihki zapomnijo samodejno.
 
-KEEPS UP WITH STREAMING SITES
+SLEDI PRETOČNIM SPLETNIM MESTOM
 
-Sites like YouTube, Twitch and Kick replace their video player when you move to the next episode or stream, without reloading the page. Many boosters lose the audio at that moment and keep showing a level they are no longer applying. This one watches for the swap and reapplies your settings to the new player, so the volume you set stays the volume you get.
+Spletna mesta, kot so YouTube, Twitch in Kick, zamenjajo svoj predvajalnik videa, ko preidete na naslednjo epizodo ali prenos, brez ponovnega nalaganja strani. Mnogi ojačevalniki prav takrat izgubijo zvok in še naprej prikazujejo raven, ki je ne uporabljajo več. Ta razširitev zamenjavo opazuje in vaše nastavitve znova uporabi na novem predvajalniku, tako da glasnost, ki ste jo nastavili, ostane glasnost, ki jo slišite.
 
-PRIVACY
+ZASEBNOST
 
-No tracking. No analytics. No account. No network requests of any kind, not even for fonts. Your settings never leave your own machine.
+Brez sledenja. Brez analitike. Brez računa. Brez omrežnih zahtev kakršne koli vrste, niti za pisave. Vaše nastavitve nikoli ne zapustijo vaše lastne naprave.
 
-WHAT IT CANNOT DO
+ČESA NE ZMORE
 
-DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
+Storitve, zaščitene z DRM, kot so Netflix, Disney+, Prime Video in Spotify, svoj zvok pred razširitvami skrivajo že po zasnovi, zato jih ni mogoče ojačiti. Kadar strani ni mogoče obdelati, pojavno okno to jasno pove, namesto da bi tiho ne naredilo nič.
 
-Browser pages such as chrome:// and the Web Store are off limits to every extension, including this one.
+Strani brskalnika, kot so chrome:// in spletna trgovina, so zaprte za vsako razširitev, tudi za to.
 
-PLEASE BOOST RESPONSIBLY
+PROSIMO, OJAČUJTE ODGOVORNO
 
-High volume can damage both your hearing and your speakers, especially with headphones. The limiter is on by default above 100% and you should leave it on. Raising the ceiling past 600% in settings is at your own risk.
+Visoka glasnost lahko poškoduje tako sluh kot zvočnike, zlasti s slušalkami. Omejevalnik je nad 100 % privzeto vklopljen in naj ostane vklopljen. Dvig zgornje meje nad 600 % v nastavitvah je na vašo lastno odgovornost.
 
-OPEN SOURCE
+ODPRTA KODA
 
-Source code, issue tracker and contribution guide:
+Izvorna koda, sledilnik težav in vodnik za prispevanje:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
-Licensed under the GNU Affero General Public License v3.0.
+Licencirano pod GNU Affero General Public License v3.0.
 ```
 
 ## `sr` — Српски — TRANSLATION NEEDED
