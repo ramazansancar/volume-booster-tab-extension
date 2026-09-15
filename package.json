@@ -22,6 +22,7 @@
     "icons": "node scripts/icons.mjs",
     "screenshots": "node scripts/screenshots.mjs",
     "promo": "node scripts/promo.mjs",
+    "describe": "node scripts/set-description.mjs",
     "format:md": "node scripts/unwrap-md.mjs",
     "format:md:check": "node scripts/unwrap-md.mjs --check",
     "locales": "node scripts/locales.mjs",

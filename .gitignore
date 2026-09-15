@@ -22,3 +22,8 @@ coverage/
 
 # Working directory for the screenshot generator
 .screenshots/
+
+# Staging area for store description translations before set-description.mjs
+# writes them into docs/store-descriptions.md
+.tr/
+.promo/

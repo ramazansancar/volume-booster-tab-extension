@@ -122,7 +122,7 @@ The same rule applies as everywhere else: the interface words in the listing (_l
 
 Opera lists the same 55 languages the extension ships. **Description** is the only required field per language; Summary and Changelog are optional.
 
-Opera rejects the submission with `Detailed description missing for <language>` until every language it offers has one, so leaving them empty is not an option. [`store-descriptions.md`](store-descriptions.md) carries all 55, with English standing in for the languages nobody has translated yet.
+Opera rejects the submission with `Detailed description missing for <language>` until every language it offers has one, so leaving them empty is not an option. [`store-descriptions.md`](store-descriptions.md) carries all 55. Real translations exist for a growing subset; the rest carry the English text under an explicit placeholder note, which satisfies the check without publishing a translation nobody has read.
 
 > [!WARNING]
 > The form says HTML and BBCode are not supported. The copy in [`store-descriptions.md`](store-descriptions.md) already uses `-` bullets for that reason, and carries all 55 languages. Paste from there rather than from the Chrome file, whose listing still uses `•`.
