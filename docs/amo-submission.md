@@ -9,9 +9,14 @@ which build goes where, see [`publishing.md`](publishing.md). Keep this file upd
 
 ---
 
-## Version notes (v0.2.0)
+## Version notes (v0.2.1)
 
 ```text
+Removes two permissions the add-on no longer needs. "tabs" and "activeTab"
+are gone: the host permissions already covered everything they were used
+for, including reading a tab's URL to apply a per-site volume. Nothing about
+what the add-on does has changed, and it asks for less than before.
+
 Fixes audio on sites that run their player in an iframe, which is most of
 them. Previously the boost silently did nothing there.
 
@@ -31,11 +36,12 @@ The popup now explains why a page cannot be boosted instead of leaving the
 status line blank, and the bypass control names the current state (Active or
 Bypassed) rather than the action.
 
-NEW PERMISSION: webNavigation
-Required to enumerate a tab's frames so the volume reaches a player inside an
-iframe. It is used for nothing else: no page content is read, and no browsing
-history is collected, stored or transmitted. The add-on still makes no network
-requests of any kind.
+PERMISSIONS
+The add-on now requests only "storage" and "webNavigation" alongside its host
+access. webNavigation enumerates a tab's frames so the volume reaches a player
+inside an iframe; it is used for nothing else, and no page content is read and
+no browsing history is collected, stored or transmitted. The add-on still makes
+no network requests of any kind.
 ```
 
 ---
@@ -93,7 +99,7 @@ SOURCE AND BUILD (Node.js 20 or newer, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.2.0.zip
+Uploaded file: dist/firefox-mv2-0.2.1.zip
 The attached source archive contains BUILD.md at its root with the same steps.
 
 Bundler is esbuild with its standard minification. No obfuscation, no name
@@ -157,7 +163,7 @@ SOURCE AND BUILD (Node.js 20+, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.2.0.zip
+Uploaded file: dist/firefox-mv2-0.2.1.zip
 BUILD.md at the root of the source archive repeats these steps.
 
 esbuild with standard minification; no obfuscation. Unminified output:
