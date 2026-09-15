@@ -56,7 +56,10 @@ export function setDescription(source, tag, body) {
   // business rewriting, so it is captured and put back unchanged.
   const escaped = tag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const pattern = new RegExp(
-    `^## \`${escaped}\` — (.+?)(?: — TRANSLATION NEEDED)?\\n[\\s\\S]*?(?=^## \`|\\Z)`,
+    // The terminator is the next section heading, or end of file for the last
+    // section. JavaScript has no \Z: written that way it matched a literal "Z",
+    // so the final section never matched and could not be rewritten.
+    `^## \`${escaped}\` — (.+?)(?: — TRANSLATION NEEDED)?\\n[\\s\\S]*?(?=^## \`|(?![\\s\\S]))`,
     'm',
   );
 
