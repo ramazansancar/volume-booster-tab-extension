@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "タブキャプチャを使用中。"
   },
+  "popupUseCapture": {
+    "message": "タブキャプチャを試す"
+  },
+  "popupStartingCapture": {
+    "message": "タブキャプチャを開始しています..."
+  },
   "popupUnavailable": {
     "message": "このページは音声処理をブロックしています。"
   },

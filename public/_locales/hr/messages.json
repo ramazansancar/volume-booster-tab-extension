@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Koristi se snimanje kartice."
   },
+  "popupUseCapture": {
+    "message": "Pokušaj snimanje kartice"
+  },
+  "popupStartingCapture": {
+    "message": "Pokretanje snimanja kartice..."
+  },
   "popupUnavailable": {
     "message": "Ova stranica blokira obradu zvuka."
   },

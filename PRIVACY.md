@@ -55,7 +55,7 @@ at any time. Uninstalling the extension removes all stored data.
 | `tabs` | Identifies which tab is active so the boost is applied to the right one. |
 | `activeTab` | Applies the boost to the tab you are currently interacting with. |
 | `webNavigation` | Enumerates a tab's sub-frames, so the boost also reaches players running inside an embedded iframe. |
-| `tabCapture`, `offscreen` (Chromium only) | Fallback audio path for pages whose media cannot be read directly, such as DRM-protected streams. The captured audio is processed locally in real time and is never recorded, stored, or transmitted. |
+| `tabCapture`, `offscreen` (Chromium only) | Fallback audio path for pages whose media cannot be read directly, such as cross-origin media served without CORS headers. It only ever starts when you press **Try tab capture** in the popup. The captured audio is processed locally in real time and is never recorded, stored, or transmitted, and the capture ends when you close the tab. |
 | Host access (`http://*/*`, `https://*/*`) | The content script has to be able to reach the `<audio>` and `<video>` elements on whichever page you choose to boost. It only reads and adjusts media elements; it does not read page content. |
 
 ## Audio processing

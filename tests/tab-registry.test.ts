@@ -72,4 +72,67 @@ describe('TabRegistry', () => {
     registry.ensure(1, prefs, 'https://b.example');
     expect(registry.get(1)?.origin).toBe('https://b.example');
   });
+
+  it('lets a capture outrank a frame that reported failure', () => {
+    // The sequence that made the fallback worth building: the page's own media
+    // cannot be routed, the user presses "Try tab capture", and the popup has
+    // to stop saying the page is blocked.
+    const registry = new TabRegistry();
+    registry.ensure(1, prefs, 'https://drm.example');
+    registry.updateFramePathway(1, 0, 'unavailable', 'CORS refused the media');
+
+    expect(registry.get(1)?.pathway).toBe('unavailable');
+
+    registry.reportCapture(1, 'tab-capture');
+
+    expect(registry.get(1)?.pathway).toBe('tab-capture');
+    expect(registry.get(1)?.pathwayReason).toBeUndefined();
+  });
+
+  it('keeps reporting the capture after a later frame report', () => {
+    // Sub-frames keep talking while a capture runs - an analytics iframe that
+    // cannot build an AudioContext must not flip the tab back to "blocked".
+    const registry = new TabRegistry();
+    registry.ensure(1, prefs, 'https://example.com');
+    registry.reportCapture(1, 'tab-capture');
+
+    registry.updateFramePathway(1, 7, 'unavailable', 'no AudioContext');
+
+    expect(registry.get(1)?.pathway).toBe('tab-capture');
+  });
+
+  it('surfaces the reason a capture attempt failed', () => {
+    const registry = new TabRegistry();
+    registry.ensure(1, prefs, 'https://example.com');
+    registry.reportCapture(1, 'unavailable', 'Tab capture was refused');
+
+    expect(registry.get(1)?.pathway).toBe('unavailable');
+    expect(registry.get(1)?.pathwayReason).toBe('Tab capture was refused');
+  });
+
+  it('returns to the frame reports once a capture is cleared', () => {
+    // A navigation clears the capture, and the new document gets to speak for
+    // itself again rather than inheriting the old tab's verdict.
+    const registry = new TabRegistry();
+    registry.ensure(1, prefs, 'https://example.com');
+    registry.updateFramePathway(1, 0, 'media-element');
+    registry.reportCapture(1, 'tab-capture');
+
+    registry.reportCapture(1, 'idle');
+
+    expect(registry.get(1)?.pathway).toBe('media-element');
+  });
+
+  it('drops the capture record when the tab closes', () => {
+    // Tab ids are reused, so a stale capture record would make a brand new tab
+    // claim it was already being captured.
+    const registry = new TabRegistry();
+    registry.ensure(1, prefs, 'https://example.com');
+    registry.reportCapture(1, 'tab-capture');
+
+    registry.remove(1);
+    registry.ensure(1, prefs, 'https://other.example');
+
+    expect(registry.get(1)?.pathway).toBe('idle');
+  });
 });

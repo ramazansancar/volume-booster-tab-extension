@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Usando captura de aba."
   },
+  "popupUseCapture": {
+    "message": "Testar captura de aba"
+  },
+  "popupStartingCapture": {
+    "message": "Iniciando captura de aba..."
+  },
   "popupUnavailable": {
     "message": "Esta página bloqueia o processamento de áudio."
   },

@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "正在使用标签页捕获。"
   },
+  "popupUseCapture": {
+    "message": "尝试标签页捕获"
+  },
+  "popupStartingCapture": {
+    "message": "正在启动标签页捕获..."
+  },
   "popupUnavailable": {
     "message": "此页面阻止音频处理。"
   },

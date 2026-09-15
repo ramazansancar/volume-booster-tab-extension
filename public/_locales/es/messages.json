@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Usando captura de pestaña."
   },
+  "popupUseCapture": {
+    "message": "Probar captura de pestaña"
+  },
+  "popupStartingCapture": {
+    "message": "Iniciando captura de pestaña..."
+  },
   "popupUnavailable": {
     "message": "Esta página bloquea el procesamiento de audio."
   },

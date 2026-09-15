@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Uporablja se zajem zavihka."
   },
+  "popupUseCapture": {
+    "message": "Poskusi zajem zavihka"
+  },
+  "popupStartingCapture": {
+    "message": "Zaganjanje zajema zavihka..."
+  },
   "popupUnavailable": {
     "message": "Ta stran blokira obdelavo zvoka."
   },

@@ -36,6 +36,18 @@ export class TabRegistry {
    */
   private readonly frames = new Map<number, Map<number, FrameState>>();
 
+  /**
+   * Tabs whose audio the background is driving through tab capture, with the
+   * reason when a capture attempt failed.
+   *
+   * Capture is a property of the whole tab rather than of any one frame - the
+   * browser hands over the tab's mixed output - so it cannot be stored
+   * alongside the per-frame reports, and it has to outrank them: once a tab is
+   * captured, a frame still saying "I could not build an AudioContext" is
+   * describing a path that is no longer in use.
+   */
+  private readonly captures = new Map<number, { pathway: AudioPathway; reason?: string }>();
+
   get(tabId: number): TabState | undefined {
     return this.tabs.get(tabId);
   }
@@ -111,6 +123,22 @@ export class TabRegistry {
   }
 
   /**
+   * Records the outcome of a tab-capture attempt for the whole tab.
+   *
+   * Passing 'idle' clears the record, which is what a navigation does: the new
+   * document gets to report for itself again.
+   */
+  reportCapture(tabId: number, pathway: AudioPathway, reason?: string): void {
+    const state = this.tabs.get(tabId);
+    if (!state) return;
+
+    if (pathway === 'idle') this.captures.delete(tabId);
+    else this.captures.set(tabId, { pathway, reason });
+
+    this.recompute(state, this.framesFor(tabId));
+  }
+
+  /**
    * Collapses the per-frame reports into the single answer the popup shows.
    *
    * Any frame that is actually driving media wins: that is the frame the user
@@ -134,6 +162,16 @@ export class TabRegistry {
     }
 
     state.mediaElementCount = total;
+
+    // Capture outranks the frame reports, because it replaces them: the audio
+    // is coming from the tab's output, not from any frame's media element.
+    const capture = this.captures.get(state.tabId);
+    if (capture) {
+      state.pathway = capture.pathway;
+      if (capture.reason) state.pathwayReason = capture.reason;
+      else delete state.pathwayReason;
+      return;
+    }
 
     if (working) {
       delete state.pathwayReason;
@@ -171,6 +209,7 @@ export class TabRegistry {
   remove(tabId: number): void {
     this.tabs.delete(tabId);
     this.frames.delete(tabId);
+    this.captures.delete(tabId);
   }
 
   /** True when a tab is doing anything other than passing audio through. */

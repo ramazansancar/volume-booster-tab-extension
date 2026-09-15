@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Capture d’onglet utilisée."
   },
+  "popupUseCapture": {
+    "message": "Essayer la capture d’onglet"
+  },
+  "popupStartingCapture": {
+    "message": "Démarrage de la capture d’onglet..."
+  },
   "popupUnavailable": {
     "message": "Cette page bloque le traitement audio."
   },

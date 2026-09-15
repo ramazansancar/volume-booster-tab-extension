@@ -5,6 +5,36 @@ All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- **The tab-capture fallback now actually works.** It had been declared in the
+  manifest but never implemented: nothing in the extension ever created an
+  offscreen document or called `tabCapture`. Chromium MV3 builds now mint a
+  capture stream in the service worker and process it in an offscreen document,
+  which lets pages serving cross-origin media without CORS headers be boosted
+  after all. A **Try tab capture** button appears in the popup when — and only
+  when — the normal path has failed and the browser can actually capture.
+  DRM-protected sites remain unboostable; Encrypted Media Extensions hide the
+  audio from tab capture too.
+
+### Changed
+
+- **`tabs` and `activeTab` are no longer requested.** The broad host permissions
+  already granted everything they were used for, including a tab's URL, so both
+  were pure surface area. Chrome names them as commonly over-requested.
+- **`tabCapture` and `offscreen` are requested only by the `chrome-mv3` and
+  `edge-mv3` builds**, the only two that implement the fallback. Chromium MV2
+  builds previously asked for `tabCapture` and never used it.
+
+### Fixed
+
+- Switching the fallback off in the settings page now releases any capture it is
+  already holding, instead of leaving the browser's recording indicator lit.
+- A capture is released when its tab navigates or closes, so a new page gets to
+  try the normal path first.
+
 ## [0.2.0] - 2026-09-07
 
 The first release that works on sites which run their player in an iframe —

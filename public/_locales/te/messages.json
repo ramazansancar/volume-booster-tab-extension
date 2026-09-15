@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "ట్యాబ్ క్యాప్చర్ ఉపయోగిస్తోంది."
   },
+  "popupUseCapture": {
+    "message": "ట్యాబ్ క్యాప్చర్ ప్రయత్నించండి"
+  },
+  "popupStartingCapture": {
+    "message": "ట్యాబ్ క్యాప్చర్ ప్రారంభమవుతోంది..."
+  },
   "popupUnavailable": {
     "message": "ఈ పేజీ ఆడియో ప్రాసెసింగ్‌ను నిరోధిస్తుంది."
   },

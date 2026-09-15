@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "ট্যাব ক্যাপচার ব্যবহার করা হচ্ছে।"
   },
+  "popupUseCapture": {
+    "message": "ট্যাব ক্যাপচার চেষ্টা করুন"
+  },
+  "popupStartingCapture": {
+    "message": "ট্যাব ক্যাপচার শুরু হচ্ছে..."
+  },
   "popupUnavailable": {
     "message": "এই পৃষ্ঠা অডিও প্রক্রিয়াকরণ ব্লক করে।"
   },

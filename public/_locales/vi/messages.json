@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Đang dùng chụp tab."
   },
+  "popupUseCapture": {
+    "message": "Thử chụp tab"
+  },
+  "popupStartingCapture": {
+    "message": "Đang bắt đầu chụp tab..."
+  },
   "popupUnavailable": {
     "message": "Trang này chặn xử lý âm thanh."
   },

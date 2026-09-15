@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Kasutatakse kaardi hõivet."
   },
+  "popupUseCapture": {
+    "message": "Proovi kaardi hõivet"
+  },
+  "popupStartingCapture": {
+    "message": "Kaardi hõive käivitamine..."
+  },
   "popupUnavailable": {
     "message": "See leht blokeerib heli töötlemise."
   },

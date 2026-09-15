@@ -236,17 +236,13 @@ the permission name without explaining the need.
 Stores the user's own preferences — default volume, maximum volume, safety options, chosen interface language, and the per-site volumes they explicitly asked to be remembered. Nothing else is stored, and nothing is transmitted.
 ```
 
-**`tabs`**
-
-```text
-Each tab is boosted independently, so the extension needs to tell tabs apart to keep their settings separate, and needs the tab's URL to apply a volume the user saved for that site. It also sets the per-tab toolbar badge that shows the current level.
-```
-
-**`activeTab`**
-
-```text
-Applies the boost to the tab the user is looking at when they open the popup and move a slider.
-```
+> [!IMPORTANT]
+> `tabs` and `activeTab` are deliberately **not** requested. The broad host
+> permissions below already grant everything the extension needed them for —
+> Chrome populates `Tab.url` for any origin the extension can access — so asking
+> for either adds nothing. Chrome's permission policy names both as commonly
+> over-requested, and a permission that adds nothing is grounds for rejection
+> under _Excessive Permissions_. Do not add them back.
 
 **`webNavigation`**
 
@@ -257,14 +253,22 @@ Enumerates the frames within a tab so audio settings can reach a media player ru
 **`tabCapture`**
 
 ```text
-Fallback path for pages whose audio cannot be read directly through the Web Audio API, such as cross-origin media served without CORS headers. The captured stream is processed locally and played back immediately; it is never recorded, stored or sent anywhere.
+Fallback path for pages whose audio cannot be read directly through the Web Audio API, such as cross-origin media served without CORS headers. The user starts it explicitly with the "Try tab capture" button in the popup, which only appears after the normal path has failed. The captured stream is processed locally and played back immediately; it is never recorded, stored or sent anywhere.
 ```
 
 **`offscreen`**
 
 ```text
-A Manifest V3 service worker has no DOM and therefore no AudioContext, so the tab-capture fallback needs an offscreen document to host its audio processing graph. The document is never visible and does nothing else.
+A Manifest V3 service worker has no DOM and therefore no AudioContext, so the tab-capture fallback needs an offscreen document to host its audio processing graph. It is created only when a capture actually starts and closed as soon as the last one ends. The document is never visible and does nothing else.
 ```
+
+> [!WARNING]
+> These two are requested **only** by the `chrome-mv3` and `edge-mv3` builds,
+> which are the only ones that implement the fallback. A submission was once
+> rejected under _Excessive Permissions_ (ref: Purple Potassium) for shipping
+> `offscreen` while no code created an offscreen document. If the fallback is
+> ever removed or stubbed out, remove both permissions in the same change —
+> see `buildPermissions` in [`scripts/manifest.mjs`](../scripts/manifest.mjs).
 
 **Host permissions (`http://*/*`, `https://*/*`)**
 

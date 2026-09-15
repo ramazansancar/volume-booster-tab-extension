@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "टॅब कॅप्चर वापरत आहे."
   },
+  "popupUseCapture": {
+    "message": "टॅब कॅप्चर वापरून पहा"
+  },
+  "popupStartingCapture": {
+    "message": "टॅब कॅप्चर सुरू होत आहे..."
+  },
   "popupUnavailable": {
     "message": "हे पृष्ठ ऑडिओ प्रक्रिया अवरोधित करते."
   },

@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Gumagamit ng tab capture."
   },
+  "popupUseCapture": {
+    "message": "Subukan ang tab capture"
+  },
+  "popupStartingCapture": {
+    "message": "Sinisimulan ang tab capture..."
+  },
   "popupUnavailable": {
     "message": "Hinaharangan ng pahinang ito ang pagproseso ng audio."
   },

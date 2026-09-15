@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Tabblad-opname wordt gebruikt."
   },
+  "popupUseCapture": {
+    "message": "Tabblad-opname proberen"
+  },
+  "popupStartingCapture": {
+    "message": "Tabblad-opname wordt gestart..."
+  },
   "popupUnavailable": {
     "message": "Deze pagina blokkeert audioverwerking."
   },

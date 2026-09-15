@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "ಟ್ಯಾಬ್ ಕ್ಯಾಪ್ಚರ್ ಬಳಸಲಾಗುತ್ತಿದೆ."
   },
+  "popupUseCapture": {
+    "message": "ಟ್ಯಾಬ್ ಕ್ಯಾಪ್ಚರ್ ಪ್ರಯತ್ನಿಸಿ"
+  },
+  "popupStartingCapture": {
+    "message": "ಟ್ಯಾಬ್ ಕ್ಯಾಪ್ಚರ್ ಪ್ರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ..."
+  },
   "popupUnavailable": {
     "message": "ಈ ಪುಟ ಆಡಿಯೊ ಸಂಸ್ಕರಣೆಯನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತದೆ."
   },

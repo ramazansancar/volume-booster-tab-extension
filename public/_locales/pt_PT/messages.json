@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "A usar captura de separador."
   },
+  "popupUseCapture": {
+    "message": "Experimentar captura de separador"
+  },
+  "popupStartingCapture": {
+    "message": "A iniciar captura de separador..."
+  },
   "popupUnavailable": {
     "message": "Esta página bloqueia o processamento de áudio."
   },

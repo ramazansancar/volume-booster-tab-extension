@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Sekme yakalama kullanılıyor."
   },
+  "popupUseCapture": {
+    "message": "Sekme yakalamayı dene"
+  },
+  "popupStartingCapture": {
+    "message": "Sekme yakalama başlatılıyor..."
+  },
   "popupUnavailable": {
     "message": "Bu sayfa ses işlemeyi engelliyor."
   },

@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Lapfelvétel használatban."
   },
+  "popupUseCapture": {
+    "message": "Lapfelvétel kipróbálása"
+  },
+  "popupStartingCapture": {
+    "message": "Lapfelvétel indítása..."
+  },
   "popupUnavailable": {
     "message": "Ez az oldal blokkolja a hangfeldolgozást."
   },

@@ -113,10 +113,40 @@ export type ContentToBackgroundMessage =
   | { type: 'content:media-count'; count: number }
   | { type: 'content:pathway'; pathway: AudioPathway; reason?: string };
 
+/**
+ * Messages sent from the background to the offscreen document.
+ *
+ * Only Chromium MV3 builds ever exchange these: the offscreen document is the
+ * only place a service worker can own an AudioContext, and it is created on
+ * demand when the tab-capture fallback is actually used.
+ */
+export type BackgroundToOffscreenMessage =
+  | {
+      type: 'offscreen:start';
+      tabId: number;
+      /** Stream id minted by tabCapture.getMediaStreamId in the worker. */
+      streamId: string;
+      settings: AudioSettings;
+    }
+  | { type: 'offscreen:update'; tabId: number; settings: AudioSettings }
+  | { type: 'offscreen:stop'; tabId: number };
+
+/** Sent back up when the offscreen document has no captures left to host. */
+export interface OffscreenIdleMessage {
+  type: 'offscreen:idle';
+}
+
+/** Reply shape for every offscreen command. */
+export type OffscreenResult =
+  | { ok: true }
+  | { ok: false; reason: string };
+
 export type RuntimeMessage =
   | UiToBackgroundMessage
   | BackgroundToContentMessage
-  | ContentToBackgroundMessage;
+  | ContentToBackgroundMessage
+  | BackgroundToOffscreenMessage
+  | OffscreenIdleMessage;
 
 /** Response returned for 'ui:get-tab-state'. */
 export interface TabStateResponse {

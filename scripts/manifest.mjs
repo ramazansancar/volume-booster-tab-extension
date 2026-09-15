@@ -184,32 +184,38 @@ function buildPermissions(browser, version) {
   // webNavigation is used only to enumerate a tab's sub-frames, so settings can
   // be delivered to a player running inside an iframe. Without it the boost has
   // no effect on sites that embed their player that way, which is most of them.
-  const shared = ['storage', 'tabs', 'activeTab', 'webNavigation'];
+  //
+  // `tabs` and `activeTab` are deliberately NOT requested. The extension needs
+  // a tab's URL to key per-origin settings, but the broad host permissions
+  // below already grant that: Chrome populates Tab.url for any origin the
+  // extension can access. Chrome's permission policy calls out both of these as
+  // commonly over-requested for exactly this reason, and asking for a
+  // permission that adds nothing is grounds for rejection.
+  const shared = ['storage', 'webNavigation'];
 
   // The tab-capture fallback handles pages whose audio cannot be read directly
-  // (DRM streams, cross-origin media without CORS headers). Firefox has no
-  // tabCapture API at all, and Safari rejects unknown permissions during
-  // review, so it is requested only on Chromium engines.
+  // (cross-origin media served without CORS headers). It is requested only
+  // where it is actually implemented and usable:
   //
-  // Chrome and Edge both expose tabCapture under MV2 and MV3; `offscreen` is
-  // MV3-only, since MV2 uses a background page for the same job. Note that
-  // tabCapture is desktop-only on Edge and Chrome for Android, which is why the
-  // runtime still feature-detects it rather than trusting the manifest.
-  const chromiumCapture = isChromium(browser);
+  //   - Firefox has no tabCapture API at all.
+  //   - Safari rejects unknown permissions during review.
+  //   - Chromium MV2 has no offscreen API, and the capture path is written
+  //     against the MV3 worker + offscreen-document split, so MV2 builds ship
+  //     without it rather than carrying a permission they never exercise.
+  //
+  // tabCapture is also desktop-only on Edge and Chrome for Android, which is
+  // why the runtime still feature-detects before offering the fallback.
+  const capture = isChromium(browser) && version === 3;
 
   if (version === 2) {
     // MV2 keeps host permissions in the same array.
-    return [
-      ...shared,
-      ...(chromiumCapture ? ['tabCapture'] : []),
-      'http://*/*',
-      'https://*/*',
-    ];
+    return [...shared, 'http://*/*', 'https://*/*'];
   }
 
-  if (chromiumCapture) {
-    return [...shared, 'tabCapture', 'offscreen'];
-  }
+  // `offscreen` is requested together with tabCapture and never alone: the
+  // offscreen document exists solely to host the captured stream's audio graph,
+  // because an MV3 service worker has no AudioContext of its own.
+  if (capture) return [...shared, 'tabCapture', 'offscreen'];
   return shared;
 }
 

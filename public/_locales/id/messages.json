@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Menggunakan tangkapan tab."
   },
+  "popupUseCapture": {
+    "message": "Coba tangkapan tab"
+  },
+  "popupStartingCapture": {
+    "message": "Memulai tangkapan tab..."
+  },
   "popupUnavailable": {
     "message": "Halaman ini memblokir pemrosesan audio."
   },

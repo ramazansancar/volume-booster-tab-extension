@@ -117,6 +117,14 @@ function bundleOptions(target, outDir, dev) {
       content: path.join(srcDir, 'content', 'index.ts'),
       'popup/popup': path.join(srcDir, 'popup', 'popup.ts'),
       'options/options': path.join(srcDir, 'options', 'options.ts'),
+      // The offscreen document only exists on Chromium MV3, which is the only
+      // place with both an offscreen API and a service worker that cannot host
+      // an AudioContext. Shipping it elsewhere would be dead weight, and on
+      // Firefox and Safari an unused page in the package invites review
+      // questions about a feature the build cannot use.
+      ...(usesOffscreen(target)
+        ? { 'offscreen/offscreen': path.join(srcDir, 'offscreen', 'offscreen.ts') }
+        : {}),
     },
     outdir: outDir,
     bundle: true,
@@ -165,7 +173,30 @@ async function bundleContentScriptSeparately(target, outDir, dev) {
 /* Static assets                                                               */
 /* -------------------------------------------------------------------------- */
 
-async function copyStatic(outDir) {
+/**
+ * True for the builds that ship the tab-capture fallback.
+ *
+ * Firefox has no tabCapture API at all and Safari rejects unknown permissions
+ * during review, so both get a build with no offscreen document and no capture
+ * permissions. Chromium MV2 uses a persistent background page, which can own an
+ * AudioContext directly and so needs no offscreen document either.
+ */
+function usesOffscreen(target) {
+  const { browser, version } = parseTarget(target);
+  return version === 3 && (browser === 'chrome' || browser === 'edge');
+}
+
+async function copyStatic(outDir, target) {
+  // The offscreen host page ships only with the builds that can use it.
+  if (usesOffscreen(target)) {
+    const to = path.join(outDir, 'offscreen');
+    await mkdir(to, { recursive: true });
+    await cp(
+      path.join(srcDir, 'offscreen', 'index.html'),
+      path.join(to, 'index.html'),
+    );
+  }
+
   // HTML and CSS live next to their TypeScript so each surface is one folder.
   for (const page of ['popup', 'options']) {
     const from = path.join(srcDir, page);
@@ -320,7 +351,7 @@ async function buildTarget(target, pkg, options) {
     const context = await esbuild.context(config);
     await context.watch();
     await bundleContentScriptSeparately(target, outDir, options.dev);
-    await copyStatic(outDir);
+    await copyStatic(outDir, target);
     await writeManifest(target, outDir, pkg);
     console.log(`\nWatching ${target} -> ${path.relative(root, outDir)}`);
     console.log('Load the directory unpacked in your browser and reload after each change.\n');
@@ -329,7 +360,7 @@ async function buildTarget(target, pkg, options) {
 
   await esbuild.build(config);
   await bundleContentScriptSeparately(target, outDir, options.dev);
-  await copyStatic(outDir);
+  await copyStatic(outDir, target);
   await writeManifest(target, outDir, pkg);
 
   const note = TARGET_NOTES[target] ? `  (${TARGET_NOTES[target]})` : '';

@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Bruker fanefangst."
   },
+  "popupUseCapture": {
+    "message": "Prøv fanefangst"
+  },
+  "popupStartingCapture": {
+    "message": "Starter fanefangst..."
+  },
   "popupUnavailable": {
     "message": "Denne siden blokkerer lydbehandling."
   },

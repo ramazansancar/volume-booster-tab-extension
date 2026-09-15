@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Χρήση λήψης καρτέλας."
   },
+  "popupUseCapture": {
+    "message": "Δοκιμή λήψης καρτέλας"
+  },
+  "popupStartingCapture": {
+    "message": "Έναρξη λήψης καρτέλας..."
+  },
   "popupUnavailable": {
     "message": "Αυτή η σελίδα αποκλείει την επεξεργασία ήχου."
   },

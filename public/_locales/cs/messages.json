@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Používá se záznam panelu."
   },
+  "popupUseCapture": {
+    "message": "Zkusit záznam panelu"
+  },
+  "popupStartingCapture": {
+    "message": "Spouští se záznam panelu..."
+  },
   "popupUnavailable": {
     "message": "Tato stránka blokuje zpracování zvuku."
   },

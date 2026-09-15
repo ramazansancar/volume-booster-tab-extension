@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Tiek izmantota cilnes tveršana."
   },
+  "popupUseCapture": {
+    "message": "Izmēģināt cilnes tveršanu"
+  },
+  "popupStartingCapture": {
+    "message": "Sāk cilnes tveršanu..."
+  },
   "popupUnavailable": {
     "message": "Šī lapa bloķē skaņas apstrādi."
   },

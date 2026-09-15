@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Използва се заснемане на раздела."
   },
+  "popupUseCapture": {
+    "message": "Опитайте заснемане на раздела"
+  },
+  "popupStartingCapture": {
+    "message": "Стартиране на заснемането..."
+  },
   "popupUnavailable": {
     "message": "Тази страница блокира обработката на звука."
   },

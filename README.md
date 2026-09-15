@@ -116,11 +116,11 @@ Knowing this up front saves a lot of confusion.
 
 | Situation | Why | Workaround |
 | --- | --- | --- |
-| ⚠️ **DRM-protected video** (Netflix, Disney+, Prime Video, Spotify) | Encrypted Media Extensions deliberately hide the audio from page scripts | Tab capture fallback, Chromium only |
-| ⚠️ **Cross-origin media without CORS** | The browser refuses to expose the samples | Tab capture fallback, Chromium only |
+| ⚠️ **Cross-origin media without CORS** | The browser refuses to expose the samples to `createMediaElementSource` | **Try tab capture** in the popup (Chromium only) |
+| ❌ **DRM-protected video** (Netflix, Disney+, Prime Video, Spotify) | Encrypted Media Extensions hide the audio from page scripts *and* from tab capture | None — by design |
 | ❌ **Browser pages** (`chrome://`, `about:`, the Web Store) | Extensions are not allowed to run there | None — by design |
 | ❌ **Local files** (`file://`) | Off by default | Enable file access in the extension's details page |
-| ❌ **Firefox + DRM sites** | Firefox has no `tabCapture` API | None currently |
+| ❌ **Firefox + cross-origin media** | Firefox has no `tabCapture` API, so there is no fallback to offer | None currently |
 | ❌ **Audio outside the page** (system sound, other apps) | An extension only sees its own browser tabs | Use your OS volume mixer |
 
 <details>
@@ -135,7 +135,7 @@ The popup tells you at the bottom:
 | *N media sources connected* | Working normally through the Web Audio path |
 | *No audio playing yet* | Nothing to boost on this page yet — start playback |
 | *Using tab capture* | Fallback path is active (Chromium only) |
-| *This page blocks audio processing* | DRM or cross-origin media; nothing can be done |
+| *This page blocks audio processing* | The Web Audio path failed. On Chromium a **Try tab capture** button appears underneath; on DRM pages even that cannot help |
 | *Browser pages cannot be boosted* | You are on an internal browser page |
 
 </details>

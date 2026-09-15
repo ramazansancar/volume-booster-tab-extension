@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "ટૅબ કૅપ્ચરનો ઉપયોગ કરી રહ્યાં છીએ."
   },
+  "popupUseCapture": {
+    "message": "ટૅબ કૅપ્ચર અજમાવો"
+  },
+  "popupStartingCapture": {
+    "message": "ટૅબ કૅપ્ચર શરૂ થઈ રહ્યું છે..."
+  },
   "popupUnavailable": {
     "message": "આ પૃષ્ઠ ઑડિયો પ્રક્રિયાને અવરોધે છે."
   },

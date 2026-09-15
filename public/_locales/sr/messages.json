@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Користи се снимање картице."
   },
+  "popupUseCapture": {
+    "message": "Пробај снимање картице"
+  },
+  "popupStartingCapture": {
+    "message": "Покретање снимања картице..."
+  },
   "popupUnavailable": {
     "message": "Ова страница блокира обраду звука."
   },

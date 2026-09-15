@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Käytetään välilehden kaappausta."
   },
+  "popupUseCapture": {
+    "message": "Kokeile välilehden kaappausta"
+  },
+  "popupStartingCapture": {
+    "message": "Käynnistetään välilehden kaappausta..."
+  },
   "popupUnavailable": {
     "message": "Tämä sivu estää äänenkäsittelyn."
   },

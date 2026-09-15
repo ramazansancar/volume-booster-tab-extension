@@ -1,4 +1,11 @@
-import { ext, queryTabs, sendMessageToTab, sendRuntimeMessage } from '@/lib/browser';
+import {
+  ext,
+  queryTabs,
+  sendMessageToTab,
+  sendRuntimeMessage,
+  supportsOffscreen,
+  supportsTabCapture,
+} from '@/lib/browser';
 import { applyTranslations, initLocale, t } from '@/lib/i18n';
 import { EQ_BAND_FREQUENCIES } from '@/types';
 import { MAX_EQ_DB } from '@/lib/validate';
@@ -37,6 +44,7 @@ const dom = {
   optionsLink: document.getElementById('options-link') as HTMLButtonElement,
   status: document.getElementById('status') as HTMLElement,
   statusDetail: document.getElementById('status-detail') as HTMLElement,
+  useCapture: document.getElementById('use-capture') as HTMLButtonElement,
   presets: document.getElementById('presets') as HTMLElement,
 };
 
@@ -227,6 +235,16 @@ function renderStatus(response: TabStateResponse): void {
   // itself, show that explanation as a second line rather than discarding it.
   dom.statusDetail.textContent = pathwayReason ?? '';
   dom.statusDetail.hidden = !pathwayReason;
+
+  // The fallback is offered rather than applied automatically. Capturing a tab
+  // lights the browser's recording indicator, so it is not something to start
+  // on the user's behalf without them asking for it.
+  dom.useCapture.hidden = !(
+    pathway === 'unavailable' &&
+    response.preferences.tabCaptureFallback &&
+    supportsTabCapture() &&
+    supportsOffscreen()
+  );
 }
 
 function setStatus(key: string, fallback: string, tone: 'ok' | 'warn'): void {
@@ -290,6 +308,17 @@ function bindControls(): void {
   dom.reset.addEventListener('click', () => {
     if (tabId === null) return;
     void send<TabStateResponse>({ type: 'ui:reset-tab', tabId }).then(render);
+  });
+
+  dom.useCapture.addEventListener('click', () => {
+    if (tabId === null) return;
+    dom.useCapture.disabled = true;
+    setStatus('popupStartingCapture', 'Starting tab capture...', 'ok');
+    void send<TabStateResponse>({ type: 'ui:request-fallback', tabId })
+      .then(render)
+      .finally(() => {
+        dom.useCapture.disabled = false;
+      });
   });
 
   dom.optionsLink.addEventListener('click', () => {

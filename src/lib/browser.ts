@@ -23,9 +23,19 @@ export function manifestVersion(): 2 | 3 {
   return ext.runtime.getManifest().manifest_version === 2 ? 2 : 3;
 }
 
-/** True when tabCapture is usable, which today means Chromium with MV3. */
+/**
+ * True when tabCapture is usable, which today means Chromium with MV3.
+ *
+ * The manifest-version check is not redundant with the API check. MV2 Chromium
+ * exposes tabCapture too, but this build deliberately does not request the
+ * permission there - the capture path is written against the MV3 worker plus
+ * offscreen-document split, and MV2 has no offscreen API. Without this check
+ * the popup would offer a fallback that fails the moment it is used.
+ */
 export function supportsTabCapture(): boolean {
-  return typeof ext.tabCapture?.getMediaStreamId === 'function';
+  return (
+    manifestVersion() === 3 && typeof ext.tabCapture?.getMediaStreamId === 'function'
+  );
 }
 
 /** True when the offscreen document API exists (Chromium MV3 only). */

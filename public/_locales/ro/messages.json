@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Se folosește capturarea filei."
   },
+  "popupUseCapture": {
+    "message": "Încearcă capturarea filei"
+  },
+  "popupStartingCapture": {
+    "message": "Se pornește capturarea filei..."
+  },
   "popupUnavailable": {
     "message": "Această pagină blochează procesarea audio."
   },

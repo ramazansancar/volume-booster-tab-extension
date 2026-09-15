@@ -331,6 +331,14 @@ input[type='range'] {
   color: var(--warn);
 }
 
+/* The fallback offer sits under the reason it is being offered, aligned left
+   with the status text rather than with the footer's right-hand button. */
+.link-button--accent {
+  align-self: flex-start;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
 .link-button {
   padding: 0;
   border: 0;

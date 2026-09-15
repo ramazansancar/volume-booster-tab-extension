@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "משתמש בלכידת לשונית."
   },
+  "popupUseCapture": {
+    "message": "נסה לכידת לשונית"
+  },
+  "popupStartingCapture": {
+    "message": "מתחיל לכידת לשונית..."
+  },
   "popupUnavailable": {
     "message": "דף זה חוסם עיבוד שמע."
   },

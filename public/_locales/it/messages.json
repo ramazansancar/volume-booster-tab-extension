@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Utilizzo della cattura scheda."
   },
+  "popupUseCapture": {
+    "message": "Prova la cattura scheda"
+  },
+  "popupStartingCapture": {
+    "message": "Avvio della cattura scheda..."
+  },
   "popupUnavailable": {
     "message": "Questa pagina blocca l’elaborazione audio."
   },

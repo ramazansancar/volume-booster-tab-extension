@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "正在使用分頁擷取。"
   },
+  "popupUseCapture": {
+    "message": "嘗試分頁擷取"
+  },
+  "popupStartingCapture": {
+    "message": "正在啟動分頁擷取..."
+  },
   "popupUnavailable": {
     "message": "此頁面阻止音訊處理。"
   },

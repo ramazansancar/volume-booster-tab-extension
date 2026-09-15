@@ -10,6 +10,14 @@ import {
 } from '@/lib/storage';
 import { mergeSettings, originOf } from '@/lib/validate';
 import { TabRegistry } from '@/background/tab-registry';
+import {
+  canCapture,
+  isCaptured,
+  startCapture,
+  stopAllCaptures,
+  stopCapture,
+  updateCapture,
+} from '@/background/tab-capture';
 import type {
   AudioSettings,
   ContentToBackgroundMessage,
@@ -156,6 +164,14 @@ async function applyToOpenTabs(origin: string, settings: AudioSettings): Promise
 
 async function applyAndPersist(state: TabState): Promise<void> {
   await pushToTab(state);
+  // A captured tab is driven by the offscreen graph, not by its content script,
+  // so the same settings have to be pushed down both paths.
+  if (isCaptured(state.tabId)) {
+    const result = await updateCapture(state.tabId, state.settings);
+    if (!result.ok) {
+      registry.reportCapture(state.tabId, 'unavailable', result.reason);
+    }
+  }
   await updateBadge(state);
   await syncPersistence(state.origin, state.persistence, state.settings);
 }
@@ -210,6 +226,23 @@ async function handleUiMessage(message: UiToBackgroundMessage): Promise<unknown>
 
     case 'ui:set-preferences': {
       cachedPreferences = await savePreferences(message.preferences);
+
+      // Switching the fallback off has to release the streams it is already
+      // holding, or the capture indicator stays lit on tabs the user has just
+      // told the extension to leave alone.
+      if (!cachedPreferences.tabCaptureFallback) {
+        await stopAllCaptures();
+        for (const [tabId, state] of registry.entries()) {
+          if (state.pathway === 'tab-capture') {
+            registry.reportCapture(
+              tabId,
+              'unavailable',
+              'The tab-capture fallback is switched off in the options page',
+            );
+          }
+        }
+      }
+
       // A lowered ceiling has to be enforced on tabs that are already above it.
       for (const [tabId, state] of registry.entries()) {
         const clamped = mergeSettings(state.settings, {}, cachedPreferences.maxGain);
@@ -248,10 +281,36 @@ async function handleUiMessage(message: UiToBackgroundMessage): Promise<unknown>
     }
 
     case 'ui:request-fallback': {
-      // The Chromium tab-capture path lands here in a follow-up release; until
-      // then the UI is told plainly that this page cannot be boosted.
       const state = await stateFor(message.tabId);
-      registry.updateFramePathway(message.tabId, 0, 'unavailable');
+
+      // The fallback is a user-facing preference as well as a capability. A
+      // user who turned it off should keep seeing the honest "cannot boost"
+      // answer rather than having their tab captured behind their back.
+      if (!prefs.tabCaptureFallback) {
+        registry.reportCapture(
+          message.tabId,
+          'unavailable',
+          'The tab-capture fallback is switched off in the options page',
+        );
+        return { state, preferences: prefs } satisfies TabStateResponse;
+      }
+
+      if (!canCapture()) {
+        registry.reportCapture(
+          message.tabId,
+          'unavailable',
+          'Tab capture is not supported in this browser',
+        );
+        return { state, preferences: prefs } satisfies TabStateResponse;
+      }
+
+      const result = await startCapture(message.tabId, state.settings);
+      if (result.ok) {
+        registry.reportCapture(message.tabId, 'tab-capture');
+      } else {
+        registry.reportCapture(message.tabId, 'unavailable', result.reason);
+      }
+      await updateBadge(state);
       return { state, preferences: prefs } satisfies TabStateResponse;
     }
 
@@ -308,6 +367,12 @@ ext.runtime.onMessage.addListener((message: unknown, sender, sendResponse) => {
     void handleUiMessage(message as UiToBackgroundMessage).then(sendResponse);
     return true;
   }
+  // The offscreen document reports when its last capture ended. Nothing to do
+  // beyond acknowledging it: stopCapture already closed the document.
+  if (typed.type === 'offscreen:idle') {
+    sendResponse({ ok: true });
+    return false;
+  }
   if (typed.type.startsWith('content:') && sender.tab?.id !== undefined) {
     void handleContentMessage(
       message as ContentToBackgroundMessage,
@@ -324,7 +389,12 @@ ext.runtime.onMessage.addListener((message: unknown, sender, sendResponse) => {
 /* -------------------------------------------------------------------------- */
 
 // Dropping the state here is what makes a boost disappear with its tab.
-ext.tabs.onRemoved.addListener((tabId) => registry.remove(tabId));
+ext.tabs.onRemoved.addListener((tabId) => {
+  registry.remove(tabId);
+  // Releasing the stream is what clears Chrome's "this tab is being captured"
+  // indicator and lets the offscreen document close.
+  void stopCapture(tabId);
+});
 
 ext.tabs.onUpdated.addListener((tabId, changeInfo) => {
   if (changeInfo.status !== 'complete') return;
@@ -332,6 +402,14 @@ ext.tabs.onUpdated.addListener((tabId, changeInfo) => {
     const state = registry.get(tabId);
     if (!state) return;
     const origin = await tabOrigin(tabId);
+
+    // A finished navigation means a new document, which gets to try the normal
+    // media-element path first. Holding the old capture across it would keep
+    // the tab captured for a page that may not need it at all.
+    if (isCaptured(tabId)) {
+      await stopCapture(tabId);
+      registry.reportCapture(tabId, 'idle');
+    }
 
     // Navigating a session-scoped tab to a different site resets it, so a boost
     // meant for one page does not silently follow the user to the next one.

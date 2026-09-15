@@ -73,8 +73,6 @@ defect.
 
 PERMISSIONS
 - storage       Saves the user's own preferences locally. Nothing else stored.
-- tabs          Separate volume per tab; toolbar badge for the active tab.
-- activeTab     Applies the boost to the tab being viewed.
 - webNavigation Enumerates a tab's frames so the volume reaches a player
                 inside an iframe. Used for nothing else - no history is read,
                 collected or transmitted.
@@ -141,8 +139,6 @@ page allows. Each tab is boosted independently.
 
 PERMISSIONS
 - storage       Saves the user's own preferences locally. Nothing else stored.
-- tabs          Separate volume per tab; toolbar badge for the active tab.
-- activeTab     Applies the boost to the tab being viewed.
 - webNavigation Enumerates a tab's frames so the volume reaches a player
                 inside an iframe. Used for nothing else - no history is read,
                 collected or transmitted.

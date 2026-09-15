@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "የትር ቀረጻ በመጠቀም ላይ።"
   },
+  "popupUseCapture": {
+    "message": "የትር ቀረጻን ይሞክሩ"
+  },
+  "popupStartingCapture": {
+    "message": "የትር ቀረጻ በመጀመር ላይ..."
+  },
   "popupUnavailable": {
     "message": "ይህ ገጽ የድምጽ ሂደትን ያግዳል።"
   },

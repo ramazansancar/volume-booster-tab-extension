@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "S’utilitza la captura de pestanya."
   },
+  "popupUseCapture": {
+    "message": "Prova la captura de pestanya"
+  },
+  "popupStartingCapture": {
+    "message": "S’inicia la captura de pestanya..."
+  },
   "popupUnavailable": {
     "message": "Aquesta pàgina bloqueja el processament d’àudio."
   },

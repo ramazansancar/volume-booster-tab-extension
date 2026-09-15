@@ -91,13 +91,16 @@ Fill in the dashboard forms as follows.
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | Single purpose description  | Amplify and shape the audio of the current browser tab.                                                                  |
 | Permission: `storage`       | Saves the user's own volume and equalizer preferences locally.                                                           |
-| Permission: `tabs`          | Applies a separate volume to each tab and shows the level on the toolbar icon.                                           |
-| Permission: `activeTab`     | Applies the boost to the tab the user is viewing.                                                                        |
 | Permission: `webNavigation` | Enumerates a tab's frames so the boost reaches a player embedded in an iframe. No browsing history is read or collected. |
-| Permission: `tabCapture`    | Fallback path for pages whose audio cannot be read directly.                                                             |
-| Permission: `offscreen`     | Hosts the audio graph for that fallback path.                                                                            |
+| Permission: `tabCapture`    | Fallback path for pages whose audio cannot be read directly. Chromium MV3 builds only; started explicitly by the user.   |
+| Permission: `offscreen`     | Hosts the audio graph for that fallback path. Chromium MV3 builds only.                                                  |
 | Host permissions            | Media elements can appear on any site, so the boost must be able to reach any page the user opens.                       |
 | Remote code                 | **No.** Everything ships in the package.                                                                                 |
+
+> [!IMPORTANT]
+> `tabs` and `activeTab` are not requested: the host permissions already cover
+> what they were for, and Chrome rejects permissions that add nothing. See the
+> permission notes in [`chrome-submission.md`](chrome-submission.md#permission-justifications).
 
 **Data usage certifications** — tick all three:
 

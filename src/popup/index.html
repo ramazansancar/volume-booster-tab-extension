@@ -109,6 +109,18 @@
         <div class="status-block">
           <p class="status" id="status" role="status"></p>
           <p class="status-detail" id="status-detail" hidden></p>
+          <!-- Only shown when the normal path has failed and the browser can
+               actually capture the tab, so it never advertises a fallback that
+               would do nothing. -->
+          <button
+            type="button"
+            class="link-button link-button--accent"
+            id="use-capture"
+            data-i18n="popupUseCapture"
+            hidden
+          >
+            Try tab capture
+          </button>
         </div>
         <button type="button" class="link-button" id="reset" data-i18n="popupResetTab">
           Reset tab

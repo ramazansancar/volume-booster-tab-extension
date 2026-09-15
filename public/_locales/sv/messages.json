@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Använder flikinspelning."
   },
+  "popupUseCapture": {
+    "message": "Prova flikinspelning"
+  },
+  "popupStartingCapture": {
+    "message": "Startar flikinspelning..."
+  },
   "popupUnavailable": {
     "message": "Den här sidan blockerar ljudbehandling."
   },

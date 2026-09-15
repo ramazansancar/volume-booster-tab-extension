@@ -184,6 +184,12 @@
   "popupTabCapture": {
     "message": "Using tab capture."
   },
+  "popupUseCapture": {
+    "message": "Try tab capture"
+  },
+  "popupStartingCapture": {
+    "message": "Starting tab capture..."
+  },
   "popupUnavailable": {
     "message": "This page blocks audio processing."
   },

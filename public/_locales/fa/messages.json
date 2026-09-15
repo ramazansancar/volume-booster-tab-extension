@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "استفاده از ضبط زبانه."
   },
+  "popupUseCapture": {
+    "message": "ضبط زبانه را امتحان کنید"
+  },
+  "popupStartingCapture": {
+    "message": "در حال شروع ضبط زبانه..."
+  },
   "popupUnavailable": {
     "message": "این صفحه پردازش صدا را مسدود می‌کند."
   },

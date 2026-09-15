@@ -69,7 +69,7 @@ The containing app launches and tells you to enable the extension.
 
 | Limitation | Effect |
 | --- | --- |
-| No `tabCapture` API | The DRM fallback path is unavailable. DRM sites cannot be boosted at all on Safari. |
+| No `tabCapture` API | The fallback for cross-origin media without CORS headers is unavailable, so those pages cannot be boosted at all on Safari. (DRM sites cannot be boosted anywhere, fallback or not.) |
 | Stricter site permissions | Safari asks per-site rather than granting broad host access. Users must allow each site. |
 | Service worker lifecycle | Safari terminates the background service worker more aggressively than Chromium. The extension is written to tolerate this — per-tab state is rebuilt on demand. |
 | No unpacked loading | Every install goes through Xcode or the App Store. |
@@ -101,7 +101,7 @@ Check that you built the `safari-mv3` target and not a Chromium one. The Chromiu
 
 ```bash
 node -e "console.log(require('./dist/safari-mv3/manifest.json').permissions)"
-# → [ 'storage', 'tabs', 'activeTab' ]
+# → [ 'storage', 'webNavigation' ]
 ```
 
 </details>

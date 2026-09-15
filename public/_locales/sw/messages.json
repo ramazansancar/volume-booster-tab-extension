@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Inatumia unasaji wa kichupo."
   },
+  "popupUseCapture": {
+    "message": "Jaribu unasaji wa kichupo"
+  },
+  "popupStartingCapture": {
+    "message": "Inaanzisha unasaji wa kichupo..."
+  },
   "popupUnavailable": {
     "message": "Ukurasa huu unazuia uchakataji wa sauti."
   },

@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Використовується захоплення вкладки."
   },
+  "popupUseCapture": {
+    "message": "Спробувати захоплення вкладки"
+  },
+  "popupStartingCapture": {
+    "message": "Запуск захоплення вкладки..."
+  },
   "popupUnavailable": {
     "message": "Ця сторінка блокує обробку звуку."
   },

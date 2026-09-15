@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Používa sa záznam karty."
   },
+  "popupUseCapture": {
+    "message": "Skúsiť záznam karty"
+  },
+  "popupStartingCapture": {
+    "message": "Spúšťa sa záznam karty..."
+  },
   "popupUnavailable": {
     "message": "Táto stránka blokuje spracovanie zvuku."
   },

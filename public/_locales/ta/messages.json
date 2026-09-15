@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "தாவல் பிடிப்பு பயன்படுத்தப்படுகிறது."
   },
+  "popupUseCapture": {
+    "message": "தாவல் பிடிப்பை முயற்சிக்கவும்"
+  },
+  "popupStartingCapture": {
+    "message": "தாவல் பிடிப்பு தொடங்குகிறது..."
+  },
   "popupUnavailable": {
     "message": "இந்தப் பக்கம் ஒலி செயலாக்கத்தைத் தடுக்கிறது."
   },

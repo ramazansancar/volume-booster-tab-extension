@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Naudojamas kortelės fiksavimas."
   },
+  "popupUseCapture": {
+    "message": "Išbandyti kortelės fiksavimą"
+  },
+  "popupStartingCapture": {
+    "message": "Paleidžiamas kortelės fiksavimas..."
+  },
   "popupUnavailable": {
     "message": "Šis puslapis blokuoja garso apdorojimą."
   },

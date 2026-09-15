@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "ടാബ് ക്യാപ്ചർ ഉപയോഗിക്കുന്നു."
   },
+  "popupUseCapture": {
+    "message": "ടാബ് ക്യാപ്ചർ പരീക്ഷിക്കുക"
+  },
+  "popupStartingCapture": {
+    "message": "ടാബ് ക്യാപ്ചർ ആരംഭിക്കുന്നു..."
+  },
   "popupUnavailable": {
     "message": "ഈ പേജ് ഓഡിയോ പ്രോസസിംഗ് തടയുന്നു."
   },

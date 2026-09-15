@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Tab-Aufnahme wird verwendet."
   },
+  "popupUseCapture": {
+    "message": "Tab-Aufnahme versuchen"
+  },
+  "popupStartingCapture": {
+    "message": "Tab-Aufnahme wird gestartet..."
+  },
   "popupUnavailable": {
     "message": "Diese Seite blockiert die Audioverarbeitung."
   },

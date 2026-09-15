@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "กำลังใช้การจับภาพแท็บ"
   },
+  "popupUseCapture": {
+    "message": "ลองจับภาพแท็บ"
+  },
+  "popupStartingCapture": {
+    "message": "กำลังเริ่มจับภาพแท็บ..."
+  },
   "popupUnavailable": {
     "message": "หน้านี้บล็อกการประมวลผลเสียง"
   },

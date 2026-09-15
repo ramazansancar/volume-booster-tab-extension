@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Bruger fanebladsoptagelse."
   },
+  "popupUseCapture": {
+    "message": "Prøv fanebladsoptagelse"
+  },
+  "popupStartingCapture": {
+    "message": "Starter fanebladsoptagelse..."
+  },
   "popupUnavailable": {
     "message": "Denne side blokerer lydbehandling."
   },

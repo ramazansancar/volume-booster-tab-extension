@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "استخدام التقاط التبويب."
   },
+  "popupUseCapture": {
+    "message": "جرّب التقاط التبويب"
+  },
+  "popupStartingCapture": {
+    "message": "جارٍ بدء التقاط التبويب..."
+  },
   "popupUnavailable": {
     "message": "هذه الصفحة تمنع معالجة الصوت."
   },

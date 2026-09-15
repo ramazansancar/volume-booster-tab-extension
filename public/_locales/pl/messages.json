@@ -182,6 +182,12 @@
   "popupTabCapture": {
     "message": "Używane jest przechwytywanie karty."
   },
+  "popupUseCapture": {
+    "message": "Wypróbuj przechwytywanie karty"
+  },
+  "popupStartingCapture": {
+    "message": "Uruchamianie przechwytywania karty..."
+  },
   "popupUnavailable": {
     "message": "Ta strona blokuje przetwarzanie dźwięku."
   },
