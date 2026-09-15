@@ -2,7 +2,7 @@
 
 Every store that accepts a translated listing asks for the same thing: a description per language. This file holds them in one place so the Chrome, Edge, Opera and AMO listings cannot drift apart, and so a translator has somewhere to contribute that is not a submission form.
 
-Opera is the reason this exists. It lists all 55 languages the extension ships and rejects a submission with `Detailed description missing for <language>` until each one it is offered has text, so the English placeholder below is what keeps that check satisfied without publishing a translation nobody has read.
+Opera is the reason this exists. It lists all 55 languages the extension ships and rejects a submission with `Detailed description missing for <language>` until each one it is offered has text. AMO then added its own requirement: it offers a different set, including regional variants and languages the extension itself does not ship, so this file covers the union of what the stores ask for rather than only what the interface is translated into.
 
 > [!IMPORTANT]
 > Every section now carries text in its own language. Those marked _Translated from the English description._ were translated from the English source rather than written by a native speaker, so corrections are a welcome pull request — see [Improve a translation](../CONTRIBUTING.md#-improve-a-translation). A section with no such note (`en` and its regional variants, and `tr`) was authored directly.
@@ -13,13 +13,20 @@ Sections carrying _Translated from the English description._ have real text in t
 pnpm run describe -- <tag> < translation.txt
 ```
 
-The tag is the heading's hyphenated form (`pt-BR`, not `pt_BR`). The script rewrites that one section, drops the placeholder note and leaves the language name alone, so 55 near-identical blocks cannot drift apart by hand.
+The tag is the heading's hyphenated form (`pt-BR`, not `pt_BR`). The script rewrites that one section, drops the placeholder note and leaves the language name alone, so dozens of near-identical blocks cannot drift apart by hand.
+
+To add a language the file does not carry yet, pass its own name as a second argument; the section is inserted in alphabetical order by tag:
+
+```bash
+pnpm run describe -- ka "ქართული" < translation.txt
+```
 
 ## Conventions
 
 - **Headings use the store's language tag** (`en-US`, `pt-BR`, `zh-CN`), not the underscore form used by `public/_locales/`. Opera, Chrome and AMO all show the hyphenated tag, so this file matches what you see in the form.
 - **Bullets are hyphens, not `•`.** Opera states that HTML and BBCode are unsupported and has no documented behaviour for the bullet character the other listings render.
 - **The text is the same copy as the per-store files.** Change it in [`chrome-submission.md`](chrome-submission.md) and here together, or the listings drift.
+- **Not every language here ships in the extension.** The interface is translated into 55 languages, listed in [`scripts/locales.mjs`](../scripts/locales.mjs); AMO offers a handful this file also covers — regional Spanish and English variants, Nynorsk, Georgian, Albanian, Kabyle and the Sorbian languages among them — purely so their listing can be written in that language. A section here is store copy, never a source for `public/_locales/`.
 
 ---
 
@@ -463,6 +470,61 @@ https://github.com/ramazansancar/volume-booster-tab-extension
 Lizenziert unter der GNU Affero General Public License v3.0.
 ```
 
+## `dsb` — Dolnoserbšćina
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab pówušujo głosnosć někakego rejtarika wobglědowaka nad to, což bok sam dowólujo, a dawa śi napšawdnu kontrolu nad tym, kak se ten zuk formujo.
+
+FUNKCIJE
+
+- Zesylnjenje wót 0% do 600%, w nastajenjach až do 1000% pówušujobne
+- Limiter, kótaryž pśi zesylnjenju zdrobnjenje a bolostne wjerški zajźujo
+- 6-pasmowy equalizer wót 60 Hz do 10 kHz, pód Rozšyrjonymi nastajenjami
+- Stereo balansa, wót cele nalěwo až cele napšawo
+- Mono měšanje za słuchanje z jadnym słuchatkom
+- Pśeskokowy pśepinak za malsne pśirownanje wobźěłanego a originalnego zuka
+- K dispoziciji w 55 rěcach, dopołnje pśełožone
+
+KUŽDY REJTARIK JO SAMOSTATNY
+
+Rowno how se wětšyna zesylnjakow głosnosći myli. Kuždy rejtarik wóstaja pśi swójej głosnosći, swójej equalizerowej kśiwicy, swójej balansy. Wóthraj pśenosowanje na 300% w jadnom rejtariku a muziku na 120% w drugem; změna jadnogo se drugego nigda njedotkujo.
+
+Znamuško w rědowej łajsće pokazujo rowninu rejtarika, kótaryž se woglědujoš, tak až z jadnym póglědom wěš, kótare rejtariki su zesylnjone.
+
+STANDARDNJE NACHWILNE
+
+Zesylnjenje se zabydnjo, gaž rejtarik zacyniš. Nastajenje, kótarež sy za jaden wideo wubrał, śi nigda njamóžo tyźenje pózdźej na drugem boku njewócakane byś.
+
+Jolic coš, aby se sedło pśecej z tejsamej głosnosću wócyniło, markěruj «Toś to sedło se spomnjeś» we wuskokujucem woknje. Bok nastajenjow nalistujo kužde skłaźone sedło, dowólujo śi jadno z nich wobźěłaś abo wótpóraś, a móžo zawinowaś, aby se nowe rejtariki awtomatiski spomnjeli.
+
+DŹARŽY KROK ZE STREAMINGOWYMI SEDŁAMI
+
+Sedła ako YouTube, Twitch a Kick wuměnjaju swój wideowy wótegrawak, gaž k pśiducej epizoźe abo pśenosowanju pśejźoš, bźez togo aby bok znowego zacytali. Wjele zesylnjakow rowno w tom wokognuśu zuk zgubijo a dalej rowninu pokazujo, kótaruž južo njenałožujo. Toś to rozšyrjenje toś tu wuměnu wobglědujo a twóje nastajenja na nowy wótegrawak znowego nałožujo, tak až nastajona głosnosć wóstanjo ta głosnosć, kótaruž słyšyš.
+
+PRIWATNOSĆ
+
+Žedno slědowanje. Žedna analytika. Žedno konto. Žedne seśowe napšašowanja někakeje družyny, ani za pismiki. Twóje nastajenja nigda twój swójski rěd njewopušćaju.
+
+CO NJAMÓŽO
+
+Ze DRM šćitane słužby ako Netflix, Disney+, Prime Video a Spotify swój awdio južo pśez swóju konstrukciju pśed rozšyrjenjami chowaju, togodla se njedaju zesylniś. Gaž se bok njedajo wobźěłaś, groni to wuskokujuce wokno jasnje, město togo aby śiche nic njecyniło.
+
+Boki wobglědowaka ako about: a sedło rozšyrjenjow su za kužde rozšyrjenje zacynjone, teke za toś to.
+
+PROSYMY, ZESYLNJUJ ZAMÓŁWITE
+
+Wusoka głosnosć móžo tak twój słuch ako teke twóje reproduktory wobškóźiś, wósebnje ze słuchatkami. Limiter jo nad 100% standardnje zapinjony a dejš jen zapinjony wóstajiś. Pówušenje górneje granice nad 600% w nastajenjach jo na twójo swójske riziko.
+
+WÓTWÓRJONY ŽRĚDŁOWY TEKST
+
+Žrědłowy tekst, slědowak problemow a pśiručka za sobuskutkowanje:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Licencowane pód GNU Affero General Public License v3.0.
+```
+
 ## `el` — Ελληνικά
 
 _Translated from the English description._
@@ -611,6 +673,59 @@ WHAT IT CANNOT DO
 DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
 
 Browser pages such as chrome:// and the Web Store are off limits to every extension, including this one.
+
+PLEASE BOOST RESPONSIBLY
+
+High volume can damage both your hearing and your speakers, especially with headphones. The limiter is on by default above 100% and you should leave it on. Raising the ceiling past 600% in settings is at your own risk.
+
+OPEN SOURCE
+
+Source code, issue tracker and contribution guide:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Licensed under the GNU Affero General Public License v3.0.
+```
+
+## `en-CA` — English (Canadian)
+
+```text
+Volume Booster Tab raises the volume of any browser tab beyond what the page itself allows, and gives you real control over how that sound is shaped.
+
+FEATURES
+
+- Boost from 0% to 600%, raisable to 1000% in settings
+- Limiter that prevents clipping and painful peaks when boosting
+- 6-band equalizer, 60 Hz to 10 kHz, under Advanced settings
+- Stereo balance, from full left to full right
+- Mono downmix for listening with a single earbud
+- Bypass switch to compare the processed and untouched sound instantly
+- Available in 55 languages, fully translated
+
+EVERY TAB IS INDEPENDENT
+
+This is the part most volume boosters get wrong. Every tab keeps its own volume, its own equalizer curve, its own balance. Run a stream at 300% in one tab and music at 120% in another; changing one never touches the other.
+
+The toolbar badge shows the level of the tab you are looking at, so you can tell at a glance which tabs are amplified.
+
+TEMPORARY BY DEFAULT
+
+A boost is forgotten when you close the tab. A setting you chose for one video can never surprise you weeks later on a different page.
+
+If you do want a site to always open at the same volume, tick "Remember this site" in the popup. The settings page lists every site you have saved, lets you edit or remove any of them, and can make new tabs remember automatically.
+
+KEEPS UP WITH STREAMING SITES
+
+Sites like YouTube, Twitch and Kick replace their video player when you move to the next episode or stream, without reloading the page. Many boosters lose the audio at that moment and keep showing a level they are no longer applying. This one watches for the swap and reapplies your settings to the new player, so the volume you set stays the volume you get.
+
+PRIVACY
+
+No tracking. No analytics. No account. No network requests of any kind, not even for fonts. Your settings never leave your own machine.
+
+WHAT IT CANNOT DO
+
+DRM-protected services such as Netflix, Disney+, Prime Video and Spotify hide their audio from extensions by design, so they cannot be boosted. When a page cannot be processed the popup says so plainly instead of silently doing nothing.
+
+Browser pages such as about: and the add-ons site are off limits to every extension, including this one.
 
 PLEASE BOOST RESPONSIBLY
 
@@ -827,6 +942,171 @@ LO QUE NO PUEDE HACER
 Los servicios protegidos con DRM como Netflix, Disney+, Prime Video y Spotify ocultan su audio a las extensiones por diseño, así que no se pueden amplificar. Cuando una página no se puede procesar, la ventana emergente lo dice con claridad en lugar de no hacer nada en silencio.
 
 Las páginas del navegador como chrome:// y la Web Store están vedadas a todas las extensiones, incluida esta.
+
+AMPLIFICA CON RESPONSABILIDAD
+
+Un volumen alto puede dañar tanto tu audición como tus bocinas, sobre todo con audífonos. El limitador está activado de forma predeterminada por encima del 100 % y conviene dejarlo activado. Subir el límite más allá del 600 % en la configuración es bajo tu propia responsabilidad.
+
+CÓDIGO ABIERTO
+
+Código fuente, seguimiento de incidencias y guía de contribución:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Publicado bajo la Licencia Pública General Affero de GNU v3.0.
+```
+
+## `es-AR` — Español (de Argentina)
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab sube el volumen de cualquier pestaña del navegador más allá de lo que permite la propia página, y te da control real sobre cómo se moldea ese sonido.
+
+CARACTERÍSTICAS
+
+- Amplificación del 0 % al 600 %, ampliable hasta el 1000 % en la configuración
+- Limitador que evita la saturación y los picos molestos al amplificar
+- Ecualizador de 6 bandas, de 60 Hz a 10 kHz, en Configuración avanzada
+- Balance estéreo, de todo a la izquierda a todo a la derecha
+- Mezcla a mono para escuchar con un solo auricular
+- Interruptor de derivación para comparar al instante el sonido procesado y el original
+- Disponible en 55 idiomas, totalmente traducido
+
+CADA PESTAÑA ES INDEPENDIENTE
+
+Acá es donde fallan la mayoría de los amplificadores de volumen. Cada pestaña conserva su propio volumen, su propia curva de ecualización, su propio balance. Poné una transmisión al 300 % en una pestaña y música al 120 % en otra; cambiar una nunca afecta a la otra.
+
+La insignia de la barra de herramientas muestra el nivel de la pestaña que estás viendo, así sabés de un vistazo cuáles están amplificadas.
+
+TEMPORAL DE FORMA PREDETERMINADA
+
+La amplificación se olvida al cerrar la pestaña. Una configuración que elegiste para un video nunca podrá sorprenderte semanas después en otra página.
+
+Si querés que un sitio se abra siempre con el mismo volumen, marcá «Recordar este sitio» en la ventana emergente. La página de configuración enumera todos los sitios guardados, te permite editar o eliminar cualquiera de ellos y puede hacer que las pestañas nuevas lo recuerden automáticamente.
+
+SIGUE EL RITMO DE LOS SITIOS DE STREAMING
+
+Sitios como YouTube, Twitch y Kick reemplazan su reproductor de video cuando pasás al siguiente episodio o transmisión, sin recargar la página. Muchos amplificadores pierden el audio en ese momento y siguen mostrando un nivel que ya no aplican. Este detecta el cambio y vuelve a aplicar tu configuración al nuevo reproductor, de modo que el volumen que fijaste sigue siendo el volumen que escuchás.
+
+PRIVACIDAD
+
+Sin rastreo. Sin analíticas. Sin cuenta. Sin solicitudes de red de ningún tipo, ni siquiera para fuentes. Tu configuración nunca sale de tu propio equipo.
+
+LO QUE NO PUEDE HACER
+
+Los servicios protegidos con DRM como Netflix, Disney+, Prime Video y Spotify ocultan su audio a las extensiones por diseño, así que no se pueden amplificar. Cuando una página no se puede procesar, la ventana emergente lo dice con claridad en lugar de no hacer nada en silencio.
+
+Las páginas del navegador como about: y el sitio de complementos están vedadas a todas las extensiones, incluida esta.
+
+AMPLIFICÁ CON RESPONSABILIDAD
+
+Un volumen alto puede dañar tanto tu audición como tus parlantes, sobre todo con auriculares. El limitador está activado de forma predeterminada por encima del 100 % y conviene dejarlo activado. Subir el límite más allá del 600 % en la configuración es bajo tu propia responsabilidad.
+
+CÓDIGO ABIERTO
+
+Código fuente, seguimiento de incidencias y guía de contribución:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Publicado bajo la Licencia Pública General Affero de GNU v3.0.
+```
+
+## `es-CL` — Español (de Chile)
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab sube el volumen de cualquier pestaña del navegador más allá de lo que permite la propia página, y te da control real sobre cómo se moldea ese sonido.
+
+CARACTERÍSTICAS
+
+- Amplificación del 0 % al 600 %, ampliable hasta el 1000 % en la configuración
+- Limitador que evita la saturación y los peaks molestos al amplificar
+- Ecualizador de 6 bandas, de 60 Hz a 10 kHz, en Configuración avanzada
+- Balance estéreo, de todo a la izquierda a todo a la derecha
+- Mezcla a mono para escuchar con un solo audífono
+- Interruptor de derivación para comparar al instante el sonido procesado y el original
+- Disponible en 55 idiomas, totalmente traducido
+
+CADA PESTAÑA ES INDEPENDIENTE
+
+Aquí es donde fallan la mayoría de los amplificadores de volumen. Cada pestaña conserva su propio volumen, su propia curva de ecualización, su propio balance. Pon una transmisión al 300 % en una pestaña y música al 120 % en otra; cambiar una nunca afecta a la otra.
+
+La insignia de la barra de herramientas muestra el nivel de la pestaña que estás viendo, así sabes de un vistazo cuáles están amplificadas.
+
+TEMPORAL DE FORMA PREDETERMINADA
+
+La amplificación se olvida al cerrar la pestaña. Una configuración que elegiste para un video nunca podrá sorprenderte semanas después en otra página.
+
+Si quieres que un sitio se abra siempre con el mismo volumen, marca «Recordar este sitio» en la ventana emergente. La página de configuración enumera todos los sitios guardados, te permite editar o eliminar cualquiera de ellos y puede hacer que las pestañas nuevas lo recuerden automáticamente.
+
+SIGUE EL RITMO DE LOS SITIOS DE STREAMING
+
+Sitios como YouTube, Twitch y Kick reemplazan su reproductor de video cuando pasas al siguiente episodio o transmisión, sin recargar la página. Muchos amplificadores pierden el audio en ese momento y siguen mostrando un nivel que ya no aplican. Este detecta el cambio y vuelve a aplicar tu configuración al nuevo reproductor, de modo que el volumen que fijaste sigue siendo el volumen que escuchas.
+
+PRIVACIDAD
+
+Sin rastreo. Sin analíticas. Sin cuenta. Sin solicitudes de red de ningún tipo, ni siquiera para fuentes. Tu configuración nunca sale de tu propio equipo.
+
+LO QUE NO PUEDE HACER
+
+Los servicios protegidos con DRM como Netflix, Disney+, Prime Video y Spotify ocultan su audio a las extensiones por diseño, así que no se pueden amplificar. Cuando una página no se puede procesar, la ventana emergente lo dice con claridad en lugar de no hacer nada en silencio.
+
+Las páginas del navegador como about: y el sitio de complementos están vedadas a todas las extensiones, incluida esta.
+
+AMPLIFICA CON RESPONSABILIDAD
+
+Un volumen alto puede dañar tanto tu audición como tus parlantes, sobre todo con audífonos. El limitador está activado de forma predeterminada por encima del 100 % y conviene dejarlo activado. Subir el límite más allá del 600 % en la configuración es bajo tu propia responsabilidad.
+
+CÓDIGO ABIERTO
+
+Código fuente, seguimiento de incidencias y guía de contribución:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Publicado bajo la Licencia Pública General Affero de GNU v3.0.
+```
+
+## `es-MX` — Español (de México)
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab sube el volumen de cualquier pestaña del navegador más allá de lo que permite la propia página, y te da control real sobre cómo se moldea ese sonido.
+
+CARACTERÍSTICAS
+
+- Amplificación del 0 % al 600 %, ampliable hasta el 1000 % en la configuración
+- Limitador que evita la saturación y los picos molestos al amplificar
+- Ecualizador de 6 bandas, de 60 Hz a 10 kHz, en Configuración avanzada
+- Balance estéreo, de todo a la izquierda a todo a la derecha
+- Mezcla a mono para escuchar con un solo audífono
+- Interruptor de derivación para comparar al instante el sonido procesado y el original
+- Disponible en 55 idiomas, totalmente traducido
+
+CADA PESTAÑA ES INDEPENDIENTE
+
+Aquí es donde fallan la mayoría de los amplificadores de volumen. Cada pestaña conserva su propio volumen, su propia curva de ecualización, su propio balance. Pon una transmisión al 300 % en una pestaña y música al 120 % en otra; cambiar una nunca afecta a la otra.
+
+La insignia de la barra de herramientas muestra el nivel de la pestaña que estás viendo, así sabes de un vistazo cuáles están amplificadas.
+
+TEMPORAL DE FORMA PREDETERMINADA
+
+La amplificación se olvida al cerrar la pestaña. Una configuración que elegiste para un video nunca podrá sorprenderte semanas después en otra página.
+
+Si quieres que un sitio se abra siempre con el mismo volumen, marca «Recordar este sitio» en la ventana emergente. La página de configuración enumera todos los sitios guardados, te permite editar o eliminar cualquiera de ellos y puede hacer que las pestañas nuevas lo recuerden automáticamente.
+
+SIGUE EL RITMO DE LOS SITIOS DE STREAMING
+
+Sitios como YouTube, Twitch y Kick reemplazan su reproductor de video cuando pasas al siguiente episodio o transmisión, sin recargar la página. Muchos amplificadores pierden el audio en ese momento y siguen mostrando un nivel que ya no aplican. Este detecta el cambio y vuelve a aplicar tu configuración al nuevo reproductor, de modo que el volumen que fijaste sigue siendo el volumen que escuchas.
+
+PRIVACIDAD
+
+Sin rastreo. Sin analíticas. Sin cuenta. Sin solicitudes de red de ningún tipo, ni siquiera para fuentes. Tu configuración nunca sale de tu propio equipo.
+
+LO QUE NO PUEDE HACER
+
+Los servicios protegidos con DRM como Netflix, Disney+, Prime Video y Spotify ocultan su audio a las extensiones por diseño, así que no se pueden amplificar. Cuando una página no se puede procesar, la ventana emergente lo dice con claridad en lugar de no hacer nada en silencio.
+
+Las páginas del navegador como about: y el sitio de complementos están vedadas a todas las extensiones, incluida esta.
 
 AMPLIFICA CON RESPONSABILIDAD
 
@@ -1115,6 +1395,116 @@ https://github.com/ramazansancar/volume-booster-tab-extension
 Distribué sous la licence publique générale GNU Affero v3.0.
 ```
 
+## `fur` — Furlan
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab al alce il volum di cualsisei schede dal navigadôr plui in là di ce che la pagjine e permet, e ti da un control reâl su cemût che chel sun al ven modelât.
+
+CARATERISTICHIS
+
+- Amplificazion dal 0% al 600%, alçabile fint al 1000% intes impostazions
+- Limitadôr che al evite distorsions e pics fastidiôs cuant che si amplifiche
+- Equalizadôr a 6 bandis, di 60 Hz a 10 kHz, sot Impostazions avanzadis
+- Belance stereo, di dut a çampe a dut a diestre
+- Miscliçament in mono par scoltâ cuntun sôl auricolâr
+- Interutôr di bypass par confrontâ subite il sun elaborât e chel origjinâl
+- Disponibil in 55 lenghis, tradot dal dut
+
+OGNI SCHEDE E JE INDIPENDENTE
+
+Chi al è dulà che la plui part dai amplificadôrs di volum a sbalin. Ogni schede e ten il so volum, la sô curve di equalizazion, la sô belance. Fâs lâ une trasmission al 300% intune schede e musiche al 120% intune altre; cambiâ une no tocje mai chê altre.
+
+Il distintîf de bare dai struments al mostre il nivel de schede che tu stâs cjalant, cussì tu sâs cuntune cjalade cualis schedis a son amplificadis.
+
+TEMPORANI IN MÛT PREDEFINÎT
+
+La amplificazion e ven dismenteade cuant che tu sieris la schede. Une impostazion sielte par un video no podarà mai sorprenditi setemanis dopo suntune altre pagjine.
+
+Se tu vuelis che un sît si vierzi simpri cul stes volum, segne «Visâsi di chest sît» tal barcon a comparse. La pagjine des impostazions e liste ogni sît salvât, ti lasse modificâ o gjavâ cualsisei di lôr, e e pues fâ che lis schedis gnovis si visin in automatic.
+
+AL TEN IL PÂS CUI SÎTS DI STREAMING
+
+Sîts come YouTube, Twitch e Kick a sostituissin il lôr riprodutôr video cuant che tu passis ae prossime pontade o trasmission, cence tornâ a cjariâ la pagjine. Tancj amplificadôrs a pierdin l'audio propit in chel moment e a continuin a mostrâ un nivel che no aplichin plui. Cheste estension e ten di voli il cambiament e e torne a aplicâ lis tôs impostazions al gnûf riprodutôr, cussì il volum che tu âs metût al reste il volum che tu sintis.
+
+RISERVATEZZE
+
+Nissun tracjament. Nissune analitiche. Nissun account. Nissune richieste di rêt di nissun gjenar, nancje pai caratars. Lis tôs impostazions no lassin mai la tô machine.
+
+CE CHE NOL PUES FÂ
+
+I servizis protets di DRM come Netflix, Disney+, Prime Video e Spotify a plaçin il lôr audio lontan des estensions par progjet, duncje no si puedin amplificâ. Cuant che une pagjine no pues jessi elaborade, il barcon a comparse lu dîs in mût clâr invezit di no fâ nuie in silenzi.
+
+Lis pagjinis dal navigadôr come about: e il sît des estensions a son sieradis a ogni estension, ancje a cheste.
+
+PAR PLASÊ AMPLIFICHE CUN RESPONSABILITÂT
+
+Un volum alt al pues fâ mâl sedi al to udît sedi ai tiei altoparlants, massime cus cufis. Il limitadôr al è impiât in mût predefinît sore il 100% e tu varessis di lassâlu impiât. Alçâ il limit sore il 600% intes impostazions al è a to riscjo.
+
+CODIS AVIERT
+
+Codiç sorzint, tracjadôr di problemis e vuide pai contribûts:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Licenziât sot de GNU Affero General Public License v3.0.
+```
+
+## `fy-NL` — Frysk
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab ferheget it lûdnivo fan elk browserljepblêd fierder as de side sels tastiet, en jout jo echte kontrôle oer hoe't dat lûd foarme wurdt.
+
+FUNKSJES
+
+- Fersterking fan 0% oant 600%, yn de ynstellingen te ferheegjen oant 1000%
+- Limiter dy't ferfoarming en pynlike pieken by it fersterkjen foarkomt
+- 6-bands equalizer, 60 Hz oant 10 kHz, ûnder Avansearre ynstellingen
+- Stereobalâns, fan folslein links oant folslein rjochts
+- Monodownmix om mei ien earknopke te harkjen
+- Bypassskeakel om bewurke en ûnbewurke lûd daliks te ferlykjen
+- Beskikber yn 55 talen, folslein oerset
+
+ELK LJEPBLÊD IS ÛNÔFHINKLIK
+
+Hjir geane de measte lûdfersterkers de mist yn. Elk ljepblêd hâldt syn eigen lûdnivo, syn eigen equalizerkromme, syn eigen balâns. Lit in stream op 300% rinne yn it iene ljepblêd en muzyk op 120% yn it oare; it iene feroarje reitsjt it oare nea oan.
+
+It byldsje op de arkbalke lit it nivo sjen fan it ljepblêd dêr't jo nei sjogge, sadat jo yn ien eachopslach sjogge hokker ljepblêden fersterke binne.
+
+STANDERT TYDLIK
+
+In fersterking wurdt fergetten sa gau't jo it ljepblêd slute. In ynstelling dy't jo foar ien fideo keazen ha, kin jo wiken letter nea ferrasse op in oare side.
+
+Wolle jo dat in webstee altyd op itselde lûdnivo iepenet, set dan in finkje by «Dit webstee ûnthâlde» yn it opdûkfinster. De ynstellingsside lit elk bewarre webstee sjen, lit jo der ien bewurkje of fuortsmite, en kin nije ljepblêden automatysk ûnthâlde litte.
+
+HÂLDT STREAMINGWEBSTEDEN BY
+
+Websteden as YouTube, Twitch en Kick ferfange harren fideospiler as jo nei de folgjende ôflevering of stream gean, sûnder de side op 'e nij te laden. In protte fersterkers ferlieze op dat stuit it lûd en litte in nivo sjen dat se net mear tapasse. Dizze hâldt de wiksel yn 'e gaten en past jo ynstellingen op 'e nij ta op de nije spiler, sadat it lûdnivo dat jo ynsteld ha it lûdnivo bliuwt dat jo hearre.
+
+PRIVACY
+
+Gjin folgjen. Gjin analytyk. Gjin account. Gjin inkelde netwurkoanfraach, ek net foar lettertypen. Jo ynstellingen ferlitte nea jo eigen apparaat.
+
+WAT IT NET KIN
+
+Mei DRM beskerme tsjinsten as Netflix, Disney+, Prime Video en Spotify ferbergje harren audio fan tafoegings út harren opset wei, dus dy kinne net fersterke wurde. As in side net ferwurke wurde kin, seit it opdûkfinster dat rjochtút ynstee fan stilswijend neat te dwaan.
+
+Browsersiden as about: en it tafoegingswebstee binne ferbean terrein foar elke tafoeging, ek foar dizze.
+
+FERSTERKJE MEI FERSTÂN
+
+In heech lûdnivo kin sawol jo gehoar as jo lûdsprekkers skansearje, benammen mei in koptillefoan. De limiter stiet boppe 100% standert oan en jo kinne him better oan litte stean. It plafond yn de ynstellingen boppe 600% bringe is op eigen risiko.
+
+IEPEN BOARNE
+
+Boarnekoade, probleemfolger en bydragehantlieding:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Lisinsjearre ûnder de GNU Affero General Public License v3.0.
+```
+
 ## `gu` — ગુજરાતી
 
 _Translated from the English description._
@@ -1335,6 +1725,61 @@ https://github.com/ramazansancar/volume-booster-tab-extension
 Licencirano pod GNU Affero General Public License v3.0.
 ```
 
+## `hsb` — Hornjoserbsce
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab powyša głósnosć někajkeho rajtarka wobhladowaka nad to, štož strona sama dowoli, a dawa ći woprawdźitu kontrolu nad tym, kak so tón zynk formuje.
+
+FUNKCIJE
+
+- Zesylnjenje wot 0% do 600%, w nastajenjach hač do 1000% powyšomne
+- Limiter, kotryž při zesylnjenju skomolenje a bolostne wjerški zadźěwa
+- 6-pasmowy equalizer wot 60 Hz do 10 kHz, pod Rozšěrjenymi nastajenjemi
+- Stereo balansa, wot cyle nalěwo hač cyle naprawo
+- Mono měšenje za posłuchanje z jednym słuchatkom
+- Přeskočenski přepinak za bórzomne přirunanje wobdźěłaneho a originalneho zynka
+- K dispoziciji w 55 rěčach, dospołnje přełožene
+
+KóŽDY RAJTARK JE SAMOSTATNY
+
+Runje tu so wjetšina zesylnjakow głósnosće myli. Kóždy rajtark wobchowuje swoju swójsku głósnosć, swoju swójsku equalizerowu křiwu, swoju swójsku balansu. Wothraj přenošowanje na 300% w jednym rajtarku a hudźbu na 120% w druhim; změna jednoho so druheho ženje njedótkny.
+
+Značka w gratowej lajsće pokazuje runinu rajtarka, kotryž sej wobhladuješ, tak zo z jednym pohladom wěš, kotre rajtarki su zesylnjene.
+
+STANDARDNJE NACHWILNE
+
+Zesylnjenje so zabudźe, hdyž rajtark začiniš. Nastajenje, kotrež sy za jedne widejo wubrał, ći ženje njemóže tydźenje pozdźišo na druhej stronje njewočakowane być.
+
+Jeli chceš, zo so sydło přeco ze samsnej głósnosću wočini, markěruj «Tute sydło sej spomjatkować» we wuskakowacym woknje. Strona nastajenjow nalistuje kóžde składowane sydło, dowoli ći jedne z nich wobdźěłać abo wotstronić, a móže zawinować, zo sej nowe rajtarki awtomatisce spomjatkuja.
+
+DŹERŽI KROK ZE STREAMINGOWYMI SYDŁAMI
+
+Sydła kaž YouTube, Twitch a Kick wuměnjeja swój widejowy wothrawak, hdyž k přichodnej epizodźe abo přenošowanju přeńdźeš, bjez toho zo bychu stronu znowa začitali. Wjele zesylnjakow runje w tym wokomiku zynk zhubi a dale runinu pokazuje, kotruž hižo njenałožuje. Tute rozšěrjenje tutu wuměnu wobkedźbuje a twoje nastajenja na nowy wothrawak znowa nałožuje, tak zo nastajena głósnosć wostanje ta głósnosć, kotruž słyšiš.
+
+PRIWATNOSĆ
+
+Žane slědowanje. Žana analytika. Žane konto. Žane syćowe naprašowanja někajkeho družiny, ani za pismiki. Twoje nastajenja ženje twój swójski grat njewopušća.
+
+ŠTOŽ NJEMóŽE
+
+Ze DRM škitane słužby kaž Netflix, Disney+, Prime Video a Spotify swój awdio hižo přez swoju konstrukciju před rozšěrjenjemi chowaja, tohodla so njedadźa zesylnić. Hdyž so strona njeda wobdźěłać, praji to wuskakowace wokno jasnje, město toho zo by ćicho ničo nječiniło.
+
+Strony wobhladowaka kaž about: a sydło rozšěrjenjow su za kóžde rozšěrjenje zawrjene, tež za tute.
+
+PROSYMY, ZESYLNJUJ ZAMOŁWIĆE
+
+Wysoka głósnosć móže tak twój słuch kaž tež twoje reproduktory wobškodźić, wosebje ze słuchatkami. Limiter je nad 100% standardnje zapinjeny a dyrbiš jón zapinjeny wostajić. Zwyšenje hornjeje hranicy nad 600% w nastajenjach je na twoje swójske riziko.
+
+WOTWORJENY ŽORŁOWY TEKST
+
+Žórłowy tekst, slědowak problemow a přiručka za sobuskutkowanje:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Licencowane pod GNU Affero General Public License v3.0.
+```
+
 ## `hu` — Magyar
 
 _Translated from the English description._
@@ -1388,6 +1833,61 @@ Forráskód, hibakövető és közreműködési útmutató:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
 A GNU Affero General Public License v3.0 alatt licencelve.
+```
+
+## `ia` — Interlingua
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab augmenta le volumine de qualcunque scheda del navigator ultra lo que le pagina mesme permitte, e te da un controlo real super como iste sono es formate.
+
+CARACTERISTICAS
+
+- Amplification de 0% a 600%, augmentabile a 1000% in le configurationes
+- Limitator que preveni distorsion e picos dolorose durante le amplification
+- Equalisator de 6 bandas, de 60 Hz a 10 kHz, sub Configurationes avantiate
+- Balancia stereo, de toto a sinistra a toto a dextra
+- Mixage in mono pro ascoltar con un sol auricular
+- Commutator de derivation pro comparar instantaneemente le sono processate e le original
+- Disponibile in 55 linguas, integremente traducite
+
+CATA SCHEDA ES INDEPENDENTE
+
+Isto es le parte que le major parte del amplificatores de volumine face mal. Cata scheda mantene su proprie volumine, su proprie curva de equalisation, su proprie balancia. Face funcionar un transmission a 300% in un scheda e musica a 120% in un altere; cambiar un non tocca jammais le altere.
+
+Le insignia del barra de instrumentos monstra le nivello del scheda que tu reguarda, assi tu sape a prime vista qual schedas es amplificate.
+
+TEMPORARI PER DEFECTO
+
+Un amplification es oblidate quando tu claude le scheda. Un configuration que tu ha seligite pro un video non pote jammais surprender te septimanas plus tarde in un altere pagina.
+
+Si tu vole que un sito se aperi sempre al mesme volumine, marca «Memorar iste sito» in le fenestra emergente. Le pagina de configurationes lista cata sito que tu ha salvate, te permitte modificar o remover qualcunque de illos, e pote facer que le nove schedas memora automaticamente.
+
+TENE LE PASSO CON LE SITOS DE STREAMING
+
+Sitos como YouTube, Twitch e Kick reimplacia lor lector de video quando tu passa al episodio o transmission sequente, sin recargar le pagina. Multe amplificatores perde le audio exactemente in ille momento e continua a monstrar un nivello que illes non applica plus. Iste extension observa le reimplaciamento e reapplica tu configurationes al nove lector, assi le volumine que tu ha fixate resta le volumine que tu audi.
+
+PRIVATESSA
+
+Nulle traciamento. Nulle analytica. Nulle conto. Nulle requesta de rete de qualcunque typo, ni mesmo pro fontes. Tu configurationes non abandona jammais tu proprie machina.
+
+QUE ILLO NON POTE FACER
+
+Le servicios protegite per DRM como Netflix, Disney+, Prime Video e Spotify cela lor audio del extensiones per designo, dunque illos non pote esser amplificate. Quando un pagina non pote esser processate, le fenestra emergente lo dice clarmente in vice de silentiosemente facer nihil.
+
+Le paginas del navigator como about: e le sito de additivos es prohibite a cata extension, includente iste.
+
+PER FAVOR AMPLIFICA RESPONSABILEMENTE
+
+Un alte volumine pote damnificar tanto tu audition como tu altoparlatores, specialmente con auriculares. Le limitator es active per defecto super 100% e tu deberea lassar lo active. Elevar le limite ultra 600% in le configurationes es a tu proprie risco.
+
+FONTE APERTE
+
+Codice fonte, traciator de problemas e guida de contribution:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Licentiate sub le GNU Affero General Public License v3.0.
 ```
 
 ## `id` — Indonesia
@@ -1553,6 +2053,116 @@ chrome:// やウェブストアなどのブラウザーページは、この拡�
 https://github.com/ramazansancar/volume-booster-tab-extension
 
 GNU Affero General Public License v3.0 の下でライセンスされています。
+```
+
+## `ka` — ქართული
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab ზრდის ბრაუზერის ნებისმიერი ჩანართის ხმას იმაზე მეტად, ვიდრე თავად გვერდი უშვებს, და გაძლევთ რეალურ კონტროლს იმაზე, თუ როგორ ყალიბდება ეს ხმა.
+
+შესაძლებლობები
+
+- გაძლიერება 0%-დან 600%-მდე, პარამეტრებში 1000%-მდე აწევადი
+- ლიმიტერი, რომელიც გაძლიერებისას იცავს დამახინჯებისა და მტკივნეული პიკებისგან
+- 6-დიაპაზონიანი ეკვალაიზერი 60 ჰც-დან 10 კჰც-მდე, დამატებით პარამეტრებში
+- სტერეო ბალანსი, სრულიად მარცხნიდან სრულიად მარჯვნივ
+- მონო შერევა ერთი ყურსასმენით მოსასმენად
+- შემოვლითი გადამრთველი დამუშავებული და საწყისი ხმის მყისიერი შესადარებლად
+- ხელმისაწვდომია 55 ენაზე, სრულად თარგმნილი
+
+თითოეული ჩანართი დამოუკიდებელია
+
+სწორედ აქ უშვებს შეცდომას ხმის გამაძლიერებლების უმეტესობა. თითოეული ჩანართი ინახავს საკუთარ ხმას, საკუთარ ეკვალაიზერის მრუდს, საკუთარ ბალანსს. ერთ ჩანართში ჩართეთ ტრანსლაცია 300%-ზე, მეორეში მუსიკა 120%-ზე; ერთის შეცვლა მეორეს არასოდეს ეხება.
+
+ხელსაწყოთა ზოლის ნიშანი აჩვენებს იმ ჩანართის დონეს, რომელსაც უყურებთ, ასე რომ ერთი შეხედვით ხვდებით, რომელი ჩანართებია გაძლიერებული.
+
+ნაგულისხმევად დროებითი
+
+ჩანართის დახურვისას გაძლიერება ავიწყდება. ერთი ვიდეოსთვის არჩეული პარამეტრი ვერასოდეს გაგაკვირვებთ კვირების შემდეგ სხვა გვერდზე.
+
+თუ გსურთ, რომ საიტი ყოველთვის ერთი და იმავე ხმით გაიხსნას, ამომხტარ ფანჯარაში მონიშნეთ «დაიმახსოვრე ეს საიტი». პარამეტრების გვერდი ჩამოთვლის ყველა შენახულ საიტს, საშუალებას გაძლევთ ნებისმიერი მათგანი შეასწოროთ ან წაშალოთ, და შეუძლია ახალ ჩანართებს ავტომატურად დაამახსოვრებინოს.
+
+ფეხს უწყობს სტრიმინგ საიტებს
+
+ისეთი საიტები, როგორიცაა YouTube, Twitch და Kick, ცვლიან თავიანთ ვიდეოდამკვრელს, როცა შემდეგ ეპიზოდზე ან ტრანსლაციაზე გადადიხართ, გვერდის თავიდან ჩატვირთვის გარეშე. ბევრი გამაძლიერებელი სწორედ ამ მომენტში კარგავს ხმას და აგრძელებს იმ დონის ჩვენებას, რომელსაც უკვე აღარ იყენებს. ეს გაფართოება აკვირდება ამ ჩანაცვლებას და თქვენს პარამეტრებს ხელახლა ადებს ახალ დამკვრელს, ასე რომ თქვენ მიერ დაყენებული ხმა რჩება იმ ხმად, რომელსაც ისმენთ.
+
+კონფიდენციალურობა
+
+არანაირი თვალყურის დევნება. არანაირი ანალიტიკა. არანაირი ანგარიში. არანაირი ქსელური მოთხოვნა, შრიფტებისთვისაც კი. თქვენი პარამეტრები არასოდეს ტოვებს თქვენს საკუთარ მოწყობილობას.
+
+რას ვერ აკეთებს
+
+DRM-ით დაცული სერვისები, როგორიცაა Netflix, Disney+, Prime Video და Spotify, თავიანთ ხმას გაფართოებებისგან თავად კონსტრუქციით მალავენ, ამიტომ მათი გაძლიერება შეუძლებელია. როცა გვერდის დამუშავება ვერ ხერხდება, ამომხტარი ფანჯარა ამას პირდაპირ ამბობს, ნაცვლად იმისა, რომ ჩუმად არაფერი გააკეთოს.
+
+ბრაუზერის გვერდები, როგორიცაა about: და დამატებების საიტი, დახურულია ყველა გაფართოებისთვის, მათ შორის ამისთვისაც.
+
+გთხოვთ, გაზარდოთ პასუხისმგებლობით
+
+მაღალ ხმას შეუძლია დააზიანოს როგორც თქვენი სმენა, ისე დინამიკები, განსაკუთრებით ყურსასმენებით. ლიმიტერი 100%-ზე ზემოთ ნაგულისხმევად ჩართულია და ჩართული უნდა დატოვოთ. პარამეტრებში ზედა ზღვრის 600%-ზე მაღლა აწევა თქვენივე რისკით ხდება.
+
+ღია კოდი
+
+წყაროს კოდი, პრობლემების ტრეკერი და წვლილის შეტანის სახელმძღვანელო:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+ლიცენზირებულია GNU Affero General Public License v3.0-ით.
+```
+
+## `kab` — Taqbaylit
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab yessalay ṣṣut n yal iccer n iminig sennig wayen i teǧǧa asebter s timmad-is, yerna yefka-ak aḥkam n tidet ɣef wamek ara yettwasuddes ṣṣut-agi.
+
+TIMAHILIN
+
+- Asemɣer seg 0% ar 600%, yezmer ad yali ar 1000% deg yiɣewwaren
+- Amaway i yesseḥbibiren ɣef usexṣer d yiqaciren yesseqrasen mi ara tessemɣureḍ
+- Amsegzi n 6 n tewsatin, seg 60 Hz ar 10 kHz, deg Yiɣewwaren leqqayen
+- Talwit stereo, seg uzelmaḍ ar uyeffus
+- Asemlili ɣer mono i tmesliwt s yiwen ubelkim
+- Tafergact n uzgar i tmeẓriwt taffisant gar ṣṣut yettwaheggan d win aqbuṛ
+- Yella s 55 n tutlayin, yettwasuqel s wakken ilaq
+
+YAL ICCER D AMAGDAY
+
+D agi i ɣlin deg-s aṭas n yimseɣren n ṣṣut. Yal iccer yeṭṭef ṣṣut-is, taqeɛrurt-is n umsegzi, talwit-is. Err yiwen usuffeɣ ɣer 300% deg yiwen iccer, aẓawan ɣer 120% deg wayeḍ; asnifel n yiwen ur yettnal ara wayeḍ.
+
+Tabzimt n ufeggag n yifecka tesskan aswir n yiccer i tettwaliḍ, s wakka teẓriḍ s tmuɣli kan anwa iccer i yettwasemɣer.
+
+D AKUDAN S WUDEM AMEZWER
+
+Asemɣer yettwattu ticki tmedleḍ iccer. Aɣewwar i tferneḍ i yiwet n tvidyut ur yezmir ara ad k-yesswehm deffir n dduṛt deg usebter nniḍen.
+
+Ma tebɣiḍ ad d-yeldi yal tikkelt usmel s ṣṣut-nni kan, creḍ «Cfu ɣef usmel-agi» deg usfaylu-nni. Asebter n yiɣewwaren yesbedday yal asmel i teskelseḍ, yeǧǧa-k ad tbeddleḍ neɣ ad tekkseḍ anwa i tebɣiḍ, yerna yezmer ad yeǧǧ accaren imaynuten ad cfun s wudem awurman.
+
+YETTEDDU D YISMELEN N USUFFEƔ
+
+Ismelen am YouTube, Twitch d Kick ttbeddilen ameɣri-nsen n tvidyut ticki tettedduḍ ɣer tezmilt neɣ usuffeɣ i d-iteddun, war ma ɛawden asali n usebter. Aṭas n yimseɣren srusuyen ṣṣut deg wakud-nni kan, yerna kemmlen skanayen aswir ur ttsexdamen ara tura. Aseɣzef-agi yettɛassa abeddel-agi yerna yessexdam daɣen iɣewwaren-ik ɣer umeɣri amaynut, s wakka ṣṣut i tesbedded yeqqim d ṣṣut i tsellemeḍ.
+
+TABAḌNIT
+
+Ulac aḍfar. Ulac tasleḍt. Ulac amiḍan. Ulac assuter n uzeṭṭa n wanwa i yebɣun yili, ula d i tsefsiyin. Iɣewwaren-ik ur ffɣen ara seg ubrid-ik.
+
+AYEN UR YEZMIR ARA AD YEXDEM
+
+Imeẓla ittwaḥerzen s DRM am Netflix, Disney+, Prime Video d Spotify ffren ṣṣut-nsen ɣef yiseɣzaf s tneɣruft-nsen, ihi ur zmiren ara ad ttwasemɣren. Ticki asebter ur yezmir ara ad yettwaseqdec, asfaylu yeqqar-d ayagi s tefses deg umḍiq n tsusmi war ma yexdem kra.
+
+Isebtar n yiminig am about: d usmel n yiseɣzaf medlen i yal aseɣzef, ula i wagi.
+
+TTXIL-K SEMƔER S TMASIT
+
+Ṣṣut ɛlayen yezmer ad yeṣṣeḍ tamesliwt-ik akked yisawalen-ik, ladɣa s yiqerra n tmesliwt. Amaway yeldi s wudem amezwer sennig 100%, yerna ilaq ad t-teǧǧeḍ yeldi. Asali n talast sennig 600% deg yiɣewwaren d amihi-k kečč.
+
+AƔBALU YELDIN
+
+Tangalt taɣbalut, amaḍfar n wuguren d ttawil n tikci:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Yesɛa turagt GNU Affero General Public License v3.0.
 ```
 
 ## `kn` — ಕನ್ನಡ
@@ -1995,6 +2605,61 @@ https://github.com/ramazansancar/volume-booster-tab-extension
 Gelicentieerd onder de GNU Affero General Public License v3.0.
 ```
 
+## `nn-NO` — Norsk nynorsk
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab hevar lydstyrken i kva som helst nettlesarfane utover det sida sjølv tillèt, og gjev deg reell kontroll over korleis lyden blir forma.
+
+FUNKSJONAR
+
+- Forsterking frå 0 % til 600 %, kan hevast til 1000 % i innstillingane
+- Limiter som hindrar forvrenging og smertefulle toppar ved forsterking
+- 6-bands equalizer, 60 Hz til 10 kHz, under Avanserte innstillingar
+- Stereobalanse, frå heilt til venstre til heilt til høgre
+- Mononedmiks for å lytte med berre éin øyreplugg
+- Forbikoplingsbrytar for å samanlikne handsama og uhandsama lyd med ein gong
+- Tilgjengeleg på 55 språk, fullstendig omsett
+
+KVAR FANE ER UAVHENGIG
+
+Det er her dei fleste lydforsterkarane bommar. Kvar fane held på si eiga lydstyrke, si eiga equalizerkurve, sin eigen balanse. Køyr ei sending på 300 % i éi fane og musikk på 120 % i ei anna; å endre den eine rører aldri den andre.
+
+Merket på verktøylinja viser nivået for fana du ser på, så du veit med eitt blikk kva for faner som er forsterka.
+
+MELLOMBELS SOM STANDARD
+
+Ei forsterking blir gløymd når du lukkar fana. Ei innstilling du valde for éin video, kan aldri overraske deg vekene etter på ei anna side.
+
+Vil du at ein nettstad alltid skal opnast med same lydstyrke, kryss av for «Hugs denne nettstaden» i sprettoppvindauget. Innstillingssida viser kvar lagra nettstad, lèt deg redigere eller fjerne kva som helst av dei, og kan få nye faner til å hugse automatisk.
+
+HELD TRITT MED STRAUMETENESTER
+
+Nettstader som YouTube, Twitch og Kick byter ut videospelaren når du går til neste episode eller sending, utan å lasta sida på nytt. Mange forsterkarar mistar lyden akkurat då og held fram med å vise eit nivå dei ikkje lenger brukar. Denne følgjer med på byttet og brukar innstillingane dine på nytt på den nye spelaren, slik at lydstyrken du sette, blir verande lydstyrken du høyrer.
+
+PERSONVERN
+
+Inga sporing. Ingen analyse. Ingen konto. Ingen nettverksførespurnader av noko slag, ikkje eingong for skrifttypar. Innstillingane dine forlèt aldri di eiga maskin.
+
+KVA DEN IKKJE KAN
+
+DRM-verna tenester som Netflix, Disney+, Prime Video og Spotify skjuler lyden sin for utvidingar av design, så dei kan ikkje forsterkast. Når ei side ikkje kan handsamast, seier sprettoppvindauget det rett ut i staden for stille å ikkje gjere noko.
+
+Nettlesarsider som about: og tilleggsnettstaden er stengde for kvar einaste utviding, òg denne.
+
+FORSTERK ANSVARLEG
+
+Høg lydstyrke kan skade både høyrsla og høgtalarane dine, særleg med hovudtelefonar. Limiteren er på som standard over 100 %, og du bør la han vere på. Å heve taket over 600 % i innstillingane skjer på eige ansvar.
+
+OPEN KJELDEKODE
+
+Kjeldekode, feilsporing og bidragsrettleiing:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+Lisensiert under GNU Affero General Public License v3.0.
+```
+
 ## `no` — Norsk
 
 _Translated from the English description._
@@ -2433,6 +3098,61 @@ Izvorna koda, sledilnik težav in vodnik za prispevanje:
 https://github.com/ramazansancar/volume-booster-tab-extension
 
 Licencirano pod GNU Affero General Public License v3.0.
+```
+
+## `sq` — Shqip
+
+_Translated from the English description._
+
+```text
+Volume Booster Tab e ngre volumin e çdo skede të shfletuesit përtej asaj që lejon vetë faqja dhe ju jep kontroll të vërtetë mbi mënyrën se si formësohet ai tingull.
+
+VEÇORITË
+
+- Përforcim nga 0% deri në 600%, i ngritshëm deri në 1000% te cilësimet
+- Kufizues që parandalon shtrembërimin dhe majat e dhimbshme gjatë përforcimit
+- Ekualizues me 6 breza, nga 60 Hz deri në 10 kHz, te Cilësimet e avancuara
+- Balancë stereo, nga plotësisht majtas deri plotësisht djathtas
+- Përzierje në mono për të dëgjuar me një kufje të vetme
+- Çelës anashkalimi për të krahasuar menjëherë tingullin e përpunuar me atë origjinal
+- I disponueshëm në 55 gjuhë, i përkthyer plotësisht
+
+ÇDO SKEDË ËSHTË E PAVARUR
+
+Pikërisht këtu gabojnë shumica e përforcuesve të volumit. Çdo skedë ruan volumin e vet, kurbën e vet të ekualizuesit, balancën e vet. Luani një transmetim në 300% në një skedë dhe muzikë në 120% në një tjetër; ndryshimi i njërës nuk prek kurrë tjetrën.
+
+Shenja në shiritin e veglave tregon nivelin e skedës që po shikoni, kështu që me një shikim e kuptoni cilat skeda janë përforcuar.
+
+E PËRKOHSHME SI PARAZGJEDHJE
+
+Përforcimi harrohet kur mbyllni skedën. Një cilësim që zgjodhët për një video nuk mund t'ju befasojë kurrë javë më vonë në një faqe tjetër.
+
+Nëse doni që një sajt të hapet gjithmonë me të njëjtin volum, shënoni «Mbaj mend këtë sajt» në dritaren kërcyese. Faqja e cilësimeve rendit çdo sajt që keni ruajtur, ju lejon të redaktoni ose të hiqni cilindo prej tyre dhe mund të bëjë që skedat e reja të mbajnë mend automatikisht.
+
+MBAN RITMIN ME SAJTET E TRANSMETIMIT
+
+Sajtet si YouTube, Twitch dhe Kick e zëvendësojnë luajtësin e tyre të videove kur kaloni te episodi ose transmetimi tjetër, pa e ringarkuar faqen. Shumë përforcues e humbin zërin pikërisht në atë moment dhe vazhdojnë të shfaqin një nivel që nuk e zbatojnë më. Ky shtojcë e vëzhgon zëvendësimin dhe i rizbaton cilësimet tuaja te luajtësi i ri, kështu që volumi që caktuat mbetet volumi që dëgjoni.
+
+PRIVATËSIA
+
+Pa gjurmim. Pa analitikë. Pa llogari. Pa kërkesa rrjeti të asnjë lloji, as edhe për shkronjat. Cilësimet tuaja nuk largohen kurrë nga pajisja juaj.
+
+ÇFARË NUK MUND TË BËJË
+
+Shërbimet e mbrojtura me DRM si Netflix, Disney+, Prime Video dhe Spotify e fshehin zërin e tyre nga shtojcat për vetë mënyrën se si janë ndërtuara, prandaj nuk mund të përforcohen. Kur një faqe nuk mund të përpunohet, dritarja kërcyese e thotë qartë në vend që të mos bëjë asgjë në heshtje.
+
+Faqet e shfletuesit si about: dhe sajti i shtojcave janë të ndaluara për çdo shtojcë, përfshirë këtë.
+
+JU LUTEM PËRFORCONI ME PËRGJEGJËSI
+
+Volumi i lartë mund të dëmtojë si dëgjimin tuaj ashtu edhe altoparlantët, veçanërisht me kufje. Kufizuesi është i ndezur si parazgjedhje mbi 100% dhe duhet ta lini të ndezur. Ngritja e tavanit përtej 600% te cilësimet bëhet me përgjegjësinë tuaj.
+
+BURIM I HAPUR
+
+Kodi burimor, gjurmuesi i problemeve dhe udhëzuesi i kontributit:
+https://github.com/ramazansancar/volume-booster-tab-extension
+
+I licencuar sipas GNU Affero General Public License v3.0.
 ```
 
 ## `sr` — Српски

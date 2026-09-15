@@ -120,7 +120,7 @@ The same rule applies as everywhere else: the interface words in the listing (_l
 
 ## Translations tab
 
-Opera lists the same 55 languages the extension ships. **Description** is the only required field per language; Summary and Changelog are optional.
+Opera lists the same 55 languages the extension ships. **Description** is the only required field per language; Summary and Changelog are optional. [`store-descriptions.md`](store-descriptions.md) carries more than 55 sections, because AMO asks for languages Opera does not — take the 55 Opera offers and ignore the rest.
 
 Opera rejects the submission with `Detailed description missing for <language>` until every language it offers has one, so leaving them empty is not an option. [`store-descriptions.md`](store-descriptions.md) carries all 55, each with real text in that language.
 
