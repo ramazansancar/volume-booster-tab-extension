@@ -21,6 +21,7 @@
     "source": "node scripts/source-package.mjs",
     "icons": "node scripts/icons.mjs",
     "screenshots": "node scripts/screenshots.mjs",
+    "promo": "node scripts/promo.mjs",
     "locales": "node scripts/locales.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext .ts,.mjs",
