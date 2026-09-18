@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Buka dalam tetingkap berasingan"
   },
+  "popupPlayingTabs": {
+    "message": "Tab yang memainkan audio"
+  },
   "popupEnjoying": {
     "message": "Suka dengan peningkatan ini?"
   },

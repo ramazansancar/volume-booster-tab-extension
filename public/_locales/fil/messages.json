@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Buksan sa hiwalay na window"
   },
+  "popupPlayingTabs": {
+    "message": "Mga tab na may audio"
+  },
   "popupEnjoying": {
     "message": "Nagugustuhan ang boost?"
   },

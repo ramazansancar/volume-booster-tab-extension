@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "在单独的窗口中打开"
   },
+  "popupPlayingTabs": {
+    "message": "正在播放音频的标签页"
+  },
   "popupEnjoying": {
     "message": "音量增强还满意吗？"
   },

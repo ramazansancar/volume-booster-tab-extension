@@ -111,6 +111,20 @@
         </label>
       </section>
 
+      <!--
+        Tabs currently carrying audio. A disclosure rather than a permanent
+        list: most of the time there is one tab playing and the user is looking
+        at it, so the count in the summary is the whole answer and the rows
+        underneath are only worth the space when they want to jump somewhere.
+      -->
+      <details class="tablist" id="tablist" hidden>
+        <summary class="tablist__summary">
+          <span data-i18n="popupPlayingTabs">Tabs playing audio</span>
+          <span class="tablist__count" id="tablist-count">0</span>
+        </summary>
+        <ul class="tablist__items" id="tablist-items"></ul>
+      </details>
+
       <!-- Presets sit outside Advanced: picking a named curve is the way most
            people will ever touch the equalizer, and burying it behind a
            disclosure would leave the six sliders as the only visible option. -->

@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "ప్రత్యేక విండోలో తెరవండి"
   },
+  "popupPlayingTabs": {
+    "message": "ఆడియో ప్లే అవుతున్న ట్యాబ్‌లు"
+  },
   "popupEnjoying": {
     "message": "బూస్ట్ నచ్చిందా?"
   },

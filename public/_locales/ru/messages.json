@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Открыть в отдельном окне"
   },
+  "popupPlayingTabs": {
+    "message": "Вкладки со звуком"
+  },
   "popupEnjoying": {
     "message": "Нравится усиление?"
   },

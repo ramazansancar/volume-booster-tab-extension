@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Mở trong cửa sổ riêng"
   },
+  "popupPlayingTabs": {
+    "message": "Tab đang phát âm thanh"
+  },
   "popupEnjoying": {
     "message": "Bạn thấy hiệu quả chứ?"
   },

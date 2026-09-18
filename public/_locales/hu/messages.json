@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Megnyitás külön ablakban"
   },
+  "popupPlayingTabs": {
+    "message": "Hangot lejátszó lapok"
+  },
   "popupEnjoying": {
     "message": "Tetszik a hangerősítés?"
   },

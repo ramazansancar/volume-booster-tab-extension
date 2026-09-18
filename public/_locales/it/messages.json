@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Apri in una finestra separata"
   },
+  "popupPlayingTabs": {
+    "message": "Schede con audio"
+  },
   "popupEnjoying": {
     "message": "Ti piace il potenziamento?"
   },

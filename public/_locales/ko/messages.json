@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "별도 창에서 열기"
   },
+  "popupPlayingTabs": {
+    "message": "오디오 재생 중인 탭"
+  },
   "popupEnjoying": {
     "message": "볼륨 부스트가 마음에 드시나요?"
   },

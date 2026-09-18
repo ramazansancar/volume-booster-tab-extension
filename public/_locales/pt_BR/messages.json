@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Abrir em uma janela separada"
   },
+  "popupPlayingTabs": {
+    "message": "Abas com áudio"
+  },
   "popupEnjoying": {
     "message": "Curtindo o reforço?"
   },

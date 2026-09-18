@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "പ്രത്യേക വിൻഡോയിൽ തുറക്കുക"
   },
+  "popupPlayingTabs": {
+    "message": "ഓഡിയോ പ്ലേ ചെയ്യുന്ന ടാബുകൾ"
+  },
   "popupEnjoying": {
     "message": "ബൂസ്റ്റ് ഇഷ്ടപ്പെട്ടോ?"
   },

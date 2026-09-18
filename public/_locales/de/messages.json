@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "In einem eigenen Fenster öffnen"
   },
+  "popupPlayingTabs": {
+    "message": "Tabs mit Audio"
+  },
   "popupEnjoying": {
     "message": "Gefällt dir die Verstärkung?"
   },

@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "अलग विंडो में खोलें"
   },
+  "popupPlayingTabs": {
+    "message": "ऑडियो चला रहे टैब"
+  },
   "popupEnjoying": {
     "message": "बूस्ट पसंद आया?"
   },

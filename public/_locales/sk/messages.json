@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Otvoriť v samostatnom okne"
   },
+  "popupPlayingTabs": {
+    "message": "Karty prehrávajúce zvuk"
+  },
   "popupEnjoying": {
     "message": "Páči sa vám zosilnenie?"
   },

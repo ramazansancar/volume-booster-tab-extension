@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "અલગ વિન્ડોમાં ખોલો"
   },
+  "popupPlayingTabs": {
+    "message": "ઑડિયો ચલાવતી ટૅબ્સ"
+  },
   "popupEnjoying": {
     "message": "બૂસ્ટ ગમ્યું?"
   },

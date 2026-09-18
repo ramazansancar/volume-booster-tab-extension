@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "فتح في نافذة منفصلة"
   },
+  "popupPlayingTabs": {
+    "message": "علامات تبويب تشغّل صوتًا"
+  },
   "popupEnjoying": {
     "message": "هل يعجبك التعزيز؟"
   },

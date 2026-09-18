@@ -138,7 +138,9 @@ export type UiToBackgroundMessage =
   /** Saves the current curve as a named preset, from the popup. */
   | { type: 'ui:save-preset'; name: string; gains: EqualizerGains }
   /** Renames, reorders or deletes saved presets, from the options page. */
-  | { type: 'ui:set-presets'; presets: EqPreset[] };
+  | { type: 'ui:set-presets'; presets: EqPreset[] }
+  /** Lists the tabs currently carrying audio, for the popup's tab list. */
+  | { type: 'ui:list-active-tabs' };
 
 /** Messages sent from the background to a tab's content script. */
 export type BackgroundToContentMessage =
@@ -186,6 +188,28 @@ export type RuntimeMessage =
   | ContentToBackgroundMessage
   | BackgroundToOffscreenMessage
   | OffscreenIdleMessage;
+
+/**
+ * One row of the popup's "tabs playing audio" list.
+ *
+ * Deliberately small: a title, where it is, and how loud. The popup shows this
+ * list to let the user jump to a tab and see at a glance which ones are being
+ * boosted, so anything more would be weight crossing the message boundary for
+ * nothing.
+ */
+export interface ActiveTabSummary {
+  tabId: number;
+  title: string;
+  origin: string | null;
+  /** Gain as a percentage, already rounded for display. */
+  gainPercent: number;
+  /** True when this is the tab the popup itself was opened over. */
+  current: boolean;
+  /** Whether the tab's processing is bypassed right now. */
+  bypassed: boolean;
+  /** Favicon URL, when the browser gave us one. */
+  favIconUrl?: string;
+}
 
 /** Response returned for 'ui:get-tab-state'. */
 export interface TabStateResponse {

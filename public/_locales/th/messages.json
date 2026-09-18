@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "เปิดในหน้าต่างแยก"
   },
+  "popupPlayingTabs": {
+    "message": "แท็บที่กำลังเล่นเสียง"
+  },
   "popupEnjoying": {
     "message": "ชอบการเพิ่มเสียงไหม?"
   },

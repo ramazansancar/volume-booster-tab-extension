@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Avaa erillisessä ikkunassa"
   },
+  "popupPlayingTabs": {
+    "message": "Ääntä toistavat välilehdet"
+  },
   "popupEnjoying": {
     "message": "Pidätkö äänenvoimistuksesta?"
   },

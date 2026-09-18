@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Ayrı pencerede aç"
   },
+  "popupPlayingTabs": {
+    "message": "Ses çalan sekmeler"
+  },
   "popupEnjoying": {
     "message": "Ses yükseltme işine yaradı mı?"
   },

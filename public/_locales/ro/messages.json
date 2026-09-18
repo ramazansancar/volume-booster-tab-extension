@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Deschide într-o fereastră separată"
   },
+  "popupPlayingTabs": {
+    "message": "File care redau sunet"
+  },
   "popupEnjoying": {
     "message": "Îți place amplificarea?"
   },

@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "আলাদা উইন্ডোতে খুলুন"
   },
+  "popupPlayingTabs": {
+    "message": "অডিও চলছে এমন ট্যাব"
+  },
   "popupEnjoying": {
     "message": "বুস্ট উপভোগ করছেন?"
   },

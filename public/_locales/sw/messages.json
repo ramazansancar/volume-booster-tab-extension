@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Fungua katika dirisha tofauti"
   },
+  "popupPlayingTabs": {
+    "message": "Vichupo vinavyocheza sauti"
+  },
   "popupEnjoying": {
     "message": "Unafurahia uimarishaji?"
   },

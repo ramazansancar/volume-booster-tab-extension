@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Öppna i ett separat fönster"
   },
+  "popupPlayingTabs": {
+    "message": "Flikar som spelar ljud"
+  },
   "popupEnjoying": {
     "message": "Gillar du förstärkningen?"
   },

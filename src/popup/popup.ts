@@ -2,6 +2,7 @@ import {
   createPopupWindow,
   createTab,
   ext,
+  focusTab,
   queryTabs,
   sendMessageToTab,
   sendRuntimeMessage,
@@ -25,6 +26,7 @@ import {
 import { EQ_BAND_FREQUENCIES } from '@/types';
 import { MAX_EQ_DB } from '@/lib/validate';
 import type {
+  ActiveTabSummary,
   AudioSettings,
   EqPreset,
   GlobalPreferences,
@@ -53,6 +55,9 @@ const dom = {
   bypass: document.getElementById('bypass') as HTMLButtonElement,
   bypassLabel: document.getElementById('bypass-label') as HTMLElement,
   detach: document.getElementById('detach') as HTMLButtonElement,
+  tablist: document.getElementById('tablist') as HTMLDetailsElement,
+  tablistCount: document.getElementById('tablist-count') as HTMLElement,
+  tablistItems: document.getElementById('tablist-items') as HTMLUListElement,
   equalizer: document.getElementById('equalizer') as HTMLElement,
   eqBadge: document.getElementById('eq-badge') as HTMLElement,
   eqReset: document.getElementById('eq-reset') as HTMLButtonElement,
@@ -371,6 +376,81 @@ function renderPresetSelection(): void {
   dom.preset.value = match?.id ?? CUSTOM_PRESET;
 }
 
+/* -------------------------------------------------------------------------- */
+/* Tabs playing audio                                                          */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Lists the tabs currently carrying audio.
+ *
+ * The whole section is dropped when only the current tab is playing: a list of
+ * one, which is the tab the user is already looking at, tells them nothing and
+ * pushes the controls down the panel.
+ */
+async function renderActiveTabs(): Promise<void> {
+  let tabs: ActiveTabSummary[];
+  try {
+    tabs = await send<ActiveTabSummary[]>({ type: 'ui:list-active-tabs' });
+  } catch {
+    // The list is a convenience; failing to build it must not take the popup
+    // with it.
+    dom.tablist.hidden = true;
+    return;
+  }
+
+  const others = tabs.filter((tab) => !tab.current);
+  if (others.length === 0) {
+    dom.tablist.hidden = true;
+    return;
+  }
+
+  dom.tablist.hidden = false;
+  dom.tablistCount.textContent = String(tabs.length);
+  dom.tablistItems.replaceChildren();
+
+  for (const tab of tabs) {
+    const row = document.createElement('li');
+    row.className = 'tablist__item';
+    row.dataset.current = String(tab.current);
+
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'tablist__link';
+    button.title = tab.title;
+
+    if (tab.favIconUrl) {
+      const icon = document.createElement('img');
+      icon.className = 'tablist__icon';
+      icon.src = tab.favIconUrl;
+      icon.alt = '';
+      // A site that serves a broken favicon should not leave a broken-image
+      // glyph sitting in the list.
+      icon.addEventListener('error', () => icon.remove());
+      button.append(icon);
+    }
+
+    const title = document.createElement('span');
+    title.className = 'tablist__title';
+    title.textContent = tab.title;
+
+    const gain = document.createElement('span');
+    gain.className = 'tablist__gain';
+    gain.textContent = tab.bypassed ? '—' : `${tab.gainPercent}%`;
+    gain.dataset.boosted = String(!tab.bypassed && tab.gainPercent > 100);
+
+    button.append(title, gain);
+    button.addEventListener('click', () => {
+      // Switching tabs closes the popup anyway, so there is nothing to
+      // re-render afterwards.
+      void focusTab(tab.tabId);
+      window.close();
+    });
+
+    row.append(button);
+    dom.tablistItems.append(row);
+  }
+}
+
 function formatBalance(value: number): string {
   if (value === 0) return t('popupBalanceCenter', 'Center');
   const side = value < 0 ? 'L' : 'R';
@@ -680,6 +760,10 @@ async function init(): Promise<void> {
     tabId,
   });
   render(response);
+
+  // Built after the first paint: the controls are what the user came for, and
+  // this needs a round trip per tab to collect titles.
+  void renderActiveTabs();
 }
 
 void init();

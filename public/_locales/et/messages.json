@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Ava eraldi aknas"
   },
+  "popupPlayingTabs": {
+    "message": "Heli esitavad kaardid"
+  },
   "popupEnjoying": {
     "message": "Kas võimendus meeldib?"
   },

@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Odpri v ločenem oknu"
   },
+  "popupPlayingTabs": {
+    "message": "Zavihki s predvajanjem zvoka"
+  },
   "popupEnjoying": {
     "message": "Vam je ojačitev všeč?"
   },

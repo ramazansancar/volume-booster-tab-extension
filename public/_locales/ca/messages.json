@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Obre en una finestra a part"
   },
+  "popupPlayingTabs": {
+    "message": "Pestanyes amb àudio"
+  },
   "popupEnjoying": {
     "message": "T’agrada l’amplificació?"
   },

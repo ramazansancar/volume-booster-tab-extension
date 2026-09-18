@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "தனி சாளரத்தில் திற"
   },
+  "popupPlayingTabs": {
+    "message": "ஒலி இயங்கும் தாவல்கள்"
+  },
   "popupEnjoying": {
     "message": "ஒலி அதிகரிப்பு பிடித்ததா?"
   },

@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Отвори в отделен прозорец"
   },
+  "popupPlayingTabs": {
+    "message": "Раздели със звук"
+  },
   "popupEnjoying": {
     "message": "Харесва ли ви усилването?"
   },

@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Ouvrir dans une fenêtre séparée"
   },
+  "popupPlayingTabs": {
+    "message": "Onglets avec du son"
+  },
   "popupEnjoying": {
     "message": "Le boost vous plaît ?"
   },

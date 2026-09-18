@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Отвори у засебном прозору"
   },
+  "popupPlayingTabs": {
+    "message": "Картице које пуштају звук"
+  },
   "popupEnjoying": {
     "message": "Да ли вам се свиђа појачање?"
   },

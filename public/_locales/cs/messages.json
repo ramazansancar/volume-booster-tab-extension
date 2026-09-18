@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Otevřít v samostatném okně"
   },
+  "popupPlayingTabs": {
+    "message": "Panely přehrávající zvuk"
+  },
   "popupEnjoying": {
     "message": "Líbí se vám zesílení?"
   },

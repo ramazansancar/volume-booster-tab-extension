@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "በተለየ መስኮት ክፈት"
   },
+  "popupPlayingTabs": {
+    "message": "ድምጽ የሚያጫውቱ ትሮች"
+  },
   "popupEnjoying": {
     "message": "ማጉላቱን እየተደሰቱበት ነው?"
   },

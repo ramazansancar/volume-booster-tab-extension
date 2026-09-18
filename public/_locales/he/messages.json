@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "פתח בחלון נפרד"
   },
+  "popupPlayingTabs": {
+    "message": "לשוניות שמשמיעות אודיו"
+  },
   "popupEnjoying": {
     "message": "נהנים מההגברה?"
   },

@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "別ウィンドウで開く"
   },
+  "popupPlayingTabs": {
+    "message": "音声を再生中のタブ"
+  },
   "popupEnjoying": {
     "message": "音量アップは気に入りましたか？"
   },

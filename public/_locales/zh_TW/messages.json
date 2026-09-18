@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "在獨立視窗中開啟"
   },
+  "popupPlayingTabs": {
+    "message": "正在播放音訊的分頁"
+  },
   "popupEnjoying": {
     "message": "音量增強還滿意嗎？"
   },

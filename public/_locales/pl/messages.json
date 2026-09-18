@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Otwórz w osobnym oknie"
   },
+  "popupPlayingTabs": {
+    "message": "Karty odtwarzające dźwięk"
+  },
   "popupEnjoying": {
     "message": "Podoba Ci się wzmocnienie?"
   },

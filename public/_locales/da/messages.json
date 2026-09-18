@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Åbn i et separat vindue"
   },
+  "popupPlayingTabs": {
+    "message": "Faneblade med lyd"
+  },
   "popupEnjoying": {
     "message": "Kan du lide forstærkningen?"
   },

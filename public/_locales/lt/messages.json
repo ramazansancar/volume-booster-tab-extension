@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Atverti atskirame lange"
   },
+  "popupPlayingTabs": {
+    "message": "Kortelės, kuriose grojamas garsas"
+  },
   "popupEnjoying": {
     "message": "Ar patinka garsinimas?"
   },

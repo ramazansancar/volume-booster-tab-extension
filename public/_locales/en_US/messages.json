@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Open in a separate window"
   },
+  "popupPlayingTabs": {
+    "message": "Tabs playing audio"
+  },
   "popupEnjoying": {
     "message": "Enjoying the boost?"
   },

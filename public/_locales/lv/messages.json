@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Atvērt atsevišķā logā"
   },
+  "popupPlayingTabs": {
+    "message": "Cilnes ar skaņu"
+  },
   "popupEnjoying": {
     "message": "Vai patīk pastiprinājums?"
   },

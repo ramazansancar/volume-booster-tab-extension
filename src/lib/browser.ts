@@ -171,6 +171,31 @@ export function createPopupWindow(
   );
 }
 
+/**
+ * Brings a tab to the front, raising its window too.
+ *
+ * Activating the tab alone is not enough when it lives in another window: the
+ * tab becomes current there, but the user is still looking at the window they
+ * started in and nothing appears to have happened.
+ */
+export async function focusTab(tabId: number): Promise<void> {
+  try {
+    const tab = await getTab(tabId);
+    if (returnsPromises()) {
+      await ext.tabs.update(tabId, { active: true });
+      if (tab.windowId !== undefined) {
+        await ext.windows.update(tab.windowId, { focused: true });
+      }
+    } else {
+      ext.tabs.update(tabId, { active: true });
+      if (tab.windowId !== undefined) ext.windows.update(tab.windowId, { focused: true });
+    }
+  } catch {
+    // The tab closed between listing it and clicking it, which is not an error
+    // worth reporting in a popup that is about to close anyway.
+  }
+}
+
 /** Looks up one tab by id. */
 export function getTab(tabId: number): Promise<chrome.tabs.Tab> {
   if (returnsPromises()) {

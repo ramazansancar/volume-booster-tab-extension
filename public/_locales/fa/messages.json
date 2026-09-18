@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "باز کردن در پنجره جداگانه"
   },
+  "popupPlayingTabs": {
+    "message": "زبانه‌های در حال پخش صدا"
+  },
   "popupEnjoying": {
     "message": "از تقویت صدا راضی هستید؟"
   },

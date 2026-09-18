@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "In een apart venster openen"
   },
+  "popupPlayingTabs": {
+    "message": "Tabbladen met audio"
+  },
   "popupEnjoying": {
     "message": "Bevalt de versterking?"
   },

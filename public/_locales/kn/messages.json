@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "ಪ್ರತ್ಯೇಕ ವಿಂಡೋದಲ್ಲಿ ತೆರೆಯಿರಿ"
   },
+  "popupPlayingTabs": {
+    "message": "ಆಡಿಯೋ ಪ್ಲೇ ಆಗುತ್ತಿರುವ ಟ್ಯಾಬ್‌ಗಳು"
+  },
   "popupEnjoying": {
     "message": "ಬೂಸ್ಟ್ ಇಷ್ಟವಾಯಿತೇ?"
   },

@@ -173,6 +173,9 @@
   "popupDetach": {
     "message": "Åpne i et eget vindu"
   },
+  "popupPlayingTabs": {
+    "message": "Faner som spiller lyd"
+  },
   "popupEnjoying": {
     "message": "Liker du forsterkningen?"
   },

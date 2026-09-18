@@ -1,4 +1,11 @@
-import { ext, getAllFrames, getTab, sendMessageSafe, sendMessageToTab } from '@/lib/browser';
+import {
+  ext,
+  getAllFrames,
+  getTab,
+  queryTabs,
+  sendMessageSafe,
+  sendMessageToTab,
+} from '@/lib/browser';
 import { cloneSettings, neutralSettings } from '@/lib/defaults';
 import {
   forgetOrigin,
@@ -25,6 +32,7 @@ import {
   updateCapture,
 } from '@/background/tab-capture';
 import type {
+  ActiveTabSummary,
   AudioSettings,
   ContentToBackgroundMessage,
   GlobalPreferences,
@@ -238,6 +246,49 @@ async function handleUiMessage(message: UiToBackgroundMessage): Promise<unknown>
       if (!state) return { ok: false };
       await applyAndPersist(state);
       return { state, preferences: prefs } satisfies TabStateResponse;
+    }
+
+    case 'ui:list-active-tabs': {
+      /*
+       * "Active" means the tab is actually carrying audio through the
+       * extension, not merely that it has a state object. A tab the user opened
+       * the popup on once and never played anything in has an entry here with a
+       * neutral setting, and listing it would fill the list with tabs the user
+       * does not think of as playing anything.
+       */
+      const [active] = await queryTabs({ active: true, currentWindow: true });
+      const summaries: ActiveTabSummary[] = [];
+
+      for (const [id, state] of registry.entries()) {
+        const carryingAudio =
+          state.pathway === 'media-element' || state.pathway === 'tab-capture';
+        if (!carryingAudio) continue;
+
+        // The tab may have closed between the registry entry and this call, in
+        // which case it simply does not belong in the list.
+        let tab: chrome.tabs.Tab;
+        try {
+          tab = await getTab(id);
+        } catch {
+          continue;
+        }
+
+        summaries.push({
+          tabId: id,
+          title: tab.title?.trim() || state.origin || '',
+          origin: state.origin,
+          gainPercent: Math.round(state.settings.gain * 100),
+          current: id === active?.id,
+          bypassed: state.settings.bypassed,
+          favIconUrl: tab.favIconUrl,
+        });
+      }
+
+      // Boosted tabs first, then the loudest: the list exists to answer "what
+      // is making noise", and a tab left at 100% is the least interesting
+      // answer to that.
+      summaries.sort((a, b) => b.gainPercent - a.gainPercent);
+      return summaries;
     }
 
     case 'ui:get-preferences':
