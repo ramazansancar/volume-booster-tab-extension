@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "Gece"
   },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetJazz": {
+    "message": "Jazz"
+  },
+  "presetClassical": {
+    "message": "Klasik"
+  },
+  "presetElectronic": {
+    "message": "Elektronik"
+  },
+  "presetHipHop": {
+    "message": "Hip-hop"
+  },
+  "presetAcoustic": {
+    "message": "Akustik"
+  },
+  "presetVocal": {
+    "message": "Vokal yükseltme"
+  },
+  "presetBassCut": {
+    "message": "Bas azaltma"
+  },
   "popupTone": {
     "message": "Ton"
   },

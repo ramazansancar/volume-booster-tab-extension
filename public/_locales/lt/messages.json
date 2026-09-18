@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "Naktis"
   },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetJazz": {
+    "message": "Jazz"
+  },
+  "presetClassical": {
+    "message": "Klasika"
+  },
+  "presetElectronic": {
+    "message": "Elektroninė"
+  },
+  "presetHipHop": {
+    "message": "Hip-hop"
+  },
+  "presetAcoustic": {
+    "message": "Akustinė"
+  },
+  "presetVocal": {
+    "message": "Vokalo stiprinimas"
+  },
+  "presetBassCut": {
+    "message": "Bosų slopinimas"
+  },
   "popupTone": {
     "message": "Tonas"
   },

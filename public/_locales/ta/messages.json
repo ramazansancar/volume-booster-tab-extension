@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "இரவு"
   },
+  "presetRock": {
+    "message": "ராக்"
+  },
+  "presetPop": {
+    "message": "பாப்"
+  },
+  "presetJazz": {
+    "message": "ஜாஸ்"
+  },
+  "presetClassical": {
+    "message": "செம்மை இசை"
+  },
+  "presetElectronic": {
+    "message": "எலக்ட்ரானிக்"
+  },
+  "presetHipHop": {
+    "message": "ஹிப்-ஹாப்"
+  },
+  "presetAcoustic": {
+    "message": "அகௌஸ்டிக்"
+  },
+  "presetVocal": {
+    "message": "குரல் அதிகரிப்பு"
+  },
+  "presetBassCut": {
+    "message": "பாஸ் குறைப்பு"
+  },
   "popupTone": {
     "message": "தொனி"
   },

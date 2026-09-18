@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "夜间"
   },
+  "presetRock": {
+    "message": "摇滚"
+  },
+  "presetPop": {
+    "message": "流行"
+  },
+  "presetJazz": {
+    "message": "爵士"
+  },
+  "presetClassical": {
+    "message": "古典"
+  },
+  "presetElectronic": {
+    "message": "电子"
+  },
+  "presetHipHop": {
+    "message": "嘻哈"
+  },
+  "presetAcoustic": {
+    "message": "原声"
+  },
+  "presetVocal": {
+    "message": "人声增强"
+  },
+  "presetBassCut": {
+    "message": "低音削减"
+  },
   "popupTone": {
     "message": "音色"
   },

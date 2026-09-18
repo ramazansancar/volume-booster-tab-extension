@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "ليلي"
   },
+  "presetRock": {
+    "message": "روك"
+  },
+  "presetPop": {
+    "message": "بوب"
+  },
+  "presetJazz": {
+    "message": "جاز"
+  },
+  "presetClassical": {
+    "message": "كلاسيكي"
+  },
+  "presetElectronic": {
+    "message": "إلكتروني"
+  },
+  "presetHipHop": {
+    "message": "هيب هوب"
+  },
+  "presetAcoustic": {
+    "message": "صوتي"
+  },
+  "presetVocal": {
+    "message": "تعزيز الغناء"
+  },
+  "presetBassCut": {
+    "message": "خفض الجهير"
+  },
   "popupTone": {
     "message": "النغمة"
   },

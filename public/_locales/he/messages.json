@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "לילה"
   },
+  "presetRock": {
+    "message": "רוק"
+  },
+  "presetPop": {
+    "message": "פופ"
+  },
+  "presetJazz": {
+    "message": "ג׳אז"
+  },
+  "presetClassical": {
+    "message": "קלאסי"
+  },
+  "presetElectronic": {
+    "message": "אלקטרוני"
+  },
+  "presetHipHop": {
+    "message": "היפ הופ"
+  },
+  "presetAcoustic": {
+    "message": "אקוסטי"
+  },
+  "presetVocal": {
+    "message": "הגברת שירה"
+  },
+  "presetBassCut": {
+    "message": "הפחתת בס"
+  },
   "popupTone": {
     "message": "גוון"
   },

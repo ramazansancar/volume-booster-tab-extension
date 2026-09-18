@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "Nacht"
   },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetJazz": {
+    "message": "Jazz"
+  },
+  "presetClassical": {
+    "message": "Klassik"
+  },
+  "presetElectronic": {
+    "message": "Elektronisch"
+  },
+  "presetHipHop": {
+    "message": "Hip-hop"
+  },
+  "presetAcoustic": {
+    "message": "Akustisch"
+  },
+  "presetVocal": {
+    "message": "Stimme betonen"
+  },
+  "presetBassCut": {
+    "message": "Bass absenken"
+  },
   "popupTone": {
     "message": "Klang"
   },

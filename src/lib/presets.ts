@@ -149,6 +149,31 @@ export const BUILTIN_PRESETS: EqPreset[] = [
   // Night: pull the extremes in so quiet passages stay audible without the
   // loud ones waking the house.
   { id: 'night', nameKey: 'presetNight', gains: [-5, -2, 1, 3, 1, -3] },
+
+  /*
+   * Genre curves. These are the shapes people expect to find under these
+   * names, kept to the same rule as the ones above: each sums to roughly
+   * nothing, so picking one changes the character and not the loudness.
+   */
+  // Rock: scooped mids, with bite in the presence range for guitars.
+  { id: 'rock', nameKey: 'presetRock', gains: [5, 3, -2, -1, 4, 3] },
+  // Pop: vocals forward, gentle lift at both ends.
+  { id: 'pop', nameKey: 'presetPop', gains: [2, 1, -1, 3, 3, 2] },
+  // Jazz: warm low end, honest mids, air on top.
+  { id: 'jazz', nameKey: 'presetJazz', gains: [4, 2, 0, 1, 2, 3] },
+  // Classical: nearly flat with hall air, since the recording already has
+  // the balance the conductor wanted.
+  { id: 'classical', nameKey: 'presetClassical', gains: [3, 1, 0, 0, 1, 3] },
+  // Electronic: sub weight and a bright top, the mids left out of the way.
+  { id: 'electronic', nameKey: 'presetElectronic', gains: [6, 3, -2, 0, 2, 5] },
+  // Hip-hop: the kick and the bassline carry it, vocals kept present.
+  { id: 'hiphop', nameKey: 'presetHipHop', gains: [7, 4, -1, 2, 2, 1] },
+  // Acoustic: body without mud, string detail at the top.
+  { id: 'acoustic', nameKey: 'presetAcoustic', gains: [3, 2, -1, 1, 3, 4] },
+  // Vocal boost: everything that is not the voice pulled back a little.
+  { id: 'vocal', nameKey: 'presetVocal', gains: [-3, -2, 2, 5, 4, 0] },
+  // Bass reducer, for headphones that already have too much of it.
+  { id: 'bassCut', nameKey: 'presetBassCut', gains: [-7, -4, -1, 1, 1, 1] },
 ];
 
 /** Looks up a built-in preset by id. */

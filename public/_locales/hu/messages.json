@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "Éjszaka"
   },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetJazz": {
+    "message": "Jazz"
+  },
+  "presetClassical": {
+    "message": "Klasszikus"
+  },
+  "presetElectronic": {
+    "message": "Elektronikus"
+  },
+  "presetHipHop": {
+    "message": "Hip-hop"
+  },
+  "presetAcoustic": {
+    "message": "Akusztikus"
+  },
+  "presetVocal": {
+    "message": "Ének kiemelése"
+  },
+  "presetBassCut": {
+    "message": "Mélyhang csökkentése"
+  },
   "popupTone": {
     "message": "Hangszín"
   },

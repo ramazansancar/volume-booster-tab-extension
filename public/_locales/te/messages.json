@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "రాత్రి"
   },
+  "presetRock": {
+    "message": "రాక్"
+  },
+  "presetPop": {
+    "message": "పాప్"
+  },
+  "presetJazz": {
+    "message": "జాజ్"
+  },
+  "presetClassical": {
+    "message": "శాస్త్రీయ"
+  },
+  "presetElectronic": {
+    "message": "ఎలక్ట్రానిక్"
+  },
+  "presetHipHop": {
+    "message": "హిప్-హాప్"
+  },
+  "presetAcoustic": {
+    "message": "అకౌస్టిక్"
+  },
+  "presetVocal": {
+    "message": "వోకల్ బూస్ట్"
+  },
+  "presetBassCut": {
+    "message": "బాస్ తగ్గింపు"
+  },
   "popupTone": {
     "message": "టోన్"
   },

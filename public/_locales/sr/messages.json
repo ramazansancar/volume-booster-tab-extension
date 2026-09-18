@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "Ноћ"
   },
+  "presetRock": {
+    "message": "Рок"
+  },
+  "presetPop": {
+    "message": "Поп"
+  },
+  "presetJazz": {
+    "message": "Џез"
+  },
+  "presetClassical": {
+    "message": "Класика"
+  },
+  "presetElectronic": {
+    "message": "Електронска"
+  },
+  "presetHipHop": {
+    "message": "Хип-хоп"
+  },
+  "presetAcoustic": {
+    "message": "Акустична"
+  },
+  "presetVocal": {
+    "message": "Појачан вокал"
+  },
+  "presetBassCut": {
+    "message": "Смањен бас"
+  },
   "popupTone": {
     "message": "Тон"
   },

@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "രാത്രി"
   },
+  "presetRock": {
+    "message": "റോക്ക്"
+  },
+  "presetPop": {
+    "message": "പോപ്പ്"
+  },
+  "presetJazz": {
+    "message": "ജാസ്"
+  },
+  "presetClassical": {
+    "message": "ക്ലാസിക്കൽ"
+  },
+  "presetElectronic": {
+    "message": "ഇലക്ട്രോണിക്"
+  },
+  "presetHipHop": {
+    "message": "ഹിപ്-ഹോപ്പ്"
+  },
+  "presetAcoustic": {
+    "message": "അക്കൗസ്റ്റിക്"
+  },
+  "presetVocal": {
+    "message": "വോക്കൽ ബൂസ്റ്റ്"
+  },
+  "presetBassCut": {
+    "message": "ബാസ് കുറയ്ക്കൽ"
+  },
   "popupTone": {
     "message": "ടോൺ"
   },

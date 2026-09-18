@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "شب"
   },
+  "presetRock": {
+    "message": "راک"
+  },
+  "presetPop": {
+    "message": "پاپ"
+  },
+  "presetJazz": {
+    "message": "جاز"
+  },
+  "presetClassical": {
+    "message": "کلاسیک"
+  },
+  "presetElectronic": {
+    "message": "الکترونیک"
+  },
+  "presetHipHop": {
+    "message": "هیپ‌هاپ"
+  },
+  "presetAcoustic": {
+    "message": "آکوستیک"
+  },
+  "presetVocal": {
+    "message": "تقویت آواز"
+  },
+  "presetBassCut": {
+    "message": "کاهش بم"
+  },
   "popupTone": {
     "message": "تن صدا"
   },

@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "กลางคืน"
   },
+  "presetRock": {
+    "message": "ร็อก"
+  },
+  "presetPop": {
+    "message": "ป็อป"
+  },
+  "presetJazz": {
+    "message": "แจ๊ส"
+  },
+  "presetClassical": {
+    "message": "คลาสสิก"
+  },
+  "presetElectronic": {
+    "message": "อิเล็กทรอนิกส์"
+  },
+  "presetHipHop": {
+    "message": "ฮิปฮอป"
+  },
+  "presetAcoustic": {
+    "message": "อะคูสติก"
+  },
+  "presetVocal": {
+    "message": "เพิ่มเสียงร้อง"
+  },
+  "presetBassCut": {
+    "message": "ลดเสียงเบส"
+  },
   "popupTone": {
     "message": "โทนเสียง"
   },

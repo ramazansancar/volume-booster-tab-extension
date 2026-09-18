@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "Malam"
   },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetJazz": {
+    "message": "Jazz"
+  },
+  "presetClassical": {
+    "message": "Klasik"
+  },
+  "presetElectronic": {
+    "message": "Elektronik"
+  },
+  "presetHipHop": {
+    "message": "Hip-hop"
+  },
+  "presetAcoustic": {
+    "message": "Akustik"
+  },
+  "presetVocal": {
+    "message": "Penguat vokal"
+  },
+  "presetBassCut": {
+    "message": "Pengurang bass"
+  },
   "popupTone": {
     "message": "Nada"
   },

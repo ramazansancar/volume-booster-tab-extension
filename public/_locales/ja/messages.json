@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "ナイト"
   },
+  "presetRock": {
+    "message": "ロック"
+  },
+  "presetPop": {
+    "message": "ポップ"
+  },
+  "presetJazz": {
+    "message": "ジャズ"
+  },
+  "presetClassical": {
+    "message": "クラシック"
+  },
+  "presetElectronic": {
+    "message": "エレクトロニック"
+  },
+  "presetHipHop": {
+    "message": "ヒップホップ"
+  },
+  "presetAcoustic": {
+    "message": "アコースティック"
+  },
+  "presetVocal": {
+    "message": "ボーカル強調"
+  },
+  "presetBassCut": {
+    "message": "低音抑制"
+  },
   "popupTone": {
     "message": "音質"
   },

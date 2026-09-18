@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "ሌሊት"
   },
+  "presetRock": {
+    "message": "ሮክ"
+  },
+  "presetPop": {
+    "message": "ፖፕ"
+  },
+  "presetJazz": {
+    "message": "ጃዝ"
+  },
+  "presetClassical": {
+    "message": "ክላሲካል"
+  },
+  "presetElectronic": {
+    "message": "ኤሌክትሮኒክ"
+  },
+  "presetHipHop": {
+    "message": "ሂፕ ሆፕ"
+  },
+  "presetAcoustic": {
+    "message": "አኮስቲክ"
+  },
+  "presetVocal": {
+    "message": "ድምፅ ማጉላት"
+  },
+  "presetBassCut": {
+    "message": "ባስ መቀነስ"
+  },
   "popupTone": {
     "message": "ቃና"
   },

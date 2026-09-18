@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "Νύχτα"
   },
+  "presetRock": {
+    "message": "Ροκ"
+  },
+  "presetPop": {
+    "message": "Ποπ"
+  },
+  "presetJazz": {
+    "message": "Τζαζ"
+  },
+  "presetClassical": {
+    "message": "Κλασική"
+  },
+  "presetElectronic": {
+    "message": "Ηλεκτρονική"
+  },
+  "presetHipHop": {
+    "message": "Χιπ-χοπ"
+  },
+  "presetAcoustic": {
+    "message": "Ακουστική"
+  },
+  "presetVocal": {
+    "message": "Ενίσχυση φωνητικών"
+  },
+  "presetBassCut": {
+    "message": "Μείωση μπάσων"
+  },
   "popupTone": {
     "message": "Τόνος"
   },

@@ -232,6 +232,33 @@
   "presetNight": {
     "message": "Noapte"
   },
+  "presetRock": {
+    "message": "Rock"
+  },
+  "presetPop": {
+    "message": "Pop"
+  },
+  "presetJazz": {
+    "message": "Jazz"
+  },
+  "presetClassical": {
+    "message": "Clasică"
+  },
+  "presetElectronic": {
+    "message": "Electronică"
+  },
+  "presetHipHop": {
+    "message": "Hip-hop"
+  },
+  "presetAcoustic": {
+    "message": "Acustică"
+  },
+  "presetVocal": {
+    "message": "Voce amplificată"
+  },
+  "presetBassCut": {
+    "message": "Bas redus"
+  },
   "popupTone": {
     "message": "Ton"
   },
