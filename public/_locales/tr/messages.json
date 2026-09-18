@@ -174,13 +174,135 @@
     "message": "Ses yükseltme işine yaradı mı?"
   },
   "popupRateOn": {
-    "message": "$STORE$ üzerinde puan ver"
+    "message": "$STORE$ üzerinde puan ver",
+    "placeholders": {
+      "store": {
+        "content": "$1"
+      }
+    }
   },
   "popupSupport": {
     "message": "Yardım al"
   },
   "popupReportIssue": {
     "message": "GitHub üzerinde sorun bildir"
+  },
+  "popupPreset": {
+    "message": "Hazır ayar"
+  },
+  "popupPresetCustom": {
+    "message": "Özel"
+  },
+  "popupSavePreset": {
+    "message": "Mevcut ayarı kaydet"
+  },
+  "popupPresetNamePrompt": {
+    "message": "Bu hazır ayarın adı"
+  },
+  "presetFlat": {
+    "message": "Düz"
+  },
+  "presetVoice": {
+    "message": "Konuşma"
+  },
+  "presetMusic": {
+    "message": "Müzik"
+  },
+  "presetCinema": {
+    "message": "Sinema"
+  },
+  "presetStudio": {
+    "message": "Stüdyo"
+  },
+  "presetOutdoor": {
+    "message": "Dış ortam"
+  },
+  "presetNature": {
+    "message": "Doğa"
+  },
+  "presetBass": {
+    "message": "Bas yükseltme"
+  },
+  "presetNight": {
+    "message": "Gece"
+  },
+  "popupTone": {
+    "message": "Ton"
+  },
+  "popupToneHint": {
+    "message": "Aşağıdaki altı bandı süren üç kontrol."
+  },
+  "toneBass": {
+    "message": "Bas"
+  },
+  "toneMid": {
+    "message": "Orta"
+  },
+  "toneTreble": {
+    "message": "Tiz"
+  },
+  "popupProSection": {
+    "message": "Bant bazlı ekolayzer"
+  },
+  "bandSubBass": {
+    "message": "Alt bas"
+  },
+  "bandSubBassHint": {
+    "message": "Gürlemesi ve ağırlık"
+  },
+  "bandBass": {
+    "message": "Bas"
+  },
+  "bandBassHint": {
+    "message": "Sıcaklık ve gövde"
+  },
+  "bandLowMid": {
+    "message": "Alt orta"
+  },
+  "bandLowMidHint": {
+    "message": "Dolgunluk veya boğukluk"
+  },
+  "bandMid": {
+    "message": "Orta"
+  },
+  "bandMidHint": {
+    "message": "Ses ve netlik"
+  },
+  "bandPresence": {
+    "message": "Varlık"
+  },
+  "bandPresenceHint": {
+    "message": "Ünsüzler ve detay"
+  },
+  "bandBrilliance": {
+    "message": "Parlaklık"
+  },
+  "bandBrillianceHint": {
+    "message": "Hava ve parlaklık"
+  },
+  "popupResetNeutral": {
+    "message": "Nötre sıfırla"
+  },
+  "popupResetNeutralTitle": {
+    "message": "Ses %100, düz ekolayzer, ortalanmış balans"
+  },
+  "popupResetDefaults": {
+    "message": "Varsayılanlarıma dön"
+  },
+  "popupResetDefaultsTitle": {
+    "message": "Ayarlar sayfasında kayıtlı varsayılanları uygula"
+  },
+  "optionsPresets": {
+    "message": "Kayıtlı hazır ayarlar"
+  },
+  "optionsPresetsEmpty": {
+    "message": "Henüz kayıtlı hazır ayar yok. Açılır pencereden kaydedin."
+  },
+  "optionsPresetRename": {
+    "message": "Yeniden adlandır"
+  },
+  "optionsPresetDelete": {
+    "message": "Sil"
   },
   "popupGainHint": {
     "message": "%100 üzerinde limitör bozulmayı önlemek için açık kalır."

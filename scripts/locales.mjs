@@ -2398,6 +2398,176 @@ const MESSAGES = {
     zh_CN: '在 GitHub 上报告问题', zh_TW: '在 GitHub 上回報問題',
   },
 
+  /* Equalizer presets ------------------------------------------------------ */
+
+  popupPreset: {
+    en: 'Preset', tr: 'Hazır ayar',
+  },
+
+  popupPresetCustom: {
+    en: 'Custom', tr: 'Özel',
+  },
+
+  popupSavePreset: {
+    en: 'Save current as preset', tr: 'Mevcut ayarı kaydet',
+  },
+
+  popupPresetNamePrompt: {
+    en: 'Name for this preset', tr: 'Bu hazır ayarın adı',
+  },
+
+  presetFlat: {
+    en: 'Flat', tr: 'Düz',
+  },
+
+  presetVoice: {
+    en: 'Speech', tr: 'Konuşma',
+  },
+
+  presetMusic: {
+    en: 'Music', tr: 'Müzik',
+  },
+
+  presetCinema: {
+    en: 'Cinema', tr: 'Sinema',
+  },
+
+  presetStudio: {
+    en: 'Studio', tr: 'Stüdyo',
+  },
+
+  presetOutdoor: {
+    en: 'Outdoors', tr: 'Dış ortam',
+  },
+
+  presetNature: {
+    en: 'Nature', tr: 'Doğa',
+  },
+
+  presetBass: {
+    en: 'Bass boost', tr: 'Bas yükseltme',
+  },
+
+  presetNight: {
+    en: 'Night', tr: 'Gece',
+  },
+
+  /* Tone controls ---------------------------------------------------------- */
+
+  popupTone: {
+    en: 'Tone', tr: 'Ton',
+  },
+
+  popupToneHint: {
+    en: 'Three controls over the six bands below.',
+    tr: 'Aşağıdaki altı bandı süren üç kontrol.',
+  },
+
+  toneBass: {
+    en: 'Bass', tr: 'Bas',
+  },
+
+  toneMid: {
+    en: 'Mid', tr: 'Orta',
+  },
+
+  toneTreble: {
+    en: 'Treble', tr: 'Tiz',
+  },
+
+  /* Band names ------------------------------------------------------------- */
+
+  popupProSection: {
+    en: 'Per-band equalizer', tr: 'Bant bazlı ekolayzer',
+  },
+
+  bandSubBass: {
+    en: 'Sub-bass', tr: 'Alt bas',
+  },
+
+  bandSubBassHint: {
+    en: 'Rumble and weight', tr: 'Gürlemesi ve ağırlık',
+  },
+
+  bandBass: {
+    en: 'Bass', tr: 'Bas',
+  },
+
+  bandBassHint: {
+    en: 'Warmth and body', tr: 'Sıcaklık ve gövde',
+  },
+
+  bandLowMid: {
+    en: 'Low mid', tr: 'Alt orta',
+  },
+
+  bandLowMidHint: {
+    en: 'Fullness, or boxiness', tr: 'Dolgunluk veya boğukluk',
+  },
+
+  bandMid: {
+    en: 'Mid', tr: 'Orta',
+  },
+
+  bandMidHint: {
+    en: 'Voice and clarity', tr: 'Ses ve netlik',
+  },
+
+  bandPresence: {
+    en: 'Presence', tr: 'Varlık',
+  },
+
+  bandPresenceHint: {
+    en: 'Consonants and detail', tr: 'Ünsüzler ve detay',
+  },
+
+  bandBrilliance: {
+    en: 'Brilliance', tr: 'Parlaklık',
+  },
+
+  bandBrillianceHint: {
+    en: 'Air and sparkle', tr: 'Hava ve parlaklık',
+  },
+
+  /* Reset ------------------------------------------------------------------ */
+
+  popupResetNeutral: {
+    en: 'Reset to neutral', tr: 'Nötre sıfırla',
+  },
+
+  popupResetNeutralTitle: {
+    en: 'Volume 100%, flat equalizer, centred balance',
+    tr: 'Ses %100, düz ekolayzer, ortalanmış balans',
+  },
+
+  popupResetDefaults: {
+    en: 'Use my defaults', tr: 'Varsayılanlarıma dön',
+  },
+
+  popupResetDefaultsTitle: {
+    en: 'Apply the defaults saved on the settings page',
+    tr: 'Ayarlar sayfasında kayıtlı varsayılanları uygula',
+  },
+
+  /* Options page ----------------------------------------------------------- */
+
+  optionsPresets: {
+    en: 'Saved presets', tr: 'Kayıtlı hazır ayarlar',
+  },
+
+  optionsPresetsEmpty: {
+    en: 'No presets saved yet. Save one from the popup.',
+    tr: 'Henüz kayıtlı hazır ayar yok. Açılır pencereden kaydedin.',
+  },
+
+  optionsPresetRename: {
+    en: 'Rename', tr: 'Yeniden adlandır',
+  },
+
+  optionsPresetDelete: {
+    en: 'Delete', tr: 'Sil',
+  },
+
   popupGainHint: {
     en: 'Above 100% the limiter stays on to prevent distortion.',
     am: 'ከ100% በላይ ማዛባትን ለመከላከል ገዳቢው በርቶ ይቆያል።',
@@ -2888,8 +3058,29 @@ export function allCatalogues() {
 
 export { LOCALES };
 
+/**
+ * Declares a placeholder for every $NAME$ a message uses.
+ *
+ * The extension substitutes these itself at runtime, but the browser parses
+ * these files first and rejects the whole catalogue - and with it the manifest,
+ * so the extension will not load at all - if a message references a $NAME$ the
+ * file does not define. The content is never read back: `$1` satisfies the
+ * format while our own lookup does the actual substitution.
+ */
+function placeholdersFor(message) {
+  const names = new Set();
+  for (const match of message.matchAll(/\$([A-Z0-9_]+)\$/g)) {
+    names.add(match[1].toLowerCase());
+  }
+  if (names.size === 0) return undefined;
+
+  const placeholders = {};
+  for (const name of names) placeholders[name] = { content: '$1' };
+  return placeholders;
+}
+
 /** Builds the messages.json body for one locale. */
-function messagesFor(locale) {
+export function messagesFor(locale) {
   const output = {};
   for (const [key, translations] of Object.entries(MESSAGES)) {
     const message = translations[locale] ?? translations.en;
@@ -2897,6 +3088,8 @@ function messagesFor(locale) {
     if (locale === 'en' && DESCRIPTIONS[key]) {
       output[key].description = DESCRIPTIONS[key];
     }
+    const placeholders = placeholdersFor(message);
+    if (placeholders) output[key].placeholders = placeholders;
   }
   return output;
 }

@@ -174,13 +174,135 @@
     "message": "A gostar do reforço?"
   },
   "popupRateOn": {
-    "message": "Avaliar na $STORE$"
+    "message": "Avaliar na $STORE$",
+    "placeholders": {
+      "store": {
+        "content": "$1"
+      }
+    }
   },
   "popupSupport": {
     "message": "Obter ajuda"
   },
   "popupReportIssue": {
     "message": "Comunicar um problema no GitHub"
+  },
+  "popupPreset": {
+    "message": "Preset"
+  },
+  "popupPresetCustom": {
+    "message": "Custom"
+  },
+  "popupSavePreset": {
+    "message": "Save current as preset"
+  },
+  "popupPresetNamePrompt": {
+    "message": "Name for this preset"
+  },
+  "presetFlat": {
+    "message": "Flat"
+  },
+  "presetVoice": {
+    "message": "Speech"
+  },
+  "presetMusic": {
+    "message": "Music"
+  },
+  "presetCinema": {
+    "message": "Cinema"
+  },
+  "presetStudio": {
+    "message": "Studio"
+  },
+  "presetOutdoor": {
+    "message": "Outdoors"
+  },
+  "presetNature": {
+    "message": "Nature"
+  },
+  "presetBass": {
+    "message": "Bass boost"
+  },
+  "presetNight": {
+    "message": "Night"
+  },
+  "popupTone": {
+    "message": "Tone"
+  },
+  "popupToneHint": {
+    "message": "Three controls over the six bands below."
+  },
+  "toneBass": {
+    "message": "Bass"
+  },
+  "toneMid": {
+    "message": "Mid"
+  },
+  "toneTreble": {
+    "message": "Treble"
+  },
+  "popupProSection": {
+    "message": "Per-band equalizer"
+  },
+  "bandSubBass": {
+    "message": "Sub-bass"
+  },
+  "bandSubBassHint": {
+    "message": "Rumble and weight"
+  },
+  "bandBass": {
+    "message": "Bass"
+  },
+  "bandBassHint": {
+    "message": "Warmth and body"
+  },
+  "bandLowMid": {
+    "message": "Low mid"
+  },
+  "bandLowMidHint": {
+    "message": "Fullness, or boxiness"
+  },
+  "bandMid": {
+    "message": "Mid"
+  },
+  "bandMidHint": {
+    "message": "Voice and clarity"
+  },
+  "bandPresence": {
+    "message": "Presence"
+  },
+  "bandPresenceHint": {
+    "message": "Consonants and detail"
+  },
+  "bandBrilliance": {
+    "message": "Brilliance"
+  },
+  "bandBrillianceHint": {
+    "message": "Air and sparkle"
+  },
+  "popupResetNeutral": {
+    "message": "Reset to neutral"
+  },
+  "popupResetNeutralTitle": {
+    "message": "Volume 100%, flat equalizer, centred balance"
+  },
+  "popupResetDefaults": {
+    "message": "Use my defaults"
+  },
+  "popupResetDefaultsTitle": {
+    "message": "Apply the defaults saved on the settings page"
+  },
+  "optionsPresets": {
+    "message": "Saved presets"
+  },
+  "optionsPresetsEmpty": {
+    "message": "No presets saved yet. Save one from the popup."
+  },
+  "optionsPresetRename": {
+    "message": "Rename"
+  },
+  "optionsPresetDelete": {
+    "message": "Delete"
   },
   "popupGainHint": {
     "message": "Acima de 100% o limitador permanece ativo para evitar distorção."
