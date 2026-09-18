@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Rekkefølgen her er den som vises i popup-vinduet."
   },
+  "optionsTransferTitle": {
+    "message": "Sikkerhetskopi og overføring"
+  },
+  "optionsTransferHint": {
+    "message": "Lagrer standardene, lagrede nettsteder og forhåndsinnstillinger i en fil du kan importere i en annen nettleser eller enhet."
+  },
+  "optionsExport": {
+    "message": "Eksporter innstillinger"
+  },
+  "optionsImport": {
+    "message": "Importer innstillinger"
+  },
+  "optionsExported": {
+    "message": "Innstillinger eksportert."
+  },
+  "optionsImported": {
+    "message": "Innstillinger importert."
+  },
+  "optionsImportConfirm": {
+    "message": "Erstatte gjeldende innstillinger med denne filen? $SITES$ nettsteder og $PRESETS$ forhåndsinnstillinger gjenopprettes.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Filen er ikke gyldig JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Filen er ikke en innstillingseksport fra denne utvidelsen."
+  },
+  "optionsImportTooNew": {
+    "message": "Filen er fra en nyere versjon. Oppdater utvidelsen først."
+  },
+  "optionsImportTooOld": {
+    "message": "Filen er for gammel til å importeres."
+  },
+  "optionsImportFailed": {
+    "message": "Filen kunne ikke leses."
+  },
   "popupGainHint": {
     "message": "Over 100 % forblir limiteren på for å hindre forvrengning."
   },

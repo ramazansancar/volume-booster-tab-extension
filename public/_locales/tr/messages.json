@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Buradaki sıra, açılır pencerede görünecek sıradır."
   },
+  "optionsTransferTitle": {
+    "message": "Yedekleme ve aktarım"
+  },
+  "optionsTransferHint": {
+    "message": "Varsayılanlarınızı, kayıtlı siteleri ve hazır ayarları, başka bir tarayıcı veya cihaza aktarabileceğiniz bir dosyaya kaydeder."
+  },
+  "optionsExport": {
+    "message": "Ayarları dışa aktar"
+  },
+  "optionsImport": {
+    "message": "Ayarları içe aktar"
+  },
+  "optionsExported": {
+    "message": "Ayarlar dışa aktarıldı."
+  },
+  "optionsImported": {
+    "message": "Ayarlar içe aktarıldı."
+  },
+  "optionsImportConfirm": {
+    "message": "Mevcut ayarlarınız bu dosyayla değiştirilsin mi? $SITES$ kayıtlı site ve $PRESETS$ hazır ayar geri yüklenecek.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Bu dosya geçerli JSON değil."
+  },
+  "optionsImportNotOurs": {
+    "message": "Bu dosya bu eklentiden dışa aktarılmış bir ayar dosyası değil."
+  },
+  "optionsImportTooNew": {
+    "message": "Bu dosya bu eklentinin daha yeni bir sürümüyle yazılmış. Önce güncelleyin."
+  },
+  "optionsImportTooOld": {
+    "message": "Bu dosya içe aktarmak için çok eski."
+  },
+  "optionsImportFailed": {
+    "message": "Bu dosya okunamadı."
+  },
   "popupGainHint": {
     "message": "%100 üzerinde limitör bozulmayı önlemek için açık kalır."
   },

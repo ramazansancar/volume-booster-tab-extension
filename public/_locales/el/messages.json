@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Η σειρά εδώ είναι η σειρά εμφάνισης στο αναδυόμενο παράθυρο."
   },
+  "optionsTransferTitle": {
+    "message": "Αντίγραφο ασφαλείας και μεταφορά"
+  },
+  "optionsTransferHint": {
+    "message": "Αποθηκεύει τις προεπιλογές, τους αποθηκευμένους ιστότοπους και τις προεπιλογές σε αρχείο που μπορείτε να εισαγάγετε σε άλλο πρόγραμμα περιήγησης ή συσκευή."
+  },
+  "optionsExport": {
+    "message": "Εξαγωγή ρυθμίσεων"
+  },
+  "optionsImport": {
+    "message": "Εισαγωγή ρυθμίσεων"
+  },
+  "optionsExported": {
+    "message": "Οι ρυθμίσεις εξήχθησαν."
+  },
+  "optionsImported": {
+    "message": "Οι ρυθμίσεις εισήχθησαν."
+  },
+  "optionsImportConfirm": {
+    "message": "Αντικατάσταση των τρεχουσών ρυθμίσεων με αυτό το αρχείο; Θα αποκατασταθούν $SITES$ ιστότοποι και $PRESETS$ προεπιλογές.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Το αρχείο δεν είναι έγκυρο JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Το αρχείο δεν είναι εξαγωγή ρυθμίσεων αυτής της επέκτασης."
+  },
+  "optionsImportTooNew": {
+    "message": "Το αρχείο δημιουργήθηκε από νεότερη έκδοση. Ενημερώστε πρώτα."
+  },
+  "optionsImportTooOld": {
+    "message": "Το αρχείο είναι πολύ παλιό για εισαγωγή."
+  },
+  "optionsImportFailed": {
+    "message": "Δεν ήταν δυνατή η ανάγνωση του αρχείου."
+  },
   "popupGainHint": {
     "message": "Πάνω από 100% το limiter παραμένει ενεργό για αποφυγή παραμόρφωσης."
   },

@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Aquest ordre és el que tindran a la finestra emergent."
   },
+  "optionsTransferTitle": {
+    "message": "Còpia de seguretat i transferència"
+  },
+  "optionsTransferHint": {
+    "message": "Desa els valors, els llocs desats i els perfils en un fitxer que podeu importar en un altre navegador o dispositiu."
+  },
+  "optionsExport": {
+    "message": "Exporta la configuració"
+  },
+  "optionsImport": {
+    "message": "Importa la configuració"
+  },
+  "optionsExported": {
+    "message": "Configuració exportada."
+  },
+  "optionsImported": {
+    "message": "Configuració importada."
+  },
+  "optionsImportConfirm": {
+    "message": "Voleu substituir la configuració actual per aquest fitxer? Es restauraran $SITES$ llocs i $PRESETS$ perfils.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Aquest fitxer no és JSON vàlid."
+  },
+  "optionsImportNotOurs": {
+    "message": "Aquest fitxer no és una exportació d’aquesta extensió."
+  },
+  "optionsImportTooNew": {
+    "message": "El fitxer prové d’una versió més recent. Actualitzeu l’extensió."
+  },
+  "optionsImportTooOld": {
+    "message": "Aquest fitxer és massa antic per importar-lo."
+  },
+  "optionsImportFailed": {
+    "message": "No s’ha pogut llegir el fitxer."
+  },
   "popupGainHint": {
     "message": "Per sobre del 100% el limitador es manté actiu per evitar distorsió."
   },

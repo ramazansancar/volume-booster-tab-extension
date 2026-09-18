@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Susunan di sini ialah susunan dalam tetingkap timbul."
   },
+  "optionsTransferTitle": {
+    "message": "Sandaran dan pemindahan"
+  },
+  "optionsTransferHint": {
+    "message": "Menyimpan lalai, tapak tersimpan dan pratetap anda ke fail yang boleh diimport ke pelayar atau peranti lain."
+  },
+  "optionsExport": {
+    "message": "Eksport tetapan"
+  },
+  "optionsImport": {
+    "message": "Import tetapan"
+  },
+  "optionsExported": {
+    "message": "Tetapan dieksport."
+  },
+  "optionsImported": {
+    "message": "Tetapan diimport."
+  },
+  "optionsImportConfirm": {
+    "message": "Gantikan tetapan semasa dengan fail ini? $SITES$ tapak dan $PRESETS$ pratetap akan dipulihkan.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Fail itu bukan JSON yang sah."
+  },
+  "optionsImportNotOurs": {
+    "message": "Fail itu bukan eksport tetapan daripada sambungan ini."
+  },
+  "optionsImportTooNew": {
+    "message": "Fail itu daripada versi lebih baharu. Kemas kini sambungan dahulu."
+  },
+  "optionsImportTooOld": {
+    "message": "Fail itu terlalu lama untuk diimport."
+  },
+  "optionsImportFailed": {
+    "message": "Fail itu tidak dapat dibaca."
+  },
   "popupGainHint": {
     "message": "Melebihi 100% pembatas kekal hidup untuk mengelakkan herotan."
   },

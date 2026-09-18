@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "این ترتیب همان ترتیب نمایش در پنجره بازشو است."
   },
+  "optionsTransferTitle": {
+    "message": "پشتیبان‌گیری و انتقال"
+  },
+  "optionsTransferHint": {
+    "message": "پیش‌فرض‌ها، سایت‌های ذخیره‌شده و پیش‌تنظیم‌ها را در فایلی ذخیره می‌کند که می‌توانید در مرورگر یا دستگاه دیگری وارد کنید."
+  },
+  "optionsExport": {
+    "message": "برون‌بری تنظیمات"
+  },
+  "optionsImport": {
+    "message": "درون‌ریزی تنظیمات"
+  },
+  "optionsExported": {
+    "message": "تنظیمات برون‌بری شد."
+  },
+  "optionsImported": {
+    "message": "تنظیمات درون‌ریزی شد."
+  },
+  "optionsImportConfirm": {
+    "message": "تنظیمات فعلی با این فایل جایگزین شود؟ $SITES$ سایت ذخیره‌شده و $PRESETS$ پیش‌تنظیم بازیابی می‌شود.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "این فایل JSON معتبر نیست."
+  },
+  "optionsImportNotOurs": {
+    "message": "این فایل خروجی تنظیمات این افزونه نیست."
+  },
+  "optionsImportTooNew": {
+    "message": "این فایل با نسخه جدیدتری ساخته شده است. ابتدا افزونه را به‌روزرسانی کنید."
+  },
+  "optionsImportTooOld": {
+    "message": "این فایل برای درون‌ریزی خیلی قدیمی است."
+  },
+  "optionsImportFailed": {
+    "message": "خواندن این فایل ممکن نبود."
+  },
   "popupGainHint": {
     "message": "بالای ۱۰۰٪ محدودکننده روشن می‌ماند تا از اعوجاج جلوگیری کند."
   },

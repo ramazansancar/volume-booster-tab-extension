@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "ここでの順序がポップアップでの表示順になります。"
   },
+  "optionsTransferTitle": {
+    "message": "バックアップと移行"
+  },
+  "optionsTransferHint": {
+    "message": "既定値、保存したサイト、プリセットを、別のブラウザーや端末に読み込めるファイルへ保存します。"
+  },
+  "optionsExport": {
+    "message": "設定をエクスポート"
+  },
+  "optionsImport": {
+    "message": "設定をインポート"
+  },
+  "optionsExported": {
+    "message": "設定をエクスポートしました。"
+  },
+  "optionsImported": {
+    "message": "設定をインポートしました。"
+  },
+  "optionsImportConfirm": {
+    "message": "現在の設定をこのファイルで置き換えますか？ $SITES$ 件のサイトと $PRESETS$ 件のプリセットが復元されます。",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "そのファイルは有効な JSON ではありません。"
+  },
+  "optionsImportNotOurs": {
+    "message": "そのファイルはこの拡張機能の設定エクスポートではありません。"
+  },
+  "optionsImportTooNew": {
+    "message": "そのファイルは新しいバージョンで作成されています。先に更新してください。"
+  },
+  "optionsImportTooOld": {
+    "message": "そのファイルは古すぎてインポートできません。"
+  },
+  "optionsImportFailed": {
+    "message": "そのファイルを読み取れませんでした。"
+  },
   "popupGainHint": {
     "message": "100% を超えると歪みを防ぐためリミッターが有効のままになります。"
   },

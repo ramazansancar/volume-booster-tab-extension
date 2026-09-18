@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Tämä järjestys on sama kuin ponnahdusikkunassa."
   },
+  "optionsTransferTitle": {
+    "message": "Varmuuskopiointi ja siirto"
+  },
+  "optionsTransferHint": {
+    "message": "Tallentaa oletukset, tallennetut sivustot ja esiasetukset tiedostoon, jonka voit tuoda toiseen selaimeen tai laitteeseen."
+  },
+  "optionsExport": {
+    "message": "Vie asetukset"
+  },
+  "optionsImport": {
+    "message": "Tuo asetukset"
+  },
+  "optionsExported": {
+    "message": "Asetukset viety."
+  },
+  "optionsImported": {
+    "message": "Asetukset tuotu."
+  },
+  "optionsImportConfirm": {
+    "message": "Korvataanko nykyiset asetukset tällä tiedostolla? Palautetaan $SITES$ sivustoa ja $PRESETS$ esiasetusta.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Tiedosto ei ole kelvollista JSONia."
+  },
+  "optionsImportNotOurs": {
+    "message": "Tiedosto ei ole tämän laajennuksen asetusvienti."
+  },
+  "optionsImportTooNew": {
+    "message": "Tiedosto on uudemmasta versiosta. Päivitä laajennus ensin."
+  },
+  "optionsImportTooOld": {
+    "message": "Tiedosto on liian vanha tuotavaksi."
+  },
+  "optionsImportFailed": {
+    "message": "Tiedostoa ei voitu lukea."
+  },
   "popupGainHint": {
     "message": "Yli 100 % rajoitin pysyy päällä säröytymisen estämiseksi."
   },

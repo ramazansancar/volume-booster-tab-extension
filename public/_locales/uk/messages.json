@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Цей порядок використовується і у спливному вікні."
   },
+  "optionsTransferTitle": {
+    "message": "Резервна копія та перенесення"
+  },
+  "optionsTransferHint": {
+    "message": "Зберігає значення за умовчанням, збережені сайти та пресети у файл, який можна імпортувати в іншому браузері чи на іншому пристрої."
+  },
+  "optionsExport": {
+    "message": "Експорт налаштувань"
+  },
+  "optionsImport": {
+    "message": "Імпорт налаштувань"
+  },
+  "optionsExported": {
+    "message": "Налаштування експортовано."
+  },
+  "optionsImported": {
+    "message": "Налаштування імпортовано."
+  },
+  "optionsImportConfirm": {
+    "message": "Замінити поточні налаштування цим файлом? Буде відновлено $SITES$ сайтів і $PRESETS$ пресетів.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Файл не є коректним JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Файл не є експортом налаштувань цього розширення."
+  },
+  "optionsImportTooNew": {
+    "message": "Файл створено новішою версією. Спершу оновіть розширення."
+  },
+  "optionsImportTooOld": {
+    "message": "Файл застарий для імпорту."
+  },
+  "optionsImportFailed": {
+    "message": "Не вдалося прочитати файл."
+  },
   "popupGainHint": {
     "message": "Понад 100% лімітер залишається увімкненим, щоб уникнути спотворень."
   },

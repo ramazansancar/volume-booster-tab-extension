@@ -130,6 +130,17 @@ export async function listOrigins(): Promise<OriginSettingsMap> {
   return (await readArea<OriginSettingsMap>(ORIGINS_KEY)) ?? {};
 }
 
+/**
+ * Replaces every saved origin at once, used by the settings import.
+ *
+ * A wholesale replace rather than a merge: the user is restoring a setup they
+ * exported, and silently keeping sites from the old profile would leave them
+ * with a state that matches neither machine.
+ */
+export async function replaceOrigins(map: OriginSettingsMap): Promise<void> {
+  await writeArea(ORIGINS_KEY, map);
+}
+
 export async function clearAllOrigins(): Promise<void> {
   await writeArea(ORIGINS_KEY, {});
 }

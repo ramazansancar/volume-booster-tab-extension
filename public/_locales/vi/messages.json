@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Thứ tự ở đây là thứ tự hiển thị trong cửa sổ bật lên."
   },
+  "optionsTransferTitle": {
+    "message": "Sao lưu và chuyển"
+  },
+  "optionsTransferHint": {
+    "message": "Lưu mặc định, trang đã lưu và cài đặt sẵn vào tệp mà bạn có thể nhập vào trình duyệt hoặc thiết bị khác."
+  },
+  "optionsExport": {
+    "message": "Xuất cài đặt"
+  },
+  "optionsImport": {
+    "message": "Nhập cài đặt"
+  },
+  "optionsExported": {
+    "message": "Đã xuất cài đặt."
+  },
+  "optionsImported": {
+    "message": "Đã nhập cài đặt."
+  },
+  "optionsImportConfirm": {
+    "message": "Thay cài đặt hiện tại bằng tệp này? $SITES$ trang và $PRESETS$ cài đặt sẵn sẽ được khôi phục.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Tệp đó không phải JSON hợp lệ."
+  },
+  "optionsImportNotOurs": {
+    "message": "Tệp đó không phải bản xuất cài đặt của tiện ích này."
+  },
+  "optionsImportTooNew": {
+    "message": "Tệp đó được tạo bởi phiên bản mới hơn. Hãy cập nhật tiện ích trước."
+  },
+  "optionsImportTooOld": {
+    "message": "Tệp đó quá cũ để nhập."
+  },
+  "optionsImportFailed": {
+    "message": "Không thể đọc tệp đó."
+  },
   "popupGainHint": {
     "message": "Trên 100% bộ giới hạn vẫn bật để tránh méo tiếng."
   },

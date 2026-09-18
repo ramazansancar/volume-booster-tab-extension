@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Esta ordem é a que aparece no pop-up."
   },
+  "optionsTransferTitle": {
+    "message": "Backup e transferência"
+  },
+  "optionsTransferHint": {
+    "message": "Salva seus padrões, sites salvos e predefinições em um arquivo que pode ser importado em outro navegador ou dispositivo."
+  },
+  "optionsExport": {
+    "message": "Exportar configurações"
+  },
+  "optionsImport": {
+    "message": "Importar configurações"
+  },
+  "optionsExported": {
+    "message": "Configurações exportadas."
+  },
+  "optionsImported": {
+    "message": "Configurações importadas."
+  },
+  "optionsImportConfirm": {
+    "message": "Substituir suas configurações atuais por este arquivo? $SITES$ sites e $PRESETS$ predefinições serão restaurados.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Esse arquivo não é um JSON válido."
+  },
+  "optionsImportNotOurs": {
+    "message": "Esse arquivo não é uma exportação desta extensão."
+  },
+  "optionsImportTooNew": {
+    "message": "Esse arquivo é de uma versão mais nova. Atualize a extensão primeiro."
+  },
+  "optionsImportTooOld": {
+    "message": "Esse arquivo é antigo demais para importar."
+  },
+  "optionsImportFailed": {
+    "message": "Não foi possível ler esse arquivo."
+  },
   "popupGainHint": {
     "message": "Acima de 100% o limitador permanece ativo para evitar distorção."
   },

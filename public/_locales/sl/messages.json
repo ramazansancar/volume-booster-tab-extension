@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Ta vrstni red velja tudi v pojavnem oknu."
   },
+  "optionsTransferTitle": {
+    "message": "Varnostna kopija in prenos"
+  },
+  "optionsTransferHint": {
+    "message": "Shrani privzete vrednosti, shranjena mesta in prednastavitve v datoteko, ki jo lahko uvozite v drug brskalnik ali napravo."
+  },
+  "optionsExport": {
+    "message": "Izvozi nastavitve"
+  },
+  "optionsImport": {
+    "message": "Uvozi nastavitve"
+  },
+  "optionsExported": {
+    "message": "Nastavitve izvožene."
+  },
+  "optionsImported": {
+    "message": "Nastavitve uvožene."
+  },
+  "optionsImportConfirm": {
+    "message": "Zamenjam trenutne nastavitve s to datoteko? Obnovljenih bo $SITES$ mest in $PRESETS$ prednastavitev.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Ta datoteka ni veljaven JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Ta datoteka ni izvoz nastavitev te razširitve."
+  },
+  "optionsImportTooNew": {
+    "message": "Datoteka je iz novejše različice. Najprej posodobite razširitev."
+  },
+  "optionsImportTooOld": {
+    "message": "Ta datoteka je prestara za uvoz."
+  },
+  "optionsImportFailed": {
+    "message": "Datoteke ni bilo mogoče prebrati."
+  },
   "popupGainHint": {
     "message": "Nad 100 % omejevalnik ostane vklopljen, da prepreči popačenje."
   },

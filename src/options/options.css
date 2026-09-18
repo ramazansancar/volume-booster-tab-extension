@@ -415,3 +415,29 @@ body {
 .link-button--danger {
   color: var(--danger);
 }
+
+/* Backup and transfer ------------------------------------------------------ */
+
+.transfer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.transfer-status {
+  margin: 0;
+  min-height: 1.2em;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.transfer-status[data-tone='ok'] {
+  color: var(--accent);
+}
+
+/* An import that fails leaves the settings untouched, but the reason has to be
+   visible rather than swallowed. */
+.transfer-status[data-tone='error'] {
+  color: var(--danger);
+}

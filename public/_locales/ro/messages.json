@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Această ordine este cea din fereastra pop-up."
   },
+  "optionsTransferTitle": {
+    "message": "Backup și transfer"
+  },
+  "optionsTransferHint": {
+    "message": "Salvează valorile implicite, site-urile salvate și presetările într-un fișier pe care îl poți importa în alt browser sau dispozitiv."
+  },
+  "optionsExport": {
+    "message": "Exportă setările"
+  },
+  "optionsImport": {
+    "message": "Importă setările"
+  },
+  "optionsExported": {
+    "message": "Setări exportate."
+  },
+  "optionsImported": {
+    "message": "Setări importate."
+  },
+  "optionsImportConfirm": {
+    "message": "Înlocuiești setările curente cu acest fișier? Se vor restaura $SITES$ site-uri și $PRESETS$ presetări.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Acel fișier nu este JSON valid."
+  },
+  "optionsImportNotOurs": {
+    "message": "Acel fișier nu este un export de setări al acestei extensii."
+  },
+  "optionsImportTooNew": {
+    "message": "Fișierul provine dintr-o versiune mai nouă. Actualizează extensia mai întâi."
+  },
+  "optionsImportTooOld": {
+    "message": "Acel fișier este prea vechi pentru import."
+  },
+  "optionsImportFailed": {
+    "message": "Acel fișier nu a putut fi citit."
+  },
   "popupGainHint": {
     "message": "Peste 100% limitatorul rămâne activ pentru a preveni distorsiunea."
   },

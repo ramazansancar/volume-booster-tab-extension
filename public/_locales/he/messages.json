@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "הסדר כאן הוא הסדר שיוצג בחלון הקופץ."
   },
+  "optionsTransferTitle": {
+    "message": "גיבוי והעברה"
+  },
+  "optionsTransferHint": {
+    "message": "שומר את ברירות המחדל, האתרים השמורים וההגדרות לקובץ שניתן לייבא לדפדפן או למכשיר אחר."
+  },
+  "optionsExport": {
+    "message": "ייצוא הגדרות"
+  },
+  "optionsImport": {
+    "message": "ייבוא הגדרות"
+  },
+  "optionsExported": {
+    "message": "ההגדרות יוצאו."
+  },
+  "optionsImported": {
+    "message": "ההגדרות יובאו."
+  },
+  "optionsImportConfirm": {
+    "message": "להחליף את ההגדרות הנוכחיות בקובץ זה? יישוחזרו $SITES$ אתרים ו-$PRESETS$ הגדרות.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "הקובץ אינו JSON תקין."
+  },
+  "optionsImportNotOurs": {
+    "message": "הקובץ אינו ייצוא הגדרות מהתוסף הזה."
+  },
+  "optionsImportTooNew": {
+    "message": "הקובץ נוצר בגרסה חדשה יותר. עדכן תחילה את התוסף."
+  },
+  "optionsImportTooOld": {
+    "message": "הקובץ ישן מדי לייבוא."
+  },
+  "optionsImportFailed": {
+    "message": "לא ניתן היה לקרוא את הקובץ."
+  },
   "popupGainHint": {
     "message": "מעל 100% המגביל נשאר פעיל כדי למנוע עיוות."
   },

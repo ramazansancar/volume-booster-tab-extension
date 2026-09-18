@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "यहाँ का क्रम ही पॉपअप में दिखने वाला क्रम है।"
   },
+  "optionsTransferTitle": {
+    "message": "बैकअप और स्थानांतरण"
+  },
+  "optionsTransferHint": {
+    "message": "आपके डिफ़ॉल्ट, सहेजी गई साइटें और प्रीसेट एक फ़ाइल में सहेजता है जिसे दूसरे ब्राउज़र या डिवाइस में आयात किया जा सकता है।"
+  },
+  "optionsExport": {
+    "message": "सेटिंग्स निर्यात करें"
+  },
+  "optionsImport": {
+    "message": "सेटिंग्स आयात करें"
+  },
+  "optionsExported": {
+    "message": "सेटिंग्स निर्यात हो गईं।"
+  },
+  "optionsImported": {
+    "message": "सेटिंग्स आयात हो गईं।"
+  },
+  "optionsImportConfirm": {
+    "message": "मौजूदा सेटिंग्स को इस फ़ाइल से बदलें? $SITES$ साइटें और $PRESETS$ प्रीसेट बहाल होंगे।",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "वह फ़ाइल मान्य JSON नहीं है।"
+  },
+  "optionsImportNotOurs": {
+    "message": "वह फ़ाइल इस एक्सटेंशन का सेटिंग्स निर्यात नहीं है।"
+  },
+  "optionsImportTooNew": {
+    "message": "वह फ़ाइल नए संस्करण से बनी है। पहले एक्सटेंशन अपडेट करें।"
+  },
+  "optionsImportTooOld": {
+    "message": "वह फ़ाइल आयात के लिए बहुत पुरानी है।"
+  },
+  "optionsImportFailed": {
+    "message": "वह फ़ाइल पढ़ी नहीं जा सकी।"
+  },
   "popupGainHint": {
     "message": "100% से ऊपर विरूपण रोकने के लिए लिमिटर चालू रहता है।"
   },

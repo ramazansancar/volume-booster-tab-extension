@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Овај редослед важи и у искачућем прозору."
   },
+  "optionsTransferTitle": {
+    "message": "Резервна копија и пренос"
+  },
+  "optionsTransferHint": {
+    "message": "Чува подразумеване вредности, сачуване сајтове и подешавања у датотеку коју можете увести у други прегледач или уређај."
+  },
+  "optionsExport": {
+    "message": "Извези подешавања"
+  },
+  "optionsImport": {
+    "message": "Увези подешавања"
+  },
+  "optionsExported": {
+    "message": "Подешавања извезена."
+  },
+  "optionsImported": {
+    "message": "Подешавања увезена."
+  },
+  "optionsImportConfirm": {
+    "message": "Заменити тренутна подешавања овом датотеком? Биће враћено $SITES$ сајтова и $PRESETS$ подешавања.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Та датотека није важећи JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Та датотека није извоз подешавања овог додатка."
+  },
+  "optionsImportTooNew": {
+    "message": "Датотека је из новије верзије. Прво ажурирајте додатак."
+  },
+  "optionsImportTooOld": {
+    "message": "Та датотека је престара за увоз."
+  },
+  "optionsImportFailed": {
+    "message": "Датотеку није било могуће прочитати."
+  },
   "popupGainHint": {
     "message": "Изнад 100% лимитер остаје укључен да спречи изобличење."
   },

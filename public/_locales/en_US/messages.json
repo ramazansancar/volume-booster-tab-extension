@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "The order here is the order they appear in the popup."
   },
+  "optionsTransferTitle": {
+    "message": "Backup and transfer"
+  },
+  "optionsTransferHint": {
+    "message": "Saves your defaults, saved sites and presets to a file you can import into another browser or device."
+  },
+  "optionsExport": {
+    "message": "Export settings"
+  },
+  "optionsImport": {
+    "message": "Import settings"
+  },
+  "optionsExported": {
+    "message": "Settings exported."
+  },
+  "optionsImported": {
+    "message": "Settings imported."
+  },
+  "optionsImportConfirm": {
+    "message": "Replace your current settings with this file? $SITES$ saved sites and $PRESETS$ presets will be restored.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "That file is not valid JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "That file is not a settings export from this extension."
+  },
+  "optionsImportTooNew": {
+    "message": "That file was written by a newer version of this extension. Update it first."
+  },
+  "optionsImportTooOld": {
+    "message": "That file is too old to import."
+  },
+  "optionsImportFailed": {
+    "message": "That file could not be read."
+  },
   "popupGainHint": {
     "message": "Above 100% the limiter stays on to prevent distortion."
   },

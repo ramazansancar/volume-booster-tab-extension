@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Ez a sorrend jelenik meg a felugró ablakban is."
   },
+  "optionsTransferTitle": {
+    "message": "Mentés és átvitel"
+  },
+  "optionsTransferHint": {
+    "message": "Fájlba menti az alapértékeket, a mentett webhelyeket és az előbeállításokat, amely másik böngészőbe vagy eszközre importálható."
+  },
+  "optionsExport": {
+    "message": "Beállítások exportálása"
+  },
+  "optionsImport": {
+    "message": "Beállítások importálása"
+  },
+  "optionsExported": {
+    "message": "Beállítások exportálva."
+  },
+  "optionsImported": {
+    "message": "Beállítások importálva."
+  },
+  "optionsImportConfirm": {
+    "message": "Lecseréli a jelenlegi beállításokat erre a fájlra? $SITES$ webhely és $PRESETS$ előbeállítás áll vissza.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "A fájl nem érvényes JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "A fájl nem ennek a kiegészítőnek a beállításexportja."
+  },
+  "optionsImportTooNew": {
+    "message": "A fájl újabb verzióból származik. Előbb frissítse a kiegészítőt."
+  },
+  "optionsImportTooOld": {
+    "message": "A fájl túl régi az importáláshoz."
+  },
+  "optionsImportFailed": {
+    "message": "A fájl nem olvasható."
+  },
   "popupGainHint": {
     "message": "100% felett a limiter bekapcsolva marad a torzítás elkerülésére."
   },

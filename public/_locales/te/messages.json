@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "ఇక్కడి క్రమమే పాపప్‌లో కనిపించే క్రమం."
   },
+  "optionsTransferTitle": {
+    "message": "బ్యాకప్ మరియు బదిలీ"
+  },
+  "optionsTransferHint": {
+    "message": "మీ డిఫాల్ట్‌లు, సేవ్ చేసిన సైట్‌లు, ప్రీసెట్‌లను మరో బ్రౌజర్ లేదా పరికరంలోకి దిగుమతి చేసుకోగల ఫైల్‌లో సేవ్ చేస్తుంది."
+  },
+  "optionsExport": {
+    "message": "సెట్టింగ్‌లను ఎగుమతి చేయండి"
+  },
+  "optionsImport": {
+    "message": "సెట్టింగ్‌లను దిగుమతి చేయండి"
+  },
+  "optionsExported": {
+    "message": "సెట్టింగ్‌లు ఎగుమతి అయ్యాయి."
+  },
+  "optionsImported": {
+    "message": "సెట్టింగ్‌లు దిగుమతి అయ్యాయి."
+  },
+  "optionsImportConfirm": {
+    "message": "ప్రస్తుత సెట్టింగ్‌లను ఈ ఫైల్‌తో భర్తీ చేయాలా? $SITES$ సైట్‌లు, $PRESETS$ ప్రీసెట్‌లు పునరుద్ధరించబడతాయి.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "ఆ ఫైల్ చెల్లుబాటు అయ్యే JSON కాదు."
+  },
+  "optionsImportNotOurs": {
+    "message": "ఆ ఫైల్ ఈ పొడిగింపు సెట్టింగ్‌ల ఎగుమతి కాదు."
+  },
+  "optionsImportTooNew": {
+    "message": "ఆ ఫైల్ కొత్త వెర్షన్‌తో సృష్టించబడింది. ముందుగా అప్‌డేట్ చేయండి."
+  },
+  "optionsImportTooOld": {
+    "message": "ఆ ఫైల్ దిగుమతికి చాలా పాతది."
+  },
+  "optionsImportFailed": {
+    "message": "ఆ ఫైల్‌ను చదవలేకపోయాం."
+  },
   "popupGainHint": {
     "message": "100% పైన వక్రీకరణను నివారించడానికి లిమిటర్ ఆన్‌లో ఉంటుంది."
   },

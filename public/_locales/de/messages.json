@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Diese Reihenfolge gilt auch im Popup."
   },
+  "optionsTransferTitle": {
+    "message": "Sicherung und Übertragung"
+  },
+  "optionsTransferHint": {
+    "message": "Speichert Standardwerte, gespeicherte Websites und Voreinstellungen in einer Datei, die sich in einem anderen Browser oder Gerät importieren lässt."
+  },
+  "optionsExport": {
+    "message": "Einstellungen exportieren"
+  },
+  "optionsImport": {
+    "message": "Einstellungen importieren"
+  },
+  "optionsExported": {
+    "message": "Einstellungen exportiert."
+  },
+  "optionsImported": {
+    "message": "Einstellungen importiert."
+  },
+  "optionsImportConfirm": {
+    "message": "Aktuelle Einstellungen durch diese Datei ersetzen? $SITES$ Websites und $PRESETS$ Voreinstellungen werden wiederhergestellt.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Diese Datei ist kein gültiges JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Diese Datei ist kein Einstellungsexport dieser Erweiterung."
+  },
+  "optionsImportTooNew": {
+    "message": "Die Datei stammt aus einer neueren Version. Bitte zuerst aktualisieren."
+  },
+  "optionsImportTooOld": {
+    "message": "Diese Datei ist zu alt für den Import."
+  },
+  "optionsImportFailed": {
+    "message": "Die Datei konnte nicht gelesen werden."
+  },
   "popupGainHint": {
     "message": "Über 100 % bleibt der Limiter aktiv, um Verzerrungen zu vermeiden."
   },

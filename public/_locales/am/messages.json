@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "እዚህ ያለው ቅደም ተከተል በብቅ-ባይ መስኮቱ ላይ የሚታየው ነው።"
   },
+  "optionsTransferTitle": {
+    "message": "ምትኬና ዝውውር"
+  },
+  "optionsTransferHint": {
+    "message": "ነባሪዎችዎን፣ የተቀመጡ ጣቢያዎችንና ቅድመ ቅንብሮችን ወደ ሌላ አሳሽ ወይም መሣሪያ ማስገባት ወደሚችሉት ፋይል ያስቀምጣል።"
+  },
+  "optionsExport": {
+    "message": "ቅንብሮችን ላክ"
+  },
+  "optionsImport": {
+    "message": "ቅንብሮችን አስገባ"
+  },
+  "optionsExported": {
+    "message": "ቅንብሮች ተልከዋል።"
+  },
+  "optionsImported": {
+    "message": "ቅንብሮች ገብተዋል።"
+  },
+  "optionsImportConfirm": {
+    "message": "አሁን ያሉትን ቅንብሮች በዚህ ፋይል ይተኩ? $SITES$ የተቀመጡ ጣቢያዎችና $PRESETS$ ቅድመ ቅንብሮች ይመለሳሉ።",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "ያ ፋይል ትክክለኛ JSON አይደለም።"
+  },
+  "optionsImportNotOurs": {
+    "message": "ያ ፋይል ከዚህ ተጨማሪ የተላከ የቅንብር ፋይል አይደለም።"
+  },
+  "optionsImportTooNew": {
+    "message": "ያ ፋይል በዚህ ተጨማሪ አዲስ ስሪት ተጽፏል። መጀመሪያ ያዘምኑት።"
+  },
+  "optionsImportTooOld": {
+    "message": "ያ ፋይል ለማስገባት በጣም አሮጌ ነው።"
+  },
+  "optionsImportFailed": {
+    "message": "ያ ፋይል ሊነበብ አልቻለም።"
+  },
   "popupGainHint": {
     "message": "ከ100% በላይ ማዛባትን ለመከላከል ገዳቢው በርቶ ይቆያል።"
   },

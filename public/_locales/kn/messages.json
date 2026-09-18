@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "ಇಲ್ಲಿನ ಕ್ರಮವೇ ಪಾಪ್‌ಅಪ್‌ನಲ್ಲಿ ಕಾಣುವ ಕ್ರಮ."
   },
+  "optionsTransferTitle": {
+    "message": "ಬ್ಯಾಕಪ್ ಮತ್ತು ವರ್ಗಾವಣೆ"
+  },
+  "optionsTransferHint": {
+    "message": "ನಿಮ್ಮ ಡೀಫಾಲ್ಟ್‌ಗಳು, ಉಳಿಸಿದ ಸೈಟ್‌ಗಳು ಮತ್ತು ಪ್ರೀಸೆಟ್‌ಗಳನ್ನು ಬೇರೆ ಬ್ರೌಸರ್ ಅಥವಾ ಸಾಧನಕ್ಕೆ ಆಮದು ಮಾಡಬಹುದಾದ ಫೈಲ್‌ನಲ್ಲಿ ಉಳಿಸುತ್ತದೆ."
+  },
+  "optionsExport": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ರಫ್ತು ಮಾಡಿ"
+  },
+  "optionsImport": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಆಮದು ಮಾಡಿ"
+  },
+  "optionsExported": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು ರಫ್ತಾಗಿವೆ."
+  },
+  "optionsImported": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಆಮದಾಗಿವೆ."
+  },
+  "optionsImportConfirm": {
+    "message": "ಪ್ರಸ್ತುತ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಈ ಫೈಲ್‌ನಿಂದ ಬದಲಾಯಿಸಬೇಕೆ? $SITES$ ಸೈಟ್‌ಗಳು ಮತ್ತು $PRESETS$ ಪ್ರೀಸೆಟ್‌ಗಳು ಮರುಸ್ಥಾಪನೆಯಾಗುತ್ತವೆ.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "ಆ ಫೈಲ್ ಮಾನ್ಯ JSON ಅಲ್ಲ."
+  },
+  "optionsImportNotOurs": {
+    "message": "ಆ ಫೈಲ್ ಈ ವಿಸ್ತರಣೆಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ರಫ್ತು ಅಲ್ಲ."
+  },
+  "optionsImportTooNew": {
+    "message": "ಆ ಫೈಲ್ ಹೊಸ ಆವೃತ್ತಿಯಿಂದ ಬರೆಯಲಾಗಿದೆ. ಮೊದಲು ನವೀಕರಿಸಿ."
+  },
+  "optionsImportTooOld": {
+    "message": "ಆ ಫೈಲ್ ಆಮದು ಮಾಡಲು ತುಂಬಾ ಹಳೆಯದು."
+  },
+  "optionsImportFailed": {
+    "message": "ಆ ಫೈಲ್ ಓದಲಾಗಲಿಲ್ಲ."
+  },
   "popupGainHint": {
     "message": "100% ಮೀರಿದಾಗ ವಿರೂಪ ತಡೆಯಲು ಲಿಮಿಟರ್ ಆನ್ ಆಗಿರುತ್ತದೆ."
   },

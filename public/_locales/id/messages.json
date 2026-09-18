@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Urutan di sini adalah urutan tampil di popup."
   },
+  "optionsTransferTitle": {
+    "message": "Cadangan dan transfer"
+  },
+  "optionsTransferHint": {
+    "message": "Menyimpan default, situs tersimpan, dan preset ke file yang dapat diimpor ke peramban atau perangkat lain."
+  },
+  "optionsExport": {
+    "message": "Ekspor pengaturan"
+  },
+  "optionsImport": {
+    "message": "Impor pengaturan"
+  },
+  "optionsExported": {
+    "message": "Pengaturan diekspor."
+  },
+  "optionsImported": {
+    "message": "Pengaturan diimpor."
+  },
+  "optionsImportConfirm": {
+    "message": "Ganti pengaturan saat ini dengan file ini? $SITES$ situs dan $PRESETS$ preset akan dipulihkan.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "File itu bukan JSON yang valid."
+  },
+  "optionsImportNotOurs": {
+    "message": "File itu bukan ekspor pengaturan dari ekstensi ini."
+  },
+  "optionsImportTooNew": {
+    "message": "File itu dari versi yang lebih baru. Perbarui ekstensi dulu."
+  },
+  "optionsImportTooOld": {
+    "message": "File itu terlalu lama untuk diimpor."
+  },
+  "optionsImportFailed": {
+    "message": "File itu tidak dapat dibaca."
+  },
   "popupGainHint": {
     "message": "Di atas 100% limiter tetap aktif untuk mencegah distorsi."
   },

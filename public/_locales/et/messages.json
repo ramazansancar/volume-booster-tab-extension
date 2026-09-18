@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "See järjekord on sama, mis hüpikaknas."
   },
+  "optionsTransferTitle": {
+    "message": "Varundus ja ülekanne"
+  },
+  "optionsTransferHint": {
+    "message": "Salvestab vaikeseaded, salvestatud saidid ja eelseaded faili, mille saab importida teise brauserisse või seadmesse."
+  },
+  "optionsExport": {
+    "message": "Ekspordi seaded"
+  },
+  "optionsImport": {
+    "message": "Impordi seaded"
+  },
+  "optionsExported": {
+    "message": "Seaded eksporditud."
+  },
+  "optionsImported": {
+    "message": "Seaded imporditud."
+  },
+  "optionsImportConfirm": {
+    "message": "Kas asendada praegused seaded selle failiga? Taastatakse $SITES$ saiti ja $PRESETS$ eelseadet.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "See fail pole korrektne JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "See fail pole selle laienduse seadete eksport."
+  },
+  "optionsImportTooNew": {
+    "message": "Fail on loodud uuema versiooniga. Uuendage esmalt laiendust."
+  },
+  "optionsImportTooOld": {
+    "message": "See fail on importimiseks liiga vana."
+  },
+  "optionsImportFailed": {
+    "message": "Faili ei õnnestunud lugeda."
+  },
   "popupGainHint": {
     "message": "Üle 100% jääb limiiter sisse, et vältida moonutusi."
   },

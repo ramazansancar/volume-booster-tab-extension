@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Cet ordre est celui utilisé dans la fenêtre."
   },
+  "optionsTransferTitle": {
+    "message": "Sauvegarde et transfert"
+  },
+  "optionsTransferHint": {
+    "message": "Enregistre vos valeurs par défaut, sites enregistrés et préréglages dans un fichier importable dans un autre navigateur ou appareil."
+  },
+  "optionsExport": {
+    "message": "Exporter les paramètres"
+  },
+  "optionsImport": {
+    "message": "Importer les paramètres"
+  },
+  "optionsExported": {
+    "message": "Paramètres exportés."
+  },
+  "optionsImported": {
+    "message": "Paramètres importés."
+  },
+  "optionsImportConfirm": {
+    "message": "Remplacer vos paramètres actuels par ce fichier ? $SITES$ sites et $PRESETS$ préréglages seront restaurés.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Ce fichier n’est pas un JSON valide."
+  },
+  "optionsImportNotOurs": {
+    "message": "Ce fichier n’est pas une exportation de cette extension."
+  },
+  "optionsImportTooNew": {
+    "message": "Ce fichier vient d’une version plus récente. Mettez l’extension à jour."
+  },
+  "optionsImportTooOld": {
+    "message": "Ce fichier est trop ancien pour être importé."
+  },
+  "optionsImportFailed": {
+    "message": "Ce fichier n’a pas pu être lu."
+  },
   "popupGainHint": {
     "message": "Au-delà de 100 %, le limiteur reste actif pour éviter la distorsion."
   },

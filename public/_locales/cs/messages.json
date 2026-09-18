@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Toto pořadí odpovídá pořadí ve vyskakovacím okně."
   },
+  "optionsTransferTitle": {
+    "message": "Záloha a přenos"
+  },
+  "optionsTransferHint": {
+    "message": "Uloží výchozí hodnoty, uložené weby a předvolby do souboru, který lze importovat v jiném prohlížeči nebo zařízení."
+  },
+  "optionsExport": {
+    "message": "Exportovat nastavení"
+  },
+  "optionsImport": {
+    "message": "Importovat nastavení"
+  },
+  "optionsExported": {
+    "message": "Nastavení exportováno."
+  },
+  "optionsImported": {
+    "message": "Nastavení importováno."
+  },
+  "optionsImportConfirm": {
+    "message": "Nahradit současné nastavení tímto souborem? Obnoví se $SITES$ webů a $PRESETS$ předvoleb.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Tento soubor není platný JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Tento soubor není exportem nastavení tohoto rozšíření."
+  },
+  "optionsImportTooNew": {
+    "message": "Soubor pochází z novější verze. Nejprve rozšíření aktualizujte."
+  },
+  "optionsImportTooOld": {
+    "message": "Tento soubor je pro import příliš starý."
+  },
+  "optionsImportFailed": {
+    "message": "Soubor nelze přečíst."
+  },
   "popupGainHint": {
     "message": "Nad 100 % zůstává limiter zapnutý, aby zabránil zkreslení."
   },

@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "此處的順序即為彈出視窗中的顯示順序。"
   },
+  "optionsTransferTitle": {
+    "message": "備份與轉移"
+  },
+  "optionsTransferHint": {
+    "message": "將預設值、已儲存的網站與預設儲存為檔案，可匯入其他瀏覽器或裝置。"
+  },
+  "optionsExport": {
+    "message": "匯出設定"
+  },
+  "optionsImport": {
+    "message": "匯入設定"
+  },
+  "optionsExported": {
+    "message": "設定已匯出。"
+  },
+  "optionsImported": {
+    "message": "設定已匯入。"
+  },
+  "optionsImportConfirm": {
+    "message": "用此檔案取代目前設定？將還原 $SITES$ 個網站與 $PRESETS$ 個預設。",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "該檔案不是有效的 JSON。"
+  },
+  "optionsImportNotOurs": {
+    "message": "該檔案不是此擴充功能的設定匯出檔。"
+  },
+  "optionsImportTooNew": {
+    "message": "該檔案由較新版本建立。請先更新擴充功能。"
+  },
+  "optionsImportTooOld": {
+    "message": "該檔案過舊，無法匯入。"
+  },
+  "optionsImportFailed": {
+    "message": "無法讀取該檔案。"
+  },
   "popupGainHint": {
     "message": "超過 100% 時限制器會保持開啟以避免失真。"
   },

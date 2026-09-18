@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Toto poradie platí aj vo vyskakovacom okne."
   },
+  "optionsTransferTitle": {
+    "message": "Záloha a prenos"
+  },
+  "optionsTransferHint": {
+    "message": "Uloží predvolené hodnoty, uložené stránky a predvoľby do súboru, ktorý možno importovať v inom prehliadači alebo zariadení."
+  },
+  "optionsExport": {
+    "message": "Exportovať nastavenia"
+  },
+  "optionsImport": {
+    "message": "Importovať nastavenia"
+  },
+  "optionsExported": {
+    "message": "Nastavenia exportované."
+  },
+  "optionsImported": {
+    "message": "Nastavenia importované."
+  },
+  "optionsImportConfirm": {
+    "message": "Nahradiť súčasné nastavenia týmto súborom? Obnoví sa $SITES$ stránok a $PRESETS$ predvolieb.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Tento súbor nie je platný JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Tento súbor nie je exportom nastavení tohto rozšírenia."
+  },
+  "optionsImportTooNew": {
+    "message": "Súbor pochádza z novšej verzie. Najprv aktualizujte rozšírenie."
+  },
+  "optionsImportTooOld": {
+    "message": "Tento súbor je na import príliš starý."
+  },
+  "optionsImportFailed": {
+    "message": "Súbor sa nepodarilo prečítať."
+  },
   "popupGainHint": {
     "message": "Nad 100 % zostáva limiter zapnutý, aby zabránil skresleniu."
   },

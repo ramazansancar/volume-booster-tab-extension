@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "இங்குள்ள வரிசையே பாப்அப்பில் தோன்றும் வரிசை."
   },
+  "optionsTransferTitle": {
+    "message": "காப்புப்பிரதி மற்றும் மாற்றம்"
+  },
+  "optionsTransferHint": {
+    "message": "உங்கள் இயல்புநிலைகள், சேமித்த தளங்கள், முன்னமைவுகளை மற்றொரு உலாவி அல்லது சாதனத்தில் இறக்குமதி செய்யக்கூடிய கோப்பில் சேமிக்கிறது."
+  },
+  "optionsExport": {
+    "message": "அமைப்புகளை ஏற்றுமதி செய்"
+  },
+  "optionsImport": {
+    "message": "அமைப்புகளை இறக்குமதி செய்"
+  },
+  "optionsExported": {
+    "message": "அமைப்புகள் ஏற்றுமதி செய்யப்பட்டன."
+  },
+  "optionsImported": {
+    "message": "அமைப்புகள் இறக்குமதி செய்யப்பட்டன."
+  },
+  "optionsImportConfirm": {
+    "message": "தற்போதைய அமைப்புகளை இந்தக் கோப்பால் மாற்றவா? $SITES$ தளங்களும் $PRESETS$ முன்னமைவுகளும் மீட்கப்படும்.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "அந்தக் கோப்பு சரியான JSON அல்ல."
+  },
+  "optionsImportNotOurs": {
+    "message": "அந்தக் கோப்பு இந்த நீட்சியின் அமைப்பு ஏற்றுமதி அல்ல."
+  },
+  "optionsImportTooNew": {
+    "message": "அந்தக் கோப்பு புதிய பதிப்பால் உருவாக்கப்பட்டது. முதலில் புதுப்பிக்கவும்."
+  },
+  "optionsImportTooOld": {
+    "message": "அந்தக் கோப்பு இறக்குமதிக்கு மிகப் பழையது."
+  },
+  "optionsImportFailed": {
+    "message": "அந்தக் கோப்பைப் படிக்க முடியவில்லை."
+  },
   "popupGainHint": {
     "message": "100% க்கு மேல் சிதைவைத் தடுக்க லிமிட்டர் இயக்கத்தில் இருக்கும்."
   },

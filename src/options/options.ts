@@ -12,7 +12,13 @@ import {
 import { DEFAULT_MAX_GAIN } from '@/lib/defaults';
 import type { AudioSettings } from '@/types';
 import { ABSOLUTE_MAX_GAIN } from '@/lib/defaults';
-import { clearAllOrigins, listOrigins } from '@/lib/storage';
+import { clearAllOrigins, listOrigins, replaceOrigins } from '@/lib/storage';
+import {
+  ImportError,
+  buildExport,
+  exportFilename,
+  parseImport,
+} from '@/lib/transfer';
 import { MAX_PRESET_NAME } from '@/lib/presets';
 import { EQ_BAND_FREQUENCIES, type EqPreset } from '@/types';
 import type { GlobalPreferences, PersistenceMode, UiToBackgroundMessage } from '@/types';
@@ -45,6 +51,10 @@ const dom = {
   aboutVersion: document.getElementById('about-version') as HTMLElement,
   presetsList: document.getElementById('presets-list') as HTMLUListElement,
   presetsEmpty: document.getElementById('presets-empty') as HTMLElement,
+  exportSettings: document.getElementById('export-settings') as HTMLButtonElement,
+  importSettings: document.getElementById('import-settings') as HTMLButtonElement,
+  importFile: document.getElementById('import-file') as HTMLInputElement,
+  transferStatus: document.getElementById('transfer-status') as HTMLElement,
 };
 
 let preferences: GlobalPreferences | null = null;
@@ -505,6 +515,20 @@ function bind(): void {
     void clearAllOrigins().then(renderOrigins);
   });
 
+  dom.exportSettings.addEventListener('click', () => void exportSettings());
+
+  // The button stands in for the file input, which is hidden because browsers
+  // style it inconsistently and it cannot be made to match the others.
+  dom.importSettings.addEventListener('click', () => dom.importFile.click());
+
+  dom.importFile.addEventListener('change', () => {
+    const file = dom.importFile.files?.[0];
+    // Clearing the value lets the same file be picked twice in a row, which
+    // otherwise fires no change event at all.
+    dom.importFile.value = '';
+    if (file) void importSettings(file);
+  });
+
   dom.restoreDefaults.addEventListener('click', () => {
     if (
       !window.confirm(t('optionsConfirmRestore', 'Restore all settings to their defaults?'))
@@ -518,6 +542,82 @@ function bind(): void {
       tabCaptureFallback: true,
     });
   });
+}
+
+/* -------------------------------------------------------------------------- */
+/* Export and import                                                           */
+/* -------------------------------------------------------------------------- */
+
+function setTransferStatus(message: string, tone: 'ok' | 'error'): void {
+  dom.transferStatus.textContent = message;
+  dom.transferStatus.dataset.tone = tone;
+}
+
+/**
+ * Writes the settings to a file the user picks a location for.
+ *
+ * A blob URL and a synthetic click rather than the downloads API: this needs no
+ * extra permission, and a settings file is small enough that holding it in
+ * memory costs nothing.
+ */
+async function exportSettings(): Promise<void> {
+  const prefs = preferences ?? (await send<GlobalPreferences>({ type: 'ui:get-preferences' }));
+  const origins = await listOrigins();
+  const version = ext.runtime.getManifest().version;
+
+  const json = JSON.stringify(buildExport(prefs, origins, version), null, 2);
+  const url = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
+
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = exportFilename();
+  link.click();
+  // Revoking immediately can cancel the download in some browsers, so the
+  // handle is released on the next turn of the event loop instead.
+  setTimeout(() => URL.revokeObjectURL(url), 0);
+
+  setTransferStatus(t('optionsExported', 'Settings exported.'), 'ok');
+}
+
+/**
+ * Replaces the stored settings with the contents of a file.
+ *
+ * Destructive, so it confirms first: the saved sites and presets already here
+ * are overwritten, not merged, and someone who picked the wrong file would
+ * otherwise lose a setup with no way back.
+ */
+async function importSettings(file: File): Promise<void> {
+  let result;
+  try {
+    result = parseImport(await file.text(), (key, fallback) => t(key, fallback));
+  } catch (error) {
+    setTransferStatus(
+      error instanceof ImportError
+        ? error.message
+        : t('optionsImportFailed', 'That file could not be read.'),
+      'error',
+    );
+    return;
+  }
+
+  const question = t(
+    'optionsImportConfirm',
+    'Replace your current settings with this file? $SITES$ saved sites and $PRESETS$ presets will be restored.',
+    {
+      SITES: String(result.counts.origins),
+      PRESETS: String(result.counts.presets),
+    },
+  );
+  if (!window.confirm(question)) return;
+
+  await replaceOrigins(result.origins);
+  const next = await send<GlobalPreferences>({
+    type: 'ui:set-preferences',
+    preferences: result.preferences,
+  });
+  render(next);
+  await renderOrigins();
+  setTransferStatus(t('optionsImported', 'Settings imported.'), 'ok');
 }
 
 async function init(): Promise<void> {

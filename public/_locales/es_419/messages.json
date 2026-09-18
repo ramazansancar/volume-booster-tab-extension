@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Este orden es el que tendrán en la ventana emergente."
   },
+  "optionsTransferTitle": {
+    "message": "Copia de seguridad y transferencia"
+  },
+  "optionsTransferHint": {
+    "message": "Guarda tus valores, sitios guardados y ajustes en un archivo que puedes importar en otro navegador o dispositivo."
+  },
+  "optionsExport": {
+    "message": "Exportar ajustes"
+  },
+  "optionsImport": {
+    "message": "Importar ajustes"
+  },
+  "optionsExported": {
+    "message": "Ajustes exportados."
+  },
+  "optionsImported": {
+    "message": "Ajustes importados."
+  },
+  "optionsImportConfirm": {
+    "message": "¿Sustituir tus ajustes actuales por este archivo? Se restaurarán $SITES$ sitios y $PRESETS$ ajustes.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Ese archivo no es JSON válido."
+  },
+  "optionsImportNotOurs": {
+    "message": "Ese archivo no es una exportación de ajustes de esta extensión."
+  },
+  "optionsImportTooNew": {
+    "message": "El archivo es de una versión más reciente. Actualiza la extensión primero."
+  },
+  "optionsImportTooOld": {
+    "message": "Ese archivo es demasiado antiguo."
+  },
+  "optionsImportFailed": {
+    "message": "No se pudo leer el archivo."
+  },
   "popupGainHint": {
     "message": "Por encima del 100 % el limitador permanece activo para evitar distorsión."
   },

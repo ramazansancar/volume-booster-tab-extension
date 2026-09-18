@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Этот порядок используется и во всплывающем окне."
   },
+  "optionsTransferTitle": {
+    "message": "Резервная копия и перенос"
+  },
+  "optionsTransferHint": {
+    "message": "Сохраняет значения по умолчанию, сохранённые сайты и пресеты в файл, который можно импортировать в другом браузере или на другом устройстве."
+  },
+  "optionsExport": {
+    "message": "Экспорт настроек"
+  },
+  "optionsImport": {
+    "message": "Импорт настроек"
+  },
+  "optionsExported": {
+    "message": "Настройки экспортированы."
+  },
+  "optionsImported": {
+    "message": "Настройки импортированы."
+  },
+  "optionsImportConfirm": {
+    "message": "Заменить текущие настройки этим файлом? Будет восстановлено $SITES$ сайтов и $PRESETS$ пресетов.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Файл не является корректным JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Файл не является экспортом настроек этого расширения."
+  },
+  "optionsImportTooNew": {
+    "message": "Файл создан более новой версией. Сначала обновите расширение."
+  },
+  "optionsImportTooOld": {
+    "message": "Файл слишком старый для импорта."
+  },
+  "optionsImportFailed": {
+    "message": "Не удалось прочитать файл."
+  },
   "popupGainHint": {
     "message": "Выше 100% лимитер остаётся включённым, чтобы избежать искажений."
   },

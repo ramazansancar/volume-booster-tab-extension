@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Šī secība tiek izmantota arī uznirstošajā logā."
   },
+  "optionsTransferTitle": {
+    "message": "Dublējums un pārsūtīšana"
+  },
+  "optionsTransferHint": {
+    "message": "Saglabā noklusējumus, saglabātās vietnes un sagataves failā, ko var importēt citā pārlūkā vai ierīcē."
+  },
+  "optionsExport": {
+    "message": "Eksportēt iestatījumus"
+  },
+  "optionsImport": {
+    "message": "Importēt iestatījumus"
+  },
+  "optionsExported": {
+    "message": "Iestatījumi eksportēti."
+  },
+  "optionsImported": {
+    "message": "Iestatījumi importēti."
+  },
+  "optionsImportConfirm": {
+    "message": "Aizstāt pašreizējos iestatījumus ar šo failu? Tiks atjaunotas $SITES$ vietnes un $PRESETS$ sagataves.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Šis fails nav derīgs JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Šis fails nav šī paplašinājuma iestatījumu eksports."
+  },
+  "optionsImportTooNew": {
+    "message": "Fails izveidots jaunākā versijā. Vispirms atjauniniet paplašinājumu."
+  },
+  "optionsImportTooOld": {
+    "message": "Šis fails ir pārāk vecs importēšanai."
+  },
+  "optionsImportFailed": {
+    "message": "Failu nevarēja nolasīt."
+  },
   "popupGainHint": {
     "message": "Virs 100% limitators paliek ieslēgts, lai novērstu kropļojumus."
   },

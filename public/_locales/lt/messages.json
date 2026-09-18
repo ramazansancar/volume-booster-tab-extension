@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Ši tvarka naudojama ir iškylančiajame lange."
   },
+  "optionsTransferTitle": {
+    "message": "Atsarginė kopija ir perkėlimas"
+  },
+  "optionsTransferHint": {
+    "message": "Įrašo numatytuosius nustatymus, įrašytas svetaines ir nustatymus į failą, kurį galima importuoti kitoje naršyklėje ar įrenginyje."
+  },
+  "optionsExport": {
+    "message": "Eksportuoti nustatymus"
+  },
+  "optionsImport": {
+    "message": "Importuoti nustatymus"
+  },
+  "optionsExported": {
+    "message": "Nustatymai eksportuoti."
+  },
+  "optionsImported": {
+    "message": "Nustatymai importuoti."
+  },
+  "optionsImportConfirm": {
+    "message": "Pakeisti dabartinius nustatymus šiuo failu? Bus atkurta $SITES$ svetainių ir $PRESETS$ nustatymų.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Šis failas nėra tinkamas JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Šis failas nėra šio plėtinio nustatymų eksportas."
+  },
+  "optionsImportTooNew": {
+    "message": "Failas sukurtas naujesne versija. Pirmiausia atnaujinkite plėtinį."
+  },
+  "optionsImportTooOld": {
+    "message": "Šis failas per senas importuoti."
+  },
+  "optionsImportFailed": {
+    "message": "Nepavyko perskaityti failo."
+  },
   "popupGainHint": {
     "message": "Virš 100% ribotuvas lieka įjungtas, kad išvengtų iškraipymų."
   },

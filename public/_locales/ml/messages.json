@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "ഇവിടത്തെ ക്രമമാണ് പോപ്പപ്പിൽ കാണുന്ന ക്രമം."
   },
+  "optionsTransferTitle": {
+    "message": "ബാക്കപ്പും കൈമാറ്റവും"
+  },
+  "optionsTransferHint": {
+    "message": "നിങ്ങളുടെ സ്ഥിരസ്ഥിതികൾ, സംരക്ഷിച്ച സൈറ്റുകൾ, പ്രീസെറ്റുകൾ എന്നിവ മറ്റൊരു ബ്രൗസറിലേക്കോ ഉപകരണത്തിലേക്കോ ഇറക്കുമതി ചെയ്യാവുന്ന ഫയലിൽ സംരക്ഷിക്കുന്നു."
+  },
+  "optionsExport": {
+    "message": "ക്രമീകരണങ്ങൾ എക്‌സ്‌പോർട്ട് ചെയ്യുക"
+  },
+  "optionsImport": {
+    "message": "ക്രമീകരണങ്ങൾ ഇറക്കുമതി ചെയ്യുക"
+  },
+  "optionsExported": {
+    "message": "ക്രമീകരണങ്ങൾ എക്‌സ്‌പോർട്ട് ചെയ്തു."
+  },
+  "optionsImported": {
+    "message": "ക്രമീകരണങ്ങൾ ഇറക്കുമതി ചെയ്തു."
+  },
+  "optionsImportConfirm": {
+    "message": "നിലവിലെ ക്രമീകരണങ്ങൾ ഈ ഫയൽ ഉപയോഗിച്ച് മാറ്റണോ? $SITES$ സൈറ്റുകളും $PRESETS$ പ്രീസെറ്റുകളും പുനഃസ്ഥാപിക്കും.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "ആ ഫയൽ സാധുവായ JSON അല്ല."
+  },
+  "optionsImportNotOurs": {
+    "message": "ആ ഫയൽ ഈ വിപുലീകരണത്തിന്റെ ക്രമീകരണ എക്‌സ്‌പോർട്ട് അല്ല."
+  },
+  "optionsImportTooNew": {
+    "message": "ആ ഫയൽ പുതിയ പതിപ്പിൽ സൃഷ്ടിച്ചതാണ്. ആദ്യം അപ്‌ഡേറ്റ് ചെയ്യുക."
+  },
+  "optionsImportTooOld": {
+    "message": "ആ ഫയൽ ഇറക്കുമതി ചെയ്യാൻ വളരെ പഴയതാണ്."
+  },
+  "optionsImportFailed": {
+    "message": "ആ ഫയൽ വായിക്കാനായില്ല."
+  },
   "popupGainHint": {
     "message": "100% ന് മുകളിൽ വക്രീകരണം തടയാൻ ലിമിറ്റർ ഓണായി തുടരും."
   },

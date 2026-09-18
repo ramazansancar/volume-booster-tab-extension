@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "এখানকার ক্রমই পপআপে দেখানোর ক্রম।"
   },
+  "optionsTransferTitle": {
+    "message": "ব্যাকআপ ও স্থানান্তর"
+  },
+  "optionsTransferHint": {
+    "message": "আপনার ডিফল্ট, সংরক্ষিত সাইট ও প্রিসেট একটি ফাইলে সংরক্ষণ করে, যা অন্য ব্রাউজার বা ডিভাইসে আমদানি করা যায়।"
+  },
+  "optionsExport": {
+    "message": "সেটিংস রপ্তানি"
+  },
+  "optionsImport": {
+    "message": "সেটিংস আমদানি"
+  },
+  "optionsExported": {
+    "message": "সেটিংস রপ্তানি হয়েছে।"
+  },
+  "optionsImported": {
+    "message": "সেটিংস আমদানি হয়েছে।"
+  },
+  "optionsImportConfirm": {
+    "message": "বর্তমান সেটিংস এই ফাইল দিয়ে প্রতিস্থাপন করবেন? $SITES$টি সাইট ও $PRESETS$টি প্রিসেট পুনরুদ্ধার হবে।",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "ফাইলটি বৈধ JSON নয়।"
+  },
+  "optionsImportNotOurs": {
+    "message": "ফাইলটি এই এক্সটেনশনের সেটিংস রপ্তানি নয়।"
+  },
+  "optionsImportTooNew": {
+    "message": "ফাইলটি এই এক্সটেনশনের নতুন সংস্করণে তৈরি। আগে আপডেট করুন।"
+  },
+  "optionsImportTooOld": {
+    "message": "ফাইলটি আমদানির জন্য খুব পুরনো।"
+  },
+  "optionsImportFailed": {
+    "message": "ফাইলটি পড়া যায়নি।"
+  },
   "popupGainHint": {
     "message": "১০০% এর উপরে বিকৃতি রোধে লিমিটার চালু থাকে।"
   },

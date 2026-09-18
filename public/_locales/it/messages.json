@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Questo ordine è quello usato nel popup."
   },
+  "optionsTransferTitle": {
+    "message": "Backup e trasferimento"
+  },
+  "optionsTransferHint": {
+    "message": "Salva impostazioni predefinite, siti salvati e preimpostazioni in un file importabile in un altro browser o dispositivo."
+  },
+  "optionsExport": {
+    "message": "Esporta impostazioni"
+  },
+  "optionsImport": {
+    "message": "Importa impostazioni"
+  },
+  "optionsExported": {
+    "message": "Impostazioni esportate."
+  },
+  "optionsImported": {
+    "message": "Impostazioni importate."
+  },
+  "optionsImportConfirm": {
+    "message": "Sostituire le impostazioni attuali con questo file? Verranno ripristinati $SITES$ siti e $PRESETS$ preimpostazioni.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Il file non è JSON valido."
+  },
+  "optionsImportNotOurs": {
+    "message": "Il file non è un’esportazione di questa estensione."
+  },
+  "optionsImportTooNew": {
+    "message": "Il file proviene da una versione più recente. Aggiorna prima l’estensione."
+  },
+  "optionsImportTooOld": {
+    "message": "Il file è troppo vecchio per l’importazione."
+  },
+  "optionsImportFailed": {
+    "message": "Impossibile leggere il file."
+  },
   "popupGainHint": {
     "message": "Oltre il 100% il limitatore resta attivo per evitare distorsioni."
   },

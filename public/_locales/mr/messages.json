@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "येथील क्रमच पॉपअपमध्ये दिसणारा क्रम आहे."
   },
+  "optionsTransferTitle": {
+    "message": "बॅकअप आणि हस्तांतरण"
+  },
+  "optionsTransferHint": {
+    "message": "तुमची डीफॉल्ट, जतन केलेल्या साइट आणि प्रीसेट अशा फाइलमध्ये जतन करते जी दुसऱ्या ब्राउझर किंवा डिव्हाइसमध्ये आयात करता येते."
+  },
+  "optionsExport": {
+    "message": "सेटिंग्ज निर्यात करा"
+  },
+  "optionsImport": {
+    "message": "सेटिंग्ज आयात करा"
+  },
+  "optionsExported": {
+    "message": "सेटिंग्ज निर्यात झाल्या."
+  },
+  "optionsImported": {
+    "message": "सेटिंग्ज आयात झाल्या."
+  },
+  "optionsImportConfirm": {
+    "message": "सध्याच्या सेटिंग्ज या फाइलने बदलायच्या? $SITES$ साइट आणि $PRESETS$ प्रीसेट पुनर्संचयित होतील.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "ती फाइल वैध JSON नाही."
+  },
+  "optionsImportNotOurs": {
+    "message": "ती फाइल या विस्ताराची सेटिंग्ज निर्यात नाही."
+  },
+  "optionsImportTooNew": {
+    "message": "ती फाइल नवीन आवृत्तीने तयार केली आहे. आधी विस्तार अद्ययावत करा."
+  },
+  "optionsImportTooOld": {
+    "message": "ती फाइल आयातीसाठी खूप जुनी आहे."
+  },
+  "optionsImportFailed": {
+    "message": "ती फाइल वाचता आली नाही."
+  },
   "popupGainHint": {
     "message": "100% पेक्षा जास्त विकृती टाळण्यासाठी लिमिटर चालू राहतो."
   },

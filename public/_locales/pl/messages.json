@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Ta kolejność obowiązuje w wyskakującym oknie."
   },
+  "optionsTransferTitle": {
+    "message": "Kopia zapasowa i przenoszenie"
+  },
+  "optionsTransferHint": {
+    "message": "Zapisuje ustawienia domyślne, zapisane witryny i presety do pliku, który można zaimportować w innej przeglądarce lub na innym urządzeniu."
+  },
+  "optionsExport": {
+    "message": "Eksportuj ustawienia"
+  },
+  "optionsImport": {
+    "message": "Importuj ustawienia"
+  },
+  "optionsExported": {
+    "message": "Ustawienia wyeksportowane."
+  },
+  "optionsImported": {
+    "message": "Ustawienia zaimportowane."
+  },
+  "optionsImportConfirm": {
+    "message": "Zastąpić bieżące ustawienia tym plikiem? Zostanie przywróconych $SITES$ witryn i $PRESETS$ presetów.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Ten plik to nieprawidłowy JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Ten plik nie jest eksportem ustawień tego rozszerzenia."
+  },
+  "optionsImportTooNew": {
+    "message": "Plik pochodzi z nowszej wersji. Najpierw zaktualizuj rozszerzenie."
+  },
+  "optionsImportTooOld": {
+    "message": "Ten plik jest za stary, aby go zaimportować."
+  },
+  "optionsImportFailed": {
+    "message": "Nie udało się odczytać pliku."
+  },
   "popupGainHint": {
     "message": "Powyżej 100% limiter pozostaje włączony, aby zapobiec zniekształceniom."
   },

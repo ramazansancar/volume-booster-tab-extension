@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "ลำดับที่นี่คือลำดับที่แสดงในป็อปอัป"
   },
+  "optionsTransferTitle": {
+    "message": "สำรองข้อมูลและถ่ายโอน"
+  },
+  "optionsTransferHint": {
+    "message": "บันทึกค่าเริ่มต้น เว็บไซต์ที่บันทึกไว้ และค่าที่ตั้งไว้ลงไฟล์ที่นำเข้าในเบราว์เซอร์หรืออุปกรณ์อื่นได้"
+  },
+  "optionsExport": {
+    "message": "ส่งออกการตั้งค่า"
+  },
+  "optionsImport": {
+    "message": "นำเข้าการตั้งค่า"
+  },
+  "optionsExported": {
+    "message": "ส่งออกการตั้งค่าแล้ว"
+  },
+  "optionsImported": {
+    "message": "นำเข้าการตั้งค่าแล้ว"
+  },
+  "optionsImportConfirm": {
+    "message": "แทนที่การตั้งค่าปัจจุบันด้วยไฟล์นี้หรือไม่? จะกู้คืน $SITES$ เว็บไซต์ และ $PRESETS$ ค่าที่ตั้งไว้",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "ไฟล์นั้นไม่ใช่ JSON ที่ถูกต้อง"
+  },
+  "optionsImportNotOurs": {
+    "message": "ไฟล์นั้นไม่ใช่ไฟล์ส่งออกการตั้งค่าของส่วนขยายนี้"
+  },
+  "optionsImportTooNew": {
+    "message": "ไฟล์นั้นสร้างจากเวอร์ชันที่ใหม่กว่า กรุณาอัปเดตส่วนขยายก่อน"
+  },
+  "optionsImportTooOld": {
+    "message": "ไฟล์นั้นเก่าเกินกว่าจะนำเข้าได้"
+  },
+  "optionsImportFailed": {
+    "message": "ไม่สามารถอ่านไฟล์นั้นได้"
+  },
   "popupGainHint": {
     "message": "เกิน 100% ลิมิตเตอร์จะเปิดอยู่เพื่อป้องกันเสียงแตก"
   },

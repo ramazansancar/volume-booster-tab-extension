@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Ang pagkakasunod dito ang lalabas sa popup."
   },
+  "optionsTransferTitle": {
+    "message": "Backup at paglipat"
+  },
+  "optionsTransferHint": {
+    "message": "Sine-save ang iyong defaults, naka-save na site at preset sa file na maaari mong i-import sa ibang browser o device."
+  },
+  "optionsExport": {
+    "message": "I-export ang settings"
+  },
+  "optionsImport": {
+    "message": "I-import ang settings"
+  },
+  "optionsExported": {
+    "message": "Na-export ang settings."
+  },
+  "optionsImported": {
+    "message": "Na-import ang settings."
+  },
+  "optionsImportConfirm": {
+    "message": "Palitan ang kasalukuyang settings ng file na ito? Ibabalik ang $SITES$ site at $PRESETS$ preset.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Hindi valid na JSON ang file na iyan."
+  },
+  "optionsImportNotOurs": {
+    "message": "Hindi ito settings export mula sa extension na ito."
+  },
+  "optionsImportTooNew": {
+    "message": "Mula ito sa mas bagong bersyon. I-update muna ang extension."
+  },
+  "optionsImportTooOld": {
+    "message": "Masyadong luma ang file na iyan para i-import."
+  },
+  "optionsImportFailed": {
+    "message": "Hindi mabasa ang file na iyan."
+  },
   "popupGainHint": {
     "message": "Higit sa 100% nananatiling naka-on ang limiter upang maiwasan ang distortion."
   },

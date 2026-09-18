@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Mpangilio huu ndio unaoonekana kwenye kidirisha."
   },
+  "optionsTransferTitle": {
+    "message": "Hifadhi nakala na uhamisho"
+  },
+  "optionsTransferHint": {
+    "message": "Huhifadhi chaguo-msingi zako, tovuti zilizohifadhiwa na mipangilio kwenye faili unayoweza kuleta kwenye kivinjari au kifaa kingine."
+  },
+  "optionsExport": {
+    "message": "Hamisha mipangilio"
+  },
+  "optionsImport": {
+    "message": "Leta mipangilio"
+  },
+  "optionsExported": {
+    "message": "Mipangilio imehamishwa."
+  },
+  "optionsImported": {
+    "message": "Mipangilio imeletwa."
+  },
+  "optionsImportConfirm": {
+    "message": "Badilisha mipangilio ya sasa na faili hii? Tovuti $SITES$ na mipangilio $PRESETS$ itarejeshwa.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Faili hiyo si JSON halali."
+  },
+  "optionsImportNotOurs": {
+    "message": "Faili hiyo si uhamishaji wa mipangilio ya kiendelezi hiki."
+  },
+  "optionsImportTooNew": {
+    "message": "Faili hiyo imeandikwa na toleo jipya zaidi. Sasisha kiendelezi kwanza."
+  },
+  "optionsImportTooOld": {
+    "message": "Faili hiyo ni ya zamani mno kuletwa."
+  },
+  "optionsImportFailed": {
+    "message": "Faili hiyo haikuweza kusomwa."
+  },
   "popupGainHint": {
     "message": "Zaidi ya 100% kikomo hubaki kimewashwa kuzuia upotoshaji."
   },

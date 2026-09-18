@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Deze volgorde geldt ook in de pop-up."
   },
+  "optionsTransferTitle": {
+    "message": "Back-up en overdracht"
+  },
+  "optionsTransferHint": {
+    "message": "Slaat je standaardwaarden, opgeslagen sites en voorinstellingen op in een bestand dat je in een andere browser of op een ander apparaat kunt importeren."
+  },
+  "optionsExport": {
+    "message": "Instellingen exporteren"
+  },
+  "optionsImport": {
+    "message": "Instellingen importeren"
+  },
+  "optionsExported": {
+    "message": "Instellingen geëxporteerd."
+  },
+  "optionsImported": {
+    "message": "Instellingen geïmporteerd."
+  },
+  "optionsImportConfirm": {
+    "message": "Huidige instellingen vervangen door dit bestand? $SITES$ sites en $PRESETS$ voorinstellingen worden hersteld.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Dat bestand is geen geldige JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Dat bestand is geen instellingenexport van deze extensie."
+  },
+  "optionsImportTooNew": {
+    "message": "Dat bestand komt van een nieuwere versie. Werk de extensie eerst bij."
+  },
+  "optionsImportTooOld": {
+    "message": "Dat bestand is te oud om te importeren."
+  },
+  "optionsImportFailed": {
+    "message": "Dat bestand kon niet worden gelezen."
+  },
   "popupGainHint": {
     "message": "Boven 100% blijft de limiter aan om vervorming te voorkomen."
   },

@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "الترتيب هنا هو ترتيب ظهورها في النافذة المنبثقة."
   },
+  "optionsTransferTitle": {
+    "message": "النسخ الاحتياطي والنقل"
+  },
+  "optionsTransferHint": {
+    "message": "يحفظ إعداداتك الافتراضية والمواقع المحفوظة والإعدادات المسبقة في ملف يمكنك استيراده إلى متصفح أو جهاز آخر."
+  },
+  "optionsExport": {
+    "message": "تصدير الإعدادات"
+  },
+  "optionsImport": {
+    "message": "استيراد الإعدادات"
+  },
+  "optionsExported": {
+    "message": "تم تصدير الإعدادات."
+  },
+  "optionsImported": {
+    "message": "تم استيراد الإعدادات."
+  },
+  "optionsImportConfirm": {
+    "message": "استبدال إعداداتك الحالية بهذا الملف؟ سيتم استعادة $SITES$ موقعًا محفوظًا و$PRESETS$ إعدادًا مسبقًا.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "هذا الملف ليس JSON صالحًا."
+  },
+  "optionsImportNotOurs": {
+    "message": "هذا الملف ليس تصديرًا لإعدادات هذه الإضافة."
+  },
+  "optionsImportTooNew": {
+    "message": "كُتب هذا الملف بإصدار أحدث من هذه الإضافة. حدّثها أولاً."
+  },
+  "optionsImportTooOld": {
+    "message": "هذا الملف قديم جدًا للاستيراد."
+  },
+  "optionsImportFailed": {
+    "message": "تعذّر قراءة هذا الملف."
+  },
   "popupGainHint": {
     "message": "فوق 100% يظل المحدد مفعلاً لمنع التشويه."
   },

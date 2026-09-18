@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Ovaj redoslijed vrijedi i u skočnom prozoru."
   },
+  "optionsTransferTitle": {
+    "message": "Sigurnosna kopija i prijenos"
+  },
+  "optionsTransferHint": {
+    "message": "Sprema zadane vrijednosti, spremljene stranice i predloške u datoteku koju možete uvesti u drugi preglednik ili uređaj."
+  },
+  "optionsExport": {
+    "message": "Izvezi postavke"
+  },
+  "optionsImport": {
+    "message": "Uvezi postavke"
+  },
+  "optionsExported": {
+    "message": "Postavke izvezene."
+  },
+  "optionsImported": {
+    "message": "Postavke uvezene."
+  },
+  "optionsImportConfirm": {
+    "message": "Zamijeniti trenutne postavke ovom datotekom? Vratit će se $SITES$ stranica i $PRESETS$ predložaka.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Ta datoteka nije valjan JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Ta datoteka nije izvoz postavki ovog proširenja."
+  },
+  "optionsImportTooNew": {
+    "message": "Datoteka je iz novije verzije. Najprije ažurirajte proširenje."
+  },
+  "optionsImportTooOld": {
+    "message": "Ta datoteka je prestara za uvoz."
+  },
+  "optionsImportFailed": {
+    "message": "Datoteku nije bilo moguće pročitati."
+  },
   "popupGainHint": {
     "message": "Iznad 100% limiter ostaje uključen kako bi spriječio izobličenje."
   },

@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "Denna ordning gäller även i popup-fönstret."
   },
+  "optionsTransferTitle": {
+    "message": "Säkerhetskopiering och överföring"
+  },
+  "optionsTransferHint": {
+    "message": "Sparar dina standardvärden, sparade webbplatser och förinställningar i en fil som du kan importera i en annan webbläsare eller enhet."
+  },
+  "optionsExport": {
+    "message": "Exportera inställningar"
+  },
+  "optionsImport": {
+    "message": "Importera inställningar"
+  },
+  "optionsExported": {
+    "message": "Inställningar exporterade."
+  },
+  "optionsImported": {
+    "message": "Inställningar importerade."
+  },
+  "optionsImportConfirm": {
+    "message": "Ersätta nuvarande inställningar med den här filen? $SITES$ webbplatser och $PRESETS$ förinställningar återställs.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "Filen är inte giltig JSON."
+  },
+  "optionsImportNotOurs": {
+    "message": "Filen är inte en inställningsexport från detta tillägg."
+  },
+  "optionsImportTooNew": {
+    "message": "Filen kommer från en nyare version. Uppdatera tillägget först."
+  },
+  "optionsImportTooOld": {
+    "message": "Filen är för gammal för att importeras."
+  },
+  "optionsImportFailed": {
+    "message": "Filen kunde inte läsas."
+  },
   "popupGainHint": {
     "message": "Över 100 % förblir limitern på för att undvika distorsion."
   },

@@ -128,6 +128,29 @@
         </button>
       </section>
 
+      <!--
+        Export and import. This is how a user moves a setup between browsers and
+        machines, so the file carries its own format version and this build
+        reads every version it has ever written.
+      -->
+      <section class="card">
+        <h2 class="card__title" data-i18n="optionsTransferTitle">Backup and transfer</h2>
+        <p class="card__lead" data-i18n="optionsTransferHint">
+          Saves your defaults, saved sites and presets to a file you can import into another
+          browser or device.
+        </p>
+        <div class="transfer-actions">
+          <button type="button" class="button" id="export-settings" data-i18n="optionsExport">
+            Export settings
+          </button>
+          <button type="button" class="button" id="import-settings" data-i18n="optionsImport">
+            Import settings
+          </button>
+          <input type="file" id="import-file" accept="application/json,.json" hidden />
+        </div>
+        <p class="transfer-status" id="transfer-status" role="status"></p>
+      </section>
+
       <footer class="page__footer">
         <p id="save-status" role="status" class="save-status"></p>
         <button type="button" class="button" id="restore-defaults" data-i18n="optionsRestoreDefaults">Restore defaults</button>

@@ -324,6 +324,50 @@
   "optionsPresetsHint": {
     "message": "અહીંનો ક્રમ પોપઅપમાં દેખાતો ક્રમ છે."
   },
+  "optionsTransferTitle": {
+    "message": "બેકઅપ અને ટ્રાન્સફર"
+  },
+  "optionsTransferHint": {
+    "message": "તમારા ડિફોલ્ટ, સાચવેલી સાઇટ્સ અને પ્રીસેટને એવી ફાઇલમાં સાચવે છે જે બીજા બ્રાઉઝર કે ઉપકરણમાં આયાત કરી શકાય."
+  },
+  "optionsExport": {
+    "message": "સેટિંગ્સ નિકાસ કરો"
+  },
+  "optionsImport": {
+    "message": "સેટિંગ્સ આયાત કરો"
+  },
+  "optionsExported": {
+    "message": "સેટિંગ્સ નિકાસ થઈ."
+  },
+  "optionsImported": {
+    "message": "સેટિંગ્સ આયાત થઈ."
+  },
+  "optionsImportConfirm": {
+    "message": "વર્તમાન સેટિંગ્સને આ ફાઇલથી બદલવી? $SITES$ સાઇટ્સ અને $PRESETS$ પ્રીસેટ પુનઃસ્થાપિત થશે.",
+    "placeholders": {
+      "sites": {
+        "content": "$1"
+      },
+      "presets": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsImportNotJson": {
+    "message": "એ ફાઇલ માન્ય JSON નથી."
+  },
+  "optionsImportNotOurs": {
+    "message": "એ ફાઇલ આ એક્સટેન્શનની સેટિંગ્સ નિકાસ નથી."
+  },
+  "optionsImportTooNew": {
+    "message": "એ ફાઇલ નવી આવૃત્તિની છે. પહેલાં એક્સટેન્શન અપડેટ કરો."
+  },
+  "optionsImportTooOld": {
+    "message": "એ ફાઇલ આયાત કરવા માટે ઘણી જૂની છે."
+  },
+  "optionsImportFailed": {
+    "message": "એ ફાઇલ વાંચી શકાઈ નથી."
+  },
   "popupGainHint": {
     "message": "100% થી ઉપર વિકૃતિ રોકવા લિમિટર ચાલુ રહે છે."
   },
