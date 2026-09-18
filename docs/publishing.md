@@ -14,6 +14,8 @@ Per-store copy lives alongside this file: [`amo-submission.md`](amo-submission.m
 
 Updates to a published listing go through the same upload flow as the first submission; only the review turnaround differs.
 
+The README install badges are hand-drawn SVGs in [`store-assets/badges/`](../store-assets/badges) — one per store, 200x58, dark-background. They are our own artwork rather than the stores' official badge images, so nothing here depends on a third-party CDN or redistributes a vendor brand asset. When a store goes live, point its badge at the listing; `opera.svg` and `safari.svg` are already drawn and waiting.
+
 ---
 
 A plan for driving the Firefox side of this through the addons.mozilla.org API, instead of by hand, is in [`amo-api-automation.md`](amo-api-automation.md). Nothing in it is implemented yet, so the manual steps below are still the ones to follow.

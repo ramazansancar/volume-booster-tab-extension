@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="58" viewBox="0 0 200 58" role="img" aria-label="Build from source for Safari">
+  <title>Build from source for Safari</title>
+  <defs>
+    <linearGradient id="safari-dial" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#3db8f5"/>
+      <stop offset="100%" stop-color="#1667d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="58" rx="8" fill="#202124"/>
+  <rect x="0.5" y="0.5" width="199" height="57" rx="7.5" fill="none" stroke="#5f6368"/>
+  <g transform="translate(16 14)">
+    <circle cx="15" cy="15" r="15" fill="url(#safari-dial)"/>
+    <circle cx="15" cy="15" r="12.4" fill="none" stroke="#fff" stroke-opacity="0.75"/>
+    <g stroke="#fff" stroke-opacity="0.8" stroke-width="1.1" stroke-linecap="round">
+      <path d="M15 3.3v2.2M15 24.5v2.2M26.7 15h-2.2M5.5 15H3.3"/>
+    </g>
+    <path d="M21.4 8.6 12.9 12.9 8.6 21.4l8.5-4.3z" fill="#fff"/>
+    <path d="M21.4 8.6 17.1 17.1l-4.2-4.2z" fill="#ff4b4b"/>
+  </g>
+  <text x="58" y="25" fill="#9aa0a6" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="10">Build from source for</text>
+  <text x="58" y="41" fill="#fff" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="500">Safari</text>
+</svg>

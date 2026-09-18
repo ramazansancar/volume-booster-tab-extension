@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="58" viewBox="0 0 200 58" role="img" aria-label="Available in the Chrome Web Store">
+  <title>Available in the Chrome Web Store</title>
+  <rect width="200" height="58" rx="8" fill="#202124"/>
+  <rect x="0.5" y="0.5" width="199" height="57" rx="7.5" fill="none" stroke="#5f6368"/>
+  <g transform="translate(16 14)">
+    <circle cx="15" cy="15" r="15" fill="#fff"/>
+    <path d="M15 0a15 15 0 0 1 12.99 7.5H15a7.5 7.5 0 0 0-6.96 4.71L2.02 7.5A15 15 0 0 1 15 0z" fill="#ea4335"/>
+    <path d="M2.02 7.5l6.02 4.71A7.5 7.5 0 0 0 15 22.5l-3.75 6.5A15 15 0 0 1 2.02 7.5z" fill="#34a853"/>
+    <path d="M27.99 7.5A15 15 0 0 1 11.25 29l6.24-10.81A7.5 7.5 0 0 0 15 7.5z" fill="#fbbc05"/>
+    <circle cx="15" cy="15" r="6.25" fill="#4285f4"/>
+  </g>
+  <text x="58" y="25" fill="#9aa0a6" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="10">Available in the</text>
+  <text x="58" y="41" fill="#fff" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="500">Chrome Web Store</text>
+</svg>

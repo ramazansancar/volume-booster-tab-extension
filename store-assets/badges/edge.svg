@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="58" viewBox="0 0 200 58" role="img" aria-label="Get it from Microsoft Edge Add-ons">
+  <title>Get it from Microsoft Edge Add-ons</title>
+  <defs>
+    <linearGradient id="edge-body" x1="16%" y1="92%" x2="88%" y2="14%">
+      <stop offset="0%" stop-color="#0b4a96"/>
+      <stop offset="58%" stop-color="#1180d4"/>
+      <stop offset="100%" stop-color="#26a5e4"/>
+    </linearGradient>
+    <linearGradient id="edge-leaf" x1="14%" y1="94%" x2="86%" y2="10%">
+      <stop offset="0%" stop-color="#21c65a"/>
+      <stop offset="52%" stop-color="#39d4a0"/>
+      <stop offset="100%" stop-color="#4fe6d2"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="58" rx="8" fill="#202124"/>
+  <rect x="0.5" y="0.5" width="199" height="57" rx="7.5" fill="none" stroke="#5f6368"/>
+  <g transform="translate(16 14)">
+    <circle cx="15" cy="15" r="15" fill="url(#edge-body)"/>
+    <path d="M1.4 9.8A15 15 0 0 1 28.9 9c-2.3-1.1-5-1.5-7.7-1.1-4.6.7-8.2 3.4-9.6 7-1.1 2.9-.3 5.8 1.9 7.9-4.6-1-8.1-3.9-9.6-7.6-.9-2.2-1-4-.5-5.4z" fill="#0a3f80" opacity="0.5"/>
+    <path d="M30 15a15 15 0 0 1-21.6 13.5c2.9.6 6.4.2 9.6-1.4 3.6-1.8 5.7-4.7 5.4-7.6-.2-2.3-1.8-3.9-4.2-4.6 2.9-1.3 6.4-1.2 9.2.3.1.6.1 1.2.1 1.8z" fill="#6ee0c0" opacity="0.35"/>
+    <path d="M14.6 3.6c5.6-1.3 11 .6 13.6 4.7 1.4 2.2 1.6 4.3.8 5.8-1.1-3.7-4.4-6.3-8.6-6.6-5.3-.4-10 2.8-11.4 7.4-.6 2-.4 3.8.4 5.3-2.2-1.9-3.4-4.4-3.2-7 .3-4.7 3.9-8.4 8.4-9.6z" fill="url(#edge-leaf)"/>
+  </g>
+  <text x="58" y="25" fill="#9aa0a6" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="10">Get it from</text>
+  <text x="58" y="41" fill="#fff" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="500">Microsoft Edge</text>
+</svg>

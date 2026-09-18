@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="58" viewBox="0 0 200 58" role="img" aria-label="Get it from Opera add-ons">
+  <title>Get it from Opera add-ons</title>
+  <defs>
+    <linearGradient id="opera-o" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ff5f5f"/>
+      <stop offset="100%" stop-color="#c8072b"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="58" rx="8" fill="#202124"/>
+  <rect x="0.5" y="0.5" width="199" height="57" rx="7.5" fill="none" stroke="#5f6368"/>
+  <g transform="translate(16 14)">
+    <circle cx="15" cy="15" r="15" fill="url(#opera-o)"/>
+    <ellipse cx="15" cy="15" rx="6.4" ry="12.4" fill="#fff"/>
+  </g>
+  <text x="58" y="25" fill="#9aa0a6" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="10">Get it from</text>
+  <text x="58" y="41" fill="#fff" font-family="Roboto, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="500">Opera add-ons</text>
+</svg>
