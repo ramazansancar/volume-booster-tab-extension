@@ -394,13 +394,6 @@ body[data-disabled='true'] .advanced {
   user-select: none;
 }
 
-/* A full-width link under the footer, so the settings page is one click away
-   without expanding the Advanced section first. */
-.link-button--block {
-  width: 100%;
-  padding: 7px 0;
-  text-align: center;
-}
 
 /* Rating and support ------------------------------------------------------- */
 
@@ -417,14 +410,21 @@ body[data-disabled='true'] .advanced {
 
 .feedback__rate {
   display: flex;
+  flex: 1;
   align-items: center;
+  justify-content: center;
   gap: 6px;
+  min-width: 0;
 }
 
-/* Dropped on a build whose store has no listing, leaving the support link to
-   sit alone on the row. */
+/* With no stars to centre, the help icon would otherwise drift to the middle. */
 .feedback[data-rateable='false'] .feedback__rate {
   display: none;
+}
+
+.feedback[data-rateable='false'] {
+  justify-content: flex-start;
+  gap: 4px;
 }
 
 .feedback__prompt {
@@ -456,8 +456,28 @@ body[data-disabled='true'] .advanced {
   color: #f5a623;
 }
 
-.feedback__support {
-  flex-shrink: 0;
+/* Quiet variant of the icon button: no border, so the two glyphs framing the
+   stars read as part of the footer rather than as two more controls. */
+.icon-button--quiet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  border-radius: 7px;
+  background: none;
+  color: var(--text-muted);
+}
+
+.icon-button--quiet svg {
+  width: 17px;
+  height: 17px;
+}
+
+.icon-button--quiet:hover {
+  background: var(--surface);
+  color: var(--accent);
 }
 
 /* Browser pages cannot be boosted, but they are no reason to hide the way to

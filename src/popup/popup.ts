@@ -148,6 +148,8 @@ function buildFeedback(): void {
   // has the same right to report a bug as anyone else, and the issue tracker
   // is the same one regardless of where the extension came from.
   dom.supportLink.addEventListener('click', () => openLink(SUPPORT_URL));
+  // The button is a bare icon, so the tooltip says where it goes rather than
+  // repeating the accessible name applyTranslations already set.
   dom.supportLink.title = t('popupReportIssue', 'Report a problem on GitHub');
   dom.feedback.hidden = false;
 

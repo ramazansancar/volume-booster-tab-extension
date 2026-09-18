@@ -173,35 +173,62 @@
         </div>
       </footer>
 
-      <!-- Outside the collapsed Advanced section: the settings page holds the
-           language picker and the saved-site list, which people look for
-           without first thinking of them as "advanced". -->
-      <button
-        type="button"
-        class="link-button link-button--block"
-        id="options-link"
-        data-i18n="popupOpenOptions"
-      >
-        Open all settings
-      </button>
-
       <!--
-        Rating and support. The stars are a real rating control only in the
-        sense that they open the store's own review form - we cannot submit a
-        rating on the user's behalf, and pretending otherwise would be a dark
-        pattern. So every star goes to the same place, and the label says
-        plainly that it opens the store.
+        The bottom row: settings, the rating stars, and help.
 
-        The whole row is removed by the script on a build whose store has no
-        listing to review, rather than being shown disabled.
+        Settings and help are icons because each is a single, well-known action
+        that a glyph names as well as a word does - and the row has to hold the
+        stars too, which need the horizontal space more. Both keep their text as
+        an accessible name and a tooltip, so nothing is lost to someone using a
+        screen reader or hovering to check.
+
+        The stars are a rating control only in the sense that they open the
+        store's own review form: we cannot submit a rating on the user's behalf,
+        and pretending otherwise would be a dark pattern. Every star goes to the
+        same place, and its accessible name says so. On a build whose store has
+        no listing, the script drops the stars and leaves the two icons.
       -->
       <section class="feedback" id="feedback" hidden>
+        <button
+          type="button"
+          class="icon-button icon-button--quiet"
+          id="options-link"
+          data-i18n-title="popupOpenOptions"
+          data-i18n-label="popupOpenOptions"
+          title="Open all settings"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5Zm7.4-2.2a7.6 7.6 0 0 0 0-2.6l2-1.6a.5.5 0 0 0 .1-.6l-1.9-3.2a.5.5 0 0 0-.6-.2l-2.3 1a7.4 7.4 0 0 0-2.2-1.3l-.4-2.4a.5.5 0 0 0-.5-.4h-3.8a.5.5 0 0 0-.5.4l-.4 2.4a7.4 7.4 0 0 0-2.2 1.3l-2.3-1a.5.5 0 0 0-.6.2L2.5 8.5a.5.5 0 0 0 .1.6l2 1.6a7.6 7.6 0 0 0 0 2.6l-2 1.6a.5.5 0 0 0-.1.6l1.9 3.2a.5.5 0 0 0 .6.2l2.3-1a7.4 7.4 0 0 0 2.2 1.3l.4 2.4a.5.5 0 0 0 .5.4h3.8a.5.5 0 0 0 .5-.4l.4-2.4a7.4 7.4 0 0 0 2.2-1.3l2.3 1a.5.5 0 0 0 .6-.2l1.9-3.2a.5.5 0 0 0-.1-.6Z"
+            />
+          </svg>
+        </button>
+
         <div class="feedback__rate">
           <span class="feedback__prompt" data-i18n="popupEnjoying">Enjoying the boost?</span>
           <div class="stars" id="stars" role="group"></div>
         </div>
-        <button type="button" class="link-button feedback__support" id="support-link">
-          <span data-i18n="popupSupport">Get help</span>
+
+        <button
+          type="button"
+          class="icon-button icon-button--quiet"
+          id="support-link"
+          data-i18n-title="popupSupport"
+          data-i18n-label="popupSupport"
+          title="Get help"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              d="M9.1 9a3 3 0 1 1 4 2.8c-.7.3-1.1 1-1.1 1.7v.7"
+            />
+            <circle cx="12" cy="17.6" r="1.2" fill="currentColor" />
+            <circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" stroke-width="1.6" />
+          </svg>
         </button>
       </section>
     </main>
