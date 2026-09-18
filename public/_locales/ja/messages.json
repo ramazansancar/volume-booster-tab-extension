@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "すべての設定を開く"
   },
+  "popupDetach": {
+    "message": "別ウィンドウで開く"
+  },
   "popupEnjoying": {
     "message": "音量アップは気に入りましたか？"
   },

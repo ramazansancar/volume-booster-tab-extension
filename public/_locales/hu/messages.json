@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Összes beállítás megnyitása"
   },
+  "popupDetach": {
+    "message": "Megnyitás külön ablakban"
+  },
   "popupEnjoying": {
     "message": "Tetszik a hangerősítés?"
   },

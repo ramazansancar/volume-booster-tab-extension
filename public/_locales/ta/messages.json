@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "அனைத்து அமைப்புகளையும் திற"
   },
+  "popupDetach": {
+    "message": "தனி சாளரத்தில் திற"
+  },
   "popupEnjoying": {
     "message": "ஒலி அதிகரிப்பு பிடித்ததா?"
   },

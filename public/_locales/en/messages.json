@@ -172,6 +172,9 @@
   "popupOpenOptions": {
     "message": "Open all settings"
   },
+  "popupDetach": {
+    "message": "Open in a separate window"
+  },
   "popupEnjoying": {
     "message": "Enjoying the boost?"
   },

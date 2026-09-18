@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Buka semua pengaturan"
   },
+  "popupDetach": {
+    "message": "Buka di jendela terpisah"
+  },
   "popupEnjoying": {
     "message": "Suka dengan peningkatannya?"
   },

@@ -19,16 +19,40 @@
           action instead ("Bypass") left the user unable to tell, at a glance,
           which of the two states they were actually in.
         -->
-        <button
-          type="button"
-          id="bypass"
-          class="toggle-pill"
-          aria-pressed="false"
-          data-i18n-title="popupBypassTitle"
-          title="Turn processing off and pass the audio through untouched"
-        >
-          <span id="bypass-label" data-i18n="popupStateActive">Active</span>
-        </button>
+        <div class="header-actions">
+          <button
+            type="button"
+            id="bypass"
+            class="toggle-pill"
+            aria-pressed="false"
+            data-i18n-title="popupBypassTitle"
+            title="Turn processing off and pass the audio through untouched"
+          >
+            <span id="bypass-label" data-i18n="popupStateActive">Active</span>
+          </button>
+          <!-- Hidden by the script when this page is already the detached
+               window, where the button would do nothing useful. -->
+          <button
+            type="button"
+            class="icon-button icon-button--quiet"
+            id="detach"
+            data-i18n-title="popupDetach"
+            data-i18n-label="popupDetach"
+            title="Open in a separate window"
+            hidden
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14 4h6v6M20 4l-8.5 8.5M18 14.5V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h4.5"
+              />
+            </svg>
+          </button>
+        </div>
       </header>
 
       <section class="control control--primary">

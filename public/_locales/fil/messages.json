@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Buksan ang lahat ng setting"
   },
+  "popupDetach": {
+    "message": "Buksan sa hiwalay na window"
+  },
   "popupEnjoying": {
     "message": "Nagugustuhan ang boost?"
   },

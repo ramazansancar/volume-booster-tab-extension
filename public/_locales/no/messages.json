@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Åpne alle innstillinger"
   },
+  "popupDetach": {
+    "message": "Åpne i et eget vindu"
+  },
   "popupEnjoying": {
     "message": "Liker du forsterkningen?"
   },

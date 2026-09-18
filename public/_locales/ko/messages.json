@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "모든 설정 열기"
   },
+  "popupDetach": {
+    "message": "별도 창에서 열기"
+  },
   "popupEnjoying": {
     "message": "볼륨 부스트가 마음에 드시나요?"
   },

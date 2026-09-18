@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Öppna alla inställningar"
   },
+  "popupDetach": {
+    "message": "Öppna i ett separat fönster"
+  },
   "popupEnjoying": {
     "message": "Gillar du förstärkningen?"
   },

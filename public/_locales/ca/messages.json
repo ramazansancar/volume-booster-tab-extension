@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Obre tota la configuració"
   },
+  "popupDetach": {
+    "message": "Obre en una finestra a part"
+  },
   "popupEnjoying": {
     "message": "T’agrada l’amplificació?"
   },

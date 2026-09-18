@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "എല്ലാ ക്രമീകരണങ്ങളും തുറക്കുക"
   },
+  "popupDetach": {
+    "message": "പ്രത്യേക വിൻഡോയിൽ തുറക്കുക"
+  },
   "popupEnjoying": {
     "message": "ബൂസ്റ്റ് ഇഷ്ടപ്പെട്ടോ?"
   },

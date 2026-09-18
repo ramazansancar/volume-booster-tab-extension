@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "બધી સેટિંગ્સ ખોલો"
   },
+  "popupDetach": {
+    "message": "અલગ વિન્ડોમાં ખોલો"
+  },
   "popupEnjoying": {
     "message": "બૂસ્ટ ગમ્યું?"
   },

@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Отвори сва подешавања"
   },
+  "popupDetach": {
+    "message": "Отвори у засебном прозору"
+  },
   "popupEnjoying": {
     "message": "Да ли вам се свиђа појачање?"
   },

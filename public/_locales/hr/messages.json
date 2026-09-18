@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Otvori sve postavke"
   },
+  "popupDetach": {
+    "message": "Otvori u zasebnom prozoru"
+  },
   "popupEnjoying": {
     "message": "Sviđa li vam se pojačanje?"
   },

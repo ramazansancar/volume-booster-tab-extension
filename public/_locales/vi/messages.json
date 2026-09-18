@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Mở tất cả cài đặt"
   },
+  "popupDetach": {
+    "message": "Mở trong cửa sổ riêng"
+  },
   "popupEnjoying": {
     "message": "Bạn thấy hiệu quả chứ?"
   },

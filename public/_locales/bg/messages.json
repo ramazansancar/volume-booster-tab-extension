@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Отвори всички настройки"
   },
+  "popupDetach": {
+    "message": "Отвори в отделен прозорец"
+  },
   "popupEnjoying": {
     "message": "Харесва ли ви усилването?"
   },

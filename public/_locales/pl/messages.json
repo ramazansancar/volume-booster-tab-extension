@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Otwórz wszystkie ustawienia"
   },
+  "popupDetach": {
+    "message": "Otwórz w osobnym oknie"
+  },
   "popupEnjoying": {
     "message": "Podoba Ci się wzmocnienie?"
   },

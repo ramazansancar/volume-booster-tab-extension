@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Deschide toate setările"
   },
+  "popupDetach": {
+    "message": "Deschide într-o fereastră separată"
+  },
   "popupEnjoying": {
     "message": "Îți place amplificarea?"
   },

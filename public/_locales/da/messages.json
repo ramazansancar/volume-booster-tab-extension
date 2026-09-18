@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Åbn alle indstillinger"
   },
+  "popupDetach": {
+    "message": "Åbn i et separat vindue"
+  },
   "popupEnjoying": {
     "message": "Kan du lide forstærkningen?"
   },

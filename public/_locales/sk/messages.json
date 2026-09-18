@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Otvoriť všetky nastavenia"
   },
+  "popupDetach": {
+    "message": "Otvoriť v samostatnom okne"
+  },
   "popupEnjoying": {
     "message": "Páči sa vám zosilnenie?"
   },

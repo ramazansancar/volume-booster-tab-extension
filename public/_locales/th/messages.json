@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "เปิดการตั้งค่าทั้งหมด"
   },
+  "popupDetach": {
+    "message": "เปิดในหน้าต่างแยก"
+  },
   "popupEnjoying": {
     "message": "ชอบการเพิ่มเสียงไหม?"
   },

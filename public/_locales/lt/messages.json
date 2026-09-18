@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Atverti visus nustatymus"
   },
+  "popupDetach": {
+    "message": "Atverti atskirame lange"
+  },
   "popupEnjoying": {
     "message": "Ar patinka garsinimas?"
   },

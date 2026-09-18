@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Alle instellingen openen"
   },
+  "popupDetach": {
+    "message": "In een apart venster openen"
+  },
   "popupEnjoying": {
     "message": "Bevalt de versterking?"
   },

@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "అన్ని సెట్టింగ్‌లను తెరవండి"
   },
+  "popupDetach": {
+    "message": "ప్రత్యేక విండోలో తెరవండి"
+  },
   "popupEnjoying": {
     "message": "బూస్ట్ నచ్చిందా?"
   },

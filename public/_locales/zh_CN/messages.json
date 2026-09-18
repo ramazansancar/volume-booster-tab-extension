@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "打开全部设置"
   },
+  "popupDetach": {
+    "message": "在单独的窗口中打开"
+  },
   "popupEnjoying": {
     "message": "音量增强还满意吗？"
   },

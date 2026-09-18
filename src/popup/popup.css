@@ -583,3 +583,18 @@ body[data-disabled='true'] .feedback {
   display: flex;
   gap: 10px;
 }
+
+/* Detached window ---------------------------------------------------------- */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* The detached window has no browser chrome of its own, so the panel has to
+   fill it rather than sit at a fixed 320px inside a wider frame. */
+body[data-detached='true'] {
+  width: auto;
+  min-width: 320px;
+}

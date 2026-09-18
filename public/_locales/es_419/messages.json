@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Abrir todos los ajustes"
   },
+  "popupDetach": {
+    "message": "Abrir en una ventana aparte"
+  },
   "popupEnjoying": {
     "message": "¿Te gusta el aumento?"
   },

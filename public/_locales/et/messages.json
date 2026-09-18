@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Ava kõik seaded"
   },
+  "popupDetach": {
+    "message": "Ava eraldi aknas"
+  },
   "popupEnjoying": {
     "message": "Kas võimendus meeldib?"
   },

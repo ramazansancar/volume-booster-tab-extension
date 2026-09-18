@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Ouvrir tous les paramètres"
   },
+  "popupDetach": {
+    "message": "Ouvrir dans une fenêtre séparée"
+  },
   "popupEnjoying": {
     "message": "Le boost vous plaît ?"
   },

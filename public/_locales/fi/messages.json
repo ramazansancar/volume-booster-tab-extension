@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Avaa kaikki asetukset"
   },
+  "popupDetach": {
+    "message": "Avaa erillisessä ikkunassa"
+  },
   "popupEnjoying": {
     "message": "Pidätkö äänenvoimistuksesta?"
   },

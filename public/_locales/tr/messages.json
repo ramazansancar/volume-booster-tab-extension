@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Tüm ayarları aç"
   },
+  "popupDetach": {
+    "message": "Ayrı pencerede aç"
+  },
   "popupEnjoying": {
     "message": "Ses yükseltme işine yaradı mı?"
   },

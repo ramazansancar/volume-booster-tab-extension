@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Buka semua tetapan"
   },
+  "popupDetach": {
+    "message": "Buka dalam tetingkap berasingan"
+  },
   "popupEnjoying": {
     "message": "Suka dengan peningkatan ini?"
   },

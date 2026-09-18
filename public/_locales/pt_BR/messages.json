@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Abrir todas as configurações"
   },
+  "popupDetach": {
+    "message": "Abrir em uma janela separada"
+  },
   "popupEnjoying": {
     "message": "Curtindo o reforço?"
   },

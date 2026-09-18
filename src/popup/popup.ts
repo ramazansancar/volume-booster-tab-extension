@@ -1,4 +1,5 @@
 import {
+  createPopupWindow,
   createTab,
   ext,
   queryTabs,
@@ -51,6 +52,7 @@ const dom = {
   remember: document.getElementById('remember') as HTMLInputElement,
   bypass: document.getElementById('bypass') as HTMLButtonElement,
   bypassLabel: document.getElementById('bypass-label') as HTMLElement,
+  detach: document.getElementById('detach') as HTMLButtonElement,
   equalizer: document.getElementById('equalizer') as HTMLElement,
   eqBadge: document.getElementById('eq-badge') as HTMLElement,
   eqReset: document.getElementById('eq-reset') as HTMLButtonElement,
@@ -120,6 +122,31 @@ function buildPresets(maxPercent: number): void {
 
 function send<T>(message: UiToBackgroundMessage): Promise<T> {
   return sendRuntimeMessage<T>(message);
+}
+
+/**
+ * True when this page is the detached window rather than the toolbar popup.
+ *
+ * The two are the same document, so the only thing that tells them apart is the
+ * query string the detached window is opened with. Detecting it by window size
+ * or by `window.opener` was tried first and neither survives a reload.
+ */
+const isDetached = new URLSearchParams(location.search).get('window') === '1';
+
+/** Size of the detached window, in CSS pixels. */
+const DETACHED_SIZE = { width: 360, height: 640 };
+
+/**
+ * Opens this panel in its own window and closes the popup.
+ *
+ * The detached copy re-reads the tab state on load like any other instance, so
+ * nothing needs handing over - it simply starts by asking the background the
+ * same question the popup asks.
+ */
+function detachWindow(): void {
+  const url = ext.runtime.getURL('popup/index.html?window=1');
+  void createPopupWindow(url, DETACHED_SIZE);
+  window.close();
 }
 
 /** Opens a link in a new tab and closes the popup, which is always the intent. */
@@ -590,6 +617,11 @@ function bindControls(): void {
       });
   });
 
+  // Offered only in the toolbar popup: in the detached window it would open a
+  // second copy of a window the user is already looking at.
+  dom.detach.hidden = isDetached;
+  dom.detach.addEventListener('click', detachWindow);
+
   dom.optionsLink.addEventListener('click', () => {
     ext.runtime.openOptionsPage();
     window.close();
@@ -613,6 +645,10 @@ function restoreAdvancedState(): void {
 }
 
 async function init(): Promise<void> {
+  // Lets the stylesheet drop the fixed popup width, which would otherwise leave
+  // the panel pinned to 320px inside a window the user can resize.
+  document.body.dataset.detached = String(isDetached);
+
   // The language is a stored preference, so it has to be resolved before any
   // text is written; otherwise the popup would flash English first.
   await initLocale();

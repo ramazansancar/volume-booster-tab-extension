@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Atvērt visus iestatījumus"
   },
+  "popupDetach": {
+    "message": "Atvērt atsevišķā logā"
+  },
   "popupEnjoying": {
     "message": "Vai patīk pastiprinājums?"
   },

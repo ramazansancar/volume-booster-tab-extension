@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Fungua mipangilio yote"
   },
+  "popupDetach": {
+    "message": "Fungua katika dirisha tofauti"
+  },
   "popupEnjoying": {
     "message": "Unafurahia uimarishaji?"
   },

@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Відкрити всі налаштування"
   },
+  "popupDetach": {
+    "message": "Відкрити в окремому вікні"
+  },
   "popupEnjoying": {
     "message": "Подобається підсилення?"
   },

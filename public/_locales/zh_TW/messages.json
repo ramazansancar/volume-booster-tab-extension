@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "開啟所有設定"
   },
+  "popupDetach": {
+    "message": "在獨立視窗中開啟"
+  },
   "popupEnjoying": {
     "message": "音量增強還滿意嗎？"
   },

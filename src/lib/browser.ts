@@ -146,6 +146,31 @@ export function createTab(url: string): Promise<chrome.tabs.Tab> {
   return promisify<chrome.tabs.Tab>((callback) => ext.tabs.create({ url }, callback));
 }
 
+/**
+ * Opens a URL in its own small window, with no browser chrome.
+ *
+ * Used to detach the popup. `type: 'popup'` is what keeps it chromeless and
+ * always-on-top-ish; a normal window would put the panel inside a tab strip and
+ * an address bar, which is not what the user asked for when they detached it.
+ */
+export function createPopupWindow(
+  url: string,
+  size: { width: number; height: number },
+): Promise<chrome.windows.Window | undefined> {
+  const options: chrome.windows.CreateData = {
+    url,
+    type: 'popup',
+    width: size.width,
+    height: size.height,
+  };
+  if (returnsPromises()) {
+    return ext.windows.create(options) as Promise<chrome.windows.Window | undefined>;
+  }
+  return promisify<chrome.windows.Window | undefined>((callback) =>
+    ext.windows.create(options, callback),
+  );
+}
+
 /** Looks up one tab by id. */
 export function getTab(tabId: number): Promise<chrome.tabs.Tab> {
   if (returnsPromises()) {

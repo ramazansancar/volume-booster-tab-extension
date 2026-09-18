@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "ಎಲ್ಲಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ"
   },
+  "popupDetach": {
+    "message": "ಪ್ರತ್ಯೇಕ ವಿಂಡೋದಲ್ಲಿ ತೆರೆಯಿರಿ"
+  },
   "popupEnjoying": {
     "message": "ಬೂಸ್ಟ್ ಇಷ್ಟವಾಯಿತೇ?"
   },

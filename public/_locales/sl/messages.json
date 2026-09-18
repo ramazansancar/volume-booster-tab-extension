@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Odpri vse nastavitve"
   },
+  "popupDetach": {
+    "message": "Odpri v ločenem oknu"
+  },
   "popupEnjoying": {
     "message": "Vam je ojačitev všeč?"
   },

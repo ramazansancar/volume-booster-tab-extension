@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Открыть все настройки"
   },
+  "popupDetach": {
+    "message": "Открыть в отдельном окне"
+  },
   "popupEnjoying": {
     "message": "Нравится усиление?"
   },

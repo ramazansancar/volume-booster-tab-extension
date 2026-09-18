@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Άνοιγμα όλων των ρυθμίσεων"
   },
+  "popupDetach": {
+    "message": "Άνοιγμα σε ξεχωριστό παράθυρο"
+  },
   "popupEnjoying": {
     "message": "Σας αρέσει η ενίσχυση;"
   },

@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "Abrir todas as definições"
   },
+  "popupDetach": {
+    "message": "Abrir numa janela separada"
+  },
   "popupEnjoying": {
     "message": "A gostar do reforço?"
   },

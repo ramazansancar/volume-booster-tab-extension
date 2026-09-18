@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "सर्व सेटिंग्ज उघडा"
   },
+  "popupDetach": {
+    "message": "वेगळ्या विंडोमध्ये उघडा"
+  },
   "popupEnjoying": {
     "message": "बूस्ट आवडले?"
   },

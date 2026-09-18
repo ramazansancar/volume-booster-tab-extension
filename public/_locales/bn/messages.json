@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "সব সেটিংস খুলুন"
   },
+  "popupDetach": {
+    "message": "আলাদা উইন্ডোতে খুলুন"
+  },
   "popupEnjoying": {
     "message": "বুস্ট উপভোগ করছেন?"
   },

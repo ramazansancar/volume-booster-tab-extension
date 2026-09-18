@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "باز کردن همه تنظیمات"
   },
+  "popupDetach": {
+    "message": "باز کردن در پنجره جداگانه"
+  },
   "popupEnjoying": {
     "message": "از تقویت صدا راضی هستید؟"
   },

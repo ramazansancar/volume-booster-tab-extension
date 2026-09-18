@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "فتح جميع الإعدادات"
   },
+  "popupDetach": {
+    "message": "فتح في نافذة منفصلة"
+  },
   "popupEnjoying": {
     "message": "هل يعجبك التعزيز؟"
   },

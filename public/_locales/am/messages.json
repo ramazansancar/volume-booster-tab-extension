@@ -170,6 +170,9 @@
   "popupOpenOptions": {
     "message": "ሁሉንም ቅንብሮች ክፈት"
   },
+  "popupDetach": {
+    "message": "በተለየ መስኮት ክፈት"
+  },
   "popupEnjoying": {
     "message": "ማጉላቱን እየተደሰቱበት ነው?"
   },
