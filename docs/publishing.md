@@ -2,6 +2,22 @@
 
 Per-store copy lives alongside this file: [`amo-submission.md`](amo-submission.md) for Firefox, [`chrome-submission.md`](chrome-submission.md) for Chrome and Edge, [`opera-submission.md`](opera-submission.md) for Opera, [`safari.md`](safari.md) for Safari. The per-language description text for every store lives in [`store-descriptions.md`](store-descriptions.md).
 
+## Live listings
+
+| Store | Status | Listing |
+| --- | --- | --- |
+| **Chrome Web Store** | Published | <https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad> |
+| **addons.mozilla.org** | Published | <https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/> |
+| **Edge Add-ons** | Published | <https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk> |
+| **Opera add-ons** | In review | — |
+| **App Store (Safari)** | Not submitted | — |
+
+Updates to a published listing go through the same upload flow as the first submission; only the review turnaround differs.
+
+---
+
+A plan for driving the Firefox side of this through the addons.mozilla.org API, instead of by hand, is in [`amo-api-automation.md`](amo-api-automation.md). Nothing in it is implemented yet, so the manual steps below are still the ones to follow.
+
 > [!IMPORTANT]
 > Always upload a **zip produced by `pnpm run package`**, never one left over from an earlier build. A plain `pnpm run build` refreshes `dist/<target>/` but deletes any existing archive rather than updating it, precisely so a stale zip can never be uploaded by mistake.
 
@@ -17,10 +33,10 @@ Upload artifacts land in `dist/<target>-<version>.zip`.
 
 | Store                  | Upload                                   | Why                                                                                                                                          |
 | ---------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **addons.mozilla.org** | `firefox-mv2-<version>.zip`              | Supports Firefox 91+, including ESR and Firefox for Android. Mozilla continues to support MV2, so there is no reason to narrow the audience. |
-| **Chrome Web Store**   | `chrome-mv3-<version>.zip`               | MV3 is mandatory for new Chrome submissions.                                                                                                 |
-| **Edge Add-ons**       | `edge-mv3-<version>.zip`                 | Same as Chrome, with Edge metadata.                                                                                                          |
-| **Opera add-ons**      | `opera-mv2-<version>.zip`                | Opera's store still accepts MV2. Its listing form differs the most — see [`opera-submission.md`](opera-submission.md).                        |
+| **[addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/)** | `firefox-mv2-<version>.zip`              | Supports Firefox 91+, including ESR and Firefox for Android. Mozilla continues to support MV2, so there is no reason to narrow the audience. |
+| **[Chrome Web Store](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad)** | `chrome-mv3-<version>.zip`               | MV3 is mandatory for new Chrome submissions.                                                                                                 |
+| **[Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk)** | `edge-mv3-<version>.zip`                 | Same as Chrome, with Edge metadata.                                                                                                          |
+| **Opera add-ons**      | `opera-mv2-<version>.zip`                | Opera's store still accepts MV2. Its listing form differs the most — see [`opera-submission.md`](opera-submission.md).                       |
 | **App Store (Safari)** | Not a zip — see [`safari.md`](safari.md) | Requires Xcode conversion and signing.                                                                                                       |
 
 `chrome-mv2` and `firefox-mv3` are not for store submission. They exist for users on Chromium forks still running MV2, and as a ready migration path if Mozilla ever retires MV2.
@@ -114,10 +130,10 @@ Edge asks the same questions in its **Availability and properties** step. The an
 
 Two fields have no Chrome counterpart:
 
-| Field                         | Answer                                                                                                                                                       |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Category (required)           | **Productivity** — Edge's list has no _Tools_ entry. See [`chrome-submission.md`](chrome-submission.md#category) for why not Accessibility or Entertainment. |
-| Privacy policy URL (required) | `https://github.com/ramazansancar/volume-booster-tab-extension/blob/master/PRIVACY.md` — a README anchor is rejected as invalid; use the standalone [`PRIVACY.md`](../PRIVACY.md) page. Chrome requires it too.                             |
+| Field                         | Answer                                                                                                                                                                                                          |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Category (required)           | **Productivity** — Edge's list has no _Tools_ entry. See [`chrome-submission.md`](chrome-submission.md#category) for why not Accessibility or Entertainment.                                                    |
+| Privacy policy URL (required) | `https://github.com/ramazansancar/volume-booster-tab-extension/blob/master/PRIVACY.md` — a README anchor is rejected as invalid; use the standalone [`PRIVACY.md`](../PRIVACY.md) page. Chrome requires it too. |
 
 ---
 

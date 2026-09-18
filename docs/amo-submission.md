@@ -1,6 +1,6 @@
 # AMO submission text
 
-Copy-paste material for the addons.mozilla.org submission form. For the Chrome Web Store and Edge, see [`chrome-submission.md`](chrome-submission.md); for which build goes where, see [`publishing.md`](publishing.md). Keep this file updated when behaviour changes, so a release never needs the text rewritten from scratch.
+Copy-paste material for the addons.mozilla.org submission form. The listing is live at <https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/>. For the Chrome Web Store and Edge, see [`chrome-submission.md`](chrome-submission.md); for which build goes where, see [`publishing.md`](publishing.md). Keep this file updated when behaviour changes, so a release never needs the text rewritten from scratch.
 
 > [!NOTE]
 > AMO's post-upload checklist asks for two things: **version notes** and, if the add-on needs an account to test, **notes to reviewer**. This add-on needs no account, but the reviewer note below explains how to exercise it, which speeds up review.

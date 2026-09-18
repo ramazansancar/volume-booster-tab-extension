@@ -2,6 +2,8 @@
 
 Copy-paste material for the Chrome Web Store dashboard. Edge Add-ons asks the same questions in a different order and accepts the same answers, so this file covers both; the differences are noted at the end.
 
+Both listings are live: [Chrome Web Store](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) and [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk). The text below is what they were published with, and what an update re-uses.
+
 > [!IMPORTANT]
 > Upload `dist/chrome-mv3-<version>.zip`, produced by `pnpm run package`. A plain
 > `pnpm run build` refreshes the unpacked folder but deletes any existing zip

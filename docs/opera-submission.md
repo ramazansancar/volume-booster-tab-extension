@@ -2,6 +2,8 @@
 
 Copy-paste material for the Opera add-ons dashboard (<https://addons.opera.com/developer/>).
 
+The Opera listing is still in review. Chrome, Firefox and Edge are already published — see [`publishing.md`](publishing.md#live-listings).
+
 > [!IMPORTANT]
 > Upload `dist/opera-mv2-<version>.zip`, produced by `pnpm run package`. Opera is
 > the one store that still takes the **Manifest V2** build — see
