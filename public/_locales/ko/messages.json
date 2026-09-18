@@ -304,6 +304,23 @@
   "optionsPresetDelete": {
     "message": "Delete"
   },
+  "optionsPresetDeleteConfirm": {
+    "message": "Delete \"$NAME$\"?",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsPresetMoveUp": {
+    "message": "Move up"
+  },
+  "optionsPresetMoveDown": {
+    "message": "Move down"
+  },
+  "optionsPresetsHint": {
+    "message": "The order here is the order they appear in the popup."
+  },
   "popupGainHint": {
     "message": "100%를 넘으면 왜곡을 막기 위해 리미터가 켜진 상태로 유지됩니다."
   },

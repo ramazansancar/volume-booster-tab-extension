@@ -13,6 +13,8 @@ import { DEFAULT_MAX_GAIN } from '@/lib/defaults';
 import type { AudioSettings } from '@/types';
 import { ABSOLUTE_MAX_GAIN } from '@/lib/defaults';
 import { clearAllOrigins, listOrigins } from '@/lib/storage';
+import { MAX_PRESET_NAME } from '@/lib/presets';
+import { EQ_BAND_FREQUENCIES, type EqPreset } from '@/types';
 import type { GlobalPreferences, PersistenceMode, UiToBackgroundMessage } from '@/types';
 
 /**
@@ -41,6 +43,8 @@ const dom = {
   language: document.getElementById('language') as HTMLSelectElement,
   saveStatus: document.getElementById('save-status') as HTMLElement,
   aboutVersion: document.getElementById('about-version') as HTMLElement,
+  presetsList: document.getElementById('presets-list') as HTMLUListElement,
+  presetsEmpty: document.getElementById('presets-empty') as HTMLElement,
 };
 
 let preferences: GlobalPreferences | null = null;
@@ -78,8 +82,116 @@ function render(next: GlobalPreferences): void {
   }
   dom.autoLimiter.checked = next.autoLimiterAboveUnity;
   dom.tabCapture.checked = next.tabCaptureFallback;
+  renderPresets(next.userPresets);
 
   rendering = false;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Saved presets                                                               */
+/* -------------------------------------------------------------------------- */
+
+/** Sends the whole list back, which is how every edit here is expressed. */
+function commitPresets(presets: EqPreset[]): void {
+  void send<GlobalPreferences>({ type: 'ui:set-presets', presets }).then((next) => {
+    render(next);
+    flashSaved();
+  });
+}
+
+/** A one-line sketch of the curve, so a preset is identifiable without opening it. */
+function describeCurve(gains: number[]): string {
+  return EQ_BAND_FREQUENCIES.map((frequency, index) => {
+    const value = gains[index] ?? 0;
+    const hz = frequency >= 1000 ? `${frequency / 1000}k` : String(frequency);
+    return `${hz} ${value > 0 ? '+' : ''}${value}`;
+  }).join('  ');
+}
+
+function renderPresets(presets: EqPreset[]): void {
+  dom.presetsList.replaceChildren();
+  dom.presetsEmpty.hidden = presets.length > 0;
+
+  presets.forEach((preset, index) => {
+    const row = document.createElement('li');
+    row.className = 'preset-item';
+
+    const name = document.createElement('span');
+    name.className = 'preset-item__name';
+    name.textContent = preset.name ?? '';
+
+    const curve = document.createElement('span');
+    curve.className = 'preset-item__curve';
+    curve.textContent = describeCurve(preset.gains);
+
+    const actions = document.createElement('div');
+    actions.className = 'preset-item__actions';
+
+    // Up and down rather than drag: a two-button reorder works with a keyboard
+    // and a screen reader, which a drag handle does not without a great deal
+    // more code.
+    const move = (delta: number, labelKey: string, fallback: string, glyph: string) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'icon-button';
+      button.textContent = glyph;
+      button.title = t(labelKey, fallback);
+      button.setAttribute('aria-label', `${t(labelKey, fallback)}: ${preset.name ?? ''}`);
+      button.disabled = delta < 0 ? index === 0 : index === presets.length - 1;
+      button.addEventListener('click', () => {
+        const next = [...presets];
+        const target = index + delta;
+        const moved = next[index];
+        const displaced = next[target];
+        if (!moved || !displaced) return;
+        next[index] = displaced;
+        next[target] = moved;
+        commitPresets(next);
+      });
+      return button;
+    };
+
+    const rename = document.createElement('button');
+    rename.type = 'button';
+    rename.className = 'link-button';
+    rename.textContent = t('optionsPresetRename', 'Rename');
+    rename.addEventListener('click', () => {
+      const entered = window.prompt(
+        t('popupPresetNamePrompt', 'Name for this preset'),
+        preset.name ?? '',
+      );
+      if (entered === null) return;
+      const trimmed = entered.trim().slice(0, MAX_PRESET_NAME);
+      // An empty name would leave a row that cannot be told apart from another.
+      if (!trimmed) return;
+      commitPresets(
+        presets.map((entry) => (entry.id === preset.id ? { ...entry, name: trimmed } : entry)),
+      );
+    });
+
+    const remove = document.createElement('button');
+    remove.type = 'button';
+    remove.className = 'link-button link-button--danger';
+    remove.textContent = t('optionsPresetDelete', 'Delete');
+    remove.addEventListener('click', () => {
+      // Deleting is the one irreversible action on this page: the curve is not
+      // recoverable once it is gone, so it asks first.
+      const question = t('optionsPresetDeleteConfirm', 'Delete "$NAME$"?', {
+        NAME: preset.name ?? '',
+      });
+      if (!window.confirm(question)) return;
+      commitPresets(presets.filter((entry) => entry.id !== preset.id));
+    });
+
+    actions.append(
+      move(-1, 'optionsPresetMoveUp', 'Move up', '↑'),
+      move(1, 'optionsPresetMoveDown', 'Move down', '↓'),
+      rename,
+      remove,
+    );
+    row.append(name, curve, actions);
+    dom.presetsList.append(row);
+  });
 }
 
 async function save(patch: Partial<GlobalPreferences>): Promise<void> {

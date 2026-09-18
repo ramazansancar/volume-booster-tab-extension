@@ -304,6 +304,23 @@
   "optionsPresetDelete": {
     "message": "Sil"
   },
+  "optionsPresetDeleteConfirm": {
+    "message": "\"$NAME$\" silinsin mi?",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsPresetMoveUp": {
+    "message": "Yukarı taşı"
+  },
+  "optionsPresetMoveDown": {
+    "message": "Aşağı taşı"
+  },
+  "optionsPresetsHint": {
+    "message": "Buradaki sıra, açılır pencerede görünecek sıradır."
+  },
   "popupGainHint": {
     "message": "%100 üzerinde limitör bozulmayı önlemek için açık kalır."
   },

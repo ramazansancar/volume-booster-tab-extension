@@ -352,3 +352,66 @@ body {
   font-size: 12px;
   color: var(--text-muted);
 }
+
+/* Saved presets ------------------------------------------------------------ */
+
+.presets-list {
+  margin: 0 0 4px;
+  padding: 0;
+  list-style: none;
+}
+
+.preset-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    'name actions'
+    'curve actions';
+  align-items: center;
+  gap: 2px 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.preset-item__name {
+  grid-area: name;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+/* The curve is the only way to tell two similarly named presets apart without
+   applying them, so it is shown rather than hidden behind a disclosure. */
+.preset-item__curve {
+  grid-area: curve;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+
+.preset-item__actions {
+  grid-area: actions;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.preset-item__actions .icon-button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.preset-item__actions .icon-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.link-button--danger {
+  color: var(--danger);
+}

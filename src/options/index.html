@@ -100,6 +100,22 @@
         </div>
       </section>
 
+      <!--
+        Preset management lives here rather than in the popup: renaming and
+        reordering need room the 320px popup does not have, and they are things
+        done once rather than every time the popup opens.
+      -->
+      <section class="card">
+        <h2 class="card__title" data-i18n="optionsPresets">Saved presets</h2>
+        <p class="card__lead" id="presets-empty" data-i18n="optionsPresetsEmpty">
+          No presets saved yet. Save one from the popup.
+        </p>
+        <p class="card__lead" data-i18n="optionsPresetsHint">
+          The order here is the order they appear in the popup.
+        </p>
+        <ul class="presets-list" id="presets-list"></ul>
+      </section>
+
       <section class="card">
         <h2 class="card__title" data-i18n="optionsSavedSitesTitle">Saved sites</h2>
         <p class="card__lead" id="origins-summary" data-i18n="optionsNoSavedSites">No sites saved yet.</p>

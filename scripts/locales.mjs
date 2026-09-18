@@ -2568,6 +2568,23 @@ const MESSAGES = {
     en: 'Delete', tr: 'Sil',
   },
 
+  optionsPresetDeleteConfirm: {
+    en: 'Delete "$NAME$"?', tr: '"$NAME$" silinsin mi?',
+  },
+
+  optionsPresetMoveUp: {
+    en: 'Move up', tr: 'Yukarı taşı',
+  },
+
+  optionsPresetMoveDown: {
+    en: 'Move down', tr: 'Aşağı taşı',
+  },
+
+  optionsPresetsHint: {
+    en: 'The order here is the order they appear in the popup.',
+    tr: 'Buradaki sıra, açılır pencerede görünecek sıradır.',
+  },
+
   popupGainHint: {
     en: 'Above 100% the limiter stays on to prevent distortion.',
     am: 'ከ100% በላይ ማዛባትን ለመከላከል ገዳቢው በርቶ ይቆያል።',

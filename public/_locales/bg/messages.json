@@ -304,6 +304,23 @@
   "optionsPresetDelete": {
     "message": "Delete"
   },
+  "optionsPresetDeleteConfirm": {
+    "message": "Delete \"$NAME$\"?",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsPresetMoveUp": {
+    "message": "Move up"
+  },
+  "optionsPresetMoveDown": {
+    "message": "Move down"
+  },
+  "optionsPresetsHint": {
+    "message": "The order here is the order they appear in the popup."
+  },
   "popupGainHint": {
     "message": "Над 100% лимитерът остава включен, за да предотврати изкривяване."
   },
