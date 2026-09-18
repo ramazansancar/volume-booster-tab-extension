@@ -26,6 +26,7 @@ Opera listing is in review. Safari builds from source — see [`docs/safari.md`]
 - [Build from source](#build-from-source)
 - [How it works](#how-it-works)
 - [Project layout](#project-layout)
+- [FAQ](#faq)
 - [Privacy](#privacy)
 - [Contributing](#contributing)
 - [License](#license)
@@ -389,6 +390,102 @@ volume-booster-tab-extension/
 ```
 
 ---
+
+## FAQ
+
+<details>
+<summary><b>Why does another extension claim 2000% and this one 600%?</b></summary>
+
+Because 600% is roughly where the number stops meaning anything.
+
+A gain node will happily multiply by twenty. What it cannot do is make the sound card accept it: the signal is clamped to a fixed range at the end of the chain, and a typical track already peaks near the top of that range. Multiplying by twenty throws most of the waveform away, and what you hear is clipping — the harsh, crackly distortion people then describe as "noise".
+
+The ceiling here is 600% by default and 1000% at most, which is the range the limiter can keep clean. You can raise it in the settings; the warning next to it is there because loud is a speaker and hearing problem before it is an audio-quality one.
+
+</details>
+
+<details>
+<summary><b>The volume slider moves but nothing gets louder.</b></summary>
+
+Check the status line at the bottom of the popup — it says which path is in use and, when nothing can be done, why.
+
+The usual causes:
+
+- **DRM-protected video** (Netflix, Disney+, Prime Video). The browser deliberately does not let extensions touch that audio. Nothing can be done about this, on any extension.
+- **Cross-origin media without CORS headers.** The page can play it but scripts cannot read it. On Chromium there is a **Try tab capture** button in the popup for this; it lights the tab's recording indicator, which is why it is offered rather than used automatically.
+- **The page has not started playing yet.** The boost attaches to media elements as they appear, so press play first.
+
+</details>
+
+<details>
+<summary><b>Does it keep the volume for a site next time I visit?</b></summary>
+
+Only if you ask it to. Tick **Remember this site** in the popup, or change the default under *When a tab closes* in the settings.
+
+The default is deliberately the forgetful one: a 600% boost that survives silently until the next visit is how people get startled.
+
+</details>
+
+<details>
+<summary><b>What is the limiter for, and should I turn it off?</b></summary>
+
+It catches peaks before they clip, which is what stops a boosted track from crackling on loud passages. Leave it on above 100%.
+
+It is worth switching off only when you are boosting something very quiet and uniform — a voice recording, say — and want to hear exactly what is there.
+
+</details>
+
+<details>
+<summary><b>Bass/mid/treble or the six-band equalizer — which should I use?</b></summary>
+
+They are the same setting at two resolutions. The three tone controls write the same six bands, with overlapping ranges so each shades into the next the way an amplifier's tone stack does.
+
+Use the three for a quick shape. Open **Advanced settings** for the six when you want one specific range and nothing around it — each band is named for what it does to the sound rather than just its frequency.
+
+</details>
+
+<details>
+<summary><b>Can I move my settings to another browser or computer?</b></summary>
+
+Yes. **Backup and transfer** in the settings exports everything — defaults, saved sites and presets — to a JSON file, and imports it anywhere else.
+
+The file records its own format version, and every version this extension has ever written can still be imported, so an old backup does not stop working after an update.
+
+</details>
+
+<details>
+<summary><b>Why does the popup close when I click away?</b></summary>
+
+That is how browser popups work; the extension cannot prevent it.
+
+Use the detach button in the popup's top-right corner to open the same panel as a separate window that stays put while you work in the page.
+
+</details>
+
+<details>
+<summary><b>Does it slow the page down or use the network?</b></summary>
+
+No network, ever — the extension makes no requests of any kind, and nothing you do leaves your machine. See [Privacy](#privacy).
+
+The audio work happens in the browser's own audio engine on a dedicated thread. On an idle tab there is no graph at all: it is built when audio starts and torn down when the tab goes away.
+
+</details>
+
+<details>
+<summary><b>Is there an equalizer preset for my kind of listening?</b></summary>
+
+There are eighteen built in, covering situations (Speech, Cinema, Night, Outdoors) and genres (Rock, Jazz, Classical, Hip-hop and more).
+
+If none fits, dial in your own and press **+** beside the preset list to save it under a name. Saved presets can be renamed, reordered and deleted on the settings page.
+
+</details>
+
+<details>
+<summary><b>It says "Browser pages cannot be boosted".</b></summary>
+
+Extensions are not allowed to run on the browser's own pages — `chrome://`, `about:`, the web store, the new-tab page — so there is nothing for the boost to attach to. Open a normal web page and the controls come back.
+
+</details>
 
 ## Privacy
 
