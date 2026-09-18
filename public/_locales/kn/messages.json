@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "ಎಲ್ಲಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ"
   },
+  "popupEnjoying": {
+    "message": "ಬೂಸ್ಟ್ ಇಷ್ಟವಾಯಿತೇ?"
+  },
+  "popupRateOn": {
+    "message": "$STORE$ ನಲ್ಲಿ ರೇಟ್ ಮಾಡಿ"
+  },
+  "popupSupport": {
+    "message": "ಸಹಾಯ ಪಡೆಯಿರಿ"
+  },
+  "popupReportIssue": {
+    "message": "GitHub ನಲ್ಲಿ ಸಮಸ್ಯೆ ವರದಿ ಮಾಡಿ"
+  },
   "popupGainHint": {
     "message": "100% ಮೀರಿದಾಗ ವಿರೂಪ ತಡೆಯಲು ಲಿಮಿಟರ್ ಆನ್ ಆಗಿರುತ್ತದೆ."
   },

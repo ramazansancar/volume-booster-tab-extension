@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "เปิดการตั้งค่าทั้งหมด"
   },
+  "popupEnjoying": {
+    "message": "ชอบการเพิ่มเสียงไหม?"
+  },
+  "popupRateOn": {
+    "message": "ให้คะแนนบน $STORE$"
+  },
+  "popupSupport": {
+    "message": "ขอความช่วยเหลือ"
+  },
+  "popupReportIssue": {
+    "message": "รายงานปัญหาบน GitHub"
+  },
   "popupGainHint": {
     "message": "เกิน 100% ลิมิตเตอร์จะเปิดอยู่เพื่อป้องกันเสียงแตก"
   },

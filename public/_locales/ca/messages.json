@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Obre tota la configuració"
   },
+  "popupEnjoying": {
+    "message": "T’agrada l’amplificació?"
+  },
+  "popupRateOn": {
+    "message": "Valora-la a $STORE$"
+  },
+  "popupSupport": {
+    "message": "Obtén ajuda"
+  },
+  "popupReportIssue": {
+    "message": "Informa d’un problema a GitHub"
+  },
   "popupGainHint": {
     "message": "Per sobre del 100% el limitador es manté actiu per evitar distorsió."
   },

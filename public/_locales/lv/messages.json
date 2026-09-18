@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Atvērt visus iestatījumus"
   },
+  "popupEnjoying": {
+    "message": "Vai patīk pastiprinājums?"
+  },
+  "popupRateOn": {
+    "message": "Novērtēt $STORE$"
+  },
+  "popupSupport": {
+    "message": "Saņemt palīdzību"
+  },
+  "popupReportIssue": {
+    "message": "Ziņot par problēmu GitHub"
+  },
   "popupGainHint": {
     "message": "Virs 100% limitators paliek ieslēgts, lai novērstu kropļojumus."
   },

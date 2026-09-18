@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "모든 설정 열기"
   },
+  "popupEnjoying": {
+    "message": "볼륨 부스트가 마음에 드시나요?"
+  },
+  "popupRateOn": {
+    "message": "$STORE$에서 평가"
+  },
+  "popupSupport": {
+    "message": "도움말 보기"
+  },
+  "popupReportIssue": {
+    "message": "GitHub에 문제 신고"
+  },
   "popupGainHint": {
     "message": "100%를 넘으면 왜곡을 막기 위해 리미터가 켜진 상태로 유지됩니다."
   },

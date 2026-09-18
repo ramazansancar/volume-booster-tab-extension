@@ -393,3 +393,68 @@ body[data-disabled='true'] .advanced {
   padding: 7px 0;
   text-align: center;
 }
+
+/* Rating and support ------------------------------------------------------- */
+
+/* Sits below the settings link, separated by a rule so it reads as a footer
+   rather than as another control. */
+.feedback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.feedback__rate {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Dropped on a build whose store has no listing, leaving the support link to
+   sit alone on the row. */
+.feedback[data-rateable='false'] .feedback__rate {
+  display: none;
+}
+
+.feedback__prompt {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.stars {
+  display: flex;
+  gap: 1px;
+}
+
+/* The stars open the store's review form; they do not record a rating here,
+   so they are buttons rather than radio inputs. */
+.star {
+  padding: 0 1px;
+  border: 0;
+  background: none;
+  color: var(--track);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 90ms ease-out;
+}
+
+/* Hovering one star fills it and everything to its left, matching the control
+   the user is about to land on. */
+.star[data-lit='true'] {
+  color: #f5a623;
+}
+
+.feedback__support {
+  flex-shrink: 0;
+}
+
+/* Browser pages cannot be boosted, but they are no reason to hide the way to
+   report a problem, so this row stays live while the controls grey out. */
+body[data-disabled='true'] .feedback {
+  opacity: 1;
+  pointer-events: auto;
+}

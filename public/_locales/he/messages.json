@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "פתח את כל ההגדרות"
   },
+  "popupEnjoying": {
+    "message": "נהנים מההגברה?"
+  },
+  "popupRateOn": {
+    "message": "דרג ב-$STORE$"
+  },
+  "popupSupport": {
+    "message": "קבל עזרה"
+  },
+  "popupReportIssue": {
+    "message": "דווח על בעיה ב-GitHub"
+  },
   "popupGainHint": {
     "message": "מעל 100% המגביל נשאר פעיל כדי למנוע עיוות."
   },

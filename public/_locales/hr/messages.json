@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Otvori sve postavke"
   },
+  "popupEnjoying": {
+    "message": "Sviđa li vam se pojačanje?"
+  },
+  "popupRateOn": {
+    "message": "Ocijeni na $STORE$"
+  },
+  "popupSupport": {
+    "message": "Zatraži pomoć"
+  },
+  "popupReportIssue": {
+    "message": "Prijavi problem na GitHubu"
+  },
   "popupGainHint": {
     "message": "Iznad 100% limiter ostaje uključen kako bi spriječio izobličenje."
   },

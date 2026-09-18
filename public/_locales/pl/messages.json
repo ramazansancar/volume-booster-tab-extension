@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Otwórz wszystkie ustawienia"
   },
+  "popupEnjoying": {
+    "message": "Podoba Ci się wzmocnienie?"
+  },
+  "popupRateOn": {
+    "message": "Oceń w $STORE$"
+  },
+  "popupSupport": {
+    "message": "Uzyskaj pomoc"
+  },
+  "popupReportIssue": {
+    "message": "Zgłoś problem na GitHubie"
+  },
   "popupGainHint": {
     "message": "Powyżej 100% limiter pozostaje włączony, aby zapobiec zniekształceniom."
   },

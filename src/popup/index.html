@@ -138,6 +138,26 @@
       >
         Open all settings
       </button>
+
+      <!--
+        Rating and support. The stars are a real rating control only in the
+        sense that they open the store's own review form - we cannot submit a
+        rating on the user's behalf, and pretending otherwise would be a dark
+        pattern. So every star goes to the same place, and the label says
+        plainly that it opens the store.
+
+        The whole row is removed by the script on a build whose store has no
+        listing to review, rather than being shown disabled.
+      -->
+      <section class="feedback" id="feedback" hidden>
+        <div class="feedback__rate">
+          <span class="feedback__prompt" data-i18n="popupEnjoying">Enjoying the boost?</span>
+          <div class="stars" id="stars" role="group"></div>
+        </div>
+        <button type="button" class="link-button feedback__support" id="support-link">
+          <span data-i18n="popupSupport">Get help</span>
+        </button>
+      </section>
     </main>
 
     <script type="module" src="./popup.js"></script>

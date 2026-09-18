@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Открыть все настройки"
   },
+  "popupEnjoying": {
+    "message": "Нравится усиление?"
+  },
+  "popupRateOn": {
+    "message": "Оценить в $STORE$"
+  },
+  "popupSupport": {
+    "message": "Получить помощь"
+  },
+  "popupReportIssue": {
+    "message": "Сообщить о проблеме на GitHub"
+  },
   "popupGainHint": {
     "message": "Выше 100% лимитер остаётся включённым, чтобы избежать искажений."
   },

@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "সব সেটিংস খুলুন"
   },
+  "popupEnjoying": {
+    "message": "বুস্ট উপভোগ করছেন?"
+  },
+  "popupRateOn": {
+    "message": "$STORE$-এ রেট করুন"
+  },
+  "popupSupport": {
+    "message": "সহায়তা নিন"
+  },
+  "popupReportIssue": {
+    "message": "GitHub-এ সমস্যা জানান"
+  },
   "popupGainHint": {
     "message": "১০০% এর উপরে বিকৃতি রোধে লিমিটার চালু থাকে।"
   },

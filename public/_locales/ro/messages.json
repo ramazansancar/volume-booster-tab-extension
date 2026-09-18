@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Deschide toate setările"
   },
+  "popupEnjoying": {
+    "message": "Îți place amplificarea?"
+  },
+  "popupRateOn": {
+    "message": "Evaluează pe $STORE$"
+  },
+  "popupSupport": {
+    "message": "Obține ajutor"
+  },
+  "popupReportIssue": {
+    "message": "Raportează o problemă pe GitHub"
+  },
   "popupGainHint": {
     "message": "Peste 100% limitatorul rămâne activ pentru a preveni distorsiunea."
   },

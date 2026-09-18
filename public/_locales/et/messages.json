@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Ava kõik seaded"
   },
+  "popupEnjoying": {
+    "message": "Kas võimendus meeldib?"
+  },
+  "popupRateOn": {
+    "message": "Hinda $STORE$-s"
+  },
+  "popupSupport": {
+    "message": "Küsi abi"
+  },
+  "popupReportIssue": {
+    "message": "Teata probleemist GitHubis"
+  },
   "popupGainHint": {
     "message": "Üle 100% jääb limiiter sisse, et vältida moonutusi."
   },

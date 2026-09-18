@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "అన్ని సెట్టింగ్‌లను తెరవండి"
   },
+  "popupEnjoying": {
+    "message": "బూస్ట్ నచ్చిందా?"
+  },
+  "popupRateOn": {
+    "message": "$STORE$లో రేట్ చేయండి"
+  },
+  "popupSupport": {
+    "message": "సహాయం పొందండి"
+  },
+  "popupReportIssue": {
+    "message": "GitHubలో సమస్యను నివేదించండి"
+  },
   "popupGainHint": {
     "message": "100% పైన వక్రీకరణను నివారించడానికి లిమిటర్ ఆన్‌లో ఉంటుంది."
   },

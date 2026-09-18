@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "فتح جميع الإعدادات"
   },
+  "popupEnjoying": {
+    "message": "هل يعجبك التعزيز؟"
+  },
+  "popupRateOn": {
+    "message": "قيّمه على $STORE$"
+  },
+  "popupSupport": {
+    "message": "الحصول على مساعدة"
+  },
+  "popupReportIssue": {
+    "message": "الإبلاغ عن مشكلة على GitHub"
+  },
   "popupGainHint": {
     "message": "فوق 100% يظل المحدد مفعلاً لمنع التشويه."
   },

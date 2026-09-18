@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "ሁሉንም ቅንብሮች ክፈት"
   },
+  "popupEnjoying": {
+    "message": "ማጉላቱን እየተደሰቱበት ነው?"
+  },
+  "popupRateOn": {
+    "message": "በ$STORE$ ላይ ደረጃ ይስጡ"
+  },
+  "popupSupport": {
+    "message": "እገዛ ያግኙ"
+  },
+  "popupReportIssue": {
+    "message": "በGitHub ላይ ችግር ያሳውቁ"
+  },
   "popupGainHint": {
     "message": "ከ100% በላይ ማዛባትን ለመከላከል ገዳቢው በርቶ ይቆያል።"
   },

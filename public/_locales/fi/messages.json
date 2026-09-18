@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Avaa kaikki asetukset"
   },
+  "popupEnjoying": {
+    "message": "Pidätkö äänenvoimistuksesta?"
+  },
+  "popupRateOn": {
+    "message": "Arvioi palvelussa $STORE$"
+  },
+  "popupSupport": {
+    "message": "Hae apua"
+  },
+  "popupReportIssue": {
+    "message": "Ilmoita ongelmasta GitHubissa"
+  },
   "popupGainHint": {
     "message": "Yli 100 % rajoitin pysyy päällä säröytymisen estämiseksi."
   },

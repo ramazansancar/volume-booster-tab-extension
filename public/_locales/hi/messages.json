@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "सभी सेटिंग्स खोलें"
   },
+  "popupEnjoying": {
+    "message": "बूस्ट पसंद आया?"
+  },
+  "popupRateOn": {
+    "message": "$STORE$ पर रेट करें"
+  },
+  "popupSupport": {
+    "message": "सहायता पाएं"
+  },
+  "popupReportIssue": {
+    "message": "GitHub पर समस्या बताएं"
+  },
   "popupGainHint": {
     "message": "100% से ऊपर विरूपण रोकने के लिए लिमिटर चालू रहता है।"
   },

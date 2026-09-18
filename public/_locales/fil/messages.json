@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Buksan ang lahat ng setting"
   },
+  "popupEnjoying": {
+    "message": "Nagugustuhan ang boost?"
+  },
+  "popupRateOn": {
+    "message": "I-rate sa $STORE$"
+  },
+  "popupSupport": {
+    "message": "Humingi ng tulong"
+  },
+  "popupReportIssue": {
+    "message": "Mag-ulat ng problema sa GitHub"
+  },
   "popupGainHint": {
     "message": "Higit sa 100% nananatiling naka-on ang limiter upang maiwasan ang distortion."
   },

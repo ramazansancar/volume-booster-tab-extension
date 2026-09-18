@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Odpri vse nastavitve"
   },
+  "popupEnjoying": {
+    "message": "Vam je ojačitev všeč?"
+  },
+  "popupRateOn": {
+    "message": "Oceni na $STORE$"
+  },
+  "popupSupport": {
+    "message": "Pridobi pomoč"
+  },
+  "popupReportIssue": {
+    "message": "Prijavi težavo na GitHubu"
+  },
   "popupGainHint": {
     "message": "Nad 100 % omejevalnik ostane vklopljen, da prepreči popačenje."
   },

@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Отвори всички настройки"
   },
+  "popupEnjoying": {
+    "message": "Харесва ли ви усилването?"
+  },
+  "popupRateOn": {
+    "message": "Оценете в $STORE$"
+  },
+  "popupSupport": {
+    "message": "Получете помощ"
+  },
+  "popupReportIssue": {
+    "message": "Докладвайте проблем в GitHub"
+  },
   "popupGainHint": {
     "message": "Над 100% лимитерът остава включен, за да предотврати изкривяване."
   },

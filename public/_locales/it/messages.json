@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Apri tutte le impostazioni"
   },
+  "popupEnjoying": {
+    "message": "Ti piace il potenziamento?"
+  },
+  "popupRateOn": {
+    "message": "Valuta su $STORE$"
+  },
+  "popupSupport": {
+    "message": "Ottieni aiuto"
+  },
+  "popupReportIssue": {
+    "message": "Segnala un problema su GitHub"
+  },
   "popupGainHint": {
     "message": "Oltre il 100% il limitatore resta attivo per evitare distorsioni."
   },

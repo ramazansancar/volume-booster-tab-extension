@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "എല്ലാ ക്രമീകരണങ്ങളും തുറക്കുക"
   },
+  "popupEnjoying": {
+    "message": "ബൂസ്റ്റ് ഇഷ്ടപ്പെട്ടോ?"
+  },
+  "popupRateOn": {
+    "message": "$STORE$-ൽ റേറ്റ് ചെയ്യുക"
+  },
+  "popupSupport": {
+    "message": "സഹായം നേടുക"
+  },
+  "popupReportIssue": {
+    "message": "GitHub-ൽ പ്രശ്നം റിപ്പോർട്ട് ചെയ്യുക"
+  },
   "popupGainHint": {
     "message": "100% ന് മുകളിൽ വക്രീകരണം തടയാൻ ലിമിറ്റർ ഓണായി തുടരും."
   },

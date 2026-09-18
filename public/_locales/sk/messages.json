@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Otvoriť všetky nastavenia"
   },
+  "popupEnjoying": {
+    "message": "Páči sa vám zosilnenie?"
+  },
+  "popupRateOn": {
+    "message": "Ohodnotiť na $STORE$"
+  },
+  "popupSupport": {
+    "message": "Získať pomoc"
+  },
+  "popupReportIssue": {
+    "message": "Nahlásiť problém na GitHube"
+  },
   "popupGainHint": {
     "message": "Nad 100 % zostáva limiter zapnutý, aby zabránil skresleniu."
   },

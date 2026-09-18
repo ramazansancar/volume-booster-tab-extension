@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "すべての設定を開く"
   },
+  "popupEnjoying": {
+    "message": "音量アップは気に入りましたか？"
+  },
+  "popupRateOn": {
+    "message": "$STORE$ で評価"
+  },
+  "popupSupport": {
+    "message": "ヘルプを見る"
+  },
+  "popupReportIssue": {
+    "message": "GitHub で問題を報告"
+  },
   "popupGainHint": {
     "message": "100% を超えると歪みを防ぐためリミッターが有効のままになります。"
   },

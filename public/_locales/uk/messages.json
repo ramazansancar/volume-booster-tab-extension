@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Відкрити всі налаштування"
   },
+  "popupEnjoying": {
+    "message": "Подобається підсилення?"
+  },
+  "popupRateOn": {
+    "message": "Оцінити в $STORE$"
+  },
+  "popupSupport": {
+    "message": "Отримати допомогу"
+  },
+  "popupReportIssue": {
+    "message": "Повідомити про проблему на GitHub"
+  },
   "popupGainHint": {
     "message": "Понад 100% лімітер залишається увімкненим, щоб уникнути спотворень."
   },

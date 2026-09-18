@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Άνοιγμα όλων των ρυθμίσεων"
   },
+  "popupEnjoying": {
+    "message": "Σας αρέσει η ενίσχυση;"
+  },
+  "popupRateOn": {
+    "message": "Αξιολόγηση στο $STORE$"
+  },
+  "popupSupport": {
+    "message": "Λήψη βοήθειας"
+  },
+  "popupReportIssue": {
+    "message": "Αναφορά προβλήματος στο GitHub"
+  },
   "popupGainHint": {
     "message": "Πάνω από 100% το limiter παραμένει ενεργό για αποφυγή παραμόρφωσης."
   },

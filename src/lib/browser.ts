@@ -132,6 +132,20 @@ export function queryTabs(query: chrome.tabs.QueryInfo): Promise<chrome.tabs.Tab
   return promisify<chrome.tabs.Tab[]>((callback) => ext.tabs.query(query, callback));
 }
 
+/**
+ * Opens a URL in a new tab.
+ *
+ * The popup closes itself immediately afterwards on every browser anyway, so
+ * the returned promise is only useful for error handling; callers that just
+ * want the tab open can ignore it.
+ */
+export function createTab(url: string): Promise<chrome.tabs.Tab> {
+  if (returnsPromises()) {
+    return ext.tabs.create({ url }) as Promise<chrome.tabs.Tab>;
+  }
+  return promisify<chrome.tabs.Tab>((callback) => ext.tabs.create({ url }, callback));
+}
+
 /** Looks up one tab by id. */
 export function getTab(tabId: number): Promise<chrome.tabs.Tab> {
   if (returnsPromises()) {

@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Összes beállítás megnyitása"
   },
+  "popupEnjoying": {
+    "message": "Tetszik a hangerősítés?"
+  },
+  "popupRateOn": {
+    "message": "Értékelés a $STORE$ oldalon"
+  },
+  "popupSupport": {
+    "message": "Segítség kérése"
+  },
+  "popupReportIssue": {
+    "message": "Hiba jelentése a GitHubon"
+  },
   "popupGainHint": {
     "message": "100% felett a limiter bekapcsolva marad a torzítás elkerülésére."
   },

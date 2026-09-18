@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Alle Einstellungen öffnen"
   },
+  "popupEnjoying": {
+    "message": "Gefällt dir die Verstärkung?"
+  },
+  "popupRateOn": {
+    "message": "Auf $STORE$ bewerten"
+  },
+  "popupSupport": {
+    "message": "Hilfe erhalten"
+  },
+  "popupReportIssue": {
+    "message": "Problem auf GitHub melden"
+  },
   "popupGainHint": {
     "message": "Über 100 % bleibt der Limiter aktiv, um Verzerrungen zu vermeiden."
   },

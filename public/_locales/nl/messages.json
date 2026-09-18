@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Alle instellingen openen"
   },
+  "popupEnjoying": {
+    "message": "Bevalt de versterking?"
+  },
+  "popupRateOn": {
+    "message": "Beoordelen op $STORE$"
+  },
+  "popupSupport": {
+    "message": "Hulp krijgen"
+  },
+  "popupReportIssue": {
+    "message": "Probleem melden op GitHub"
+  },
   "popupGainHint": {
     "message": "Boven 100% blijft de limiter aan om vervorming te voorkomen."
   },

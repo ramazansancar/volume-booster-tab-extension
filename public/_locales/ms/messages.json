@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Buka semua tetapan"
   },
+  "popupEnjoying": {
+    "message": "Suka dengan peningkatan ini?"
+  },
+  "popupRateOn": {
+    "message": "Beri penilaian di $STORE$"
+  },
+  "popupSupport": {
+    "message": "Dapatkan bantuan"
+  },
+  "popupReportIssue": {
+    "message": "Laporkan masalah di GitHub"
+  },
   "popupGainHint": {
     "message": "Melebihi 100% pembatas kekal hidup untuk mengelakkan herotan."
   },

@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Tüm ayarları aç"
   },
+  "popupEnjoying": {
+    "message": "Ses yükseltme işine yaradı mı?"
+  },
+  "popupRateOn": {
+    "message": "$STORE$ üzerinde puan ver"
+  },
+  "popupSupport": {
+    "message": "Yardım al"
+  },
+  "popupReportIssue": {
+    "message": "GitHub üzerinde sorun bildir"
+  },
   "popupGainHint": {
     "message": "%100 üzerinde limitör bozulmayı önlemek için açık kalır."
   },

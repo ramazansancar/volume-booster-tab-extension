@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "باز کردن همه تنظیمات"
   },
+  "popupEnjoying": {
+    "message": "از تقویت صدا راضی هستید؟"
+  },
+  "popupRateOn": {
+    "message": "امتیاز در $STORE$"
+  },
+  "popupSupport": {
+    "message": "دریافت کمک"
+  },
+  "popupReportIssue": {
+    "message": "گزارش مشکل در GitHub"
+  },
   "popupGainHint": {
     "message": "بالای ۱۰۰٪ محدودکننده روشن می‌ماند تا از اعوجاج جلوگیری کند."
   },

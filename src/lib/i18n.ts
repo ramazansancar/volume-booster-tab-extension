@@ -141,13 +141,26 @@ export function currentLocale(): string {
  * Looks up one message, falling back to English and then to the key itself.
  * Returning the key rather than an empty string makes a missing translation
  * visible instead of leaving a blank control.
+ *
+ * `substitutions` fills `$NAME$` placeholders, which some strings need because
+ * the word order around an inserted name differs per language: English puts
+ * the store last ("Rate on the Chrome Web Store"), Hungarian puts it in the
+ * middle. Concatenating the pieces in code would force one order on all 55.
  */
-export function t(key: string, fallback?: string): string {
-  return (
+export function t(
+  key: string,
+  fallback?: string,
+  substitutions?: Record<string, string>,
+): string {
+  const message =
     CATALOGUES[activeLocale]?.[key] ??
     CATALOGUES[FALLBACK_LOCALE]?.[key] ??
     fallback ??
-    key
+    key;
+
+  if (!substitutions) return message;
+  return message.replace(/\$([A-Z0-9_]+)\$/g, (placeholder, name: string) =>
+    substitutions[name] ?? placeholder,
   );
 }
 

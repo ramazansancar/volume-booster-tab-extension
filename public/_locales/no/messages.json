@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Åpne alle innstillinger"
   },
+  "popupEnjoying": {
+    "message": "Liker du forsterkningen?"
+  },
+  "popupRateOn": {
+    "message": "Vurder på $STORE$"
+  },
+  "popupSupport": {
+    "message": "Få hjelp"
+  },
+  "popupReportIssue": {
+    "message": "Rapporter et problem på GitHub"
+  },
   "popupGainHint": {
     "message": "Over 100 % forblir limiteren på for å hindre forvrengning."
   },

@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "打开全部设置"
   },
+  "popupEnjoying": {
+    "message": "音量增强还满意吗？"
+  },
+  "popupRateOn": {
+    "message": "在 $STORE$ 评分"
+  },
+  "popupSupport": {
+    "message": "获取帮助"
+  },
+  "popupReportIssue": {
+    "message": "在 GitHub 上报告问题"
+  },
   "popupGainHint": {
     "message": "超过 100% 时限制器保持开启以防止失真。"
   },

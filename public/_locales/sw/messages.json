@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Fungua mipangilio yote"
   },
+  "popupEnjoying": {
+    "message": "Unafurahia uimarishaji?"
+  },
+  "popupRateOn": {
+    "message": "Kadiria kwenye $STORE$"
+  },
+  "popupSupport": {
+    "message": "Pata msaada"
+  },
+  "popupReportIssue": {
+    "message": "Ripoti tatizo kwenye GitHub"
+  },
   "popupGainHint": {
     "message": "Zaidi ya 100% kikomo hubaki kimewashwa kuzuia upotoshaji."
   },

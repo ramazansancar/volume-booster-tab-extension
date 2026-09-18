@@ -172,6 +172,18 @@
   "popupOpenOptions": {
     "message": "Open all settings"
   },
+  "popupEnjoying": {
+    "message": "Enjoying the boost?"
+  },
+  "popupRateOn": {
+    "message": "Rate on $STORE$"
+  },
+  "popupSupport": {
+    "message": "Get help"
+  },
+  "popupReportIssue": {
+    "message": "Report a problem on GitHub"
+  },
   "popupGainHint": {
     "message": "Above 100% the limiter stays on to prevent distortion."
   },

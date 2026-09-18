@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Buka semua pengaturan"
   },
+  "popupEnjoying": {
+    "message": "Suka dengan peningkatannya?"
+  },
+  "popupRateOn": {
+    "message": "Beri nilai di $STORE$"
+  },
+  "popupSupport": {
+    "message": "Dapatkan bantuan"
+  },
+  "popupReportIssue": {
+    "message": "Laporkan masalah di GitHub"
+  },
   "popupGainHint": {
     "message": "Di atas 100% limiter tetap aktif untuk mencegah distorsi."
   },

@@ -1,4 +1,5 @@
 import {
+  createTab,
   ext,
   queryTabs,
   sendMessageToTab,
@@ -7,6 +8,7 @@ import {
   supportsTabCapture,
 } from '@/lib/browser';
 import { applyTranslations, initLocale, t } from '@/lib/i18n';
+import { SUPPORT_URL, reviewUrl, storeName } from '@/lib/store-links';
 import { EQ_BAND_FREQUENCIES } from '@/types';
 import { MAX_EQ_DB } from '@/lib/validate';
 import type {
@@ -46,6 +48,9 @@ const dom = {
   statusDetail: document.getElementById('status-detail') as HTMLElement,
   useCapture: document.getElementById('use-capture') as HTMLButtonElement,
   presets: document.getElementById('presets') as HTMLElement,
+  feedback: document.getElementById('feedback') as HTMLElement,
+  stars: document.getElementById('stars') as HTMLElement,
+  supportLink: document.getElementById('support-link') as HTMLButtonElement,
 };
 
 /** Remembers whether the user had the advanced section open. */
@@ -95,6 +100,74 @@ function buildPresets(maxPercent: number): void {
 
 function send<T>(message: UiToBackgroundMessage): Promise<T> {
   return sendRuntimeMessage<T>(message);
+}
+
+/** Opens a link in a new tab and closes the popup, which is always the intent. */
+function openLink(url: string): void {
+  void createTab(url);
+  window.close();
+}
+
+/**
+ * Builds the rating row, or leaves it hidden on a build with no listing.
+ *
+ * The stars do not record a rating - nothing here can, since only the store
+ * can take one. Each is a button that opens the store's review form, and the
+ * accessible name says so outright ("Rate on the Chrome Web Store") rather
+ * than "5 stars", so a screen reader user is not told they are casting a vote
+ * that this extension has no way to cast.
+ *
+ * Filling on hover is the one piece of theatre kept, because it is how every
+ * rating widget behaves and it costs the user nothing to discover it does not
+ * submit anything.
+ */
+function buildFeedback(): void {
+  const url = reviewUrl();
+
+  // Support is offered on every build: a user on the Opera or Safari package
+  // has the same right to report a bug as anyone else, and the issue tracker
+  // is the same one regardless of where the extension came from.
+  dom.supportLink.addEventListener('click', () => openLink(SUPPORT_URL));
+  dom.supportLink.title = t('popupReportIssue', 'Report a problem on GitHub');
+  dom.feedback.hidden = false;
+
+  // The stars are the part that needs a listing behind them. Opera is still in
+  // review and Safari is built from source, so on those builds the prompt and
+  // the stars are dropped and the row carries the support link alone.
+  if (!url) {
+    dom.feedback.dataset.rateable = 'false';
+    return;
+  }
+  dom.feedback.dataset.rateable = 'true';
+
+  const label = t('popupRateOn', 'Rate on $STORE$', { STORE: storeName() });
+  dom.stars.setAttribute('aria-label', label);
+
+  const stars: HTMLButtonElement[] = [];
+  const light = (upTo: number): void => {
+    stars.forEach((star, index) => {
+      star.dataset.lit = String(index <= upTo);
+    });
+  };
+
+  for (let index = 0; index < 5; index += 1) {
+    const star = document.createElement('button');
+    star.type = 'button';
+    star.className = 'star';
+    star.setAttribute('aria-label', label);
+    star.title = label;
+    star.textContent = '★';
+    star.addEventListener('click', () => openLink(url));
+    // Hovering one star fills it and everything to its left, the way the
+    // store's own control does.
+    star.addEventListener('mouseenter', () => light(index));
+    star.addEventListener('focus', () => light(index));
+    stars.push(star);
+    dom.stars.append(star);
+  }
+
+  dom.stars.addEventListener('mouseleave', () => light(-1));
+  dom.stars.addEventListener('focusout', () => light(-1));
 }
 
 function buildEqualizer(): void {
@@ -349,6 +422,7 @@ async function init(): Promise<void> {
   await initLocale();
   applyTranslations();
   buildEqualizer();
+  buildFeedback();
   restoreAdvancedState();
   bindControls();
 

@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "सर्व सेटिंग्ज उघडा"
   },
+  "popupEnjoying": {
+    "message": "बूस्ट आवडले?"
+  },
+  "popupRateOn": {
+    "message": "$STORE$ वर रेट करा"
+  },
+  "popupSupport": {
+    "message": "मदत मिळवा"
+  },
+  "popupReportIssue": {
+    "message": "GitHub वर समस्या कळवा"
+  },
   "popupGainHint": {
     "message": "100% पेक्षा जास्त विकृती टाळण्यासाठी लिमिटर चालू राहतो."
   },

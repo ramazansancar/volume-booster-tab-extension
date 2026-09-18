@@ -170,6 +170,18 @@
   "popupOpenOptions": {
     "message": "Atverti visus nustatymus"
   },
+  "popupEnjoying": {
+    "message": "Ar patinka garsinimas?"
+  },
+  "popupRateOn": {
+    "message": "Įvertinti „$STORE$“"
+  },
+  "popupSupport": {
+    "message": "Gauti pagalbos"
+  },
+  "popupReportIssue": {
+    "message": "Pranešti apie problemą „GitHub“"
+  },
   "popupGainHint": {
     "message": "Virš 100% ribotuvas lieka įjungtas, kad išvengtų iškraipymų."
   },
