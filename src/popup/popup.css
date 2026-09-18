@@ -276,9 +276,17 @@ input[type='range'] {
   height: 76px;
 }
 
+/* Six names across 320px leaves roughly 45px each, so the label wraps to two
+   short lines rather than being truncated - a band called "Brill..." would be
+   no more use than the bare frequency it replaced. */
 .eq-band__freq {
-  font-size: 10px;
+  width: 100%;
+  font-size: 9px;
+  line-height: 1.15;
+  text-align: center;
   color: var(--text-muted);
+  overflow-wrap: anywhere;
+  hyphens: auto;
 }
 
 .eq-band__gain {
@@ -457,4 +465,101 @@ body[data-disabled='true'] .advanced {
 body[data-disabled='true'] .feedback {
   opacity: 1;
   pointer-events: auto;
+}
+
+
+/* Equalizer presets -------------------------------------------------------- */
+
+.preset-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.preset-select {
+  flex: 1;
+  min-width: 0;
+  padding: 5px 6px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 12px;
+}
+
+/* Square so it reads as an action on the control beside it rather than as a
+   second, competing button. */
+.icon-button {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Tone controls ------------------------------------------------------------ */
+
+.tone {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Horizontal, unlike the per-band sliders below: three named controls read as
+   a list, and stacking them keeps the names on one line each. */
+.tone-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tone-row__name {
+  flex-shrink: 0;
+  width: 46px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.tone-row input[type='range'] {
+  flex: 1;
+  min-width: 0;
+}
+
+.tone-row__gain {
+  flex-shrink: 0;
+  width: 24px;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--text-muted);
+}
+
+.tone-row__gain[data-active='true'] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Separates the per-band equalizer from the three controls that drive it. */
+.control__row--section {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+/* Two resets side by side; the neutral one is the stronger of the pair, so it
+   sits last where the eye lands. */
+.reset-group {
+  display: flex;
+  gap: 10px;
 }

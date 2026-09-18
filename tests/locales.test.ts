@@ -19,7 +19,7 @@ describe('generated locales', () => {
       const messages = messagesFor(locale);
       for (const [key, entry] of Object.entries(messages)) {
         const used = [...entry.message.matchAll(PLACEHOLDER)].map((match) =>
-          match[1].toLowerCase(),
+          (match[1] ?? '').toLowerCase(),
         );
         if (used.length === 0) continue;
 
@@ -43,7 +43,9 @@ describe('generated locales', () => {
     for (const locale of LOCALES) {
       const messages = messagesFor(locale);
       for (const [key, entry] of Object.entries(messages)) {
-        const expected = [...english[key].message.matchAll(PLACEHOLDER)].map((m) => m[1]);
+        const reference = english[key];
+        if (!reference) continue;
+        const expected = [...reference.message.matchAll(PLACEHOLDER)].map((m) => m[1]);
         if (expected.length === 0) continue;
 
         for (const name of expected) {

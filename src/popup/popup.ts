@@ -9,10 +9,23 @@ import {
 } from '@/lib/browser';
 import { applyTranslations, initLocale, t } from '@/lib/i18n';
 import { SUPPORT_URL, reviewUrl, storeName } from '@/lib/store-links';
+import {
+  BAND_LABELS,
+  BUILTIN_PRESETS,
+  MAX_PRESET_NAME,
+  TONE_CONTROLS,
+  applyTone,
+  builtinPreset,
+  matchPreset,
+  presetName,
+  readTone,
+  type ToneControl,
+} from '@/lib/presets';
 import { EQ_BAND_FREQUENCIES } from '@/types';
 import { MAX_EQ_DB } from '@/lib/validate';
 import type {
   AudioSettings,
+  EqPreset,
   GlobalPreferences,
   TabStateResponse,
   UiToBackgroundMessage,
@@ -48,6 +61,10 @@ const dom = {
   statusDetail: document.getElementById('status-detail') as HTMLElement,
   useCapture: document.getElementById('use-capture') as HTMLButtonElement,
   presets: document.getElementById('presets') as HTMLElement,
+  preset: document.getElementById('preset') as HTMLSelectElement,
+  savePreset: document.getElementById('save-preset') as HTMLButtonElement,
+  tone: document.getElementById('tone') as HTMLElement,
+  resetDefaults: document.getElementById('reset-defaults') as HTMLButtonElement,
   feedback: document.getElementById('feedback') as HTMLElement,
   stars: document.getElementById('stars') as HTMLElement,
   supportLink: document.getElementById('support-link') as HTMLButtonElement,
@@ -64,6 +81,9 @@ let rendering = false;
 
 const eqSliders: HTMLInputElement[] = [];
 const eqReadouts: HTMLElement[] = [];
+
+/** Ids the preset dropdown was last built for, so it is rebuilt only on change. */
+let builtPresetIds: string | null = null;
 
 /** Preset buttons currently rendered, kept so the active one can be marked. */
 let presetButtons: HTMLButtonElement[] = [];
@@ -185,10 +205,14 @@ function buildEqualizer(): void {
     slider.max = String(MAX_EQ_DB);
     slider.step = '1';
     slider.value = '0';
-    slider.setAttribute(
-      'aria-label',
-      frequency >= 1000 ? `${frequency / 1000} kHz` : `${frequency} Hz`,
-    );
+    const labels = BAND_LABELS[frequency];
+    const bandName = labels ? t(labels.nameKey, '') : '';
+    const bandHint = labels ? t(labels.hintKey, '') : '';
+    const hz = frequency >= 1000 ? `${frequency / 1000} kHz` : `${frequency} Hz`;
+    // The frequency alone says nothing to most people, so the accessible name
+    // leads with what the band does and keeps the number for those who want it.
+    slider.setAttribute('aria-label', bandName ? `${bandName} (${hz})` : hz);
+    if (bandHint) slider.title = `${bandName} - ${bandHint} (${hz})`;
     slider.addEventListener('input', () => {
       if (rendering || !settings) return;
       const next = [...settings.equalizer];
@@ -202,13 +226,120 @@ function buildEqualizer(): void {
 
     const label = document.createElement('span');
     label.className = 'eq-band__freq';
-    label.textContent = frequency >= 1000 ? `${frequency / 1000}k` : String(frequency);
+    // The name is what the user reads; the frequency stays as a subtitle so the
+    // slider is still identifiable to someone who thinks in hertz.
+    label.textContent = bandName || (frequency >= 1000 ? `${frequency / 1000}k` : String(frequency));
+    if (bandName) label.title = `${bandName} - ${bandHint} (${hz})`;
 
     band.append(readout, slider, label);
     dom.equalizer.append(band);
     eqSliders.push(slider);
     eqReadouts.push(readout);
   });
+}
+
+/** Tone sliders, in TONE_CONTROLS order, kept for re-rendering. */
+const toneSliders: HTMLInputElement[] = [];
+const toneReadouts: HTMLElement[] = [];
+
+/**
+ * Builds the bass/mid/treble trio.
+ *
+ * These write the same six bands the per-band equalizer does, so the two are
+ * one setting seen at two resolutions rather than two settings that can
+ * disagree. Moving Bass rewrites only the bands Bass owns, which is what makes
+ * it safe to use after hand-tuning something in the per-band view.
+ */
+function buildTone(): void {
+  dom.tone.replaceChildren();
+  toneSliders.length = 0;
+  toneReadouts.length = 0;
+
+  const names: Record<ToneControl, [string, string]> = {
+    bass: ['toneBass', 'Bass'],
+    mid: ['toneMid', 'Mid'],
+    treble: ['toneTreble', 'Treble'],
+  };
+
+  for (const control of TONE_CONTROLS) {
+    const row = document.createElement('div');
+    row.className = 'tone-row';
+
+    const [key, fallback] = names[control];
+    const label = document.createElement('span');
+    label.className = 'tone-row__name';
+    label.textContent = t(key, fallback);
+
+    const slider = document.createElement('input');
+    slider.type = 'range';
+    slider.min = String(-MAX_EQ_DB);
+    slider.max = String(MAX_EQ_DB);
+    slider.step = '1';
+    slider.value = '0';
+    slider.setAttribute('aria-label', t(key, fallback));
+    slider.addEventListener('input', () => {
+      if (rendering || !settings) return;
+      void patch({ equalizer: applyTone(settings.equalizer, control, Number(slider.value)) });
+    });
+
+    const readout = document.createElement('span');
+    readout.className = 'tone-row__gain';
+    readout.textContent = '0';
+
+    row.append(label, slider, readout);
+    dom.tone.append(row);
+    toneSliders.push(slider);
+    toneReadouts.push(readout);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Equalizer presets                                                           */
+/* -------------------------------------------------------------------------- */
+
+/** Sentinel for "these gains are not any saved preset". */
+const CUSTOM_PRESET = '__custom__';
+
+/**
+ * Fills the preset dropdown with the built-ins and whatever the user saved.
+ *
+ * Rebuilt whenever the saved list changes rather than on every render, because
+ * replacing the options would drop the open dropdown out from under a user who
+ * was in the middle of choosing.
+ */
+function buildPresetOptions(userPresets: EqPreset[]): void {
+  dom.preset.replaceChildren();
+
+  // "Custom" is always first and always present: it is the honest label for
+  // whatever the user has dialled in, and selecting it deliberately does
+  // nothing, since there is no curve to apply.
+  const custom = document.createElement('option');
+  custom.value = CUSTOM_PRESET;
+  custom.textContent = t('popupPresetCustom', 'Custom');
+  dom.preset.append(custom);
+
+  const group = (labelKey: string, fallback: string, presets: EqPreset[]): void => {
+    if (presets.length === 0) return;
+    const optgroup = document.createElement('optgroup');
+    optgroup.label = t(labelKey, fallback);
+    for (const preset of presets) {
+      const option = document.createElement('option');
+      option.value = preset.id;
+      option.textContent = presetName(preset, (key) => t(key, key));
+      optgroup.append(option);
+    }
+    dom.preset.append(optgroup);
+  };
+
+  group('popupPreset', 'Preset', BUILTIN_PRESETS);
+  group('optionsPresets', 'Saved presets', userPresets);
+}
+
+/** Marks the dropdown to match the gains currently in effect. */
+function renderPresetSelection(): void {
+  if (!settings || !preferences) return;
+  const match = matchPreset(settings.equalizer, preferences.userPresets);
+  dom.preset.value = match?.id ?? CUSTOM_PRESET;
 }
 
 function formatBalance(value: number): string {
@@ -257,6 +388,26 @@ function render(response: TabStateResponse): void {
       readout.dataset.active = String(value !== 0);
     }
   });
+
+  TONE_CONTROLS.forEach((control, index) => {
+    const value = readTone(settings!.equalizer, control);
+    const slider = toneSliders[index];
+    const readout = toneReadouts[index];
+    if (slider) slider.value = String(value);
+    if (readout) {
+      readout.textContent = value > 0 ? `+${value}` : String(value);
+      readout.dataset.active = String(value !== 0);
+    }
+  });
+
+  // The saved list only changes when the user saves one, so the options are
+  // rebuilt on change rather than on every render.
+  const savedIds = preferences.userPresets.map((preset) => preset.id).join(',');
+  if (savedIds !== builtPresetIds) {
+    builtPresetIds = savedIds;
+    buildPresetOptions(preferences.userPresets);
+  }
+  renderPresetSelection();
 
   const eqActive = settings.equalizer.some((band) => band !== 0);
   dom.eqBadge.hidden = !eqActive;
@@ -378,9 +529,52 @@ function bindControls(): void {
     void patch({ equalizer: EQ_BAND_FREQUENCIES.map(() => 0) });
   });
 
-  dom.reset.addEventListener('click', () => {
+  // Two resets, because "reset" is ambiguous once the user has saved defaults
+  // of their own: one returns to those, the other to 100% and flat.
+  dom.resetDefaults.addEventListener('click', () => {
     if (tabId === null) return;
     void send<TabStateResponse>({ type: 'ui:reset-tab', tabId }).then(render);
+  });
+
+  dom.reset.addEventListener('click', () => {
+    if (tabId === null) return;
+    void send<TabStateResponse>({ type: 'ui:reset-neutral', tabId }).then(render);
+  });
+
+  dom.preset.addEventListener('change', () => {
+    if (rendering) return;
+    const id = dom.preset.value;
+    // "Custom" describes what the user already has; there is no curve behind
+    // it to apply, so selecting it is a no-op rather than a reset.
+    if (id === CUSTOM_PRESET) {
+      renderPresetSelection();
+      return;
+    }
+    const preset =
+      builtinPreset(id) ?? preferences?.userPresets.find((entry) => entry.id === id);
+    if (preset) void patch({ equalizer: [...preset.gains] });
+  });
+
+  dom.savePreset.addEventListener('click', () => {
+    if (!settings) return;
+    // A prompt is a blunt instrument, but the popup closes the moment focus
+    // leaves it on some browsers, which rules out an inline rename field here.
+    // Managing the saved list properly happens on the options page.
+    const name = window.prompt(t('popupPresetNamePrompt', 'Name for this preset'));
+    if (name === null) return;
+    const trimmed = name.trim().slice(0, MAX_PRESET_NAME);
+    if (!trimmed) return;
+
+    void send<GlobalPreferences>({
+      type: 'ui:save-preset',
+      name: trimmed,
+      gains: [...settings.equalizer],
+    }).then((next) => {
+      preferences = next;
+      buildPresetOptions(next.userPresets);
+      builtPresetIds = next.userPresets.map((preset) => preset.id).join(',');
+      renderPresetSelection();
+    });
   });
 
   dom.useCapture.addEventListener('click', () => {
@@ -422,6 +616,7 @@ async function init(): Promise<void> {
   await initLocale();
   applyTranslations();
   buildEqualizer();
+  buildTone();
   buildFeedback();
   restoreAdvancedState();
   bindControls();

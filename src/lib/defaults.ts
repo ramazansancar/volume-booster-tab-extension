@@ -27,6 +27,8 @@ export const DEFAULT_PREFERENCES: GlobalPreferences = {
   maxGain: DEFAULT_MAX_GAIN,
   autoLimiterAboveUnity: true,
   tabCaptureFallback: true,
+  // Built-in presets are not stored; this list holds only what the user saved.
+  userPresets: [],
 };
 
 /** Returns a deep copy so callers can mutate without touching the constants. */

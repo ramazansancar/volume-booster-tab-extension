@@ -1,9 +1,11 @@
 import { storageGet, storageSet } from '@/lib/browser';
 import { DEFAULT_PREFERENCES, cloneSettings } from '@/lib/defaults';
 import { sanitizeSettings, clamp } from '@/lib/validate';
+import { MAX_USER_PRESETS, sanitizePresets } from '@/lib/presets';
 import { ABSOLUTE_MAX_GAIN } from '@/lib/defaults';
 import type {
   AudioSettings,
+  EqPreset,
   GlobalPreferences,
   OriginSettingsMap,
   PersistenceMode,
@@ -32,7 +34,13 @@ async function writeArea(key: string, value: unknown): Promise<void> {
 
 export async function loadPreferences(): Promise<GlobalPreferences> {
   const stored = await readArea<Partial<GlobalPreferences>>(PREFERENCES_KEY);
-  if (!stored) return { ...DEFAULT_PREFERENCES, defaults: cloneSettings(DEFAULT_PREFERENCES.defaults) };
+  if (!stored) {
+    return {
+      ...DEFAULT_PREFERENCES,
+      defaults: cloneSettings(DEFAULT_PREFERENCES.defaults),
+      userPresets: [],
+    };
+  }
 
   const maxGain = typeof stored.maxGain === 'number'
     ? clamp(stored.maxGain, 1, ABSOLUTE_MAX_GAIN)
@@ -51,6 +59,7 @@ export async function loadPreferences(): Promise<GlobalPreferences> {
       typeof stored.tabCaptureFallback === 'boolean'
         ? stored.tabCaptureFallback
         : DEFAULT_PREFERENCES.tabCaptureFallback,
+    userPresets: sanitizePresets(stored.userPresets),
   };
 }
 
@@ -61,8 +70,31 @@ export async function savePreferences(
   const merged: GlobalPreferences = { ...current, ...patch };
   merged.maxGain = clamp(merged.maxGain, 1, ABSOLUTE_MAX_GAIN);
   merged.defaults = sanitizeSettings(merged.defaults, merged.maxGain);
+  merged.userPresets = sanitizePresets(merged.userPresets);
   await writeArea(PREFERENCES_KEY, merged);
   return merged;
+}
+
+/**
+ * Appends one user preset, replacing any earlier preset with the same name.
+ *
+ * Saving over a name the user already used is what they almost always mean -
+ * they tweaked "Podcast" and want the new version - and it keeps the list from
+ * filling with near-duplicates. Returns the preferences so the caller can
+ * re-render from one source of truth.
+ */
+export async function savePreset(
+  preset: EqPreset,
+): Promise<GlobalPreferences> {
+  const current = await loadPreferences();
+  const name = (preset.name ?? '').trim().toLowerCase();
+  const kept = current.userPresets.filter(
+    (existing) => (existing.name ?? '').trim().toLowerCase() !== name,
+  );
+  // Oldest go first when the ceiling is reached: the list is capped, and a
+  // preset the user has not touched in a long time is the safest thing to drop.
+  const next = [...kept, preset].slice(-MAX_USER_PRESETS);
+  return savePreferences({ userPresets: next });
 }
 
 /* -------------------------------------------------------------------------- */

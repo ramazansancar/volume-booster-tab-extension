@@ -1,14 +1,20 @@
 import { ext, getAllFrames, getTab, sendMessageSafe, sendMessageToTab } from '@/lib/browser';
-import { cloneSettings } from '@/lib/defaults';
+import { cloneSettings, neutralSettings } from '@/lib/defaults';
 import {
   forgetOrigin,
   loadOriginSettings,
   loadPreferences,
   saveOriginSettings,
   savePreferences,
+  savePreset,
   syncPersistence,
 } from '@/lib/storage';
-import { mergeSettings, originOf } from '@/lib/validate';
+import {
+  MAX_PRESET_NAME,
+  newPresetId,
+  sanitizePresets,
+} from '@/lib/presets';
+import { mergeSettings, originOf, sanitizeSettings } from '@/lib/validate';
 import { TabRegistry } from '@/background/tab-registry';
 import {
   canCapture,
@@ -221,6 +227,19 @@ async function handleUiMessage(message: UiToBackgroundMessage): Promise<unknown>
       return { state, preferences: prefs } satisfies TabStateResponse;
     }
 
+    case 'ui:reset-neutral': {
+      await stateFor(message.tabId);
+      // Neutral means the shipped defaults, not the user's: this is the button
+      // for "undo everything", including a saved default they now regret.
+      const state = registry.reset(message.tabId, {
+        ...prefs,
+        defaults: neutralSettings(),
+      });
+      if (!state) return { ok: false };
+      await applyAndPersist(state);
+      return { state, preferences: prefs } satisfies TabStateResponse;
+    }
+
     case 'ui:get-preferences':
       return prefs;
 
@@ -266,6 +285,27 @@ async function handleUiMessage(message: UiToBackgroundMessage): Promise<unknown>
       // tab would disagree until the next reload.
       await applyToOpenTabs(message.origin, next);
       return next;
+    }
+
+    case 'ui:save-preset': {
+      const name = message.name.trim().slice(0, MAX_PRESET_NAME);
+      // A preset with no name could never be picked out of the list again.
+      if (!name) return prefs;
+      cachedPreferences = await savePreset({
+        id: newPresetId(),
+        name,
+        gains: sanitizeSettings({ equalizer: message.gains }).equalizer,
+      });
+      return cachedPreferences;
+    }
+
+    case 'ui:set-presets': {
+      // The options page sends the whole list back after a rename, reorder or
+      // delete, so replacing it wholesale is the operation, not a shortcut.
+      cachedPreferences = await savePreferences({
+        userPresets: sanitizePresets(message.presets),
+      });
+      return cachedPreferences;
     }
 
     case 'ui:forget-origin': {

@@ -78,10 +78,36 @@ export interface GlobalPreferences {
   autoLimiterAboveUnity: boolean;
   /** Allow the Chromium tab-capture fallback. */
   tabCaptureFallback: boolean;
+  /**
+   * Equalizer curves the user saved themselves, newest last.
+   *
+   * Kept in preferences rather than per origin because a preset is a thing the
+   * user made, not a property of a site: having saved "Podcast" once, they
+   * expect it in the list on every tab.
+   */
+  userPresets: EqPreset[];
 }
 
 /** Settings saved per origin when persistence is set to 'origin'. */
 export type OriginSettingsMap = Record<string, AudioSettings>;
+
+/**
+ * One saved equalizer curve.
+ *
+ * Declared here rather than in lib/presets so that GlobalPreferences, which
+ * crosses every context boundary, does not drag the preset tables along with
+ * it into the background bundle.
+ */
+export interface EqPreset {
+  /** Stable identifier, stored rather than the name so renaming is safe. */
+  id: string;
+  /** Message key for the display name; built-in presets only. */
+  nameKey?: string;
+  /** Literal name; user presets only. */
+  name?: string;
+  /** Band gains in dB, one per EQ_BAND_FREQUENCIES entry. */
+  gains: EqualizerGains;
+}
 
 /* -------------------------------------------------------------------------- */
 /* Messaging protocol                                                          */
@@ -92,14 +118,27 @@ export type UiToBackgroundMessage =
   | { type: 'ui:get-tab-state'; tabId: number }
   | { type: 'ui:set-settings'; tabId: number; settings: Partial<AudioSettings> }
   | { type: 'ui:set-persistence'; tabId: number; persistence: PersistenceMode }
+  /** Applies the user's saved defaults to one tab. */
   | { type: 'ui:reset-tab'; tabId: number }
+  /**
+   * Returns one tab to the factory-neutral state: 100%, flat, centred.
+   *
+   * Distinct from 'ui:reset-tab' because the two answer different questions.
+   * A user whose saved default is 150% has two things they might mean by
+   * "reset", and one button could only ever do one of them.
+   */
+  | { type: 'ui:reset-neutral'; tabId: number }
   | { type: 'ui:get-preferences' }
   | { type: 'ui:set-preferences'; preferences: Partial<GlobalPreferences> }
   | { type: 'ui:request-fallback'; tabId: number }
   /** Edits the settings stored for one origin, from the options page. */
   | { type: 'ui:update-origin'; origin: string; settings: Partial<AudioSettings> }
   /** Deletes the settings stored for one origin. */
-  | { type: 'ui:forget-origin'; origin: string };
+  | { type: 'ui:forget-origin'; origin: string }
+  /** Saves the current curve as a named preset, from the popup. */
+  | { type: 'ui:save-preset'; name: string; gains: EqualizerGains }
+  /** Renames, reorders or deletes saved presets, from the options page. */
+  | { type: 'ui:set-presets'; presets: EqPreset[] };
 
 /** Messages sent from the background to a tab's content script. */
 export type BackgroundToContentMessage =

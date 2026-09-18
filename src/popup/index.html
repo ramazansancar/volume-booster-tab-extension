@@ -87,6 +87,24 @@
         </label>
       </section>
 
+      <!-- Presets sit outside Advanced: picking a named curve is the way most
+           people will ever touch the equalizer, and burying it behind a
+           disclosure would leave the six sliders as the only visible option. -->
+      <section class="preset-row">
+        <label class="control__label" for="preset" data-i18n="popupPreset">Preset</label>
+        <select id="preset" class="preset-select"></select>
+        <button
+          type="button"
+          class="icon-button"
+          id="save-preset"
+          data-i18n-title="popupSavePreset"
+          data-i18n-label="popupSavePreset"
+          title="Save current as preset"
+        >
+          +
+        </button>
+      </section>
+
       <details class="advanced" id="advanced">
         <summary class="advanced__summary">
           <span data-i18n="popupAdvanced">Advanced settings</span>
@@ -94,14 +112,25 @@
         </summary>
 
         <div class="advanced__body">
+          <!-- Three controls first, six after. Bass/mid/treble is what most
+               people mean by "equalizer", and it writes the same six bands, so
+               the pair below is a finer view of one setting rather than a
+               second, competing one. -->
           <div class="control__row">
-            <span class="control__label" data-i18n="popupEqualizer">Equalizer</span>
+            <span class="control__label" data-i18n="popupTone">Tone</span>
             <button type="button" class="link-button" id="eq-reset" data-i18n="popupEqReset">
               Reset
             </button>
           </div>
-          <div class="equalizer" id="equalizer"></div>
+          <div class="tone" id="tone"></div>
 
+          <div class="control__row control__row--section">
+            <span class="control__label" data-i18n="popupProSection">Per-band equalizer</span>
+          </div>
+          <p class="hint" data-i18n="popupToneHint">
+            Three controls over the six bands below.
+          </p>
+          <div class="equalizer" id="equalizer"></div>
         </div>
       </details>
 
@@ -122,9 +151,26 @@
             Try tab capture
           </button>
         </div>
-        <button type="button" class="link-button" id="reset" data-i18n="popupResetTab">
-          Reset tab
-        </button>
+        <div class="reset-group">
+          <button
+            type="button"
+            class="link-button"
+            id="reset-defaults"
+            data-i18n="popupResetDefaults"
+            data-i18n-title="popupResetDefaultsTitle"
+          >
+            Use my defaults
+          </button>
+          <button
+            type="button"
+            class="link-button"
+            id="reset"
+            data-i18n="popupResetNeutral"
+            data-i18n-title="popupResetNeutralTitle"
+          >
+            Reset to neutral
+          </button>
+        </div>
       </footer>
 
       <!-- Outside the collapsed Advanced section: the settings page holds the
