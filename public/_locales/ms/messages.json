@@ -188,124 +188,124 @@
     "message": "Laporkan masalah di GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Pratetap"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Tersuai"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Simpan sebagai pratetap"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Nama untuk pratetap ini"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Rata"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Pertuturan"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Muzik"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Pawagam"
   },
   "presetStudio": {
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Luar rumah"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Alam semula jadi"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Penguat bes"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Malam"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Nada"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Tiga kawalan untuk enam jalur di bawah."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Bes"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Pertengahan"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Trebel"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Penyama per jalur"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Sub-bes"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Gemuruh dan berat"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Bes"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Kehangatan dan isi"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Pertengahan rendah"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Kepenuhan atau bunyi berkotak"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Pertengahan"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Suara dan kejelasan"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Kehadiran"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Konsonan dan perincian"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Kecerahan"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Keudaraan dan kilauan"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Set semula ke neutral"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Volum 100%, penyama rata, keseimbangan tengah"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Guna lalai saya"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Gunakan lalai yang disimpan pada halaman tetapan"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Pratetap tersimpan"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Belum ada pratetap disimpan. Simpan satu dari tetingkap timbul."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Namakan semula"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Padam"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Padam \"$NAME$\"?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Alih ke atas"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Alih ke bawah"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Susunan di sini ialah susunan dalam tetingkap timbul."
   },
   "popupGainHint": {
     "message": "Melebihi 100% pembatas kekal hidup untuk mengelakkan herotan."

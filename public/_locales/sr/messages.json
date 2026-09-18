@@ -188,124 +188,124 @@
     "message": "Пријавите проблем на GitHub-у"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Подешавање"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Прилагођено"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Сачувај као подешавање"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Назив овог подешавања"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Равно"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Говор"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Музика"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Биоскоп"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Студио"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "На отвореном"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Природа"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Појачан бас"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Ноћ"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Тон"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Три контроле за шест опсега испод."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Бас"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Средњи"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Високи"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Еквилајзер по опсезима"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Дубоки бас"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Тутњава и тежина"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Бас"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Топлина и пуноћа"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Ниски средњи"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Пуноћа или мукли звук"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Средњи"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Глас и јасноћа"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Присуство"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Сугласници и детаљи"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Сјај"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Ваздушастост и сјај"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Врати на неутрално"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Јачина 100%, равно еквилајзер, центрирани баланс"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Користи моје подразумевано"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Примењује подразумеване вредности сачуване на страници подешавања"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Сачувана подешавања"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Још нема сачуваних подешавања. Сачувајте једно из искачућег прозора."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Преименуј"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Обриши"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Обрисати „$NAME$“?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Помери горе"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Помери доле"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Овај редослед важи и у искачућем прозору."
   },
   "popupGainHint": {
     "message": "Изнад 100% лимитер остаје укључен да спречи изобличење."

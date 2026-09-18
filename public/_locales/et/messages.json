@@ -188,124 +188,124 @@
     "message": "Teata probleemist GitHubis"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Eelseade"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Kohandatud"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Salvesta eelseadena"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Selle eelseade nimi"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Tasane"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Kõne"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Muusika"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Kino"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Stuudio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Õues"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Loodus"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Bassivõimendus"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Öö"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Toon"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Kolm juhtnuppu allpool olevale kuuele ribale."
   },
   "toneBass": {
     "message": "Bass"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Kesk"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Kõrged"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Ribapõhine ekvalaiser"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Süvabass"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Mürin ja kaal"
   },
   "bandBass": {
     "message": "Bass"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Soojus ja täidlus"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Madal kesk"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Täidlus või kastikõla"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Kesk"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Hääl ja selgus"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Kohalolu"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Kaashäälikud ja detailid"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Sära"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Õhulisus ja sära"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Lähtesta neutraalseks"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Helitugevus 100%, tasane ekvalaiser, keskele seatud tasakaal"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Kasuta minu vaikeseadeid"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Rakendab seadete lehel salvestatud vaikeseaded"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Salvestatud eelseaded"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Eelseadeid pole veel salvestatud. Salvestage hüpikaknast."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Nimeta ümber"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Kustuta"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Kas kustutada „$NAME$“?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Liiguta üles"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Liiguta alla"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "See järjekord on sama, mis hüpikaknas."
   },
   "popupGainHint": {
     "message": "Üle 100% jääb limiiter sisse, et vältida moonutusi."

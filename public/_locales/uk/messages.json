@@ -188,124 +188,124 @@
     "message": "Повідомити про проблему на GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Пресет"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Власний"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Зберегти як пресет"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Назва пресету"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Рівний"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Мовлення"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Музика"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Кіно"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Студія"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "На вулиці"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Природа"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Підсилення басів"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Ніч"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Тембр"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Три регулятори для шести смуг нижче."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Низькі"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Середні"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Високі"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Поканальний еквалайзер"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Глибокий бас"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Гул і вага"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Бас"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Теплота і щільність"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Нижні середні"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Наповненість або бубніння"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Середні"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Голос і розбірливість"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Присутність"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Приголосні й деталізація"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Яскравість"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Повітря і блиск"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Скинути до нейтрального"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Гучність 100%, рівний еквалайзер, центральний баланс"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Мої значення за умовчанням"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Застосовує значення за умовчанням зі сторінки налаштувань"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Збережені пресети"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Пресетів ще немає. Збережіть пресет у спливному вікні."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Перейменувати"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Видалити"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Видалити «$NAME$»?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Перемістити вгору"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Перемістити вниз"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Цей порядок використовується і у спливному вікні."
   },
   "popupGainHint": {
     "message": "Понад 100% лімітер залишається увімкненим, щоб уникнути спотворень."

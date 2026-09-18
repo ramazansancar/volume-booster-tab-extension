@@ -191,46 +191,46 @@
     "message": "Preset"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Khusus"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Simpan sebagai preset"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Nama untuk preset ini"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Datar"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Ucapan"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Musik"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Bioskop"
   },
   "presetStudio": {
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Luar ruang"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Alam"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Penguat bass"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Malam"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Nada"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Tiga kontrol untuk enam pita di bawah."
   },
   "toneBass": {
     "message": "Bass"
@@ -242,70 +242,70 @@
     "message": "Treble"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Ekualiser per pita"
   },
   "bandSubBass": {
     "message": "Sub-bass"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Gemuruh dan bobot"
   },
   "bandBass": {
     "message": "Bass"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Kehangatan dan bobot"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Mid rendah"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Kepenuhan atau kesan kotak"
   },
   "bandMid": {
     "message": "Mid"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Suara dan kejernihan"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Kehadiran"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Konsonan dan detail"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Kecemerlangan"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Keudaraan dan kilau"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Atur ulang ke netral"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Volume 100%, ekualiser datar, keseimbangan tengah"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Gunakan default saya"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Terapkan default yang disimpan di halaman pengaturan"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Preset tersimpan"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Belum ada preset tersimpan. Simpan satu dari popup."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Ganti nama"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Hapus"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Hapus \"$NAME$\"?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Naikkan"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Turunkan"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Urutan di sini adalah urutan tampil di popup."
   },
   "popupGainHint": {
     "message": "Di atas 100% limiter tetap aktif untuk mencegah distorsi."

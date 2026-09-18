@@ -188,124 +188,124 @@
     "message": "Αναφορά προβλήματος στο GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Προεπιλογή"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Προσαρμοσμένο"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Αποθήκευση ως προεπιλογή"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Όνομα για αυτήν την προεπιλογή"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Επίπεδο"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Ομιλία"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Μουσική"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Κινηματογράφος"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Στούντιο"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Σε εξωτερικό χώρο"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Φύση"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Ενίσχυση μπάσων"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Νύχτα"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Τόνος"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Τρία χειριστήρια για τις έξι ζώνες παρακάτω."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Μπάσα"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Μεσαία"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Πρίμα"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Ισοσταθμιστής ανά ζώνη"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Υπόβαθρο μπάσων"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Βάθος και βάρος"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Μπάσα"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Ζεστασιά και σώμα"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Χαμηλά μεσαία"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Πληρότητα ή μπουκωμένος ήχος"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Μεσαία"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Φωνή και καθαρότητα"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Παρουσία"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Σύμφωνα και λεπτομέρεια"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Λαμπρότητα"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Αέρας και λάμψη"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Επαναφορά σε ουδέτερο"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Ένταση 100%, επίπεδος ισοσταθμιστής, κεντραρισμένη ισορροπία"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Χρήση των προεπιλογών μου"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Εφαρμόζει τις προεπιλογές που αποθηκεύτηκαν στη σελίδα ρυθμίσεων"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Αποθηκευμένες προεπιλογές"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Δεν έχουν αποθηκευτεί προεπιλογές. Αποθηκεύστε μία από το αναδυόμενο παράθυρο."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Μετονομασία"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Διαγραφή"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Διαγραφή του «$NAME$»;",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Μετακίνηση πάνω"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Μετακίνηση κάτω"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Η σειρά εδώ είναι η σειρά εμφάνισης στο αναδυόμενο παράθυρο."
   },
   "popupGainHint": {
     "message": "Πάνω από 100% το limiter παραμένει ενεργό για αποφυγή παραμόρφωσης."

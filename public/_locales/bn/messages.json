@@ -188,124 +188,124 @@
     "message": "GitHub-এ সমস্যা জানান"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "প্রিসেট"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "কাস্টম"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "বর্তমানটি প্রিসেট হিসেবে সংরক্ষণ করুন"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "এই প্রিসেটের নাম"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "সমতল"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "বক্তৃতা"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "সঙ্গীত"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "সিনেমা"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "স্টুডিও"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "বাইরে"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "প্রকৃতি"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "বেস বুস্ট"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "রাত"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "টোন"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "নিচের ছয়টি ব্যান্ড নিয়ন্ত্রণ করে তিনটি কন্ট্রোল।"
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "বেস"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "মিড"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "ট্রেবল"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "ব্যান্ড-ভিত্তিক ইকুয়ালাইজার"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "সাব-বেস"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "গমগমে ভাব ও ভার"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "বেস"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "উষ্ণতা ও পূর্ণতা"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "নিম্ন মিড"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "পূর্ণতা বা বদ্ধভাব"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "মিড"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "কণ্ঠ ও স্পষ্টতা"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "উপস্থিতি"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "ব্যঞ্জনধ্বনি ও খুঁটিনাটি"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "উজ্জ্বলতা"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "বাতাস ও ঝলক"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "নিরপেক্ষে ফিরিয়ে দিন"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "ভলিউম ১০০%, সমতল ইকুয়ালাইজার, কেন্দ্রীভূত ব্যালেন্স"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "আমার ডিফল্ট ব্যবহার করুন"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "সেটিংস পাতায় সংরক্ষিত ডিফল্ট প্রয়োগ করুন"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "সংরক্ষিত প্রিসেট"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "এখনও কোনো প্রিসেট সংরক্ষিত হয়নি। পপআপ থেকে একটি সংরক্ষণ করুন।"
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "নাম বদলান"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "মুছুন"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" মুছবেন?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "উপরে সরান"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "নিচে সরান"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "এখানকার ক্রমই পপআপে দেখানোর ক্রম।"
   },
   "popupGainHint": {
     "message": "১০০% এর উপরে বিকৃতি রোধে লিমিটার চালু থাকে।"

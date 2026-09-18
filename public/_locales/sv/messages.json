@@ -188,124 +188,124 @@
     "message": "Rapportera ett problem på GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Förinställning"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Anpassad"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Spara som förinställning"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Namn på denna förinställning"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Neutral"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Tal"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Musik"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Bio"
   },
   "presetStudio": {
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Utomhus"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Natur"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Basförstärkning"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Natt"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Klang"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Tre reglage för de sex banden nedan."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Mellan"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Diskant"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Equalizer per band"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Subbas"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Djup och tyngd"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Värme och fyllighet"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Låg mellan"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Fyllighet eller lådighet"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Mellan"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Röst och klarhet"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Närvaro"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Konsonanter och detaljer"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Briljans"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Luft och glans"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Återställ till neutral"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Volym 100 %, neutral equalizer, centrerad balans"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Använd mina standarder"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Använder standardvärdena som sparats på inställningssidan"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Sparade förinställningar"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Inga förinställningar sparade ännu. Spara en från popup-fönstret."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Byt namn"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Ta bort"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Ta bort \"$NAME$\"?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Flytta upp"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Flytta ned"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Denna ordning gäller även i popup-fönstret."
   },
   "popupGainHint": {
     "message": "Över 100 % förblir limitern på för att undvika distorsion."

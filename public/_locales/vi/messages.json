@@ -188,124 +188,124 @@
     "message": "Báo lỗi trên GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Cài đặt sẵn"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Tùy chỉnh"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Lưu thành cài đặt sẵn"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Tên cho cài đặt sẵn này"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Phẳng"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Giọng nói"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Âm nhạc"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Điện ảnh"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Phòng thu"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Ngoài trời"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Thiên nhiên"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Tăng âm trầm"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Ban đêm"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Âm sắc"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Ba điều khiển cho sáu dải bên dưới."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Âm trầm"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Âm trung"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Âm cao"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Bộ chỉnh âm theo dải"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Siêu trầm"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Độ rền và sức nặng"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Âm trầm"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Độ ấm và dày"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Trung trầm"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Độ đầy hoặc bí tiếng"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Âm trung"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Giọng nói và độ rõ"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Độ hiện diện"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Phụ âm và chi tiết"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Độ sáng"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Độ thoáng và lấp lánh"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Đặt lại về trung tính"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Âm lượng 100%, bộ chỉnh âm phẳng, cân bằng ở giữa"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Dùng mặc định của tôi"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Áp dụng mặc định đã lưu trong trang cài đặt"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Cài đặt sẵn đã lưu"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Chưa có cài đặt sẵn nào. Hãy lưu một cái từ cửa sổ bật lên."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Đổi tên"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Xóa"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Xóa \"$NAME$\"?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Di chuyển lên"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Di chuyển xuống"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Thứ tự ở đây là thứ tự hiển thị trong cửa sổ bật lên."
   },
   "popupGainHint": {
     "message": "Trên 100% bộ giới hạn vẫn bật để tránh méo tiếng."

@@ -188,124 +188,124 @@
     "message": "Pranešti apie problemą „GitHub“"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Išankstinis nustatymas"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Pasirinktinis"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Įrašyti kaip nustatymą"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Šio nustatymo pavadinimas"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Tolygus"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Kalba"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Muzika"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Kinas"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Studija"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Lauke"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Gamta"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Bosų stiprinimas"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Naktis"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Tonas"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Trys valdikliai šešioms juostoms žemiau."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Bosai"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Vidutiniai"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Aukšti"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Juostų ekvalaizeris"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Žemieji bosai"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Dundesys ir svoris"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Bosai"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Šiluma ir sodrumas"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Žemi vidutiniai"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Sodrumas arba dėžinis skambesys"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Vidutiniai"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Balsas ir aiškumas"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Ryškumas"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Priebalsiai ir detalės"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Skaidrumas"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Erdvumas ir žvilgesys"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Atstatyti į neutralų"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Garsumas 100 %, tolygus ekvalaizeris, centruotas balansas"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Naudoti mano numatytuosius"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Pritaiko nustatymų puslapyje įrašytus numatytuosius"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Įrašyti nustatymai"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Dar nėra įrašytų nustatymų. Įrašykite iškylančiajame lange."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Pervardyti"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Ištrinti"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Ištrinti „$NAME$“?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Perkelti aukštyn"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Perkelti žemyn"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Ši tvarka naudojama ir iškylančiajame lange."
   },
   "popupGainHint": {
     "message": "Virš 100% ribotuvas lieka įjungtas, kad išvengtų iškraipymų."

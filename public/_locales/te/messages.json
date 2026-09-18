@@ -188,124 +188,124 @@
     "message": "GitHubలో సమస్యను నివేదించండి"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "ప్రీసెట్"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "అనుకూలం"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "ప్రీసెట్‌గా సేవ్ చేయండి"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "ఈ ప్రీసెట్ పేరు"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "ఫ్లాట్"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "ప్రసంగం"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "సంగీతం"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "సినిమా"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "స్టూడియో"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "బయట"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "ప్రకృతి"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "బాస్ బూస్ట్"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "రాత్రి"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "టోన్"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "కింది ఆరు బ్యాండ్‌లపై మూడు నియంత్రణలు."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "బాస్"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "మిడ్"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "ట్రెబుల్"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "బ్యాండ్‌వారీ ఈక్వలైజర్"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "సబ్-బాస్"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "లోతు మరియు బరువు"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "బాస్"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "వెచ్చదనం మరియు పూర్ణత"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "లో మిడ్"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "పూర్ణత లేదా మూసుకుపోయిన ధ్వని"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "మిడ్"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "స్వరం మరియు స్పష్టత"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "ప్రెజెన్స్"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "హల్లులు మరియు వివరాలు"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "ప్రకాశం"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "గాలి మరియు మెరుపు"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "తటస్థానికి రీసెట్ చేయండి"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "వాల్యూమ్ 100%, ఫ్లాట్ ఈక్వలైజర్, మధ్య బ్యాలెన్స్"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "నా డిఫాల్ట్‌లను వాడండి"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "సెట్టింగ్‌ల పేజీలో సేవ్ చేసిన డిఫాల్ట్‌లను వర్తింపజేయండి"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "సేవ్ చేసిన ప్రీసెట్‌లు"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "ఇంకా ప్రీసెట్‌లు సేవ్ కాలేదు. పాపప్ నుండి ఒకటి సేవ్ చేయండి."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "పేరు మార్చండి"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "తొలగించండి"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" తొలగించాలా?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "పైకి జరపండి"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "కిందికి జరపండి"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "ఇక్కడి క్రమమే పాపప్‌లో కనిపించే క్రమం."
   },
   "popupGainHint": {
     "message": "100% పైన వక్రీకరణను నివారించడానికి లిమిటర్ ఆన్‌లో ఉంటుంది."

@@ -188,124 +188,124 @@
     "message": "דווח על בעיה ב-GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "הגדרה מוכנה"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "מותאם אישית"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "שמור כהגדרה מוכנה"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "שם להגדרה זו"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "שטוח"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "דיבור"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "מוזיקה"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "קולנוע"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "אולפן"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "בחוץ"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "טבע"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "הגברת בס"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "לילה"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "גוון"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "שלושה בקרים לשש הרצועות שלמטה."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "בס"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "אמצע"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "טרבל"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "אקולייזר לפי רצועה"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "תת-בס"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "עומק ומשקל"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "בס"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "חמימות וגוף"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "אמצע נמוך"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "מלאות או צליל קופסתי"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "אמצע"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "קול ובהירות"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "נוכחות"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "עיצורים ופרטים"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "בהירות"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "אווריריות וניצוץ"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "איפוס לניטרלי"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "עוצמה 100%, אקולייזר שטוח, איזון ממורכז"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "השתמש בברירות המחדל שלי"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "החל את ברירות המחדל שנשמרו בדף ההגדרות"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "הגדרות שמורות"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "עדיין לא נשמרו הגדרות. שמור אחת מהחלון הקופץ."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "שנה שם"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "מחק"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "למחוק את \"$NAME$\"?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "הזז למעלה"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "הזז למטה"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "הסדר כאן הוא הסדר שיוצג בחלון הקופץ."
   },
   "popupGainHint": {
     "message": "מעל 100% המגביל נשאר פעיל כדי למנוע עיוות."

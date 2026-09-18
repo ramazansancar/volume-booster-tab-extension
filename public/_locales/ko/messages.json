@@ -188,124 +188,124 @@
     "message": "GitHub에 문제 신고"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "프리셋"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "사용자 지정"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "프리셋으로 저장"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "이 프리셋의 이름"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "플랫"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "음성"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "음악"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "영화"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "스튜디오"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "야외"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "자연"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "베이스 강화"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "야간"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "음색"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "아래 여섯 대역을 조절하는 세 가지 컨트롤."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "저음"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "중음"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "고음"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "대역별 이퀄라이저"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "초저음"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "울림과 무게감"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "저음"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "따뜻함과 두께"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "중저음"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "풍성함 또는 먹먹함"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "중음"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "목소리와 명료함"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "프레즌스"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "자음과 디테일"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "광채"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "공기감과 반짝임"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "기본값으로 초기화"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "볼륨 100%, 플랫 이퀄라이저, 중앙 밸런스"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "내 기본값 사용"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "설정 페이지에 저장된 기본값을 적용합니다"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "저장된 프리셋"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "저장된 프리셋이 없습니다. 팝업에서 저장하세요."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "이름 변경"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "삭제"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\"을(를) 삭제할까요?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "위로 이동"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "아래로 이동"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "여기 순서가 팝업에 표시되는 순서입니다."
   },
   "popupGainHint": {
     "message": "100%를 넘으면 왜곡을 막기 위해 리미터가 켜진 상태로 유지됩니다."

@@ -188,25 +188,25 @@
     "message": "Segnala un problema su GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Preimpostazione"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Personalizzato"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Salva come preimpostazione"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Nome di questa preimpostazione"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Neutro"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Voce"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Musica"
   },
   "presetCinema": {
     "message": "Cinema"
@@ -215,97 +215,97 @@
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "All’aperto"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Natura"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Bassi potenziati"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Notte"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Tono"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Tre controlli sulle sei bande sottostanti."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Bassi"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Medi"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Alti"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Equalizzatore per banda"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Sub-bassi"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Rombo e corpo"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Bassi"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Calore e corpo"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Medio-bassi"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Pienezza o suono scatolare"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Medi"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Voce e chiarezza"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Presenza"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Consonanti e dettaglio"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Brillantezza"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Aria e brillantezza"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Ripristina neutro"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Volume 100%, equalizzatore neutro, bilanciamento centrato"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Usa i miei valori"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Applica i valori predefiniti salvati nella pagina impostazioni"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Preimpostazioni salvate"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Nessuna preimpostazione salvata. Salvane una dal popup."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Rinomina"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Elimina"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Eliminare \"$NAME$\"?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Sposta su"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Sposta giù"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Questo ordine è quello usato nel popup."
   },
   "popupGainHint": {
     "message": "Oltre il 100% il limitatore resta attivo per evitare distorsioni."

@@ -188,124 +188,124 @@
     "message": "Probleem melden op GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Voorinstelling"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Aangepast"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Opslaan als voorinstelling"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Naam voor deze voorinstelling"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Neutraal"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Spraak"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Muziek"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Bioscoop"
   },
   "presetStudio": {
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Buiten"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Natuur"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Bassversterking"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Nacht"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Klank"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Drie regelaars voor de zes banden hieronder."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Midden"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Hoog"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Equalizer per band"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Subbas"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Diepte en gewicht"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Warmte en body"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Laag-midden"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Volheid of doosachtigheid"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Midden"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Stem en helderheid"
   },
   "bandPresence": {
     "message": "Presence"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Medeklinkers en detail"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Schittering"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Lucht en glans"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Terug naar neutraal"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Volume 100%, neutrale equalizer, gecentreerde balans"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Mijn standaardwaarden"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Past de standaardwaarden van de instellingenpagina toe"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Opgeslagen voorinstellingen"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Nog geen voorinstellingen opgeslagen. Sla er een op vanuit de pop-up."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Naam wijzigen"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Verwijderen"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" verwijderen?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Omhoog"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Omlaag"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Deze volgorde geldt ook in de pop-up."
   },
   "popupGainHint": {
     "message": "Boven 100% blijft de limiter aan om vervorming te voorkomen."

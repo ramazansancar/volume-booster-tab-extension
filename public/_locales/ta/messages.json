@@ -188,124 +188,124 @@
     "message": "GitHub இல் சிக்கலைத் தெரிவி"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "முன்னமைவு"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "தனிப்பயன்"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "முன்னமைவாகச் சேமி"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "இந்த முன்னமைவின் பெயர்"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "சமன்"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "பேச்சு"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "இசை"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "திரைப்படம்"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "ஸ்டுடியோ"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "வெளியில்"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "இயற்கை"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "பாஸ் அதிகரிப்பு"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "இரவு"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "தொனி"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "கீழே உள்ள ஆறு பட்டைகளுக்கான மூன்று கட்டுப்பாடுகள்."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "பாஸ்"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "நடு"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "உயர்"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "பட்டை வாரியான சமன்பாட்டி"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "ஆழ் பாஸ்"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "ஆழமும் கனமும்"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "பாஸ்"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "கதகதப்பும் நிறைவும்"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "கீழ் நடு"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "நிறைவு அல்லது அடைப்பு"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "நடு"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "குரலும் தெளிவும்"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "இருப்பு"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "மெய்யெழுத்துகளும் நுணுக்கமும்"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "ஒளிர்வு"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "காற்றும் மின்னலும்"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "நடுநிலைக்கு மீட்டமை"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "ஒலி 100%, சமன் சமன்பாட்டி, மையப்படுத்திய சமநிலை"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "என் இயல்புநிலையைப் பயன்படுத்து"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "அமைப்புகள் பக்கத்தில் சேமித்த இயல்புநிலைகளைப் பயன்படுத்து"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "சேமித்த முன்னமைவுகள்"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "இதுவரை முன்னமைவுகள் சேமிக்கப்படவில்லை. பாப்அப்பிலிருந்து ஒன்றைச் சேமிக்கவும்."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "மறுபெயரிடு"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "நீக்கு"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" நீக்கவா?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "மேலே நகர்த்து"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "கீழே நகர்த்து"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "இங்குள்ள வரிசையே பாப்அப்பில் தோன்றும் வரிசை."
   },
   "popupGainHint": {
     "message": "100% க்கு மேல் சிதைவைத் தடுக்க லிமிட்டர் இயக்கத்தில் இருக்கும்."

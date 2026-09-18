@@ -188,124 +188,124 @@
     "message": "รายงานปัญหาบน GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "ค่าที่ตั้งไว้"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "กำหนดเอง"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "บันทึกเป็นค่าที่ตั้งไว้"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "ชื่อของค่าที่ตั้งไว้นี้"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "แบน"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "เสียงพูด"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "เพลง"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "ภาพยนตร์"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "สตูดิโอ"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "กลางแจ้ง"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "ธรรมชาติ"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "เพิ่มเสียงเบส"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "กลางคืน"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "โทนเสียง"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "สามตัวควบคุมสำหรับหกย่านด้านล่าง"
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "เสียงเบส"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "เสียงกลาง"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "เสียงแหลม"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "อีควอไลเซอร์รายย่าน"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "เบสลึก"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "ความก้องและน้ำหนัก"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "เสียงเบส"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "ความอบอุ่นและเนื้อเสียง"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "กลางต่ำ"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "ความเต็มหรือเสียงอู้"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "เสียงกลาง"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "เสียงพูดและความชัด"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "ความชัด"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "เสียงพยัญชนะและรายละเอียด"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "ความสว่าง"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "ความโปร่งและประกาย"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "รีเซ็ตเป็นกลาง"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "ระดับเสียง 100% อีควอไลเซอร์แบน สมดุลตรงกลาง"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "ใช้ค่าเริ่มต้นของฉัน"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "ใช้ค่าเริ่มต้นที่บันทึกไว้ในหน้าการตั้งค่า"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "ค่าที่บันทึกไว้"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "ยังไม่มีค่าที่บันทึกไว้ บันทึกจากหน้าต่างป็อปอัป"
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "เปลี่ยนชื่อ"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "ลบ"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "ลบ \"$NAME$\" หรือไม่?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "เลื่อนขึ้น"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "เลื่อนลง"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "ลำดับที่นี่คือลำดับที่แสดงในป็อปอัป"
   },
   "popupGainHint": {
     "message": "เกิน 100% ลิมิตเตอร์จะเปิดอยู่เพื่อป้องกันเสียงแตก"

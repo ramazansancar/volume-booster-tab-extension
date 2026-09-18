@@ -188,124 +188,124 @@
     "message": "الإبلاغ عن مشكلة على GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "إعداد مسبق"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "مخصص"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "حفظ الحالي كإعداد مسبق"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "اسم هذا الإعداد المسبق"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "مسطح"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "كلام"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "موسيقى"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "سينما"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "استوديو"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "في الخارج"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "طبيعة"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "تعزيز الجهير"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "ليلي"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "النغمة"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "ثلاثة عناصر تحكم في النطاقات الستة أدناه."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "جهير"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "متوسط"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "حاد"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "معادل لكل نطاق"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "جهير عميق"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "الهدير والثقل"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "جهير"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "الدفء والامتلاء"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "متوسط منخفض"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "الامتلاء أو الصندوقية"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "متوسط"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "الصوت والوضوح"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "الحضور"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "الحروف الساكنة والتفاصيل"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "التألق"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "الهواء واللمعان"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "إعادة إلى المحايد"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "الصوت 100%، معادل مسطح، توازن مركزي"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "استخدام إعداداتي الافتراضية"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "تطبيق الإعدادات الافتراضية المحفوظة في صفحة الإعدادات"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "الإعدادات المحفوظة"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "لا توجد إعدادات محفوظة بعد. احفظ واحدًا من النافذة المنبثقة."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "إعادة تسمية"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "حذف"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "حذف \"$NAME$\"؟",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "تحريك لأعلى"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "تحريك لأسفل"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "الترتيب هنا هو ترتيب ظهورها في النافذة المنبثقة."
   },
   "popupGainHint": {
     "message": "فوق 100% يظل المحدد مفعلاً لمنع التشويه."

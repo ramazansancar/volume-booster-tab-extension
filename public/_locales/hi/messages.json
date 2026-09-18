@@ -188,124 +188,124 @@
     "message": "GitHub पर समस्या बताएं"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "प्रीसेट"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "कस्टम"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "प्रीसेट के रूप में सहेजें"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "इस प्रीसेट का नाम"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "सपाट"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "भाषण"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "संगीत"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "सिनेमा"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "स्टूडियो"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "बाहर"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "प्रकृति"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "बेस बूस्ट"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "रात"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "टोन"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "नीचे के छह बैंड के लिए तीन नियंत्रण।"
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "बेस"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "मिड"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "ट्रेबल"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "बैंड-वार इक्वलाइज़र"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "सब-बेस"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "गहराई और वज़न"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "बेस"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "गर्माहट और भराव"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "लो मिड"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "भराव या बंद ध्वनि"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "मिड"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "आवाज़ और स्पष्टता"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "प्रेजेंस"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "व्यंजन और बारीकी"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "ब्रिलिएंस"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "हवा और चमक"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "न्यूट्रल पर रीसेट करें"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "वॉल्यूम 100%, सपाट इक्वलाइज़र, केंद्रित बैलेंस"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "मेरे डिफ़ॉल्ट उपयोग करें"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "सेटिंग्स पेज पर सहेजे गए डिफ़ॉल्ट लागू करें"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "सहेजे गए प्रीसेट"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "अभी कोई प्रीसेट सहेजा नहीं गया। पॉपअप से एक सहेजें।"
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "नाम बदलें"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "हटाएं"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" हटाएं?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "ऊपर ले जाएं"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "नीचे ले जाएं"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "यहाँ का क्रम ही पॉपअप में दिखने वाला क्रम है।"
   },
   "popupGainHint": {
     "message": "100% से ऊपर विरूपण रोकने के लिए लिमिटर चालू रहता है।"

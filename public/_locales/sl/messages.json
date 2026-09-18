@@ -188,124 +188,124 @@
     "message": "Prijavi težavo na GitHubu"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Prednastavitev"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Po meri"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Shrani kot prednastavitev"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Ime te prednastavitve"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Ravno"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Govor"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Glasba"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Kino"
   },
   "presetStudio": {
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Na prostem"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Narava"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Ojačan bas"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Noč"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Ton"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Trije regulatorji za šest pasov spodaj."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Srednji"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Visoki"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Izenačevalnik po pasovih"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Globoki bas"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Bobnenje in teža"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Toplina in polnost"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Nizki srednji"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Polnost ali zamolklost"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Srednji"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Glas in jasnost"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Prisotnost"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Soglasniki in podrobnosti"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Sijaj"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Zračnost in lesk"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Ponastavi na nevtralno"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Glasnost 100 %, raven izenačevalnik, sredinsko ravnovesje"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Uporabi moje privzete"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Uporabi privzete vrednosti, shranjene na strani z nastavitvami"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Shranjene prednastavitve"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Prednastavitve še niso shranjene. Shranite jo v pojavnem oknu."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Preimenuj"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Izbriši"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Izbrišem »$NAME$«?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Premakni navzgor"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Premakni navzdol"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Ta vrstni red velja tudi v pojavnem oknu."
   },
   "popupGainHint": {
     "message": "Nad 100 % omejevalnik ostane vklopljen, da prepreči popačenje."

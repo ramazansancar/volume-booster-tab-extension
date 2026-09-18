@@ -188,124 +188,124 @@
     "message": "GitHub ನಲ್ಲಿ ಸಮಸ್ಯೆ ವರದಿ ಮಾಡಿ"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "ಪ್ರೀಸೆಟ್"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "ಕಸ್ಟಮ್"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "ಪ್ರೀಸೆಟ್ ಆಗಿ ಉಳಿಸಿ"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "ಈ ಪ್ರೀಸೆಟ್‌ನ ಹೆಸರು"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "ಸಮತಟ್ಟು"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "ಮಾತು"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "ಸಂಗೀತ"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "ಸಿನಿಮಾ"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "ಸ್ಟುಡಿಯೋ"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "ಹೊರಾಂಗಣ"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "ಪ್ರಕೃತಿ"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "ಬಾಸ್ ಬೂಸ್ಟ್"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "ರಾತ್ರಿ"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "ಸ್ವರ"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "ಕೆಳಗಿನ ಆರು ಬ್ಯಾಂಡ್‌ಗಳ ಮೇಲೆ ಮೂರು ನಿಯಂತ್ರಣಗಳು."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "ಬಾಸ್"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "ಮಧ್ಯ"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "ಟ್ರೆಬಲ್"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "ಬ್ಯಾಂಡ್‌ವಾರು ಈಕ್ವಲೈಜರ್"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "ಅತಿ ಕಡಿಮೆ ಬಾಸ್"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "ಗರ್ಜನೆ ಮತ್ತು ತೂಕ"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "ಬಾಸ್"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "ಬೆಚ್ಚನೆ ಮತ್ತು ದೇಹ"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "ಕೆಳ ಮಧ್ಯ"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "ಪೂರ್ಣತೆ ಅಥವಾ ಮಂದತೆ"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "ಮಧ್ಯ"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "ಧ್ವನಿ ಮತ್ತು ಸ್ಪಷ್ಟತೆ"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "ಸಾನ್ನಿಧ್ಯ"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "ವ್ಯಂಜನಗಳು ಮತ್ತು ವಿವರ"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "ಪ್ರಖರತೆ"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "ಗಾಳಿ ಮತ್ತು ಹೊಳಪು"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "ತಟಸ್ಥಕ್ಕೆ ಮರುಹೊಂದಿಸಿ"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "ವಾಲ್ಯೂಮ್ 100%, ಸಮತಟ್ಟು ಈಕ್ವಲೈಜರ್, ಕೇಂದ್ರೀಕೃತ ಬ್ಯಾಲೆನ್ಸ್"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "ನನ್ನ ಡೀಫಾಲ್ಟ್ ಬಳಸಿ"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಪುಟದಲ್ಲಿ ಉಳಿಸಿದ ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ಅನ್ವಯಿಸಿ"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "ಉಳಿಸಿದ ಪ್ರೀಸೆಟ್‌ಗಳು"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "ಇನ್ನೂ ಪ್ರೀಸೆಟ್ ಉಳಿಸಿಲ್ಲ. ಪಾಪ್‌ಅಪ್‌ನಿಂದ ಒಂದನ್ನು ಉಳಿಸಿ."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "ಮರುಹೆಸರಿಸಿ"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "ಅಳಿಸಿ"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" ಅಳಿಸಬೇಕೆ?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "ಮೇಲೆ ಸರಿಸಿ"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "ಕೆಳಗೆ ಸರಿಸಿ"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "ಇಲ್ಲಿನ ಕ್ರಮವೇ ಪಾಪ್‌ಅಪ್‌ನಲ್ಲಿ ಕಾಣುವ ಕ್ರಮ."
   },
   "popupGainHint": {
     "message": "100% ಮೀರಿದಾಗ ವಿರೂಪ ತಡೆಯಲು ಲಿಮಿಟರ್ ಆನ್ ಆಗಿರುತ್ತದೆ."

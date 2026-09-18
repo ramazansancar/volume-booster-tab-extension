@@ -188,124 +188,124 @@
     "message": "Ripoti tatizo kwenye GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Mpangilio"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Maalum"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Hifadhi kama mpangilio"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Jina la mpangilio huu"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Tambarare"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Mazungumzo"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Muziki"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Sinema"
   },
   "presetStudio": {
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Nje"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Asili"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Kuimarisha besi"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Usiku"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Toni"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Vidhibiti vitatu vya bendi sita zilizo hapa chini."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Besi"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Kati"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Juu"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Kisawazishi cha kila bendi"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Besi ya chini"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Mngurumo na uzito"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Besi"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Uchangamfu na mwili"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Kati ya chini"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Ujazo au sauti ya kisanduku"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Kati"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Sauti na uwazi"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Uwepo"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Konsonanti na undani"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Ung’avu"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Hewa na mng’ao"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Rudisha hali ya kawaida"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Sauti 100%, kisawazishi tambarare, mizani ya katikati"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Tumia chaguo-msingi zangu"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Tumia chaguo-msingi zilizohifadhiwa kwenye ukurasa wa mipangilio"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Mipangilio iliyohifadhiwa"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Bado hakuna mipangilio iliyohifadhiwa. Hifadhi moja kutoka kwenye kidirisha."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Badilisha jina"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Futa"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Futa \"$NAME$\"?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Sogeza juu"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Sogeza chini"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Mpangilio huu ndio unaoonekana kwenye kidirisha."
   },
   "popupGainHint": {
     "message": "Zaidi ya 100% kikomo hubaki kimewashwa kuzuia upotoshaji."

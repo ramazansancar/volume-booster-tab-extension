@@ -188,124 +188,124 @@
     "message": "GitHub-ൽ പ്രശ്നം റിപ്പോർട്ട് ചെയ്യുക"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "പ്രീസെറ്റ്"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "ഇഷ്ടാനുസൃതം"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "പ്രീസെറ്റായി സംരക്ഷിക്കുക"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "ഈ പ്രീസെറ്റിന്റെ പേര്"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "ഫ്ലാറ്റ്"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "സംഭാഷണം"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "സംഗീതം"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "സിനിമ"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "സ്റ്റുഡിയോ"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "പുറത്ത്"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "പ്രകൃതി"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "ബാസ് ബൂസ്റ്റ്"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "രാത്രി"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "ടോൺ"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "താഴെയുള്ള ആറ് ബാൻഡുകൾക്കുള്ള മൂന്ന് നിയന്ത്രണങ്ങൾ."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "ബാസ്"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "മിഡ്"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "ട്രെബിൾ"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "ബാൻഡ് തിരിച്ചുള്ള ഇക്വലൈസർ"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "സബ്-ബാസ്"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "മുഴക്കവും ഭാരവും"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "ബാസ്"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "ഊഷ്മളതയും കനവും"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "ലോ മിഡ്"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "പൂർണ്ണതയോ അടഞ്ഞ ശബ്ദമോ"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "മിഡ്"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "ശബ്ദവും വ്യക്തതയും"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "സാന്നിധ്യം"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "വ്യഞ്ജനങ്ങളും വിശദാംശങ്ങളും"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "തിളക്കം"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "വായുവും തിളക്കവും"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "നിഷ്പക്ഷമാക്കുക"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "വോളിയം 100%, ഫ്ലാറ്റ് ഇക്വലൈസർ, മധ്യത്തിലുള്ള ബാലൻസ്"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "എന്റെ സ്ഥിരസ്ഥിതി ഉപയോഗിക്കുക"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "ക്രമീകരണ പേജിൽ സംരക്ഷിച്ച സ്ഥിരസ്ഥിതികൾ പ്രയോഗിക്കുക"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "സംരക്ഷിച്ച പ്രീസെറ്റുകൾ"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "ഇതുവരെ പ്രീസെറ്റുകളൊന്നും സംരക്ഷിച്ചിട്ടില്ല. പോപ്പപ്പിൽ നിന്ന് സംരക്ഷിക്കുക."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "പേരുമാറ്റുക"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "ഇല്ലാതാക്കുക"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" ഇല്ലാതാക്കണോ?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "മുകളിലേക്ക് നീക്കുക"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "താഴേക്ക് നീക്കുക"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "ഇവിടത്തെ ക്രമമാണ് പോപ്പപ്പിൽ കാണുന്ന ക്രമം."
   },
   "popupGainHint": {
     "message": "100% ന് മുകളിൽ വക്രീകരണം തടയാൻ ലിമിറ്റർ ഓണായി തുടരും."

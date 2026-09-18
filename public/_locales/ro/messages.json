@@ -188,25 +188,25 @@
     "message": "Raportează o problemă pe GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Presetare"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Personalizat"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Salvează ca presetare"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Numele acestei presetări"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Plat"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Vorbire"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Muzică"
   },
   "presetCinema": {
     "message": "Cinema"
@@ -215,97 +215,97 @@
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "În aer liber"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Natură"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Bas amplificat"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Noapte"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Ton"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Trei controale pentru cele șase benzi de mai jos."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Medii"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Înalte"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Egalizator pe benzi"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Sub-bas"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Vuiet și greutate"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Căldură și corp"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Medii joase"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Plenitudine sau sunet înfundat"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Medii"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Voce și claritate"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Prezență"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Consoane și detaliu"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Strălucire"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Aer și strălucire"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Revino la neutru"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Volum 100%, egalizator plat, balans centrat"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Folosește valorile mele"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Aplică valorile implicite salvate în pagina de setări"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Presetări salvate"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Nicio presetare salvată încă. Salvează una din fereastra pop-up."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Redenumește"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Șterge"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Ștergeți „$NAME$”?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Mută în sus"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Mută în jos"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Această ordine este cea din fereastra pop-up."
   },
   "popupGainHint": {
     "message": "Peste 100% limitatorul rămâne activ pentru a preveni distorsiunea."

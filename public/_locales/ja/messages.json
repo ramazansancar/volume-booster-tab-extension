@@ -188,124 +188,124 @@
     "message": "GitHub で問題を報告"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "プリセット"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "カスタム"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "プリセットとして保存"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "このプリセットの名前"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "フラット"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "音声"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "音楽"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "シネマ"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "スタジオ"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "屋外"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "自然"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "低音強調"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "ナイト"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "音質"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "下の 6 バンドを操作する 3 つのコントロール。"
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "低音"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "中音"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "高音"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "バンド別イコライザー"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "超低音"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "重低音の迫力"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "低音"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "温かみと厚み"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "中低音"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "厚みまたはこもり"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "中音"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "声と明瞭さ"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "プレゼンス"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "子音とディテール"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "輝き"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "空気感ときらめき"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "ニュートラルに戻す"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "音量 100%、フラットなイコライザー、中央のバランス"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "自分の既定値を使う"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "設定ページに保存した既定値を適用します"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "保存したプリセット"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "保存されたプリセットはありません。ポップアップから保存してください。"
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "名前を変更"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "削除"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "「$NAME$」を削除しますか？",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "上へ移動"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "下へ移動"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "ここでの順序がポップアップでの表示順になります。"
   },
   "popupGainHint": {
     "message": "100% を超えると歪みを防ぐためリミッターが有効のままになります。"

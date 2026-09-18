@@ -188,124 +188,124 @@
     "message": "Rapportér et problem på GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Forindstilling"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Brugerdefineret"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Gem som forindstilling"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Navn til denne forindstilling"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Flad"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Tale"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Musik"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Biograf"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Studie"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Udendørs"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Natur"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Basforstærkning"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Nat"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Klang"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Tre kontroller over de seks bånd nedenfor."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Mellem"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Diskant"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Equalizer pr. bånd"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Subbas"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Dybde og vægt"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Bas"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Varme og fylde"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Lav mellem"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Fylde eller kasselyd"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Mellem"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Stemme og klarhed"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Nærvær"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Konsonanter og detaljer"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Brillans"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Luft og glans"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Nulstil til neutral"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Lydstyrke 100 %, flad equalizer, centreret balance"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Brug mine standarder"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Anvender standarderne gemt på indstillingssiden"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Gemte forindstillinger"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Ingen forindstillinger gemt endnu. Gem en fra pop op-vinduet."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Omdøb"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Slet"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Slet \"$NAME$\"?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Flyt op"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Flyt ned"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Rækkefølgen her er den, de vises i i pop op-vinduet."
   },
   "popupGainHint": {
     "message": "Over 100 % forbliver limiteren tændt for at undgå forvrængning."

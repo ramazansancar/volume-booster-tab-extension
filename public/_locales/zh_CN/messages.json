@@ -188,124 +188,124 @@
     "message": "在 GitHub 上报告问题"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "预设"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "自定义"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "保存为预设"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "此预设的名称"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "平坦"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "语音"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "音乐"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "影院"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "录音室"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "户外"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "自然"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "低音增强"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "夜间"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "音色"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "三个控件控制下方六个频段。"
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "低音"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "中音"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "高音"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "分频段均衡器"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "超低音"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "低频轰鸣与厚度"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "低音"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "温暖与厚度"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "中低音"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "饱满感或箱声"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "中音"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "人声与清晰度"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "临场感"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "辅音与细节"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "明亮度"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "空气感与光泽"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "重置为中性"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "音量 100%、均衡器平坦、声道居中"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "使用我的默认值"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "应用设置页中保存的默认值"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "已保存的预设"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "尚未保存预设。请从弹出窗口保存。"
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "重命名"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "删除"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "删除“$NAME$”？",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "上移"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "下移"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "此处的顺序即为弹出窗口中的显示顺序。"
   },
   "popupGainHint": {
     "message": "超过 100% 时限制器保持开启以防止失真。"

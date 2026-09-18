@@ -188,124 +188,124 @@
     "message": "Nahlásiť problém na GitHube"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Predvoľba"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Vlastné"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Uložiť ako predvoľbu"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Názov tejto predvoľby"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Rovný"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Reč"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Hudba"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Kino"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Štúdio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Vonku"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Príroda"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Zosilnené basy"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Noc"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Tón"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Tri ovládače pre šesť pásiem nižšie."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Basy"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Stredy"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Výšky"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Ekvalizér po pásmach"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Hlboké basy"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Dunenie a váha"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Basy"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Teplo a plnosť"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Nižšie stredy"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Plnosť alebo dutosť"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Stredy"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Hlas a zrozumiteľnosť"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Prítomnosť"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Spoluhlásky a detail"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Jas"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Vzdušnosť a iskra"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Späť na neutrálne"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Hlasitosť 100 %, rovný ekvalizér, vycentrované vyváženie"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Použiť moje predvolené"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Použije predvolené hodnoty uložené na stránke nastavení"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Uložené predvoľby"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Zatiaľ žiadne predvoľby. Uložte ju z vyskakovacieho okna."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Premenovať"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Odstrániť"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Odstrániť „$NAME$“?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Posunúť hore"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Posunúť dole"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Toto poradie platí aj vo vyskakovacom okne."
   },
   "popupGainHint": {
     "message": "Nad 100 % zostáva limiter zapnutý, aby zabránil skresleniu."

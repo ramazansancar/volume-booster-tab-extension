@@ -188,124 +188,124 @@
     "message": "Ilmoita ongelmasta GitHubissa"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Esiasetus"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Mukautettu"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Tallenna esiasetuksena"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Tämän esiasetuksen nimi"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Tasainen"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Puhe"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Musiikki"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Elokuva"
   },
   "presetStudio": {
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Ulkona"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Luonto"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Bassotehostus"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Yö"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Sävy"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Kolme säädintä alla oleville kuudelle kaistalle."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Basso"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Keski"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Diskantti"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Kaistakohtainen taajuuskorjain"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Syvä basso"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Jyrinä ja painokkuus"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Basso"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Lämpö ja täyteläisyys"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Alakeski"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Täyteläisyys tai laatikkomaisuus"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Keski"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Ääni ja selkeys"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Läsnäolo"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Konsonantit ja yksityiskohdat"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Kirkkaus"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Ilmavuus ja kimallus"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Palauta neutraaliksi"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Äänenvoimakkuus 100 %, tasainen taajuuskorjain, keskitetty tasapaino"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Käytä omia oletuksiani"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Ottaa käyttöön asetussivulle tallennetut oletukset"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Tallennetut esiasetukset"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Esiasetuksia ei ole vielä tallennettu. Tallenna ponnahdusikkunasta."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Nimeä uudelleen"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Poista"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Poistetaanko ”$NAME$”?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Siirrä ylös"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Siirrä alas"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Tämä järjestys on sama kuin ponnahdusikkunassa."
   },
   "popupGainHint": {
     "message": "Yli 100 % rajoitin pysyy päällä säröytymisen estämiseksi."

@@ -188,124 +188,124 @@
     "message": "Hiba jelentése a GitHubon"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Előbeállítás"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Egyéni"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Mentés előbeállításként"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Az előbeállítás neve"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Semleges"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Beszéd"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Zene"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Mozi"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Stúdió"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Szabadban"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Természet"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Mélyhang-kiemelés"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Éjszaka"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Hangszín"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Három szabályzó az alábbi hat sávhoz."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Mély"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Közép"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Magas"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Sávonkénti hangszínszabályzó"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Mélybasszus"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Dörej és súly"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Mély"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Melegség és testesség"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Alsó közép"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Teltség vagy dobozos hang"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Közép"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Hang és tisztaság"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Jelenlét"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Mássalhangzók és részletek"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Csillogás"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Levegősség és csillogás"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Vissza semlegesre"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Hangerő 100%, semleges hangszínszabályzó, középre állított egyensúly"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Saját alapértékek"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "A beállítások oldalon mentett alapértékek alkalmazása"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Mentett előbeállítások"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Még nincs mentett előbeállítás. Mentsen egyet a felugró ablakból."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Átnevezés"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Törlés"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Törli a(z) „$NAME$” elemet?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Mozgatás fel"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Mozgatás le"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Ez a sorrend jelenik meg a felugró ablakban is."
   },
   "popupGainHint": {
     "message": "100% felett a limiter bekapcsolva marad a torzítás elkerülésére."

@@ -188,124 +188,124 @@
     "message": "گزارش مشکل در GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "پیش‌تنظیم"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "سفارشی"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "ذخیره به عنوان پیش‌تنظیم"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "نام این پیش‌تنظیم"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "صاف"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "گفتار"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "موسیقی"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "سینما"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "استودیو"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "فضای باز"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "طبیعت"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "تقویت بم"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "شب"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "تن صدا"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "سه کنترل برای شش باند زیر."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "بم"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "میانی"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "زیر"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "اکولایزر هر باند"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "بم عمیق"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "غرش و سنگینی"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "بم"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "گرما و بدنه"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "میانی پایین"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "پُری یا صدای جعبه‌ای"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "میانی"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "صدا و وضوح"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "حضور"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "همخوان‌ها و جزئیات"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "درخشندگی"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "هوا و درخشش"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "بازنشانی به خنثی"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "صدا ۱۰۰٪، اکولایزر صاف، تعادل مرکزی"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "استفاده از پیش‌فرض‌های من"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "اعمال پیش‌فرض‌های ذخیره‌شده در صفحه تنظیمات"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "پیش‌تنظیم‌های ذخیره‌شده"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "هنوز پیش‌تنظیمی ذخیره نشده است. یکی را از پنجره بازشو ذخیره کنید."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "تغییر نام"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "حذف"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "«$NAME$» حذف شود؟",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "انتقال به بالا"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "انتقال به پایین"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "این ترتیب همان ترتیب نمایش در پنجره بازشو است."
   },
   "popupGainHint": {
     "message": "بالای ۱۰۰٪ محدودکننده روشن می‌ماند تا از اعوجاج جلوگیری کند."

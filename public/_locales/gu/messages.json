@@ -188,124 +188,124 @@
     "message": "GitHub પર સમસ્યા જણાવો"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "પ્રીસેટ"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "કસ્ટમ"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "પ્રીસેટ તરીકે સાચવો"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "આ પ્રીસેટનું નામ"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "સપાટ"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "વાણી"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "સંગીત"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "સિનેમા"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "સ્ટુડિયો"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "બહાર"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "પ્રકૃતિ"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "બેઝ બૂસ્ટ"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "રાત"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "ટોન"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "નીચેના છ બેન્ડ પરના ત્રણ નિયંત્રણો."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "બેઝ"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "મિડ"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "ટ્રેબલ"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "બેન્ડ-વાર ઇક્વલાઇઝર"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "સબ-બેઝ"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "ગડગડાટ અને વજન"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "બેઝ"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "હૂંફ અને ભરાવ"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "નીચલો મિડ"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "ભરાવ કે બંધિયારપણું"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "મિડ"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "અવાજ અને સ્પષ્ટતા"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "હાજરી"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "વ્યંજનો અને વિગત"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "ચમક"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "હવા અને ચમક"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "તટસ્થ પર રીસેટ કરો"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "વૉલ્યુમ 100%, સપાટ ઇક્વલાઇઝર, કેન્દ્રિત બેલેન્સ"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "મારા ડિફોલ્ટ વાપરો"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "સેટિંગ્સ પેજ પર સાચવેલા ડિફોલ્ટ લાગુ કરો"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "સાચવેલા પ્રીસેટ"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "હજી કોઈ પ્રીસેટ સાચવ્યું નથી. પોપઅપમાંથી સાચવો."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "નામ બદલો"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "કાઢી નાખો"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" કાઢી નાખવું?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "ઉપર ખસેડો"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "નીચે ખસેડો"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "અહીંનો ક્રમ પોપઅપમાં દેખાતો ક્રમ છે."
   },
   "popupGainHint": {
     "message": "100% થી ઉપર વિકૃતિ રોકવા લિમિટર ચાલુ રહે છે."

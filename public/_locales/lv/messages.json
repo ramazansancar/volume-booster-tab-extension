@@ -188,124 +188,124 @@
     "message": "Ziņot par problēmu GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Sagatave"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Pielāgots"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Saglabāt kā sagatavi"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Šīs sagataves nosaukums"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Plakans"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Runa"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Mūzika"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Kino"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Studija"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Ārā"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Daba"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Basu pastiprinājums"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Nakts"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Tonis"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Trīs vadīklas sešām joslām zemāk."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Basi"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Vidējie"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Augstie"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Joslu ekvalaizers"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Dziļie basi"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Dunoņa un svars"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Basi"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Siltums un pilnskanība"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Zemie vidējie"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Pilnskanība vai kastes skanējums"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Vidējie"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Balss un skaidrība"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Klātbūtne"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Līdzskaņi un detaļas"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Spožums"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Gaisīgums un mirdzums"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Atiestatīt uz neitrālu"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Skaļums 100%, plakans ekvalaizers, centrēts balanss"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Izmantot manus noklusējumus"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Lieto iestatījumu lapā saglabātos noklusējumus"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Saglabātās sagataves"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Vēl nav saglabātu sagatavju. Saglabājiet to uznirstošajā logā."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Pārdēvēt"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Dzēst"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Vai dzēst “$NAME$”?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Pārvietot uz augšu"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Pārvietot uz leju"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Šī secība tiek izmantota arī uznirstošajā logā."
   },
   "popupGainHint": {
     "message": "Virs 100% limitators paliek ieslēgts, lai novērstu kropļojumus."

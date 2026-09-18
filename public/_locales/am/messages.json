@@ -188,124 +188,124 @@
     "message": "በGitHub ላይ ችግር ያሳውቁ"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "ቅድመ ቅንብር"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "ብጁ"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "አሁኑን እንደ ቅድመ ቅንብር አስቀምጥ"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "የዚህ ቅድመ ቅንብር ስም"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "ጠፍጣፋ"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "ንግግር"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "ሙዚቃ"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "ሲኒማ"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "ስቱዲዮ"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "ከቤት ውጭ"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "ተፈጥሮ"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "ባስ ማጉላት"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "ሌሊት"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "ቃና"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "ከታች ባሉት ስድስት ባንዶች ላይ ሦስት መቆጣጠሪያዎች።"
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "ባስ"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "መካከለኛ"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "ከፍተኛ"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "በባንድ ኢኳላይዘር"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "ንዑስ ባስ"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "ጥልቅ ድምፅና ክብደት"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "ባስ"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "ሙቀትና አካል"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "ዝቅተኛ መካከለኛ"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "ሙላት ወይም መጨናነቅ"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "መካከለኛ"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "ድምፅና ግልጽነት"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "መገኘት"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "ተነባቢዎችና ዝርዝር"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "ብሩህነት"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "አየርና ብልጭታ"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "ወደ ገለልተኛ መልስ"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "ድምጽ 100%፣ ጠፍጣፋ ኢኳላይዘር፣ የተማከለ ሚዛን"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "የእኔን ነባሪዎች ተጠቀም"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "በቅንብሮች ገጽ ላይ የተቀመጡትን ነባሪዎች ተግብር"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "የተቀመጡ ቅድመ ቅንብሮች"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "እስካሁን የተቀመጠ ቅድመ ቅንብር የለም። ከብቅ-ባይ መስኮቱ አስቀምጡ።"
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "ዳግም ሰይም"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "ሰርዝ"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" ይሰረዝ?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "ወደ ላይ አንቀሳቅስ"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "ወደ ታች አንቀሳቅስ"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "እዚህ ያለው ቅደም ተከተል በብቅ-ባይ መስኮቱ ላይ የሚታየው ነው።"
   },
   "popupGainHint": {
     "message": "ከ100% በላይ ማዛባትን ለመከላከል ገዳቢው በርቶ ይቆያል።"

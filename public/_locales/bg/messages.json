@@ -188,124 +188,124 @@
     "message": "Докладвайте проблем в GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Профил"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Персонализиран"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Запази като профил"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Име на този профил"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Плосък"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Реч"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Музика"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Кино"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Студио"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "На открито"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Природа"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Усилен бас"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Нощен"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Тон"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Три регулатора над шестте ленти по-долу."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Бас"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Среден"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Високи"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Еквалайзер по ленти"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Дълбок бас"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Тътен и тежест"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Бас"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Топлина и плътност"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Ниски средни"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Плътност или глухота"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Среден"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Глас и яснота"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Присъствие"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Съгласни и детайл"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Яркост"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Въздух и блясък"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Връщане към неутрално"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Звук 100%, плосък еквалайзер, центриран баланс"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Моите настройки по подразбиране"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Прилага настройките по подразбиране от страницата с настройки"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Запазени профили"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Още няма запазени профили. Запазете от изскачащия прозорец."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Преименувай"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Изтрий"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Да се изтрие ли „$NAME$“?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Премести нагоре"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Премести надолу"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Редът тук е редът им в изскачащия прозорец."
   },
   "popupGainHint": {
     "message": "Над 100% лимитерът остава включен, за да предотврати изкривяване."

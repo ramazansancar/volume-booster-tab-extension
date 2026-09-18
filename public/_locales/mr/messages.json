@@ -188,124 +188,124 @@
     "message": "GitHub वर समस्या कळवा"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "प्रीसेट"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "सानुकूल"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "प्रीसेट म्हणून जतन करा"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "या प्रीसेटचे नाव"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "सपाट"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "भाषण"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "संगीत"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "सिनेमा"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "स्टुडिओ"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "बाहेर"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "निसर्ग"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "बेस बूस्ट"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "रात्र"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "टोन"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "खालील सहा बँडसाठी तीन नियंत्रणे."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "बेस"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "मिड"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "ट्रेबल"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "बँडनिहाय इक्वलायझर"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "सब-बेस"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "गडगडाट आणि वजन"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "बेस"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "ऊब आणि भरीवपणा"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "लो मिड"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "भरीवपणा किंवा बंदिस्तपणा"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "मिड"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "आवाज आणि स्पष्टता"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "प्रेझेन्स"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "व्यंजने आणि तपशील"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "तेज"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "हवेशीरपणा आणि चमक"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "तटस्थ करा"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "व्हॉल्यूम 100%, सपाट इक्वलायझर, केंद्रित संतुलन"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "माझी डीफॉल्ट वापरा"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "सेटिंग्ज पृष्ठावर जतन केलेली डीफॉल्ट लागू करा"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "जतन केलेले प्रीसेट"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "अद्याप कोणतेही प्रीसेट जतन केलेले नाही. पॉपअपमधून जतन करा."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "नाव बदला"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "हटवा"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "\"$NAME$\" हटवायचे?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "वर हलवा"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "खाली हलवा"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "येथील क्रमच पॉपअपमध्ये दिसणारा क्रम आहे."
   },
   "popupGainHint": {
     "message": "100% पेक्षा जास्त विकृती टाळण्यासाठी लिमिटर चालू राहतो."

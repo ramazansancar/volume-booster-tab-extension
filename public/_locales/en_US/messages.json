@@ -284,7 +284,7 @@
     "message": "Reset to neutral"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Volume 100%, flat equalizer, centered balance"
   },
   "popupResetDefaults": {
     "message": "Use my defaults"

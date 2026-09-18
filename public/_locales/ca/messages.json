@@ -188,124 +188,124 @@
     "message": "Informa d’un problema a GitHub"
   },
   "popupPreset": {
-    "message": "Preset"
+    "message": "Perfil"
   },
   "popupPresetCustom": {
-    "message": "Custom"
+    "message": "Personalitzat"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "Desa com a perfil"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Nom d’aquest perfil"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Pla"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Veu"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Música"
   },
   "presetCinema": {
     "message": "Cinema"
   },
   "presetStudio": {
-    "message": "Studio"
+    "message": "Estudi"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "A l’aire lliure"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Natura"
   },
   "presetBass": {
-    "message": "Bass boost"
+    "message": "Més greus"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Nit"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "To"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Tres controls sobre les sis bandes de sota."
   },
   "toneBass": {
-    "message": "Bass"
+    "message": "Greus"
   },
   "toneMid": {
-    "message": "Mid"
+    "message": "Mitjos"
   },
   "toneTreble": {
-    "message": "Treble"
+    "message": "Aguts"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Equalitzador per bandes"
   },
   "bandSubBass": {
-    "message": "Sub-bass"
+    "message": "Subgreus"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Retruny i pes"
   },
   "bandBass": {
-    "message": "Bass"
+    "message": "Greus"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Calidesa i cos"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Mitjos greus"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Plenitud o so tancat"
   },
   "bandMid": {
-    "message": "Mid"
+    "message": "Mitjos"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Veu i claredat"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Presència"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Consonants i detall"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Brillantor"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Aire i espurna"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "Torna a neutre"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Volum 100%, equalitzador pla, balanç centrat"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Usa els meus valors"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Aplica els valors desats a la pàgina de configuració"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Perfils desats"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Encara no hi ha perfils desats. Deseu-ne un des de la finestra."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Canvia el nom"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Elimina"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Voleu eliminar «$NAME$»?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Mou amunt"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Mou avall"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Aquest ordre és el que tindran a la finestra emergent."
   },
   "popupGainHint": {
     "message": "Per sobre del 100% el limitador es manté actiu per evitar distorsió."

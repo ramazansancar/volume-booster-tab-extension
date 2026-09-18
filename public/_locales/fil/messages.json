@@ -194,43 +194,43 @@
     "message": "Custom"
   },
   "popupSavePreset": {
-    "message": "Save current as preset"
+    "message": "I-save bilang preset"
   },
   "popupPresetNamePrompt": {
-    "message": "Name for this preset"
+    "message": "Pangalan para sa preset na ito"
   },
   "presetFlat": {
-    "message": "Flat"
+    "message": "Patag"
   },
   "presetVoice": {
-    "message": "Speech"
+    "message": "Pagsasalita"
   },
   "presetMusic": {
-    "message": "Music"
+    "message": "Musika"
   },
   "presetCinema": {
-    "message": "Cinema"
+    "message": "Sine"
   },
   "presetStudio": {
     "message": "Studio"
   },
   "presetOutdoor": {
-    "message": "Outdoors"
+    "message": "Sa labas"
   },
   "presetNature": {
-    "message": "Nature"
+    "message": "Kalikasan"
   },
   "presetBass": {
     "message": "Bass boost"
   },
   "presetNight": {
-    "message": "Night"
+    "message": "Gabi"
   },
   "popupTone": {
-    "message": "Tone"
+    "message": "Tono"
   },
   "popupToneHint": {
-    "message": "Three controls over the six bands below."
+    "message": "Tatlong kontrol para sa anim na band sa ibaba."
   },
   "toneBass": {
     "message": "Bass"
@@ -242,70 +242,70 @@
     "message": "Treble"
   },
   "popupProSection": {
-    "message": "Per-band equalizer"
+    "message": "Per-band na equalizer"
   },
   "bandSubBass": {
     "message": "Sub-bass"
   },
   "bandSubBassHint": {
-    "message": "Rumble and weight"
+    "message": "Lalim at bigat"
   },
   "bandBass": {
     "message": "Bass"
   },
   "bandBassHint": {
-    "message": "Warmth and body"
+    "message": "Init at lalim"
   },
   "bandLowMid": {
-    "message": "Low mid"
+    "message": "Mababang mid"
   },
   "bandLowMidHint": {
-    "message": "Fullness, or boxiness"
+    "message": "Lalim o barado"
   },
   "bandMid": {
     "message": "Mid"
   },
   "bandMidHint": {
-    "message": "Voice and clarity"
+    "message": "Boses at linaw"
   },
   "bandPresence": {
-    "message": "Presence"
+    "message": "Presensya"
   },
   "bandPresenceHint": {
-    "message": "Consonants and detail"
+    "message": "Katinig at detalye"
   },
   "bandBrilliance": {
-    "message": "Brilliance"
+    "message": "Liwanag"
   },
   "bandBrillianceHint": {
-    "message": "Air and sparkle"
+    "message": "Hangin at kislap"
   },
   "popupResetNeutral": {
-    "message": "Reset to neutral"
+    "message": "I-reset sa neutral"
   },
   "popupResetNeutralTitle": {
-    "message": "Volume 100%, flat equalizer, centred balance"
+    "message": "Volume 100%, patag na equalizer, nakasentrong balanse"
   },
   "popupResetDefaults": {
-    "message": "Use my defaults"
+    "message": "Gamitin ang aking defaults"
   },
   "popupResetDefaultsTitle": {
-    "message": "Apply the defaults saved on the settings page"
+    "message": "Ilapat ang defaults na naka-save sa settings page"
   },
   "optionsPresets": {
-    "message": "Saved presets"
+    "message": "Mga naka-save na preset"
   },
   "optionsPresetsEmpty": {
-    "message": "No presets saved yet. Save one from the popup."
+    "message": "Wala pang naka-save na preset. Mag-save mula sa popup."
   },
   "optionsPresetRename": {
-    "message": "Rename"
+    "message": "Palitan ang pangalan"
   },
   "optionsPresetDelete": {
-    "message": "Delete"
+    "message": "Tanggalin"
   },
   "optionsPresetDeleteConfirm": {
-    "message": "Delete \"$NAME$\"?",
+    "message": "Tanggalin ang \"$NAME$\"?",
     "placeholders": {
       "name": {
         "content": "$1"
@@ -313,13 +313,13 @@
     }
   },
   "optionsPresetMoveUp": {
-    "message": "Move up"
+    "message": "Ilipat pataas"
   },
   "optionsPresetMoveDown": {
-    "message": "Move down"
+    "message": "Ilipat pababa"
   },
   "optionsPresetsHint": {
-    "message": "The order here is the order they appear in the popup."
+    "message": "Ang pagkakasunod dito ang lalabas sa popup."
   },
   "popupGainHint": {
     "message": "Higit sa 100% nananatiling naka-on ang limiter upang maiwasan ang distortion."
