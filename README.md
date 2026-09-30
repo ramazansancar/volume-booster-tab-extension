@@ -16,8 +16,21 @@ Opera listing is in review. Safari builds from source — see [`docs/safari.md`]
 
 ---
 
+## Screenshots
+
+<div align="center">
+
+<img src="store-assets/popup-boost-1280x800.png" alt="The popup boosting a tab, with volume presets from 100% to 600%" width="820">
+
+<img src="store-assets/popup-equalizer-1280x800.png" alt="Advanced settings open, showing the six-band equalizer, balance and mono" width="405"> <img src="store-assets/options-1280x800.png" alt="The options page, with defaults for new tabs, language and saved sites" width="405">
+
+</div>
+
+---
+
 ## Table of contents
 
+- [Screenshots](#screenshots)
 - [What it does](#what-it-does)
 - [Browser support](#browser-support)
 - [What works and what does not](#what-works-and-what-does-not)
