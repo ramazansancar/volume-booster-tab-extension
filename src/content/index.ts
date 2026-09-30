@@ -3,6 +3,7 @@ import { ext, sendRuntimeMessage } from '@/lib/browser';
 import { neutralSettings } from '@/lib/defaults';
 import { sanitizeSettings } from '@/lib/validate';
 import { AttachmentRegistry } from '@/content/attachments';
+import { mediaEligibility } from '@/content/eligibility';
 import type {
   AudioPathway,
   AudioSettings,
@@ -66,6 +67,15 @@ const RETRY_DELAYS_MS = [150, 400, 900, 1800, 3000, 5000];
  * that the page later reuses.
  */
 const attachments = new AttachmentRegistry<HTMLMediaElement, MediaElementAudioSourceNode>();
+
+/**
+ * Elements that have fired `encrypted`. The event can arrive well before the
+ * player calls setMediaKeys, and remembering it closes that gap.
+ */
+const encryptedMedia = new WeakSet<HTMLMediaElement>();
+
+const PROTECTED_REASON =
+  'This video is DRM-protected; the browser does not let extensions process its audio.';
 
 function post(message: ContentToBackgroundMessage): void {
   try {
@@ -147,9 +157,26 @@ function ensureEngine(): AudioEngine | null {
  * second case is temporary and extremely common in SPA players, so a failure
  * schedules a retry rather than blacklisting the element. Only after
  * MAX_ATTACH_ATTEMPTS do we conclude the page genuinely cannot be boosted.
+ *
+ * Nothing is routed while the settings are neutral: wrapping an element cannot
+ * be undone, so a page the user never boosted is never touched. Nor is an
+ * element routed before it plays or once it is encrypted - `eligibility.ts`
+ * explains why capturing early broke DRM players such as Prime Video.
  */
 function attach(element: HTMLMediaElement, immediate = false): void {
-  const attachment = attachments.ensure(element);
+  const existing = attachments.get(element);
+  if (!existing?.source) {
+    if (isNeutral(settings)) return;
+
+    const eligibility = mediaEligibility(element, encryptedMedia.has(element));
+    if (eligibility === 'wait') return;
+    if (eligibility === 'protected') {
+      if (connectedCount() === 0) setPathway('unavailable', PROTECTED_REASON);
+      return;
+    }
+  }
+
+  const attachment = existing ?? attachments.ensure(element);
 
   if (attachment.connected) {
     // Already routed. Re-apply so a settings change made while this element was
@@ -279,6 +306,11 @@ function bindMediaEvents(): void {
     const target = event.target;
     if (!(target instanceof HTMLMediaElement)) return;
 
+    if (event.type === 'encrypted') {
+      encryptedMedia.add(target);
+      return;
+    }
+
     // Media that has reached playback proves the page is allowed to make sound,
     // which is exactly the condition resume() needs.
     if (event.type === 'playing' || event.type === 'play') {
@@ -288,6 +320,7 @@ function bindMediaEvents(): void {
     attach(target, true);
   };
   for (const type of [
+    'encrypted',
     'loadstart',
     'loadedmetadata',
     'canplay',

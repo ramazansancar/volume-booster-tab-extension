@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- **DRM players no longer break.** Prime Video showed "Video unavailable" whenever the extension was installed, even with no boost set: every `<video>` was captured the moment it loaded, before the player attached its decryption keys, and Firefox refuses keys on an element whose audio is being captured. Media is now left untouched until a boost is actually set, is captured only once it is playing, and is never captured at all when it is encrypted. DRM video plays normally; its volume still cannot be raised, and the popup says so.
+
 ## [0.3.0] - 2026-09-30
 
 The equalizer becomes something most people will actually use: named presets, tone controls and bands that say what they do. No new permissions.
