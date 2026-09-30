@@ -269,7 +269,7 @@ HOW TO TEST
    and temporary unless the user ticks "Remember this site".
 
 EXPECTED LIMITATION
-DRM sites such as Netflix and Spotify cannot be boosted; Encrypted Media Extensions hide their audio from page scripts. On those pages the popup reports "This page blocks audio processing" rather than failing silently.
+DRM sites such as Prime Video and Netflix are boosted once playback has started: an encrypted element is routed only after the player has attached its MediaKeys, never before, so the player loads normally. Cross-origin media without CORS headers cannot be routed; on those pages the popup reports "This page blocks audio processing" and offers the tab-capture fallback rather than failing silently.
 
 NO REMOTE CODE, NO DATA COLLECTION The extension makes no network requests of any kind - no telemetry, no analytics, no remote configuration, no external scripts or fonts. Settings never leave storage.local on the user's own machine.
 

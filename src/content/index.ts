@@ -74,9 +74,6 @@ const attachments = new AttachmentRegistry<HTMLMediaElement, MediaElementAudioSo
  */
 const encryptedMedia = new WeakSet<HTMLMediaElement>();
 
-const PROTECTED_REASON =
-  'This video is DRM-protected; the browser does not let extensions process its audio.';
-
 function post(message: ContentToBackgroundMessage): void {
   try {
     void sendRuntimeMessage(message).catch(() => undefined);
@@ -160,24 +157,16 @@ function ensureEngine(): AudioEngine | null {
  *
  * Nothing is routed while the settings are neutral: wrapping an element cannot
  * be undone, so a page the user never boosted is never touched. Nor is an
- * element routed before it plays or once it is encrypted - `eligibility.ts`
- * explains why capturing early broke DRM players such as Prime Video.
+ * element routed before it plays, nor an encrypted one before its keys are in -
+ * `eligibility.ts` explains why capturing early broke DRM players such as
+ * Prime Video.
  */
 function attach(element: HTMLMediaElement, immediate = false): void {
   const existing = attachments.get(element);
   if (!existing?.source) {
     if (isNeutral(settings)) return;
 
-    const eligibility = mediaEligibility(
-      element,
-      encryptedMedia.has(element),
-      __BROWSER__ === 'firefox',
-    );
-    if (eligibility === 'wait') return;
-    if (eligibility === 'protected') {
-      if (connectedCount() === 0) setPathway('unavailable', PROTECTED_REASON);
-      return;
-    }
+    if (mediaEligibility(element, encryptedMedia.has(element)) === 'wait') return;
   }
 
   const attachment = existing ?? attachments.ensure(element);

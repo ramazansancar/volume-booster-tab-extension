@@ -64,7 +64,7 @@ NEW IN 0.3.0 - no permission changes
   with tabs.create. Nothing is sent.
 
 EXPECTED LIMITATION
-DRM sites (Prime Video, Netflix) are boosted only once playback has started: an encrypted element is not routed until the player has attached its MediaKeys, because Firefox refuses setMediaKeys on an element already being captured. If the player later swaps keys on the same element, the boost cannot follow. Cross-origin media without CORS headers cannot be boosted on Firefox at all; the popup reports "This page blocks audio processing" rather than failing silently.
+DRM sites (Prime Video, Netflix) are boosted only once playback has started and the player holds its keys: an encrypted element is not routed until the player has attached its MediaKeys, because Firefox refuses setMediaKeys on an element already being captured. If the player later swaps keys on the same element, the boost cannot follow. Cross-origin media without CORS headers cannot be boosted on Firefox at all; the popup reports "This page blocks audio processing" rather than failing silently.
 
 PERMISSIONS
 - storage       Saves the user's own preferences locally. Nothing else stored.

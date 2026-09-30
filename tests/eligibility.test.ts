@@ -18,29 +18,15 @@ describe('mediaEligibility', () => {
     expect(mediaEligibility(media({ readyState: 1 }), false)).toBe('wait');
   });
 
-  it('never routes an element with MediaKeys attached', () => {
-    expect(mediaEligibility(media({ mediaKeys: {} }), false)).toBe('protected');
+  it('routes a keyed element once it plays', () => {
+    expect(mediaEligibility(media({ mediaKeys: {} }), true)).toBe('ready');
   });
 
-  it('treats an encrypted event as protected before the keys arrive', () => {
-    expect(mediaEligibility(media(), true)).toBe('protected');
+  it('waits for the keys after an encrypted event, never capturing ahead of them', () => {
+    expect(mediaEligibility(media(), true)).toBe('wait');
   });
 
-  it('checks protection before playback, so a paused DRM element is not merely waiting', () => {
-    expect(mediaEligibility(media({ paused: true, mediaKeys: {} }), false)).toBe('protected');
-  });
-
-  describe('where keyed media is audible (Firefox)', () => {
-    it('routes a keyed element once it plays', () => {
-      expect(mediaEligibility(media({ mediaKeys: {} }), true, true)).toBe('ready');
-    });
-
-    it('waits for the keys after an encrypted event, never capturing ahead of them', () => {
-      expect(mediaEligibility(media(), true, true)).toBe('wait');
-    });
-
-    it('still waits for playback on a keyed element', () => {
-      expect(mediaEligibility(media({ mediaKeys: {}, paused: true }), false, true)).toBe('wait');
-    });
+  it('still waits for playback on a keyed element', () => {
+    expect(mediaEligibility(media({ mediaKeys: {}, paused: true }), true)).toBe('wait');
   });
 });

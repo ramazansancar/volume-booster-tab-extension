@@ -114,8 +114,7 @@ Knowing this up front saves a lot of confusion.
 | Situation | Why | Workaround |
 | --- | --- | --- |
 | ⚠️ **Cross-origin media without CORS** | The browser refuses to expose the samples to `createMediaElementSource` | **Try tab capture** in the popup (Chromium only) |
-| ⚠️ **DRM-protected video on Firefox** (Prime Video, Netflix, Disney+) | Firefox hands the decrypted audio over once playback has started; the boost attaches then. Tested on Prime Video | Start playback, then set the level |
-| ❌ **DRM-protected video on Chrome, Edge, Opera** | Encrypted Media Extensions hide the audio from page scripts *and* from tab capture. The video is left alone so it keeps its sound | None — by design |
+| ⚠️ **DRM-protected video** (Prime Video, Netflix, Disney+) | The browser hands over the decrypted audio only once the player has its keys, so the boost attaches when playback starts, not before. Tested on Prime Video in Firefox and Brave | Start playback, then set the level |
 | ❌ **Browser pages** (`chrome://`, `about:`, the Web Store) | Extensions are not allowed to run there | None — by design |
 | ❌ **Local files** (`file://`) | Off by default | Enable file access in the extension's details page |
 | ❌ **Firefox + cross-origin media** | Firefox has no `tabCapture` API, so there is no fallback to offer | None currently |
@@ -133,7 +132,7 @@ The popup tells you at the bottom:
 | *N media sources connected* | Working normally through the Web Audio path |
 | *No audio playing yet* | Nothing to boost on this page yet — start playback |
 | *Using tab capture* | Fallback path is active (Chromium only) |
-| *This page blocks audio processing* | The Web Audio path failed. On Chromium a **Try tab capture** button appears underneath; on DRM pages even that cannot help |
+| *This page blocks audio processing* | The Web Audio path failed. On Chromium a **Try tab capture** button appears underneath |
 | *Browser pages cannot be boosted* | You are on an internal browser page |
 
 </details>
@@ -412,7 +411,6 @@ Check the status line at the bottom of the popup — it says which path is in us
 
 The usual causes:
 
-- **DRM-protected video** (Netflix, Disney+, Prime Video) **on a Chromium browser.** Chrome, Edge and Opera deliberately do not let extensions touch that audio, and nothing can be done about it on any extension. Firefox does allow it once playback has started.
 - **Cross-origin media without CORS headers.** The page can play it but scripts cannot read it. On Chromium there is a **Try tab capture** button in the popup for this; it lights the tab's recording indicator, which is why it is offered rather than used automatically.
 - **The page has not started playing yet.** The boost attaches to media elements as they appear, so press play first.
 
