@@ -31,9 +31,20 @@
   box-sizing: border-box;
 }
 
+/* Firefox caps the popup at 600px tall and sizes its width from the body
+   alone, so once Advanced is open the vertical scrollbar is taken out of a
+   width that never allowed for it, and a horizontal scrollbar follows. The
+   body gives the scrollbar its room instead, and a thin one costs less. */
+html {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
 body {
   margin: 0;
   width: 320px;
+  max-width: 100%;
   background: var(--bg);
   color: var(--text);
   font:
@@ -150,6 +161,7 @@ input[type='range'] {
 
 .presets button {
   flex: 1;
+  min-width: 0;
   padding: 5px 0;
   border: 1px solid var(--border);
   border-radius: 7px;
