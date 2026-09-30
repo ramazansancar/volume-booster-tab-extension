@@ -44,18 +44,15 @@ HOW TO TEST
 5. Close a tab and reopen the site: the boost is gone. Settings are per-tab
    and temporary unless the user ticks "Remember this site".
 
-NEW IN 0.3.0 - no permission changes
-- Popup > Preset: built-in EQ curves and bass/mid/treble controls. They only
-  reshape the six EQ bands already in the graph.
-- "Open in a separate window" opens the same popup page
-  (popup/index.html?window=1) with windows.create.
-- "Tabs playing audio" lists other tabs the add-on is processing. Clicking
-  one calls tabs.update + windows.update to focus it.
-- Settings page > Export/Import settings: export saves a Blob through an
-  <a download> link (not the downloads API); import reads a file the user
-  picks with <input type=file>, validated like stored settings.
-- Rate/support links open the AMO listing and the GitHub issue tracker
-  with tabs.create. Nothing is sent.
+NEW IN 0.4.0 - no permission changes
+- Nothing is routed into Web Audio until the user sets a boost; pages the
+  user never boosts are not touched at all.
+- An element is routed only once it is playing. If it fired "encrypted",
+  it also waits until the player has attached its MediaKeys: Firefox
+  refuses setMediaKeys on an element already captured, which made Prime
+  Video fail to load in 0.3.0. Routed after the keys, DRM audio is boosted.
+- Optional DRM check (needs a Prime Video account): start playback, then
+  pick 300% in the popup. The video keeps playing and gets louder.
 
 EXPECTED LIMITATION
 DRM sites (Prime Video, Netflix) are boosted only once playback has started and the player holds its keys: an encrypted element is not routed until the player has attached its MediaKeys, because Firefox refuses setMediaKeys on an element already being captured. If the player later swaps keys on the same element, the boost cannot follow. Cross-origin media without CORS headers cannot be boosted on Firefox at all; the popup reports "This page blocks audio processing" rather than failing silently.
@@ -109,18 +106,15 @@ No account or login is required to test this add-on.
 WHAT IT DOES
 Routes a page's <video> and <audio> elements through a Web Audio graph (equalizer -> limiter -> gain -> panner) to raise volume beyond what the page allows. Each tab is boosted independently.
 
-NEW IN 0.3.0 - no permission changes
-- Popup > Preset: built-in EQ curves and bass/mid/treble controls. They only
-  reshape the six EQ bands already in the graph.
-- "Open in a separate window" opens the same popup page
-  (popup/index.html?window=1) with windows.create.
-- "Tabs playing audio" lists other tabs the add-on is processing. Clicking
-  one calls tabs.update + windows.update to focus it.
-- Settings page > Export/Import settings: export saves a Blob through an
-  <a download> link (not the downloads API); import reads a file the user
-  picks with <input type=file>, validated like stored settings.
-- Rate/support links open the AMO listing and the GitHub issue tracker
-  with tabs.create. Nothing is sent.
+NEW IN 0.4.0 - no permission changes
+- Nothing is routed into Web Audio until the user sets a boost; pages the
+  user never boosts are not touched at all.
+- An element is routed only once it is playing. If it fired "encrypted",
+  it also waits until the player has attached its MediaKeys: Firefox
+  refuses setMediaKeys on an element already captured, which made Prime
+  Video fail to load in 0.3.0. Routed after the keys, DRM audio is boosted.
+- Optional DRM check (needs a Prime Video account): start playback, then
+  pick 300% in the popup. The video keeps playing and gets louder.
 
 PERMISSIONS
 - storage       Saves the user's own preferences locally. Nothing else stored.
