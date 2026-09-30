@@ -39,3 +39,16 @@ export function cloneSettings(settings: AudioSettings): AudioSettings {
 export function neutralSettings(): AudioSettings {
   return cloneSettings(NEUTRAL_SETTINGS);
 }
+
+/** True when two settings would produce exactly the same audio chain. */
+export function sameSettings(a: AudioSettings, b: AudioSettings): boolean {
+  return (
+    a.gain === b.gain &&
+    a.limiterEnabled === b.limiterEnabled &&
+    a.balance === b.balance &&
+    a.mono === b.mono &&
+    a.bypassed === b.bypassed &&
+    a.equalizer.length === b.equalizer.length &&
+    a.equalizer.every((value, index) => value === b.equalizer[index])
+  );
+}

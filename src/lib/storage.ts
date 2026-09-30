@@ -1,5 +1,5 @@
 import { storageGet, storageSet } from '@/lib/browser';
-import { DEFAULT_PREFERENCES, cloneSettings } from '@/lib/defaults';
+import { DEFAULT_PREFERENCES, cloneSettings, sameSettings } from '@/lib/defaults';
 import { sanitizeSettings, clamp } from '@/lib/validate';
 import { MAX_USER_PRESETS, sanitizePresets } from '@/lib/presets';
 import { ABSOLUTE_MAX_GAIN } from '@/lib/defaults';
@@ -139,6 +139,27 @@ export async function listOrigins(): Promise<OriginSettingsMap> {
  */
 export async function replaceOrigins(map: OriginSettingsMap): Promise<void> {
   await writeArea(ORIGINS_KEY, map);
+}
+
+/**
+ * Drops every saved origin whose settings equal `defaults`.
+ *
+ * Up to 0.4.0 a page load on a remembered tab wrote the tab's settings back,
+ * so every site the user merely visited was filed away at the defaults. Such
+ * an entry changes nothing about how the site sounds, so removing it is safe.
+ * Returns how many entries were dropped.
+ */
+export async function pruneDefaultOrigins(defaults: AudioSettings): Promise<number> {
+  const map = (await readArea<OriginSettingsMap>(ORIGINS_KEY)) ?? {};
+  let dropped = 0;
+  for (const [origin, settings] of Object.entries(map)) {
+    if (sameSettings(sanitizeSettings(settings), defaults)) {
+      delete map[origin];
+      dropped += 1;
+    }
+  }
+  if (dropped > 0) await writeArea(ORIGINS_KEY, map);
+  return dropped;
 }
 
 export async function clearAllOrigins(): Promise<void> {

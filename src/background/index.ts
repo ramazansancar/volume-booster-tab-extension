@@ -11,6 +11,7 @@ import {
   forgetOrigin,
   loadOriginSettings,
   loadPreferences,
+  pruneDefaultOrigins,
   saveOriginSettings,
   savePreferences,
   savePreset,
@@ -176,7 +177,31 @@ async function applyToOpenTabs(origin: string, settings: AudioSettings): Promise
   }
 }
 
-async function applyAndPersist(state: TabState): Promise<void> {
+/**
+ * Moves a tab onto a new origin after a navigation.
+ *
+ * The settings a tab carried belong to the site it was on, so they never
+ * follow it to another one: the new site gets its own saved settings if the
+ * user asked to remember it, and the defaults otherwise. Nothing is written
+ * here - only something the user did may create or change a saved site.
+ */
+async function followOrigin(state: TabState, origin: string | null): Promise<void> {
+  if (origin === state.origin) return;
+  const prefs = await preferences();
+  state.origin = origin;
+
+  const stored = origin ? await loadOriginSettings(origin, prefs.maxGain) : null;
+  if (stored) {
+    state.settings = stored;
+    state.persistence = 'origin';
+  } else {
+    state.settings = cloneSettings(prefs.defaults);
+    state.persistence = prefs.defaultPersistence;
+  }
+}
+
+/** Sends a tab's current settings to wherever its audio is processed. */
+async function applyToTab(state: TabState): Promise<void> {
   await pushToTab(state);
   // A captured tab is driven by the offscreen graph, not by its content script,
   // so the same settings have to be pushed down both paths.
@@ -187,6 +212,15 @@ async function applyAndPersist(state: TabState): Promise<void> {
     }
   }
   await updateBadge(state);
+}
+
+/**
+ * Applies a change the user made and records it for the site when the tab is
+ * remembered. Only user actions go through here; page loads and navigations
+ * use applyToTab, so merely visiting a site never saves it.
+ */
+async function applyAndPersist(state: TabState): Promise<void> {
+  await applyToTab(state);
   await syncPersistence(state.origin, state.persistence, state.settings);
 }
 
@@ -319,7 +353,9 @@ async function handleUiMessage(message: UiToBackgroundMessage): Promise<unknown>
         if (clamped.gain !== state.settings.gain) {
           state.settings = clamped;
           registry.updateSettings(tabId, clamped);
-          await applyAndPersist(state);
+          // Saved sites are clamped when they are loaded, so there is nothing
+          // to rewrite here.
+          await applyToTab(state);
         }
       }
       return cachedPreferences;
@@ -431,9 +467,9 @@ async function handleContentMessage(
       // frame let an embedded widget relabel the tab as its own origin, which
       // both mislabelled the popup and would have filed a "remember this site"
       // entry under the wrong domain entirely.
-      if (isTopFrame && message.origin) state.origin = message.origin;
+      if (isTopFrame && message.origin) await followOrigin(state, message.origin);
 
-      await applyAndPersist(state);
+      await applyToTab(state);
       return { ok: true };
     }
     case 'content:media-count':
@@ -502,16 +538,19 @@ ext.tabs.onUpdated.addListener((tabId, changeInfo) => {
       registry.reportCapture(tabId, 'idle');
     }
 
-    // Navigating a session-scoped tab to a different site resets it, so a boost
-    // meant for one page does not silently follow the user to the next one.
-    if (origin !== state.origin && state.persistence === 'session') {
-      const prefs = await preferences();
-      state.origin = origin;
-      state.settings = cloneSettings(prefs.defaults);
-    } else {
-      state.origin = origin;
-    }
-    await applyAndPersist(state);
+    // A boost meant for one site must not silently follow the user to the
+    // next one, so a different origin starts from its own settings.
+    await followOrigin(state, origin);
+    await applyToTab(state);
+  })();
+});
+
+// Clears out the sites that older versions saved on every visit.
+ext.runtime.onInstalled.addListener((details) => {
+  if (details.reason !== 'update') return;
+  void (async () => {
+    const prefs = await preferences();
+    await pruneDefaultOrigins(prefs.defaults);
   })();
 });
 
