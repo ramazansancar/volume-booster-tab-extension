@@ -4,6 +4,21 @@ All notable changes to this project are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-09-30
+
+"Remember this site" now remembers only the sites you actually adjusted, and the extension says hello and goodbye.
+
+### Added
+
+- **Welcome page on install.** A fresh install opens a short getting-started page in the repository: how to pin the icon, how to boost a tab, the store ratings, and a link to star the project. Updates open nothing.
+- **Goodbye page on removal.** Removing the extension opens a page with a link to report what went wrong and links to reinstall. Safari has no uninstall page and skips it.
+- Screenshots in the README.
+
+### Fixed
+
+- **Visiting a site no longer saves it.** With "Remember this site" on, every page load wrote the tab's settings back, so the options page filled up with every site the user had opened, all at the default volume. Only a change the user makes is saved now. Saved sites that equal the defaults are removed when updating from an older version.
+- **A remembered boost no longer follows the tab to another site.** Navigating a remembered tab to a different site carried the old site's settings over and saved them there too. A new site now starts from its own saved settings, or from the defaults.
+
 ## [0.4.0] - 2026-09-30
 
 A critical fix for streaming services: Prime Video would not play at all with the extension installed. It now plays, and can be boosted.
@@ -125,6 +140,7 @@ First public release.
   Opera MV2, Firefox MV3/MV2, Safari MV3.
 - Source package builder for store submissions requiring reproducible builds.
 
+[0.5.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.5.0
 [0.4.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.4.0
 [0.3.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.3.0
 [0.2.1]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.2.1

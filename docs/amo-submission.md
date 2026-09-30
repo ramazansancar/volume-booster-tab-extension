@@ -7,16 +7,14 @@ Copy-paste material for the addons.mozilla.org submission form. The listing is l
 
 ---
 
-## Version notes (v0.4.0)
+## Version notes (v0.5.0)
 
 ```text
-No permission changes. The add-on still requests only "storage" and "webNavigation" alongside its host access, and still makes no network requests of any kind.
+No permission changes. The add-on still requests only "storage" and "webNavigation" alongside its host access.
 
-Fixes DRM players failing to load. Prime Video showed "Video unavailable" whenever the add-on was installed, even with no boost set: every <video> was routed into Web Audio as soon as it fired loadstart, before the player attached its MediaKeys, and Firefox refuses setMediaKeys on an element whose audio is already captured. Media is now left untouched until the user sets a boost, and an element is routed only once it is playing and, if encrypted, holds its MediaKeys.
+"Remember this site" saved every site the user visited, because each page load wrote the tab's settings back to storage.local. Only a change the user makes is saved now, and a remembered tab no longer carries one site's settings to the next. On update, saved sites equal to the defaults are removed.
 
-With that ordering the decrypted audio reaches the graph, so DRM video such as Prime Video can now be boosted.
-
-Fixes a horizontal scrollbar in the popup when the advanced settings are open.
+A fresh install opens a welcome page in the GitHub repository once (tabs.create, no extra permission). runtime.setUninstallURL opens a goodbye page with a link to the issue tracker. Both URLs are fixed and carry no parameters, so nothing about the user or their usage is sent.
 ```
 
 ---
@@ -44,15 +42,13 @@ HOW TO TEST
 5. Close a tab and reopen the site: the boost is gone. Settings are per-tab
    and temporary unless the user ticks "Remember this site".
 
-NEW IN 0.4.0 - no permission changes
-- Nothing is routed into Web Audio until the user sets a boost; pages the
-  user never boosts are not touched at all.
-- An element is routed only once it is playing. If it fired "encrypted",
-  it also waits until the player has attached its MediaKeys: Firefox
-  refuses setMediaKeys on an element already captured, which made Prime
-  Video fail to load in 0.3.0. Routed after the keys, DRM audio is boosted.
-- Optional DRM check (needs a Prime Video account): start playback, then
-  pick 300% in the popup. The video keeps playing and gets louder.
+NEW IN 0.5.0 - no permission changes
+- "Remember this site" saved every visited site: page loads wrote the
+  tab's settings back. Only user changes are saved now; on update, saved
+  sites equal to the defaults are removed.
+- A fresh install opens a welcome page in the GitHub repo once
+  (tabs.create). setUninstallURL opens a goodbye page with an issue link.
+  Both URLs are fixed and carry no parameters; nothing is sent.
 
 EXPECTED LIMITATION
 DRM sites (Prime Video, Netflix) are boosted only once playback has started and the player holds its keys: an encrypted element is not routed until the player has attached its MediaKeys, because Firefox refuses setMediaKeys on an element already being captured. If the player later swaps keys on the same element, the boost cannot follow. Cross-origin media without CORS headers cannot be boosted on Firefox at all; the popup reports "This page blocks audio processing" rather than failing silently.
@@ -76,7 +72,7 @@ SOURCE AND BUILD (Node.js 20 or newer, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.4.0.zip The attached source archive contains BUILD.md at its root with the same steps.
+Uploaded file: dist/firefox-mv2-0.5.0.zip The attached source archive contains BUILD.md at its root with the same steps.
 
 Bundler is esbuild with its standard minification. No obfuscation, no name mangling beyond esbuild defaults, no code generated from templates. To read the output unminified with inline sourcemaps:
 
@@ -106,15 +102,13 @@ No account or login is required to test this add-on.
 WHAT IT DOES
 Routes a page's <video> and <audio> elements through a Web Audio graph (equalizer -> limiter -> gain -> panner) to raise volume beyond what the page allows. Each tab is boosted independently.
 
-NEW IN 0.4.0 - no permission changes
-- Nothing is routed into Web Audio until the user sets a boost; pages the
-  user never boosts are not touched at all.
-- An element is routed only once it is playing. If it fired "encrypted",
-  it also waits until the player has attached its MediaKeys: Firefox
-  refuses setMediaKeys on an element already captured, which made Prime
-  Video fail to load in 0.3.0. Routed after the keys, DRM audio is boosted.
-- Optional DRM check (needs a Prime Video account): start playback, then
-  pick 300% in the popup. The video keeps playing and gets louder.
+NEW IN 0.5.0 - no permission changes
+- "Remember this site" saved every visited site: page loads wrote the
+  tab's settings back. Only user changes are saved now; on update, saved
+  sites equal to the defaults are removed.
+- A fresh install opens a welcome page in the GitHub repo once
+  (tabs.create). setUninstallURL opens a goodbye page with an issue link.
+  Both URLs are fixed and carry no parameters; nothing is sent.
 
 PERMISSIONS
 - storage       Saves the user's own preferences locally. Nothing else stored.
@@ -135,7 +129,7 @@ SOURCE AND BUILD (Node.js 20+, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.4.0.zip BUILD.md at the root of the source archive repeats these steps.
+Uploaded file: dist/firefox-mv2-0.5.0.zip BUILD.md at the root of the source archive repeats these steps.
 
 esbuild with standard minification; no obfuscation. Unminified output:
   node scripts/build.mjs --target=firefox-mv2 --dev

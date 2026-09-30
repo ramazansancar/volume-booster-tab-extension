@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Extension:** Tab Volume Booster (_Sekme Ses Yükseltici_) **Publisher:** Ramazan Sancar — <https://github.com/ramazansancar> **Last updated:** 11 September 2026
+**Extension:** Tab Volume Booster (_Sekme Ses Yükseltici_) **Publisher:** Ramazan Sancar — <https://github.com/ramazansancar> **Last updated:** 30 September 2026
 
 ---
 

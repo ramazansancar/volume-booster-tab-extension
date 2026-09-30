@@ -90,7 +90,7 @@ This runs the exact checks AMO runs on upload. Zero errors means the submission 
 You can also lint the archive itself, which is what actually gets uploaded:
 
 ```bash
-pnpm exec addons-linter dist/firefox-mv2-0.4.0.zip
+pnpm exec addons-linter dist/firefox-mv2-0.5.0.zip
 ```
 
 ---
@@ -153,5 +153,5 @@ Two fields have no Chrome counterpart:
 > To confirm a zip really contains what you expect before uploading:
 >
 > ```bash
-> unzip -p dist/firefox-mv2-0.4.0.zip manifest.json | grep -A3 data_collection
+> unzip -p dist/firefox-mv2-0.5.0.zip manifest.json | grep -A3 data_collection
 > ```
