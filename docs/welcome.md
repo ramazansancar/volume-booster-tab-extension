@@ -47,6 +47,17 @@ Pinning keeps the icon one click away.
 - **More controls are under _Advanced settings_.** You get a 6-band equalizer, channel balance and mono.
 - **Nothing leaves your browser.** The extension collects no data. Read the [privacy policy](../PRIVACY.md).
 
+## ⭐ Ratings
+
+A rating in your browser's store helps other people find the extension. Click a badge to leave yours.
+
+| Store | Rating | Users |
+| --- | --- | --- |
+| Chrome Web Store | [![Chrome Web Store rating](https://img.shields.io/chrome-web-store/rating/icmlbabfmbcmpjekdinfhblfpngadhad?label=rating&color=4285F4)](https://chromewebstore.google.com/detail/icmlbabfmbcmpjekdinfhblfpngadhad/reviews) | [![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/icmlbabfmbcmpjekdinfhblfpngadhad?label=users&color=4285F4)](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) |
+| Firefox Add-ons | [![Firefox Add-ons rating](https://img.shields.io/amo/rating/volume-booster-tab?label=rating&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/reviews/) | [![Firefox Add-ons users](https://img.shields.io/amo/users/volume-booster-tab?label=users&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/) |
+| Microsoft Edge Add-ons | [Rate it on the listing](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk) | |
+| GitHub | [![GitHub stars](https://img.shields.io/github/stars/ramazansancar/volume-booster-tab-extension?label=stars&color=24292F)](https://github.com/ramazansancar/volume-booster-tab-extension) | |
+
 ## Something not working?
 
 - Check the status line at the bottom of the popup. It tells you which method is in use, and when nothing can be done, it tells you why.
