@@ -7,23 +7,22 @@ Copy-paste material for the addons.mozilla.org submission form. The listing is l
 
 ---
 
-## Version notes (v0.2.1)
+## Version notes (v0.3.0)
 
 ```text
-Removes two permissions the add-on no longer needs. "tabs" and "activeTab" are gone: the host permissions already covered everything they were used for, including reading a tab's URL to apply a per-site volume. Nothing about what the add-on does has changed, and it asks for less than before.
+No permission changes. The add-on still requests only "storage" and "webNavigation" alongside its host access, and still makes no network requests of any kind.
 
-Fixes audio on sites that run their player in an iframe, which is most of them. Previously the boost silently did nothing there.
+Equalizer presets: built-in curves for situations and genres, plus presets the user saves, renames, reorders and deletes. Every built-in curve sums to roughly zero gain, so a preset changes the character of the sound, not its loudness.
 
-Fixes a video going permanently mute after setting a volume and switching to another stream. Players that reuse one <video> element across streams left it routed nowhere until the page was reloaded.
+Bass, mid and treble controls that drive the same six bands, and named bands (Sub-bass ... Brilliance) with a tooltip explaining each.
 
-Fixes the extension on Chromium builds running Manifest V2, where several browser APIs are callback-only and the popup failed to open.
+The popup can open as a separate window, and lists the tabs currently playing audio through the add-on. Clicking one activates that tab and focuses its window, using tabs.update and windows.update, which need no extra permission.
 
-An embedded widget could previously relabel the tab as its own origin - an embedded payment frame could make a stream page read as m.stripe.network, and "Remember this site" would have saved the setting under that domain. Only the top-level document defines the tab's identity now.
+Settings can be exported to and imported from a local JSON file chosen by the user. Imported content is validated the same way stored settings are; nothing is read or written outside that file and storage.local.
 
-The popup now explains why a page cannot be boosted instead of leaving the status line blank, and the bypass control names the current state (Active or Bypassed) rather than the action.
+Rating and support links in the popup open the add-on's AMO page and the GitHub issue tracker in a new tab. They are plain links; nothing is sent anywhere.
 
-PERMISSIONS
-The add-on now requests only "storage" and "webNavigation" alongside its host access. webNavigation enumerates a tab's frames so the volume reaches a player inside an iframe; it is used for nothing else, and no page content is read and no browsing history is collected, stored or transmitted. The add-on still makes no network requests of any kind.
+All new strings are translated into the 55 shipped languages.
 ```
 
 ---
@@ -73,7 +72,7 @@ SOURCE AND BUILD (Node.js 20 or newer, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.2.1.zip The attached source archive contains BUILD.md at its root with the same steps.
+Uploaded file: dist/firefox-mv2-0.3.0.zip The attached source archive contains BUILD.md at its root with the same steps.
 
 Bundler is esbuild with its standard minification. No obfuscation, no name mangling beyond esbuild defaults, no code generated from templates. To read the output unminified with inline sourcemaps:
 
@@ -122,7 +121,7 @@ SOURCE AND BUILD (Node.js 20+, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.2.1.zip BUILD.md at the root of the source archive repeats these steps.
+Uploaded file: dist/firefox-mv2-0.3.0.zip BUILD.md at the root of the source archive repeats these steps.
 
 esbuild with standard minification; no obfuscation. Unminified output:
   node scripts/build.mjs --target=firefox-mv2 --dev

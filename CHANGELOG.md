@@ -4,6 +4,32 @@ All notable changes to this project are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-09-30
+
+The equalizer becomes something most people will actually use: named presets, tone controls and bands that say what they do. No new permissions.
+
+### Added
+
+- **Equalizer presets.** Built-in curves for situations (Speech, Cinema, Night) and genres (Rock, Pop, Jazz, Classical, Electronic, Hip-hop, Acoustic, Vocal boost, Bass reducer) sit above the advanced controls. Every curve sums to roughly nothing, so switching preset changes the character of the sound, not how loud it is — which matters on top of a 600% boost.
+- **Saved presets of your own**, from the popup, with rename, reorder and delete on the settings page. Each row shows its curve so two similar names can be told apart.
+- **Bass, mid and treble controls** that drive the same six bands, so the two views are one setting at two resolutions and never disagree.
+- **Named bands** (Sub-bass … Brilliance), with what each one does in a tooltip.
+- **Two reset buttons:** *Use my defaults* applies your saved defaults, *Reset to neutral* goes back to 100% and flat.
+- **A detached panel.** The popup can open as a separate window that stays put while you work in the page.
+- **A list of the tabs currently playing audio** through the extension, loudest first. Clicking one brings its tab and window forward.
+- **Export and import settings** as a versioned file carrying defaults, saved sites and presets. Older files still import; a file from a newer build is refused rather than half-applied. Import replaces the current setup and confirms first.
+- **Rating and support links** in the popup. The stars open the review form of the store the build was made for; builds without a live listing show only the support link.
+- An FAQ in the README.
+
+### Changed
+
+- The settings and help actions are icons on one row with the rating stars, instead of a full-width button and a text link.
+- All new strings are translated into the 55 languages; coverage is 55/55 with no English fallback.
+
+### Fixed
+
+- The source archive no longer includes store screenshots and translation staging files, bringing it from 3966 KB back to 477 KB.
+
 ## [0.2.1] - 2026-09-15
 
 The tab-capture fallback stops being a promise in the manifest and becomes a feature, and the permission list shrinks to what the code actually uses.
@@ -86,6 +112,7 @@ First public release.
   Opera MV2, Firefox MV3/MV2, Safari MV3.
 - Source package builder for store submissions requiring reproducible builds.
 
+[0.3.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.3.0
 [0.2.1]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.2.1
 [0.2.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.2.0
 [0.1.1]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.1.1
