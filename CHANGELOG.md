@@ -8,7 +8,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Fixed
 
-- **DRM players no longer break.** Prime Video showed "Video unavailable" whenever the extension was installed, even with no boost set: every `<video>` was captured the moment it loaded, before the player attached its decryption keys, and Firefox refuses keys on an element whose audio is being captured. Media is now left untouched until a boost is actually set, is captured only once it is playing, and is never captured at all when it is encrypted. DRM video plays normally; its volume still cannot be raised, and the popup says so.
+- **DRM players no longer break.** Prime Video showed "Video unavailable" whenever the extension was installed, even with no boost set: every `<video>` was captured the moment it loaded, before the player attached its decryption keys, and Firefox refuses keys on an element whose audio is being captured. Media is now left untouched until a boost is actually set, and is captured only once it is playing.
+- **DRM video can be boosted on Firefox.** With the capture moved after the keys, Firefox hands over the decrypted audio, so Prime Video now gets louder. On Chrome, Edge and Opera encrypted video is left alone, since there the browser would only hand over silence; it keeps its own sound, and the popup says it cannot be boosted.
+- The popup no longer grows a horizontal scrollbar on Firefox when Advanced is open; the vertical scrollbar is given room instead of pushing the right edge out of view.
 
 ## [0.3.0] - 2026-09-30
 

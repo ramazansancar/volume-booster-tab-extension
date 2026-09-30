@@ -114,7 +114,8 @@ Knowing this up front saves a lot of confusion.
 | Situation | Why | Workaround |
 | --- | --- | --- |
 | ⚠️ **Cross-origin media without CORS** | The browser refuses to expose the samples to `createMediaElementSource` | **Try tab capture** in the popup (Chromium only) |
-| ❌ **DRM-protected video** (Netflix, Disney+, Prime Video, Spotify) | Encrypted Media Extensions hide the audio from page scripts *and* from tab capture | None — by design |
+| ⚠️ **DRM-protected video on Firefox** (Prime Video, Netflix, Disney+) | Firefox hands the decrypted audio over once playback has started; the boost attaches then. Tested on Prime Video | Start playback, then set the level |
+| ❌ **DRM-protected video on Chrome, Edge, Opera** | Encrypted Media Extensions hide the audio from page scripts *and* from tab capture. The video is left alone so it keeps its sound | None — by design |
 | ❌ **Browser pages** (`chrome://`, `about:`, the Web Store) | Extensions are not allowed to run there | None — by design |
 | ❌ **Local files** (`file://`) | Off by default | Enable file access in the extension's details page |
 | ❌ **Firefox + cross-origin media** | Firefox has no `tabCapture` API, so there is no fallback to offer | None currently |
@@ -411,7 +412,7 @@ Check the status line at the bottom of the popup — it says which path is in us
 
 The usual causes:
 
-- **DRM-protected video** (Netflix, Disney+, Prime Video). The browser deliberately does not let extensions touch that audio. Nothing can be done about this, on any extension.
+- **DRM-protected video** (Netflix, Disney+, Prime Video) **on a Chromium browser.** Chrome, Edge and Opera deliberately do not let extensions touch that audio, and nothing can be done about it on any extension. Firefox does allow it once playback has started.
 - **Cross-origin media without CORS headers.** The page can play it but scripts cannot read it. On Chromium there is a **Try tab capture** button in the popup for this; it lights the tab's recording indicator, which is why it is offered rather than used automatically.
 - **The page has not started playing yet.** The boost attaches to media elements as they appear, so press play first.
 

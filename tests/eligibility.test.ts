@@ -29,4 +29,18 @@ describe('mediaEligibility', () => {
   it('checks protection before playback, so a paused DRM element is not merely waiting', () => {
     expect(mediaEligibility(media({ paused: true, mediaKeys: {} }), false)).toBe('protected');
   });
+
+  describe('where keyed media is audible (Firefox)', () => {
+    it('routes a keyed element once it plays', () => {
+      expect(mediaEligibility(media({ mediaKeys: {} }), true, true)).toBe('ready');
+    });
+
+    it('waits for the keys after an encrypted event, never capturing ahead of them', () => {
+      expect(mediaEligibility(media(), true, true)).toBe('wait');
+    });
+
+    it('still waits for playback on a keyed element', () => {
+      expect(mediaEligibility(media({ mediaKeys: {}, paused: true }), false, true)).toBe('wait');
+    });
+  });
 });

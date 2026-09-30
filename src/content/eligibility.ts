@@ -9,8 +9,10 @@
  *    its MediaKeys after the element already exists and has fired `loadstart`.
  *    Firefox refuses `setMediaKeys` on an element whose audio is being
  *    captured, so wrapping it first makes the player fail outright - Prime
- *    Video shows "Video unavailable". Chromium lets it play but hands the graph
- *    silence. Either way a protected element must be left alone.
+ *    Video shows "Video unavailable". Once the keys are in, though, Firefox
+ *    does hand the decrypted audio to the graph, so there an encrypted element
+ *    waits for its keys rather than being refused. Chromium lets it play but
+ *    hands the graph silence, so there it is left alone.
  *  - **Media that has not started.** Waiting for real playback is what makes
  *    the encryption check trustworthy: an encrypted stream cannot reach
  *    `playing` without its keys, so by then `mediaKeys` is set or the
@@ -33,9 +35,23 @@ const HAVE_CURRENT_DATA = 2;
 /**
  * @param sawEncrypted whether the element has fired an `encrypted` event,
  *   which can precede `setMediaKeys` by a noticeable delay.
+ * @param keyedMediaIsAudible whether this browser hands decrypted audio to
+ *   the graph once the keys are in place. Firefox refuses only a *new*
+ *   setMediaKeys on a captured element; capturing after the keys are set is
+ *   allowed. Chromium gives the graph silence for any encrypted element, so
+ *   there routing it would only mute the video.
  */
-export function mediaEligibility(element: MediaLike, sawEncrypted: boolean): Eligibility {
-  if (sawEncrypted || element.mediaKeys != null) return 'protected';
+export function mediaEligibility(
+  element: MediaLike,
+  sawEncrypted: boolean,
+  keyedMediaIsAudible = false,
+): Eligibility {
+  const keyed = element.mediaKeys != null;
+  if (keyed || sawEncrypted) {
+    if (!keyedMediaIsAudible) return 'protected';
+    // Encrypted but not yet keyed: capturing now is exactly what broke Prime.
+    if (!keyed) return 'wait';
+  }
   if (element.paused || element.readyState < HAVE_CURRENT_DATA) return 'wait';
   return 'ready';
 }

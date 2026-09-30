@@ -168,7 +168,11 @@ function attach(element: HTMLMediaElement, immediate = false): void {
   if (!existing?.source) {
     if (isNeutral(settings)) return;
 
-    const eligibility = mediaEligibility(element, encryptedMedia.has(element));
+    const eligibility = mediaEligibility(
+      element,
+      encryptedMedia.has(element),
+      __BROWSER__ === 'firefox',
+    );
     if (eligibility === 'wait') return;
     if (eligibility === 'protected') {
       if (connectedCount() === 0) setPathway('unavailable', PROTECTED_REASON);
