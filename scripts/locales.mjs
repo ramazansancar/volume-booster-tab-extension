@@ -4873,7 +4873,14 @@ function coverage(locale) {
   return { translated: translated.length, total: keys.length };
 }
 
-async function main() {
+/**
+ * Writes every locale to public/_locales and prints the coverage summary.
+ *
+ * Exported so the build can await it. Running it as a side effect of the
+ * import let the build copy _locales while the files were still being
+ * rewritten, which shipped a truncated messages.json.
+ */
+export async function writeLocales() {
   const summary = [];
 
   for (const locale of LOCALES) {
@@ -4901,7 +4908,11 @@ async function main() {
   console.log('');
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+// Only when run directly (npm run locales). Importing this module, as the
+// build does, must not write anything behind the importer's back.
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  writeLocales().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}

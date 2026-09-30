@@ -26,7 +26,7 @@ import { promisify } from 'node:util';
 import * as esbuild from 'esbuild';
 
 import { DEFAULT_TARGETS, TARGETS, TARGET_NOTES, buildManifest, parseTarget } from './manifest.mjs';
-import { LOCALES, LOCALE_NAMES, catalogueFor } from './locales.mjs';
+import { LOCALES, LOCALE_NAMES, catalogueFor, writeLocales } from './locales.mjs';
 
 const require = createRequire(import.meta.url);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -397,6 +397,9 @@ async function main() {
   console.log(`Building ${options.targets.length} target(s)\n`);
 
   const started = Date.now();
+  // Every target copies public/_locales, so the files have to be complete
+  // before the first copy starts.
+  await writeLocales();
   for (const target of options.targets) {
     await buildTarget(target, pkg, options);
   }
