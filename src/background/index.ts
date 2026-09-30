@@ -1,4 +1,5 @@
 import {
+  createTab,
   ext,
   getAllFrames,
   getTab,
@@ -23,6 +24,7 @@ import {
   sanitizePresets,
 } from '@/lib/presets';
 import { mergeSettings, originOf, sanitizeSettings } from '@/lib/validate';
+import { REPO_URL } from '@/lib/store-links';
 import { TabRegistry } from '@/background/tab-registry';
 import {
   canCapture,
@@ -545,9 +547,15 @@ ext.tabs.onUpdated.addListener((tabId, changeInfo) => {
   })();
 });
 
-// Clears out the sites that older versions saved on every visit.
 ext.runtime.onInstalled.addListener((details) => {
+  // A fresh install opens the source repository once, so the user sees the
+  // extension is open source and can star it. Updates never open anything.
+  if (details.reason === 'install') {
+    void createTab(REPO_URL).catch(() => undefined);
+    return;
+  }
   if (details.reason !== 'update') return;
+  // Clears out the sites that older versions saved on every visit.
   void (async () => {
     const prefs = await preferences();
     await pruneDefaultOrigins(prefs.defaults);

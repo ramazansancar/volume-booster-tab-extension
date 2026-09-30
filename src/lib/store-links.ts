@@ -13,9 +13,11 @@
  * on a listing page the user then has to scroll.
  */
 
-/** Issue tracker. One destination for every build: the extension is one repo. */
-export const SUPPORT_URL =
-  'https://github.com/ramazansancar/volume-booster-tab-extension/issues';
+/** Source repository. One destination for every build: the extension is one repo. */
+export const REPO_URL = 'https://github.com/ramazansancar/volume-booster-tab-extension';
+
+/** Issue tracker. */
+export const SUPPORT_URL = `${REPO_URL}/issues`;
 
 /**
  * The review URL for this build, or null when its store has no listing.
