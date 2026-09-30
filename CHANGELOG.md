@@ -4,12 +4,17 @@ All notable changes to this project are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.4.0] - 2026-09-30
+
+A critical fix for streaming services: Prime Video would not play at all with the extension installed. It now plays, and can be boosted.
+
+### Added
+
+- **DRM-protected video can be boosted.** Prime Video, and other services using Encrypted Media Extensions, now get louder like any other page. Earlier versions, and this README, said that was impossible; it was not. The browser hands over the decrypted audio once the player has its keys, and the boost now waits for exactly that. Tested on Prime Video in Firefox and Brave.
 
 ### Fixed
 
-- **DRM players no longer break.** Prime Video showed "Video unavailable" whenever the extension was installed, even with no boost set: every `<video>` was captured the moment it loaded, before the player attached its decryption keys, and Firefox refuses keys on an element whose audio is being captured. Media is now left untouched until a boost is actually set, and is captured only once it is playing.
-- **DRM video can be boosted on Firefox.** With the capture moved after the keys, Firefox hands over the decrypted audio, so Prime Video now gets louder. On Chrome, Edge and Opera encrypted video is left alone, since there the browser would only hand over silence; it keeps its own sound, and the popup says it cannot be boosted.
+- **DRM players no longer break.** Prime Video showed "Video unavailable" whenever the extension was installed, even with no boost set: every `<video>` was captured the moment it loaded, before the player attached its decryption keys, and Firefox refuses keys on an element whose audio is already being captured. Media is now left untouched until a boost is actually set, and is captured only once it is playing.
 - The popup no longer grows a horizontal scrollbar on Firefox when Advanced is open; the vertical scrollbar is given room instead of pushing the right edge out of view.
 
 ## [0.3.0] - 2026-09-30
@@ -120,6 +125,7 @@ First public release.
   Opera MV2, Firefox MV3/MV2, Safari MV3.
 - Source package builder for store submissions requiring reproducible builds.
 
+[0.4.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.4.0
 [0.3.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.3.0
 [0.2.1]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.2.1
 [0.2.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.2.0

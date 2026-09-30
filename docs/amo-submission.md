@@ -7,22 +7,16 @@ Copy-paste material for the addons.mozilla.org submission form. The listing is l
 
 ---
 
-## Version notes (v0.3.0)
+## Version notes (v0.4.0)
 
 ```text
 No permission changes. The add-on still requests only "storage" and "webNavigation" alongside its host access, and still makes no network requests of any kind.
 
-Equalizer presets: built-in curves for situations and genres, plus presets the user saves, renames, reorders and deletes. Every built-in curve sums to roughly zero gain, so a preset changes the character of the sound, not its loudness.
+Fixes DRM players failing to load. Prime Video showed "Video unavailable" whenever the add-on was installed, even with no boost set: every <video> was routed into Web Audio as soon as it fired loadstart, before the player attached its MediaKeys, and Firefox refuses setMediaKeys on an element whose audio is already captured. Media is now left untouched until the user sets a boost, and an element is routed only once it is playing and, if encrypted, holds its MediaKeys.
 
-Bass, mid and treble controls that drive the same six bands, and named bands (Sub-bass ... Brilliance) with a tooltip explaining each.
+With that ordering the decrypted audio reaches the graph, so DRM video such as Prime Video can now be boosted.
 
-The popup can open as a separate window, and lists the tabs currently playing audio through the add-on. Clicking one activates that tab and focuses its window, using tabs.update and windows.update, which need no extra permission.
-
-Settings can be exported to and imported from a local JSON file chosen by the user. Imported content is validated the same way stored settings are; nothing is read or written outside that file and storage.local.
-
-Rating and support links in the popup open the add-on's AMO page and the GitHub issue tracker in a new tab. They are plain links; nothing is sent anywhere.
-
-All new strings are translated into the 55 shipped languages.
+Fixes a horizontal scrollbar in the popup when the advanced settings are open.
 ```
 
 ---
@@ -85,7 +79,7 @@ SOURCE AND BUILD (Node.js 20 or newer, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.3.0.zip The attached source archive contains BUILD.md at its root with the same steps.
+Uploaded file: dist/firefox-mv2-0.4.0.zip The attached source archive contains BUILD.md at its root with the same steps.
 
 Bundler is esbuild with its standard minification. No obfuscation, no name mangling beyond esbuild defaults, no code generated from templates. To read the output unminified with inline sourcemaps:
 
@@ -147,7 +141,7 @@ SOURCE AND BUILD (Node.js 20+, any OS)
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.3.0.zip BUILD.md at the root of the source archive repeats these steps.
+Uploaded file: dist/firefox-mv2-0.4.0.zip BUILD.md at the root of the source archive repeats these steps.
 
 esbuild with standard minification; no obfuscation. Unminified output:
   node scripts/build.mjs --target=firefox-mv2 --dev
