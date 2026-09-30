@@ -50,6 +50,19 @@ HOW TO TEST
 5. Close a tab and reopen the site: the boost is gone. Settings are per-tab
    and temporary unless the user ticks "Remember this site".
 
+NEW IN 0.3.0 - no permission changes
+- Popup > Preset: built-in EQ curves and bass/mid/treble controls. They only
+  reshape the six EQ bands already in the graph.
+- "Open in a separate window" opens the same popup page
+  (popup/index.html?window=1) with windows.create.
+- "Tabs playing audio" lists other tabs the add-on is processing. Clicking
+  one calls tabs.update + windows.update to focus it.
+- Settings page > Export/Import settings: export saves a Blob through an
+  <a download> link (not the downloads API); import reads a file the user
+  picks with <input type=file>, validated like stored settings.
+- Rate/support links open the AMO listing and the GitHub issue tracker
+  with tabs.create. Nothing is sent.
+
 EXPECTED LIMITATION
 DRM sites (Netflix, Spotify) cannot be boosted; Encrypted Media Extensions hide the audio from page scripts. The popup reports "This page blocks audio processing" rather than failing silently. Browser security boundary, not a defect.
 
@@ -101,6 +114,19 @@ No account or login is required to test this add-on.
 
 WHAT IT DOES
 Routes a page's <video> and <audio> elements through a Web Audio graph (equalizer -> limiter -> gain -> panner) to raise volume beyond what the page allows. Each tab is boosted independently.
+
+NEW IN 0.3.0 - no permission changes
+- Popup > Preset: built-in EQ curves and bass/mid/treble controls. They only
+  reshape the six EQ bands already in the graph.
+- "Open in a separate window" opens the same popup page
+  (popup/index.html?window=1) with windows.create.
+- "Tabs playing audio" lists other tabs the add-on is processing. Clicking
+  one calls tabs.update + windows.update to focus it.
+- Settings page > Export/Import settings: export saves a Blob through an
+  <a download> link (not the downloads API); import reads a file the user
+  picks with <input type=file>, validated like stored settings.
+- Rate/support links open the AMO listing and the GitHub issue tracker
+  with tabs.create. Nothing is sent.
 
 PERMISSIONS
 - storage       Saves the user's own preferences locally. Nothing else stored.
