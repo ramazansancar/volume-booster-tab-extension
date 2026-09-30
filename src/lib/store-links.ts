@@ -16,6 +16,19 @@
 /** Source repository. One destination for every build: the extension is one repo. */
 export const REPO_URL = 'https://github.com/ramazansancar/volume-booster-tab-extension';
 
+/**
+ * Opened once after a fresh install: a short getting-started page in the repo,
+ * with the Star button in GitHub's own header above it.
+ */
+export const WELCOME_URL = `${REPO_URL}/blob/master/docs/welcome.md`;
+
+/**
+ * Opened by the browser after the extension is removed: a way to report what
+ * went wrong or reinstall. The URL carries no parameters, so nothing about the
+ * user or their usage leaves the browser with it.
+ */
+export const GOODBYE_URL = `${REPO_URL}/blob/master/docs/goodbye.md`;
+
 /** Issue tracker. */
 export const SUPPORT_URL = `${REPO_URL}/issues`;
 

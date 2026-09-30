@@ -40,6 +40,11 @@ You can inspect and delete every saved site from the extension's options page at
   performs no network requests at all.
 - It does **not** use remote code. All code ships inside the extension package.
 
+The extension opens two pages in the project's GitHub repository: a welcome
+page once after a fresh install, and a goodbye page after it is removed. Your
+browser opens them like any link you click. Their addresses are fixed and carry
+no information about you, your settings or your usage.
+
 ## Why the extension asks for its permissions
 
 | Permission | Why it is needed |

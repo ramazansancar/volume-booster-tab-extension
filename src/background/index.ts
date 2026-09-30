@@ -24,7 +24,7 @@ import {
   sanitizePresets,
 } from '@/lib/presets';
 import { mergeSettings, originOf, sanitizeSettings } from '@/lib/validate';
-import { REPO_URL } from '@/lib/store-links';
+import { GOODBYE_URL, WELCOME_URL } from '@/lib/store-links';
 import { TabRegistry } from '@/background/tab-registry';
 import {
   canCapture,
@@ -547,11 +547,20 @@ ext.tabs.onUpdated.addListener((tabId, changeInfo) => {
   })();
 });
 
+// Not every browser supports an uninstall page (Safari has none), and a
+// missing one is no reason to stop the background from starting.
+try {
+  void Promise.resolve(ext.runtime.setUninstallURL?.(GOODBYE_URL)).catch(() => undefined);
+} catch {
+  // Unsupported; removing the extension simply opens nothing.
+}
+
 ext.runtime.onInstalled.addListener((details) => {
-  // A fresh install opens the source repository once, so the user sees the
-  // extension is open source and can star it. Updates never open anything.
+  // A fresh install opens the welcome page once: how to get started, and a
+  // visible sign that the extension is open source and can be starred.
+  // Updates never open anything.
   if (details.reason === 'install') {
-    void createTab(REPO_URL).catch(() => undefined);
+    void createTab(WELCOME_URL).catch(() => undefined);
     return;
   }
   if (details.reason !== 'update') return;
