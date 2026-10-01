@@ -486,11 +486,41 @@ async function handleContentMessage(
   }
 }
 
+/**
+ * True only for the extension's own pages: the popup, the options page and the
+ * offscreen document.
+ *
+ * Content scripts share the runtime with those pages and run in every http(s)
+ * frame, so without this check any web page that compromised or imitated one
+ * could send `ui:` commands - forget a saved site, replace the presets, start
+ * a tab capture. A content script's sender.url is the page it runs in, never
+ * an extension URL, which is what separates the two.
+ *
+ * sender.tab is deliberately not used for this: the options page opens in a
+ * tab, so it carries one just like a content script does.
+ */
+function isExtensionPage(sender: { id?: string; url?: string }): boolean {
+  return (
+    sender.id === ext.runtime.id &&
+    typeof sender.url === 'string' &&
+    sender.url.startsWith(ext.runtime.getURL(''))
+  );
+}
+
 ext.runtime.onMessage.addListener((message: unknown, sender, sendResponse) => {
   if (typeof message !== 'object' || message === null || !('type' in message)) {
     return false;
   }
   const typed = message as { type: string };
+
+  // Gate before any routing: commands meant for the extension's own pages are
+  // dropped when they come from anywhere else.
+  if (
+    (typed.type.startsWith('ui:') || typed.type.startsWith('offscreen:')) &&
+    !isExtensionPage(sender)
+  ) {
+    return false;
+  }
 
   if (typed.type.startsWith('ui:')) {
     void handleUiMessage(message as UiToBackgroundMessage).then(sendResponse);
