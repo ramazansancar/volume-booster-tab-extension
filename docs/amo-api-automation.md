@@ -63,9 +63,15 @@ Three different locale vocabularies are in play:
 
 1. **`public/_locales/`** — 55 directories, underscored: `pt_BR`, `zh_CN`, `es_419`. Chrome's i18n table. Interface strings only.
 2. **[`store-descriptions.md`](store-descriptions.md) headings** — 68 tags, hyphenated: `pt-BR`, `zh-CN`, `es-419`. The union of what Opera, Chrome and AMO offer.
-3. **AMO's own accepted list** — from `AMO_LANGUAGES` in [`src/olympia/core/languages.py`](https://github.com/mozilla/addons-server/blob/master/src/olympia/core/languages.py).
+3. **AMO's own accepted list** — production sets `AMO_LANGUAGES = PROD_LANGUAGES` ([`src/olympia/conf/prod/settings.py`](https://github.com/mozilla/addons-server/blob/master/src/olympia/conf/prod/settings.py)), and `PROD_LANGUAGES` in [`src/olympia/core/languages.py`](https://github.com/mozilla/addons-server/blob/master/src/olympia/core/languages.py) is **44 locales** — far fewer than the ~150 in that file's full `ALL_LANGUAGES` table. Checked 2026-10-01:
 
-The third is the one the API validates against, and it does not match the second. Diffing them:
+   ```text
+   cs de dsb el en-CA en-GB en-US es-AR es-CL es-ES es-MX fa fi fr fur fy-NL
+   he hr hsb hu ia it ja ka kab ko nb-NO nl nn-NO pl pt-BR pt-PT ro ru sk sl
+   sq sr sv-SE tr uk vi zh-CN zh-TW
+   ```
+
+The third is the one the API goes by, and it does not match the second. Worse, a translation in a locale outside it is **not rejected**: [`translations/fields.py`](https://github.com/mozilla/addons-server/blob/master/src/olympia/translations/fields.py) skips it with a bare `continue`, so the `PATCH` succeeds and the text is simply gone. A wrong count here does not fail loudly; it quietly publishes less than intended. Diffing the two:
 
 The repo's 68 tags, taken from the live file, are:
 
@@ -76,18 +82,18 @@ kn ko lt lv ml mr ms nl nn-NO no pl pt-BR pt-PT ro ru sk sl sq sr sv sw ta
 te th tr uk vi zh-CN zh-TW
 ```
 
-Six of those AMO will not take as written:
+Four reach AMO under another name:
 
-| Tag      | AMO instead wants                                                             |
-| -------- | ----------------------------------------------------------------------------- |
-| `en`     | `en-US` — AMO has no bare `en`, **and this file already has its own `en-US`** |
-| `es`     | `es-ES` — AMO has no bare `es`                                                |
-| `es-419` | nothing; AMO has no Latin American Spanish entry. Skip.                       |
-| `no`     | `nb-NO`                                                                       |
-| `fil`    | `tl`                                                                          |
-| `sv`     | `sv-SE`                                                                       |
+| Tag  | AMO locale                                                                    |
+| ---- | ----------------------------------------------------------------------------- |
+| `en` | `en-US` — AMO has no bare `en`, **and this file already has its own `en-US`** |
+| `es` | `es-ES` — AMO has no bare `es`                                                |
+| `no` | `nb-NO`                                                                       |
+| `sv` | `sv-SE`                                                                       |
 
-The remaining 62 are identity mappings.
+**23 have no AMO locale at all** and cannot be sent: `am ar bg bn ca da en-AU es-419 et fil gu hi id kn lt lv ml mr ms sw ta te th`. That includes `fil`: AMO's code for it, `tl`, exists in `ALL_LANGUAGES` but not in production. These translations stay useful for Chrome, Edge and Opera; AMO shows its `default_locale` (en-US) to those users.
+
+The remaining 41 are identity mappings.
 
 > [!WARNING]
 > `en` and `en-US` both exist in this file and both want to become AMO's `en-US`.
@@ -97,11 +103,10 @@ The remaining 62 are identity mappings.
 > section — but the map should assert that no two source tags ever resolve to the
 > same AMO locale, and fail loudly if they do.
 
-So of 68 sections, 2 are dropped (`en` as a duplicate of `en-US`, and `es-419` as
-unsupported) and **66 reach AMO**.
+So of 68 sections, 24 are dropped (`en` as a duplicate of `en-US`, and the 23 unsupported tags) and **44 reach AMO** — exactly AMO's production list, every one of its locales covered.
 
 > [!IMPORTANT]
-> The exact mapping above is derived from the `languages.py` snapshot and **must be verified against the live API before the first write**, because `GET /api/v5/addons/addon/<id>/` returns the add-on's existing translations keyed by exactly the locales AMO will accept. Read before write; treat the response as the source of truth, not this table.
+> The list above is a snapshot of `PROD_LANGUAGES` and can change. Because AMO drops unknown locales silently, the sender must report every tag it does not send rather than rely on the response. [extension-stores-api](https://github.com/ramazansancar/extension-stores-api) does this: its listing and release-notes dry runs list the unsupported tags before anything is sent. The live listing (`GET /api/v5/addons/addon/<id>/`, no `lang`) shows which locales currently carry text — 29 for the summary on 2026-10-01.
 
 ### Where the mapping lives
 
@@ -112,9 +117,13 @@ A single exported table in the new script, shaped like the one in [`scripts/loca
 const AMO_LOCALE = {
   en: 'en-US',
   es: 'es-ES',
-  'es-419': null, // AMO has no Latin American Spanish
   no: 'nb-NO',
-  fil: 'tl',
+  sv: 'sv-SE',
+  // Not in AMO's production list; sending them is a silent no-op.
+  am: null, ar: null, bg: null, bn: null, ca: null, da: null, 'en-AU': null,
+  'es-419': null, et: null, fil: null, gu: null, hi: null, id: null, kn: null,
+  lt: null, lv: null, ml: null, mr: null, ms: null, sw: null, ta: null,
+  te: null, th: null,
   // ...identity for the rest
 };
 ```
@@ -177,7 +186,7 @@ const SCHEME = {
 >
 > Two options, neither free: add a second fence per section carrying the AMO-specific sentence (explicit, verbose, and the 13 AMO-only sections show what it looks like), or a per-language term table mapping each translation of "Web Store" to its add-ons-site equivalent. The first is more work up front and cannot silently produce wrong text, so prefer it.
 >
-> Until one of them exists, **`listing` must not publish the 55 Chromium sections**. Ship the 13 correct ones plus a rewritten `en-US` and `tr` first; that is the bulk of the real audience. Gate the rest behind an explicit flag so a run cannot quietly publish text naming the wrong browser.
+> Until one of them exists, **`listing` must not publish the 31 Chromium-worded sections that reach AMO** (the other 24 of the 55 never reach it: 23 unsupported locales plus `en`). Ship the 13 correct ones plus a rewritten `en-US` and `tr` first; that is the bulk of the real audience. Gate the rest behind an explicit flag so a run cannot quietly publish text naming the wrong browser.
 
 This changes the step order below: the substitution problem is now the first thing `listing --dry-run` has to show, because a dry run that prints `chrome://` in a Firefox listing body is the one error this whole document exists to prevent.
 
@@ -258,7 +267,7 @@ Three layers, in order of how much they protect:
 3. **Staging** — `https://addons.allizom.org/api/v5/`, or `addons-dev.allizom.org`. Production credentials **do not work** there; a separate account and separate API keys are needed. Make the base URL an environment variable (`AMO_API_BASE`, defaulting to production) so the same script hits either.
 
 > [!IMPORTANT]
-> The first real `listing` run should target a single locale — `--locale=tr` — before running all 66. A mistake in the mapping that overwrites 66 descriptions with the wrong text is recoverable only by re-running with correct data, and the listing is public in the meantime.
+> The first real `listing` run should target a single locale — `--locale=tr` — before running all 44. A mistake in the mapping that overwrites 44 descriptions with the wrong text is recoverable only by re-running with correct data, and the listing is public in the meantime.
 
 ---
 
@@ -289,7 +298,7 @@ Each step ends somewhere useful, and nothing writes to production until step 5.
 3. `listing --dry-run`. Prints the body. Review the resolved locale list by eye — this is the step that catches mapping errors. **Grep the printed body for `chrome://` and for "Web Store": both must be absent, in every language.**
 4. Read the live add-on: `GET /addons/addon/<id>/`, and diff its existing translations against what step 3 would send. Reconcile the locale table against reality.
 5. `listing --locale=tr` for real. One locale. Verify on the site — including that it says `about:`, not `chrome://`.
-6. `listing` for the 13 already-correct sections plus a rewritten `en-US` and `tr`. The remaining 55 wait on the "Web Store" term problem above, behind an explicit flag.
+6. `listing` for the 13 already-correct sections plus a rewritten `en-US` and `tr`. The remaining 29 AMO locales wait on the "Web Store" term problem above, behind an explicit flag.
 7. `upload` + `version`, tested against staging first if a staging account is available; otherwise on the next real release, with the manual path ready as a fallback.
 8. The tag-triggered workflow, gated on manual approval.
 9. Add the `store-descriptions.md` heading check to `ci.yml`.
@@ -304,4 +313,4 @@ Steps 1–3 need no credentials beyond `whoami` and deliver the part that is act
 - **The add-on's numeric id or slug.** Read it from the API on first run and record it here.
 - **The AMO license slug for AGPL-3.0-only.** `GET /api/v5/addons/licenses/` — confirm the exact slug rather than guessing.
 - **Whether a staging account is worth creating.** It costs an account and a separate key pair, and buys a safe rehearsal of `upload` + `version`. Probably yes before step 7.
-- **Rate limits.** Undocumented. 66 sequential `PATCH`es may hit one. Send them as a single `PATCH` with all locales in one translated-field object — one request, not 66 — which sidesteps the question entirely and is the documented format anyway.
+- **Rate limits.** Undocumented. 44 sequential `PATCH`es may hit one. Send them as a single `PATCH` with all locales in one translated-field object — one request, not 44 — which sidesteps the question entirely and is the documented format anyway.
