@@ -131,7 +131,6 @@ export function buildManifest(target, pkg) {
   const manifest = {
     manifest_version: version,
     name: '__MSG_extensionName__',
-    short_name: 'Volume Booster Tab',
     description: '__MSG_extensionDescription__',
     version: pkg.version,
     default_locale: 'en',

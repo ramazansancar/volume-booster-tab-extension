@@ -11,6 +11,7 @@ Opera moves to Manifest V3, and the background stops taking orders from web page
 ### Changed
 
 - **Opera builds on Manifest V3.** Opera no longer accepts new MV2 extensions, so the `opera-mv2` target is replaced by `opera-mv3`. Opera now gets the same service worker, and the same tab-capture fallback, as Chrome and Edge.
+- **The manifest no longer sets `short_name`.** Opera rejects one longer than 12 characters, and "Volume Booster Tab" is 18. Browsers fall back to the full name, which is what they showed anyway.
 
 ### Security
 
