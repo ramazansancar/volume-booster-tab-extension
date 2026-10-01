@@ -113,7 +113,7 @@ pnpm run build
 | --- | --- |
 | Chrome / Brave / Vivaldi | `dist/chrome-mv3` |
 | Edge | `dist/edge-mv3` |
-| Opera | `dist/opera-mv2` |
+| Opera | `dist/opera-mv3` |
 | Firefox | `dist/firefox-mv2/manifest.json` via `about:debugging` |
 | Firefox 109+ | `dist/firefox-mv3/manifest.json` |
 | Safari | See [`docs/safari.md`](docs/safari.md) |

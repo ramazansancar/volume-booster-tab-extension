@@ -9,10 +9,10 @@
  * There are really only three engines to support. Everything else is a fork
  * that consumes one of these builds unchanged:
  *
- *   Chromium MV3  chrome-mv3, edge-mv3   Chrome 88+, Edge, Brave, Vivaldi,
- *                                        Arc, Yandex, Opera
- *   Chromium MV2  chrome-mv2, opera-mv2  Chromium builds and forks still on
- *                                        MV2, plus Opera's add-on store
+ *   Chromium MV3  chrome-mv3, edge-mv3,  Chrome 88+, Edge, Opera, Brave,
+ *                 opera-mv3              Vivaldi, Arc, Yandex
+ *   Chromium MV2  chrome-mv2             Chromium builds and forks still on
+ *                                        MV2
  *   Gecko         firefox-mv2/mv3        Firefox, Firefox for Android, ESR,
  *                                        LibreWolf, Waterfox, Zen, Floorp
  *   WebKit        safari-mv3             Safari 16.4+ on macOS and iOS, after
@@ -25,7 +25,7 @@ export const TARGETS = /** @type {const} */ ([
   'chrome-mv3',
   'chrome-mv2',
   'edge-mv3',
-  'opera-mv2',
+  'opera-mv3',
   'firefox-mv2',
   'firefox-mv3',
   'safari-mv3',
@@ -36,7 +36,7 @@ export const DEFAULT_TARGETS = /** @type {const} */ ([
   'chrome-mv3',
   'chrome-mv2',
   'edge-mv3',
-  'opera-mv2',
+  'opera-mv3',
   'firefox-mv2',
   'firefox-mv3',
   'safari-mv3',
@@ -81,7 +81,7 @@ export const TARGET_NOTES = {
   'chrome-mv3': 'Chrome 88+, Brave, Vivaldi, Arc, Yandex',
   'chrome-mv2': 'Chromium forks still running Manifest V2',
   'edge-mv3': 'Microsoft Edge Add-ons',
-  'opera-mv2': 'Opera add-ons store',
+  'opera-mv3': 'Opera add-ons store',
   'firefox-mv2': 'Firefox 91+ ESR, LibreWolf, Waterfox, Firefox for Android',
   'firefox-mv3': 'Firefox 109+',
   'safari-mv3': 'Safari 16.4+ (requires xcrun conversion, see docs/safari.md)',

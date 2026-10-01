@@ -15,7 +15,7 @@
     "build:chrome": "node scripts/build.mjs --target=chrome-mv3,chrome-mv2",
     "build:firefox": "node scripts/build.mjs --target=firefox-mv3,firefox-mv2",
     "build:edge": "node scripts/build.mjs --target=edge-mv3",
-    "build:opera": "node scripts/build.mjs --target=opera-mv2",
+    "build:opera": "node scripts/build.mjs --target=opera-mv3",
     "build:safari": "node scripts/build.mjs --target=safari-mv3",
     "package": "node scripts/build.mjs --all --zip",
     "source": "node scripts/source-package.mjs",

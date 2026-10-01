@@ -5,8 +5,9 @@ Copy-paste material for the Opera add-ons dashboard (<https://addons.opera.com/d
 The Opera listing is still in review. Chrome, Firefox and Edge are already published — see [`publishing.md`](publishing.md#live-listings).
 
 > [!IMPORTANT]
-> Upload `dist/opera-mv2-<version>.zip`, produced by `pnpm run package`. Opera is
-> the one store that still takes the **Manifest V2** build — see
+> Upload `dist/opera-mv3-<version>.zip`, produced by `pnpm run package`. Opera no
+> longer accepts new **Manifest V2** extensions — v0.5.0 was disapproved for
+> exactly that — so the listing takes the MV3 build, like Chrome and Edge. See
 > [`publishing.md`](publishing.md) for which build goes where.
 
 Related: [`chrome-submission.md`](chrome-submission.md) for Chrome and Edge, [`amo-submission.md`](amo-submission.md) for Firefox.
@@ -132,17 +133,21 @@ Opera rejects the submission with `Detailed description missing for <language>` 
 ### Changelog (`en-US`)
 
 ```text
-The tab-capture fallback now works. On pages whose audio cannot be read directly, such as cross-origin media served without CORS headers, a "Try tab capture" button appears in the popup and routes the tab's audio through the extension instead. DRM-protected sites still cannot be boosted by any path.
+Now built on Manifest V3.
 
-Two permissions removed. "tabs" and "activeTab" are no longer requested; the host permissions already covered everything they were used for. The extension now asks for less than it did before.
+The tab-capture fallback is available in Opera. On pages whose audio cannot be read directly, such as cross-origin media served without CORS headers, a "Try tab capture" button appears in the popup and routes the tab's audio through the extension instead.
+
+Commands from the popup and settings page are now accepted only from the extension's own pages, never from a script running inside a website.
 ```
 
 ### Changelog (`tr`)
 
 ```text
-Sekme yakalama yedeği artık çalışıyor. Sesi doğrudan okunamayan sayfalarda - CORS başlığı olmadan sunulan farklı kaynaklı medya gibi - açılır pencerede "Sekme yakalamayı dene" düğmesi çıkıyor ve sekmenin sesi eklenti üzerinden geçiriliyor. DRM korumalı siteler hiçbir yolla yükseltilemiyor.
+Artık Manifest V3 üzerine kurulu.
 
-İki izin kaldırıldı. "tabs" ve "activeTab" artık istenmiyor; ana makine izinleri bunların kullanıldığı her şeyi zaten kapsıyordu. Eklenti eskisinden daha az izin istiyor.
+Sekme yakalama yedeği Opera'da da kullanılabiliyor. Sesi doğrudan okunamayan sayfalarda - CORS başlığı olmadan sunulan farklı kaynaklı medya gibi - açılır pencerede "Sekme yakalamayı dene" düğmesi çıkıyor ve sekmenin sesi eklenti üzerinden geçiriliyor.
+
+Açılır pencere ve ayarlar sayfasından gelen komutlar artık yalnızca eklentinin kendi sayfalarından kabul ediliyor; bir web sitesinin içinde çalışan betikten asla.
 ```
 
 Keep both in step with [`CHANGELOG.md`](../CHANGELOG.md) on each release: this is user-facing copy, so it says what changed for a user rather than which functions moved.
@@ -275,8 +280,8 @@ These fields are on the **version** page, not the listing form, and none has a C
 > before submitting, or the link 404s:
 >
 > ```bash
-> git tag v0.2.1
-> git push origin v0.2.1
+> git tag v0.5.1
+> git push origin v0.5.1
 > ```
 
 The moderator field is required here rather than optional: the package is minified by esbuild, which is exactly the case the form calls out.
@@ -295,11 +300,11 @@ The moderator field is required here rather than optional: the package is minifi
 3. Steps:
    git clone https://github.com/ramazansancar/volume-booster-tab-extension
    cd volume-booster-tab-extension
-   git checkout v0.2.1
+   git checkout v0.5.1
    pnpm install --frozen-lockfile
    pnpm run build:opera
 
-   The unpacked extension is written to dist/opera-mv2/, which is the
+   The unpacked extension is written to dist/opera-mv3/, which is the
    content of the uploaded package.
 
    To reproduce the uploaded zip exactly:
@@ -319,13 +324,16 @@ The moderator field is required here rather than optional: the package is minifi
 
 ## Permissions
 
-Opera has no permission-justification form: the MV2 manifest is read directly. The build requests:
+Opera has no permission-justification form: the manifest is read directly. The MV3 build requests:
 
 ```json
-["storage", "webNavigation", "http://*/*", "https://*/*"]
+{
+  "permissions": ["storage", "webNavigation", "tabCapture", "offscreen"],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
 ```
 
-`tabs` and `activeTab` are deliberately absent — the host permissions already cover everything they were used for. `tabCapture` and `offscreen` are absent too: the tab-capture fallback is implemented only for Chromium MV3, and this is the MV2 build. See `buildPermissions` in [`scripts/manifest.mjs`](../scripts/manifest.mjs).
+`tabs` and `activeTab` are deliberately absent — the host permissions already cover everything they were used for. `tabCapture` and `offscreen` back the tab-capture fallback, which only starts when the user presses **Try tab capture** in the popup. See `buildPermissions` in [`scripts/manifest.mjs`](../scripts/manifest.mjs), and keep [`PRIVACY.md`](../PRIVACY.md) listing exactly this set — a mismatch between the two was one of the reasons v0.5.0 was disapproved.
 
 ---
 

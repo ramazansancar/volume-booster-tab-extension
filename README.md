@@ -76,7 +76,7 @@ There are only three browser engines. Everything else is a fork that runs one of
 | **Chromium** | `chrome-mv3` | Chrome 88+, Brave, Vivaldi, Arc, Yandex | V3 |
 | **Chromium** | `edge-mv3` | Microsoft Edge 88+ | V3 |
 | **Chromium** | `chrome-mv2` | Chromium forks still on Manifest V2 | V2 |
-| **Chromium** | `opera-mv2` | Opera | V2 |
+| **Chromium** | `opera-mv3` | Opera | V3 |
 | **Gecko** | `firefox-mv3` | Firefox 109+ | V3 |
 | **Gecko** | `firefox-mv2` | Firefox 91+ ESR, LibreWolf, Waterfox, Zen, Floorp, Firefox for Android | V2 |
 | **WebKit** | `safari-mv3` | Safari 16.4+ on macOS and iOS | V3 |
@@ -227,7 +227,7 @@ Then load the folder for your browser:
 1. Open `chrome://extensions` (or `edge://extensions`, `opera://extensions`)
 2. Turn on **Developer mode**
 3. Click **Load unpacked**
-4. Select `dist/chrome-mv3` (or `dist/edge-mv3`, `dist/opera-mv2`)
+4. Select `dist/chrome-mv3` (or `dist/edge-mv3`, `dist/opera-mv3`)
 
 </details>
 
@@ -287,7 +287,7 @@ pnpm run package          # build all targets AND zip each for store upload
 | `pnpm run build:chrome` | Chrome MV3 + MV2 only |
 | `pnpm run build:firefox` | Firefox MV3 + MV2 only |
 | `pnpm run build:edge` | Edge MV3 only |
-| `pnpm run build:opera` | Opera MV2 only |
+| `pnpm run build:opera` | Opera MV3 only |
 | `pnpm run build:safari` | Safari MV3 only |
 | `pnpm run package` | Build everything and produce store-ready zips |
 | `pnpm run icons` | Regenerate the PNG icons from code |

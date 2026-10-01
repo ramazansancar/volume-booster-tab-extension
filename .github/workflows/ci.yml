@@ -53,7 +53,7 @@ jobs:
 
       - name: Check each target produced a manifest
         run: |
-          for target in chrome-mv3 chrome-mv2 edge-mv3 opera-mv2 firefox-mv2 firefox-mv3 safari-mv3; do
+          for target in chrome-mv3 chrome-mv2 edge-mv3 opera-mv3 firefox-mv2 firefox-mv3 safari-mv3; do
             test -f "dist/$target/manifest.json" || { echo "::error::missing dist/$target/manifest.json"; exit 1; }
             node -e "JSON.parse(require('fs').readFileSync('dist/$target/manifest.json','utf8'))"
             echo "ok: $target"

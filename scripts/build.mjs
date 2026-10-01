@@ -183,7 +183,7 @@ async function bundleContentScriptSeparately(target, outDir, dev) {
  */
 function usesOffscreen(target) {
   const { browser, version } = parseTarget(target);
-  return version === 3 && (browser === 'chrome' || browser === 'edge');
+  return version === 3 && (browser === 'chrome' || browser === 'edge' || browser === 'opera');
 }
 
 async function copyStatic(outDir, target) {

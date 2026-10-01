@@ -38,7 +38,7 @@ Upload artifacts land in `dist/<target>-<version>.zip`.
 | **[addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/)** | `firefox-mv2-<version>.zip`              | Supports Firefox 91+, including ESR and Firefox for Android. Mozilla continues to support MV2, so there is no reason to narrow the audience. |
 | **[Chrome Web Store](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad)** | `chrome-mv3-<version>.zip`               | MV3 is mandatory for new Chrome submissions.                                                                                                 |
 | **[Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk)** | `edge-mv3-<version>.zip`                 | Same as Chrome, with Edge metadata.                                                                                                          |
-| **Opera add-ons**      | `opera-mv2-<version>.zip`                | Opera's store still accepts MV2. Its listing form differs the most — see [`opera-submission.md`](opera-submission.md).                       |
+| **Opera add-ons**      | `opera-mv3-<version>.zip`                | Opera no longer accepts new MV2 submissions. Its listing form differs the most — see [`opera-submission.md`](opera-submission.md).                       |
 | **App Store (Safari)** | Not a zip — see [`safari.md`](safari.md) | Requires Xcode conversion and signing.                                                                                                       |
 
 `chrome-mv2` and `firefox-mv3` are not for store submission. They exist for users on Chromium forks still running MV2, and as a ready migration path if Mozilla ever retires MV2.
