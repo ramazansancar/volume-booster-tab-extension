@@ -4,6 +4,22 @@ All notable changes to this project are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.1] - 2026-10-01
+
+Opera moves to Manifest V3, and the background stops taking orders from web pages.
+
+### Changed
+
+- **Opera builds on Manifest V3.** Opera no longer accepts new MV2 extensions, so the `opera-mv2` target is replaced by `opera-mv3`. Opera now gets the same service worker, and the same tab-capture fallback, as Chrome and Edge.
+
+### Security
+
+- **Popup and settings commands are accepted only from the extension's own pages.** The background routed every `ui:` message without checking who sent it, and content scripts run in every http(s) frame. A script that reached one could have forgotten saved sites, replaced the presets or started a tab capture. `ui:` and `offscreen:` messages from anywhere but an extension page are now dropped before routing.
+
+### Fixed
+
+- **The privacy policy lists the permissions the extension actually requests.** It still described `tabs` and `activeTab`, which were removed in 0.2.1.
+
 ## [0.5.0] - 2026-09-30
 
 "Remember this site" now remembers only the sites you actually adjusted, and the extension says hello and goodbye.
@@ -140,6 +156,7 @@ First public release.
   Opera MV2, Firefox MV3/MV2, Safari MV3.
 - Source package builder for store submissions requiring reproducible builds.
 
+[0.5.1]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.5.1
 [0.5.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.5.0
 [0.4.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.4.0
 [0.3.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.3.0
