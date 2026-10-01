@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Extension:** Tab Volume Booster (_Sekme Ses Yükseltici_) **Publisher:** Ramazan Sancar — <https://github.com/ramazansancar> **Last updated:** 30 September 2026
+**Extension:** Tab Volume Booster (_Sekme Ses Yükseltici_) **Publisher:** Ramazan Sancar — <https://github.com/ramazansancar> **Last updated:** 1 October 2026
 
 ---
 
@@ -40,20 +40,15 @@ You can inspect and delete every saved site from the extension's options page at
   performs no network requests at all.
 - It does **not** use remote code. All code ships inside the extension package.
 
-The extension opens two pages in the project's GitHub repository: a welcome
-page once after a fresh install, and a goodbye page after it is removed. Your
-browser opens them like any link you click. Their addresses are fixed and carry
-no information about you, your settings or your usage.
+The extension opens two pages in the project's GitHub repository: a welcome page once after a fresh install, and a goodbye page after it is removed. Your browser opens them like any link you click. Their addresses are fixed and carry no information about you, your settings or your usage.
 
 ## Why the extension asks for its permissions
 
 | Permission | Why it is needed |
 | --- | --- |
 | `storage` | Saves your volume preferences locally on your device. |
-| `tabs` | Identifies which tab is active so the boost is applied to the right one. |
-| `activeTab` | Applies the boost to the tab you are currently interacting with. |
 | `webNavigation` | Enumerates a tab's sub-frames, so the boost also reaches players running inside an embedded iframe. |
-| `tabCapture`, `offscreen` (Chromium only) | Fallback audio path for pages whose media cannot be read directly, such as cross-origin media served without CORS headers. It only ever starts when you press **Try tab capture** in the popup. The captured audio is processed locally in real time and is never recorded, stored, or transmitted, and the capture ends when you close the tab. |
+| `tabCapture`, `offscreen` (Chrome, Edge and Opera only) | Fallback audio path for pages whose media cannot be read directly, such as cross-origin media served without CORS headers. It only ever starts when you press **Try tab capture** in the popup. The captured audio is processed locally in real time and is never recorded, stored, or transmitted, and the capture ends when you close the tab. |
 | Host access (`http://*/*`, `https://*/*`) | The content script has to be able to reach the `<audio>` and `<video>` elements on whichever page you choose to boost. It only reads and adjusts media elements; it does not read page content. |
 
 ## Audio processing
