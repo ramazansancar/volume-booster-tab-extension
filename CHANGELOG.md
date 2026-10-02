@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- **Opera listing is live.** The Opera build's popup now shows the rating stars, linking to [Opera add-ons](https://addons.opera.com/extensions/details/volume-booster-tab/), and the README and docs link the listing.
+
 ## [0.5.1] - 2026-10-01
 
 Opera moves to Manifest V3, and the background stops taking orders from web pages.
@@ -157,6 +163,7 @@ First public release.
   Opera MV2, Firefox MV3/MV2, Safari MV3.
 - Source package builder for store submissions requiring reproducible builds.
 
+[Unreleased]: https://github.com/ramazansancar/volume-booster-tab-extension/compare/v0.5.1...HEAD
 [0.5.1]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.5.1
 [0.5.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.5.0
 [0.4.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.4.0

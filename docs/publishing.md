@@ -9,12 +9,12 @@ Per-store copy lives alongside this file: [`amo-submission.md`](amo-submission.m
 | **Chrome Web Store** | Published | <https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad> |
 | **addons.mozilla.org** | Published | <https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/> |
 | **Edge Add-ons** | Published | <https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk> |
-| **Opera add-ons** | In review | — |
+| **Opera add-ons** | Published | <https://addons.opera.com/extensions/details/volume-booster-tab/> |
 | **App Store (Safari)** | Not submitted | — |
 
 Updates to a published listing go through the same upload flow as the first submission; only the review turnaround differs.
 
-The README install badges are hand-drawn SVGs in [`store-assets/badges/`](../store-assets/badges) — one per store, 200x58, dark-background. They are our own artwork rather than the stores' official badge images, so nothing here depends on a third-party CDN or redistributes a vendor brand asset. When a store goes live, point its badge at the listing; `opera.svg` and `safari.svg` are already drawn and waiting.
+The README install badges are hand-drawn SVGs in [`store-assets/badges/`](../store-assets/badges) — one per store, 200x58, dark-background. They are our own artwork rather than the stores' official badge images, so nothing here depends on a third-party CDN or redistributes a vendor brand asset. When a store goes live, point its badge at the listing; `safari.svg` is already drawn and waiting.
 
 ---
 
@@ -38,7 +38,7 @@ Upload artifacts land in `dist/<target>-<version>.zip`.
 | **[addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/)** | `firefox-mv2-<version>.zip`              | Supports Firefox 91+, including ESR and Firefox for Android. Mozilla continues to support MV2, so there is no reason to narrow the audience. |
 | **[Chrome Web Store](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad)** | `chrome-mv3-<version>.zip`               | MV3 is mandatory for new Chrome submissions.                                                                                                 |
 | **[Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk)** | `edge-mv3-<version>.zip`                 | Same as Chrome, with Edge metadata.                                                                                                          |
-| **Opera add-ons**      | `opera-mv3-<version>.zip`                | Opera no longer accepts new MV2 submissions. Its listing form differs the most — see [`opera-submission.md`](opera-submission.md).                       |
+| **[Opera add-ons](https://addons.opera.com/extensions/details/volume-booster-tab/)** | `opera-mv3-<version>.zip`                | Opera no longer accepts new MV2 submissions. Its listing form differs the most — see [`opera-submission.md`](opera-submission.md).                       |
 | **App Store (Safari)** | Not a zip — see [`safari.md`](safari.md) | Requires Xcode conversion and signing.                                                                                                       |
 
 `chrome-mv2` and `firefox-mv3` are not for store submission. They exist for users on Chromium forks still running MV2, and as a ready migration path if Mozilla ever retires MV2.

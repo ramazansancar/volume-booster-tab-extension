@@ -6,11 +6,11 @@
 
 Works in Chrome, Firefox, Edge, Opera, Brave, Vivaldi and Safari. Manifest V2 and V3 from one codebase.
 
-[<img src="store-assets/badges/chrome.svg" alt="Available in the Chrome Web Store" height="58">](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) [<img src="store-assets/badges/firefox.svg" alt="Get the add-on for Firefox" height="58">](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/) [<img src="store-assets/badges/edge.svg" alt="Get it from Microsoft Edge" height="58">](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk)
+[<img src="store-assets/badges/chrome.svg" alt="Available in the Chrome Web Store" height="58">](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) [<img src="store-assets/badges/firefox.svg" alt="Get the add-on for Firefox" height="58">](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/) [<img src="store-assets/badges/edge.svg" alt="Get it from Microsoft Edge" height="58">](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk) [<img src="store-assets/badges/opera.svg" alt="Get it from Opera add-ons" height="58">](https://addons.opera.com/extensions/details/volume-booster-tab/)
 
-Opera listing is in review. Safari builds from source — see [`docs/safari.md`](docs/safari.md).
+Safari builds from source — see [`docs/safari.md`](docs/safari.md).
 
-[![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE) [![Manifest V2 + V3](https://img.shields.io/badge/manifest-V2%20%7C%20V3-success.svg)](#browser-support) [![Browsers](https://img.shields.io/badge/browsers-7%20targets-orange.svg)](#browser-support) [![Languages](https://img.shields.io/badge/languages-55-brightgreen.svg)](#language-support) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/icmlbabfmbcmpjekdinfhblfpngadhad?label=chrome%20web%20store&color=4285F4)](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) [![Firefox Add-ons](https://img.shields.io/amo/v/volume-booster-tab?label=firefox%20add-ons&color=orange)](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/) [![Edge Add-ons](https://img.shields.io/badge/edge%20add--ons-published-0078D7)](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk)
+[![License: AGPL v3](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE) [![Manifest V2 + V3](https://img.shields.io/badge/manifest-V2%20%7C%20V3-success.svg)](#browser-support) [![Browsers](https://img.shields.io/badge/browsers-7%20targets-orange.svg)](#browser-support) [![Languages](https://img.shields.io/badge/languages-55-brightgreen.svg)](#language-support) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md) [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/icmlbabfmbcmpjekdinfhblfpngadhad?label=chrome%20web%20store&color=4285F4)](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) [![Firefox Add-ons](https://img.shields.io/amo/v/volume-booster-tab?label=firefox%20add-ons&color=orange)](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/) [![Edge Add-ons](https://img.shields.io/badge/edge%20add--ons-published-0078D7)](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk) [![Opera Add-ons](https://img.shields.io/badge/opera%20add--ons-published-FF1B2D)](https://addons.opera.com/extensions/details/volume-booster-tab/)
 
 </div>
 
@@ -202,11 +202,11 @@ All 55 locales are fully translated — every string, in every language, with no
 | **Chrome Web Store** | ✅ Published | [<img src="store-assets/badges/chrome.svg" alt="Available in the Chrome Web Store" height="44">](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) |
 | **Firefox Add-ons** | ✅ Published | [<img src="store-assets/badges/firefox.svg" alt="Get the add-on for Firefox" height="44">](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/) |
 | **Microsoft Edge Add-ons** | ✅ Published | [<img src="store-assets/badges/edge.svg" alt="Get it from Microsoft Edge" height="44">](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk) |
-| **Opera add-ons** | ⏳ In review | <img src="store-assets/badges/opera.svg" alt="Opera add-ons" height="44"> |
+| **Opera add-ons** | ✅ Published | [<img src="store-assets/badges/opera.svg" alt="Get it from Opera add-ons" height="44">](https://addons.opera.com/extensions/details/volume-booster-tab/) |
 | **Safari** | ❌ Not planned | [<img src="store-assets/badges/safari.svg" alt="Build from source for Safari" height="44">](docs/safari.md) |
 
 > [!NOTE]
-> The Firefox listing also covers LibreWolf, Waterfox, Zen, Floorp and Firefox for Android. Chromium forks (Brave, Vivaldi, Opera, Arc) can install the [Chrome Web Store](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) build directly.
+> The Firefox listing also covers LibreWolf, Waterfox, Zen, Floorp and Firefox for Android. Other Chromium forks (Brave, Vivaldi, Arc) can install the [Chrome Web Store](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) build directly.
 
 ### From source (unpacked)
 

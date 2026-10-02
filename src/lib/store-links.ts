@@ -42,8 +42,8 @@ export const SUPPORT_URL = `${REPO_URL}/issues`;
  * which is both dead weight and a confusing thing to find in a review.
  *
  * Null is not a gap to fill in later with a guess. It is what makes the popup
- * drop the stars: Opera is still in review and Safari is built from source, so
- * neither has a review form to send anyone to.
+ * drop the stars: Safari is built from source, so it has no review form to send
+ * anyone to.
  */
 export function reviewUrl(): string | null {
   // Chrome's listing anchors the review pane directly.
@@ -57,6 +57,10 @@ export function reviewUrl(): string | null {
   // AMO's dedicated review form, which opens with the star picker focused.
   if (__BROWSER__ === 'firefox') {
     return 'https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/reviews/';
+  }
+  // Opera has no review deep link either; the rating form is on the listing.
+  if (__BROWSER__ === 'opera') {
+    return 'https://addons.opera.com/extensions/details/volume-booster-tab/';
   }
   return null;
 }

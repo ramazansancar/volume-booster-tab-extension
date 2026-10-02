@@ -56,6 +56,7 @@ A rating in your browser's store helps other people find the extension. Click a 
 | Chrome Web Store | [![Chrome Web Store rating](https://img.shields.io/chrome-web-store/rating/icmlbabfmbcmpjekdinfhblfpngadhad?label=rating&color=4285F4)](https://chromewebstore.google.com/detail/icmlbabfmbcmpjekdinfhblfpngadhad/reviews) | [![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/icmlbabfmbcmpjekdinfhblfpngadhad?label=users&color=4285F4)](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) |
 | Firefox Add-ons | [![Firefox Add-ons rating](https://img.shields.io/amo/rating/volume-booster-tab?label=rating&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/reviews/) | [![Firefox Add-ons users](https://img.shields.io/amo/users/volume-booster-tab?label=users&color=FF7139)](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/) |
 | Microsoft Edge Add-ons | [Rate it on the listing](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk) | |
+| Opera add-ons | [Rate it on the listing](https://addons.opera.com/extensions/details/volume-booster-tab/) | |
 | GitHub | [![GitHub stars](https://img.shields.io/github/stars/ramazansancar/volume-booster-tab-extension?label=stars&color=24292F)](https://github.com/ramazansancar/volume-booster-tab-extension) | |
 
 ## Something not working?

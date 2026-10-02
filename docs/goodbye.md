@@ -29,7 +29,7 @@ You need a GitHub account to open an issue. Every report gets read.
 
 Install it again from your browser's store:
 
-[<img src="../store-assets/badges/chrome.svg" alt="Available in the Chrome Web Store" height="58">](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) [<img src="../store-assets/badges/firefox.svg" alt="Get the add-on for Firefox" height="58">](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/) [<img src="../store-assets/badges/edge.svg" alt="Get it from Microsoft Edge" height="58">](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk)
+[<img src="../store-assets/badges/chrome.svg" alt="Available in the Chrome Web Store" height="58">](https://chromewebstore.google.com/detail/volume-booster-tab/icmlbabfmbcmpjekdinfhblfpngadhad) [<img src="../store-assets/badges/firefox.svg" alt="Get the add-on for Firefox" height="58">](https://addons.mozilla.org/en-US/firefox/addon/volume-booster-tab/) [<img src="../store-assets/badges/edge.svg" alt="Get it from Microsoft Edge" height="58">](https://microsoftedge.microsoft.com/addons/detail/cpbcdpdcompfagchdibndboomcplhodk) [<img src="../store-assets/badges/opera.svg" alt="Get it from Opera add-ons" height="58">](https://addons.opera.com/extensions/details/volume-booster-tab/)
 
 Your saved sites and presets were removed together with the extension. If you exported your settings from the options page, you can import that file again.
 

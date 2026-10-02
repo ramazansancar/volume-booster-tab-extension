@@ -176,7 +176,7 @@ function openLink(url: string): void {
 function buildFeedback(): void {
   const url = reviewUrl();
 
-  // Support is offered on every build: a user on the Opera or Safari package
+  // Support is offered on every build: a user on the Safari package
   // has the same right to report a bug as anyone else, and the issue tracker
   // is the same one regardless of where the extension came from.
   dom.supportLink.addEventListener('click', () => openLink(SUPPORT_URL));
@@ -185,9 +185,9 @@ function buildFeedback(): void {
   dom.supportLink.title = t('popupReportIssue', 'Report a problem on GitHub');
   dom.feedback.hidden = false;
 
-  // The stars are the part that needs a listing behind them. Opera is still in
-  // review and Safari is built from source, so on those builds the prompt and
-  // the stars are dropped and the row carries the support link alone.
+  // The stars are the part that needs a listing behind them. Safari is built
+  // from source, so on that build the prompt and the stars are dropped and the
+  // row carries the support link alone.
   if (!url) {
     dom.feedback.dataset.rateable = 'false';
     return;
