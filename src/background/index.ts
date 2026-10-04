@@ -6,6 +6,7 @@ import {
   queryTabs,
   sendMessageSafe,
   sendMessageToTab,
+  setTabBadge,
 } from '@/lib/browser';
 import { cloneSettings, neutralSettings } from '@/lib/defaults';
 import {
@@ -146,22 +147,15 @@ async function frameIdsFor(tabId: number): Promise<number[]> {
  * which tabs are amplified without opening the popup.
  */
 async function updateBadge(state: TabState): Promise<void> {
-  const action = ext.action ?? ext.browserAction;
-  if (!action) return;
-
   const active = registry.isActive(state.tabId);
   const text = active ? `${Math.round(state.settings.gain * 100)}%` : '';
+  // Amber above unity gain, neutral grey otherwise.
+  const color = active ? (state.settings.gain > 1 ? '#b45309' : '#475569') : undefined;
   try {
-    await action.setBadgeText({ tabId: state.tabId, text });
-    if (active) {
-      // Amber above unity gain, neutral grey otherwise.
-      await action.setBadgeBackgroundColor({
-        tabId: state.tabId,
-        color: state.settings.gain > 1 ? '#b45309' : '#475569',
-      });
-    }
+    await setTabBadge(state.tabId, text, color);
   } catch {
-    // Per-tab badges are unsupported on some builds; the popup still works.
+    // The tab closed mid-update, or per-tab badges are unsupported on this
+    // build; the popup still works either way.
   }
 }
 

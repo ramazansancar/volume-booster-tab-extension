@@ -187,8 +187,15 @@ export async function focusTab(tabId: number): Promise<void> {
         await ext.windows.update(tab.windowId, { focused: true });
       }
     } else {
-      ext.tabs.update(tabId, { active: true });
-      if (tab.windowId !== undefined) ext.windows.update(tab.windowId, { focused: true });
+      await promisify<unknown>((callback) =>
+        ext.tabs.update(tabId, { active: true }, callback),
+      );
+      if (tab.windowId !== undefined) {
+        const windowId = tab.windowId;
+        await promisify<unknown>((callback) =>
+          ext.windows.update(windowId, { focused: true }, callback),
+        );
+      }
     }
   } catch {
     // The tab closed between listing it and clicking it, which is not an error
@@ -223,6 +230,35 @@ export function getAllFrames(
   return promisify<chrome.webNavigation.GetAllFrameResultDetails[] | null>((callback) =>
     api.getAllFrames({ tabId }, callback),
   ).then((frames) => frames ?? []);
+}
+
+/**
+ * Sets a tab's toolbar badge text, and its background color when given.
+ *
+ * The tab can close between the event that triggered the update and this call.
+ * Under MV2 Chromium a callback-less call then logs "Unchecked
+ * runtime.lastError: No tab with id" to the background console; reading
+ * lastError in a callback turns that into a rejection the caller can ignore.
+ */
+export async function setTabBadge(
+  tabId: number,
+  text: string,
+  color?: string,
+): Promise<void> {
+  const action = ext.action ?? ext.browserAction;
+  if (!action) return;
+
+  if (returnsPromises()) {
+    await action.setBadgeText({ tabId, text });
+    if (color !== undefined) await action.setBadgeBackgroundColor({ tabId, color });
+    return;
+  }
+  await promisify<void>((callback) => action.setBadgeText({ tabId, text }, callback));
+  if (color !== undefined) {
+    await promisify<void>((callback) =>
+      action.setBadgeBackgroundColor({ tabId, color }, callback),
+    );
+  }
 }
 
 /** Reads from local storage. */
