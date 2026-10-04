@@ -6,9 +6,22 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+## [0.5.2] - 2026-10-05
+
+Untouched pages no longer pay for the extension at all, and the Opera listing is live.
+
 ### Added
 
 - **Opera listing is live.** The Opera build's popup now shows the rating stars, linking to [Opera add-ons](https://addons.opera.com/extensions/details/volume-booster-tab/), and the README and docs link the listing.
+- **The manifest sets `homepage_url`** to the repository, so every browser's extensions page shows a website link.
+
+### Changed
+
+- **Pages are watched only once a boost is applied.** The DOM observer and the 3-second fallback sweep used to run on every page from load, although nothing is routed until the settings leave neutral. Both now start with the first boost, and the sweep stops itself when the settings return to neutral. A page you never boost runs neither.
+
+### Fixed
+
+- **No more "Unchecked runtime.lastError: No tab with id" in the background console** on Chromium MV2 builds. Closing a tab while its badge was being updated, or picking a tab in the popup's list that had just closed, logged it. The calls now read the error and drop it.
 
 ## [0.5.1] - 2026-10-01
 
@@ -163,7 +176,8 @@ First public release.
   Opera MV2, Firefox MV3/MV2, Safari MV3.
 - Source package builder for store submissions requiring reproducible builds.
 
-[Unreleased]: https://github.com/ramazansancar/volume-booster-tab-extension/compare/v0.5.1...HEAD
+[Unreleased]: https://github.com/ramazansancar/volume-booster-tab-extension/compare/v0.5.2...HEAD
+[0.5.2]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.5.2
 [0.5.1]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.5.1
 [0.5.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.5.0
 [0.4.0]: https://github.com/ramazansancar/volume-booster-tab-extension/releases/tag/v0.4.0
