@@ -7,14 +7,18 @@ Copy-paste material for the addons.mozilla.org submission form. The listing is l
 
 ---
 
-## Version notes (v0.5.0)
+## Version notes (v0.5.2)
+
+The version live on AMO is 0.5.0, so these notes cover the 0.5.1 changes too. Opera-only changes and the Chromium MV2 `lastError` fix do not affect Firefox and are left out.
 
 ```text
 No permission changes. The add-on still requests only "storage" and "webNavigation" alongside its host access.
 
-"Remember this site" saved every site the user visited, because each page load wrote the tab's settings back to storage.local. Only a change the user makes is saved now, and a remembered tab no longer carries one site's settings to the next. On update, saved sites equal to the defaults are removed.
+Security: commands from the popup and settings page are accepted only from the add-on's own pages. The background script routed every popup/settings message without checking the sender, and content scripts run in every http(s) frame. Those messages are now dropped unless sender.url is an extension page.
 
-A fresh install opens a welcome page in the GitHub repository once (tabs.create, no extra permission). runtime.setUninstallURL opens a goodbye page with a link to the issue tracker. Both URLs are fixed and carry no parameters, so nothing about the user or their usage is sent.
+Performance: the content script's MutationObserver and its 3-second fallback re-scan now start only after the user applies a boost to the tab. A page the user never boosts runs neither.
+
+Manifest: homepage_url now points to the GitHub repository, and short_name was removed (browsers fall back to the full name).
 ```
 
 ---
@@ -42,13 +46,12 @@ HOW TO TEST
 5. Close a tab and reopen the site: the boost is gone. Settings are per-tab
    and temporary unless the user ticks "Remember this site".
 
-NEW IN 0.5.0 - no permission changes
-- "Remember this site" saved every visited site: page loads wrote the
-  tab's settings back. Only user changes are saved now; on update, saved
-  sites equal to the defaults are removed.
-- A fresh install opens a welcome page in the GitHub repo once
-  (tabs.create). setUninstallURL opens a goodbye page with an issue link.
-  Both URLs are fixed and carry no parameters; nothing is sent.
+NEW SINCE 0.5.0 - no permission changes
+- Popup/settings messages are accepted only from extension pages
+  (sender.url check); content scripts can no longer trigger them.
+- The content script's MutationObserver and 3 s re-scan start only after
+  the user boosts the tab. Untouched pages run neither.
+- manifest: homepage_url added (GitHub repo), short_name removed.
 
 EXPECTED LIMITATION
 DRM sites (Prime Video, Netflix) are boosted only once playback has started and the player holds its keys: an encrypted element is not routed until the player has attached its MediaKeys, because Firefox refuses setMediaKeys on an element already being captured. If the player later swaps keys on the same element, the boost cannot follow. Cross-origin media without CORS headers cannot be boosted on Firefox at all; the popup reports "This page blocks audio processing" rather than failing silently.
@@ -58,7 +61,7 @@ PERMISSIONS
 - webNavigation Enumerates a tab's frames so the volume reaches a player
                 inside an iframe. Used for nothing else - no history is read,
                 collected or transmitted.
-- <all_urls>    Media can appear on any site, so the content script must run
+- http/https    Media can appear on any site, so the content script must run
                 on any page. It only looks for <video> and <audio> elements;
                 it does not read page content, cookies, form fields or
                 credentials.
@@ -69,10 +72,11 @@ None. Declared as data_collection_permissions.required = ["none"]. The add-on ma
 SOURCE AND BUILD (Node.js 20 or newer, any OS)
   git clone https://github.com/ramazansancar/volume-booster-tab-extension.git
   cd volume-booster-tab-extension
+  git checkout v0.5.2
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.5.0.zip The attached source archive contains BUILD.md at its root with the same steps.
+Uploaded file: dist/firefox-mv2-0.5.2.zip The attached source archive contains BUILD.md at its root with the same steps.
 
 Bundler is esbuild with its standard minification. No obfuscation, no name mangling beyond esbuild defaults, no code generated from templates. To read the output unminified with inline sourcemaps:
 
@@ -102,20 +106,24 @@ No account or login is required to test this add-on.
 WHAT IT DOES
 Routes a page's <video> and <audio> elements through a Web Audio graph (equalizer -> limiter -> gain -> panner) to raise volume beyond what the page allows. Each tab is boosted independently.
 
-NEW IN 0.5.0 - no permission changes
-- "Remember this site" saved every visited site: page loads wrote the
-  tab's settings back. Only user changes are saved now; on update, saved
-  sites equal to the defaults are removed.
-- A fresh install opens a welcome page in the GitHub repo once
-  (tabs.create). setUninstallURL opens a goodbye page with an issue link.
-  Both URLs are fixed and carry no parameters; nothing is sent.
+HOW TO TEST
+1. Open https://www.youtube.com/watch?v=aqz-KE-bpKQ and start playback.
+2. Click the toolbar icon and pick the 300% preset. Volume rises at once;
+   the badge shows the level.
+
+NEW SINCE 0.5.0 - no permission changes
+- Popup/settings messages are accepted only from extension pages
+  (sender.url check); content scripts can no longer trigger them.
+- The content script's MutationObserver and 3 s re-scan start only after
+  the user boosts the tab. Untouched pages run neither.
+- manifest: homepage_url added (GitHub repo), short_name removed.
 
 PERMISSIONS
 - storage       Saves the user's own preferences locally. Nothing else stored.
 - webNavigation Enumerates a tab's frames so the volume reaches a player
                 inside an iframe. Used for nothing else - no history is read,
                 collected or transmitted.
-- <all_urls>    Media can appear on any site, so the content script must run
+- http/https    Media can appear on any site, so the content script must run
                 on any page. It only looks for <video> and <audio> elements;
                 it does not read page content, cookies, form fields or
                 credentials.
@@ -126,10 +134,11 @@ None. Declared as data_collection_permissions.required = ["none"]. No network re
 SOURCE AND BUILD (Node.js 20+, any OS)
   git clone https://github.com/ramazansancar/volume-booster-tab-extension.git
   cd volume-booster-tab-extension
+  git checkout v0.5.2
   npm ci
   npm run package
 
-Uploaded file: dist/firefox-mv2-0.5.0.zip BUILD.md at the root of the source archive repeats these steps.
+Uploaded file: dist/firefox-mv2-0.5.2.zip. BUILD.md at the root of the source archive repeats these steps.
 
 esbuild with standard minification; no obfuscation. Unminified output:
   node scripts/build.mjs --target=firefox-mv2 --dev
@@ -137,6 +146,8 @@ esbuild with standard minification; no obfuscation. Unminified output:
 manifest.json, _locales/ and icons/ are generated from single source tables by scripts/manifest.mjs, scripts/locales.mjs and scripts/icons.mjs, and are reproducible byte for byte. Zero runtime dependencies.
 
 License: AGPL-3.0-only
+
+The two addons-linter warnings (KEY_FIREFOX_UNSUPPORTED_BY_MIN_VERSION) are deliberate: strict_min_version 91.0 predates data_collection_permissions, which older releases ignore.
 
 The two KEY_FIREFOX_UNSUPPORTED_BY_MIN_VERSION warnings are deliberate: strict_min_version 91 predates Firefox 140 where data_collection_permissions was introduced. Older releases ignore the key and install normally; raising the minimum would drop ESR users.
 ```
