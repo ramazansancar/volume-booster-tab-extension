@@ -262,13 +262,22 @@ function scan(root: ParentNode = document): void {
   for (const element of collectMedia(root)) attach(element);
 }
 
+let observer: MutationObserver | null = null;
+
 /**
  * Watches for DOM changes. Additions are attached; removals are forgotten so a
  * player that swaps its <video> between episodes does not leave stale state
  * behind.
+ *
+ * Started only once the user first applies a boost: until then attach() is a
+ * no-op and nothing is routed, so watching an untouched page would cost the
+ * page a subtree observer for no effect.
  */
 function observe(): void {
-  const observer = new MutationObserver((records) => {
+  // Firefox can run a document_start script before <html> exists; boot()
+  // calls this again once the document has been parsed.
+  if (observer || !document.documentElement) return;
+  observer = new MutationObserver((records) => {
     for (const record of records) {
       for (const node of record.addedNodes) {
         if (node instanceof HTMLMediaElement) attach(node);
@@ -379,17 +388,35 @@ function bindHistoryEvents(): void {
   }
 }
 
+/** Delay between last-resort sweeps while a boost is applied. */
+const SWEEP_DELAY_MS = 3000;
+
+let sweepTimer: ReturnType<typeof setTimeout> | null = null;
+
 /**
- * Last-resort periodic sweep. Some players build their element in ways none of
- * the signals above can see; a slow poll costs almost nothing and guarantees we
- * eventually notice. It only runs while the user actually has a boost applied.
+ * Last-resort sweep. Some players build their element in ways none of the
+ * signals above can see; a slow re-scan costs almost nothing and guarantees we
+ * eventually notice.
+ *
+ * It only exists while the user actually has a boost applied: the chain stops
+ * itself at the first tick that finds the settings neutral, and the next
+ * non-neutral apply starts it again. An untouched page never runs a timer.
  */
-function startSweep(): void {
-  setInterval(() => {
+function scheduleSweep(): void {
+  if (sweepTimer !== null || isNeutral(settings)) return;
+  sweepTimer = setTimeout(() => {
+    sweepTimer = null;
     if (isNeutral(settings)) return;
-    if (document.hidden) return;
-    scan();
-  }, 3000);
+    if (!document.hidden) scan();
+    scheduleSweep();
+  }, SWEEP_DELAY_MS);
+}
+
+/** Starts the watchers that only matter once something is being boosted. */
+function watchIfBoosted(): void {
+  if (isNeutral(settings)) return;
+  observe();
+  scheduleSweep();
 }
 
 ext.runtime.onMessage.addListener(
@@ -405,6 +432,7 @@ ext.runtime.onMessage.addListener(
           engine?.apply(settings);
           resumeIfUnlocked();
         }
+        watchIfBoosted();
         sendResponse({ ok: true, pathway, count: connectedCount() });
         return true;
       }
@@ -435,11 +463,12 @@ ext.runtime.onMessage.addListener(
 function boot(): void {
   post({ type: 'content:ready', origin: window.location.origin });
   scan();
-  observe();
   bindMediaEvents();
   bindGestureResume();
   bindHistoryEvents();
-  startSweep();
+  // Settings can arrive before DOMContentLoaded, in which case the watchers are
+  // already running and this is a no-op.
+  watchIfBoosted();
 }
 
 if (document.readyState === 'loading') {
