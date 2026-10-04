@@ -122,7 +122,7 @@ function isChromium(browser) {
 /**
  * Builds the manifest object for a target.
  * @param {string} target
- * @param {{ version: string }} pkg
+ * @param {{ version: string, homepage: string }} pkg
  */
 export function buildManifest(target, pkg) {
   const { browser, version } = parseTarget(target);
@@ -134,6 +134,10 @@ export function buildManifest(target, pkg) {
     description: '__MSG_extensionDescription__',
     version: pkg.version,
     default_locale: 'en',
+    // Shown as the "Website" / "Homepage" link on the extensions page in every
+    // engine. Store scanners also read it as the developer's site, and flag an
+    // extension without one as a trust issue.
+    homepage_url: pkg.homepage,
 
     icons: {
       16: 'icons/icon-16.png',
